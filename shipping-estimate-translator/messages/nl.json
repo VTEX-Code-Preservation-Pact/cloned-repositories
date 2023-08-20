@@ -1,0 +1,12 @@
+{
+  "shippingEstimate-bd": "{timeAmount, plural, =0 {Vandaag} one {In # werkdag} other {Tot # werkdagen}}",
+  "shippingEstimate-d": "{timeAmount, plural, =0 {Vandaag} one {In # dag} other {Tot # dagen}}",
+  "shippingEstimate-h": "{timeAmount, plural, =0 {Nu} one {In # uur} other {Tot # uren}}",
+  "shippingEstimate-m": "{timeAmount, plural, =0 {Nu} one {In # minuut} other {Tot # minuten}}",
+  "shippingEstimate-scheduled": "{date}, tussen {startDate} en {endDate}",
+  "shippingEstimate-scheduled-no-dates": "Gepland",
+  "shippingEstimatePickup-bd": "{timeAmount, plural, =0 {Klaar vandaag} one {Klaar in # werkdag} other {Klaar in # werkdagen}}",
+  "shippingEstimatePickup-d": "{timeAmount, plural, =0 {Klaar vandaag} one {Klaar in tot # dag} other {Klaar in tot # dagen}}",
+  "shippingEstimatePickup-h": "{timeAmount, plural, =0 {Klaar om af te halen} one {Klaar in maximaal # uur} other {Klaar in maximaal # uren}}",
+  "shippingEstimatePickup-m": "{timeAmount, plural, =0 {Klaar om af te halen} one {Klaar in # minuut} other {Klaar in maximaal # minuten}}"
+}

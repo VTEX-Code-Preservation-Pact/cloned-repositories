@@ -1,0 +1,6 @@
+query {
+  getStyles @context(provider: "kuikpay.my-checkout") {
+    styles
+    text
+  }
+}

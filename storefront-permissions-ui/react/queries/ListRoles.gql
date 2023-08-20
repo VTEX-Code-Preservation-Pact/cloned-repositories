@@ -1,0 +1,7 @@
+query ListRoles {
+  listRoles @context(provider: "vtex.storefront-permissions") {
+    id
+    name
+    slug
+  }
+}

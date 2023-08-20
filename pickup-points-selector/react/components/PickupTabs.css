@@ -1,0 +1,38 @@
+.pickupViewMode {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.pickupViewMap,
+.pickupViewList {
+  width: 50%;
+}
+
+.pickupViewOptionActive,
+.pickupViewOptionActive:hover,
+.pickupViewOptionActive:active,
+.pickupViewOptionActive:focus {
+  border: 1px solid #357edd;
+  background: #357edd;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.pickupViewOptionInactive,
+.pickupViewOptionInactive:hover,
+.pickupViewOptionInactive:active,
+.pickupViewOptionInactive:focus {
+  border: 1px solid #357edd;
+  background: #fff;
+  color: #357edd;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.linkButton {
+  composes: button link from './Button.css';
+}

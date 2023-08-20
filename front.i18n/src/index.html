@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>front.i18n</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="VTEX Locale Selector">
+	<meta name="author" content="VTEX">
+    <!-- build:css style/style.css -->
+    <link rel="stylesheet" href="lib/bower_components/bootstrap/bootstrap.css"/>
+    <link rel="stylesheet" href="lib/bower_components/select2/select2.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+    <!-- endbuild -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="lib/bower_components/jquery/jquery.js">\x3C/script>')</script>
+</head>
+<body>
+<div class="container-narrow">
+	<div class="page-header">
+		<h1>front.i18n <br><small>O seletor front end de línguas.</small></h1>		
+	</div>
+	<p>Insira um elemento HTML com o id <code>#vtex-locale-selector</code>, inicie o plugin <code>vtex.i18n.init()</code> e faremos todo o resto.</p>
+	<div class="row-fluid">
+		<div class="well span6">
+			<blockquote>
+				<p data-i18n="testing">Testando, um, dois, três!</p>
+				<small data-i18n="someOneFamous">Alguem famoso</small>
+			</blockquote>
+			<div id="vtex-locale-selector">Placeholder</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>VTEX 2014</p>
+	</div>
+</div>
+<script src="http://localhost:35729/livereload.js"></script>
+<!-- build:js js/lib.js -->
+<script type="text/javascript" src="lib/bower_components/bootstrap/bootstrap.js"></script>
+<script type="text/javascript" src="lib/bower_components/select2/select2.js"></script>
+<script type="text/javascript" src="lib/bower_components/i18next/i18next-1.6.3.min.js"></script>
+<script type="text/javascript" src="lib/bower_components/radio/radio.js"></script>
+<!-- endbuild -->
+<!-- build:js js/vtex-i18n.min.js -->
+<script type="text/javascript" src="js/vtex-i18n.js"></script>
+<!-- endbuild -->
+<!-- build:js js/vtex-locale-selector.min.js -->
+<script type="text/javascript" src="js/vtex-locale-selector.js"></script>
+<!-- endbuild -->
+<script type="text/javascript" src="js/translation-es.js"></script>
+<script type="text/javascript" src="js/translation-en-US.js"></script>
+<script type="text/javascript" src="js/translation-pt-BR.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

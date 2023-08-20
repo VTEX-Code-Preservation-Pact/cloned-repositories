@@ -1,0 +1,51 @@
+type Payments {
+  id: ID
+  franchise: String
+  number: String
+  gateway: String
+  bin: String
+  cvv: String
+  paymentSystem: String
+  cardContent: [CardContent]
+}
+
+type CardContent {
+  key: String
+  value: String
+}
+
+type GeneralPaymentsResponse {
+  message: String
+  data: Payments
+}
+
+type PaymentsMethods {
+  id: ID
+  type: String
+  isActive: Boolean
+  paymentMethodName: String
+  accountName: String
+}
+
+type SelectedPayment {
+  card: Payments
+  paymentMethod: String
+}
+
+type ValidateCredit {
+  approvedCredit: Int
+  maxInstallments: Int
+}
+
+type AdminPaymentsMethods {
+  id: ID
+  type: String
+  isActive: Boolean
+  paymentMethodName: String
+  accountName: String
+}
+
+type PaymentProccess {
+  status: Boolean
+  message: String
+}

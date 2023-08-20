@@ -1,0 +1,370 @@
+.container {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.infoWrapper {
+  margin-bottom: 8px;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.marginBotton {
+  margin-bottom: 8px;
+}
+
+.marginBottonLite {
+  margin-bottom: 5px;
+}
+
+.infoWrapper.isChildren {
+  display: flex;
+  justify-content: space-between;
+}
+
+.isChildren .textContainer {
+  margin-right: 10px;
+}
+
+.textContainer,
+.createContainer {
+  margin-right: auto;
+}
+
+.iconContainer {
+  margin: 0px 10px 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+/* Addresses styles */
+
+.addContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.liteAddContainer {
+  display: flex;
+  align-items: center;
+  padding: 6px 0px 8px;
+  border-bottom: 1px solid #d3d3d7;
+}
+
+/* Address styles */
+
+.addressContainer {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.liteAddressContainer {
+  display: flex;
+  margin-bottom: 4px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.paymentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0px 3px;
+  width: 100%;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+}
+
+.edit {
+  margin-right: 8px;
+  min-width: 24px;
+}
+
+.delete {
+  min-width: 24px;
+  cursor: pointer;
+}
+
+.liteDelete {
+  margin-right: 8px;
+  min-width: 24px;
+  cursor: pointer;
+}
+
+.containerLocation {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c4c5ca;
+  padding-bottom: 8px;
+  margin-bottom: 8px;
+}
+
+.liteContainerLocation {
+  border-bottom: 0px solid #d3d3d7;
+  padding: 2px 0px;
+}
+
+.cardImgContainer {
+  margin-right: 10px;
+}
+
+.cardImgContainer img {
+  height: 25px;
+}
+
+.logisticsContainer {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+}
+
+/* Loading Order */
+
+.dues {
+  margin-right: 9px;
+  background-color: white;
+}
+
+.duesWithoutCode {
+  height: 30px !important;
+  padding: 0 10px !important;
+  margin-right: 0px !important;
+}
+
+.paymentCustomCreditLabel {
+  font-size: 14px !important;
+  color: #284859;
+  line-height: 24px;
+  margin: 12px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #0000000f;
+  padding: 10px 28px;
+}
+
+.paymentCustomCreditLabel b {
+  color: #1b998b;
+}
+
+.secureField__input {
+  display: inline-block;
+  width: 100%;
+  line-height: 1.3;
+  cursor: text;
+  height: 46px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 0 18px;
+  border: 1px solid #919191;
+}
+
+.secureField {
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+}
+
+.secureFieldLite {
+  height: 21px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #0096c7;
+  border-radius: 0;
+}
+
+.secureFieldInvalid {
+  border: 1px solid #bc4c47;
+}
+
+.secureFieldInvalidLite {
+  border-bottom: 1px solid #bc4c47;
+}
+
+.secureFieldValid {
+  border: 1px solid #a1c10c;
+}
+
+.secureFieldValidLite {
+  border-bottom: 1px solid #a1c10c;
+}
+
+/*Styles CVC Input*/
+
+.labelError.labelError {
+  color: #cb4242;
+  margin-top: -7px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.containerIcon {
+  position: absolute;
+  right: 15px;
+  bottom: 12px;
+  z-index: 100;
+}
+
+.paymentCustomCreditLabelFail {
+  line-height: 20px !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin-bottom: 35%;
+  }
+
+  .buyButtonContainer {
+    position: fixed;
+    padding: 14px;
+    margin-top: 14px;
+    box-shadow: inset 0px 3px 6px #0000000f;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index: 100;
+  }
+
+}
+
+/* Lite version styles */
+
+.liteContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.liteColRight {
+  width: 35%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.liteColLeft {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textItem {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.duesLiteVersion {
+  height: auto !important;
+  padding: 0px 18px 0 0 !important;
+  border: none !important;
+  border-bottom: 1px solid black !important;
+  border-radius: 0 !important;
+  margin-right: 0 !important;
+  color: #284859;
+}
+
+.cvvContainer {
+  margin-top: 10px;
+}
+
+.liteButton {
+  margin: 0 !important;
+  height: 40px;
+  padding: 6px;
+  white-space: normal;
+}
+
+.liteInfoPayment {
+  border: none !important;
+  margin-bottom: 0;
+}
+
+.liteInfoUser {
+  padding-bottom: 6px;
+}
+
+.viewOrder {
+  text-decoration: underline;
+}
+
+.viewOrderContainer {
+  margin-bottom: 6px;
+}
+
+.myInfoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.liteInfoUserBottom.liteInfoUserBottom {
+  border-bottom: 0px;
+}
+
+.iconContainer.iconContainer {
+  margin: 0px 5px 0px 0px;
+}
+
+.myCvvContainer {
+  width: 20%;
+  touch-action: pan-x pan-y;
+  height: 100%;
+}
+
+.buyButtonFixed {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  box-shadow: inset 0 3px 6px rgb(0 0 0 / 6%);
+  padding: 0 12px;
+}
+
+.summary {
+  margin-bottom: 22%;
+}
+
+.paymentList {
+  margin-bottom: 15%;
+}
+
+.marginRightIcon {
+  margin-right: 22px;
+}
+
+.childContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marginLeftIcon {
+  margin-left: 4px;
+}
+
+.liteInput.liteInput {
+  padding: 0px 0px 0px 0px;
+}
+
+.myOrderContainer {
+  margin-right: 25px;
+  display: flex;
+}

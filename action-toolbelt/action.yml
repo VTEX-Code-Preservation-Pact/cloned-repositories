@@ -1,0 +1,66 @@
+name: VTEX Toolbelt Action
+description: Deploy patched VTEX toolbelt, cache for faster deployment, and do login.
+author: VTEX
+
+inputs:
+  authenticate:
+    description: "Do authentication after deploy"
+    required: false
+    default: "true"
+  account:
+    description: "Account to use on login"
+    required: false
+  appKey:
+    description: "VTEX App Key to login"
+    required: false
+  appToken:
+    description: "VTEX App Token to login"
+    required: false
+  jsonFile:
+    description: "File on the OS with json tokens"
+    required: false
+  workspace:
+    description: "Workspace to start after login, default master"
+    required: false
+    default: master
+  version:
+    description: "Version of VTEX Toolbelt to be installed"
+    required: false
+    default: 3.0.0-beta-ci.3
+
+runs:
+  using: "composite"
+  steps:
+    - name: "Create a dummy yarn.lock to simplify cache"
+      run: echo ${{ inputs.version }} >> yarn.lock
+      shell: bash
+
+    - name: "Set up Node.js"
+      uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # v3.5.1
+      with:
+        cache: yarn
+
+    - name: "Install VTEX Toolbelt"
+      run: |
+        echo "::group::Global installation"
+        yarn global add vtex@${{ inputs.version }}
+        echo "::endgroup::"
+        echo "::group::Check version"
+        vtex version
+        echo "::endgroup::"
+      shell: bash
+
+    - name: "Authentication"
+      run: bash $GITHUB_ACTION_PATH/entrypoint.sh
+      env:
+        VTEX_AUTHENTICATE: ${{ inputs.authenticate }}
+        VTEX_ACCOUNT: ${{ inputs.account }}
+        VTEX_APP_KEY: ${{ inputs.appKey }}
+        VTEX_APP_TOKEN: ${{ inputs.appToken }}
+        VTEX_WORKSPACE: ${{ inputs.workspace }}
+        SECRETS_JSON: ${{ inputs.jsonFile }}
+      shell: bash
+
+branding:
+  icon: terminal
+  color: red

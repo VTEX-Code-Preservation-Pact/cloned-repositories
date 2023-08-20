@@ -1,0 +1,7 @@
+query GET_TOKEN($accountId: ID!) {
+  getToken(accountId: $accountId) {
+    name
+    autheticationToken
+    enabled
+  }
+}

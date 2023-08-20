@@ -1,0 +1,8 @@
+type Query {
+  generateSitemap(force: Boolean): Boolean! @requiresAuth
+}
+
+type Mutation {
+  saveIndex(index: String!, binding: String): Boolean!
+  deleteIndex(index: String!, binding: String): Boolean!
+}

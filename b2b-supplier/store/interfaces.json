@@ -1,0 +1,11 @@
+{
+  "b2b-supplier": {
+    "component": "SignUpButton"
+  },
+  "b2b-supplier.approved-status": {
+    "component": "ApprovedStatus"
+  },
+  "b2b-supplier.signup-button": {
+    "component": "SignUpButton"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@faststore/test-gh-dependabot-updates",
+  "version": "1.0.0",
+  "description": "Lib for testing dependabot version updates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "faststore",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex/test-gh-dependabot-updates.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vtex/test-gh-dependabot-updates/issues"
+  },
+  "homepage": "https://github.com/vtex/test-gh-dependabot-updates#readme"
+}

@@ -1,0 +1,26 @@
+{
+  "AWSEBDockerrunVersion": 1,
+  "Ports":[
+   {
+	   "ContainerPort" : "80"
+   }
+ ],
+  "Volumes" : [
+    {
+      "HostDirectory" :"/var/app/logs",
+      "ContainerDirectory" :"/logs"
+    },
+    {
+      "HostDirectory" :"/var/app/data",
+      "ContainerDirectory" :"/data"
+    },
+    {
+      "HostDirectory" :"/var/app/nginx-cache",
+      "ContainerDirectory" :"/nginx-cache"
+    },
+    {
+      "HostDirectory" :"/var/app/nginx-cache-thumbor",
+      "ContainerDirectory" :"/nginx-cache-thumbor"
+    }
+  ]
+}

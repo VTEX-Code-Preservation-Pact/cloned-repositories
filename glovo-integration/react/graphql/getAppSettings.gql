@@ -1,0 +1,28 @@
+query getGlovoIntegrationSettings {
+  settings: getGlovoIntegrationSettings {
+    glovoToken
+    production
+    marketplace
+    minimumStock
+    stores {
+      id
+      storeName
+      sellerId
+      sellerName
+      affiliateId
+      salesChannel
+      postalCode
+      country
+      glovoStoreId
+    }
+    clientProfileData {
+      email
+      firstName
+      lastName
+      documentType
+      document
+      phone
+      corporateName
+    }
+  }
+}

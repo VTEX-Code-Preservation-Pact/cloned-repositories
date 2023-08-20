@@ -1,0 +1,10 @@
+{
+  "admin/editor.media.title": "Medio",
+  "admin/editor.media.description": "Bloque de medio que admite imágenes y videos",
+  "admin/editor.mediaType.title": "Tipo de medio",
+  "admin/editor.mediaType.image": "Imagen",
+  "admin/editor.mediaType.video": "Vídeo",
+  "admin/editor.mediaList.title": "Lista de Medios",
+  "admin/editor.mediaList.description": "Bloque de Lista de Medios que admite una lista de imágenes y videos",
+  "admin/editor.mediaList.mobileVideo.title": "URL para móvil"
+}

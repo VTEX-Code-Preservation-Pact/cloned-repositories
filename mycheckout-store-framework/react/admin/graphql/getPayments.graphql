@@ -1,0 +1,16 @@
+query {
+  paymentsRules {
+    rules {
+      id
+      name
+      salesChannels {
+        id
+      }
+      paymentSystem {
+        name
+        id
+      }
+      enabled
+    }
+  }
+}

@@ -1,0 +1,133 @@
+/* stylelint-disable docusaurus/copyright-header */
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&display=swap');
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-blockquote-foreground-color: #f71963;
+  --ifm-color-primary: #f71963;
+  --ifm-color-primary-dark: #0c131e;
+  --ifm-color-primary-darker: #df0850;
+  --ifm-color-primary-darkest: #b80642;
+  --ifm-color-primary-light: #f83375;
+  --ifm-color-primary-lighter: #f8407e;
+  --ifm-color-primary-lightest: #fa6898;
+  --ifm-code-font-size: 95%;
+
+  --ifm-blockquote-border-color: #fff7f9;
+  --ifm-blockquote-background-color: #fff7f9;
+
+  --ifm-color-label: #0b111b;
+
+  --ifm-background-color-button: #fff;
+  --ifm-color-on-primary-button: #fff;
+  --ifm-color-primary-button: #142032;
+  --ifm-color-surface: #f8f7fc;
+  --ifm-color-on-surface: #142032;
+  --ifm-color-on-surface-2: #fff3f6;
+
+  --ifm-color-surface-transparent: rgb(248, 247, 252, 0.1);
+  --ifm-footer-background-color: #32343e;
+
+  --ifm-font-size-base: 17px;
+}
+
+nav {
+  font-size: 15px;
+}
+
+article {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+article header h1 {
+  font-size: 2rem !important;
+}
+.markdown > h2 {
+  --ifm-h2-font-size: 1.25rem;
+}
+.markdown > h3 {
+  --ifm-h3-font-size: 1rem;
+}
+
+.alert--secondary h5 {
+  --ifm-alert-border-color: #9c9c9c;
+}
+
+.alert h5 {
+  color: var(--ifm-alert-border-color);
+}
+
+.alert a {
+  text-decoration: none;
+  color: #f71963;
+}
+
+.alert a:hover {
+  text-decoration: underline;
+}
+
+.admonition-icon svg {
+  fill: var(--ifm-alert-border-color);
+  stroke: var(--ifm-alert-border-color);
+  padding: 3px;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.DescriptionText {
+  color: var(--ifm-color-primary-lightest);
+  font-size: var(--ifm-font-size-24);
+  max-width: 400px;
+}
+
+.HeaderTitle {
+  color: var(--ifm-color-black);
+  font-size: var(--ifm-font-size-64);
+  font-weight: bolder;
+}
+
+.TagLine {
+  color: var(--ifm-color-primary);
+  font-size: var(--ifm-font-size-18);
+  font-weight: bold;
+  max-width: 400px;
+}
+
+.footer.footer--dark {
+  background-color: #142032;
+}
+
+blockquote {
+  border-radius: 10px;
+  box-shadow: none;
+  color: #142032;
+  font-size: 0.85rem;
+}
+
+hr {
+  border-color: #e5e5e5;
+}
+
+.FAQbar {
+  border-right: 1px solid #e6e9ed;
+  padding-right: 25px;
+}
+
+@media screen and (max-width: 1220px) {
+  body {
+    margin: 50px 0;
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "vendor": "vtex",
+  "name": "css-handles",
+  "version": "1.0.0",
+  "title": "CSS Handles",
+  "description": "Utility for creating CSS Handles on store components",
+  "builders": {
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {},
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

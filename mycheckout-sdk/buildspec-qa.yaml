@@ -1,0 +1,27 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+  pre_build:
+    commands:
+      - echo Remove node_modules
+      - rm -rf node_modules
+      - echo Installing source NPM dependencies...
+      - npm install
+  build:
+    commands:
+      - echo Node and npm versions
+      - node --version
+      - npm --version
+      - echo  Build started on `date`
+      - npm run build
+  post_build:
+    commands:
+      - echo Publishing package
+      - echo "//registry.npmjs.org/:_authToken=${NPMTOKEN}" >> ~/.npmrc
+      - echo Checking latest version
+      - npm version --no-git-tag-version $(npm view kuikpay-sdk@beta version)
+      - echo Updating version in package.json
+      - npm version --no-git-tag-version prerelease
+      - npm publish --tag beta

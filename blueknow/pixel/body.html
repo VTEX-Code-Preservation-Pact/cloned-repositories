@@ -1,0 +1,31 @@
+<script>
+  (function () {
+    var blueknowId = "{{settings.blueknowId}}";
+
+    if (!blueknowId) {
+      console.error('Warning: No BK Number is defined. Please configure it in the apps admin.');
+      return
+    }
+
+    if (!window.blueSuite) {
+      window.blueSuite = {
+        bkNumber: blueknowId
+      };
+
+      var b = document.createElement("script");
+      b.type = "text/javascript";
+      b.async = !0;
+
+      var c = ("https:" == document.location.protocol ?
+          "https://d2cmqkwo8rxlr9.cloudfront.net" :
+          "http://static-rmk.blueknow.com") + "/bk-rmk.js?cac=",
+        d = new Date,
+        a = d.getFullYear().toString() + (d.getMonth() + 1) + d.getDate() + d.getHours();
+
+      b.src = c + a;
+
+      c = document.getElementsByTagName("script")[0];
+      c.parentNode.insertBefore(b, c)
+    }
+  })();
+</script>

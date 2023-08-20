@@ -1,0 +1,21 @@
+{
+  "header-row#logo-bar": {
+     "props": {
+       "blockClass": "logo-bar",
+       "inverted": true
+     },
+    "children": [
+      "logo",
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ]
+  },
+  "logo": {
+    "props": {
+      "href": "/",
+      "url": "https://partnerchallenge29.vteximg.com.br/arquivos/logo-81n3981n.png"
+    }
+  }
+}

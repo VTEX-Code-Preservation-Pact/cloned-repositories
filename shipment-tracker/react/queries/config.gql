@@ -1,0 +1,6 @@
+query Config {
+  config {
+    title
+    schema
+  }
+}

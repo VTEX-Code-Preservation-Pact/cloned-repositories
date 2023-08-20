@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "الخصم",
+  "store/totalizers.Items": "تكلفة الطلب",
+  "store/totalizers.Shipping": "الشحن",
+  "store/totalizers.Tax": "الضرائب",
+  "store/totalizers.Interest": "الفائدة",
+  "store/totalizers.Change": "إجمالي التغييرات",
+  "totalizers.Discounts": "الخصم",
+  "totalizers.Items": "تكلفة الطلب",
+  "totalizers.Shipping": "الشحن",
+  "totalizers.Tax": "الضرائب",
+  "totalizers.Interest": "الفائدة",
+  "totalizers.Change": "إجمالي التغييرات"
+}

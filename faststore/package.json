@@ -1,0 +1,34 @@
+{
+  "name": "faststore",
+  "description": "Digital commerce toolkit for frontend developers.",
+  "repository": "git@github.com:vtex/faststore.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel --no-cache",
+    "lint": "turbo run lint",
+    "test": "turbo run test --filter=!./packages/core",
+    "size": "turbo run size",
+    "release": "lerna version patch --yes && lerna publish from-git --yes",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{js,jsx,ts,tsx,md}\""
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "@faststore/eslint-config": "*",
+    "conventional-changelog-conventionalcommits": "^5.0.0",
+    "lerna": "6.4.1",
+    "prettier": "latest",
+    "turbo": "latest"
+  },
+  "version": "0.0.0",
+  "volta": {
+    "node": "16.18.0",
+    "yarn": "1.19.1"
+  },
+  "dependencies": {}
+}

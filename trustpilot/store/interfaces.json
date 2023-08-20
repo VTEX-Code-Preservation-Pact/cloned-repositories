@@ -1,0 +1,11 @@
+{
+  "pixel.trustpilot": {
+    "component": "index"
+  },
+  "shop-review-badge.trustpilot-widget": {
+    "component": "Widget"
+  },
+  "trustpilot-widget": {
+    "component": "Widget"
+  }
+}

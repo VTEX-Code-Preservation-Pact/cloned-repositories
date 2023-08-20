@@ -1,0 +1,6 @@
+{
+  "admin.app.example": {
+    "component": "Interface",
+    "path": "/admin/app/interface"
+  }
+}

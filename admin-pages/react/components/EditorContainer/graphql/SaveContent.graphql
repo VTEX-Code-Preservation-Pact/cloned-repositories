@@ -1,0 +1,36 @@
+mutation saveContent(
+  $bindingId: String
+  $blockId: String
+  $configuration: ContentConfigurationInput
+  $template: String
+  $treePath: String
+  $lang: String
+) {
+  saveContent(
+    bindingId: $bindingId
+    blockId: $blockId
+    configuration: $configuration
+    template: $template
+    treePath: $treePath
+    lang: $lang
+  ) {
+    # Available fields:
+    # condition {
+    #   allMatches
+    #   id
+    #   pageContext {
+    #     id
+    #     type
+    #   }
+    #   statements {
+    #     objectJSON
+    #     subject
+    #     verb
+    #   }
+    # }
+    # contentJSON
+    # contentId
+    # label
+    contentId
+  }
+}

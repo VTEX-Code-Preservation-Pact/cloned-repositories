@@ -1,0 +1,38 @@
+.backdropContainer {
+  z-index: -1;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  touch-action: none;
+}
+
+.paperScrollContent {
+  max-height: calc(100% - 4rem);
+  overflow: auto;
+}
+
+/* We have to apply margin: 2rem instead of using ma7 because if the user
+* change the value of ma7 the max-height of .paperScrollContent will break
+*/
+.paperNotFullScreen {
+  margin: 2rem;
+}
+
+.contentScroll {
+  -webkit-overflow-scrolling: 'touch';
+}
+
+.fullScreenModal {
+  max-height: none;
+}
+
+.headerContainer {
+  flex-basis: auto;
+}
+
+.hiddenContainer {
+  /* This can't be overflow-y: hidden because of some problem with safari */
+  overflow: hidden;
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "folder": "01-introduction",
+    "title": {
+      "pt": "Admin Framework",
+      "en": "Admin Framework",
+      "es": ""
+    },
+    "description": {
+      "pt": "Configurações iniciais para o funcionamento do curso.",
+      "en": "",
+      "es": ""
+    }
+  },
+  {
+    "folder": "02-navigation-routes",
+    "title": {
+      "pt": "Navigation & Routes",
+      "en": "Navigation & Routes",
+      "es": ""
+    },
+    "description": {
+      "pt": "",
+      "en": "",
+      "es": ""
+    }
+  },
+  {
+    "folder": "03-enhancing-navigation",
+    "title": {
+      "pt": "Melhorando a Navegação",
+      "en": "Improving Navigation",
+      "es": ""
+    },
+    "description": {
+      "pt": "",
+      "en": "",
+      "es": ""
+    }
+  },
+  {
+    "folder": "04-sub-sections",
+    "title": {
+      "pt": "Sub Seções",
+      "en": "Sub Sections",
+      "es": ""
+    },
+    "description": {
+      "pt": "",
+      "en": "",
+      "es": ""
+    }
+  },
+  {
+    "folder": "05-look-n-feel",
+    "title": {
+      "pt": "Homogeneidade visual",
+      "en": "Look'n Feel",
+      "es": ""
+    },
+    "description": {
+      "pt": "",
+      "en": "",
+      "es": ""
+    }
+  },
+  {
+    "folder": "06-connecting-to-service",
+    "title": {
+      "pt": "Conectando a um Serviço",
+      "en": "Connecting to a Service",
+      "es": ""
+    },
+    "description": {
+      "pt": "",
+      "en": "",
+      "es": ""
+    }
+  }
+]

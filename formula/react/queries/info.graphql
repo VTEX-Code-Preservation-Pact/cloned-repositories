@@ -1,0 +1,7 @@
+query Info ($edition: String!) {
+  info (edition: $edition) {
+    status
+    timeRemainingSeconds
+    timeTotalSeconds
+  }
+}

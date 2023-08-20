@@ -1,0 +1,47 @@
+type Query {
+  getDataList: [Record]
+  getPolygons: Items
+}
+
+type Record {
+  customerClass: String
+  polygon: String
+  imageProtocolId: String
+  desktopUrl: String
+  mobileUrl: String
+  hrefImg: String
+}
+
+type Items {
+  polygons: [String]
+}
+
+type Mutation {
+  saveDataInfo(
+    customerClassValue: String
+    polygon: String
+    url: String
+    urlMobile: String
+    hrefImg: String
+    idImg: String
+  ): Data
+  removeFromList(
+    customerClass: String
+    polygon: String
+    imageProtocolId: String
+  ): DataArg
+}
+
+type DataArg {
+  customerClass: String
+  polygon: String
+  imageProtocolId: String
+}
+type Data {
+  customerClassValue: String
+  polygon: String
+  url: String!
+  urlMobile: String!
+  hrefImg: String!
+  idImg: String!
+}

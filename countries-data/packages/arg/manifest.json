@@ -1,0 +1,9 @@
+{
+  "vendor": "vtex",
+  "name": "country-data-arg",
+  "version": "0.1.0",
+  "builders": {
+    "vtex.country-data-settings": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

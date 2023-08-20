@@ -1,0 +1,26 @@
+type PostalCodeData {
+  forgottenURL: String
+}
+
+union AdditionalFieldData = PostalCodeData
+
+type FieldOptionData {
+  label: String!
+  value: String!
+}
+
+type Field {
+  label: String!
+  name: String
+  hidden: Boolean
+  maxLength: Int
+  size: String
+  required: Boolean
+  autoComplete: String
+  optionsCaption: String
+  options: [FieldOptionData!]
+  elementName: String
+  mask: String
+  additionalData: AdditionalFieldData
+  pattern: String
+}

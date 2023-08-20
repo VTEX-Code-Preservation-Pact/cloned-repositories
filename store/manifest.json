@@ -1,0 +1,283 @@
+{
+  "vendor": "vtex",
+  "name": "store",
+  "version": "2.131.1",
+  "title": "VTEX Store",
+  "description": "The VTEX basic store.",
+  "builders": {
+    "store": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.store-indexer": "0.x",
+    "vtex.store-resources": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store-header": "2.x",
+    "vtex.store-footer": "2.x",
+    "vtex.pwa-graphql": "1.x",
+    "vtex.styleguide": "9.x",
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.search-result": "3.x",
+    "vtex.login": "2.x",
+    "vtex.my-account": "1.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.product-context": "0.x",
+    "vtex.blog-interfaces": "0.x",
+    "vtex.open-graph": "1.x",
+    "vtex.structured-data": "0.x",
+    "vtex.pwa-components": "0.x",
+    "vtex.order-manager": "0.x",
+    "vtex.order-items": "0.x",
+    "vtex.product-specification-badges": "0.x",
+    "vtex.product-review-interfaces": "1.x",
+    "vtex.rich-text": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.telemarketing": "2.x"
+  },
+  "settingsSchema": {
+    "title": "admin/store.title",
+    "type": "object",
+    "bindingBounded": true,
+    "properties": {
+      "storeName": {
+        "title": "admin/store.storeName.title",
+        "type": "string"
+      },
+      "requiresAuthorization": {
+        "title": "admin/store.requiresAuthorization.title",
+        "type": "boolean"
+      },
+      "titleTag": {
+        "title": "admin/store.titleTag.title",
+        "type": "string"
+      },
+      "metaTagDescription": {
+        "title": "admin/store.metaTagDescription.title",
+        "type": "string"
+      },
+      "metaTagRobots": {
+        "title": "admin/store.metaTagRobots.title",
+        "type": "string",
+        "description": "admin/store.metaTagRobots.description"
+      },
+      "faviconLinks": {
+        "title": "admin/store.faviconLinks.title",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "rel": {
+              "title": "admin/store.faviconLinks.rel.title",
+              "type": "string",
+              "description": "admin/store.faviconLinks.rel.description"
+            },
+            "type": {
+              "title": "admin/store.faviconLinks.type.title",
+              "type": "string",
+              "description": "admin/store.faviconLinks.type.description"
+            },
+            "sizes": {
+              "title": "admin/store.faviconLinks.sizes.title",
+              "type": "string",
+              "pattern": "^[0-9]+x[0-9]+$",
+              "description": "admin/store.faviconLinks.sizes.description"
+            },
+            "href": {
+              "title": "admin/store.faviconLinks.href.title",
+              "type": "string"
+            }
+          },
+          "required": [
+            "rel",
+            "href"
+          ]
+        },
+        "description": "admin/store.faviconLinks.description"
+      },
+      "searchTermPath": {
+        "title": "admin/store.searchTermPath.title",
+        "type": "string",
+        "description": "admin/store.searchTermPath.description"
+      },
+      "advancedSettings": {
+        "title": "admin/store.advancedSettings.title",
+        "type": "object",
+        "properties": {
+          "enableOrderFormOptimization": {
+            "title": "admin/store.advancedSettings.enableOrderFormOptimization.title",
+            "type": "boolean",
+            "default": false,
+            "description": "admin/store.advancedSettings.enableOrderFormOptimization.description"
+          },
+          "enableServiceWorker": {
+            "title": "admin/store.advancedSettings.enableServiceWorker.title",
+            "type": "boolean",
+            "default": true,
+            "description": "admin/store.advancedSettings.enableServiceWorker.description"
+          },
+          "enableCriticalCSS": {
+            "title": "admin/store.advancedSettings.enableCriticalCSS.title",
+            "type": "boolean",
+            "default": false,
+            "description": "admin/store.advancedSettings.enableCriticalCSS.description"
+          },
+          "enableCriticalCSSOnSearch": {
+            "title": "admin/store.advancedSettings.enableCriticalCSSOnSearch.title",
+            "type": "boolean",
+            "default": false,
+            "description": "admin/store.advancedSettings.enableCriticalCSSOnSearch.description"
+          },
+          "enableCriticalCSSOnCustom": {
+            "title": "admin/store.advancedSettings.enableCriticalCSSOnCustom.title",
+            "type": "boolean",
+            "default": false,
+            "description": "admin/store.advancedSettings.enableCriticalCSSOnCustom.description"
+          },
+          "enableCriticalCSSOnProduct": {
+            "title": "admin/store.advancedSettings.enableCriticalCSSOnProduct.title",
+            "type": "boolean",
+            "default": false,
+            "description": "admin/store.advancedSettings.enableCriticalCSSOnProduct.description"
+          },
+          "enableCSSConcatenation": {
+            "title": "admin/store.advancedSettings.enableCSSConcatenation.title",
+            "description": "admin/store.advancedSettings.enableCSSConcatenation.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enablePrefetch": {
+            "title": "admin/store.advancedSettings.enablePrefetch.title",
+            "description": "admin/store.advancedSettings.enablePrefetch.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableLazyRuntime": {
+            "title": "admin/store.advancedSettings.enableLazyRuntime.title",
+            "description": "admin/store.advancedSettings.enableLazyRuntime.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableMenuRenderingOptimization": {
+            "title": "admin/store.advancedSettings.enableMenuRenderingOptimization.title",
+            "description": "admin/store.advancedSettings.enableMenuRenderingOptimization.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableSearchRenderingOptimization": {
+            "title": "admin/store.advancedSettings.enableSearchRenderingOptimization.title",
+            "description": "admin/store.advancedSettings.enableSearchRenderingOptimization.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableAsyncScripts": {
+            "title": "admin/store.advancedSettings.enableAsyncScripts.title",
+            "description": "admin/store.advancedSettings.enableAsyncScripts.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableConcurrentMode": {
+            "title": "admin/store.advancedSettings.enableConcurrentMode.title",
+            "description": "admin/store.advancedSettings.enableConcurrentMode.description",
+            "type": "boolean",
+            "default": true
+          },
+          "enableFiltersFetchOptimization": {
+            "title": "admin/store.advancedSettings.enableFiltersFetchOptimization.title",
+            "description": "admin/store.advancedSettings.enableFiltersFetchOptimization.description",
+            "type": "boolean",
+            "default": false
+          },
+          "enableFullSSROnProduct": {
+            "title": "admin/store.advancedSettings.enableFullSSROnProduct.title",
+            "description": "admin/store.advancedSettings.enableFullSSROnProduct.description",
+            "type": "boolean",
+            "default": false
+          },
+          "enableLazyFooter": {
+            "title": "admin/store.advancedSettings.enableLazyFooter.title",
+            "description": "admin/store.advancedSettings.enableLazyFooter.description",
+            "type": "boolean",
+            "default": false
+          },
+          "enableLazyFold": {
+            "title": "admin/store.advancedSettings.enableLazyFold.title",
+            "description": "admin/store.advancedSettings.enableLazyFold.description",
+            "type": "boolean",
+            "default": false
+          },
+          "enablePageNumberTitle": {
+            "title": "admin/store.advancedSettings.enablePageNumberTitle.title",
+            "description": "admin/store.advancedSettings.enablePageNumberTitle.description",
+            "type": "boolean",
+            "default": false
+          },
+          "canonicalWithoutUrlParams": {
+            "title": "admin/store.advancedSettings.canonicalWithoutUrlParams.title",
+            "description": "admin/store.advancedSettings.canonicalWithoutUrlParams.description",
+            "type": "boolean",
+            "default": false
+          },
+          "removeStoreNameTitle": {
+            "title": "admin/store.advancedSettings.removeStoreNameTitle.title",
+            "description": "admin/store.advancedSettings.removeStoreNameTitle.description",
+            "type": "boolean",
+            "default": false
+          },
+          "enableCustomCurrencySymbol": {
+            "title": "admin/store.advancedSettings.enableCustomCurrencySymbol.title",
+            "description": "admin/store.advancedSettings.enableCustomCurrencySymbol.description",
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    },
+    "dependencies": {
+      "requiresAuthorization": {
+        "oneOf": [
+          {
+            "properties": {
+              "requiresAuthorization": {
+                "enum": [
+                  false
+                ]
+              }
+            }
+          },
+          {
+            "properties": {
+              "requiresAuthorization": {
+                "enum": [
+                  true
+                ]
+              },
+              "b2bEnabled": {
+                "title": "admin/store.b2benabled.title",
+                "type": "string",
+                "format": "read-only",
+                "default": "true"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "settingsUiSchema": {
+    "requiresAuthorization": {
+      "ui:widget": "hidden"
+    },
+    "b2bEnabled": {
+      "ui:disabled": "true"
+    },
+    "ui:order": [
+      "storeName",
+      "requiresAuthorization",
+      "b2bEnabled",
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "type": "text",
+    "name": "email",
+    "placeholder": "store/checkoutless.register.email",
+    "errorMessage": "store/checkoutless.register.emailError",
+    "disabled": true,
+    "minLength": null,
+    "maxLength": null
+  },
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "store/checkoutless.register.name",
+    "errorMessage": "store/checkoutless.register.nameError",
+    "disabled": false,
+    "minLength": 1,
+    "maxLength": 40
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "store/checkoutless.register.lastname",
+    "errorMessage": "store/checkoutless.register.lastnameError",
+    "disabled": false,
+    "minLength": 1,
+    "maxLength": 40
+  },
+  {
+    "type": "text",
+    "name": "phone",
+    "placeholder": "store/checkoutless.register.phone",
+    "errorMessage": "store/checkoutless.register.phoneError",
+    "disabled": false,
+    "minLength": 7,
+    "maxLength": 10
+  },
+  {
+    "type": "text",
+    "name": "document",
+    "placeholder": "store/checkoutless.register.document",
+    "errorMessage": "store/checkoutless.register.documentError",
+    "disabled": false,
+    "minLength": 1,
+    "maxLength": 10
+  }
+]

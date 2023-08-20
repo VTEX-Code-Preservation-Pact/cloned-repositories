@@ -1,0 +1,19 @@
+{
+  "Author": "Auteur",
+  "Draft": "Brouillon",
+  "Live": "En direct",
+  "Name": "Nom",
+  "Type": "Type",
+  "High": "Haute",
+  "Low": "Basse",
+  "Medium": "Moyen",
+  "of": "le",
+  "Search": "Rechercher",
+  "Content": "Contenu",
+  "Hide all": "Tout masquer",
+  "Show all": "Tout afficher",
+  "Line density": "Densité de ligne",
+  "Show rows": "Afficher les lignes",
+  "Last update": "Dernière mise à jour",
+  "Toggle visible fields": "Basculer les champs visibles"
+}

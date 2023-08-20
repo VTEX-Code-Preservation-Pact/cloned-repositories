@@ -1,0 +1,17 @@
+{
+  "sourceMap": true,
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "target": "es2019",
+    "lib": ["es2019"],
+    "outDir": "build",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "experimentalDecorators": true
+  },
+  "include": ["**/*.ts", "**/*.d.ts"],
+  "exclude": ["**/*.test.ts", "**/__tests__", "build"]
+}

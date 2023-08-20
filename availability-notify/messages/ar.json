@@ -1,0 +1,22 @@
+{
+  "store/availability-notify.title": "هذا المنتج غير متوفر الآن",
+  "store/availability-notify.notify-label": "أريد أن أعرف متى يصبح هذا المنتج متاحًا",
+  "store/availability-notify.email-placeholder": "البريد الإلكتروني",
+  "store/availability-notify.name-placeholder": "الإسم",
+  "store/availability-notify.send-label": "إرسال",
+  "store/availability-notify.invalid-email": "عنوان بريد إلكترني غير صالح",
+  "store/availability-notify.added-message": "تم تسجيل البريد الإلكتروني بنجاح",
+  "store/availability-notify.error-register": "البريد الإلكتروني موجود بالفعل",
+  "store/availability-notify.error-message": "محاولة فاشلة، الرجاء المحاولة مرة أخرى",
+  "admin/availability-notify.menu.label": "إشعار التوافر",
+  "admin/request.menu.label": "إشعار التوافر",
+  "admin/settings.download": "طلبات التحميل",
+  "admin/settings.process-unsent": "عملية غير مرسلة",
+  "admin/settings.verify-availability": "التحقق من التوافر",
+  "admin/settings.marketplace-to-notify": "السوق (السوق) للإشعار",
+  "admin/settings.download-helptext": "تحميل ملف XLS لجميع سجلات طلب الإشعارات.",
+  "admin/settings.process-unsent-helptext": "معالجة جميع الطلبات غير المرسلة لإخطار وتنزيل ملف XLS من النتائج.",
+  "admin/settings.verify-availability-helptext": "يشغل محاكاة الشحن للتحقق من أنه يمكن شحن العنصر إلى المتجر قبل إرسال إشعار.",
+  "admin/settings.marketplace-to-notify-helptext": "يسمح لحساب البائع بتحديد قائمة مفصولة بفواصل بأسماء حسابات السوق للإخطار بتحديثات المخزون.",
+  "admin/settings.label": "الإعدادات"
+}

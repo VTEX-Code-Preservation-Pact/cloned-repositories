@@ -1,0 +1,20 @@
+{
+  "vendor": "vtex",
+  "name": "avatax-br",
+  "version": "2.2.0",
+  "title": "Avatax Admin",
+  "description": "Admin part of avatax app",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "admin": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.avatax-br-service": "1.x",
+    "vtex.avatax-br-tax-protocol": "1.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

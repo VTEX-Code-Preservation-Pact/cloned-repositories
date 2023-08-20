@@ -1,0 +1,55 @@
+{
+  "vendor": "vtex",
+  "name": "tradetracker",
+  "version": "0.0.2",
+  "title": "Tradetracker",
+  "description": "Tradetracker",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x"
+  },
+  "mustUpdateAt": "2019-10-01",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Tradetracker",
+    "type": "object",
+    "properties": {
+      "tradeTrackerCampaignID": {
+        "title": "Campaign ID",
+        "description": "Enter your Tradetracker Campaign ID",
+        "type": "string"
+      },
+      "tradeTrackerProductID": {
+        "title": "Product ID",
+        "description": "Enter your Tradetracker Product ID",
+        "type": "string"
+      },
+      "tradeTrackerDescrMerchant": {
+        "title": "Tradetracker Merchant Description",
+        "description": "Enter your Tradetracker Merchant Description",
+        "type": "string"
+      },
+      "tradeTrackerDescrAffiliate": {
+        "title": "Tradetracker Affiliate Description",
+        "description": "Enter your Tradetracker Affiliate Description",
+        "type": "string"
+      }
+    }
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh",
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

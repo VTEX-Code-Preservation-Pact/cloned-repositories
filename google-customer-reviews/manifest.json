@@ -1,0 +1,87 @@
+{
+  "name": "google-customer-reviews",
+  "vendor": "vtex",
+  "version": "1.1.1",
+  "title": "Google Customer Reviews",
+  "description": "This application allows Google to collect and post comments from customers who have made a purchase on your website.",
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.css-handles": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Google Customer Reviews",
+    "type": "object",
+    "properties": {
+      "merchantId": {
+        "title": "Merchant ID",
+        "type": "string"
+      },
+      "passGtin": {
+        "title": "Pass GTINs",
+        "type": "boolean",
+        "default": true
+      },
+      "optInStyle": {
+        "title": "Opt-in style",
+        "description": "Specifies how the opt-in module's dialog box is displayed",
+        "type": "string",
+        "default": "CENTER_DIALOG",
+        "enum": [
+          "CENTER_DIALOG",
+          "BOTTOM_RIGHT_DIALOG",
+          "BOTTOM_LEFT_DIALOG",
+          "TOP_RIGHT_DIALOG",
+          "TOP_LEFT_DIALOG",
+          "BOTTOM_TRAY"
+        ],
+        "enumNames": [
+          "Center",
+          "Bottom right",
+          "Bottom left",
+          "Top right",
+          "Top left",
+          "Bottom"
+        ]
+      },
+      "showBadge": {
+        "title": "Show badge",
+        "type": "boolean",
+        "default": true
+      },
+      "badgePosition": {
+        "title": "Badge position",
+        "description": "Renders the badge in one of the following locations",
+        "type": "string",
+        "default": "BOTTOM_RIGHT",
+        "enum": [
+          "BOTTOM_RIGHT",
+          "BOTTOM_LEFT",
+          "INLINE"
+        ],
+        "enumNames": [
+          "Float in the bottom right",
+          "Float in the bottom left",
+          "Block position"
+        ]
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

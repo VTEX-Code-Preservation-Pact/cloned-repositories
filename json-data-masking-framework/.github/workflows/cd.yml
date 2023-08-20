@@ -1,0 +1,34 @@
+name: CD
+
+on: 
+  push: 
+    tags: 
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+    
+jobs:
+  build:
+
+    env:
+      SOLUTION: 'src/JsonDataMasking.sln'
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1.0.5
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '6.0.x'
+
+    - name: Restore dependencies
+      run: nuget restore $SOLUTION
+
+    - name: Build
+      run: dotnet build $SOLUTION -p:Version=${GITHUB_REF_NAME:1} --no-restore
+      
+    - name: Publish
+      run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}}

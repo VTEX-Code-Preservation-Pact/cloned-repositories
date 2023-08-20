@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "lint": "tsc --noEmit && eslint --quiet --fix --ext ts,tsx .",
+    "test": "vtex-test-tools test --passWithNoTests"
+  },
+  "dependencies": {
+    "apollo-client": "^2.6.3",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.6",
+    "react-intl": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.2.2",
+    "@types/ramda": "^0.26.33",
+    "@types/react": "^16.8.22",
+    "@types/react-intl": "^2.3.18",
+    "@vtex/test-tools": "^0.3.2",
+    "@vtex/tsconfig": "^0.2.0",
+    "typescript": "3.9.7",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
+    "vtex.native-types": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.5/public/@types/vtex.native-types",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.126.5/public/@types/vtex.render-runtime"
+  },
+  "version": "0.2.1"
+}

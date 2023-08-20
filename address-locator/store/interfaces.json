@@ -1,0 +1,28 @@
+{
+  "address-manager": {
+    "required": ["address-search"],
+    "allowed": ["address-redeem", "pickup-selector"],
+    "component": "index"
+  },
+  "challenge.address": {
+    "component": "AddressChallenge"
+  },
+  "store.address": {
+    "before": ["header"],
+    "required": ["address-manager"]
+  },
+  "change-address": {
+    "required": ["address-search"],
+    "allowed": ["pickup-selector"],
+    "component": "ChangeAddress"
+  },
+  "address-search": {
+    "component": "AddressSearch"
+  },
+  "address-redeem": {
+    "component": "AddressRedeem"
+  },
+  "pickup-selector": {
+    "component": "PickupSelector"
+  }
+}

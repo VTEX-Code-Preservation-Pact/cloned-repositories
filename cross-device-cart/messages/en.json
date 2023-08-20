@@ -1,0 +1,16 @@
+{
+  "store/crossCart.challenge.cta": "Do it",
+  "store/crossCart.challenge.text": "It seems you left your cart in another device. Do you want to recover it?",
+  "store/crossCart.toast.success": "Your last cart has been successfully added",
+  "store/crossCart.toast.error": "An error occurred while retrieving your cart",
+  "admin/cross-device-cart.title": "Cross Device Cart",
+  "admin/cross-device-cart.subtitle": "App Settings",
+  "admin/cross-device-cart.error": "There was a problem loading the application settings",
+  "admin/cross-device-cart.automatic-toggle-automatic": "Automatic",
+  "admin/cross-device-cart.automatic-toggle-manual": "Manual",
+  "admin/cross-device-cart.automatic-toggle-help-text": "Toggle between Automatic and Manual mode",
+  "admin/cross-device-cart.automatic-toggle-explanation": "When the 'Automatic' mode is selected the user will not be prompted to take any action. If 'Manual' mode is selected the user will need to confirm what they want to do with the items that were previously in the cart.",
+  "admin/cross-device-cart.strategy-explanation.replace": "Replace all items on current cart with the items on the saved Cart.",
+  "admin/cross-device-cart.strategy-explanation.combine": "Combine items in the current cart with the saved Cart, adding items quantities.",
+  "admin/cross-device-cart.strategy-explanation.add": "Add missing items from the current cart to the saved Cart, doesn't add duplicate quantities."
+}

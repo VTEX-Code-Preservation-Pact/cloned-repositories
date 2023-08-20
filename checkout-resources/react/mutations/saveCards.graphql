@@ -1,0 +1,13 @@
+mutation SaveCards(
+  $paymentData: [PaymentDataInput!]!
+  $cardSessionId: String!
+) {
+  saveCards(paymentData: $paymentData, cardSessionId: $cardSessionId) {
+    tokenizedCards {
+      token
+      bin
+      lastDigits
+      paymentSystem
+    }
+  }
+}

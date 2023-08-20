@@ -1,0 +1,18 @@
+input CommissionsBySKUFilterInput {
+  id: ID
+  refId: String
+}
+
+input CommissionsBySKUSortingInput {
+  field: CommissionsBySKUSortingField!
+  order: SortingOrder!
+}
+
+input UpdateCommissionInput {
+  id: ID!
+  commission: Int!
+}
+
+enum CommissionsBySKUSortingField {
+  commission
+}

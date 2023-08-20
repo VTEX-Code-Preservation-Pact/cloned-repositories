@@ -1,0 +1,23 @@
+scalar InputValues
+
+enum Strategy {
+  REPLACE
+  COMBINE
+  ADD
+}
+
+type CrossDeviceCartSettings {
+  isAutomatic: Boolean
+  strategy: Strategy
+}
+
+input SaveSettings {
+  isAutomatic: Boolean
+  strategy: Strategy
+}
+
+"""
+ We don't actually care what subfields are returned as this is used mainly
+by the setOrderForm callback; used to update the storefront context
+"""
+scalar OrderForm

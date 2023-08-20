@@ -1,0 +1,9 @@
+{
+  "alert.connectionError": "Si è verificato un errore nel collegamento con il sistema, prova a ricaricare la pagina.",
+  "alert.unauthenticated": "Devi essere autenticato per procedere con quest'azione.",
+  "alert.reload": "Ricarica",
+  "alert.unknownError": "Si è verificato un errore, si prega di riprovare.",
+  "commons.back": "Indietro",
+  "progressBar.package.progress": "Stato del pacco",
+  "progressBar.order.status": "Stato dell'ordine"
+}

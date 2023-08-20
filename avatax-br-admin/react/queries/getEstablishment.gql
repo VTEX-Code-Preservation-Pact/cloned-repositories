@@ -1,0 +1,22 @@
+query getEstablishment {
+  establishments @context(provider: "vtex.avatax-br-service@1.x") {
+    id
+    activitySector
+    icmsTaxPayer
+    taxRegime
+    entityType
+    stateTaxId
+    street
+    neighborhood
+    zipCode
+    city
+    state
+    streetNumber
+    complement
+    phone
+    cnpj
+    suframa
+    dockId
+    dockName
+  }
+}

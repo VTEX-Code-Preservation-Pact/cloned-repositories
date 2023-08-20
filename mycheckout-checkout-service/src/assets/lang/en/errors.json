@@ -1,0 +1,22 @@
+{
+  "bad_request": "Bad Request",
+  "bad_gateway": "An unexpected error has occurred",
+  "internal_error": "An unexpected error has occurred",
+  "external_api_error": "An unexpected error has occurred in the external api request",
+  "not_found": "Resource does not exist",
+  "user_doesnt_exist": "User does not exist",
+  "address_doesnt_exist": "Address does not exist",
+  "card_doesnt_exist": "Card does not exist",
+  "invalid_code": "The code you had sent is invalid",
+  "invalid_cvv": "The cvv you had sent is invalid",
+  "expired_code": "The code you had sent has expired",
+  "locked_action": "This action is not available at this time, try later",
+  "non_existent_code": "This user does not have code assign, please login",
+  "forbidden": "Forbidden resource",
+  "vtex_create_order": "Error creating order in VTEX",
+  "paymentez_create_transaction": "Error creating transaction in Paymentez",
+  "create_transaction": "Error creating transaction",
+  "link_exist": "Already exist a link active between these accounts",
+  "mercadopago_create_transaction": "Error creating transaction in Mercadopago",
+  "process_transaction_queue": "Can't create process transaction queue"
+}

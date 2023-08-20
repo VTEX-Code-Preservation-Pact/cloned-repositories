@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "organizations",
+  "version": "1.10.0",
+  "title": "VTEX Organizations App",
+  "description": "",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.my-account": "1.x",
+    "vtex.css-handles": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.organizations-graphql": "1.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.my-account-commons": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

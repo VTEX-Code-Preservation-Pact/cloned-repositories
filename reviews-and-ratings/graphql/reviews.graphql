@@ -1,0 +1,36 @@
+query Reviews(
+  $searchTerm: String
+  $from: Int
+  $to: Int
+  $orderBy: String
+  $status: String
+) @context(provider: "vtex.reviews-and-ratings") {
+  reviews(
+    searchTerm: $searchTerm
+    from: $from
+    to: $to
+    orderBy: $orderBy
+    status: $status
+  ) {
+    data {
+      id
+      productId
+      rating
+      title
+      text
+      reviewerName
+      location
+      locale
+      shopperId
+      reviewDateTime
+      verifiedPurchaser
+      sku
+      approved
+    }
+    range {
+      total
+      from
+      to
+    }
+  }
+}

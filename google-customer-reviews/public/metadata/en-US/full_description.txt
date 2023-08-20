@@ -1,0 +1,21 @@
+## About
+
+This application allows integration with the free service offered by Google to collect reviews and comments from customers who have purchased at your store.
+The information collected can be useful for monitoring, through the Google Merchant Center, how customers' experiences are going, also for Google AdWords and for product presentation on Google Shopping.
+
+## Functionalities
+
+- Sending e-mail for customer evaluation with the "Google Customer Reviews" opt-in;
+- Google stamp with the seller rating (optional);
+- Customer opinion survey form (optional);
+- Seller rating on Google Shopping.
+
+## How to set up
+
+1. Install the app from VTEX App Store;
+2. Add your Merchant Center ID. You can get this value from the [Google Merchant Center](https://www.google.com/retail/solutions/merchant-center/);
+3. Save your changes.
+
+## Comments
+
+- To use the application in your store and monitor the data collected, you must have an account at Google Merchant Center.

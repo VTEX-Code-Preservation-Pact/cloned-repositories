@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "timer": {
+      "path": "/timer"
+    }
+  },
+  "extensions": {
+    "timer": {
+      "component": "index"
+    }
+  }
+}

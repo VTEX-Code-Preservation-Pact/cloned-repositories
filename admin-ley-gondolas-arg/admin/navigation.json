@@ -1,0 +1,12 @@
+{
+  "section": "products",
+  "subSection": "catalog",
+  "subSectionItems": [
+    {
+      "isNew": true,
+      "labelId": "admin/admin.app.navigation.title",
+      "path": "/admin/ley-gondolas"
+    }
+  ],
+  "searchKeyWordsHelpers": "admin/admin.app.navigation.search.kws"
+}

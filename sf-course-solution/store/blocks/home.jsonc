@@ -1,0 +1,39 @@
+{
+  "store.home": { 
+    "blocks": [
+      "rich-text",
+      "info-card#button",
+      "info-card#link"
+    ]
+  },
+  "rich-text": { 
+    "props": { 
+      "text":  "*Hello, World!*",
+      "textPosition":  "RIGHT"
+    }
+  },
+  "info-card#button": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionMode": "button",
+      "callToActionText": "BUY",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#link": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionMode": "link",
+      "callToActionText": "BUY",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  }
+}

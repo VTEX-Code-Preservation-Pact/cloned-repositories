@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: checkout
+data:
+  node_env: development
+  # file-like keys
+  checkout.properties: |
+    DB=checkout.qa
+    DB_REGION=us-east-1
+    AWS_QUEUE_ORDER=CheckoutlessTransactionProcessorQA
+    AWS_STYLES_BUCKET=mycheckout-custom-css-qa
+    AWS_STYLES_CF_DISTRIBUTION_ID=null
+    TWILIO_ACCOUNT_SID=AC7865339564b37dc458343a901cbb007e
+    TWILIO_PHONE_NUMBER=+16085356390
+    KUIKPAY_API_PAYMENTS=http://payments-srv:8080/api/payments

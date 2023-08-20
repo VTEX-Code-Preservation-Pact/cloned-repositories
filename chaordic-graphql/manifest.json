@@ -1,0 +1,40 @@
+{
+  "vendor": "vtex",
+  "name": "chaordic-graphql",
+  "version": "2.6.0",
+  "builders": {
+    "graphql": "1.x",
+    "node": "4.x",
+    "docs": "0.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "vbase-read-write",
+      "attrs": {
+        "bucket": "secret_keys"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.linximpulse.com",
+        "path": "engage/search/v3/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "recs.chaordicsystems.com",
+        "path": "/v0/*"
+      }
+    }
+  ],
+  "mustUpdateAt": "2022-09-05",
+  "categories": [],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "bash publish.sh"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,91 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: eks-console-dashboard-restricted-access-clusterrole
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  - namespaces
+  verbs:
+  - get
+  - list
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: eks-console-dashboard-restricted-access-clusterrole-binding
+subjects:
+- kind: Group
+  name: eks-console-dashboard-restricted-access-group
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: ClusterRole
+  name: eks-console-dashboard-restricted-access-clusterrole
+  apiGroup: rbac.authorization.k8s.io
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: ismaelcalle
+  name: eks-console-dashboard-restricted-access-role
+rules:
+- apiGroups:
+  - ""
+  resources: 
+  - pods
+  - services
+  - deployments
+  - secrets
+  - ingresses
+  - configmaps
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - patch
+  - update
+  - delete
+- apiGroups:
+  - apps
+  resources:
+  - pods
+  - services
+  - deployments
+  - secrets
+  - ingresses
+  - configmaps
+  - daemonsets
+  - statefulsets
+  - replicasets
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - patch
+  - update
+  - delete
+- apiGroups:
+  - batch
+  resources:
+  - jobs
+  verbs:
+  - get
+  - list
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: eks-console-dashboard-restricted-access-role-binding
+  namespace: ismaelcalle
+subjects:
+- kind: Group
+  name: eks-console-dashboard-restricted-access-group
+  apiGroup: rbac.authorization.k8s.io
+roleRef:
+  kind: Role
+  name: eks-console-dashboard-restricted-access-role
+  apiGroup: rbac.authorization.k8s.io

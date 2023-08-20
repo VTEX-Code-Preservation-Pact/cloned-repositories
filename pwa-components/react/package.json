@@ -1,0 +1,26 @@
+{
+  "name": "pwa-components",
+  "version": "0.4.2",
+  "description": "Components related to PWA features",
+  "scripts": {
+    "pretest": "yarn",
+    "test": "vtex-test-tools test --passWithNoTests"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.7",
+    "@types/prop-types": "^15.7.3",
+    "@types/react": "^16.9.3",
+    "@vtex/test-tools": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "vtex.pwa-graphql": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.pwa-graphql@1.10.0/public/@types/vtex.pwa-graphql",
+    "vtex.render-runtime": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.render-runtime@8.66.2/public/@types/vtex.render-runtime",
+    "vtex.store-resources": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.store-resources@0.30.0/public/@types/vtex.store-resources",
+    "vtex.styleguide": "http://vtex.vteximg.com.br/_v/public/typings/v1/vtex.styleguide@9.87.2/public/@types/vtex.styleguide"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-intl": "2.8.0"
+  }
+}

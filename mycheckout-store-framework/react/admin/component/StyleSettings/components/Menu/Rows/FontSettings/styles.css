@@ -1,0 +1,149 @@
+.dropdownContainer {
+  position: relative;
+  max-width: 100%;
+  text-overflow: ellipsis;
+}
+
+.advancedButtonContainer {
+  width: 100%;
+}
+
+.dropdownInputContainer {
+  background: #ffffff;
+}
+
+.dropdownInput {
+  background: none;
+  border: 2px solid #e3e4e6;
+  border-radius: 4px;
+  width: 100%;
+  font-family: 'Fabriga';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  text-align: start;
+  position: relative;
+  z-index: 2;
+  height: 40px;
+  cursor: pointer;
+}
+
+.dropdownInput p {
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  height: 100%;
+  max-height: 100%;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.dropdownInputIconContainer {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  right: 10%;
+}
+
+.modalContainer {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid #e3e4e6;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  position: absolute;
+  z-index: 4;
+  margin-top: 2px;
+  min-width: 200px;
+}
+
+.dropdownButtonContainer {
+  padding: 10px 17.5px;
+  border: 1px solid #e3e4e6;
+}
+
+.dropdownElementContainer {
+  padding: 0;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.dropdownElementContainer::-webkit-scrollbar {
+  width: 2px;
+}
+
+.dropdownElementContainer::-webkit-scrollbar-track {
+  background: #f1f4f5;
+}
+
+.dropdownElementContainer::-webkit-scrollbar-thumb {
+  background: #c2c3c4;
+  border-radius: 5px;
+}
+
+.dropdownElement {
+  font-family: 'Fabriga';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #585959;
+  margin: 0;
+}
+
+.dropdownButton {
+  background: none;
+  border: 0;
+  line-height: normal;
+  font-family: 'Fabriga';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  width: 100%;
+  padding: 12px 0 12px 22px;
+  text-align: start;
+}
+
+.dropdownButton:hover {
+  background: #f2f4f5;
+}
+
+.dropdownButton:disabled {
+  background: none;
+}
+
+.dropdownButtonSelected {
+  background: #e0e9ff;
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalFrom {
+  width: 60%;
+}
+
+.modalCode {
+  background: #f2f2f1;
+  padding: 1rem;
+}
+
+.modalFrom div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

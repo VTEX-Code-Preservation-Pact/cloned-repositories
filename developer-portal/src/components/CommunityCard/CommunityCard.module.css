@@ -1,0 +1,31 @@
+.communityCard {
+  display: flex;
+  align-items: flex-start;
+  width: 20rem;
+  margin: 50px 0;
+}
+
+.communityCard img {
+  width: 25%;
+  padding-right: 7%;
+}
+
+.communityText {
+  display: inline-block;
+  vertical-align: super;
+}
+
+.communityText h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.communityText a {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.communityText p {
+  font-size: 15px;
+}

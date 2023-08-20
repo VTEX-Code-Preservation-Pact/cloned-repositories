@@ -1,0 +1,10 @@
+<script>
+  if ('{{ settings.accountKey }}'.length) {
+    window.__zendeskPixel = {
+      widget: JSON.parse(decodeURIComponent('{{ settings.webWidget }}')),
+      titlePathPreffix: decodeURIComponent('{{ settings.titlePreffix }}'),
+      useAnalytics: decodeURIComponent('{{ settings.analytics }}') === 'true',
+      accountKey: '{{ settings.accountKey }}',
+    }
+  }
+</script>

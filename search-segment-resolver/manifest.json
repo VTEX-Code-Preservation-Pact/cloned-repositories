@@ -1,0 +1,19 @@
+{
+  "vendor": "vtex",
+  "name": "search-segment-resolver",
+  "version": "0.1.4",
+  "title": "Search Segment Resolver",
+  "description": "Implementation of the GraphQL schema for search segment API.",
+  "builders": {
+    "docs": "0.x",
+    "node": "6.x"
+  },
+  "dependencies": {
+    "vtex.messages": "1.x",
+    "vtex.search-segment-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.search-session": "0.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

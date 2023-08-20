@@ -1,0 +1,89 @@
+.modalContainer {
+  position: fixed;
+  background-color: var(--white-color);
+  box-shadow: 2px -2px 6px #00000029;
+  z-index: 1000000000000;
+  justify-content: center;
+  padding-top: 0;
+  overflow-y: auto;
+  padding: 0px 12px 11px 12px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  max-height: 40%;
+}
+
+.modalContainer .modalBodyWrapper {
+  margin-top: 40px;
+  position: relative;
+}
+
+.modalContainer .modalFull {
+  height: 100%;
+}
+
+.modalContainer .modalAuto {
+  height: auto;
+}
+
+@media screen and (min-width: 992px) {
+  .modalContainer {
+    padding: 0;
+    width: 44%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    max-height: 100%;
+    bottom: initial;
+    left: initial;
+    border-radius: 8px 0px 0px 0px;
+  }
+
+  .modalContainer::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f8f8f8;
+    height: 10px;
+  }
+
+  .modalContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #e8e8e8;
+  }
+
+  .modalContainer .modalBodyWrapper {
+    padding: 20px 24px 0 24px;
+    height: 100%;
+    max-height: calc(94% - 150px);
+    overflow-y: auto;
+  }
+
+  .modalContainer .modalBodyWrapper[data-showing-buy="false"] {
+    height: 100%;
+    max-height: 94%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .modalContainer {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modalContainer {
+    width: 36%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modalContainer {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .modalContainer {
+    width: 30%;
+  }
+}

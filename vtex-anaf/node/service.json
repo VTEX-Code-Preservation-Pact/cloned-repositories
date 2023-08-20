@@ -1,0 +1,19 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 5000,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "routes": {
+    "validateCUI": {
+      "path": "/anaf/validate-cui",
+      "public": true,
+      "settingsType": "workspace"
+    },
+    "getSettings": {
+      "path": "/anaf/get-settings",
+      "public": true,
+      "settingsType": "workspace"
+    }
+  }
+}

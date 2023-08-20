@@ -1,0 +1,6 @@
+dotnet/obj/
+dotnet/bin/
+dotnet-vtex-api/
+dotnet-wrapper/
+wrapper-core/
+wrapper-routing/

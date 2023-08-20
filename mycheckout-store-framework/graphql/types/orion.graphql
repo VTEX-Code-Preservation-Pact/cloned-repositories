@@ -1,0 +1,6 @@
+type AuthBnpl {
+  message: String
+  token: String
+  sessionToken: String
+  transactionId: String
+}

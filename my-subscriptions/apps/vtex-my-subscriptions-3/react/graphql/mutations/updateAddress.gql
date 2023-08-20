@@ -1,0 +1,29 @@
+mutation UpdateAddress(
+  $subscriptionId: ID!
+  $addressId: ID!
+  $addressType: String!
+) {
+  updateAddress(
+    subscriptionId: $subscriptionId
+    addressId: $addressId
+    addressType: $addressType
+  ) @context(provider: "vtex.subscriptions-graphql") {
+    cacheId
+    shippingAddress {
+      id
+      street
+      number
+      complement
+      neighborhood
+      city
+      state
+      country
+      postalCode
+      reference
+      geoCoordinate
+      receiverName
+      addressType
+    }
+    addressId
+  }
+}

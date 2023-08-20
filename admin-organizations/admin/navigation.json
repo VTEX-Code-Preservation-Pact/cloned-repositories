@@ -1,0 +1,18 @@
+{
+  "section": "accountSettings",
+  "titleId": "admin-authorization.navigation.label-group",
+  "subSection": "authorization",
+  "searchKeyWordsHelpers": "admin-authorization.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-authorization.navigation.label-permissions",
+      "path": "/admin/authorization/permissions",
+      "searchKeyWordsHelpers": "admin-authorization.navigation.permissions.search.kws"
+    },
+    {
+      "labelId": "admin-authorization.navigation.label-roles",
+      "path": "/admin/authorization/roles",
+      "searchKeyWordsHelpers": "admin-authorization.navigation.roles.search.kws"
+    }
+  ]
+}

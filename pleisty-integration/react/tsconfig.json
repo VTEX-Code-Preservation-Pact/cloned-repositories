@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noResolve": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "lib": ["es2017", "dom", "es2018.promise"],
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "typeRoots": ["node_modules/@types"],
+    "types": ["node", "jest"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./typings/*.d.ts", "./**/*.tsx", "./**/*.ts"],
+  "typeAcquisition": {
+    "enable": false
+  }
+}

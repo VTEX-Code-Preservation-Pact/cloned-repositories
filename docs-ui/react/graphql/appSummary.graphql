@@ -1,0 +1,24 @@
+query appSummary($appName: String, $locale: String) {
+  appSummary(appName: $appName, locale: $locale) {
+    markdown
+    chapterList {
+      path
+      title
+      articles {
+        path
+        title
+        articles {
+          path
+          title
+          articles {
+            path
+            title
+            articles {
+              path
+            }
+          }
+        }
+      }
+    }
+  }
+}

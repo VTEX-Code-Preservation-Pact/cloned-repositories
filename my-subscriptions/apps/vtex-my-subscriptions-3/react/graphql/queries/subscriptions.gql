@@ -1,0 +1,26 @@
+query Subscriptions($filter: [SubscriptionStatus!]) {
+  list: customerSubscriptions(statusList: $filter)
+    @context(provider: "vtex.subscriptions-graphql") {
+    id
+    cacheId
+    status
+    name
+    nextPurchaseDate
+    lastUpdate
+    items {
+      sku {
+        imageUrl
+        name
+        detailUrl
+        productName
+      }
+    }
+    plan {
+      frequency {
+        periodicity
+        interval
+      }
+      purchaseDay
+    }
+  }
+}

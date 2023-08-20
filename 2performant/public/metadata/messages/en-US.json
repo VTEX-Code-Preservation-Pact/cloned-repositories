@@ -1,0 +1,15 @@
+{
+"name": "2Performant Tracking Code",
+"headline": "2Performant marketing affiliation platform integration",
+"overview": "2Performant is Romania's foremost affiliate and influencer marketing platform and one of the largest such platforms in Eastern Europe. By using this platform, businesses can connect with partners, affiliates, and influencers in order to promote their products and promotions to a wider audience. This pixel app allows you to add the 2Performant tracking code to your store.",
+"features": [
+"Allows the integration of the 2Performant tracking code with your VTEX store",
+"Facilitates the tracking of your affiliate marketing campaigns",
+"Together with the Export Feeds app, facilitates the listing of your products on the 2Performant platform"
+],
+"additionalInformation": "This application requires a valid www.2performant.com account.\\n\\nNote that the 2Performant pixel app will not export your product feed into the 2Performant platform. To do that, you must use the Export Feeds app.",
+"websiteURL": "https://www.2performant.com",
+"support": {
+"url": "https://support.vtex.com/hc/requests"
+}
+}

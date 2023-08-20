@@ -1,0 +1,8 @@
+{
+  "pixel.google-customer-reviews": {
+    "component": "index"
+  },
+  "google-customer-review-badge": {
+    "component": "Badge"
+  }
+}

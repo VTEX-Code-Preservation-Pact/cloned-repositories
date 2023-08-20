@@ -1,0 +1,68 @@
+name: Colors
+
+docs:
+
+src: colors
+
+description: >
+
+base:
+
+modifiers:
+  - color^rebel-pink
+  - color^heavy-rebel-pink
+  - color^elite-purple
+  - color^near-black
+  - color^dark-gray
+  - color^mid-gray
+  - color^gray
+  - color^silver
+  - color^light-gray
+  - color^light-silver
+  - color^near-white
+  - color^white
+  - color^washed-blue
+  - color^light-blue
+  - color^blue
+  - color^heavy-blue
+  - color^light-marine
+  - color^marine
+  - color^serious-black
+  - color^green
+  - color^washed-green
+  - color^red
+  - color^washed-red
+  - color^yellow
+  - color^washed-yellow
+  - color^black-90
+  - color^black-80
+  - color^black-70
+  - color^black-60
+  - color^black-50
+  - color^black-40
+  - color^black-30
+  - color^black-20
+  - color^black-10
+  - color^black-05
+  - color^black-025
+  - color^black-0125
+  - color^white-90
+  - color^white-80
+  - color^white-70
+  - color^white-60
+  - color^white-50
+  - color^white-40
+  - color^white-30
+  - color^white-20
+  - color^white-10
+  - color^white-05
+  - color^white-025
+  - color^white-0125
+  - color^transparent
+
+
+media:
+
+tags:
+  - colors
+  - palette

@@ -1,0 +1,24 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 15,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "events": {
+    "updateMessage": {
+      "sender": "vtex.messages",
+      "keys": ["updateMessage"]
+    },
+    "receiveExportedMessages": {
+      "sender": "vtex.messages",
+      "keys": ["sendExportedMessages"]
+    }
+  },
+  "routes" : {
+    "listenToUpdates": {
+      "path": "/_v/translations/update",
+      "public": true,
+      "smartcache": false
+    }
+  }
+}

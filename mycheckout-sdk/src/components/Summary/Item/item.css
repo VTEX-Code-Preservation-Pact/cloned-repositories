@@ -1,0 +1,99 @@
+.itemContainer {
+  margin-bottom: 12px;
+}
+
+.itemContainer .itemUnavailable {
+  display: flex;
+  border-radius: 2px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.itemContainer .itemContent {
+  display: flex;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.itemContainer .itemDeleteContainer {
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.itemContainer .itemImageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.itemContainer .itemImageContainer  img {
+  max-width: none;
+}
+
+.itemContainer .itemOverlaySpinner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.itemContainer .itemRightContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.itemContainer .itemRightMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 8px 0px 8px;
+}
+.itemContainer .itemRightMiddle p {
+  font-size: 14px;
+}
+
+.itemContainer .itemRightMiddleName {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.itemContainer .itemText {
+  font-size: 12px !important;
+}
+
+.itemContainer .itemSkuSpecifications {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.itemContainer .itemPriceContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 8px 0px 8px;
+}
+
+.itemContainer .itemPriceContainer p {
+  font-size: 14px;
+}
+
+.itemContainer .itemPriceBold {
+  font-weight: var(--text-semi-bold);
+}
+
+@media screen and (min-width: 992px) {
+  .itemContainer {
+    padding: 0 16px;
+  }
+}

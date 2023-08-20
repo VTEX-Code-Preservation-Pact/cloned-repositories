@@ -1,0 +1,40 @@
+{
+  "name": "cybersource-fingerprint",
+  "vendor": "vtex",
+  "version": "1.0.2",
+  "title": "CyberSource Fingerprint",
+  "description": "",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "CyberSource Fingerprint",
+    "type": "object",
+    "properties": {
+      "orgId": {
+        "title": "Org ID",
+        "description": "To get this value, contact Braspag",
+        "type": "string"
+      },
+      "merchantId": {
+        "title": "Merchant ID",
+        "description": "To get this value, contact Braspag",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

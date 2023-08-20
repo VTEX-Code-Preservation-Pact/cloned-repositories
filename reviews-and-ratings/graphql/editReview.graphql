@@ -1,0 +1,16 @@
+mutation EditReview($id: String!, $review: EditReviewInput!) {
+  editReview(id: $id, review: $review)
+    @context(provider: "vtex.reviews-and-ratings") {
+    id
+    productId
+    rating
+    title
+    text
+    reviewerName
+    location
+    shopperId
+    reviewDateTime
+    verifiedPurchaser
+    sku
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "stack-layout": {
+    "component": "index",
+    "composition": "children",
+    "allowed": "*"
+  }
+}

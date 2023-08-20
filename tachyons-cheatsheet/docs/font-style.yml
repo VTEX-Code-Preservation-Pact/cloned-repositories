@@ -1,0 +1,25 @@
+name: Font styles
+
+docs: http://tachyons.io/docs/typography/font-style/
+
+src: font-style
+
+description:
+
+base:
+  - i = italic
+  - fs-normal = normal
+
+modifiers:
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - italic
+  - normal
+  - font-sytle

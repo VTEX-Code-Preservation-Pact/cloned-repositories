@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "test": "vtex-test-tools test"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "axios": "^0.24.0",
+    "browser-crypto": "^1.4.0",
+    "btoa": "^1.2.1",
+    "crypto-js": "^4.1.1",
+    "ramda": "^0.26.1"
+  },
+  "browser": {
+    "crypto": false
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.0",
+    "@types/ramda": "^0.26.5",
+    "@vtex/test-tools": "^1.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-vtex-react": "^4.1.0",
+    "graphql": "^14.5.4",
+    "prettier": "^1.18.2",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "3.9.7"
+  },
+  "version": "0.5.3"
+}

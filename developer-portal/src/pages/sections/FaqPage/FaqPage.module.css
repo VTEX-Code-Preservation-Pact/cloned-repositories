@@ -1,0 +1,46 @@
+.FaqPage {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem;
+}
+
+.sectionContent {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.FaqHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+  margin-right:170px;
+}
+
+.FaqHeader h3 {
+  font-size: 40px;
+  color: #141414;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  line-height: 50px;
+}
+
+.contentFaq h4 {
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1220px) {
+  .sectionContent {
+    flex-direction: column;
+  }
+  .FaqHeader {
+    position: relative;
+    top:0;    
+    margin:0
+  }
+  .FaqPage {
+    width: 100%;
+    padding: 1rem;
+  }
+}

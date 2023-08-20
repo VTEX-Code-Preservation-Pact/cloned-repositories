@@ -1,0 +1,74 @@
+type Query {
+  collections(
+    searchKey: String
+    page: Int
+    pageSize: Int
+  ): CollectionsList
+
+  collection(
+    id: Int
+    page: Int
+    pageSize: Int
+  ): Collection
+
+  collectionContains(
+    collectionId: Int
+    skus: [SkuContainsInput]
+  ): ContainsResult
+
+  categoriesAutocomplete(
+    name: String
+  ): [Category]
+
+  brandsAutocomplete(
+    name: String
+  ): [Brand]
+
+  getBrands(
+    ids: [Int]
+  ): [Brand]
+
+  getCategories(
+    ids: [Int]
+  ): [Category]
+
+  getProductsBySku(
+    ids: [Int]
+    from: Int = 0
+    to: Int = 9
+  ): ProductResult
+
+  getProducts(
+    query: String = "",
+    category: String = "",
+    specificationFilters: [String],
+    priceRange: String = "",
+    collection: String = "",
+    salesChannel: String = "",
+    orderBy: String = "OrderByPriceDESC",
+    from: Int = 0,
+    to: Int = 9
+  ): ProductResult
+}
+
+type Mutation {
+  createCollection(
+    name: String
+    searchable: Boolean
+    highlight: Boolean
+    dateFrom: String
+    dateTo: String
+    groups: [GroupInput]
+  ) : Int
+
+  updateGroup(
+    collectionId: Int
+    name: String
+    type: String
+    preSale: Boolean
+    release: Boolean
+    brands: [Int]
+    categories: [Int]
+    skus: [Int]
+  ) : Boolean
+}

@@ -1,0 +1,6 @@
+query GetData($name: String!, $params:StoreDashInput) {
+  data(
+    name:$name,
+    params: $params
+  )
+}

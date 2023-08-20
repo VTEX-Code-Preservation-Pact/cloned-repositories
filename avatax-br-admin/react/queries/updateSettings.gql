@@ -1,0 +1,8 @@
+mutation updateSettings($settings: SettingsInput) {
+  updateSettings(settings: $settings)
+    @context(provider: "vtex.avatax-br-service@1.x") {
+    useAvalaraSandboxEnv
+    clientIdValue
+    clientSecretValue
+  }
+}

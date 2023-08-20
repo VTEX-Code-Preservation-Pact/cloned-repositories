@@ -1,0 +1,9 @@
+{
+  "list-context": {
+    "component": "ListContextProvider"
+  },
+  "list-context-renderer": {
+    "component": "ListRenderer",
+    "composition": "children"
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "definitions": {
+    "addressDisplay": {
+      "type": "array",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "enum": [
+                "city",
+                "complement",
+                "country",
+                "neighborhood",
+                "number",
+                "postalCode",
+                "receiverName",
+                "reference",
+                "state",
+                "street"
+              ]
+            },
+            "delimiter": { "type": "string" },
+            "delimiterAfter": { "type": "string" }
+          },
+          "required": ["name"]
+        }
+      }
+    },
+    "addressField": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "name": {
+          "type": "string",
+          "enum": [
+            "addressType",
+            "city",
+            "complement",
+            "country",
+            "neighborhood",
+            "number",
+            "postalCode",
+            "receiverName",
+            "reference",
+            "state",
+            "street"
+          ]
+        },
+        "hidden": { "type": "boolean" },
+        "maxLength": { "type": "number" },
+        "size": { "type": "string" },
+        "required": { "type": "boolean" },
+        "autoComplete": { "type": "string" },
+        "optionsCaption": { "type": "string" },
+        "options": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "label": { "type": "string" },
+              "value": { "type": "string" }
+            }
+          }
+        },
+        "elementName": { "type": "string" },
+        "mask": {
+          "type": "string",
+          "description": "Optional mask to format the field for display."
+        },
+        "pattern": {
+          "type": "string",
+          "description": "Regex used for the field validation."
+        }
+      },
+      "required": ["label"]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "countryISO": { "type": "string" },
+    "addressFields": {
+      "type": "object",
+      "properties": {
+        "country": { "$ref": "#/definitions/addressField" },
+        "street": { "$ref": "#/definitions/addressField" },
+        "number": { "$ref": "#/definitions/addressField" },
+        "complement": { "$ref": "#/definitions/addressField" },
+        "reference": { "$ref": "#/definitions/addressField" },
+        "neighborhood": { "$ref": "#/definitions/addressField" },
+        "state": { "$ref": "#/definitions/addressField" },
+        "city": { "$ref": "#/definitions/addressField" },
+        "receiverName": { "$ref": "#/definitions/addressField" },
+        "postalCode": {
+          "allOf": [
+            { "$ref": "#/definitions/addressField" },
+            { "properties": { "forgottenURL": { "type": "string" } } }
+          ]
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "properties": {
+        "minimal": {
+          "$ref": "#/definitions/addressDisplay"
+        },
+        "compact": {
+          "$ref": "#/definitions/addressDisplay"
+        },
+        "extended": {
+          "$ref": "#/definitions/addressDisplay"
+        }
+      },
+      "required": ["minimal", "compact", "extended"]
+    },
+    "locationSelect": {
+      "type": "object",
+      "properties": {
+        "countryData": { "type": "object" },
+        "fields": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/addressField" }
+        }
+      }
+    },
+    "phone": {
+      "type": "object",
+      "properties": {
+        "countryCode": {
+          "type": "string",
+          "description": "The country calling code. E.g.: 55 for Brazil and 1 for USA"
+        },
+        "mask": {
+          "type": "string",
+          "description": "Phone number mask for value display."
+        },
+        "pattern": {
+          "type": "string",
+          "description": "Regex used for the phone number validation"
+        }
+      },
+      "required": ["countryCode", "pattern"]
+    },
+    "legalPersonTaxId": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the document in the specific country. E.g.: Cadastro Nacional da Pessoa Jurídica for Brazil and Employer Identification Number for the USA"
+        },
+        "abbreviation": {
+          "type": "string",
+          "description": "Abbreviation for the document name, such as CNPJ for Brazil."
+        },
+        "mask": {
+          "type": "string",
+          "description": "Tax ID mask for value display"
+        }
+      },
+      "required": ["name", "abbreviation", "mask"]
+    }
+  },
+  "required": ["countryISO", "addressFields", "display", "phone"]
+}

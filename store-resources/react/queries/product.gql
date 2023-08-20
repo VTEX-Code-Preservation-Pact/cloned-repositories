@@ -1,0 +1,135 @@
+#import '../fragments/product.graphql'
+#import '../fragments/item.graphql'
+#import '../fragments/seller.graphql'
+#import '../fragments/commertialOffer.graphql'
+#import '../fragments/installment.graphql'
+
+query Product(
+  $slug: String
+  $identifier: ProductUniqueIdentifier
+  $skipCategoryTree: Boolean = false
+) {
+  product(slug: $slug, identifier: $identifier)
+    @context(provider: "vtex.search-graphql") {
+    ...ProductFragment
+    titleTag
+    metaTagDescription
+    categoryId
+    categoryTree @skip(if: $skipCategoryTree) {
+      id
+      name
+      href
+    }
+    items {
+      ...ItemFragment
+      videos {
+        videoUrl
+      }
+      sellers {
+        ...SellerFragment
+        addToCartLink
+        sellerDefault
+        commertialOffer {
+          ...CommertialOfferFragment
+          CacheVersionUsedToCallCheckout
+          Installments {
+            ...InstallmentFragment
+          }
+        }
+      }
+      kitItems {
+        itemId
+        amount
+        product {
+          productName
+          productId
+          description
+          linkText
+          categoryTree {
+            id
+            name
+            href
+          }
+          categoryId
+          brand
+          properties {
+            name
+            values
+          }
+        }
+        sku {
+          itemId
+          name
+          referenceId {
+            Key
+            Value
+          }
+          images {
+            imageId
+            imageLabel
+            imageTag
+            imageUrl
+            imageText
+          }
+          sellers {
+            ...SellerFragment
+            addToCartLink
+            sellerDefault
+            commertialOffer {
+              ...CommertialOfferFragment
+              Installments(criteria: MAX) {
+                ...InstallmentFragment
+              }
+            }
+          }
+        }
+      }
+      attachments {
+        id
+        name
+        required
+      }
+      estimatedDateArrival
+    }
+    itemMetadata {
+      items {
+        id
+        name
+        imageUrl
+        seller
+        assemblyOptions {
+          id
+          name
+          required
+          inputValues {
+            label
+            maxLength
+            type
+            domain
+            defaultValue
+          }
+          composition {
+            minQuantity
+            maxQuantity
+            items {
+              id
+              minQuantity
+              maxQuantity
+              priceTable
+              seller
+              initialQuantity
+            }
+          }
+        }
+      }
+      priceTable {
+        type
+        values {
+          id
+          assemblyId
+          price
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "projectName": "category-menu",
+  "projectOwner": "vtex-apps",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "docs/README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "khrizzcristian",
+      "name": "khrizzcristian",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43498488?v=4",
+      "profile": "https://github.com/khrizzcristian",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

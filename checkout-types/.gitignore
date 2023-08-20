@@ -1,0 +1,15 @@
+# Unversioned files and folders.
+# References at https://git-scm.com/docs/gitignore.
+
+# Finder's configuration files (Mac).
+.DS_Store
+
+# Node.js modules.
+node_modules/
+
+# Log's files.
+*.log
+*.log.*
+
+# Build files
+dist/

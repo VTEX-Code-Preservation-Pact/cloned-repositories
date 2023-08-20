@@ -1,0 +1,274 @@
+.btn-icon:hover { text-decoration: none; }
+
+.payment-border { border-top: 1px solid @muted; }
+.payment-border-first { border: none; }
+
+// payment layout and elements
+// -----------------------------------------------
+.payment-card { position: relative; }
+.payment-data {
+	color: @muted;
+	float: right;
+	position: relative;
+	.ship-more-info { clear: both; }
+	.step {
+		background: #fff;
+		margin-bottom: 0;
+		position: relative;
+		z-index: 2;
+	}
+}
+
+.payment-content { margin-bottom: 2px; }
+
+.payment-form-wrapper {
+	.is-custom h3 { display: block; }
+}
+
+.payment-form-wrapper,
+.gift-card-section {
+	background: @smooth;
+	padding-left: 15px;
+	.border-radius(0 0 5px 5px);
+}
+
+.payment-confirm {
+	bottom: 20px;
+	position: absolute;
+	right: 30px;
+	z-index: 99;
+	i { margin-right: 5px; }
+}
+
+.payment-submit-hide {
+	height: 1px;
+	left: -999em;
+	position: absolute;
+	opacity: 0;
+	width: 1px;
+}
+
+.paid-value-change-btn { padding-left: 0; }
+
+.payment-difference-add { padding: 4px 0; }
+
+// wrapped boxed: payment method selector, payment summary
+// -----------------------------------------------
+.payment-methods-expanded-many-payments,
+.payment-summary {
+	background: @smooth;
+	line-height: 2.3;
+	overflow: hidden;
+	padding: 5px 0 5px 10px;
+}
+
+// payment methods
+// -----------------------------------------------
+.payment-methods-expanded-many-payments { padding-bottom: 15px; }
+
+// payment summary
+// -----------------------------------------------
+.payment-summary-data { float: right; }
+
+.add-payment-wrapper { text-align: center; }
+
+.card-flags { margin-bottom: 15px; }
+.payment-value { margin-right: 10px; }
+
+// payment method fieldset
+// -----------------------------------------------
+.payment-method-title { display: none; }
+
+// gift card
+// -----------------------------------------------
+.link-gift-card {
+	left: 25px;
+	margin-top: 5px;
+	position: absolute;
+}
+.gift-card-section {
+	margin-bottom: 5px;
+	margin-left: 188px;
+	padding: 10px 15px 10px 20px;
+	p { margin: 0; }
+}
+.only-gift-card {
+	margin-top: 0;
+	margin-bottom: 85px;
+	padding: 15px 15px 80px;
+}
+
+.gift-card-enabled {
+	.number { color: #46A546; }
+}
+
+.payment-discounts {
+  margin-bottom: 10px;
+}
+
+.payment-discounts-list {
+	h5 { margin-top: 0; }
+}
+
+.payment-discounts-alert {
+	text-decoration: underline;
+}
+
+.payment-discounts-options {
+  width: auto;
+  float: left;
+}
+
+.gift-card-provider-options {
+  width: auto !important;
+  margin-left: 10px !important;
+}
+
+.btn-add-gift-card {
+  margin: 19px 0 0 10px;
+}
+
+.payment-body {
+  .alert.alert-block {
+    padding: 14px;
+    margin: 0 0 10px 0;
+    width: auto;
+
+    .close {
+      right: 0;
+    }
+  }
+}
+
+.payment-discounts-alert {
+  color: #c09853;
+}
+
+.btn-show-gift-input {
+  padding: 0;
+}
+
+// card data
+// -----------------------------------------------
+.card-data {
+	display: none;
+	&.active { display: block; }
+}
+
+// payment security badge
+// -----------------------------------------------
+.payment-security {
+	background: #e0e0e0;
+	padding: 3px 5px 5px 3px;
+	padding-bottom: 0;
+	position: absolute;
+	right: 5px;
+	text-align: right;
+	top: 5px;
+	z-index: 999;
+	.border-radius;
+}
+.payment-security-icon {
+	font-size: 32px;
+	float: right;
+	margin-left: 6px;
+}
+.payment-security-text {
+	display: inline-block;
+	font-size: 11px;
+	line-height: 14px;
+	vertical-align: top;
+	width: 60px;
+}
+
+
+// .step .box-installments label { display: block; }
+
+// cvv
+// -----------------------------------------------
+.payment-card-cvv,
+.saved-cc-ccv {
+	clear: both;
+	input { text-align: center; }
+}
+.saved-cc-ccv {
+	margin-top: 10px;
+	label { padding-left: 0; }
+}
+
+// cvv help
+// -----------------------------------------------
+.cvv-help {
+	background: #1472ba url('../img/card-cvv.png') center 5px no-repeat;
+	font-size: 10px;
+	line-height: 12px;
+	height: 23px;
+	margin: -75px 0 0 165px;
+	padding: 5px;
+	padding-top: 75px;
+	width: 105px;
+	opacity: 0;
+	&.cvv-four-digits { background-position: center -95px; }
+}
+
+// saved cards
+// -----------------------------------------------
+.payment-card-saved-wrapper {
+	display: none;
+	&.active { display: block; }
+}
+
+.payment-card-saved {
+	margin: 10px 0;
+	width: 275px;
+}
+
+.payment-card-saved-item {
+	padding: 10px;
+	text-align: left;
+	i { top: 10px; }
+}
+.payment-card-saved-link-add-card { text-align: center; }
+.payment-card-saved-name { margin-left: 5px; }
+.payment-card-saved-installments .payment-card-installments-label { display: block; }
+
+.payment-card-saved-cvv {
+	.payment-card-cvv-label {
+		float: left;
+		line-height: 1.3;
+		margin-top: 5px;
+		width: 75px;
+	}
+	.payment-card-cvv-input {
+		font-size: 24px;
+		height: 35px;
+		line-height: 1.4;
+		width: 65px;
+	}
+}
+
+.payment-card-saved-cvv {
+	span.error { margin-left: 75px; }
+	.cvv-help { opacity: 1; }
+
+}
+
+// card scanner
+// -----------------------------------------------
+.card-scanner-resume-header {
+	font-size: 20px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+.card-scanner-resume-number { margin: 0 5px 0 10px; }
+.card-scanner-resume-card-flag { vertical-align: middle; }
+.card-scanner-resume-dismiss-link {
+	color: #dd4b39;
+	font-size: 18px;
+	opacity: .6;
+	vertical-align: text-top;
+	&:hover {
+		color: #dd4b39;
+		opacity: 1;
+	}
+}

@@ -1,0 +1,17 @@
+mutation saveToken(
+  $key: String
+  $token: String
+  $paymentMethodId: String
+  $cvcRequired: Boolean
+  $buttonMessage: String
+  $visualization: [VisualizationInput]
+) {
+  saveToken(
+    key: $key
+    token: $token
+    paymentMethodId: $paymentMethodId
+    cvcRequired: $cvcRequired
+    buttonMessage: $buttonMessage
+    visualization: $visualization
+  ) @context(provider: "kuikpay.my-checkout")
+}

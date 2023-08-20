@@ -1,0 +1,14 @@
+<script language="javascript" type="text/javascript">
+  var _imMktOptions = _imMktOptions || {
+    _setType: '{{leadEmail}}', // TODO: Find out where leadEmail info comes from
+    _setDomain: "{{settings.url}}",
+    _itemsQuantity: -1,
+    _amount: -1,
+    _extraInfo: 'InfoAdicional'
+  };
+  (function() {
+    var icomMkt = document.createElement('script'); icomMkt.type = 'text/javascript'; icomMkt.async = true;
+    icomMkt.src = 'https://api.icommarketing.com/js/icomMkt_tracking_jquery.js?time=' + Number(new Date());
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(icomMkt, s);
+  })();
+</script>

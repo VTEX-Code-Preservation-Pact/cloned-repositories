@@ -1,0 +1,27 @@
+@media screen and (max-width: 39.9em) {
+  .quantitySelector {
+    width: 4.4rem;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  .price {
+    width: 7.25rem;
+  }
+  .quantity {
+    max-width: 7.25rem;
+  }
+}
+
+.quantity :global(.vtex-input) input {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.unitPrice {
+  max-width: 100%;
+}
+
+.quantityStepper {
+  max-width: none;
+}

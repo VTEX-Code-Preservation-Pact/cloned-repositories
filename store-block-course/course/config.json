@@ -1,0 +1,23 @@
+{
+  "title": "VTEX Store Block course",
+  "tagline": "Learn how to create custom blocks on VTEX Store Framework",
+  "description": "Using React and Graphql, you can export your components as VTEX blocks",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "steps": [
+    {
+      "folder": "01_manifest",
+      "title": {
+        "pt": "Curso de blocos customizados",
+        "en": "Custom blocks course"
+      },
+      "description": {
+        "pt": "Neste passo, você irá aprender como se organizam os arquivos em uma app VTEX IO e o que cada campo no manifest.json significa",
+        "en": "In this step, you'll learn how an app's files are organized in VTEX IO and what each field of the manifest.json means"
+      },
+      "challenge": "none"
+    }
+  ]
+}

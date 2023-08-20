@@ -1,0 +1,25 @@
+#import './ProductInfoFragment.gql'
+
+query SearchProducts(
+  $query: String,
+  $queryFrom: Int,
+  $queryTo: Int,
+) {
+  products: getProducts(
+    query: $query,
+    from: $queryFrom,
+    to: $queryTo,
+  ) {
+    items {
+      ...ProductInfo
+    }
+    paging {
+      pages
+      perPage
+      total
+      page
+      _to
+      _from
+    }
+  }
+}

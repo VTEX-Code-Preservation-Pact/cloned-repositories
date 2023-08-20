@@ -1,0 +1,10 @@
+{
+  "store/product-quantity.quantity": "Jumlah",
+  "store/product-quantity.quantity-available": "{availableQuantity, plural, one {# tersedia} other {# tersedia}}",
+  "admin/editor.product-quantity.title": "Komponen Jumlah Produk",
+  "admin/editor.product-quantity.description": "Komponen yang memungkinkan pengguna untuk memilih jumlah item untuk ditambahkan ke troli",
+  "admin/editor.product-quantity.warningQuantityThreshold.title": "Peringatan ambang batas jumlah yang tersedia",
+  "admin/editor.product-quantity.warningQuantityThreshold.description": "Hanya tampilkan jumlah item yang stoknya tersedia jika jumlah item yang tersedia kurang atau sama dengan nilai yang diteruskan dalam properti ini",
+  "admin/editor.product-quantity.showUnit.title": "Satuan ukuran dalam pemilih jumlah",
+  "admin/editor.product-quantity.showUnit.description": "Tampilkan atau sembunyikan satuan ukuran dalam pemilih jumlah"
+}

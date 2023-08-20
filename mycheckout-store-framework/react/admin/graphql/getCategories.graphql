@@ -1,0 +1,20 @@
+query {
+  getCategories @context(provider: "kuikpay.my-checkout") {
+    id
+    url
+    name
+    hasChildren
+    children {
+      id
+      url
+      name
+      hasChildren
+      children {
+        id
+        url
+        name
+        hasChildren
+      }
+    }
+  }
+}

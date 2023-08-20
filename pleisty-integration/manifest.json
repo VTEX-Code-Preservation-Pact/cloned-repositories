@@ -1,0 +1,19 @@
+{
+  "vendor": "fstudio",
+  "name": "pleisty-integration",
+  "version": "0.1.9",
+  "title": "Pleisty Integration",
+  "description": "Pleisty Integration",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x"
+  },
+  "dependencies": {
+    "vtex.format-currency": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

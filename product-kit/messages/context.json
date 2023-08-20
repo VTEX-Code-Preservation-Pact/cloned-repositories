@@ -1,0 +1,20 @@
+{
+  "admin/editor.productKitList.title": "admin/editor.productKitList.title",
+  "admin/editor.productKitList.allowSwap": "admin/editor.productKitList.allowSwap",
+  "admin/editor.productKitList.allowRemoval": "admin/editor.productKitList.allowRemoval",
+  "admin/editor.productKitList.showArrows": "admin/editor.productKitList.showArrows",
+  "admin/editor.productKitList.nextArrow": "admin/editor.productKitList.nextArrow",
+  "admin/editor.productKitList.prevArrow": "admin/editor.productKitList.prevArrow",
+  "admin/editor.productKitList.showDots": "admin/editor.productKitList.showDots",
+  "admin/editor.productKitList.dot": "admin/editor.productKitList.dot",
+  "admin/editor.productKitList.description": "admin/editor.productKitList.description",
+  "admin/editor.productKitList.showListPrice": "admin/editor.productKitList.showListPrice",
+  "admin/editor.productKitList.showLabels": "admin/editor.productKitList.showLabels",
+  "admin/editor.productKitList.showInstallments": "admin/editor.productKitList.showInstallments",
+  "admin/editor.productKitList.showBadge": "admin/editor.productKitList.showBadge",
+  "admin/editor.productKitList.badgeText": "admin/editor.productKitList.badgeText",
+  "store/productKitList.takeAll": "store/productKitList.takeAll",
+  "store/productKitList.buildYourBundle": "store/productKitList.buildYourBundle",
+  "store/productKitList.swapItem": "store/productKitList.swapItem",
+  "store/productKitList.buyKit": "store/productKitList.buyKit"
+}

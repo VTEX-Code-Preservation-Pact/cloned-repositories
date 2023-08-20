@@ -1,0 +1,51 @@
+{
+  "flex-layout.row#trending": {
+    "children": ["flex-layout.col#trending"],
+    "props": {
+      "blockClass": "trending-section"
+    }
+  },
+  "flex-layout.col#trending": {
+    "children": [
+      "flex-layout.row#trending-head",
+      "list-context.product-list#trending"
+    ]
+  },
+  "flex-layout.row#trending-head": {
+    "children": ["rich-text#trending-title", "link#trending"],
+    "props": {
+      "blockClass": "trending-head",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "rich-text#trending-title": {
+    "props": {
+      "text": "### What's trending",
+      "blockClass": "trending-title"
+    }
+  },
+  "link#trending": {
+    "props": {
+      "label": "See all",
+      "blockClass": "trending-link",
+      "href": "/trending"
+    }
+  },
+  "list-context.product-list#trending": {
+    "blocks": ["product-summary.shelf#trending"],
+    "children": ["slider-layout#trending-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 6
+    }
+  },
+  "slider-layout#trending-products": {
+    "props": {
+      "itemsPerPage": 6,
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "shelf-trending"
+    }
+  }
+}

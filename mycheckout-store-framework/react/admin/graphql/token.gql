@@ -1,0 +1,3 @@
+query token @context(provider: "kuikpay.my-checkout") {
+  token
+}

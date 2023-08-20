@@ -1,0 +1,12 @@
+<svg id="ticket_ptomedio_activo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Grupo_4767" data-name="Grupo 4767" transform="translate(-315 -120)">
+    <circle id="Elipse_190" data-name="Elipse 190" cx="12" cy="12" r="12" transform="translate(315 120)" fill="#1b998b"/>
+    <g id="baseline-add_shopping_cart-24px" transform="translate(318 124)">
+      <path id="Trazado_128" data-name="Trazado 128" d="M0,0H18V18H0ZM13.732,4.5l-2.07,3.75Z" fill="none"/>
+    </g>
+  </g>
+  <g id="baseline-attach_money-24px" transform="translate(3 3)">
+    <path id="Trazado_1209" data-name="Trazado 1209" d="M10.43,8.925c-1.7-.442-2.25-.9-2.25-1.612,0-.818.757-1.387,2.025-1.387,1.335,0,1.83.637,1.875,1.575h1.657A2.99,2.99,0,0,0,11.33,4.642V3H9.08V4.62A2.927,2.927,0,0,0,6.455,7.327c0,1.733,1.432,2.6,3.525,3.1,1.875.45,2.25,1.11,2.25,1.808,0,.517-.368,1.342-2.025,1.342-1.545,0-2.153-.69-2.235-1.575H6.32a3.142,3.142,0,0,0,2.76,2.873V16.5h2.25V14.888c1.463-.278,2.625-1.125,2.625-2.663C13.955,10.1,12.132,9.368,10.43,8.925Z" transform="translate(-1.58 -0.75)" fill="#fff"/>
+    <path id="Trazado_1210" data-name="Trazado 1210" d="M0,0H18V18H0Z" fill="none"/>
+  </g>
+</svg>

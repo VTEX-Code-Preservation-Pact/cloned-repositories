@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "my-account-commons",
+  "version": "0.16.1",
+  "title": "MyAccount Commons",
+  "defaultLocale": "pt-BR",
+  "description": "Shared components used to build ne MyAccounts pages",
+  "builders": {
+    "react": "2.x",
+    "messages": "0.x",
+    "docs": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "8.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

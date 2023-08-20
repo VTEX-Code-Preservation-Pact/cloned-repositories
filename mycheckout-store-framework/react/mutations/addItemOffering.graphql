@@ -1,0 +1,7 @@
+# import '../fragments/orderForm.graphql'
+
+mutation AddItemOffering($offeringInput: OfferingInput) {
+  addItemOffering(offeringInput: $offeringInput) {
+    ...OrderFormFragment
+  }
+}

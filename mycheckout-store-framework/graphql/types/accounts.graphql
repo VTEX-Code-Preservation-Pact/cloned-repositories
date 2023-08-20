@@ -1,0 +1,62 @@
+type Visualization {
+  type: String
+  key: String
+  secundaryKey: String
+}
+
+type Accounts {
+  cvcRequired: Boolean
+  paymentSystem: String
+  buttonMessage: String
+  visualization: [Visualization]
+  PaymentMethod: [PaymentsMethods]
+  isConfigured: Boolean
+  styles: String
+  text: String
+  hasGoogleAnalytics: Boolean
+  additionalData: [AdditionalData]
+  habeasDataInformation: HabeasDataInformation
+}
+
+type AccountLink {
+  approver: Boolean
+  account: String
+  status: String
+  date: String
+  id: String
+}
+
+type ResponseVisualization {
+  visualization: [AdminVisualization]
+}
+
+type Remove {
+  removed: Int
+  id: String
+}
+
+type AdminVisualization {
+  type: String
+  key: String
+}
+
+type AdditionalData {
+  key: String
+  value: String
+}
+
+type Account {
+  account: String
+  paymentMethodId: String
+  cvcRequired: Boolean
+  isConfigured: Boolean
+  buttonMessage: String
+  visualization: [AdminVisualization]
+  buttonText: String
+  additionalData: [AdditionalData]
+}
+
+type HabeasDataInformation {
+  url: String
+  version: Int
+}

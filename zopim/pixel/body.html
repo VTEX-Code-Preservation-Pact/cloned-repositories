@@ -1,0 +1,20 @@
+<script>
+  (function() {
+    if (!window.zE) {
+      return
+    }
+    zE(function() {
+      $zopim(function() {
+        var departmentsFilter = "{{settings.departmentsFilter}}";
+        var departmentsSetVisitorDepartment = "{{settings.departmentsSetVisitorDepartment}}";
+        if (departmentsSetVisitorDepartment) {
+          $zopim.livechat.departments.setVisitorDepartment(departmentsSetVisitorDepartment)
+        }
+
+        if (departmentsFilter) {
+          $zopim.livechat.departments.filter(departmentsFilter === ' ' ? '' : departmentsFilter)
+        }
+      })
+    })
+  })()
+</script>

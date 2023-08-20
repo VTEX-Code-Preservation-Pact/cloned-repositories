@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --primary-color-button: #ff572d;
+  --primary-text-color: #011d1a;
+  --primary-color-focus: #0096c7;
+  --hover-button-color: #f30;
+  --success-color: #009e4e;
+  --valid-color: #a1c10c;
+  --error-color: #d7263d;
+  --tooltip-color: #fb8500;
+  --alert-color: #ffb703;
+  --gray-color: #777777;
+  --dark-gray-color: #919191;
+  --light-grey-color: #cacaca;
+  --white-color: #ffffff;
+  --text-regular: 400;
+  --text-medium: 500;
+  --text-semi-bold: 600;
+  --text-light: lighter;
+  --text-bold: bold;
+}
+
+.Checkoutless {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Checkoutless p,
+.Checkoutless a,
+.Checkoutless div,
+.Checkoutless input,
+.Checkoutless select {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  font-weight: var(--text-regular);
+}
+
+.Checkoutless p,
+.Checkoutless a,
+.Checkoutless div,
+.Checkoutless input[type='email'],
+.Checkoutless input[type='text'],
+.Checkoutless input[type='password'],
+.Checkoutless select {
+  color: var(--primary-text-color);
+}
+
+.Checkoutless p,
+.Checkoutless a,
+.Checkoutless div {
+  touch-action: pan-x pan-y;
+}
+
+.Checkoutless ul,
+.Checkoutless li,
+.Checkoutless h1,
+.Checkoutless h2,
+.Checkoutless h3,
+.Checkoutless p,
+.Checkoutless button {
+  margin: 0;
+  padding: 0;
+}
+
+.Checkoutless ul {
+  list-style: none;
+}
+
+.Checkoutless button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.Checkoutless input:focus {
+  outline: 0;
+}
+
+.Checkoutless select {
+  background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+) no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.Checkoutless select:disabled {
+  background-color: #fafafa;
+}
+
+.Checkoutless .textXl {
+  font-size: 18px;
+}
+
+.Checkoutless .w100 {
+  width: 100%;
+}
+
+.Checkoutless .cursorPointer {
+  cursor: pointer;
+}
+
+.Checkoutless .borderBottom {
+  border-bottom: 1px solid #c4c5ca;
+}
+
+.Checkoutless .summary {
+  margin-bottom: 22%;
+}
+
+.Checkoutless .containerError {
+  background: #fff0f2;
+  box-shadow: 0px 0px 11px 1px #00000029;
+}
+
+.Checkoutless .underline {
+  text-decoration: underline;
+}
+
+.Checkoutless .lineThrough {
+  text-decoration: line-through;
+}
+
+.Checkoutless .inMobileFlex {
+  display: flex !important;
+}
+
+.Checkoutless .inMobile {
+  display: revert !important;
+}
+
+.Checkoutless .inDesktop {
+  display: none !important;
+}
+
+.Checkoutless .displayNone {
+  display: none;
+}
+
+.Checkoutless .marginBottom {
+  margin-bottom: 8px;
+}
+
+.Checkoutless .bigMarginBottom {
+  margin-bottom: 18px;
+}
+
+/* Styles font */
+
+.Checkoutless .textSm {
+  font-size: 12px;
+}
+
+.Checkoutless .textBase {
+  font-size: 14px;
+}
+
+.Checkoutless .textLg {
+  font-size: 16px;
+}
+
+.Checkoutless .regular {
+  font-weight: 400;
+}
+
+.Checkoutless .medium {
+  font-weight: 500;
+}
+
+.Checkoutless .semiBold {
+  font-weight: 600;
+}
+
+.Checkoutless .bold {
+  font-weight: 700;
+}
+
+/* Styles color */
+.Checkoutless .red {
+  color: #cb4242;
+}
+
+.Checkoutless .disabled {
+  color: #9798a5;
+}
+
+.Checkoutless .enphasis {
+  color: #0096c7;
+}
+
+/* Styles icon */
+.Checkoutless .iconAlternative {
+  fill: var(--primary-text-color);
+}
+
+.Checkoutless .fillerCheckIcon {
+  fill: #a1c10c;
+}
+
+.Checkoutless .iconPrimary {
+  fill: var(--primary-color-focus);
+}
+
+.Checkoutless .iconSecondary {
+  fill: var(--success-color);
+}
+
+.Checkoutless .iconDisable {
+  fill: var(--gray-color)
+}
+
+.Checkoutless .arrowDownIcon {
+  fill: #404040;
+}
+
+.Checkoutless .arrowUpIcon {
+  fill: #2953b2;
+}
+
+.Checkoutless .iconBackground {
+  fill: transparent;
+}
+
+.Checkoutless .iconBackgroundSecondary {
+  fill: #fff;
+}
+
+.Checkoutless .strokeCheckicon {
+  fill: var(--primary-color-focus);
+}
+
+.Checkoutless .strokeCheckiconAlternative {
+  stroke: var(--primary-text-color);
+}
+
+.Checkoutless .fillCheckIcon {
+  fill: #284859;
+}
+
+.Checkoutless .fillCheckIconAlternative {
+  fill: #009e4f;
+}
+
+.Checkoutless .iconTerciary {
+  fill: #919191;
+}
+
+.Checkoutless .iconAlternativeStroke {
+  stroke: #272525;
+}
+
+.Checkoutless .iconAlternativeStrokeSecondary {
+  stroke: #0096c7;
+}
+
+.Checkoutless .iconAlternativeSecondary {
+  fill: #0096c7;
+}
+
+.Checkoutless .cart {
+  fill: #eb5b2b;
+}
+
+.Checkoutless .backgroundCart {
+  fill: #cee9e6;
+}
+
+.Checkoutless .loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.Checkoutless .loading::before {
+  content: url('https://kuikpay.vteximg.com.br/arquivos/ids/155430');
+}
+
+.Checkoutless .blueColor,
+.Checkoutless .blueColor p {
+  color: #0096c7 !important;
+}
+
+.Checkoutless .iconContainer {
+  margin: 0px 5px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.Checkoutless .titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.Checkoutless .flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+/* Style for forms */
+
+.gridFormTwoCols {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  row-gap: 18px;
+  padding: 12px 0 6px 0px;
+}
+
+.gridFormTwoCols[data-more-left='true'] {
+  grid-template-columns: 1.5fr 1fr;
+}
+
+.gridFormTwoCols[data-more-right='true'] {
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.gridFormTwoCols div[data-col='two-col'] {
+  grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 992px) {
+
+  .Checkoutless p,
+  .Checkoutless a,
+  .Checkoutless div,
+  .Checkoutless input,
+  .Checkoutless select {
+    font-weight: var(--text-medium);
+  }
+
+  .Checkoutless p,
+  .Checkoutless a,
+  .Checkoutless div,
+  .Checkoutless input[type='email'],
+  .Checkoutless input[type='text'],
+  .Checkoutless input[type='password'],
+  .Checkoutless select {
+    color: var(--primary-text-color);
+  }
+
+  .Checkoutless .inMobileFlex {
+    display: none !important;
+  }
+
+  .Checkoutless .inMobile {
+    display: none !important;
+  }
+
+  .Checkoutless .inDesktop {
+    display: revert !important;
+  }
+
+  .gridFormTwoCols {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 18px;
+  }
+
+  .gridFormTwoCols div {
+    grid-column: 1 / 3;
+  }
+
+  .Checkoutless .blueColor {
+    color: #0096c7;
+  }
+
+  .Checkoutless .buyButtonContainer,
+  .Checkoutless .actionButtonContainer {
+    margin-top: 14px;
+    right: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index: 100;
+  }
+
+  .Checkoutless .buyButtonContainerFixed {
+    bottom: 0;
+    box-shadow: inset 0 3px 6px rgb(0 0 0 / 6%);
+    padding: 40px 25px;
+    position: fixed;
+    width: 44%;
+  }
+
+  .Checkoutless .marginBottom {
+    margin-bottom: 16px;
+  }
+
+  .Checkoutless .floatAlert {
+    position: inherit;
+    bottom: inherit;
+    width: inherit;
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  .Checkoutless .buyButtonContainerFixed {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Checkoutless .buyButtonContainerFixed {
+    width: 36%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .Checkoutless .buyButtonContainerFixed {
+    width: 33%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .Checkoutless .buyButtonContainerFixed {
+    width: 30%;
+  }
+}

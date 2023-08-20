@@ -1,0 +1,10 @@
+mutation UpdateLink($id: String, $status: String) {
+  updateLink(id: $id, status: $status)
+    @context(provider: "kuikpay.my-checkout") {
+    id
+    account
+    approver
+    status
+    date
+  }
+}

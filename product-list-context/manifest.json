@@ -1,0 +1,19 @@
+{
+  "vendor": "vtex",
+  "name": "product-list-context",
+  "version": "0.4.1",
+  "title": "VTEX Product List Context",
+  "description": "",
+  "builders": {
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-manager": "1.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

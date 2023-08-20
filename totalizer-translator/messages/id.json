@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "Diskon",
+  "store/totalizers.Items": "Subtotal",
+  "store/totalizers.Shipping": "Pengiriman",
+  "store/totalizers.Tax": "Pajak",
+  "store/totalizers.Interest": "Bunga",
+  "store/totalizers.Change": "Total kembali",
+  "totalizers.Discounts": "Diskon",
+  "totalizers.Items": "Subtotal",
+  "totalizers.Shipping": "Pengiriman",
+  "totalizers.Tax": "Pajak",
+  "totalizers.Interest": "Bunga",
+  "totalizers.Change": "Total kembali"
+}

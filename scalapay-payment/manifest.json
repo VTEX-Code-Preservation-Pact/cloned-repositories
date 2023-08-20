@@ -1,0 +1,53 @@
+{
+  "name": "scalapay-payment",
+  "vendor": "vtex",
+  "version": "1.0.1",
+  "title": "Scalapay payment",
+  "description": "Scalapay payment created with payment standard modal",
+  "defaultLocale": "en",
+  "mustUpdateAt": "2019-01-08",
+  "dependencies": {},
+  "builders": {
+    "react": "2.x",
+    "pages": "0.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "node": "6.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --public"
+  },
+  "billingOptions": {
+    "type": "free",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "availableCountries": ["*"]
+  },
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "OMSViewer"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

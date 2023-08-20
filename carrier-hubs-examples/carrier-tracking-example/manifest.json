@@ -1,0 +1,45 @@
+{
+  "name": "carrier-tracking-example",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Tracking Example",
+  "description": "Example that use vtex.carrier-tracking as a builder",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x",
+    "vtex.carrier-tracking": "0.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "billingOptions": {
+    "free": true
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/"
+      }
+    }
+  ],
+  "settingsSchema": {
+    "title": "Carrier Authentication",
+    "type": "object",
+    "properties": {
+      "user": {
+        "title": "User",
+        "type": "string"
+      },
+      "token": {
+        "title": "Token",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

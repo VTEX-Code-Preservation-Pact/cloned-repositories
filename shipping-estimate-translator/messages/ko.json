@@ -1,0 +1,12 @@
+{
+  "shippingEstimate-bd": "{timeAmount, plural, =0 {당일} one {# 영업일} other {최대 # 영업일}}",
+  "shippingEstimate-d": "{timeAmount, plural, =0 {당일} one {# 일} other {최대 # 일}}",
+  "shippingEstimate-h": "{timeAmount, plural, =0 {지금} one {# 시간} other {최대 # 시간}}",
+  "shippingEstimate-m": "{timeAmount, plural, =0 {지금} one {# 분} other {최대 # 분}}",
+  "shippingEstimate-scheduled": "{date}, {startDate} 와 {endDate} 사이",
+  "shippingEstimate-scheduled-no-dates": "예정",
+  "shippingEstimatePickup-bd": "{timeAmount, plural, =0 {당일} one {최대 # 영업일 내 준비} other {최대 # 영업일 내 준비}}",
+  "shippingEstimatePickup-d": "{timeAmount, plural, =0 {오늘 준비} one {최대 # 일 내 준비} other {최대 # 일 내 준비}}",
+  "shippingEstimatePickup-h": "{timeAmount, plural, =0 {픽업 준비} one {최대 # 시간 내 준비} other {최대 # 시간 내 준비}}",
+  "shippingEstimatePickup-m": "{timeAmount, plural, =0 {픽업 준비} one {최대 # 분 내 준비} other {최대 # 분 내 준비}}"
+}

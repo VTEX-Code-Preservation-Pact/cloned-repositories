@@ -1,0 +1,19 @@
+{
+  "name": "cartman",
+  "vendor": "vtex",
+  "version": "0.3.1",
+  "title": "Create and share carts. Debug checkout.",
+  "description": "Create and share carts. Debug checkout.",
+  "mustUpdateAt": "2019-03-01",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "dependencies": {},
+  "builders": {
+    "pages": "0.x",
+    "react": "2.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

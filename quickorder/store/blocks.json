@@ -1,0 +1,85 @@
+{
+  "store.quickorder": {
+    "blocks": [
+      "flex-layout.row#title",
+      "flex-layout.row#textarea",
+      "flex-layout.row#upload",
+      "flex-layout.row#autocomplete",
+      "flex-layout.row#categories"
+    ]
+  },
+  "flex-layout.row#title": {
+    "children": ["flex-layout.col#title"]
+  },
+  "flex-layout.col#title": {
+    "children": ["rich-text#title"],
+    "props": {
+      "blockClass": "titleQuickorder",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "## Quick Order"
+    }
+  },
+
+  "flex-layout.row#textarea": {
+    "children": ["flex-layout.col#textarea"]
+  },
+  "flex-layout.col#textarea": {
+    "children": ["quickorder-textarea"]
+  },
+  "quickorder-textarea": {
+    "props": {
+      "componentOnly": false,
+      "text": "Copy/Paste Skus",
+      "description": "[SKU Reference ID],[Quantity]",
+      "hiddenColumns": []
+    }
+  },
+
+  "flex-layout.row#upload": {
+    "children": ["flex-layout.col#upload"]
+  },
+  "flex-layout.col#upload": {
+    "children": ["quickorder-upload"]
+  },
+  "quickorder-upload": {
+    "props": {
+      "componentOnly": false,
+      "text": "Upload",
+      "description": "Upload a Spreadsheet with two columns (SKU, Quantity) to bulk order",
+      "downloadText": "Click here to download a spreadsheet model",
+      "hiddenColumns": []
+    }
+  },
+
+  "flex-layout.row#autocomplete": {
+    "children": ["flex-layout.col#autocomplete"]
+  },
+  "flex-layout.col#autocomplete": {
+    "children": ["quickorder-autocomplete"]
+  },
+  "quickorder-autocomplete": {
+    "props": {
+      "componentOnly": false,
+      "text": "One by One",
+      "description": "Type the product name, select, enter quantity, add to the cart"
+    }
+  },
+
+  "flex-layout.row#categories": {
+    "children": ["flex-layout.col#categories"]
+  },
+  "flex-layout.col#categories": {
+    "children": ["quickorder-categories"]
+  },
+  "quickorder-categories": {
+    "props": {
+      "componentOnly": false,
+      "text": "Categories",
+      "description": "Add products directly from their categories"
+    }
+  }
+}

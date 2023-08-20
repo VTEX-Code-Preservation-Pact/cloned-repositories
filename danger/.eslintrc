@@ -1,0 +1,9 @@
+{
+  "extends": "vtex",
+  "globals": {
+    "danger": true,
+    "message": true,
+    "warn": true,
+    "fail": true
+  }
+}

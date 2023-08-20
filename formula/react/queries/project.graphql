@@ -1,0 +1,18 @@
+query Project ($edition: String!, $id: String!) {
+  profile {
+    email
+  }
+  project (edition: $edition, id: $id) {
+    id
+    name
+    description
+    demoURL
+    owner
+    team {
+      id
+      email
+      name
+      picture
+    }
+  }
+}

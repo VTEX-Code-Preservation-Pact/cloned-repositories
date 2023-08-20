@@ -1,0 +1,7 @@
+{
+  "modal": {
+    "allowed": "*",
+    "component": "index",
+    "composition": "children"
+  }
+}

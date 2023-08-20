@@ -1,0 +1,23 @@
+{
+  "footer-row#copyright": {
+    "title": "Derechos",
+    "props": {
+      "inverted": true,
+      "fullWidth": false
+    },
+    "children": [
+      "rich-text#footer-copyright",
+      "footer-spacer",
+      "powered-by"
+    ]
+  },
+  "rich-text#footer-copyright": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "©2019  HardSport Artículos Deportivos. Todos los derechos reservados.",
+      "textColor": "c-on-base--inverted",
+      "font": "t-mini"
+    }
+  }
+}

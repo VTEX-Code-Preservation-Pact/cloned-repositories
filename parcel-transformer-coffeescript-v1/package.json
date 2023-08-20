@@ -1,0 +1,51 @@
+{
+  "name": "parcel-transformer-coffeescript-v1",
+  "version": "0.1.1",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "lib/CoffeeScriptTransformer.js",
+  "source": "src/CoffeeScriptTransformer.ts",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "engines": {
+    "node": ">= 12.0.0",
+    "parcel": "^2.2.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext ts .",
+    "build": "tsc",
+    "prepare": "husky install",
+    "prepublishOnly": "yarn build"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.2.0",
+    "@parcel/source-map": "^2.0.0",
+    "@parcel/utils": "^2.2.0",
+    "coffeescript": "^1.12.7",
+    "nullthrows": "^1.1.1",
+    "semver": "^5.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.8",
+    "@vtex/prettier-config": "^1.0.0",
+    "eslint": "^7",
+    "eslint-config-vtex": "^14.1.2",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  }
+}

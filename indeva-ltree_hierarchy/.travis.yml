@@ -1,0 +1,13 @@
+sudo: false
+
+language: ruby
+before_script:
+  - cp test/database.ci.yml test/database.yml
+  - psql -c 'CREATE DATABASE ltree_hierarchy_test;' -U postgres
+branches:
+  only:
+    - master
+rvm:
+  - 2.4.1
+gemfile:
+  - test/gemfiles/Gemfile.rails-5.2.x

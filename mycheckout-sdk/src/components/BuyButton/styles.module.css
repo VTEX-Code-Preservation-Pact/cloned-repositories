@@ -1,0 +1,24 @@
+.habeasDataLink.habeasDataLink {
+  text-decoration: underline;
+}
+
+.buyButtonContainer {
+  position: sticky;
+  bottom: 0px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  .buyButtonContainer {
+    position: fixed;
+    padding: 14px;
+    margin-top: 14px;
+    box-shadow: inset 0px 3px 6px #0000000f;
+    width: 30%;
+    right: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index: 100;
+  }
+}

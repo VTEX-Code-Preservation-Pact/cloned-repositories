@@ -1,0 +1,13 @@
+query GET_SELLERS($listSellersParams: ListSellersParams) {
+  getSellers(listSellersParams: $listSellersParams)  {
+    sellers {
+      id
+      name
+    }
+    pagination{
+      currentPage
+      pageSize
+      totalPage
+    }
+  }
+}

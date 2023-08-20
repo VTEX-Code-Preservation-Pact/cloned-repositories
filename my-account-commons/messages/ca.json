@@ -1,0 +1,9 @@
+{
+  "alert.connectionError": "S'ha produït un error en connectar amb el sistema. Proveu de recarregar la pàgina.",
+  "alert.unauthenticated": "Se us ha d'autenticar per poder continuar amb aquesta acció.",
+  "alert.reload": "Recarrega",
+  "alert.unknownError": "S'ha produït un error. Torneu-ho a provar.",
+  "commons.back": "Torna",
+  "progressBar.package.progress": "Estat del paquet",
+  "progressBar.order.status": "Estat de la comanda"
+}

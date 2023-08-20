@@ -1,0 +1,29 @@
+{
+  "memory": 256,
+  "ttl": 5,
+  "timeout": 1,
+  "minReplicas": 4,
+  "maxReplicas": 8,
+  "routes": {
+    "brands": {
+      "path": "/_v/private/vtex.admin-messages/v1/brands",
+      "public": true,
+      "smartcache": true
+    },
+    "categories": {
+      "path": "/_v/private/vtex.admin-messages/v1/categories",
+      "public": true,
+      "smartcache": true
+    },
+    "specifications": {
+      "path": "/_v/private/vtex.admin-messages/v1/specifications",
+      "public": true,
+      "smartcache": true
+    },
+    "specificationsTextValues": {
+      "path": "/_v/private/vtex.admin-messages/v1/specifications/text-values",
+      "public": true,
+      "smartcache": true
+    }
+  }
+}

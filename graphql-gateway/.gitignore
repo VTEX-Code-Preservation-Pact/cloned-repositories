@@ -1,0 +1,8 @@
+coverage
+node_modules
+service/**/!(main).js
+service/**/*.js.map
+.vscode/
+**/.DS_Store
+.eslintrc
+**/yarn-error.log

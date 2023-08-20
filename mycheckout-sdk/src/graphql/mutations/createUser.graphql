@@ -1,0 +1,22 @@
+mutation createUser(
+  $name: String!
+  $lastname: String!
+  $id_type: String!
+  $id_number: String!
+  $email: String!
+  $phone_code: String!
+  $phone_number: String!
+) {
+  createUser(
+    name: $name
+    lastname: $lastname
+    id_type: $id_type
+    id_number: $id_number
+    email: $email
+    phone_code: $phone_code
+    phone_number: $phone_number
+  ) {
+    id
+    email
+  }
+}

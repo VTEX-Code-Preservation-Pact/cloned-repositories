@@ -1,0 +1,147 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop"
+    ]
+  },
+
+  "header-row#1-desktop": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-desktop": {
+    "children": [
+      "notification.bar#home"
+    ],
+    "props": {
+      "fullWidth": "true"
+    }
+  },
+  "notification.bar#home": {
+    "props": {
+      "content": "<strong>FRETE GRÁTIS</strong> para compras a partir de R$ 99,90"
+    }
+  },
+  "header-row#3-desktop": {
+    "children": [
+      "logo#desktop",
+      "menu#header-main2",
+      "header-spacer",
+      "search-bar",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "blockClass": "main-header",
+      "inverted": "true",
+      "sticky": true
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://bookstoretheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/LOGO_THEBOOKSTORE___fc0ce51f3ffa0ffc16f9d4e5402096e5.png",
+      "width": "180"
+    }
+  },
+
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "type": "popup",
+      "showRemoveButton": true,
+      "showDiscount": true,
+      "showSku": true,
+      "labelMiniCartEmpty": "",
+      "labelButtonFinishShopping": "Go to checkout",
+      "enableQuantitySelector": true,
+      "maxQuantity": 10,
+      "labelClasses": "gray"
+    }
+  },
+
+  "login": {
+    "props": {
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile"
+    ]
+  },
+  "header-row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "header-spacer",
+      "login",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "menu-item#livros-mobile",
+      "menu-item#papelaria-mobile",
+      "menu-item#ebooks-mobile",
+      "menu-item#eletronicos-mobile",
+      "menu-item#blog",
+      "menu-item#black-friday"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://bookstoretheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/LOGO_THEBOOKSTORE___fc0ce51f3ffa0ffc16f9d4e5402096e5.png",
+      "width": "180"
+    }
+  },
+  "header-row#2-mobile": {
+    "children": [
+      "search-bar"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "store.home": {
+    "blocks": ["flex-layout.row#banner-home", "flex-layout.row#top-shelves", "flex-layout.row#deals"]
+  },
+
+  "flex-layout.row#banner-home": {
+    "props": {
+        "fullWidth": true,
+        "horizontalAlign": "center"
+    },
+    "children": [
+        "image#banner-home"
+    ]
+},
+
+"image#banner-home": {
+    "props": {
+        "src": "https://bookstoretheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/bannerhome___61eea668a733cfec1868ed36b2e5954d.png",
+        "alt": "Home Page Banner",
+        "link": {
+          "url": "lp",
+          "attributeTitle": "Landing Page",
+          "newTab": false
+      }
+    }
+},
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "flex-layout.col#promo-banner1": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["image#promo-banner1"]
+  },
+
+  "flex-layout.col#promo-banner2": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["image#promo-banner2"]
+  },
+
+  "image#promo-banner1": {
+    "props": {
+      "src": "https://images-submarino.b2w.io/spacey/2019/10/31/2-samsung-intel-inside-Q4-odyssey-sub-home-bottom-duplo-600x230.png",
+      "alt": "Promo Banner 1",
+      "link": "#"
+    }
+  },
+
+  "image#promo-banner2": {
+    "props": {
+      "src": "https://images-submarino.b2w.io/spacey/2019/10/31/2-samsung-intel-inside-Q4-odyssey-sub-home-bottom-duplo-600x230.png",
+      "alt": "Promo Banner 2",
+      "link": "#"
+    }
+  }
+}

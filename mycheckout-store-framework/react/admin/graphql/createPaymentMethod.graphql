@@ -1,0 +1,17 @@
+mutation (
+  $id: ID!
+  $type: String
+  $isActive: Boolean
+  $paymentMethodName: String
+  $accountName: String
+) {
+  createPaymentMethod(
+    id: $id
+    type: $type
+    isActive: $isActive
+    paymentMethodName: $paymentMethodName
+    accountName: $accountName
+  ) @context(provider: "kuikpay.my-checkout") {
+    id
+  }
+}

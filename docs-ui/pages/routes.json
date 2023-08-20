@@ -1,0 +1,47 @@
+{
+  "docs-ui.home": {
+    "path": "/docs(/home)"
+  },
+  "docs-ui.search": {
+    "path": "/docs/search"
+  },
+  "docs-ui.recipes-list": {
+    "path": "/docs/recipes/:category"
+  },
+  "docs-ui.recipe": {
+    "path": "/docs/recipes/:category/:recipe"
+  },
+  "docs-ui.components-list": {
+    "path": "/docs/components/:category"
+  },
+  "docs-ui.apps-list": {
+    "path": "/docs/apps/:category"
+  },
+  "docs-ui.component": {
+    "path": "/docs/components/:category/:app(/:file)"
+  },
+  "docs-ui.apps": {
+    "path": "/docs/apps/:category/:app(/:file)"
+  },
+  "docs-ui.concept-list": {
+    "path": "/docs/concepts"
+  },
+  "docs-ui.concept": {
+    "path": "/docs/concepts/:concept"
+  },
+  "docs-ui.release-notes": {
+    "path": "/docs/releases"
+  },
+  "docs-ui.release-article": {
+    "path": "/docs/releases/:week/:article"
+  },
+  "docs-ui.getting-started": {
+    "path": "/docs/getting-started/:track/:article"
+  },
+  "docs-ui.introduction": {
+    "path": "/docs/introduction/:article"
+  },
+  "docs-ui.app": {
+    "path": "/docs/app/:app(/:file)"
+  }
+}

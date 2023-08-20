@@ -1,0 +1,16 @@
+/* Address styles */
+
+.addressContainer {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Addresses styles */
+
+.addContainer {
+  display: flex;
+  align-items: center;
+  margin: 8px 0 8px 0;
+}

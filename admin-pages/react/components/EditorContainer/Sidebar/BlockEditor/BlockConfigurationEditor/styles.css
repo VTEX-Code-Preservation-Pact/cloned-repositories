@@ -1,0 +1,27 @@
+.form {
+  transition: transform 250ms ease-in-out;
+  transform: translateX(0rem);
+}
+
+.form--leave {
+  transition: transform 250ms ease-in-out;
+  transform: translateX(-18rem);
+}
+
+.form--leave > :global(.rjsf) {
+  height: 0;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 40em) {
+  .size-editor {
+    bottom: 0;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .size-editor {
+    max-width: 450px;
+  }
+}

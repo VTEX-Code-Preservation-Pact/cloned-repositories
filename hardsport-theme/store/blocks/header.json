@@ -1,0 +1,14 @@
+{
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "header-row#promo-bar",
+      "header-row#logo-bar",
+      "header-row#menu"
+    ]
+  }
+}

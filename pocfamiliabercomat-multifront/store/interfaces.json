@@ -1,0 +1,9 @@
+{
+  "conditionalFrontBlock": {
+    "component": "ConditionalFrontBlock",
+    "composition": "children",
+    "content": {
+      "$ref": "#/definitions/ConditionalFrontBlock"
+    }
+  }
+}

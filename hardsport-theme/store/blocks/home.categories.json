@@ -1,0 +1,91 @@
+{
+  "flex-layout.row#categories": {
+    "title": "Banners de categorías",
+    "props": {
+      "colGap": 8,
+      "marginBottom": 8
+    },
+    "children": [
+      "flex-layout.col#categories1",
+      "flex-layout.col#categories2",
+      "flex-layout.col#categories3"
+    ]
+  },
+  "rich-text#categories-title": {
+    "title": "Título de categorías",
+    "props": {
+      "blockClass": "slim-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Top Categorías",
+      "textColor": "c-on-base",
+      "font": "t-heading-2"
+    }
+  },
+  "flex-layout.col#categories1": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#categories1"
+    ]
+  },
+  "flex-layout.col#categories2": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#categories2"
+    ]
+  },
+  "flex-layout.col#categories3": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#categories3"
+    ]
+  },
+  "info-card#categories1": {
+    "title": "banner 1",
+    "props": {
+      "blockClass": "categories",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/bike-infocard-1891b3d.png",
+      "headline": "Bikes",
+      "subhead": "",
+      "callToActionMode": "none",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#categories2": {
+    "title": "banner 2",
+    "props": {
+      "blockClass": "categories",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/sky-infocard-08138n1.png",
+      "headline": "Camping",
+      "subhead": "",
+      "callToActionMode": "none",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#categories3": {
+    "title": "banner 3",
+    "props": {
+      "blockClass": "categories",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/stepping-up-infocard-1823918.png",
+      "headline": "Calzado",
+      "subhead": "",
+      "callToActionMode": "none",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  }
+}

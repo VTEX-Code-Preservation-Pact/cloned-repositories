@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.title {
+  flex: 5;
+  display: flex;
+  width: 100%;
+}
+
+.devicesContainer {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.devicesContainer button {
+  padding: unset;
+  background: unset;
+  border: unset;
+  width: 42px;
+  height: 42px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.devicesContainer button:hover {
+  background: #eef3f7 0% 0% no-repeat padding-box;
+}
+
+.devicesContainer button[data-selected='true'] {
+  background: #eef3f7 0% 0% no-repeat padding-box;
+}

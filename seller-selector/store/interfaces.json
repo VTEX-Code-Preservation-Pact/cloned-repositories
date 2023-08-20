@@ -1,0 +1,57 @@
+{
+  "store.sellers": {
+    "around": ["productWrapper"],
+    "context": "vtex.store/ProductContext"
+  },
+  "store.product.sellertest": {
+    "allowed": ["link-seller"]
+  },
+  "link-seller": {
+    "component": "LinkSeller",
+    "content": {
+      "$ref": "app:vtex.seller-selector#/definitions/LinkSeller"
+    }
+  },
+  "seller-table": {
+    "component": "SellerTable",
+    "composition": "children"
+  },
+  "seller-head": {
+    "component": "SellerHead",
+    "composition": "children"
+  },
+  "seller-head-cell": {
+    "component": "SellerHeadCell",
+    "composition": "children"
+  },
+  "seller-body": {
+    "component": "SellerBody",
+    "composition": "children"
+  },
+  "seller-row": {
+    "component": "SellerRow",
+    "composition": "children"
+  },
+  "seller-name": {
+    "component": "SellerName",
+    "composition": "children"
+  },
+  "seller-price": {
+    "component": "SellerPrice",
+    "composition": "children"
+  },
+  "seller-price-with-shipping": {
+    "component": "SellerPriceWithShipping",
+    "composition": "children"
+  },
+  "seller-shipping": {
+    "component": "SellerShipping"
+  },
+  "seller-add-to-cart": {
+    "component": "SellerAddToCart",
+    "allowed": ["add-to-cart-button", "buy-button"]
+  },
+  "seller-simulate-shipping": {
+    "component": "SimulateShipping"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "Imagem do presente",
+  "admin/editor.gift-image.description": "Imagem do presente para ser renderizada na lista de presentes.",
+  "admin/editor.gift-image.imageLabel.title": "Label da imagem",
+  "admin/editor.gift-image.imageLabel.description": "Label da imagem que deve ser renderizada para o presente.",
+  "admin/editor.gift-name.title": "Nome do presente",
+  "admin/editor.gift-name.description": "Nome do presente",
+  "admin/editor.gift-name.linkToProduct.title": "Link para página de produto",
+  "admin/editor.gift-name.linkToProduct.description": "Nome do presente é um link para sua página do produto.",
+  "admin/editor.gift-name.nameType.title": "Tipo de nome de exibição",
+  "admin/editor.gift-name.nameType.description": "Mostrar o skuName ou produtoNome do presente.",
+  "admin/editor.product-gifts.title": "Presentes",
+  "admin/editor.product-gifts.description": "Mostre os presentes associados com o produto.",
+  "admin/editor.product-gifts.maxVisibleItems.title": "Máximo de itens visíveis",
+  "admin/editor.product-gifts.maxVisibleItems.description": "Número máximo de presentes a serem mostrados na lista. Utilize o valor \"Show all\" para mostrar sempre todos.",
+  "admin/editor.product-gift-text.title": "Texto auxiliar para presentes",
+  "admin/editor.product-gift-text.description": "Texto auxiliar para presentes.",
+  "admin/editor.product-gift-text.text.title": "Texto",
+  "admin/editor.product-gift-text.text.description": "Texto que aceita variáveis e segue o padrão UCI para formatação. As variáveis disponíveis são: totalGifts, exceedingItems and visibleItems."
+}

@@ -1,0 +1,10 @@
+query ListFeatures {
+  listFeatures @context(provider: "vtex.storefront-permissions") {
+    module
+    name
+    features {
+      label
+      value
+    }
+  }
+}

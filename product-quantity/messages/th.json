@@ -1,0 +1,10 @@
+{
+  "store/product-quantity.quantity": "จำนวน",
+  "store/product-quantity.quantity-available": "{availableQuantity, plural, one {# พร้อมจำหน่่าย} other {# พร้อมจำหน่่าย}}",
+  "admin/editor.product-quantity.title": "คอมโพเนนต์ของจำนวนผลิตภัณฑ์",
+  "admin/editor.product-quantity.description": "คอมโพเนนต์ที่ทำให้ผู้ใช้สามารถเลือกจำนวนสินค้าเพื่อเพิ่มลงในรถเข็น",
+  "admin/editor.product-quantity.warningQuantityThreshold.title": "เกณฑ์การเตือนจำนวนสินค้าพร้อมจำหน่าย",
+  "admin/editor.product-quantity.warningQuantityThreshold.description": "แสดงเฉพาะจำนวนสินค้าคงเหลือในคลังสินค้า หากจำนวนสินค้าพร้อมจำหน่ายน้อยกว่าหรือเท่ากับค่าที่ส่งผ่านในคุณสมบัตินี้",
+  "admin/editor.product-quantity.showUnit.title": "หน่วยวัดในตัวเลือกจำนวน",
+  "admin/editor.product-quantity.showUnit.description": "แสดงหรือซ่อนหน่วยวัดในตัวเลือกจำนวน"
+}

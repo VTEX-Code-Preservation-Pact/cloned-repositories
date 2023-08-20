@@ -1,0 +1,21 @@
+{
+  "name": "marketingdata-session",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Session App for MarketingData",
+  "description": "Handles marketingData namespace",
+  "categories": [],
+  "settingsSchema": {},
+  "registries": [
+    "smartcheckout"
+  ],
+  "builders": {
+    "node": "4.x",
+    "vtex.session": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh",
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

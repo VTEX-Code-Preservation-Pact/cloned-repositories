@@ -1,0 +1,17 @@
+mutation impersonate($email: String!) {
+  impersonate(email: $email) {
+    id
+    adminUserId
+    impersonable
+    adminUserEmail
+    impersonate {
+      profile {
+        phone
+        email
+        lastName
+        document
+        firstName
+      }
+    }
+  }
+}

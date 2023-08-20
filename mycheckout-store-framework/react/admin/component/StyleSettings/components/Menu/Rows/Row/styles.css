@@ -1,0 +1,19 @@
+.rowContainer {
+  padding: 17.5px 14px 35px 14px;
+  box-shadow: 0px -1px 0px rgba(227, 228, 230, 0.7);
+}
+
+.rowLabel {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3F3F40;
+}
+
+.rowChildrenContainer {
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+}

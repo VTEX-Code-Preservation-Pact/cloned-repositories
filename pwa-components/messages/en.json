@@ -1,0 +1,12 @@
+{
+  "store/promotion-banner.button-dismiss.label": "Not now",
+  "store/promotion-banner.install.title": "Keep track of your orders",
+  "store/promotion-banner.install.description": "Our app is fast, small, and works offline",
+  "store/promotion-banner.install.button-accept.label": "Install",
+  "store/promotion-banner.push-notification.title": "Keep track of your orders",
+  "store/promotion-banner.push-notification.description": "Receive notifications about your orders status",
+  "store/promotion-banner.push-notification.button-accept.label": "Accept",
+  "store/offline-warning.button": "Refresh",
+  "store/offline-warning.message": "Unable to load this page. Check your network connection",
+  "store/offline-warning.title": "This page cannot be loaded"
+}

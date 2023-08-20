@@ -1,0 +1,18 @@
+{
+  "vendor": "vtex",
+  "name": "wine-meter",
+  "version": "1.0.1",
+  "title": "Winemeter",
+  "description": "Winemeter graphic widget",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.product-context": "0.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

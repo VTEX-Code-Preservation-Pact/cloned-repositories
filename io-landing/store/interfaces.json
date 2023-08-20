@@ -1,0 +1,22 @@
+{
+  "io": {
+    "blocks": [
+      "io.landing"
+    ]
+  },
+  "io.landing": {
+    "component": "IO"
+  },
+  "io.landing-old": {
+    "component": "IO"
+  },
+  "io.faq": {
+    "component": "FAQ"
+  },
+  "io.store-features": {
+    "component": "Features"
+  },
+  "io.storefront-onboarding": {
+    "component": "Onboarding"
+  }
+}

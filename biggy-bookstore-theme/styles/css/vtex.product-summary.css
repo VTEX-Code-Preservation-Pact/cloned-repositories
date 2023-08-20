@@ -1,0 +1,31 @@
+.SKUSelectorContainer {
+  min-height: 29px;
+}
+
+.priceContainer {
+  min-height: 65px;
+}
+
+.nameContainer {
+  min-height: 84px;
+}
+
+@media only screen and (min-width: 1026px) {
+  .buyButton {
+    opacity: 0;
+    transition: all 0.2s ease-out;
+  }
+}
+
+.container:hover {
+  transform: scale(1.025);
+  transition: 0.2s;
+}
+
+.container {
+  max-height: 573px;
+}
+
+.container:hover .buyButton {
+  opacity: 1;
+}

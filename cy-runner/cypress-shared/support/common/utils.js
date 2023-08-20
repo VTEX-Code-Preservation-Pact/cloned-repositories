@@ -1,0 +1,41 @@
+export const PRODUCTS = {
+  onion: 'Yellow Onions',
+  coconut: 'Fresh Coconuts',
+  waterMelon: 'Whole Watermelon',
+  orange: 'Navel Oranges',
+  cauliflower: 'Cauliflower Fresh',
+  tshirt: 'green night',
+  irobot: 'irobot',
+  blackDecker: 'black decker',
+  greenConventional: 'green conventional',
+}
+
+export function generateAddtoCartSelector(href) {
+  return `a[href='${href}'] > article > button`
+}
+
+export function generateAddtoCartCardSelector(href) {
+  return `a[href='${href}']`
+}
+
+export const PRODUCTS_LINK_MAPPING = {
+  orange: {
+    name: 'Navel Oranges Grown Large Fresh Fruit',
+    link: 'a[href*="/navel-oranges-grown-large-fresh-fruit/p"]',
+  },
+  coconut: {
+    name: 'Fresh Coconuts',
+    link: 'a[href="/fresh-coconuts/p"]',
+  },
+}
+
+export function isValidDate(d) {
+  // eslint-disable-next-line no-restricted-globals
+  return d instanceof Date && !isNaN(d)
+}
+
+export function getLogFile() {
+  return `${
+    Cypress.spec.absolute.split('cy-runner')[0]
+  }cy-runner/logs/${Cypress.spec.name.split('/').at(-1)}.log`
+}

@@ -1,0 +1,42 @@
+type AffiliateOrder {
+  id: ID!
+  orderId: ID!
+  affiliateId: String!
+  status: String
+  userEmail: String!
+  orderTotal: Float
+  orderTotalCommission: Float
+  orderDate: String
+  orderItems: [OrderItem!]!
+  lastInteractionIn: String
+}
+
+type OrderItem {
+  skuId: String!
+  skuName: String!
+  skuImageUrl: String
+  price: Float!
+  quantity: Int!
+  commission: Float!
+}
+
+type AffiliateOrdersTotalizers {
+  total: Int
+  totalCommissionSum: Float
+  totalOrderSum: Float
+}
+
+type AffiliateProfileOrdersTotalizers {
+  totalCancelled: Int
+  totalOngoing: Int
+  totalInvoiced: Int
+}
+
+type AffiliateOrdersPage {
+  data: [AffiliateOrder]!
+  pagination: Pagination!
+  totalizers(filter: AffiliateOrdersFilterInput): AffiliateOrdersTotalizers
+  totalizersProfile(
+    filter: AffiliateOrdersFilterInput
+  ): AffiliateProfileOrdersTotalizers
+}

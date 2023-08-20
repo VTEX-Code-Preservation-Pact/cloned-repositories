@@ -1,0 +1,53 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": ["menu-item#option1", "menu-item#option2", "menu-item#option3"]
+  },
+  "menu-item#option1": {
+    "props": {
+      "blockClass": "side-menu-link",
+      "id": "menu-item-category-decoration",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Today's Deals",
+        "text": "Today's Deals"
+      }
+    }
+  },
+  "menu-item#option2": {
+    "props": {
+      "blockClass": "side-menu-link",
+      "id": "menu-item-category-decoration",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "eBooks",
+        "text": "eBooks"
+      }
+    }
+  },
+  "menu-item#option3": {
+    "props": {
+      "blockClass": "side-menu-link",
+      "id": "menu-item-category-decoration",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "New Releases",
+        "text": "New Releases"
+      }
+    }
+  }
+}

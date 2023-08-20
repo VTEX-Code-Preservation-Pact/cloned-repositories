@@ -1,0 +1,44 @@
+{
+  "name": "checkout-graphql",
+  "vendor": "vtex",
+  "version": "0.66.3",
+  "title": "Checkout GraphQL",
+  "description": "Checkout GraphQL API",
+  "builders": {
+    "graphql": "1.x",
+    "node": "6.x"
+  },
+  "dependencies": {
+    "vtex.country-data-settings": "0.x",
+    "vtex.graphql-server": "1.x",
+    "vtex.messages": "1.x"
+  },
+  "credentialType": "absolute",
+  "mustUpdateAt": "2019-11-05",
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [
+    {
+      "name": "vtex.messages:translate-messages"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/checkout/pub/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercebeta.com.br",
+        "path": "/api/checkout/pub/*"
+      }
+    },
+    {
+      "name": "vtex.graphql-server:resolve-graphql"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

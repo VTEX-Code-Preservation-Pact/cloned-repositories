@@ -1,0 +1,39 @@
+{
+  "order-config": {
+    "component": "OrderConfigurationSelector",
+    "composition": "children",
+    "allowed": [
+      "order-config.modal",
+      "order-config.form",
+      "order-config.title",
+      "flex-layout"
+    ]
+  },
+  "order-config.modal": {
+    "component": "OrderConfigurationModal",
+    "composition": "children",
+    "allowed": [
+      "order-config.form",
+      "order-config.title"
+    ]
+  },
+  "order-config.form": {
+    "component": "OrderConfigurationForm",
+    "composition": "children"
+  },
+  "order-config.text": {
+    "component": "FormInputText"
+  },
+  "order-config.dropdown": {
+    "component": "FormInputDropdown"
+  },
+  "order-config.radiogroup": {
+    "component": "FormInputRadiogroup"
+  },
+  "order-config.submit": {
+    "component": "FormSubmit"
+  },
+  "order-config.title": {
+    "component": "Title"
+  }
+}

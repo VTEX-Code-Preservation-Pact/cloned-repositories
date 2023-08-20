@@ -1,0 +1,27 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "getConfig": {
+      "path": "/_v/{{appVendor}}/{{appName}}/config",
+      "public": true
+    },
+
+    "getConnectorConfig": {
+      "path": "/_v/{{appVendor}}/{{appName}}/connectorConfig",
+      "public": true
+    }
+  },
+  "events": {
+    "updateConnectionStatus": {
+      "sender": "{{appVendor}}.{{appName}}",
+      "keys": [
+        "{{appVendor}}.{{appName}}-update-channel-manager-connection-status"
+      ]
+    }
+  }
+}

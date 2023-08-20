@@ -1,0 +1,14 @@
+{
+  "name": "Product Highlight by Vtex Segment",
+  "headline": "See highlights for each Whitelabel Seller!",
+  "overview": "The Product Highlight app in Whitelabel architecture allows depending on the region and collections created for each sellers show a Highlight on each product in the collection.",
+  "features": [
+    "Highlights on Product Page (PDP) for each product in a collection",
+    "Highlights on Product Listing Page (PLP) for each product in a collection",
+    "Whitelabel Seller architecture"
+  ],
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

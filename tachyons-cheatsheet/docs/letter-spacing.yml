@@ -1,0 +1,24 @@
+name: Letter spacing
+
+docs: http://tachyons.io/docs/typography/tracking/
+
+src: letter-spacing
+
+description:
+
+base:
+  - tracked
+
+modifiers:
+  - -tight
+  - -mega
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - letter-spacing

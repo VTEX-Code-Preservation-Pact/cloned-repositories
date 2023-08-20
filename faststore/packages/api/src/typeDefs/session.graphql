@@ -1,0 +1,194 @@
+"""
+Currency information.
+"""
+type StoreCurrency {
+  """
+  Currency code (e.g: USD).
+  """
+  code: String!
+  """
+  Currency symbol (e.g: $).
+  """
+  symbol: String!
+}
+
+input IStoreCurrency {
+  """
+  Currency code (e.g: USD).
+  """
+  code: String!
+  """
+  Currency symbol (e.g: $).
+  """
+  symbol: String!
+}
+
+"""
+Geographic coordinates information.
+"""
+type StoreGeoCoordinates {
+  """
+  The latitude of the geographic coordinates.
+  """
+  latitude: Float!
+  """
+  The longitude of the geographic coordinates.
+  """
+  longitude: Float!
+}
+
+input IStoreGeoCoordinates {
+  """
+  The latitude of the geographic coordinates.
+  """
+  latitude: Float!
+  """
+  The longitude of the geographic coordinates.
+  """
+  longitude: Float!
+}
+
+"""
+Delivery window information.
+"""
+type StoreDeliveryWindow {
+  """
+  The delivery window start date information.
+  """
+  startDate: String!
+  """
+  The delivery window end date information.
+  """
+  endDate: String!
+}
+
+"""
+Delivery window information.
+"""
+input IStoreDeliveryWindow {
+  """
+  The delivery window start date information.
+  """
+  startDate: String!
+  """
+  The delivery window end date information.
+  """
+  endDate: String!
+}
+
+"""
+Delivery mode information.
+"""
+type StoreDeliveryMode {
+  """
+  The delivery channel information of the session.
+  """
+  deliveryChannel: String!
+  """
+  The delivery method information of the session.
+  """
+  deliveryMethod: String!
+  """
+  The delivery window information of the session.
+  """
+  deliveryWindow: StoreDeliveryWindow
+}
+
+input IStoreDeliveryMode {
+  """
+  The delivery channel information of the session.
+  """
+  deliveryChannel: String!
+  """
+  The delivery method information of the session.
+  """
+  deliveryMethod: String!
+  """
+  The delivery window information of the session.
+  """
+  deliveryWindow: IStoreDeliveryWindow
+}
+
+"""
+Session information.
+"""
+type StoreSession {
+  """
+  Session locale.
+  """
+  locale: String!
+  """
+  Session currency.
+  """
+  currency: StoreCurrency!
+  """
+  Session country.
+  """
+  country: String!
+  """
+  Session channel.
+  """
+  channel: String
+  """
+  Session delivery mode.
+  """
+  deliveryMode: StoreDeliveryMode
+  """
+  Session address type.
+  """
+  addressType: String
+  """
+  Session postal code.
+  """
+  postalCode: String
+  """
+  Session input geoCoordinates.
+  """
+  geoCoordinates: StoreGeoCoordinates
+  """
+  Session input person.
+  """
+  person: StorePerson
+}
+
+"""
+Session input.
+"""
+input IStoreSession {
+  """
+  Session input locale.
+  """
+  locale: String!
+  """
+  Session input currency.
+  """
+  currency: IStoreCurrency!
+  """
+  Session input country.
+  """
+  country: String!
+  """
+  Session input channel.
+  """
+  channel: String
+  """
+  Session input delivery mode.
+  """
+  deliveryMode: IStoreDeliveryMode
+  """
+  Session input address type.
+  """
+  addressType: String
+  """
+  Session input postal code.
+  """
+  postalCode: String
+  """
+  Session input geoCoordinates.
+  """
+  geoCoordinates: IStoreGeoCoordinates
+  """
+  Session input person.
+  """
+  person: IStorePerson
+}

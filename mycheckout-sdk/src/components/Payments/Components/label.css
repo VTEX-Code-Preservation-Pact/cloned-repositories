@@ -1,0 +1,44 @@
+.paymentLabelContainer {
+  display: flex;
+  position: relative;
+  margin: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  align-items: center;
+}
+
+.paymentLabelContainer label {
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+
+.paymentLabelContainer .paymentCustomCreditLabel {
+  font-size: 14px !important;
+  color: #284859;
+  line-height: 24px;
+  margin: 12px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #0000000f;
+  padding: 5px 28px;
+  margin-bottom: 15px;
+  cursor: initial;
+}
+
+.paymentLabelContainer .paymentCustomCreditLabel b {
+  color: #1b998b;
+}
+
+@media screen and (min-width: 992px) {
+  .paymentLabelContainer {
+    margin: 16px;
+  }
+
+  .paymentLabelContainer .paymentCustomCreditLabel {
+    margin: 16px 0px;
+  }
+}

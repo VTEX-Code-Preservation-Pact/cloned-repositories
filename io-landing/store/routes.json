@@ -1,0 +1,19 @@
+{
+  "io.landing": {
+    "path": "/io",
+    "cname": "www.vtex.io"
+  },
+  "io.landing-old": {
+    "path": "/io-old",
+    "cname": "vtex.io"
+  },
+  "io.faq": {
+    "path": "/faq"
+  },
+  "io.store-features": {
+    "path": "/store-features"
+  },
+  "io.storefront-onboarding": {
+    "path": "/storefront-onboarding"
+  }
+}

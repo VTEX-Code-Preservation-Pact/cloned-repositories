@@ -1,0 +1,13 @@
+{
+  "pages": {
+    "black-friday-timer": {
+      "path": "/black-friday-timer",
+      "extensible": true
+    }
+  },
+  "extensions": {
+    "black-friday-timer": {
+      "component": "index"
+    }
+  }
+}

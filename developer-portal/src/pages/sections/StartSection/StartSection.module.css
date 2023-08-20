@@ -1,0 +1,74 @@
+.startSection {
+  padding: 8vh 0;
+  background: url(../../../../static/img/cover2.png) bottom right;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom: 1px solid #e7e9ee;
+  color: #142032;
+}
+
+.header__title {
+  line-height: 110%;
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+}
+
+.header__subtitle {
+  width: 80%;
+  margin: 24px 0;
+  font-size: 1.25rem;
+  padding: 0;
+  line-height: 30px;
+  color: #717786;
+}
+
+.creatingTitle {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  margin: 2rem 0;
+}
+
+.stack {
+  margin: 2rem 0 0;
+  padding: 1rem;
+  background-color: #fff3f6;
+  border-radius: 10px;
+  background: url(../../../../static/img/coverFaststore.png) bottom right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.stack__description {
+  padding: 15px 30px 5px;
+  width: 70%;
+}
+
+.stack button {
+  display: block;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 990px) {
+  .startSection {
+    background-image: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .stack {
+    background-image: none;
+    background-color: #ffdfef;
+  }
+  .stack__description {
+    width: 100%;
+  }
+}

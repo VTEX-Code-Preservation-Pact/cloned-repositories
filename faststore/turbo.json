@@ -1,0 +1,26 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["OCLIF_COMPILATION", "NODE_ENV", "DISABLE_3P_SCRIPTS"],
+  "pipeline": {
+    "site#build": {
+      "dependsOn": ["^build", "$BASE_SITE_URL"],
+      "outputs": [".next/**"]
+    },
+    "build": {
+      "outputs": ["dist/**"],
+      "dependsOn": ["^build"]
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": []
+    },
+    "lint": {
+      "outputs": []
+    },
+    "start": {},
+    "size": {},
+    "dev": {
+      "cache": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "addon-summary-btn.add-to-list": {
+    "component": "AddProductBtn"
+  },
+  "addon-details-btn.add-to-list": {
+    "component": "AddProductBtn",
+    "required": ["lists", "product-summary"]
+  },
+  "add-to-list-btn": {
+    "component": "AddProductBtn",
+    "required": ["lists", "product-summary"]
+  },
+  "lists": {
+    "component": "ListsPage",
+    "required": ["product-summary"]
+  },
+  "store.lists": {
+    "component": "ContainerWrapper",
+    "required": [
+      "lists"
+    ],
+    "after": [
+      "footer"
+    ]
+  },
+  "footer": {
+    "component": "Footer"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "formula": {
+      "path": "/formula"
+    },
+    "formula/intro": {
+      "path": "/formula"
+    },
+    "formula/projects": {
+      "path": "/formula/:edition"
+    },
+    "formula/projects/list": {
+      "path": "/formula/:edition/projects"
+    },
+    "formula/projects/finalists": {
+      "path": "/formula/:edition/finalists"
+    },
+    "formula/projects/detail": {
+      "path": "/formula/:edition/projects/:id"
+    }
+  },
+  "extensions": {
+    "formula": {
+      "component": "Template"
+    },
+    "formula/intro": {
+      "component": "Intro"
+    },
+    "formula/projects": {
+      "component": "ProjectTemplate"
+    },
+    "formula/projects/list": {
+      "component": "FormulaEdition"
+    },
+    "formula/projects/finalists": {
+      "component": "FormulaEdition"
+    },
+    "formula/projects/detail": {
+      "component": "ProjectDetail"
+    }
+  }
+}

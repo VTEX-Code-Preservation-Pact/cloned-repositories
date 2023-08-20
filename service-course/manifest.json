@@ -1,0 +1,13 @@
+{
+  "name": "service-course",
+  "vendor": "vtex",
+  "version": "0.3.0",
+  "title": "Service Course",
+  "description": "Course aproaching VTEX Backend Services",
+  "dependencies": {},
+  "builders": {
+    "docs": "0.x",
+    "course": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

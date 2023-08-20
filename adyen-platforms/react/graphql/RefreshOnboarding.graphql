@@ -1,0 +1,6 @@
+mutation RefreshOnboarding($accountHolderCode: String!) {
+  refreshOnboarding(accountHolderCode: $accountHolderCode) {
+    accountHolderCode
+    urlToken
+  }
+}

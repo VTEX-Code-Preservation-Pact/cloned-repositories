@@ -1,0 +1,29 @@
+{
+	"name": "vtex-curl-amd",
+	"version": "0.8.10-vtex.4",
+	"description": "VTEX namespaced and forked version of curl.js",
+	"keywords": ["curl", "cujo", "amd", "loader", "module", "commonjs", "css", "html", "json", "vtex"],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://www.opensource.org/licenses/mit-license.php"
+		}
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/vtex/curl"
+	},
+	"bugs": "https://github.com/vtex/curl/issues",
+	"maintainers": [
+		{
+			"name": "Breno Calazans"
+		}
+	],
+	"main": "./dist/curl/curl.js",
+	"directories": {
+		"test": "test"
+	},
+	"volo": {
+		"type": "directory"
+	}
+}

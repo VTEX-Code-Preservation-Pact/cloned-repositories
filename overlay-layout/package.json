@@ -1,0 +1,29 @@
+{
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "@vtex/intl-equalizer": "^2.3.0",
+    "@vtex/prettier-config": "^0.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-vtex": "^11.2.1",
+    "eslint-config-vtex-react": "^5.1.0",
+    "husky": "^2.4.1",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.5"
+  },
+  "scripts": {
+    "lint": "eslint --quiet --fix --ext ts,tsx ./react",
+    "test": "cd ./react && yarn test",
+    "verify": "yarn lint && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn verify"
+    }
+  },
+  "intl-equalizer": {
+    "referenceLocale": "en",
+    "localeDirectory": "messages"
+  }
+}

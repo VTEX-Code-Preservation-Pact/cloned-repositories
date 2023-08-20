@@ -1,0 +1,44 @@
+{
+  "name": "kelkoo",
+  "vendor": "vtex",
+  "version": "1.0.0",
+  "title": "Kelkoo first party integration",
+  "description": "",
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Kelkoo",
+    "type": "object",
+    "properties": {
+      "merchantId": {
+        "title": "Shop ID",
+        "description": "Enter the unique ID representing your shop within the Kelkoo system (COMID_VALUE)",
+        "type": "string"
+      },
+      "countryCode": {
+        "title": "Product country identifier",
+        "description": "Enter the 2-letter country code (lower case) for the country on which your products are listed on Kelkoo (COUNTRY_CODE)",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

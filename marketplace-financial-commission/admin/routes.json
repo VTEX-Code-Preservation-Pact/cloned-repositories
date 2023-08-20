@@ -1,0 +1,22 @@
+{
+  "admin.app.dashboard": {
+    "component": "commissionReport",
+    "path": "/admin/app/commission-report"
+  },
+  "admin.app.detail": {
+    "component": "commissionReportDetail",
+    "path": "/admin/app/commission-report/detail/*seller"
+  },
+  "admin.app.settings": {
+    "component": "commissionReportSettings",
+    "path": "/admin/app/commission-report/settings"
+  },
+  "admin.app.settings-detail": {
+    "component": "commissionReportSettingsDetail",
+    "path": "/admin/app/commission-report/settings/detail/*sellerId"
+  },
+  "admin.app.invoiceDetail": {
+    "component": "invoiceMarketplaceDetail",
+    "path": "/admin/app/commission-report/invoice/:id"
+  }
+}

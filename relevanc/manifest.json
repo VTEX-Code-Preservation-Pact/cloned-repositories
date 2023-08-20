@@ -1,0 +1,61 @@
+{
+  "vendor": "vtex",
+  "name": "relevanc",
+  "version": "1.0.5",
+  "title": "RelevanC",
+  "description": "RelevanC Intelligent Search API middleware resolver.",
+  "builders": {
+    "docs": "0.x",
+    "node": "6.x"
+  },
+  "dependencies": {
+    "vtex.is-api-middleware-graphql": "0.x"
+  },
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "*.peps.relevanc.io/sponsored-offers"
+      }
+    }
+  ],
+  "settingsSchema": {
+    "title": "RelevanC search resolver middleware",
+    "type": "object",
+    "properties": {
+      "adServerName": {
+        "title": "RelevanC AdServer name",
+        "type": "string",
+        "description": "Name of the RelevanC AdServer (without the \"ads.peps.relevanc.io\")"
+      },
+      "boostType": {
+        "title": "Product property",
+        "type": "string",
+        "default": "productId",
+        "enum": [
+          "productId",
+          "skuId"
+        ],
+        "enumNames": [
+          "Product ID",
+          "SKU ID"
+        ]
+      },
+      "maxOffersToDisplay": {
+        "title": "Max number of offers",
+        "type": "number",
+        "description": "Max number of sponsored offers to display on the search results."
+      },
+      "addAllProducts": {
+        "title": "Add all products",
+        "type": "boolean",
+        "description": "By default, only products that are part of the search results are promoted.\n Check to add all products returned by the AdServer."
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

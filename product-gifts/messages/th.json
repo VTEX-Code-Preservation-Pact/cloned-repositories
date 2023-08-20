@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "รูปของขวัญ",
+  "admin/editor.gift-image.description": "รูปของขวัญผลิตภัณฑ์",
+  "admin/editor.gift-image.imageLabel.title": "ป้ายกำกับรูป",
+  "admin/editor.gift-image.imageLabel.description": "ป้ายกำกับที่ระบุว่าควรแสดงรูปใดจากผลิตภัณฑ์",
+  "admin/editor.gift-name.title": "ชื่อของขวัญ",
+  "admin/editor.gift-name.description": "ชื่อของของขวัญ",
+  "admin/editor.gift-name.linkToProduct.title": "เชื่อมโยงไปหน้าผลิตภัณฑ์",
+  "admin/editor.gift-name.linkToProduct.description": "ชื่อของขวัญควรเป็นลิงก์เชื่อมโยงไปหน้าผลิตภัณฑ์หรือไม่",
+  "admin/editor.gift-name.nameType.title": "ประเภทชื่อการแสดง",
+  "admin/editor.gift-name.nameType.description": "แสดงชื่อ skuName หรือ productName ของของขวัญ",
+  "admin/editor.product-gifts.title": "ของขวัญผลิตภัณฑ์",
+  "admin/editor.product-gifts.description": "แสดงของขวัญที่มีสำหรับผลิตภัณฑ์ปัจจุบัน",
+  "admin/editor.product-gifts.maxVisibleItems.title": "จำนวนสูงสุดของรายการสินค้าที่มองเห็นได้",
+  "admin/editor.product-gifts.maxVisibleItems.description": "จำนวนสูงสุดของของขวัญที่จะแสดงทันที (ใช้ \"showAll\" เสมอเพื่อแสดงของขวัญทั้งหมดที่มี)",
+  "admin/editor.product-gift-text.title": "ข้อความของขวัญผลิตภัณฑ์",
+  "admin/editor.product-gift-text.description": "ข้อมูลเพิ่มเติมเกี่ยวกับของขวัญที่มี",
+  "admin/editor.product-gift-text.text.title": "ข้อความ",
+  "admin/editor.product-gift-text.text.description": "ข้อความที่แปลได้ซึ่งมีตัวแปรที่อาจใช้แสดงข้อความใด ๆ ที่เกี่ยวกับของขวัญ รูปแบบที่ใช้เป็นกฎ UCI และตัวแปรที่มีคือ: totalGifts, exceedingItems และ visibleItems"
+}

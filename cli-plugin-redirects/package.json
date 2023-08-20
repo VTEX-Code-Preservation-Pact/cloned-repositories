@@ -1,0 +1,104 @@
+{
+  "name": "@vtex/cli-plugin-redirects",
+  "description": "vtex plugin redirects",
+  "version": "1.0.0",
+  "bugs": "https://github.com/vtex/cli-plugin-redirects/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1.17.0",
+    "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
+    "@vtex/api": "3.77.0",
+    "ajv": "~6.10.2",
+    "crypto": "^1.0.1",
+    "csvtojson": "^2.0.10",
+    "fs-extra": "^10.0.0",
+    "json-array-split": "^1.0.0",
+    "json2csv": "^5.0.1",
+    "ora": "^5.4.1",
+    "progress": "^2.0.3",
+    "ramda": "^0.27.1",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^3",
+    "@types/fs-extra": "^9.0.1",
+    "@types/jest": "^26.0.3",
+    "@types/json2csv": "^5.0.1",
+    "@types/node": "^14.0.14",
+    "@types/progress": "^2.0.3",
+    "@types/ramda": "0.27.14",
+    "eslint": "^6.8.0",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-vtex": "^12.3.0",
+    "globby": "^10",
+    "husky": "^4.2.5",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.2.11",
+    "nodemon": "^2.0.2",
+    "nodemon-notifier-cli": "https://github.com/Slessi/nodemon-notifier-cli.git",
+    "prettier": "^2.0.1",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8",
+    "typescript": "^3.9.7",
+    "vtex": "^2.128.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/build",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/yarn.lock"
+  ],
+  "homepage": "https://github.com/vtex/cli-plugin-redirects",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./build/commands",
+    "bin": "oclif-example",
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ],
+    "topics": {
+      "redirects": {
+        "description": "Imports, exports, or removes redirects from the current account and workspace. Run 'vtex redirects' to see all 3 subcommands."
+      }
+    }
+  },
+  "repository": "vtex/cli-plugin-redirects",
+  "scripts": {
+    "build-clean": "rm -rf build",
+    "build-incremental": "tsc --incremental",
+    "build": "yarn build-clean && yarn tsc && OCLIF_COMPILATION=true yarn oclif-dev manifest --color=256",
+    "ci:prettier-check": "prettier --check --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx,json}\"",
+    "ci:test": "yarn test --ci",
+    "format-lint": "yarn format && yarn lint",
+    "format": "prettier --config ./.prettierrc --write \"**/*.{ts,js,json}\"",
+    "lint": "eslint ./src --cache --ext .ts --config .eslintrc",
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf build && tsc -b && oclif-dev manifest --color=256 && oclif-dev readme",
+    "prepublishOnly": "bash ./scripts/publishLock.sh",
+    "test": "jest --passWithNoTests",
+    "version": "oclif-dev readme && git add README.md",
+    "watch": "yarn build-clean && yarn nodemon"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  }
+}

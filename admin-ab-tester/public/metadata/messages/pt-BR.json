@@ -1,0 +1,14 @@
+{
+  "name": "AB Tester",
+  "headline": "Crie, liste e finalize testes AB.",
+  "overview": "O AB Tester permite que você execute diferentes versões de sua loja para testar ideias e melhorar a experiência do usuário.",
+  "features": [
+    "Obter teste AB atual",
+    "Terminar um teste AB",
+    "Criar um teste AB"
+  ],
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

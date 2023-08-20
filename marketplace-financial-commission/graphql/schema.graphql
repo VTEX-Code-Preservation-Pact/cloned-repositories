@@ -1,0 +1,63 @@
+type Query {
+  """
+  Retrieve all onboarded sellers
+  """
+  getSellers(listSellersParams: ListSellersParams): PaginatedSellers
+    @cacheControl(scope: PUBLIC, maxAge: LONG)
+  """
+  Retrieve paginated Invoices for a given seller
+  """
+  invoicesBySeller(sellerInvoiceParams: SellerInvoiceParams): ListInvoices
+    @cacheControl(scope: PRIVATE, maxAge: LONG)
+  """
+  Retrieves an Invoice
+  """
+  getInvoice(id: String!): Invoice @cacheControl(scope: PRIVATE, maxAge: SHORT)
+  """
+  Retrieve marketplace dashboard in a date range
+  """
+  searchSellersDashboard(
+    searchDashboardParams: SearchDashboardParams
+  ): SearchResponse @cacheControl(scope: PUBLIC, maxAge: LONG)
+
+  """
+  Retrieve Statistics General to marketplace in a date range
+  """
+  searchStatisticsDashboard(
+    searchStatsDashboardParams: SearchStatsDashboardParams
+  ): SearchStatsResponse @cacheControl(scope: PUBLIC, maxAge: LONG)
+
+  """
+  Retrieve orders to seller
+  """
+  orders(searchOrdersParams: SearchOrdersParams): SearchOrdersResponse
+    @cacheControl(scope: PUBLIC, maxAge: LONG)
+
+  """
+  Get data token
+  """
+  getToken(accountId: ID!): GetTokenResponse
+    @cacheControl(scope: PUBLIC, maxAge: LONG)
+
+  getSettings(id: String): SettingsSeller
+    @cacheControl(scope: PUBLIC, maxAge: LONG)
+  """
+  Retrieve template for order detail
+  """
+  getTemplate: String @cacheControl(scope: PRIVATE, maxAge: LONG)
+}
+
+type Mutation {
+  createToken(accountId: ID!): CreateTokenResponse
+  editToken(accountId: ID!, tokenInput: TokenInput!): EditTokenResponse
+  """
+  Attempts to create an Invoice
+  """
+  createInvoice(invoiceData: InvoiceDataInput!): String
+
+  """
+  Attempts to create an settings
+  """
+  createSettings(settingsData: SettingsDataInput!): SettingsResponse
+  sendEmail(emailData: EmailDataInput!): String
+}

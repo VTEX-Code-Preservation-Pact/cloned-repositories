@@ -1,0 +1,17 @@
+.triggerCollapsibleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
+}
+
+.triggerCollapsibleInfo {
+  display: flex;
+  align-items: center;
+}
+
+.triggerCollapsibleText {
+  margin-left: 10px;
+  margin-right: 22px;
+}

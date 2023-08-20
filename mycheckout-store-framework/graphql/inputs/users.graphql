@@ -1,0 +1,13 @@
+input UserInput {
+  name: String
+  lastname: String
+  phone_code: String
+  phone_number: String
+  selectedAddress: ID
+  selectedPayment: ID
+}
+
+input ProfileInput {
+  email: String
+  habeasData: Boolean
+}

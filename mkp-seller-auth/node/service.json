@@ -1,0 +1,18 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 10000,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "healthcheck": {
+      "path": "/mkp-seller-auth/v0/healthcheck",
+      "public": true
+    },
+    "executeCall": {
+      "path": "/mkp-seller-auth/v0/executeCall",
+      "public": true
+    }
+  }
+}

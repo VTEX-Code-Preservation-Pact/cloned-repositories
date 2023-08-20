@@ -1,0 +1,3 @@
+mutation saveAppSettings($settings: SaveSettings) {
+  saveAppSettings(settings: $settings)
+}

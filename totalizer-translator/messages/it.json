@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "Sconto",
+  "store/totalizers.Items": "Subtotale",
+  "store/totalizers.Shipping": "Spedizione",
+  "store/totalizers.Tax": "Tasse",
+  "store/totalizers.Interest": "Tasso d'interesse",
+  "store/totalizers.Change": "Totale delle modifiche",
+  "totalizers.Discounts": "Descuentos",
+  "totalizers.Items": "Subtotal",
+  "totalizers.Shipping": "Costo del envío",
+  "totalizers.Tax": "Impuestos",
+  "totalizers.Interest": "Interés",
+  "totalizers.Change": "Totale delle modifiche"
+}

@@ -1,0 +1,7 @@
+input ProductsInput {
+  sku: String
+  quantity: Int
+  price: Float
+  category: String
+  subcategory: String
+}

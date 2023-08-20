@@ -1,0 +1,146 @@
+{
+  "vtex.menu@2.x:menu#About": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": [
+      "menu-item#aboutus",
+      "menu-item#contact",
+      "menu-item#help",
+      "menu-item#terms"
+    ]
+  },
+  "vtex.menu@2.x:menu#About-2": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "center-menu"
+    },
+    "children": [
+      "menu-item#work",
+      "menu-item#store",
+      "menu-item#info",
+      "menu-item#clients"
+    ]
+  },
+  "menu-item#clients": {
+    "props": {
+      "id": "menu-item-clients",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "clients",
+        "text": "clients"
+      }
+    }
+  },
+  "menu-item#info": {
+    "props": {
+      "id": "menu-item-info",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Info",
+        "text": "Info"
+      }
+    }
+  },
+  "menu-item#work": {
+    "props": {
+      "id": "menu-item-work",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Work with us",
+        "text": "Work with us"
+      }
+    }
+  },
+  "menu-item#store": {
+    "props": {
+      "id": "menu-item-store",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Stores",
+        "text": "Stores"
+      }
+    }
+  },
+  "menu-item#aboutus": {
+    "props": {
+      "id": "menu-item-aboutus",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "About Us",
+        "text": "About Us"
+      }
+    }
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-contact",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Contact Us",
+        "text": "Contact Us"
+      }
+    }
+  },
+  "menu-item#help": {
+    "props": {
+      "id": "menu-item-help",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Help",
+        "text": "Help"
+      }
+    }
+  },
+  "menu-item#terms": {
+    "props": {
+      "id": "menu-item-terms",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Terms and Policies",
+        "text": "Terms and Policies"
+      }
+    }
+  }
+}

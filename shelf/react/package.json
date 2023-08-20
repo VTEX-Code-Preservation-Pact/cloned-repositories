@@ -1,0 +1,29 @@
+{
+  "name": "vtex.shelf",
+  "version": "1.47.4",
+  "description": "A Shelf Component.",
+  "license": "ISC",
+  "author": "VTEX",
+  "private": true,
+  "scripts": {
+    "test": "vtex-test-tools test"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "debounce": "^1.2.0",
+    "ramda": "^0.25.0",
+    "react-amphtml": "^4.0.2",
+    "react-apollo": "^2.5.8",
+    "react-intersection-observer": "^8.23.0",
+    "react-intl": "^2.7.2",
+    "react-resize-detector": "^3.4.0"
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "^3.1.4",
+    "@types/graphql": "^14.5.0",
+    "@types/react": "^16.9.3",
+    "@vtex/test-tools": "^3.1.0",
+    "@vtex/tsconfig": "^0.3.0",
+    "babel-eslint": "^10.1.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+	"app": {
+		"message": "App"
+	},
+	"version": {
+		"message": "Versão"
+	},
+	"versions": {
+		"message": "Versões"
+	},
+	"cookies": {
+		"message": "Cookies"
+	},
+	"enviroment": {
+		"message": "Ambiente"
+	},
+	"gallery": {
+		"message": "Gallery"
+	},
+	"unknown": {
+		"message": "Desconhecido"
+	},
+	"notVTEX": {
+		"message": "Provavelmente esse site não usa VTEX."
+	},
+	"showFriendlyError": {
+		"message": "Exibir erros amigáveis"
+	},
+	"debugJS": {
+		"message": "Depurar JS"
+	},
+	"customJavascript": {
+		"message": "Javascript customizado"
+	},
+	"customCSS": {
+		"message": "CSS customizado"
+	}
+}

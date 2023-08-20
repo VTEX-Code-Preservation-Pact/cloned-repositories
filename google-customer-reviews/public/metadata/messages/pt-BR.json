@@ -1,0 +1,16 @@
+{
+  "name": "Google Customer Review",
+  "headline": "Este aplicativo permite que o Google colete e publique comentários de clientes que fizeram uma compra no seu site.",
+  "overview": "Este aplicativo permite a integração com o serviço gratuito oferecido pelo Google de coleta de avaliações e comentários dos clientes que compraram na sua loja.\nAs informações coletadas podem ser úteis para monitorar, por meio do Google Merchant Center, como estão sendo as experiências dos clientes, também para anúncios do Google AdWords e para apresentação de produtos no Google Shopping.",
+  "features": [
+    "Envio de e-mail para avaliação de clientes com a opção \"Google Customer Reviews\" ativada",
+    "Selo do Google com a classificação do vendedor (opcional)",
+    "Formulário de pesquisa de opinião de clientes (opcional)",
+    "Classificação do vendedor no Google Shopping."
+  ],
+  "additionalInformation": "Para a utilização do aplicativo em sua loja e acompanhamento dos dados coletados, é preciso ter uma conta no Google Merchant Center.",
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

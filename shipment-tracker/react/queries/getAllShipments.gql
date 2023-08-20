@@ -1,0 +1,13 @@
+query GetAllShipments {
+  allShipments{
+    id
+    trackingNumber
+    carrier
+    delivered
+    orderId
+    invoiceId
+    externalLink
+    createdIn
+    lastInteractionDate
+  }
+}

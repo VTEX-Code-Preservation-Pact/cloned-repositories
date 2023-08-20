@@ -1,0 +1,10 @@
+query getSettings{
+  getSettings{
+    login
+    password
+    isMandatoryForCompany
+    startOfAcceptedRange
+    tradePolicyId
+    token
+  }
+}

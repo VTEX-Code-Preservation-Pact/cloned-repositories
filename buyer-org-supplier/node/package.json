@@ -1,0 +1,15 @@
+{
+  "license": "MIT",
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/co-body": "^6.1.0",
+    "@types/jsonwebtoken": "^8.5.4",
+    "vtex.buyer-org-supplier": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.buyer-org-supplier@0.4.1/public/_types/react"
+  },
+  "dependencies": {
+    "@vtex/api": "6.45.6",
+    "co-body": "^6.1.0",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "version": "0.6.0"
+}

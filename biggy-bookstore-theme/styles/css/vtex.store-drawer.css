@@ -1,0 +1,12 @@
+.openIconContainer--drawer-icon svg {
+    color: #000;
+}
+
+.closeIconContainer--drawer-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menuItem .styledLink{
+    color:black;
+}

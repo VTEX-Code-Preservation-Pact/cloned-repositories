@@ -1,0 +1,44 @@
+# This Action should run on each PR by verifying if they pass on lint, test and build
+name: CI
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  build:
+    name: FastStore
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    # To use Remote Caching, uncomment the next lines and follow the steps below.
+    env:
+     TURBO_TOKEN: ${{ secrets.TURBO_TOKEN }}
+     TURBO_TEAM: ${{ secrets.TURBO_TEAM }}
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'yarn'
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Build
+        run: yarn build
+
+      - name: Size
+        run: yarn size
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Test
+        run: yarn test

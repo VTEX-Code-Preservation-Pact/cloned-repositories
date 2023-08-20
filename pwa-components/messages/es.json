@@ -1,0 +1,12 @@
+{
+  "store/promotion-banner.button-dismiss.label": "Ahora no",
+  "store/promotion-banner.install.title": "Lleve un registro de sus pedidos",
+  "store/promotion-banner.install.description": "Nuestra aplicación es rápida, pequeña y funciona sin conexión",
+  "store/promotion-banner.install.button-accept.label": "Instalar",
+  "store/promotion-banner.push-notification.title": "Lleve un registro de sus pedidos",
+  "store/promotion-banner.push-notification.description": "Reciba notificaciones sobre el estado de sus pedidos",
+  "store/promotion-banner.push-notification.button-accept.label": "Aceptar",
+  "store/offline-warning.button": "Actualizar",
+  "store/offline-warning.message": "No se puede cargar esta página. Comprueba tu conexión de red",
+  "store/offline-warning.title": "Esta página no se puede cargar."
+}

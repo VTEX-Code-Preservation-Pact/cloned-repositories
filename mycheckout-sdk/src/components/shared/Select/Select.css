@@ -1,0 +1,8 @@
+.selectPlaceholder {
+  color: var(--dark-gray-color) !important;
+}
+
+.labelError {
+  color: var(--error-color) !important;
+  font-size: 14px !important;
+}

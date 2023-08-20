@@ -1,0 +1,9 @@
+query clientAgent($mail: String){
+  documents(acronym:"CL", fields:"approved", where:$mail) @context(provider: "vtex.store-graphql"){
+    id
+    fields {
+      key
+      value
+    }
+  }
+}

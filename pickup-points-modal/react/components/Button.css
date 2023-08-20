@@ -1,0 +1,48 @@
+/* basic style */
+
+.btn {
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 6px 8px;
+  text-transform: uppercase;
+}
+
+/* block */
+
+.block {
+  display: block;
+  width: 100%;
+}
+
+/* large */
+
+.lg {
+  font-size: 14px;
+  padding: 12px 16px;
+}
+
+/* primary button */
+
+.primary {
+  background: #368df7;
+  border: 1px solid #368df7;
+  color: #fff;
+}
+
+.primary:hover {
+  background: #2c7de0;
+  border-color: #2c7de0;
+}
+
+/* secondary button */
+
+.secondary {
+  background: none;
+  border: 1px solid #368df7;
+  color: #368df7;
+}
+
+.secondary:hover {
+  border-color: #2c7de0;
+  color: #2c7de0;
+}

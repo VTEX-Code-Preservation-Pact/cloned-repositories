@@ -1,0 +1,47 @@
+{
+  "name": "trusted-pixel",
+  "vendor": "vtexeurope",
+  "version": "0.1.0",
+  "title": "Trusted",
+  "description": "",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Trusted Settings",
+    "type": "object",
+    "properties": {
+      "appKey": {
+        "title": "AppKey",
+        "description": "Trusted's appKey",
+        "type": "string"
+      },
+      "days": {
+        "title": "Days",
+        "description": "The days after you should receive the email",
+        "type": "string"
+      },
+      "defaultAddressState": {
+        "title": "Default Address State",
+        "description": "If an order is to be picked from a store point, it's county state will be this value",
+        "type": "string"
+      }
+    }
+  },
+  "billingOptions": {
+    "support": {
+      "url": "https://help-tickets.vtex.com/en/support?app=vtex.trusted-pixel"
+    },
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,39 @@
+{
+  "vendor": "vtex",
+  "name": "doc-prop",
+  "version": "1.0.1",
+  "title": "Doc Prop",
+  "description": "React props automatic documentator",
+  "builders": {
+    "docs": "0.x",
+    "react": "3.x",
+    "messages": "1.x",
+    "pages": "1.x",
+    "styles": "2.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.pages-graphql": "2.x"
+  },
+  "settingsSchema": {
+    "title": "Doc Prop",
+    "type": "object",
+    "properties": {
+      "customHeader": {
+        "title": "Custom Header",
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

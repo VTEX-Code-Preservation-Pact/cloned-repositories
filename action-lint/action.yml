@@ -1,0 +1,8 @@
+name: VTEX Lint action
+description: Optionally run a lint task in the root of a project
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: code
+  color: orange

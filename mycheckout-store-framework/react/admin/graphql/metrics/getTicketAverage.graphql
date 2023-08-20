@@ -1,0 +1,31 @@
+query getTicketAverage(
+  $visualization: String
+  $selectedFrom: String
+  $selectedUntil: String
+  $previousFrom: String
+  $previousUntil: String
+  $timezone: String
+) {
+  ticketAverage(
+    data: {
+      filters: {
+        visualization: $visualization
+        selectedPeriod: { from: $selectedFrom, until: $selectedUntil }
+        previousPeriod: { from: $previousFrom, until: $previousUntil }
+      }
+      timezone: $timezone
+    }
+  ) @context(provider: "kuikpay.my-checkout") {
+    selectedPeriodTicket {
+      _id
+      ticketAverage
+    }
+    currentDayTicket
+    currentMonthTicket
+    currentDayVariationTicket
+    previousPeriodTicket {
+      _id
+      ticketAverage
+    }
+  }
+}

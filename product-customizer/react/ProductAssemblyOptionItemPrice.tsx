@@ -1,0 +1,3 @@
+import ProductAssemblyOptionItemPrice from './components/ProductAssemblyOptions/ProductAssemblyOptionItemPrice'
+
+export default ProductAssemblyOptionItemPrice

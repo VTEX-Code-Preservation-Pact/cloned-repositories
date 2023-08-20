@@ -1,0 +1,24 @@
+{
+  "vendor": "vtex",
+  "name": "checkout-identification",
+  "version": "0.2.1",
+  "title": "Checkout Identification module",
+  "description": "",
+  "registries": [
+    "smartcheckout"
+  ],
+  "builders": {
+    "docs": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.checkout-graphql": "0.x",
+    "vtex.checkout-resources": "0.x",
+    "vtex.order-profile": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.store-components": "3.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

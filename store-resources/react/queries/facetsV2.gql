@@ -1,0 +1,105 @@
+query facetsV2(
+  $query: String
+  $fullText: String
+  $selectedFacets: [SelectedFacetInput]
+  $hideUnavailableItems: Boolean = false
+  $behavior: String = "Static"
+  $categoryTreeBehavior: CategoryTreeBehavior = default
+  $fuzzy: String
+  $operator: Operator
+  $searchState: String
+  $from: Int
+  $to: Int
+  $initialAttributes: String
+) {
+  facets(
+    query: $query
+    fullText: $fullText
+    selectedFacets: $selectedFacets
+    hideUnavailableItems: $hideUnavailableItems
+    behavior: $behavior
+    categoryTreeBehavior: $categoryTreeBehavior
+    fuzzy: $fuzzy
+    operator: $operator
+    searchState: $searchState
+    initialAttributes: $initialAttributes
+  ) @context(provider: "vtex.search-graphql") {
+    sampling
+    breadcrumb {
+      name
+      href
+    }
+    facets {
+      name
+      type
+      hidden
+      quantity
+      facets: values (from: $from, to: $to) {
+        id
+        quantity
+        name
+        key
+        selected
+        value
+        link
+        linkEncoded
+        href
+        range {
+          from
+          to
+        }
+        children {
+          id
+          quantity
+          name
+          key
+          selected
+          value
+          link
+          linkEncoded
+          href
+          children {
+            id
+            quantity
+            name
+            key
+            selected
+            value
+            link
+            linkEncoded
+            href
+            children {
+              id
+              quantity
+              name
+              key
+              selected
+              value
+              link
+              linkEncoded
+              href
+              children {
+                id
+                quantity
+                name
+                key
+                selected
+                value
+                link
+                linkEncoded
+                href
+              }
+            }
+          }
+        }
+      }
+    }
+    queryArgs {
+      query
+      selectedFacets {
+        key
+        value
+      }
+    }
+  }
+}

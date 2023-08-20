@@ -1,0 +1,34 @@
+{
+  "projectName": "product-specifications",
+  "projectOwner": "vtex-apps",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "docs/README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "raissacmp",
+      "name": "Raissa Campos",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/62183926?v=4",
+      "profile": "https://github.com/raissacmp",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SamuelRodriguess",
+      "name": "Samuel Rodrigues",
+      "avatar_url": "https://avatars.githubusercontent.com/u/62268414?v=4",
+      "profile": "https://www.linkedin.com/in/samuel-rodrigues-48638618b/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

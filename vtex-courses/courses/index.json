@@ -1,0 +1,38 @@
+[
+  {
+    "folder": "basic-blocks",
+    "isActive": true
+  },
+  {
+    "folder": "layout-blocks",
+    "isActive": true
+  },
+  {
+    "folder": "styles-course",
+    "isActive": true
+  },
+  {
+    "folder": "content-workflow",
+    "isActive": true
+  },
+  {
+    "folder": "store-performance",
+    "isActive": true
+  },
+  {
+    "folder": "store-block",
+    "isActive": true
+  },
+  {
+    "folder": "service-course",
+    "isActive": true
+  },
+  {
+    "folder": "admin",
+    "isActive": true
+  },
+  {
+    "folder": "calling-commerce-apis",
+    "isActive": true
+  }
+]

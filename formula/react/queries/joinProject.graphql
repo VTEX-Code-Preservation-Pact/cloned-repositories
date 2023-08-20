@@ -1,0 +1,11 @@
+mutation JoinProject(
+  $edition: String!
+  $id: String!
+) {
+  joinProject(edition: $edition, id: $id) {
+    team {
+      name
+      email
+    }
+  }
+}

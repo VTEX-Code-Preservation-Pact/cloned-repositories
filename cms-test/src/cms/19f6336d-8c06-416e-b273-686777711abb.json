@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "title": "It's a new day"
+  },
+  "blocks": [
+    {
+      "id": "1594763876691",
+      "name": "Header",
+      "props": {}
+    },
+    {
+      "id": "1594764046292",
+      "name": "Header",
+      "props": {}
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+mutation deleteEstablishment($documentId: ID){
+  establishmentDelete(documentId: $documentId) @context(provider: "vtex.avatax-br-service@1.x")
+}

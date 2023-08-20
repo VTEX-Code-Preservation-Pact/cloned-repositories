@@ -1,0 +1,14 @@
+mutation ProcessApplication(
+  $application: ApplicationInput!
+  $businessInfoFile: Upload!
+  $personalInfoFile: Upload!
+) {
+  processApplication(
+    application: $application
+    businessInfoFile: $businessInfoFile
+    personalInfoFile: $personalInfoFile
+  ) @context(provider: "vtex.flow-finance-api") {
+    success
+    error
+  }
+}

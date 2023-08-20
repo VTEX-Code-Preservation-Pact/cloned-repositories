@@ -1,0 +1,11 @@
+<script src="https://cdn.lr-ingest.io/LogRocket.min.js" crossorigin="anonymous"></script>
+<script>
+  (function() {
+    var accountId = decodeURIComponent("{{settings.accountId}}");
+    if (!accountId) {
+      console.error('Warning: No LogRocket Account ID is defined. Please configure it in the apps admin.');
+    } else {
+      window.LogRocket && window.LogRocket.init(accountId);
+    }
+  })();
+</script>

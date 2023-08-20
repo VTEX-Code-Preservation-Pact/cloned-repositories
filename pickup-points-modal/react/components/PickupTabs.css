@@ -1,0 +1,41 @@
+.pickupViewMode {
+  position: relative;
+  width: 100%;
+  padding: 8px;
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.pickupViewItem {
+  width: 50%;
+}
+.pickupViewItem:first-of-type {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.pickupViewItem:last-of-type {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pickupViewOptionActive,
+.pickupViewOptionActive:hover,
+.pickupViewOptionActive:active,
+.pickupViewOptionActive:focus {
+  border: 1px solid #357edd;
+  background: #357edd;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.pickupViewOptionInctive,
+.pickupViewOptionInctive:hover,
+.pickupViewOptionInctive:active,
+.pickupViewOptionInctive:focus {
+  border: 1px solid #357edd;
+  background: #fff;
+  color: #357edd;
+  text-decoration: none;
+  text-shadow: none;
+}

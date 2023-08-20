@@ -1,0 +1,36 @@
+{
+  "name": "buybox-graphql",
+  "vendor": "vtex",
+  "version": "0.2.1",
+  "title": "GraphQL API for the VTEX store APIs",
+  "description": "GraphQL schema and resolvers for the VTEX API for the catalog and orders.",
+  "mustUpdateAt": "2022-01-04",
+  "categories": [],
+  "dependencies": {
+    "vtex.messages": "1.x",
+    "vtex.catalog-api-proxy": "0.x"
+  },
+  "builders": {
+    "graphql": "1.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "vtex.messages:translate-messages"
+    },
+    {
+      "name": "vtex.catalog-api-proxy:catalog-proxy"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,692 @@
+.latestPostsBlockContainer,
+.categoryBlockContainer,
+.postContainer,
+.searchResultBlockContainer,
+.breadcrumbContainer,
+.listTitle,
+.listContainer,
+.postFlex{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.latestPostsBlockContainer > svg[class*="vtex__icon-spinner"],
+.categoryBlockContainer > svg[class*="vtex__icon-spinner"],
+.postContainer > svg[class*="vtex__icon-spinner"],
+.searchResultBlockContainer > svg[class*="vtex__icon-spinner"] {
+	margin: auto;
+    display: flex;
+    width: 50px;
+	height: 50px;
+	color: #69b512;
+}
+.categoryBlockTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.categoryBlockDescription {
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+    color: #555;
+}
+.searchBlockContainer {
+	position: absolute;
+    width: 300px;
+    right: 0;
+    bottom: 140px;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"]{
+	border: none;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] input{
+	border-radius: 0;
+	height: 36px;
+	font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 34px;
+    text-align: left;
+	color: #333;
+	padding-left: 10px;
+	border: 1px solid #e5e5e5;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] input::placeholder{
+	color: #919191;
+	text-transform: capitalize;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span{
+	border-radius: 0;
+	height: 36px;
+	margin-left: 2px;
+	margin-right: 40px;
+    padding: 0;
+	background-color: #808080;
+    color: #fff;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span > div{
+	width: 100%;
+    height: 100%;
+    line-height: 36px;
+    padding: 0 5px;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span > div > div{
+	display: none;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span > div > span[class*="c-link"]{
+	padding: 0;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span > div > span[class*="c-link"]:before{
+	content:"Go";
+	font-weight: 700;
+    font-family: "Source Sans Pro";
+	font-size: 19px;
+	color: #fff;
+}
+.searchBlockContainer div[class*="vtex-input-prefix__group"] > span > div > span[class*="c-link"] svg{
+	display: none;
+}
+.teaserTitle {
+    font-size: 1.5rem;
+}
+.teaserTitle > a {
+    color: #404040;
+    text-decoration: none;
+}
+.latestPostsBlockContainer{
+	padding-bottom: 40px;
+}
+.latestPostsBlockContainer .latestPostsBlockTitle{
+	display: none;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex{
+	margin-top: 10px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem{
+	width: 63%;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserImage{
+	width: 100%;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay{
+	border-left: 4.5px solid #69b518;
+	padding-left: 20px;
+	bottom: 12%;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+	font-size: 35.3px;
+	font-weight: 500;
+	margin-top: 11px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+	font-size: 12.2px;
+	color: #cccccc;
+	margin-bottom: 10px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta a{
+	color: #fff;
+}
+
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn{
+	width: 37%;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn .latestPostsBlockFlexSecondColumnItem{
+	margin: 0;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn .latestPostsBlockFlexSecondColumnItem :global(.relative){
+    height: 220px;
+    overflow: hidden;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn .latestPostsBlockFlexSecondColumnItem :global(.relative) img{
+	height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn .latestPostsBlockFlexSecondColumnItem:first-child{
+	margin-bottom: 5px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a{
+	overflow: hidden;
+    max-height: 213px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay{
+	left: 4%;
+	bottom: 12%;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+	font-size: 22px;
+    font-weight: 500;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+	font-size: 12.2px;
+	color: #cccccc;
+}
+.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta a{
+	color: #fff;
+}
+
+.categoryBlockContainer{
+	padding-top: 0;
+}
+.categoryBlockContainer .categoryBlockTitle{
+	font-size: 36px;
+    font-weight: 500;
+    line-height: 1.14;
+    text-align: center;
+    color: #333;
+}
+.categoryBlockContainer .categoryBlockDescription{
+	font-family: "Source Sans Pro";
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+    color: #aaaaaa;
+    max-width: 564px;
+    margin: 25px auto 0;
+}
+.categoryBlockContainer .categoryBlockFlex{
+	justify-content: space-between;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem{
+	max-width: 404px;
+	padding: 0;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem div[class*="vtex-card"]{
+	display: flex;
+	flex-direction: column;
+	box-shadow: none!important;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem div[class*="vtex-card"] > h5{
+	order: 3;
+	padding-top: 0;
+	padding-left: 0;
+	color: #888888;
+	font-size: 12.2px;
+    font-weight: normal;
+    line-height: 2.16;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem div[class*="vtex-card"] > a{
+	order: 1;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem div[class*="vtex-card"] > h3{
+	order: 2;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-top: 10px;
+}
+.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem div[class*="vtex-card"] > h3 a div{
+	font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    color: #404040;
+}
+.categoryBlockContainer .categoryBlockLink button{
+	background-color: #f7f7f7;
+    border: none;
+    border-radius: 0;
+}
+.categoryBlockContainer .categoryBlockLink button div{
+	font-size: 13px;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    color: #333;
+    padding: 16px 0;
+}
+.breadcrumbContainer{
+	padding: 0;
+    margin-top: 30px !important;
+    margin-bottom: 35px !important;
+    font-size: 14px;
+    line-height: normal;
+    text-align: left;
+    color: #8c8c8c;
+}
+.breadcrumbContainer .breadcrumbHomeLink,
+.breadcrumbContainer .breadcrumbLink{
+	color: #8c8c8c;
+	text-transform: capitalize;
+}
+.listTitle{
+	font-family: Poppins;
+	text-transform: capitalize;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: left;
+    color: #333;
+}
+/* .listTitle{
+	text-align: left;
+    border-left: 4.5px solid #69b518;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.33;
+    color: #333;
+} */
+
+.listContainer{
+	padding: 0;
+	max-width: 1280px !important;
+}
+.listContainer svg[class*="vtex__icon-spinner"]{
+	color: #69b518;
+}
+.listContainer > div:first-child{
+	padding: 0;
+}
+.listContainer > div:first-child > div > div:nth-child(1){
+	margin-right: 10px;
+}
+.listContainer > div:first-child > div > div:nth-child(2){
+	margin-left: 10px;
+}
+.listContainer > div:first-child > div > div:nth-child(1) > div[class*="vtex-dropdown"] > label > div {
+    border-color: #dedede;
+    border-radius: 0;
+}
+.listContainer > div:first-child > div > div:nth-child(1) div[class*="vtex-dropdown__arrow"]{
+	color: #69b518;
+}
+.listContainer > div:first-child > div >:nth-child(2) button[class*="c-on-action-secondary"]{
+	color: #69b518;
+}
+.listContainer .listFlex{
+	justify-content: space-between;
+}
+.listContainer .listFlex .listFlexItem{
+	padding: 0;
+	max-width: 623px;
+}
+.listContainer .listFlex .listFlexItem > div{
+	display: flex;
+	flex-direction: column;
+	box-shadow: none !important;
+}
+
+/* date */
+.listContainer .listFlex .listFlexItem > div > h5{
+	order: 3;
+    padding-left: 0;
+    color: #888888;
+    font-size: 12.2px;
+    font-weight: normal;
+    line-height: 2.16;
+	text-align: left;
+	padding: 0;
+}
+.listContainer .listFlex .listFlexItem > div > h5 a{
+	color: #888888;
+}
+
+/* image */
+.listContainer .listFlex .listFlexItem > div > a{
+	order: 1;
+}
+
+/* title */
+.listContainer .listFlex .listFlexItem > div > h3{
+	order: 2;
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+	text-align: left;
+	padding-bottom: 0;
+    color: #404040;
+}
+
+/* short description */
+.listContainer .listFlex .listFlexItem > div > div{
+	order: 4;
+    padding-left: 0;
+    font-family: "Source Sans Pro";
+    font-size: 14px;
+    line-height: 1.64;
+    letter-spacing: -0.1px;
+    text-align: left;
+    color: #555;
+	margin-top: 7px;
+	padding-bottom: 30px;
+}
+
+.postFlex{
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+.postFlex .postContainer{
+	width: 100%;
+	float: right;
+	padding: 0;
+}
+.postFlex .postContainer .postTitle{
+	margin: 1px 0 0;
+    font-size: 41px;
+    font-weight: 500;
+    line-height: 1;
+    color: #333;
+}
+.postFlex .postContainer .postMeta,
+.postFlex .postContainer .postMeta a{
+	color: #888888;
+    text-transform: none;
+	margin: 5px 0 15px;
+    font-size: 12.2px;
+    line-height: 2.16;
+    text-align: left;
+}
+.postFlex .postContainer > div:nth-child(3){
+	padding-bottom: 10px;
+}
+.postFlex .postContainer .postBody > div{
+	font-family: "Source Sans Pro";
+}
+.postFlex .postContainer .postBody > div h2,
+.postFlex .postContainer .postBody > div h3{
+	font-weight: bold;
+	font-size: 21px;
+	margin-bottom: 0;
+    font-family: 'Poppins',sans-serif;
+}
+.postFlex .postContainer .postBody > div h4{
+    font-size: 18px;
+	font-family: 'Poppins',sans-serif;
+	margin-bottom: 0;
+}
+.postFlex .postContainer .postBody > div ul li{
+	font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+    line-height: 28px;
+}
+.postFlex .postContainer .postBody > div p{
+	font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8;
+    letter-spacing: -0.2px;
+	color: #555;
+	margin-top: 9px;
+	margin-bottom: 25px;
+}
+.postFlex .postContainer .postBody > div p a{
+	color: #555;
+	font-weight: normal;
+}
+.postFlex .postChildrenContainer{
+	width: 199px!important;
+    min-width: 199px;
+    margin-left: 79px;
+    box-sizing: content-box;
+}
+.postFlex .postChildrenContainer .wordpressRelatedProducts > div[class*="vtex-shelf"][class*="title"]{
+	font-size: 30px;
+    font-weight: 500;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: center;
+	color: #333;
+	padding: 0 0 10px;
+}
+.postFlex .postChildrenContainer .wordpressRelatedProducts ul{
+	display: flex;
+	flex-direction: column;
+}
+.postFlex .postChildrenContainer .wordpressRelatedProducts ul li{
+	width: 100% !important;
+	padding: 0;
+}
+
+.postFlex .postChildrenContainer .wordpressRelatedProducts ul li div[class*="nameContainer"] span{
+	font-size: 12.6px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: .6px;
+    color: #323232;
+}
+.postFlex .postChildrenContainer .wordpressRelatedProducts ul li div[class*="priceContainer"],
+.postFlex .postChildrenContainer .wordpressRelatedProducts ul li div[class*="buyButtonContainer"]{
+	display:none;
+}
+.postFlex .postBody figure{
+	margin: 0;
+}
+.postFlex .postBody figure iframe{
+	max-width: 100%;
+}
+.relatedPostsBlockContainer {
+	max-width: 96rem;
+	margin: auto;
+	padding: 0 20px;
+}
+.relatedPostsBlockContainer .relatedPostsBlockTitle{
+	font-size: 18px;
+    font-weight: 500;
+    color: #404040;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Source Sans Pro;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex {
+	justify-content: center;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div{
+	display: flex;
+	flex-direction: column;
+	font-family: "Source Sans Pro";
+	background-color: #f7f7f7;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div > h5{
+	order: 3;
+	padding: 0px 1.5rem 5px;
+    font-size: 12px;
+    line-height: 2;
+    text-align: left;
+    color: #6e6e6e;
+    font-weight: 500;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div > h5 a{
+	display: none;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div > a{
+	order: 1;
+    max-height: 220px;
+    overflow: hidden;
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div > h3{
+	order: 2;
+    padding-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.56;
+    text-align: left;
+    color: #333;
+    font-family: "Source Sans Pro";
+}
+.relatedPostsBlockContainer .relatedPostsBlockFlex .relatedPostsBlockFlexItem > div > div{
+	order: 4;
+    font-size: 13px;
+    line-height: 1.54;
+    text-align: left;
+    color: #666;
+}
+
+@media only screen and (max-width: 1340px) {
+	.latestPostsBlockContainer,
+	.categoryBlockContainer,
+	.postContainer,
+	.searchResultBlockContainer,
+	.breadcrumbContainer,
+	.listTitle,
+	.listContainer,
+	.postFlex{
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+	.breadcrumbContainer{
+		margin-top: 30px !important;
+		margin-bottom: 35px !important;
+	}
+	.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem{
+		max-width: 360px;
+	}
+	.listContainer .listFlex .listFlexItem{
+		max-width: 555px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.latestPostsBlockContainer,
+	.categoryBlockContainer,
+	.postContainer,
+	.searchResultBlockContainer,
+	.breadcrumbContainer,
+	.listTitle,
+	.listContainer,
+	.postFlex{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem{
+		max-width: 303px;
+	}
+	.listContainer .listFlex .listFlexItem{
+		max-width: 467px;
+	}
+}
+@media only screen and (max-width: 1025px) {
+	.searchBlockContainer {
+		position: absolute;
+		width: 260px;
+		bottom: 0px;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
+	.searchBlockContainer div[class*="vtex-input-prefix__group"] > span{
+		margin-right: 0;
+	}
+	.latestPostsBlockContainer,
+	.categoryBlockContainer,
+	.postContainer,
+	.searchResultBlockContainer,
+	.breadcrumbContainer,
+	.listTitle,
+	.listContainer,
+	.postFlex{
+		max-width: 800px;
+		margin: 0 auto;
+	}
+	.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem{
+		max-width: 252px;
+	}
+	.listContainer .listFlex .listFlexItem{
+		max-width: 390px;
+	}
+}
+@media only screen and (max-width: 860px) {
+	.latestPostsBlockContainer,
+	.categoryBlockContainer,
+	.postContainer,
+	.searchResultBlockContainer,
+	.breadcrumbContainer,
+	.listTitle,
+	.listContainer,
+	.postFlex{
+		padding: 5% 5% 0;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem{
+		width: 100%;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn{
+		width: 100%;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a{
+		overflow: hidden;
+		max-height: 300px;
+	}
+	.breadcrumbContainer{
+		margin: 0 !important;
+	}
+	.categoryBlockContainer .categoryBlockFlex .categoryBlockFlexItem{
+		max-width: unset;
+    	width: 100%;
+	}
+	.breadcrumbContainer{
+		margin: 15px 0;
+	}
+	.listContainer .listFlex .listFlexItem{
+		max-width: unset;
+	}
+	.postFlex .postContainer{
+		width: 65%;
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+	.postFlex .postChildrenContainer{
+		margin-left: 0;
+	}
+}
+@media only screen and (min-width: 631px) {
+	.postFlex .postChildrenContainer .wordpressRelatedProducts ul{
+		width: 100% !important;
+		transform: none !important;
+	}
+	.postFlex .postChildrenContainer .wordpressRelatedProducts ul[class*='dotsContainer']{
+		display: none;
+	}
+}
+@media only screen and (max-width: 630px) {
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+		font-size: 25.3px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+		font-size: 12.2px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+		font-size:20px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+		font-size: 12.2px;
+	}
+	.postFlex{
+		flex-direction: column;
+	}
+	.postFlex .postContainer{
+		width: 100%;
+	}
+	.postFlex .postChildrenContainer{
+		width: 100%!important;
+	}
+	.postFlex .postChildrenContainer .wordpressRelatedProducts ul{
+		flex-direction: unset;
+	}
+	.postFlex .postChildrenContainer .wordpressRelatedProducts ul li{
+		width: inherit !important;
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+		font-size: 17.3px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexFirstColumnItem > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+		font-size: 10.2px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayTitle{
+		font-size:15px;
+	}
+	.latestPostsBlockContainer .latestPostsBlockFlex .latestPostsBlockFlexSecondColumn > div > div[class*="vtex-card"] > a .teaserGradientOverlay .teaserTextOverlay .teaserTextOverlayMeta{
+		font-size: 10.2px;
+	}
+	.relatedPostsBlockContainer {
+		padding: 0;
+	}
+}

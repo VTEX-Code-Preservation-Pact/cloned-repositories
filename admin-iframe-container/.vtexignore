@@ -1,0 +1,13 @@
+node_modules/
+.editorconfig
+.eslintrc
+.gitignore
+README.md
+.git
+react/**/__tests__/**
+react/**/__mocks__/**
+react/**/__snapshots__/**
+react/**/*.test.js
+react/**/*.test.ts
+react/**/*.test.tsx
+react/cypress/**/*.spec.js

@@ -1,0 +1,3 @@
+query GetApps {
+  apps @context(provider: "vtex.admin-graphql-ide")
+}

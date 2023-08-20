@@ -1,0 +1,9 @@
+mutation CreateLink($accountApprover: String) {
+  createLink(accountApprover: $accountApprover)
+    @context(provider: "kuikpay.my-checkout") {
+    account
+    status
+    date
+    approver
+  }
+}

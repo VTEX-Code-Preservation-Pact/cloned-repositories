@@ -1,0 +1,50 @@
+{
+  "name": "pickup-points-modal",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "build": "nwb build-react-component --copy-files --no-demo && nwb build-react-app && npm run css && npm run removeMocks && npm run addLocales",
+    "css": "mv dist/0.styles.css lib/0.styles.css && mv dist/0.styles.css.map lib/0.styles.css.map ",
+    "removeMocks": "rm -rf lib/**/__mocks__ && rm -rf lib/__mocks__ && rm -rf dist",
+    "addLocales": "cp -R -f react/locales/ lib/locales/",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "symlink": "ln -s react src",
+    "symlink:remove": "rm -rf src",
+    "start": "nwb serve-react-demo",
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "lint-fix": "yarn lint --fix",
+    "lint:locales": "intl-equalizer",
+    "lint:ts": "tsc --noEmit -p react/tsconfig.json",
+    "test": "yarn --cwd react test",
+    "test:coverage": "yarn --cwd react test --coverage",
+    "test:watch": "yarn --cwd react test --watch",
+    "prepublishOnly": "npm run symlink:remove && npm run symlink && npm run build && npm run symlink:remove",
+    "build:link": "npm link && watch 'npm run build' src",
+    "postreleasy": "npm publish --access public"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,graphql,gql}": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.3.6",
+    "eslint": "^7",
+    "eslint-config-vtex": "^14.1.1",
+    "eslint-config-vtex-react": "^8.2.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.1",
+    "nwb": "^0.23.0",
+    "prettier": "^2.4.1",
+    "typescript": "^3.8.3"
+  }
+}

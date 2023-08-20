@@ -1,0 +1,38 @@
+.habeasDataContainer {
+  display: flex;
+  margin: 12px 0px;
+}
+
+.habeasDataContainer .habeasDataCheckbox {
+  flex: 0;
+  position: relative;
+}
+
+.habeasDataContainer .habeasDataLink {
+  color: var(--primary-color-focus);
+  font-size: 12px;
+}
+
+.habeasDataContainer p {
+  flex: 1;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.habeasDataContainer a {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 992px) {
+  .habeasDataContainer .habeasDataLink {
+    font-size: 14px;
+  }
+  
+  .habeasDataContainer p {
+    font-size: 14px;
+  }
+  
+  .habeasDataContainer a {
+    font-size: 14px;
+  }
+}

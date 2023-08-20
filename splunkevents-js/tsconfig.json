@@ -1,0 +1,14 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "lib": ["dom"],
+    "target": "ES2015",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.ts"]
+}

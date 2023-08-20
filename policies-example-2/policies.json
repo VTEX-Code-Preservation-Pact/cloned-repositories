@@ -1,0 +1,14 @@
+[
+  {
+    "name": "constructor-policie",
+    "statements": [
+      {
+        "actions": ["get"],
+        "effect": "allow",
+        "resources": [
+          "vrn:vtex.policies-example-2:{{region}}:{{account}}:{{workspace}}:/_v/test-policies-route"
+        ]
+      }
+    ]
+  }
+]

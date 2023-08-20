@@ -1,0 +1,7 @@
+name: starter-store-react-components
+vendor: vtex
+version: 0.0.1
+
+ui-components:
+- name: store-ui-components
+  folder: ./

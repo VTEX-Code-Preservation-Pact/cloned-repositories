@@ -1,0 +1,13 @@
+query appReadMe($appName: String, $locale: String) {
+  appReadMe(appName: $appName, locale: $locale) {
+    meta {
+      title
+      description
+      version
+      tags
+      git
+      date
+    }
+    markdown
+  }
+}

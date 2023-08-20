@@ -1,0 +1,259 @@
+input InvoiceDataInput {
+  id: String
+  name: String
+  email: String
+  startDate: String
+  endDate: String
+}
+
+input SettingsDataInput {
+  sellerName: String
+  startDate: String!
+  endDate: String!
+  billingCycle: String!
+  integration: Int
+}
+
+type SettingsSeller {
+  sellerName: String
+  startDate: String
+  endDate: String
+  billingCycle: String
+  integration: String
+}
+
+type SettingsResponse {
+  startDate: String
+  endDate: String
+  billingCycle: String
+  integration: Int
+}
+
+scalar JSONData
+
+type Invoice {
+  status: String
+  invoiceCreatedDate: String
+  seller: SellerInvoiceData
+  orders: [Order]
+  totalizers: Totalizers
+  comment: String
+  jsonData: JSONData
+}
+
+type InvoiceList {
+  id: String
+  status: String
+  invoiceCreatedDate: String
+  totalizers: Totalizers
+}
+
+type Totalizers {
+  subTotal: Float
+  fee: Float
+  total: Float
+}
+
+type Order {
+  orderId: String
+  sellerOrderId: String
+  totalComission: Float
+  totalOrderValue: Float
+  totalOrderRate: Float
+}
+
+type SellerInvoiceData {
+  id: String
+  name: String
+  contact: SellerContact
+}
+
+type SellerContact {
+  phone: String
+  email: String
+}
+
+type ListInvoices {
+  data: [InvoiceList]
+  pagination: PaginationInvoice
+}
+
+type PaginatedSellers {
+  sellers: [Seller]
+  pagination: PaginationSearch
+}
+
+type Seller {
+  id: String
+  name: String
+  account: String
+  productCommissionPercentage: Int
+  freightCommissionPercentage: Int
+  isActive: Boolean
+}
+
+input Dates {
+  startDate: String
+  endDate: String
+}
+
+input Pagination {
+  page: Int
+  pageSize: Int
+}
+
+type SearchResponse {
+  dateStart: String
+  dateEnd: String
+  sellers: [SellersDashboardSearch]
+  statistics: StatsGeneralSearch
+  pagination: PaginationSearch
+}
+
+type SellersDashboardSearch {
+  id: String
+  name: String
+  account: String
+  statistics: StatsSellerSearch
+}
+
+type StatsSellerSearch {
+  dateInvoiced: String
+  ordersCount: Int
+  totalComission: Float
+  totalOrderValue: Float
+  outstandingBalance: Float
+}
+
+type PaginationSearch {
+  currentPage: Int
+  pageSize: Int
+  totalPage: Int
+}
+
+input SearchDashboardParams {
+  dateStart: String!
+  dateEnd: String!
+  sellersId: String
+  page: Int!
+  pageSize: Int!
+  sort: String
+}
+
+type SearchStatsResponse {
+  dateStart: String
+  dateEnd: String
+  statistics: StatsGeneralSearch
+}
+
+type StatsGeneralSearch {
+  ordersCount: Int
+  totalComission: Float
+  totalOrderValue: Float
+}
+
+input SearchStatsDashboardParams {
+  dateStart: String!
+  dateEnd: String!
+}
+
+input SearchOrdersParams {
+  dateStart: String!
+  dateEnd: String!
+  sellerName: String!
+  page: Int!
+  perpage: Int!
+  status: String
+}
+
+type OrderSearch {
+  orderId: String
+  sellerOrderId: String
+  marketplaceOrderId: String
+  totalComission: Float
+  totalOrderValue: Float
+  status: String
+  statusDescription: String
+  creationDate: String
+  rate: [ItemsRateOrdersSearch]
+}
+
+type ItemsRateOrdersSearch {
+  itemId: String
+  nameItem: String
+  rate: RateOrders
+}
+
+type RateOrders {
+  productCommissionPercentage: Float
+  freightCommissionPercentage: Float
+}
+
+type PagingOrders {
+  total: Int
+  pages: Int
+  currentPage: Int
+  perPage: Int
+}
+
+type PaginationInvoice {
+  total: Int
+  page: Int
+  pageSize: Int
+}
+
+type SearchOrdersResponse {
+  data: [OrderSearch]
+  paging: PagingOrders
+}
+
+type CreateTokenResponse {
+  message: String
+  accountId: String
+  autheticationToken: String
+  creationDate: String
+  resultVBase: [ResultVBase]
+}
+
+type ResultVBase {
+  path: String
+  hash: String
+}
+
+input TokenInput {
+  enabled: Boolean
+}
+
+type EditTokenResponse {
+  message: String
+  accountId: String
+  lastModificationDate: String
+  resultVBase: [ResultVBase]
+}
+
+type GetTokenResponse {
+  id: String
+  account: String
+  name: String
+  autheticationToken: String
+  creationDate: String
+  lastModificationDate: String
+  enabled: Boolean
+}
+
+input ListSellersParams {
+  sellersId: String
+  page: Int
+  pageSize: Int
+}
+
+input SellerInvoiceParams {
+  sellerName: String!
+  pagination: Pagination
+  dates: Dates!
+}
+
+input EmailDataInput {
+  email: String
+  jsonData: String
+}

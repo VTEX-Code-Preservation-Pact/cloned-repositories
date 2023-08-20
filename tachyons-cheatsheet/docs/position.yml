@@ -1,0 +1,29 @@
+name: Position
+
+docs: http://tachyons.io/docs/layout/position/
+
+src: position
+
+description:
+
+base:
+  - static
+  - relative
+  - absolute
+  - fixed
+
+modifiers:
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - position
+  - absolute
+  - relative
+  - fixed
+  - static

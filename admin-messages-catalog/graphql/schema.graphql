@@ -1,0 +1,32 @@
+input MessageTranslation {
+  id: String!
+  content: String
+  description: String
+}
+
+input MessagesFromProvider {
+  provider: String!
+  messages: [MessageTranslation]
+}
+
+# Apparently you can only add a mutation if you have a query
+type Query {
+  MOCK_DO_NOT_CALL: String
+}
+
+type FailedTranslation {
+  provider: String!
+}
+
+enum Entity {
+  product
+  sku
+  brand
+  category
+  specification
+}
+
+type Mutation {
+  addTranslations(translations: [MessagesFromProvider]!, entity: Entity!, language: String!): [FailedTranslation]
+  exportProductCatalog: Boolean
+}

@@ -1,0 +1,112 @@
+name: '[QE] Masterdata'
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '00 00 * * SUN'
+
+jobs:
+  clean:
+    name: Clean dirty data on MasterData
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+    steps:
+      - name: Create script
+        run: |
+          cat << 'EOF_JS' > masterdata.js
+          const axios = require('axios')
+          const BASE_URL = 'https://productusqa.myvtex.com/api/dataentities'
+          const MAX_RESOURCES = 100
+          const entities = ['AD', 'CL']
+          const getEntitySearchURL = (entity) => {
+            return `${BASE_URL}/${entity}/search`
+          }
+          const sleep = (ms) => {
+            return new Promise((resolve) => {
+              setTimeout(resolve, ms)
+            })
+          }
+          const getEntityDeleteURL = (entity, id) => {
+            return `${BASE_URL}/${entity}/documents/${id}`
+          }
+          function getAuthHeaders() {
+            return {
+              'X-VTEX-API-AppKey': process.env.appKey,
+              'X-VTEX-API-AppToken': process.env.appToken,
+            }
+          }
+          const options = (entity, maxResources = MAX_RESOURCES) => {
+            return {
+              method: 'GET',
+              url: getEntitySearchURL(entity),
+              headers: {
+                ...getAuthHeaders(),
+                'REST-Range': `resources=0-${maxResources}`,
+              },
+            }
+          }
+          ;(async function () {
+            for (const entity of entities) {
+              axios.request(options(entity, 1)).then(async function ({ headers }) {
+                const [totalRecords] = headers['rest-content-range'].split('/').slice(-1)
+                console.log(`Found ${totalRecords} records for entity ${entity}`)
+                const maxRequests =
+                  MAX_RESOURCES > totalRecords
+                    ? 1
+                    : parseInt(totalRecords / MAX_RESOURCES, 10)
+                console.log(
+                  `Need ${maxRequests} requests to fetch ${totalRecords} records`
+                )
+                for (let req = 1; req <= maxRequests; req++) {
+                  await sleep(2000)
+                  axios
+                    .request(options(entity))
+                    .then(function ({ data }) {
+                      for (const { id, email } of data) {
+                        if (email) {
+                          if (!email.includes('+')) {
+                            // Skip loop if we find email which not includes +
+                            continue
+                          }
+                        }
+                        const deleteOptions = {
+                          method: 'DELETE',
+                          url: getEntityDeleteURL(entity, id),
+                          headers: {
+                            ...getAuthHeaders(),
+                          },
+                        }
+                        axios
+                          .request(deleteOptions)
+                          .then(function (deleteResponse) {
+                            if (deleteResponse.status !== 204) {
+                              throw new Error(
+                                `Resource not deleted! Got response status code as ${deleteResponse.status}`
+                              )
+                            }
+                          })
+                          .catch(function (deleteError) {
+                            throw new Error(deleteError)
+                          })
+                      }
+                    })
+                    .catch(function (error) {
+                      throw new Error(error)
+                    })
+                }
+              })
+            }
+          })()          
+          EOF_JS
+      
+      - name: Install axios
+        run: npm install axios
+
+      - name: Run script
+        run: node masterdata.js
+        env:
+          appKey: ${{ secrets.VTEX_TOOLBELT_KEY }}
+          appToken: ${{ secrets.VTEX_TOOLBELT_TOKEN }}        

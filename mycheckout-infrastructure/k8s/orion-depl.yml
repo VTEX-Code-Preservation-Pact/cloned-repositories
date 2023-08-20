@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orion-depl
+  labels:
+    app: orion
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: orion
+  template:
+    metadata:
+      labels:
+        app: orion
+    spec:
+      containers:
+        - name: orion
+          image: 666555811597.dkr.ecr.us-east-1.amazonaws.com/kuikpay-orion-service:dev-55b0cde-1660055442 # {"$imagepolicy": "flux-system:orion"}
+          env:
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: orion
+                  key: node_env
+            - name: CONTAINER
+              value: docker
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_SECRET_ACCESS_KEY
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_ACCESS_KEY_ID
+            - name: BNPL_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: bnpl-client-credentials
+                  key: BNPL_CLIENT_ID
+            - name: BNPL_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: bnpl-client-credentials
+                  key: BNPL_CLIENT_SECRET
+          volumeMounts:
+            - name: config
+              mountPath: '/config'
+              readOnly: true
+      imagePullSecrets:
+        - name: regcred
+      volumes:
+        # You set volumes at the Pod level, then mount them into containers inside that Pod
+        - name: config
+          configMap:
+            # Provide the name of the ConfigMap you want to mount.
+            name: orion
+            # An array of keys from the ConfigMap to create as files
+            items:
+              - key: 'orion.properties'
+                path: '.env'
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orion-srv
+spec:
+  selector:
+    app: orion
+  ports:
+    - name: orion
+      protocol: TCP
+      port: 8080
+      targetPort: 8080

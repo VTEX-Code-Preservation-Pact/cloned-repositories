@@ -1,0 +1,6 @@
+.idea
+adapt_parser.egg-info/
+build/
+dist/
+*.pyc
+TEST-*.xml

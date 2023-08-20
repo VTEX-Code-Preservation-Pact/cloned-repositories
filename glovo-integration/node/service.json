@@ -1,0 +1,48 @@
+{
+  "memory": 1024,
+  "ttl": 60,
+  "timeout": 30,
+  "minReplicas": 2,
+  "maxReplicas": 6,
+  "workers": 1,
+  "routes": {
+    "createOrder": {
+      "path": "/_v/glovo/orders/create",
+      "public": true
+    },
+    "updateProduct": {
+      "path": "/_v/glovo/products/update",
+      "public": true
+    },
+    "updateCompleteMenu": {
+      "path": "/_v/glovo/menu/update-all",
+      "public": true
+    },
+    "updatePartialMenu": {
+      "path": "/_v/glovo/menu/update-partial",
+      "public": true
+    },
+    "glovoMenu": {
+      "path": "/_v/glovo/glovo-menu",
+      "public": false
+    },
+    "getGlovoMenuByStore": {
+      "path": "/_v/glovo/get-menu/:affiliateId",
+      "public": false
+    },
+    "storeMenuUpdates": {
+      "path": "/_v/glovo/store-menu-updates/:affiliateId",
+      "public": false
+    },
+    "orderChange": {
+      "path": "/pvt/orders/:orderId/changes",
+      "public": true
+    }
+  },
+  "events": {
+    "updateGlovoOrder": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["invoiced"]
+    }
+  }
+}

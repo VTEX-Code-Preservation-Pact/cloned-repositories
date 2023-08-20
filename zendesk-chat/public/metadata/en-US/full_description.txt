@@ -1,0 +1,25 @@
+## About
+
+Live chat and messaging create a personal connection with customers looking for support. It’s a fast and effective way to offer help—without interrupting their experience.
+
+## Functionalities
+
+- Personalization of appearance;
+- Chat with customers;
+- Use of instant messaging;
+- Proactive chats and triggers;
+- Offline mode;
+- Creation of chat protocols;
+- Monitoring and analysis in real time;
+- Internationalization.
+
+## How to set up
+
+1. Install the app from VTEX App Store;
+2. Fill in the settings. You will need the Account Key for your Zendesk Chat account;
+3. Save your changes;
+4. Manage the chat via the Zendesk platform.
+
+## Comments
+
+- To use the chat you need to have an active Zendesk account. Some features are only available for specific plans.

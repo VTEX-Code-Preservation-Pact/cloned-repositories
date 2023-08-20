@@ -1,0 +1,53 @@
+.emailFormContainer {
+  position: relative;
+}
+
+.emailFormContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.errorLoadingInfoContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.errorLoadinInfoTextContainer {
+  width: 80%;
+}
+
+.errorLoadinInfoTextContainer h4 {
+  font-size: 18px;
+  margin: 10px 0 0 0;
+}
+
+.errorLoadinInfoTextContainer p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--dark-gray-color);
+}
+
+@media screen and (min-width: 992px) {
+  .emailFormContainer {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .emailFormContent {
+    width: 100%;
+    padding: 0 30px;
+  }
+}

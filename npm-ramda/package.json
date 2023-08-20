@@ -1,0 +1,18 @@
+{
+  "name": "@vtex/npm-ramda",
+  "public": "true",
+  "version": "0.23.0-RC1",
+  "scripts": {
+    "lint": "echo linting... && tslint index.d.ts",
+    "test": "echo testing... && ./node_modules/typescript/bin/tsc --lib \"es2015\" --module commonjs test.ts --noEmit",
+    "diff": "echo diffing... && node ./node_modules/typings-checker/dist/index.js test.ts 2>&1 | tee typecheck.txt"
+  },
+  "devDependencies": {
+    "ramda": "0.23.0",
+    "tslint": "^4.2.0",
+    "tslint-config-typings": "^0.3.1",
+    "typescript": "^2.2.0-dev.20170120",
+    "typings-checker": "^1.1.0"
+  },
+  "typings": "index.d.ts"
+}

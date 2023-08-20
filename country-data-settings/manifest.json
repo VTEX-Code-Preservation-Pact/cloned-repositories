@@ -1,0 +1,11 @@
+{
+  "vendor": "vtex",
+  "name": "country-data-settings",
+  "version": "0.5.0",
+  "builders": {
+    "configuration": "0.x",
+    "node": "6.x",
+    "graphql": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

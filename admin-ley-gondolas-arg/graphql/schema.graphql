@@ -1,0 +1,15 @@
+type Query {
+  getData: GetDataResponse
+
+  getCategoryTree: GetCategoryTreeResponse
+  getProductsOfCategory(categoryTree: String, from: Int, to: Int, params: String): GetProductsOfCategoryTreeResponse
+}
+
+type Mutation {
+  createDocument(body: BodyCreateDocumentMasterData): CreateDocumentResponse
+
+  updateDocument(
+    documentId: String
+    body: BodyUpdateDocumentMasterData
+  ): UpdateDocumentResponse
+}

@@ -1,0 +1,10 @@
+.spinner {
+    -webkit-animation: spin 0.5s linear infinite;
+    -moz-animation: spin 0.5s linear infinite;
+    animation: spin 0.5s linear infinite;
+  }
+  
+  .spinner svg {
+    width: 100%;
+    height: 100%;
+  }

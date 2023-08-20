@@ -1,0 +1,14 @@
+{
+  "extends": "vtex-react",
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/no-empty-function": "off"
+  },
+  "globals": {
+    "__RUNTIME__": true
+  }
+}

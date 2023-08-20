@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#bottom-banner": {
+    "title": "Bottom",
+    "props": {
+      "blockClass": "infocard",
+      "fullWidth": true
+    },
+    "children": [
+      "info-card#bottom-banner"
+    ]
+  },
+  "info-card#bottom-banner": {
+    "title": "Banner",
+    "props": {
+      "blockClass": "full-banner-centered",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/mountain-182181.png",
+      "mobileImageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/mountain-182181.png",
+      "headline": "Cada deporte. Cada temporada.",
+      "subhead": "",
+      "callToActionMode": "none",
+      "imageActionUrl": "#",
+      "textAlignment": "left"
+    }
+  }
+}

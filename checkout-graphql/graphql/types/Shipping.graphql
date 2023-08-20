@@ -1,0 +1,87 @@
+type Shipping {
+  countries: [String]
+  deliveryOptions: [DeliveryOption!]!
+  pickupOptions: [PickupOption!]!
+  selectedAddress: Address
+  availableAddresses: [Address]
+  isValid: Boolean!
+}
+
+type DeliveryOption {
+  id: String!
+  deliveryChannel: String!
+  price: Int!
+  estimate: String!
+  isSelected: Boolean!
+}
+
+type PickupOption {
+  id: String!
+  address: Address!
+  deliveryChannel: String!
+  price: Int!
+  estimate: String!
+  isSelected: Boolean!
+  friendlyName: String! @translatableV2
+  additionalInfo: String @translatableV2
+  storeDistance: Float
+  transitTime: String
+  businessHours: [BusinessHour!]!
+}
+
+type BusinessHour {
+  dayNumber: String!
+  closed: Boolean!
+  closingTime: String!
+  openingTime: String!
+}
+
+type Address {
+  addressId: ID
+  addressType: AddressType
+  city: String
+  complement: String
+  country: String
+  geoCoordinates: [Float]
+  neighborhood: String
+  number: String
+  postalCode: String
+  receiverName: String
+  reference: String
+  state: String
+  street: String
+  isDisposable: Boolean
+}
+
+input AddressInput {
+  addressId: ID
+  addressType: AddressType
+  addressQuery: String
+  city: String
+  complement: String
+  country: String
+  geoCoordinates: [Float]
+  neighborhood: String
+  number: String
+  postalCode: String
+  receiverName: String
+  reference: String
+  state: String
+  street: String
+  isDisposable: Boolean
+}
+
+input ShippingItem {
+  id: String
+  quantity: String
+  seller: String
+}
+
+enum AddressType {
+  residential
+  commercial
+  inStore
+  giftRegistry
+  pickup
+  search
+}

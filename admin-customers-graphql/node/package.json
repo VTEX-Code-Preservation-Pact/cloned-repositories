@@ -1,0 +1,28 @@
+{
+  "name": "admin-customers-graphql",
+  "description": "GraphQL API for CRM",
+  "main": "index.ts",
+  "author": "Ana Luiza",
+  "license": "ISC",
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.0.7",
+    "@types/koa": "^2.0.46",
+    "@types/node": "^12.0.0",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@vtex/api": "6.45.12",
+    "@vtex/test-tools": "2.1.1",
+    "@vtex/tsconfig": "^0.5.6",
+    "typescript": "3.9.7"
+  },
+  "scripts": {
+    "lint": "eslint --ext .ts .",
+    "test": "vtex-test-tools test",
+    "test:watch": "vtex-test-tools test --watch",
+    "test:coverage": "vtex-test-tools test --coverage"
+  },
+  "version": "3.1.0"
+}

@@ -1,0 +1,20 @@
+html,
+body,
+#render-container,
+#render-provider,
+.render-container,
+.render-provider {
+  height: 100%;
+}
+
+.addPermissionLabel{
+  padding-top: 8px;
+}
+
+.addPermissionMenu {
+  margin-left: 10px;
+}
+
+.vtex-modal__overlay {
+  z-index: 998 !important;
+}

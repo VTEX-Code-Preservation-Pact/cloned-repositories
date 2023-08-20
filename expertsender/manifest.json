@@ -1,0 +1,40 @@
+{
+  "name": "expertsender",
+  "vendor": "vtex",
+  "version": "1.0.1",
+  "title": "ExpertSender",
+  "description": "",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "builders": {
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "ExpertSender",
+    "type": "object",
+    "properties": {
+      "clickDomain": {
+        "title": "Click Domain",
+        "type": "string"
+      },
+      "aid": {
+        "title": "aid",
+        "type": "string"
+      },
+      "wid": {
+        "title": "wid",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

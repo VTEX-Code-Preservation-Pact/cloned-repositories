@@ -1,0 +1,26 @@
+{
+  "product-gifts": {
+    "component": "ProductGifts",
+    "render": "client",
+    "composition": "children"
+  },
+  "product-gift-list": {
+    "component": "ProductGiftList",
+    "composition": "children"
+  },
+  "gift-name": {
+    "component": "ProductGiftName"
+  },
+  "gift-image": {
+    "component": "ProductGiftImage"
+  },
+  "gift-text": {
+    "component": "GiftText",
+    "content": {
+      "$ref": "#/definitions/GiftText"
+    }
+  },
+  "gift-description": {
+    "component": "ProductGiftDescription"
+  }
+}

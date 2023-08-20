@@ -1,0 +1,10 @@
+*-debug.log
+*-error.log
+.oclif.manifest.json
+/.nyc_output
+/coverage
+/coverage.lcov
+/lib
+/node_modules
+/tmp
+.eslintcache

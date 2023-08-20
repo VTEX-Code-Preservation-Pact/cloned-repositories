@@ -1,0 +1,152 @@
+.wrapper {
+  align-items: center;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  justify-content: center;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 0px 26px 0px rgba(0, 0, 0, 0.42);
+  z-index: 999;
+  border-radius: 20px;
+}
+
+.headContainer {
+  background: #f2f2f2;
+  width: 100%;
+  top: 0;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headTable {
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px 10px 0 10px;
+}
+
+.bodyContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 35px;
+  height: 40%;
+}
+
+.bodyCell {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyCell p {
+  margin: 0px 0px 0px 10px;
+}
+
+.retryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.retryContainer p {
+  margin-left: 10px;
+}
+
+.mainContainerInfo {
+  height: 30%;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #cfe2ff;
+  color: #084298;
+  padding: 20px;
+}
+
+.infoContainer p {
+  margin-left: 10px;
+}
+
+.warningContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  background-color: #fff3cd;
+  color: #664d03;
+  padding: 20px;
+}
+
+.warningContainer p {
+  margin-left: 10px;
+}
+
+.globalContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.buttonRetry {
+  background-color: #6c757d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px 10px 20px;
+  height: 45px;
+}
+
+.buttonRetry span {
+  margin-left: 5px;
+}
+
+.containerButton {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  height: 30%;
+}
+
+.btnClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .bodyCell {
+    display: block;
+  }
+  .bodyCell img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .bodyCell p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

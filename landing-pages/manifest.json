@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "landing-pages",
+  "version": "2.0.0",
+  "title": "VTEX Landing Pages",
+  "description": "VTEX IO Landing Pages",
+  "builders": {
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.tetrix": "1.x",
+    "vtex.docs-ui": "0.x",
+    "vtex.code-cup": "1.x",
+    "vtex.io-landing": "1.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

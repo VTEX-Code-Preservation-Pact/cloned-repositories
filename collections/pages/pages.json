@@ -1,0 +1,30 @@
+{
+  "pages": {
+    "admin-collections": {
+      "path": "/admin/collections",
+      "auth": true,
+      "theme": "theme"
+    },
+    "admin-collections-collection": {
+      "path": "/admin/collections/new/",
+      "auth": true,
+      "theme": "theme"
+    },
+    "admin-collections-collection-edit": {
+      "path": "/admin/collections/:id/",
+      "auth": true,
+      "theme": "theme"
+    }
+  },
+  "extensions": {
+    "admin-collections": {
+      "component": "ListPage"
+    },
+    "admin-collections-collection": {
+      "component": "Collection"
+    },
+    "admin-collections-collection-edit": {
+      "component": "Collection"
+    }
+  }
+}

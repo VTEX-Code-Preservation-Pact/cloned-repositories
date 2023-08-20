@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "Discount",
+  "store/totalizers.Items": "Subtotal",
+  "store/totalizers.Shipping": "Shipping",
+  "store/totalizers.Tax": "Taxes",
+  "store/totalizers.Interest": "Interest",
+  "store/totalizers.Change": "Changes Total",
+  "totalizers.Discounts": "Discount",
+  "totalizers.Items": "Subtotal",
+  "totalizers.Shipping": "Shipping",
+  "totalizers.Tax": "Taxes",
+  "totalizers.Interest": "Interest",
+  "totalizers.Change": "Changes Total"
+}

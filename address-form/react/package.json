@@ -1,0 +1,107 @@
+{
+  "name": "@vtex/address-form",
+  "version": "3.34.4",
+  "description": "address-form React component",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "../node_modules/.bin/rollup -c && yarn add-locales",
+    "add-locales": "cp -R -f ../messages/ lib/locales/",
+    "test": "jest --env=jsdom",
+    "test:coverage": "jest --env=jsdom --coverage",
+    "test:watch": "jest --env=jsdom --watch",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.10",
+    "react": "15.x || 16.x",
+    "react-intl": "^2.7.2 || 3.x || 4.x || 5.x",
+    "vtex-tachyons": "^2.5.0"
+  },
+  "dependencies": {
+    "@vtex/styleguide": "^9.112.28",
+    "axios": "^0.16.2",
+    "classnames": "^2.2.5",
+    "load-google-maps-api": "^1.0.0",
+    "lodash": "^4.17.4",
+    "msk": "^1.0.5",
+    "react-intl": "^2.8.0",
+    "recompose": "^0.27.1"
+  },
+  "devDependencies": {
+    "@googlemaps/jest-mocks": "^2.7.5",
+    "@testing-library/dom": "^8.0.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.2.3",
+    "@types/google.maps": "^3.49.2",
+    "@types/jest": "^26.0.19",
+    "@types/lodash": "^4.14.170",
+    "@types/prop-types": "^15.7.5",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@vtex/tsconfig": "^0.6.0",
+    "babel-jest": "^26.3.0",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.8.0",
+    "enzyme-to-json": "^3.3.4",
+    "i18n-iso-countries": "^1.13.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "jest-cli": "^26.4.2",
+    "jest-enzyme": "^7.1.2",
+    "prop-types": "^15.8.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-test-renderer": "^16.7.0",
+    "typescript": "3.9.7"
+  },
+  "resolutions": {
+    "jest-environment-jsdom": "^26.3.0"
+  },
+  "author": "Breno Calazans (@klzns)",
+  "homepage": "https://github.com/vtex/address-form",
+  "license": "AGPL-3.0-only",
+  "repository": "https://github.com/vtex/address-form",
+  "keywords": [
+    "react-component",
+    "vtex",
+    "checkout",
+    "address"
+  ],
+  "jest": {
+    "testURL": "http://localhost/",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/es/",
+      "<rootDir>/lib/",
+      "<rootDir>/umd/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "<rootDir>/test-modules"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/es/",
+      "<rootDir>/lib/",
+      "<rootDir>/umd/"
+    ],
+    "transformIgnorePatterns": [
+      "[/\\\\]lib[/\\\\].+\\.(js|jsx)$",
+      "[/\\\\]umd[/\\\\].+\\.(js|jsx)$",
+      "[/\\\\]es[/\\\\].+\\.(js|jsx)$",
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)(\\?.*)?$": "identity-obj-proxy"
+    },
+    "transform": {
+      "^.+\\.(j|t)sx?$": "<rootDir>/jest.transform.js"
+    }
+  }
+}

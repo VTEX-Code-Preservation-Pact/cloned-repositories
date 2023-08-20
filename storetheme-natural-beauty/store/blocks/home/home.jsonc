@@ -1,0 +1,93 @@
+{
+  "store.home": {
+    "blocks": [
+       "carousel#home",
+       "shelf#home",
+       "info-card#home",
+       "rich-text#question"
+    ]
+  },
+
+  "carousel#home": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://i.imgur.com/iBnFjgI.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.onegreenplanet.org/wp-content/uploads/2018/12/shutterstock_1428218030-1200x800.jpg",
+          "mobileImage": "https://i.imgur.com/Xbj6T5t.png"
+        },
+        {
+          "image": "https://i.imgur.com/yW173iW.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ],
+      "height": 550,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "collection": 138,
+      "paginationDotsVisibility": "visible",
+      "productList": {
+        "maxItems": 4,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 1.5,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Natural beauty"
+      }
+    }
+  },
+
+  "product-summary#home": {
+    "props": {
+      "isOneClickBuy": true,
+      "showBadge": true,
+      "badgeText": "OFF",
+      "buyButtonText": "Add to avocart 🥑",
+      "displayBuyButton": "displayButtonHover",
+      "showCollections": false,
+      "showListPrice": true,
+      "labelSellingPrice": "To",
+      "labelListPrice": "From",
+      "showLabels": true,
+      "showInstallments": true,
+      "showSavings": true,
+      "name": {
+        "showBrandName": true,
+        "showSku": true,
+        "showProductReference": true
+      }
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "center",
+      "imageUrl": "https://morethanglam.com/wp-content/uploads/2016/05/Alternative-skin-care-and-scrub-fresh-avocado-leaves-sea-salt-oils-lime-and-honey-on-marble-background.jpg",
+      "headline": "Self-care line focused on natural products",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+
+  "rich-text#question": {
+    "props": {
+      "text": "**This is the best example store built using the VTEX platform.\nWe are the \"Bonytos de Tema\" team in the Hackatheme.\nPlease rate us.**",
+      "blockClass": "question"
+    }
+  }
+}

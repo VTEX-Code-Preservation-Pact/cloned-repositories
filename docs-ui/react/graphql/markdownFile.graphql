@@ -1,0 +1,12 @@
+query markdownFile($appName: String, $fileName: String, $locale: String) {
+  markdownFile(appName: $appName, fileName: $fileName, locale: $locale) {
+    meta {
+      title
+      description
+      tags
+      version
+      git
+    }
+    markdown
+  }
+}

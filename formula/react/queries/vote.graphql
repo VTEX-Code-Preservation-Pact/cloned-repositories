@@ -1,0 +1,13 @@
+mutation Vote(
+  $edition: String!
+  $id: String!
+  $execution: Int!
+  $relevance: Int!
+) {
+  updateVote(edition: $edition, projectID: $id, execution: $execution, relevance: $relevance) {
+    projectID
+    userID
+    relevance
+    execution
+  }
+}

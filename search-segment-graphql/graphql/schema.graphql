@@ -1,0 +1,7 @@
+type Query {
+  searchSegment(
+    userEmail: String
+    isAuthenticated: Boolean
+    selectedFacets: [SelectedFacetsInput]
+  ): [SelectedFacets] @cacheControl(scope: PUBLIC, maxAge: SHORT)
+}

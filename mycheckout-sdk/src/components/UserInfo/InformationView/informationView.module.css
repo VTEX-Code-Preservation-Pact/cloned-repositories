@@ -1,0 +1,91 @@
+.informationViewTitleMobile {
+  display: flex !important;
+}
+
+.informationViewContent {
+  margin-top: 14px;
+}
+
+.informationViewContent .informationViewEdit {
+  flex: 0;
+  justify-content: end;
+}
+
+.informationViewContent .informationViewPaymentContent {
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.informationViewContent .secureFieldInput {
+  border-bottom: 1px solid var(--primary-color-focus);
+  border-radius: 0;
+  cursor: text;
+  display: inline-block;
+  height: 23px;
+  line-height: 1.3;
+  padding: 0;
+  width: 38px;
+}
+
+.informationViewContent .secureFieldValid {
+  border-bottom: 1px solid var(--success-color);
+}
+
+.informationViewContent .secureFieldInvalidLite {
+  border-bottom: 1px solid var(--error-color);
+}
+
+.informationViewContent .duesContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.informationViewContent .duesContainer .duesLabel {
+  font-size: 12px;
+  text-align: left;
+  width: 66px;
+  margin-right: 10px;
+}
+
+.informationViewContent .duesContainer .duesSelect {
+  width: 50px;
+  min-width: auto;
+}
+
+.informationViewContent .incompleteStep {
+  text-decoration: underline;
+  font-weight: var(--text-bold);
+}
+
+.customIconMargin {
+  margin: 0 !important;
+}
+
+.iconContainer {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 992px) {
+  .informationViewTitleMobile {
+    display: none !important;
+  }
+
+  .informationViewContent .duesContainer .duesLabel {
+    font-size: 14px;
+    width: 66px;
+  }
+
+  .informationViewBuyButton {
+    bottom: 0;
+    box-shadow: inset 0 3px 6px rgb(0 0 0 / 6%);
+    padding: 40px 25px;
+    position: fixed;
+    width: 30%;
+  }
+}

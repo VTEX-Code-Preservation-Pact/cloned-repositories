@@ -1,0 +1,9 @@
+@import "./components/DatePicker/react-dates.css";
+@import "./components/DatePicker/custom.css";
+@import "./components/TimePicker/rc-time-picker.css";
+@import "./components/TimePicker/custom.css";
+
+body {
+  background-color: #f7f9fa;
+  height: 100%;
+}

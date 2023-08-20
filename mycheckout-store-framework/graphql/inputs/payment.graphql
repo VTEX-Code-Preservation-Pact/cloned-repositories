@@ -1,0 +1,27 @@
+input PaymentMethodsInput {
+  type: String
+  isActive: Boolean
+  paymentMethodName: String
+  accountName: String
+}
+
+input PaymentDataInput {
+  cardId: String
+  gateway: String
+  token: String
+  franchise: String
+  number: String
+  paymentMethod: String
+  additionalData: [AdditionalDataInput]
+  holderName: String
+  expirationDate: String
+  cardNumber: String
+  cvv: String
+  bin: String
+  holderDocument: String
+}
+
+input AdditionalDataInput {
+  key: String
+  value: String
+}

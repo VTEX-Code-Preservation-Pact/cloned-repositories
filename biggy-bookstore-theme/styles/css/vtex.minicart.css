@@ -1,0 +1,8 @@
+.container svg {
+    color: #fafafa;
+}
+
+.badge {
+    background-color: #1e88e5;
+    box-shadow: 1px 1px 3px 0px #33333350
+}

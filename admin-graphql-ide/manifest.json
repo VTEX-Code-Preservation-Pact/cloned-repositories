@@ -1,0 +1,41 @@
+{
+  "name": "admin-graphql-ide",
+  "vendor": "vtex",
+  "version": "3.7.0",
+  "title": "Admin GraphQL IDE",
+  "description": "GraphQL IDE for VTEX Admin (GraphiQL)",
+  "scripts": {
+    "prereleasy": "bash pre.sh"
+  },
+  "builders": {
+    "admin": "0.x",
+    "node": "4.x",
+    "typedql": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.graphql-server": "1.x"
+  },
+  "policies": [
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "vtex.graphql-server:resolve-graphiql"
+    },
+    {
+      "name": "sphinx-is-admin"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexid.vtex.com.br",
+        "path": "/api/vtexid/pub/authenticated/user"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

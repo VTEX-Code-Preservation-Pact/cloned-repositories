@@ -1,0 +1,61 @@
+{
+  "footer": {
+    "allowed": [
+      "footer-layout.mobile",
+      "footer-layout.desktop"
+    ],
+    "component": "Footer",
+    "content": {
+      "$ref": "app:vtex.store-footer#/definitions/Footer"
+    },
+    "hydration": "on-view"
+  },
+  "footer-layout": {
+    "component": "FooterLayout",
+    "composition": "children",
+    "allowed": [
+      "footer-row",
+      "footer-spacer",
+      "social-networks",
+      "accepted-payment-methods",
+      "logo",
+      "newsletter",
+      "menu",
+      "unstable--menu",
+      "powered-by",
+      "rich-text",
+      "image",
+      "flex-layout",
+      "shop-review-badge"
+    ]
+  },
+  "footer-layout.mobile": {
+    "device": "mobile"
+  },
+  "footer-layout.desktop": {
+    "device": "desktop"
+  },
+  "social-networks": {
+    "component": "SocialNetworks",
+    "content": {
+      "$ref": "#/definitions/SocialNetworks"
+    }
+  },
+  "accepted-payment-methods": {
+    "component": "AcceptedPaymentMethods",
+    "content": {
+      "$ref": "#/definitions/AcceptedPaymentMethods"
+    }
+  },
+  "powered-by": {
+    "component": "PoweredBy"
+  },
+  "footer-row": {
+    "component": "Row",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "footer-spacer": {
+    "component": "Spacer"
+  }
+}

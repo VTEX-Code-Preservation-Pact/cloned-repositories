@@ -1,0 +1,6 @@
+{
+  "product-bookmark": {
+    "component": "Noop",
+    "extensible": "public"
+  }
+}

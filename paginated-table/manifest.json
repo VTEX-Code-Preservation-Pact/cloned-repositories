@@ -1,0 +1,19 @@
+{
+  "name": "paginated-table",
+  "vendor": "vtex",
+  "version": "0.14.0",
+  "title": "Paginated Table",
+  "description": "Paginated table based on styleguide's table",
+  "scripts": {
+    "prereleasy": "bash pre.sh"
+  },
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,7 @@
+.label {
+    color: #fff;
+}
+
+.label:hover {
+    color: #222;
+}

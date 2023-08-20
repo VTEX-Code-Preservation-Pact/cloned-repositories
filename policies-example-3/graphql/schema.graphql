@@ -1,0 +1,15 @@
+type ReturnDrivers {
+  name: String
+  lastName: String
+  points: Float
+}
+
+type ReturnConstructors {
+  name: String
+  points: Float
+}
+
+type Query {
+  getDrivers: [ReturnDrivers]
+  getConstructors: [ReturnConstructors]
+}

@@ -1,0 +1,41 @@
+name: 'Publish an app version to VTEX'
+description: 'Publish an app version to VTEX'
+
+inputs:
+  vtex-app-key:
+    description: 'The app key that will be used to call VTEX API'
+    required: true
+  vtex-app-token:
+    description: 'The app token that will be used to call VTEX API'
+    required: true
+  version-visibility:
+    description: 'Indicates the version visibility that will be used: development, unpublished, or published'
+    required: false
+    default: 'development'
+  version-increment-type:
+    description: 'Indicates the type of change that is being done, accepting: major, minor, patch'
+    required: false
+    default: 'patch'
+
+runs:
+  using: "composite"
+  steps:
+
+    - name: Get app metadata
+      id: app-metadata
+      uses: vtex/app-metadata-action@main
+      with:
+        version-visibility: ${{ inputs.version-visibility }}
+        version-increment-type: ${{ inputs.version-increment-type }}
+
+
+    - name: Create or update a VTEX service for the service image
+      id: call-create-app-version-api
+      uses: vtex/apps-framework-request-action@main
+      with:
+        vtex-app-key: ${{ inputs.vtex-app-key }}
+        vtex-app-token: ${{ inputs.vtex-app-token }}
+        request-type: create-app-version
+        app-specification: ${{steps.app-metadata.outputs.next-app-specification}}
+        wait-app-version-complete: true
+        version-visibility: ${{ inputs.version-visibility }}

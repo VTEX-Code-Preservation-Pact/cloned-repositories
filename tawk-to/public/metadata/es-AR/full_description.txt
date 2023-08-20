@@ -1,0 +1,14 @@
+## Sobre
+
+Tawk.to está diseñado para aumentar la efectividad en la gestión de la experiencia de participación del cliente en línea, permitiendo que múltiples sitios y agentes en una sola interfaz chateen con los visitantes de su sitio.
+Compatible con todos los navegadores modernos, tawk.to es un software gratuito de chat en vivo creado a partir de la creciente necesidad de que las empresas respondan en tiempo real, con personas reales.
+
+No existe una versión 'premium', solo una versión rica en funciones para todos.
+
+## Funcionalidades
+
+- Monitorear conversaciones en tiempo real;
+- Implementar disparadores automatizados;
+- Personaliza los widgets;
+- Funciona en 27 idiomas;
+- Recibe notificaciones por correo electrónico.

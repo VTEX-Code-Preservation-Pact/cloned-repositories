@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "modal-layout",
+  "version": "0.14.1",
+  "title": "VTEX Modal Layout",
+  "description": "A React Modal component.",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "dependencies": {
+    "vtex.css-handles": "1.x",
+    "vtex.store-icons": "0.x",
+    "vtex.responsive-values": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.pixel-manager": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

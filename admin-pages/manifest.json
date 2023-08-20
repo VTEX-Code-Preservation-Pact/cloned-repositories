@@ -1,0 +1,54 @@
+{
+  "vendor": "vtex",
+  "name": "admin-pages",
+  "version": "4.51.2",
+  "title": "VTEX Pages Admin",
+  "description": "The VTEX Pages CMS admin interface",
+  "builders": {
+    "admin": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.apps-graphql": "3.x",
+    "vtex.file-manager": "0.x",
+    "vtex.file-manager-graphql": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.pages-graphql": "2.x",
+    "vtex.pwa-graphql": "1.x",
+    "vtex.store": "2.x",
+    "vtex.styles-graphql": "1.x",
+    "vtex.styleguide": "9.x",
+    "vtex.messages": "1.x",
+    "vtex.rewriter": "1.x",
+    "vtex.tenant-graphql": "0.x",
+    "vtex.admin-cms": "1.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {
+    "title": "VTEX Pages Admin",
+    "type": "object",
+    "properties": {
+      "copyContentBinding": {
+        "type": "boolean",
+        "title": "Copy Content Binding",
+        "description": "Enables feature to copy pages from one binding to another",
+        "default": false
+      }
+    }
+  },
+  "scripts": {
+    "postreleasy": "vtex publish -r vtex --verbose"
+  },
+  "policies": [
+    {
+      "name": "vtex.file-manager:saveFileAsync"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

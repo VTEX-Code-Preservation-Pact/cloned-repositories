@@ -1,0 +1,8 @@
+{
+  "amp-header": {
+    "component": "Header",
+    "allowed": [
+      "category-menu"
+    ]
+  }
+}

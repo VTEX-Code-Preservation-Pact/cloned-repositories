@@ -1,0 +1,89 @@
+.attachmentContainer {
+  display: flex;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.attachmentDelete {
+  position: absolute;
+  left: -6px;
+  top: -6px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.attachmentImageContainer {
+  width: 56px;
+  height: 56px;
+}
+
+.attachmentImage {
+  width: 56px !important;
+  height: 56px !important;
+  max-width: none !important;
+}
+
+.attachmentContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.attachmentMiddle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 8px 0px 8px;
+}
+
+.attachmentName {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.attachmentText {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+}
+
+.attachmentPriceContent {
+  display: flex;
+  align-items: center;
+  padding: 0px 8px 0px 8px;
+}
+
+.attachmentPrice {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.attachmentOffering {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 18px;
+}
+
+.attachmentInfo {
+  padding: 0 7px;
+  max-width: 60%;
+  margin-right: auto;
+}
+
+.attachmentButton {
+  min-width: 30%;
+}
+
+@media screen and (min-width: 992px) {
+  .attachmentText {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+  }
+
+  .attachmentPrice {
+    font-size: 14px !important;
+    font-weight: 700 !important;
+  }
+}

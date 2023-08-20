@@ -1,0 +1,13 @@
+{
+    "name": "Suiteshare",
+    "headline": "Integre sua loja com a plataforma Suiteshare.",
+    "overview": "Este aplicativo realiza a integração com a plataforma Suiteshare, adicionando um botão para o whatsapp em todas as páginas.\\nO widget promove ao cliente um fácil acesso para comunicação via Whatsapp e possui diversas configurações, gatilhos, e mensagens personalizadas configurados pelo Suiteshare.",
+    "features": [
+      "Disponibiliza o widget de whatsapp da Suiteshare em todas as páginas"
+    ],
+    "additionalInformation": "Para utilizar esse App é necessário ter uma conta ativa no Suiteshare e configurar o ID de integração nas configurações do App.",
+    "websiteURL": "https://vtex.com/",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    }
+}

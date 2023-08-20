@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "4d55be4a-ce5e-46f1-99c7-4866b09b6828",
+		"name": "Anti-fraud Webhook Mock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20194184"
+	},
+	"item": [
+		{
+			"name": "Status hook",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/antifraud-provider/transactions/:requestId/hook?accountName={{accountName}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"antifraud-provider",
+						"transactions",
+						":requestId",
+						"hook"
+					],
+					"query": [
+						{
+							"key": "accountName",
+							"value": "{{accountName}}"
+						}
+					],
+					"variable": [
+						{
+							"key": "requestId",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Ok",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/antifraud-provider/transactions/:requestId/hook?accountName={{accountName}}",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"antifraud-provider",
+								"transactions",
+								":requestId",
+								"hook"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "{{accountName}}"
+								}
+							],
+							"variable": [
+								{
+									"key": "requestId",
+									"value": null
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://2b3b0d4c-87ea-40d2-8be5-5a55c0827039.mock.pstmn.io"
+		}
+	]
+}

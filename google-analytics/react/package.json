@@ -1,0 +1,39 @@
+{
+  "name": "vtex.google-analytics",
+  "description": "Google Analytics Pixel App",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "VTEX",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "eslint": "^5.15.1",
+    "eslint-config-vtex": "^10.1.0",
+    "identity-obj-proxy": "^3.0.0",
+    "tslint": "^5.11.0",
+    "tslint-config-vtex": "^2.0.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "3.5.2"
+  },
+  "jest": {
+    "verbose": true,
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "setupFiles": [
+      "./tests-setup.js"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__test__/fileMock.js",
+      "\\.(css|less|scss)$": "identity-obj-proxy"
+    }
+  },
+  "dependencies": {
+    "@types/google.analytics": "0.0.39"
+  },
+  "version": "1.1.0"
+}

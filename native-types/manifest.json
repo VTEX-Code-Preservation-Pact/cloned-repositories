@@ -1,0 +1,20 @@
+{
+  "vendor": "vtex",
+  "name": "native-types",
+  "version": "0.10.1",
+  "builders": {
+    "messages": "1.x",
+    "pages": "1.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "title": "Native Types",
+  "description": "Native types",
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,10 @@
+{
+  "store/product-quantity.quantity": "Antall",
+  "store/product-quantity.quantity-available": "{availableQuantity, plural, one {# tilgjengelig} other {# tilgjengelig}}",
+  "admin/editor.product-quantity.title": "Komponent for produktmengde",
+  "admin/editor.product-quantity.description": "En komponent som lar brukeren velge antall varer å legge i handlekurven",
+  "admin/editor.product-quantity.warningQuantityThreshold.title": "Terskeladvarsel for tilgjengelig mengde",
+  "admin/editor.product-quantity.warningQuantityThreshold.description": "Vis kun antall gjenværende varer på lager dersom tilgjengelige antall er mindre enn eller lik verdien som passeres i denne egenskapen",
+  "admin/editor.product-quantity.showUnit.title": "Måleenhet i mengdevelgeren",
+  "admin/editor.product-quantity.showUnit.description": "Vis eller skjul måleenhet i mengdevelgeren"
+}

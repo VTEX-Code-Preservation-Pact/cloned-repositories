@@ -1,0 +1,25 @@
+{
+  "vendor": "vtex",
+  "name": "product-quantity",
+  "version": "1.9.0",
+  "title": "Product Quantity",
+  "description": "Product quantity",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.native-types": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-summary-context": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.device-detector": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

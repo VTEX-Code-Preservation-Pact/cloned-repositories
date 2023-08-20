@@ -1,0 +1,26 @@
+{
+	"messages": {
+		"success": {
+			"status": 200,
+			"responseText": {
+				"messages": [
+					{
+						"code": "123",
+						"text": "oi",
+						"status": "fatal"
+					}
+				]
+			}
+		},
+		"fatalError": {
+			"status": 500,
+			"responseText": "ocorreu um erro louco e tal"
+		},
+		"checkoutError": {
+			"status": 404,
+			"responseText": {
+
+			}
+		}
+	}
+}

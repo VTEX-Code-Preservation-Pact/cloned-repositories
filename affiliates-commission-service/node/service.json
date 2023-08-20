@@ -1,0 +1,56 @@
+{
+  "memory": 512,
+  "ttl": 60,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "affiliateOrders": {
+      "path": "/_v/affiliateOrders/:affiliateId",
+      "public": true
+    },
+    "affiliateOrdersAggregate": {
+      "path": "/_v/affiliateOrdersAggregate/:affiliateId",
+      "public": true
+    },
+    "commissionBySKU": {
+      "path": "/_v/commissionBySKU",
+      "public": true
+    },
+    "commissionLastImport": {
+      "path": "/_v/commissionLastImport/:fileId",
+      "public": true
+    },
+    "exportAffiliateOrders": {
+      "path": "/_v/export/affiliateOrders/:fileName",
+      "public": true
+    },
+    "exportCommissionBySKU": {
+      "path": "/_v/export/commissionBySKU/:fileName",
+      "public": true
+    }
+  },
+  "events": {
+    "onAppInstalled": {
+      "sender": "apps",
+      "keys": ["setup"]
+    },
+    "setAffiliatesOrders": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["order-created"]
+    },
+    "setCommissionBySKU": {
+      "sender": "vtex.spreadsheet-event-broadcaster",
+      "topics": ["row.output"]
+    },
+    "updateOrderStatus": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["payment-pending", "payment-approved", "cancel"]
+    },
+    "updateInvoicedOrder": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["invoiced"]
+    }
+  }
+}

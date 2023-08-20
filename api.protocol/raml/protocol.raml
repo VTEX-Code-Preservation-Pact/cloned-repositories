@@ -1,0 +1,52 @@
+#%RAML 0.8
+---
+title: VTEX API Protocol
+version: v1.0.3+beta
+protocols: [ HTTPS ]
+baseUri: https://api.vtex.com/{accountName}/protocol-example
+baseUriParameters:
+    accountName:
+        description: Identifica a conta do cliente VTEX.
+traits:
+  - paged: !include http://api.vtex.com/doc/{%culture}/protocol/v1/traits/paged.yaml
+  - secured: !include http://api.vtex.com/doc/{%culture}/protocol/v1/traits/secured.yaml
+resourceTypes: !include http://api.vtex.com/doc/{%culture}/protocol/v1/resourceTypes/baseResourceTypes.yaml
+documentation: !include documentation/user-documentation.yaml
+
+/myResources:
+  type: collectionOfVersioned
+  get:
+    is: [ paged ]
+    description: |
+      Um exemplo de GET em uma coleção de recursos.
+    responses:
+      206:
+        body:
+          application/vnd.vtex.myResource.v1+json:
+            example: !include examples/myResourceCollection.example.json
+  post:
+    is: [ secured ]
+    description: |
+      Use o POST para criar um novo recurso em uma coleção.
+    body:
+      application/vnd.vtex.myResource.v1+json:
+        example: !include examples/myResource.example.json
+  patch:
+    is: [secured]
+    description: |
+      Atualiza vários itens da coleção em um só request.
+    body:
+      application/vnd.vtex.myresource.v1.collectionPatch+json:
+        example: !include examples/myResourceCollectionPatch.example.json
+  /{resourceId}:
+    type: versioned
+    is: [ secured ]
+    get:
+    put:
+      responses:
+        200:
+        201:
+    patch:
+    delete:
+      responses:
+        204:

@@ -1,0 +1,111 @@
+type Query {
+  getUser(email: String!): User!
+  getAddress(email: String!): [Address!]!
+  getPayments(email: String!): [Payments!]!
+  login(email: String!): GeneralResponse!
+  verifyCode(email: String!, code: Int!): GeneralUserResponse!
+  getCountries: PaginatedCountriesResponse
+  getCountry(id: ID): Countries
+  getStateCities(country: ID, state: String): [Cities]
+  getCities(city: String): [SearchCities]
+  getDocumentTypes: [DocumentTypes]
+  accounts: Accounts
+  validateCredit(email: String, totals: Int): ValidateCredit
+  categoryMetrics(data: MetricsInput): CategoryMetrics
+  subcategoryMetrics(category: String, data: MetricsInput): SubcategoryMetrics
+  ticketAverage(data: MetricsInput): TicketAverage
+  checkout(data: MetricsInput): Checkout
+  button(data: MetricsInput): ButtonUses
+  conversionRate(data: MetricsInput): ConversionRate
+  token: String
+  getLinksByAccount: [AccountLink]
+  getAccount: Account
+  getCategories: [Categories]
+  getPaymentsMethods: [AdminPaymentsMethods]
+  getPaymentProcessStatus(orderId: String): PaymentProccess
+  getStyles: Accounts
+  authBnpl(authCode: String): AuthBnpl
+}
+
+type Mutation {
+  createUser(
+    email: String!
+    habeasData: Boolean
+    id_number: String!
+    id_type: String!
+    ip: String!
+    lastname: String!
+    name: String!
+    phone_code: String!
+    phone_number: String!
+  ): User!
+  updateUser(userArgs: UserInput): GeneralUserResponse!
+
+  externalAddress(args: AddressInput): Address
+
+  createAddress(
+    id: ID
+    profileId: String!
+    country: String!
+    state: String!
+    city: String!
+    street: String!
+    number: String!
+    postalCode: String!
+    receiverName: String!
+    neighborhood: String!
+    geoCoordinates: GeocoordinatesInput!
+    reference: String
+  ): Address!
+  updateAddress(
+    id: ID!
+    country: String
+    state: String
+    city: String
+    street: String
+    number: String
+    postalCode: String
+    receiverName: String
+    neighborhood: String
+    geoCoordinates: GeocoordinatesInput
+    reference: String
+  ): GeneralAddressResponse!
+
+  deleteAddress(id: ID!): GeneralAddressResponse!
+
+  deletePayment(id: ID!): GeneralPaymentsResponse!
+
+  createOrder(orderArgs: OrderInput): Order
+    @cacheControl(maxAge: ZERO, scope: PRIVATE)
+
+  ecommerce(args: EcommerceInput): Ecommerce
+
+  saveToken(
+    key: String
+    token: String
+    paymentMethodId: String
+    cvcRequired: Boolean
+    buttonMessage: String
+    visualization: [VisualizationInput]
+  ): String
+
+  createLink(accountApprover: String): AccountLink
+
+  updateLink(id: String, status: String): AccountLink
+
+  deleteLink(id: String): Remove
+
+  handleVisualization(
+    visualization: [VisualizationInput]
+  ): ResponseVisualization
+
+  createPaymentMethod(
+    id: ID!
+    type: String
+    isActive: Boolean
+    paymentMethodName: String
+    accountName: String
+  ): AdminPaymentsMethods
+
+  updateStyles(styles: String, buttonText: String, restore: Boolean): Account
+}

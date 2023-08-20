@@ -1,0 +1,38 @@
+{
+  "name": "trustpilot",
+  "vendor": "vtex",
+  "version": "2.2.0",
+  "title": "Trustpilot",
+  "description": "Trustpilot integration",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x",
+    "messages": "1.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.shop-review-interfaces": "0.x"
+  },
+  "settingsSchema": {
+    "title": "Trustpilot opions",
+    "type": "object",
+    "properties": {
+      "trustpilotIntegrationKey": {
+        "title": "Integration Key",
+        "description": "Enter the integration key from your Trustpilot business account",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

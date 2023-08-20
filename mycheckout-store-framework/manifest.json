@@ -1,0 +1,99 @@
+{
+  "vendor": "kuikpay",
+  "name": "my-checkout",
+  "version": "0.0.30",
+  "title": "My Checkout",
+  "description": "CHANGE_ME",
+  "mustUpdateAt": "2022-01-04",
+  "categories": [],
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "graphql": "1.x",
+    "node": "6.x",
+    "admin": "0.x"
+  },
+  "dependencies": {
+    "vtex.order-manager": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.checkout-resources": "0.x",
+    "vtex.checkout-graphql": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store": "2.x",
+    "vtex.search-page-context": "0.x",
+    "vtex.styleguide": "9.x",
+    "vtex.admin-graphql": "2.x",
+    "vtex.catalog-api-proxy": "0.x",
+    "vtex.order-items": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "billingOptions": {
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "graphql-query"
+    },
+    {
+      "name": "vtex.catalog-api-proxy:catalog-proxy"
+    },
+    {
+      "name": "vtex.catalog-api-proxy:authenticated-catalog-proxy"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "acf40ec431ea2419185fe97b1c68d4ed-e437d3d7323668a1.elb.us-east-1.amazonaws.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "a41082820d7da4214af3d664e7cbe952-046425514aefa3e6.elb.us-east-1.amazonaws.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "/api/pvt/rules"
+      }
+    },
+    {
+      "name": "AcessaTodosCarrinhos"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

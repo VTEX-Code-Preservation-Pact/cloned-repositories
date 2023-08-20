@@ -1,0 +1,5 @@
+mutation CREATE_TOKEN($accountId: ID!) {
+  createToken(accountId: $accountId) {
+    autheticationToken
+  }
+}

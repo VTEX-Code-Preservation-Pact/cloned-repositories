@@ -1,0 +1,15 @@
+query Finalists ($edition: String!) {
+  finalists (edition: $edition) {
+    id
+    name
+    description
+    demoURL
+    owner
+    team {
+      id
+      email
+      name
+      picture
+    }
+  }
+}

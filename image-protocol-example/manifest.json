@@ -1,0 +1,95 @@
+{
+  "name": "image-protocol-example",
+  "vendor": "vtex",
+  "version": "0.5.2",
+  "title": "Image Protocol Example",
+  "description": "Example of the protocol implementation",
+  "mustUpdateAt": "2018-01-04",
+  "categories": [],
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.native-types": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.css-handles": "1.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.list-context": "0.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.on-view": "1.x",
+    "vtex.session-client": "1.x",
+    "vtex.file-manager-graphql": "0.x",
+    "vtex.file-manager": "0.x"
+  },
+  "builders": {
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x",
+    "node": "6.x",
+    "docs": "0.x",
+    "graphql": "1.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "READONLY_USER_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "*",
+        "path": "*"
+      }
+    },
+    {
+      "name": "LogisticsViewer"
+    },
+    {
+      "name": "LogisticsAdmin"
+    },
+    {
+      "name": "vtex.file-manager:file-manager-read-write"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Priority Settings",
+    "type": "object",
+    "description": "Set the priority for each of the following",
+    "properties": {
+      "customerClassPriority": {
+        "title": "Customer Class",
+        "type": "number",
+        "description": "Only numbers 1,2,3..."
+      },
+      "polygonPriority": {
+        "title": "Polygon",
+        "type": "number",
+        "description": "Only numbers 1,2,3..."
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

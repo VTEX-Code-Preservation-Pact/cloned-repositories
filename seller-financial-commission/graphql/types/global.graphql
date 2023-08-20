@@ -1,0 +1,127 @@
+input SellerInvoiceParams {
+  sellerName: String!
+  pagination: Pagination
+  dates: Dates!
+}
+
+input Pagination {
+  page: Int
+  pageSize: Int
+}
+
+input Dates {
+  startDate: String
+  endDate: String
+}
+
+type ListInvoices {
+  data: [InvoiceList]
+  pagination: PaginationInvoice
+}
+
+type InvoiceList {
+  id: String
+  status: String
+  invoiceCreatedDate: String
+  totalizers: Totalizers
+}
+
+type Totalizers {
+  subTotal: Float
+  fee: Float
+  total: Float
+}
+
+type PaginationInvoice {
+  total: Int
+  page: Int
+  pageSize: Int
+}
+
+scalar JSONData
+
+type Invoice {
+  status: String
+  invoiceCreatedDate: String
+  seller: SellerInvoiceData
+  orders: [Order]
+  totalizers: Totalizers
+  comment: String
+  jsonData: JSONData
+}
+
+type SellerInvoiceData {
+  id: String
+  name: String
+  contact: SellerContact
+}
+
+type SellerContact {
+  phone: String
+  email: String
+}
+
+type Order {
+  orderId: String
+  sellerOrderId: String
+  totalComission: Float
+  totalOrderValue: Float
+  totalOrderRate: Float
+}
+
+input SearchOrdersParams {
+  dateStart: String!
+  dateEnd: String!
+  sellerName: String!
+  page: Int!
+  perpage: Int!
+  status: String
+}
+
+type SearchOrdersResponse {
+  data: [OrderSearch]
+  paging: PagingOrders
+}
+
+type OrderSearch {
+  orderId: String
+  sellerOrderId: String
+  marketplaceOrderId: String
+  totalComission: Float
+  totalOrderValue: Float
+  status: String
+  statusDescription: String
+  creationDate: String
+  rate: [ItemsRateOrdersSearch]
+}
+
+type ItemsRateOrdersSearch {
+  itemId: String
+  nameItem: String
+  rate: RateOrders
+}
+
+type RateOrders {
+  productCommissionPercentage: Float
+  freightCommissionPercentage: Float
+}
+
+type PagingOrders {
+  total: Int
+  pages: Int
+  currentPage: Int
+  perPage: Int
+}
+
+input InvoiceDataInput {
+  id: String
+  name: String
+  email: String
+  startDate: String
+  endDate: String
+}
+
+input EmailDataInput {
+  email: String
+  jsonData: String
+}

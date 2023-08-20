@@ -1,0 +1,28 @@
+{
+  "stack": "dotnet",
+  "memory": 256,
+  "runtimeArgs": [],
+  "routes": {
+    "TrackingConfig": {
+      "path": "/_v/tracking/config",
+      "public": false,
+      "policies": [{
+        "effect": "allow",
+        "actions": ["get"],
+        "principals": [
+          "vrn:apps:*:*:*:app/vtex.tracking-builder@*"
+        ]
+      }]
+    },
+    "TrackPackages": {
+      "path": "/_v/your-company.tracking-integration-boilerplate/trackPackages",
+      "public": true
+    }
+  },
+  "events": {
+    "onAppsLinked": {
+      "sender": "apps",
+      "keys": ["linked"]
+    }
+  }
+}

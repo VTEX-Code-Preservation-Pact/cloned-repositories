@@ -1,0 +1,16 @@
+{
+  "name": "affiliates-order-form-spy",
+  "vendor": "vtex",
+  "version": "1.0.1",
+  "title": "Affiliates Order Form Spy",
+  "description": "An app used by vtex.affiliates to spy on orderForm changes during user navigation on stores.",
+  "builders": {
+    "docs": "0.x",
+    "pages": "0.x",
+    "react": "2.x",
+    "node": "6.x"
+  },
+  "dependencies": {},
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,147 @@
+.inputContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputContent .groupInput {
+  position: relative;
+  width: 100%;
+}
+
+.inputContent .inputIconContainer {
+  bottom: 0;
+  position: absolute;
+  z-index: 80;
+}
+
+.inputContent .inputwidth {
+  width: 100%;
+}
+
+.inputContent .input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--dark-gray-color);
+  width: 100%;
+  outline: none;
+  padding-bottom: 2px;
+  padding-left: 5px;
+}
+
+.inputContent .inputWithIcon {
+  padding-left: 22px;
+}
+
+.inputContent .input[disabled] {
+  color: var(--dark-gray-color);
+}
+
+.inputContent .input::placeholder {
+  color: transparent !important;
+}
+
+.inputContent .input:not(:placeholder-shown) ~ .labelPlaceholder {
+  transform: scale(0.9) translateY(-1.2rem) translateX(0rem);
+}
+
+.inputContent .input:focus ~ .labelPlaceholder {
+  transform: scale(0.9) translateY(-1.2rem) translateX(0rem);
+}
+
+.inputContent .labelPlaceholder {
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  color: var(--dark-gray-color);
+  opacity: 1;
+  pointer-events: none;
+  transform-origin: 0 0;
+  user-select: none;
+  transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.inputContent .input:not(:placeholder-shown) ~ .labelWithIcon {
+  transform: scale(0.9) translateY(-1.8rem) translateX(-1.5rem);
+}
+
+.inputContent .input:focus ~ .labelWithIcon {
+  transform: scale(0.9) translateY(-1.8rem) translateX(-1.5rem);
+}
+
+.inputContent .labelWithIcon {
+  left: 24px;
+}
+
+.inputContent .inputValid {
+  border-bottom: 1px solid var(--valid-color);
+  font-weight: 400;
+}
+
+.inputContent .inputInvalid {
+  border-bottom: 1px solid var(--error-color);
+}
+
+.inputContent .inputDeleteIcon {
+  right: 20px;
+  bottom: 0px;
+}
+
+.inputContent .deleteContent {
+  display: initial;
+}
+
+.inputContent .cancelContent {
+  display: none;
+}
+
+.inputContent .inputLabelError {
+  color: var(--error-color) !important;
+  font-size: 14px !important;
+}
+
+@media screen and (min-width: 992px) {
+  .inputContent .input {
+    padding-left: 5px;
+  }
+
+  .inputContent .inputWithIcon {
+    padding-left: 30px;
+  }
+
+  .inputContent .input:not(:placeholder-shown) ~ .labelPlaceholder {
+    transform: scale(0.9) translateY(-1.2rem) translateX(0rem);
+  }
+
+  .inputContent .input:focus ~ .labelPlaceholder {
+    transform: scale(0.9) translateY(-1.2rem) translateX(0rem);
+  }
+
+  .inputContent .labelPlaceholder {
+    left: 5px;
+    bottom: 4px;
+  }
+
+  .inputContent .input:not(:placeholder-shown) ~ .labelWithIcon {
+    transform: scale(0.9) translateY(-1.8rem) translateX(-2rem);
+  }
+
+  .inputContent .input:focus ~ .labelWithIcon {
+    transform: scale(0.9) translateY(-1.8rem) translateX(-2rem);
+  }
+
+  .inputContent .labelWithIcon {
+    left: 30px;
+    bottom: 4px;
+  }
+
+  .inputContent .inputDeleteIcon {
+    z-index: 100;
+  }
+
+  .inputContent .deleteContent {
+    display: none;
+  }
+
+  .inputContent .cancelContent {
+    display: initial;
+  }
+}

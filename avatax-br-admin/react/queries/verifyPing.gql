@@ -1,0 +1,7 @@
+query verifyPing($clientId: String, $clientSecret: String, $sandbox: Boolean) {
+  verifyPing(
+    clientId: $clientId
+    clientSecret: $clientSecret
+    sandbox: $sandbox
+  ) @context(provider: "vtex.avatax-br-service@1.x")
+}

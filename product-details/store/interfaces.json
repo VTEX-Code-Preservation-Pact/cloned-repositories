@@ -1,0 +1,33 @@
+{
+  "product-details": {
+    "required": [
+      "product-images",
+      "product-name",
+      "product-price",
+      "sku-selector",
+      "buy-button",
+      "product-description",
+      "product-specifications"
+    ],
+    "allowed": [
+      "breadcrumb",
+      "shipping-simulator",
+      "availability-subscriber",
+      "share",
+      "product-highlights",
+      "product-quantity-selector",
+      "addon-details-btn"
+    ],
+    "component": "ProductDetails"
+  },
+  "product-quantity-selector": {
+    "component": "ProductQuantitySelector"
+  },
+  "product-add-to-list-button": {
+    "component": "ProductAddToListButton",
+    "allowed": ["addon-details-btn"]
+  },
+  "addon-details-btn": {
+    "component": "*"
+  }
+}

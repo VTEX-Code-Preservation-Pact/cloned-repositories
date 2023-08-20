@@ -1,0 +1,17 @@
+name: Font Family
+
+docs: http://tachyons.io/docs/typography/font-family/
+
+src: font-family
+
+description:
+
+base:
+  - code, .code
+
+modifiers:
+
+media:
+
+tags:
+  - fonts

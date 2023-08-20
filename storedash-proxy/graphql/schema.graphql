@@ -1,0 +1,26 @@
+input StoreDashInput {
+  appName: String!
+  appVersion: String
+  region: String
+  production: String
+  metricName: String!
+  from: String!
+  to: String!
+  interval: String
+  operation: String
+  fields: [String]
+  aggregateBy: [String]
+  size: Int
+  timezone: String
+}
+
+type Query {
+  appsWithStats: [String]
+
+  data (
+    namespace: String!,
+    name: String!,
+    params: StoreDashInput,
+    transformationType: String!,
+  ): String @cacheControl(scope: PRIVATE)
+}

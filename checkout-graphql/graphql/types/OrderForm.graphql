@@ -1,0 +1,114 @@
+type OrderForm {
+  id: ID!
+  items: [Item!]!
+  canEditData: Boolean!
+  loggedIn: Boolean!
+  userProfileId: String
+  userType: UserType
+  shipping: Shipping!
+  marketingData: MarketingData!
+  totalizers: [Totalizer!]!
+  value: Float!
+  messages: OrderFormMessages!
+  paymentData: PaymentData!
+  clientProfileData: ClientData
+  clientPreferencesData: ClientPreferencesData
+  allowManualPrice: Boolean
+  openTextField: OpenTextField
+  storePreferencesData: StorePreferencesData
+  customData: CustomData
+}
+
+type CustomData {
+  customApps: [CustomApp!]!
+}
+
+scalar CustomFieldsObject
+
+type CustomApp {
+  id: ID!
+  major: Int!
+  fields: CustomFieldsObject!
+}
+
+type StorePreferencesData {
+  countryCode: String
+  currencyCode: String
+  timeZone: String
+  currencyFormatInfo: CurrencyFormatInfo
+  currencySymbol: String
+}
+
+type CurrencyFormatInfo {
+  currencyDecimalDigits: Int
+  currencyDecimalSeparator: String
+  currencyGroupSeparator: String
+  startsWithCurrencySymbol: Boolean
+}
+
+type OpenTextField {
+  value: String
+}
+
+enum UserType {
+  CALL_CENTER_OPERATOR
+  STORE_USER
+}
+
+type MarketingData {
+  utmCampaign: String
+  utmMedium: String
+  utmSource: String
+  utmiCampaign: String
+  utmiPart: String
+  utmiPage: String
+  coupon: String
+  marketingTags: [String!]
+}
+
+input MarketingDataInput {
+  utmCampaign: String
+  utmMedium: String
+  utmSource: String
+  utmiCampaign: String
+  utmiPart: String
+  utmiPage: String
+  coupon: String
+  marketingTags: [String!]
+}
+
+type Totalizer {
+  id: String!
+  name: String @translatableV2
+  value: Float!
+}
+
+type OrderFormMessages {
+  couponMessages: [Message!]!
+  generalMessages: [Message!]!
+}
+
+type Message {
+  code: String
+  status: String
+  text: String @translatableV2
+}
+
+type ClientPreferencesData {
+  locale: String
+  optInNewsletter: Boolean
+}
+
+input ClientPreferencesDataInput {
+  optInNewsletter: Boolean
+  locale: String
+}
+
+enum ItemsOrdinationCriteria {
+  name
+  add_time
+}
+
+input OrderFormOpenTextInput {
+  value: String
+}

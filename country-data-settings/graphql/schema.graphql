@@ -1,0 +1,68 @@
+scalar JSON
+scalar JSONObject
+
+# https://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/
+type LegalPersonTaxIdData {
+  name: String!
+  abbreviation: String!
+  mask: String!
+}
+
+type PhoneData {
+  countryCode: String!
+  mask: String
+  pattern: String!
+}
+
+type DisplayDefinition {
+  name: String!
+  delimiter: String
+  delimiterAfter: String
+}
+
+type DisplayData {
+  minimal: [[DisplayDefinition!]!]!
+  compact: [[DisplayDefinition!]!]!
+  extended: [[DisplayDefinition!]!]!
+}
+
+type AddressFieldsData {
+  city: Field
+  complement: Field
+  country: Field
+  neighborhood: Field
+  number: Field
+  postalCode: Field
+  receiverName: Field
+  reference: Field
+  state: Field
+  street: Field
+}
+
+type LocationSelectData {
+  fields: [Field!]!
+  countryData: JSON
+}
+
+type CountryData {
+  countryISO: String!
+  addressFields: AddressFieldsData!
+  display: DisplayData!
+  locationSelect: LocationSelectData
+  phone: PhoneData!
+  legalPersonTaxId: LegalPersonTaxIdData
+}
+
+type Query {
+  countryData(country: String!): CountryData
+    @settings(settingsType: "workspace")
+    @cacheControl(scope: PUBLIC, maxAge: SHORT)
+
+  countriesData(countries: [String!]!): [CountryData!]!
+    @settings(settingsType: "workspace")
+    @cacheControl(scope: PUBLIC, maxAge: SHORT)
+
+  allCountriesData: [CountryData!]!
+    @settings(settingsType: "workspace")
+    @cacheControl(scope: PUBLIC, maxAge: SHORT)
+}

@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "할인",
+  "store/totalizers.Items": "소계",
+  "store/totalizers.Shipping": "배송",
+  "store/totalizers.Tax": "세금",
+  "store/totalizers.Interest": "이자",
+  "store/totalizers.Change": "총 변경 사항",
+  "totalizers.Discounts": "할인",
+  "totalizers.Items": "소계",
+  "totalizers.Shipping": "배송",
+  "totalizers.Tax": "세금",
+  "totalizers.Interest": "이자",
+  "totalizers.Change": "총 변경 사항"
+}

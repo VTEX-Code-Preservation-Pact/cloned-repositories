@@ -1,0 +1,144 @@
+{
+  "name": "Cybersource IO",
+  "serviceUrl": "/cybersource/payment-provider",
+  "usesAntifraud": true,
+  "usesAutoSettleOptions": true,
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "American Express",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Diners",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Mastercard",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Discover",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Hipercard",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "Elo",
+      "allowsSplit": "onCapture"
+    },
+    {
+      "name": "JCB",
+      "allowsSplit": "onCapture"
+    }
+  ],
+  "customFields": [
+    {
+      "name": "Company Name",
+      "type": "text"
+    },
+    {
+      "name": "Company Tax Id",
+      "type": "text"
+    },
+    {
+      "options": [
+        {
+          "text": "Delayed Capture",
+          "value": "DelayedCapture"
+        },
+        {
+          "text": "Immediate Capture",
+          "value": "AuthAndCapture"
+        }
+      ],
+      "name": "Capture Setting",
+      "type": "select"
+    },
+    {
+      "name": "Payer Authentication",
+      "type": "select",
+      "options": [
+        {
+          "text": "Disabled",
+          "value": "disabled"
+        },
+        {
+          "text": "Active",
+          "value": "active"
+        }
+      ]
+    },
+    {
+      "name": "Capture Delay",
+      "type": "text"
+    },
+    {
+      "name": "Capture Delay Interval",
+      "type": "select",
+      "options": [
+        {
+          "text": "Minutes",
+          "value": "Minutes"
+        },
+        {
+          "text": "Hours",
+          "value": "Hours"
+        },
+        {
+          "text": "Days",
+          "value": "Days"
+        }
+      ]
+    },
+    {
+      "name": "Using Decision Manager",
+      "type": "select",
+      "options": [
+        {
+          "text": "Disabled",
+          "value": "disabled"
+        },
+        {
+          "text": "Active",
+          "value": "active"
+        }
+      ]
+    },
+    {
+      "name": "Authorized Payments Flagged by Decision Manager",
+      "type": "select",
+      "options": [
+        {
+          "text": "Treat as successful authorizations",
+          "value": "approved"
+        },
+        {
+          "text": "Treat as failed authorizations",
+          "value": "denied"
+        },
+        {
+          "text": "Treat as pending authorizations",
+          "value": "undefined"
+        }
+      ]
+    },
+    {
+      "name": "Merchant Id",
+      "type": "text"
+    },
+    {
+      "name": "Merchant Key",
+      "type": "text"
+    },
+    {
+      "name": "Shared Secret Key",
+      "type": "text"
+    }
+  ]
+}

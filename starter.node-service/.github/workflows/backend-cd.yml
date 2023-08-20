@@ -1,0 +1,40 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Backend Service Publishing (CD)
+
+on:
+  workflow_call:
+    inputs:
+      APP_VERSION_INCREMENT_TYPE:
+        type: string
+        required: true
+      APP_VERSION_VISIBILITY:
+        type: string
+        required: true
+      WORK_DIR:
+        type: string
+        required: true
+    secrets:
+      DOCKER_USER:
+        required: true
+      DOCKER_TOKEN:
+        required: true
+
+jobs:
+  publish-docker-image:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Publish app services to VTEX Docker repository
+        id: publish-docker-images
+        uses: ./.github/actions/publish-docker-image-to-vtex
+        with:
+          docker-user: ${{ secrets.DOCKER_USER }}
+          docker-token: ${{ secrets.DOCKER_TOKEN }}
+          version-visibility: ${{ inputs.APP_VERSION_VISIBILITY }}
+          version-increment-type: ${{ inputs.APP_VERSION_INCREMENT_TYPE }}
+          work-dir: ${{ inputs.WORK_DIR }}

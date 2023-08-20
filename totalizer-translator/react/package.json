@@ -1,0 +1,7 @@
+{
+  "name": "totalizer-translator",
+  "dependencies": {
+    "react-intl": "^2.7.2"
+  },
+  "version": "2.5.1"
+}

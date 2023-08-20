@@ -1,0 +1,11 @@
+{
+	"name": "vtex-ng-filter",
+	"main": [
+		"dist/ng-filter-with-template.min.js",
+		"dist/ng-filter.js",
+		"dist/ng-filter.html"
+	],
+	"dependencies": {
+		"bootstrap": "2.3.2"
+	}
+}

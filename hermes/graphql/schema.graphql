@@ -1,0 +1,18 @@
+# some fun types here
+
+type StatusContent {
+  status: StatusDescriptionInfo
+}
+
+type StatusDescriptionInfo {
+  indicator: String
+  description: String
+}
+
+type Query {
+  getGitHubStatus: StatusContent @cacheControl(scope: PRIVATE, maxAge: SHORT)
+}
+
+# type Mutation {
+#   # You should always return the whole object in a mutation, not only a boolean. This will help in browser caching
+# }

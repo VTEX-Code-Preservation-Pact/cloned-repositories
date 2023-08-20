@@ -1,0 +1,12 @@
+.containerImg {
+  background-color: #F0F0F0;
+}
+
+.containerImg img {
+  max-width: 1520px;
+  position: inherit;
+}
+
+.containerImg div {
+  position: relative;
+}

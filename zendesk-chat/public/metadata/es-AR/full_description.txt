@@ -1,0 +1,25 @@
+## Sobre
+
+El chat y la mensajería en tiempo real crean una conexión personal con los clientes que buscan asistencia. Son formas rápidas y efectivas de ofrecer ayuda sin interrumpir la experiencia del cliente.
+
+## Funcionalidades
+
+- Personalización de la apariencia;
+- Chat con clientes;
+- Uso de mensajería instantánea;
+- Chats proactivos y disparadores;
+- Modo offline;
+- Creación de protocolos de chat;
+- Seguimiento y análisis en tiempo real;
+- Internacionalización.
+
+## Cómo configurar
+
+1. Instala la aplicación desde VTEX App Store;
+2. Complete la configuración. Necesitará la Account Key para su cuenta de Zendesk Chat;
+3. Guarde sus cambios;
+4. Administre el chat a través de la plataforma Zendesk.
+
+## Comentarios
+
+- Para usar el chat, debe tener una cuenta de Zendesk activa. Algunas funciones solo están disponibles para planes específicos.

@@ -1,0 +1,109 @@
+{
+  "name": "savecart",
+  "vendor": "vtex",
+  "version": "0.6.4-beta.0",
+  "title": "Save Cart",
+  "description": "Save Cart",
+  "dependencies": {
+    "vtex.checkout": "0.x",
+    "vtex.render-runtime": "7.x"
+  },
+  "builders": {
+    "graphql": "1.x",
+    "node": "3.x",
+    "react": "2.x",
+    "pages": "0.x",
+    "messages": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "billingOptions": {
+    "free": true
+  },
+  "policies": [
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "update-app-settings"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/dataentities/cart/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexid.vtex.com.br",
+        "path": "/api/vtexid/pub/authenticated/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "POWER_USER_DS"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Save Cart",
+    "type": "object",
+    "properties": {
+      "hasSchema": {
+        "type": "boolean",
+        "default": false
+      },
+      "adminSetup": {
+        "title": "Save Cart Settings",
+        "type": "object",
+        "properties": {
+          "cartName": {
+            "title": "Save Cart Button Name",
+            "type": "string"
+          },
+          "cartLifeSpan": {
+            "title": "Lifespan (in days) of saved cart",
+            "type": "number",
+            "minimum": 1
+          },
+          "storeLogoUrl": {
+            "title": "Store logo URL",
+            "type": "string"
+          }
+        },
+        "required": [
+          "cartName",
+          "cartLifeSpan",
+          "storeLogoUrl"
+        ]
+      }
+    },
+    "required": [
+      "adminSetup"
+    ]
+  },
+  "settingsUiSchema": {
+    "ui:order": [
+      "adminSetup",
+      "hasSchema"
+    ],
+    "adminSetup": {
+      "ui:order": [
+        "cartName",
+        "cartLifeSpan",
+        "storeLogoUrl"
+      ]
+    },
+    "hasSchema": {
+      "ui:widget": "hidden"
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

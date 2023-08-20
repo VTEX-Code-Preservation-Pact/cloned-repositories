@@ -1,0 +1,6 @@
+{
+  "admin.app.ley-gondolas-arg": {
+    "component": "LeyGondolas",
+    "path": "/admin/app/ley-gondolas"
+  }
+}

@@ -1,0 +1,13 @@
+.multipleItemQuantitySelector button {
+  background: transparent;
+}
+.multipleItemQuantitySelector input {
+  background: transparent;
+}
+
+.frameAround {
+  bottom: -0.25rem;
+  top: -0.25rem;
+  left: -0.25rem;
+  right: -0.25rem;
+}

@@ -1,0 +1,10 @@
+{
+  "admin.app.apub-app-center": {
+    "component": "Admin",
+    "path": "/admin/app/apub-app-center"
+  },
+  "admin.app.apub-app-center-detail": {
+    "component": "AppDetail",
+    "path": "/admin/app/apub-app-center/:id"
+  }
+}

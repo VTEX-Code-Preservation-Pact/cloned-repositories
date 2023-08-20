@@ -1,0 +1,37 @@
+{
+  "name": "google-analytics",
+  "vendor": "vtex",
+  "version": "1.1.0",
+  "title": "Google Analytics",
+  "description": "Google Analytics app",
+  "mustUpdateAt": "2019-04-03",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "policies": [
+    {
+      "name": "pixel"
+    }
+  ],
+  "settingsSchema": {
+    "title": "Google Analytics",
+    "type": "object",
+    "properties": {
+      "gaId": {
+        "title": "Google Analytics",
+        "description": "Enter the ID (UA-XXXXX-Y) from your Google Analytics",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

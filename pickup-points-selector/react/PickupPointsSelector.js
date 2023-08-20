@@ -1,0 +1,464 @@
+import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { injectIntl, intlShape } from 'react-intl'
+import { withGoogleMaps } from './containers/withGoogleMaps'
+import { translate } from './utils/i18nUtils'
+import isEqual from 'lodash/isEqual'
+import get from 'lodash/get'
+import ResizeDetector from 'react-resize-detector'
+import { newAddress } from './utils/newAddress'
+import {
+  HIDE_MAP,
+  SHOW_MAP,
+  WAITING,
+  SEARCHING,
+  OUTSIDE_MODAL,
+  ERROR_NOT_FOUND,
+  INSIDE_MODAL,
+} from './constants'
+import debounce from 'lodash/debounce'
+
+import AddressShapeWithValidation from '@vtex/address-form/lib/propTypes/AddressShapeWithValidation'
+import Map from './components/Map'
+import PickupSidebar from './components/PickupSidebar'
+import AskForGeolocation from './components/AskForGeolocation'
+import Error from './components/Error'
+import Input from './components/Input'
+import SearchForm from './components/SearchForm'
+
+import { validateField } from '@vtex/address-form/lib/validateAddress'
+import { getPickupOptionGeolocations } from './utils/pickupUtils'
+import { getPickupSlaString } from './utils/GetString'
+
+import PinWaiting from './assets/components/PinWaiting'
+
+import styles from './components/PickupPointsSelector.css'
+
+export class PickupPointsSelector extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isMounted: false,
+      mapStatus: HIDE_MAP,
+      isLargeScreen: window.innerWidth > 1023,
+      selectedPickupPoint: props.selectedPickupPoint,
+      isPickupDetailsActive: null,
+      geolocationFrom: OUTSIDE_MODAL,
+      showAskForGeolocation: props.askForGeolocation,
+      askForGeolocationStatus: props.askForGeolocation ? WAITING : '',
+      showError: false,
+      errorStatus: '',
+      showManualSearch:
+        !props.askForGeolocation && props.pickupOptions.length === 0,
+    }
+  }
+
+  // eslint-disable-next-line camelcase
+  UNSAFE_componentWillReceiveProps(nextProps) {
+    const nextPickupOptions = getPickupSlaString(nextProps.pickupOptions)
+
+    const hasGeocoordinates =
+      get(nextProps.searchAddress, 'geoCoordinates.value') &&
+      nextProps.searchAddress.geoCoordinates.value.length > 0
+
+    const notSearchingAndIsEmptyPickupOptions =
+      !nextProps.isSearching &&
+      nextPickupOptions.length === 0 &&
+      hasGeocoordinates
+
+    this.setState({
+      showAskForGeolocation: nextProps.isSearching,
+      showManualSearch: this.state.showManualSearch
+        ? nextPickupOptions.length !== 0 && !nextProps.isSearching
+        : false,
+      askForGeolocationStatus: nextProps.isSearching ? SEARCHING : null,
+      showError: notSearchingAndIsEmptyPickupOptions,
+      errorStatus: notSearchingAndIsEmptyPickupOptions ? ERROR_NOT_FOUND : '',
+      selectedPickupPoint: nextProps.selectedPickupPoint,
+    })
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    const {
+      askForGeolocation,
+      pickupOptions,
+      searchAddress,
+      selectedPickupPoint,
+    } = this.props
+
+    const {
+      isPickupDetailsActive,
+      mapStatus,
+      isLargeScreen,
+      showAskForGeolocation,
+    } = this.state
+
+    return (
+      isPickupDetailsActive !== nextState.isPickupDetailsActive ||
+      mapStatus !== nextState.mapStatus ||
+      isLargeScreen !== nextState.isLargeScreen ||
+      !isEqual(searchAddress, nextState.searchAddress) ||
+      !isEqual(
+        getPickupSlaString(pickupOptions),
+        getPickupSlaString(nextProps.pickupOptions)
+      ) ||
+      selectedPickupPoint.id !== nextProps.selectedPickupPoint.id ||
+      askForGeolocation !== nextProps.askForGeolocation ||
+      showAskForGeolocation !== nextState.showAskForGeolocation
+    )
+  }
+
+  componentWillUnmount() {
+    this.setState({ isMounted: false })
+  }
+
+  componentDidMount() {
+    if (
+      !!this.props.selectedPickupPoint &&
+      this.state.isPickupDetailsActive === null
+    ) {
+      this.setState({
+        isPickupDetailsActive: true,
+        mapStatus: HIDE_MAP,
+        isMounted: true,
+      })
+    } else {
+      this.setState({
+        isMounted: true,
+      })
+    }
+  }
+
+  setGeolocationFrom = () => {
+    this.setState({
+      geolocationFrom: INSIDE_MODAL,
+    })
+  }
+
+  handlePickupConfirm = options => {
+    this.props.changeActiveSLAOption(options)
+    this.togglePickupDetails()
+    this.props.onConfirm && this.props.onConfirm(options)
+  }
+
+  handleAskForGeolocation = (ask, geolocationFrom) => {
+    this.setState({
+      showAskForGeolocation: ask,
+      showManualSearch: false,
+      showError: false,
+      ...(geolocationFrom ? { geolocationFrom: geolocationFrom } : {}),
+    })
+  }
+
+  handleAskForGeolocationStatus = (status, geolocationFrom) => {
+    this.setState({
+      askForGeolocationStatus: status,
+      showManualSearch: false,
+      showError: false,
+      ...(geolocationFrom ? { geolocationFrom: geolocationFrom } : {}),
+    })
+  }
+
+  handleGeolocationError = (status, geolocationFrom) => {
+    this.setState({
+      showError: true,
+      showAskForGeolocation: false,
+      askForGeolocationStatus: null,
+      errorStatus: status,
+      ...(geolocationFrom ? { geolocationFrom: geolocationFrom } : {}),
+    })
+  }
+
+  handleManualGeolocationError = () => {
+    this.setState({
+      showError: false,
+      errorStatus: null,
+      showManualSearch: true,
+    })
+  }
+
+  handleManualGeolocation = () => {
+    this.setState({
+      showManualSearch: true,
+      showAskForGeolocation: false,
+      showError: false,
+    })
+  }
+
+  // TODO: use element width instead of window width
+  // The problem is that css media queries use window width,
+  // so there are inconsistencies
+
+  // handleResize = debounce(width => {
+  handleResize = debounce(() => {
+    if (!this.state.isMounted) return
+    const width = window.innerWidth
+    this.setState({
+      isLargeScreen: width > 1023,
+      mapStatus: width > 1023 ? SHOW_MAP : HIDE_MAP,
+    })
+  }, 200)
+
+  updateLocationTab = mapStatus => this.setState({ mapStatus })
+
+  changeActivePickupPointId = selectedPickupPoint =>
+    this.setState({ selectedPickupPoint })
+
+  togglePickupDetails = () =>
+    this.setState({
+      isPickupDetailsActive: !this.state.isPickupDetailsActive,
+    })
+
+  activatePickupDetails = () =>
+    this.setState({
+      isPickupDetailsActive: true,
+      mapStatus: HIDE_MAP,
+    })
+
+  handleAddressChange = address => {
+    const addressValidated = newAddress({
+      ...address,
+      neighbourhood: address.neighbourhood || {
+        value: null,
+      },
+      number: address.number || {
+        value: null,
+      },
+      postalCode: {
+        ...address.postalCode,
+        ...(address.postalCode
+          ? {
+              ...validateField(
+                address.postalCode.value,
+                'postalCode',
+                address,
+                this.props.rules
+              ),
+            }
+          : {
+              value: null,
+            }),
+      },
+    })
+
+    this.props.onAddressChange({
+      ...addressValidated,
+      postalCode: addressValidated.postalCode.valid
+        ? addressValidated.postalCode
+        : {
+            value: null,
+          },
+    })
+  }
+
+  render() {
+    const {
+      activePickupPoint,
+      changeActivePickupDetails,
+      changeActiveSLAOption,
+      googleMaps,
+      items,
+      intl,
+      logisticsInfo,
+      loading,
+      pickupOptions,
+      pickupPoints,
+      rules,
+      searchAddress,
+      sellerId,
+      storePreferencesData,
+      height,
+      maxHeight,
+    } = this.props
+
+    const {
+      askForGeolocationStatus,
+      errorStatus,
+      geolocationFrom,
+      isLargeScreen,
+      isPickupDetailsActive,
+      mapStatus,
+      selectedPickupPoint,
+      showAskForGeolocation,
+      showError,
+      showManualSearch,
+    } = this.state
+
+    return (
+      <ResizeDetector handleWidth onResize={this.handleResize}>
+        <div
+          style={{
+            width: '100%',
+            overflow: 'hidden',
+            height,
+            maxHeight,
+          }}>
+          <Fragment>
+            {(isLargeScreen || mapStatus === SHOW_MAP) && (
+              <Map
+                activatePickupDetails={this.activatePickupDetails}
+                activePickupPoint={activePickupPoint}
+                address={searchAddress}
+                changeActivePickupDetails={changeActivePickupDetails}
+                googleMaps={googleMaps}
+                handleAskForGeolocation={this.onAskForGeolocation}
+                isLargeScreen={isLargeScreen}
+                isLoadingGoogle={loading}
+                isPickupDetailsActive={isPickupDetailsActive}
+                onChangeAddress={this.handleAddressChange}
+                pickupOptionGeolocations={getPickupOptionGeolocations(
+                  pickupOptions
+                )}
+                pickupOptions={pickupOptions}
+                pickupPoint={selectedPickupPoint}
+                rules={rules}
+                selectedPickupPointGeolocation={getPickupOptionGeolocations(
+                  selectedPickupPoint
+                )}
+              />
+            )}
+
+            {(showAskForGeolocation || showError) &&
+            geolocationFrom === OUTSIDE_MODAL ? (
+              <div className={`pkpmodal-full-page ${styles.fullPage}`}>
+                {showAskForGeolocation && (
+                  <AskForGeolocation
+                    address={searchAddress}
+                    askForGeolocation={showAskForGeolocation}
+                    geolocationFrom={OUTSIDE_MODAL}
+                    googleMaps={googleMaps}
+                    onAskForGeolocation={this.handleAskForGeolocation}
+                    onAskForGeolocationStatus={
+                      this.handleAskForGeolocationStatus
+                    }
+                    onChangeAddress={this.handleAddressChange}
+                    onGeolocationError={this.handleGeolocationError}
+                    onManualGeolocation={this.handleManualGeolocation}
+                    pickupOptionGeolocations={getPickupOptionGeolocations(
+                      pickupOptions
+                    )}
+                    rules={rules}
+                    status={askForGeolocationStatus}
+                  />
+                )}
+                {showError && (
+                  <Error
+                    onManualGeolocationError={this.handleManualGeolocationError}
+                    status={errorStatus}
+                  />
+                )}
+              </div>
+            ) : showManualSearch && isLargeScreen ? (
+              <div className={`pkpmodal-full-page ${styles.fullPage}`}>
+                <div className={`pkpmodal-search-alone ${styles.searchAlone}`}>
+                  <PinWaiting small />
+                  <h2
+                    className={`pkpmodal-search-alone-title ${
+                      styles.searchAloneTitle
+                    }`}>
+                    {translate(intl, 'geolocationEmpty')}
+                  </h2>
+                  <h3
+                    className={`pkpmodal-search-alone-subtitle ${
+                      styles.searchAloneSubtitle
+                    }`}>
+                    {translate(intl, 'geolocationEmptyInstructions')}
+                  </h3>
+                  <SearchForm
+                    address={searchAddress}
+                    autoFocus
+                    googleMaps={googleMaps}
+                    Input={Input}
+                    insideModal={false}
+                    isLoadingGoogle={loading}
+                    onAskForGeolocationStatus={
+                      this.handleAskForGeolocationStatus
+                    }
+                    onChangeAddress={this.handleAddressChange}
+                    onHandleAskForGeolocation={this.handleAskForGeolocation}
+                    placeholder={translate(intl, 'searchLocationMap')}
+                    rules={rules}
+                  />
+                </div>
+              </div>
+            ) : (
+              <Fragment>
+                <PickupSidebar
+                  activePickupPoint={activePickupPoint}
+                  askForGeolocationStatus={askForGeolocationStatus}
+                  changeActivePickupDetails={changeActivePickupDetails}
+                  changeActivePickupPointId={this.changeActivePickupPointId}
+                  changeActiveSLAOption={changeActiveSLAOption}
+                  onConfirm={this.handlePickupConfirm}
+                  errorStatus={errorStatus}
+                  geolocationFrom={geolocationFrom}
+                  googleMaps={googleMaps}
+                  isLargeScreen={isLargeScreen}
+                  isLoading={loading}
+                  isPickupDetailsActive={isPickupDetailsActive}
+                  items={items}
+                  logisticsInfo={logisticsInfo}
+                  mapStatus={mapStatus}
+                  onAskForGeolocation={this.handleAskForGeolocation}
+                  onAskForGeolocationStatus={this.handleAskForGeolocationStatus}
+                  onChangeAddress={this.handleAddressChange}
+                  onGeolocationError={this.handleGeolocationError}
+                  onHandleAddressChange={this.handleAddressChange}
+                  onHandleAskForGeolocation={this.handleAskForGeolocation}
+                  onManualGeolocation={this.handleManualGeolocation}
+                  onManualGeolocationError={this.handleManualGeolocationError}
+                  pickupOptions={pickupOptions}
+                  pickupPoints={pickupPoints}
+                  rules={rules}
+                  searchAddress={searchAddress}
+                  selectedPickupPoint={selectedPickupPoint}
+                  sellerId={sellerId}
+                  setGeolocationFrom={this.setGeolocationFrom}
+                  showAskForGeolocation={showAskForGeolocation}
+                  showError={showError}
+                  status={askForGeolocationStatus}
+                  storePreferencesData={storePreferencesData}
+                  togglePickupDetails={this.togglePickupDetails}
+                  updateLocationTab={this.updateLocationTab}
+                />
+              </Fragment>
+            )}
+          </Fragment>
+        </div>
+      </ResizeDetector>
+    )
+  }
+}
+
+PickupPointsSelector.propTypes = {
+  activePickupPoint: PropTypes.object,
+  askForGeolocation: PropTypes.bool, // eslint-disable-line
+  askForGeolocationStatus: PropTypes.string,
+  changeActivePickupDetails: PropTypes.func.isRequired,
+  changeActiveSLAOption: PropTypes.func.isRequired,
+  onConfirm: PropTypes.func,
+  googleMaps: PropTypes.object,
+  googleMapsKey: PropTypes.string.isRequired,
+  intl: intlShape,
+  isSearching: PropTypes.bool,
+  items: PropTypes.array.isRequired,
+  loading: PropTypes.bool, // eslint-disable-line
+  logisticsInfo: PropTypes.array.isRequired,
+  onAddressChange: PropTypes.func.isRequired,
+  pickupOptions: PropTypes.array.isRequired,
+  pickupPoints: PropTypes.array.isRequired,
+  rules: PropTypes.object,
+  searchAddress: AddressShapeWithValidation,
+  selectedPickupPoint: PropTypes.object,
+  sellerId: PropTypes.string,
+  storePreferencesData: PropTypes.object.isRequired,
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  maxHeight: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+}
+
+PickupPointsSelector.defaultProps = {
+  height: '100vh',
+}
+
+export default injectIntl(withGoogleMaps(PickupPointsSelector))

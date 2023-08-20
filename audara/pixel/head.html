@@ -1,0 +1,15 @@
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+  (function(window) {
+    var audara_id = "{{settings.id}}";
+    if (audara_id) {
+      var head = document.getElementsByTagName("head")[0];
+      var script = document.createElement("script");
+      script.type = "text/javascript";
+      script.src = "https://comdatalvc.audara.cloud/apps/livechat/apps/{{ settings.id }}/External/js/load.js";
+      head.appendChild(script);
+    } else {
+      console.log("Audara ID setting not set.");
+    }
+  })(window);
+</script>

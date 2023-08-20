@@ -1,0 +1,40 @@
+{
+  "flex-layout.col.search": {
+    "allowed": ["rich-text", "filter-navigator.v3"]
+  },
+  "flex-layout.col.search-content": {
+    "allowed": [
+      "image",
+      "search-content",
+      "search-fetch-more",
+      "search-products-count-per-page",
+      "search-fetch-previous"
+    ]
+  },
+  "stack-layout.greenBadge": {
+    "allowed": ["vtex.product-highlights:product-highlights"]
+  },
+  "tab-layout.search-mobile": {
+    "allowed": ["tab-list.tabContainer", "tab-content.search-result"]
+  },
+  "tab-content.item.products": {
+    "allowed": [
+      "flex-layout",
+      "search-content",
+      "filter-navigator.v3",
+      "order-by.v2",
+      "search-content",
+      "search-fetch-more",
+      "search-products-count-per-page"
+    ]
+  },
+  "tab-content.item.article": {
+    "allowed": ["search-blog-articles-list.wordpress"]
+  },
+  "tab-content.search-result": {
+    "allowed": ["tab-content.item.products", "tab-content.item.article"]
+  },
+  "tab-list.tabContainer": {
+    "allowed": ["flex-layout"]
+  }
+}

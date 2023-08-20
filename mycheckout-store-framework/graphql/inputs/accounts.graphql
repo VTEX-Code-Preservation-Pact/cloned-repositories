@@ -1,0 +1,14 @@
+input VisualizationInput {
+  type: String
+  key: String
+}
+
+input AccountInput {
+  storePreferences: StorePreferencesInput
+}
+
+input StorePreferencesInput {
+  currencyCode: String
+  countryCode: String
+  salesChannel: String
+}

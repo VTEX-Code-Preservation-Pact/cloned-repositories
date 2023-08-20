@@ -1,0 +1,33 @@
+.updatesSection {
+  padding: 5vh 0;
+  border-top: 1px solid #e7e9ee;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+}
+
+.sectionTitle h3 {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.releases{
+  width: 1000px;
+}
+
+@media screen and (max-width: 1220px) {
+  .section {
+    flex-direction: column;
+  }
+  .releases{
+    width: 100%;
+  }
+}

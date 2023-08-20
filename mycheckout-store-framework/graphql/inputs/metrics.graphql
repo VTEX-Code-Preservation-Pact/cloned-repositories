@@ -1,0 +1,16 @@
+input DatesInput {
+  from: String
+  until: String
+}
+
+input FiltersInput {
+  visualization: String
+  selectedPeriod: DatesInput
+  previousPeriod: DatesInput
+}
+
+input MetricsInput {
+  filters: FiltersInput
+  pagination: PaginationInput
+  timezone: String
+}

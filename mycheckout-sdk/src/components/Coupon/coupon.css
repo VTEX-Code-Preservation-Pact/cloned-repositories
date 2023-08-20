@@ -1,0 +1,64 @@
+.couponContainer {
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2.5%;
+}
+
+.couponContainer .couponContentInput {
+  flex: 0 1 calc(76% - 0.25rem);
+}
+
+.couponContainer .couponInput {
+  width: 100%;
+}
+
+.couponContainer .couponInput::placeholder {
+  color: var(--dark-gray-color) !important;
+  font-size: 14px !important;
+}
+
+.couponContainer .couponContentButon {
+  flex: 0 1 calc(24% - 0.25rem);
+}
+
+.couponContentButon [class*='buttonContainer'] {
+  height: 25px;
+  border-radius: 4px !important;
+  font-size: 16px;
+}
+
+.couponContentButon [class*='buttonContent'] {
+  margin: 0;
+}
+
+@media screen and (min-width: 568px) {
+  .couponContainer {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .couponContainer {
+    align-items: center;
+  }
+}
+
+[class*='gridFormTwoCols'] .couponContainer {
+  padding: 0;
+}
+
+[class*='gridFormTwoCols'] .couponContainer .couponContentInput {
+  flex: 0 1 calc(76% - 0.25rem);
+}
+
+[class*='gridFormTwoCols'] .couponContainer .couponContentButon {
+  flex: 0 1 calc(24% - 0.25rem);
+}
+
+.inputValid {
+  border-bottom: 1px solid var(--valid-color);
+  flex: 0 1 calc(76% - 0.25rem);
+}

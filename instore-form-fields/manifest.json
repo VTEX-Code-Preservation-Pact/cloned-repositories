@@ -1,0 +1,21 @@
+{
+  "vendor": "vtex",
+  "name": "instore-form-fields",
+  "version": "1.0.0",
+  "title": "Instore Form Addon",
+  "description": "Insert new fields in the user registration form",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-09-24",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  }
+}

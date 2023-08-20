@@ -1,0 +1,10 @@
+{
+  "admin.app.authorization-permissions": {
+    "component": "Permissions",
+    "path": "/admin/app/authorization/permissions"
+  },
+  "admin.app.authorization-roles": {
+    "component": "Roles",
+    "path": "/admin/app/authorization/roles"
+  }
+}

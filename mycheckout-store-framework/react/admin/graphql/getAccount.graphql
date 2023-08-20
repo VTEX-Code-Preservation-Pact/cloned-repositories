@@ -1,0 +1,14 @@
+{
+  getAccount @context(provider: "kuikpay.my-checkout") {
+    account
+    paymentMethodId
+    cvcRequired
+    isConfigured
+    buttonMessage
+    isConfigured
+    visualization {
+      type
+      key
+    }
+  }
+}

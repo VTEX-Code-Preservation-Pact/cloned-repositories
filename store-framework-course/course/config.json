@@ -1,0 +1,26 @@
+{
+  "title": "Store Framework",
+  "tagline": "A brand new course on Learning Lab",
+  "description": "Learning how to build a store using the Store Framework blocks language, powered by VTEX IO.",
+  "languages": [
+    "en",
+    "es",
+    "pt"
+  ],
+  "steps": [
+    {
+      "folder": "setup",
+      "title": {
+        "en": "Store Framework course",
+        "es": "Curso del Store Framework",
+        "pt": "Curso de Store Framework"
+      },
+      "description": {
+        "en": "Store Framework development prerequisites",
+        "es": "Requisitos previos para desarrollar con Store Framework",
+        "pt": "Pré-requisitos para desenvolver com o Store Framework"
+      },
+      "challenge": "none"
+    }
+  ]
+}

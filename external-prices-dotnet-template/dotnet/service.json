@@ -1,0 +1,23 @@
+{
+  "stack": "dotnet",
+  "memory": 256,
+  "timeout": 20,
+  "routes": {
+    "GetPrice": {
+      "path": "/_v/external-prices/price",
+      "public": false,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "post"
+          ],
+          "principals": [
+            "vrn:vtex.vtex-id:*:*:*:user/vtexappkey-appvtex"
+          ]
+        }
+      ]
+    }
+  }
+}

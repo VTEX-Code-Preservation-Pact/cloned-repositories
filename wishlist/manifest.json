@@ -1,0 +1,46 @@
+{
+  "vendor": "vtex",
+  "name": "wishlist",
+  "title": "Wishlist",
+  "version": "0.3.1",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "store": "0.x",
+    "node": "4.x",
+    "graphql": "1.x"
+  },
+  "mustUpdateAt": "2019-04-20",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.store-components": "3.x",
+    "vtex.styleguide": "9.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.store-resources": "0.x",
+    "vtex.store-icons": "0.x",
+    "vtex.product-summary": "2.x",
+    "vtex.product-details": "1.x",
+    "vtex.store": "2.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store-header": "2.x"
+  },
+  "settingsSchema": {
+    "title": "Wish List",
+    "type": "object",
+    "properties": {
+      "enableMultipleLists": {
+        "title": "Enable creating custom lists",
+        "type": "boolean",
+        "default": false
+      },
+      "defaultListName": {
+        "title": "Default list name",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

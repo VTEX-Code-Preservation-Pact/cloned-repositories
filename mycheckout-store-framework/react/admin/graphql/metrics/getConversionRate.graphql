@@ -1,0 +1,31 @@
+query getConversionRate(
+  $visualization: String
+  $selectedFrom: String
+  $selectedUntil: String
+  $previousFrom: String
+  $previousUntil: String
+  $timezone: String
+) {
+  conversionRate(
+    data: {
+      filters: {
+        visualization: $visualization
+        selectedPeriod: { from: $selectedFrom, until: $selectedUntil }
+        previousPeriod: { from: $previousFrom, until: $previousUntil }
+      }
+      timezone: $timezone
+    }
+  ) @context(provider: "kuikpay.my-checkout") {
+    selectedPeriodCR {
+      _id
+      cr
+    }
+    currentDayCR
+    currentMonthCR
+    currentDayVariationCR
+    previousPeriodCR {
+      _id
+      cr
+    }
+  }
+}

@@ -1,0 +1,11 @@
+**/bin
+**/obj
+.idea
+Folder.DotSettings.user
+dotnet/bin
+dotnet/obj
+dotnet-vtex-api/
+dotnet-wrapper/
+wrapper-core/
+wrapper-routing/
+.DS_Store

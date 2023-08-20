@@ -1,0 +1,5 @@
+files:
+  - source: /messages/en/vtex.admin-cms@0.x.json
+    translation: /messages/%two_letters_code%/vtex.admin-cms@0.x.json
+  - source: /messages/en/vtex.store-components@3.x.json
+    translation: /messages/%two_letters_code%/vtex.store-components@3.x.json

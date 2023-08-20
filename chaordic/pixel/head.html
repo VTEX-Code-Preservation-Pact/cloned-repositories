@@ -1,0 +1,16 @@
+<script>
+  (function() {
+    var apiKey = "{{settings.apiKey}}";
+    if (!apiKey) {
+      console.error('Warning: No Chaordic API Key is defined. Please configure it in the apps admin.');
+      return
+    }
+
+    var script = document.createElement('script');
+    script.setAttribute('data-apikey', apiKey);
+    script.setAttribute('async', 'async');
+    script.setAttribute('defer', 'defer');
+    script.src='//static.chaordicsystems.com/static/loader.js';
+    document.getElementsByTagName('head')[0].appendChild(script);
+  })()
+</script>

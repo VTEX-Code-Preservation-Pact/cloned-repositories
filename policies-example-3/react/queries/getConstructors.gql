@@ -1,0 +1,6 @@
+query getConstructors {
+  getConstructors {
+    name
+    points
+  }
+}

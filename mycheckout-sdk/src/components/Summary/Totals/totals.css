@@ -1,0 +1,44 @@
+.totalsContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.totalsContainer .totalsLabelsContainer {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 calc(70% - 1rem);
+}
+
+.totalsContainer .totalsLabel {
+  font-size: 14px;
+  font-weight: var(--text-semi-bold);
+  margin-bottom: 4px;
+}
+
+.totalsContainer .totalsDiscounts {
+  margin: 6px 0 6px 14px;
+  font-size: 12px;
+}
+
+.totalsContainer .totalsDiscounts p {
+  font-size: 12px;
+}
+
+.totalsContainer .totalsDiscountsNumber {
+  text-align: end;
+}
+
+.totalsContainer .totalsValues {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 30%;
+}
+
+@media screen and (min-width: 992px) {
+  .totalsContainer {
+    padding: 0 16px;
+  }
+}

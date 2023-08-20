@@ -1,0 +1,7 @@
+{
+  "name": "usqa",
+  "vendor": "vtex",
+  "version": "0.0.4",
+  "builders": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

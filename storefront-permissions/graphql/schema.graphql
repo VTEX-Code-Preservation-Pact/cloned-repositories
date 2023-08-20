@@ -1,0 +1,249 @@
+type Query {
+  getAppSettings: SettingsResponse
+    @cacheControl(scope: PRIVATE)
+    @settings(settingsType: "workspace")
+
+  getRole(id: ID!): Role @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  hasUsers(slug: String!): Boolean @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  listRoles: [Role]
+    @cacheControl(scope: PRIVATE, maxAge: SHORT)
+    @settings(settingsType: "workspace")
+    @withSession
+
+  getFeaturesByModule(module: String!): Feature
+    @settings(settingsType: "workspace")
+    @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  listFeatures: [FullFeature]
+    @settings(settingsType: "workspace")
+    @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  getUser(id: ID!): User @cacheControl(scope: PRIVATE)
+  getB2BUser(id: ID!): User @cacheControl(scope: PRIVATE)
+
+  checkCustomerSchema: Boolean @cacheControl(scope: PRIVATE)
+
+  getUserByEmail(email: String!): [User] @cacheControl(scope: PRIVATE)
+
+  listAllUsers: [User] @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  listUsers(organizationId: ID, costCenterId: ID, roleId: ID): [User]
+    @cacheControl(scope: PRIVATE, maxAge: SHORT)
+    @deprecated(
+      reason: "This query is deprecated, use listUsersPaginated query instead."
+    )
+
+  listUsersPaginated(
+    organizationId: ID
+    costCenterId: ID
+    roleId: ID
+    page: Int
+    pageSize: Int
+    search: String
+    sortOrder: String
+    sortedBy: String
+  ): UserPagination @cacheControl(scope: PRIVATE, maxAge: SHORT)
+
+  checkImpersonation: UserImpersonation
+    @settings(settingsType: "workspace")
+    @withSession
+    @cacheControl(scope: PRIVATE)
+
+  checkUserPermission: UserPermissions
+    @settings(settingsType: "workspace")
+    @withSession
+    @withSender
+    @cacheControl(scope: PRIVATE)
+
+  getSessionWatcher: Boolean @cacheControl(scope: PRIVATE)
+
+  getUsersByEmail(email: String!): [User] @cacheControl(scope: PRIVATE)
+
+  getActiveUserByEmail(email: String!): User @cacheControl(scope: PRIVATE)
+
+  getOrganizationsByEmail(email: String!): [Organization]
+    @cacheControl(scope: PRIVATE)
+}
+
+type Mutation {
+  sessionWatcher(active: Boolean!): Boolean @cacheControl(scope: PRIVATE)
+
+  saveRole(
+    id: ID
+    name: String!
+    slug: String
+    features: [FeatureInput]
+  ): MutationResponse @cacheControl(scope: PRIVATE)
+
+  deleteRole(id: ID!): MutationResponse @cacheControl(scope: PRIVATE)
+
+  saveUser(
+    id: ID
+    roleId: ID!
+    userId: ID
+    orgId: ID
+    costId: ID
+    clId: ID
+    canImpersonate: Boolean = false
+    name: String!
+    email: String!
+  ): MutationResponse @checkAdminAccess @cacheControl(scope: PRIVATE)
+
+  updateUser(
+    id: ID
+    roleId: ID!
+    userId: ID
+    orgId: ID
+    costId: ID
+    clId: ID
+    canImpersonate: Boolean = false
+    email: String
+    name: String
+  ): MutationResponse @checkAdminAccess @cacheControl(scope: PRIVATE)
+
+  addUser(
+    id: ID
+    roleId: ID!
+    userId: ID
+    orgId: ID
+    costId: ID
+    canImpersonate: Boolean = false
+    name: String!
+    email: String!
+  ): MutationResponse @checkAdminAccess @cacheControl(scope: PRIVATE)
+
+  addCostCenterToUser(costId: ID!, userId: ID!): MutationResponse
+    @checkUserAccess
+    @cacheControl(scope: PRIVATE)
+
+  addOrganizationToUser(
+    orgId: ID!
+    userId: ID!
+    costId: ID!
+    roleId: ID
+  ): MutationResponse @checkAdminAccess @cacheControl(scope: PRIVATE)
+
+  setActiveUserByOrganization(userId: ID): MutationResponse
+    @checkUserAccess
+    @cacheControl(scope: PRIVATE)
+
+  impersonateUser(userId: ID): MutationResponse
+    @checkUserAccess
+    @cacheControl(scope: PRIVATE)
+
+  deleteUser(id: ID!, userId: ID, email: String!): MutationResponse
+    @checkAdminAccess
+    @cacheControl(scope: PRIVATE)
+
+  setCurrentOrganization(orgId: ID!, costId: ID!): MutationResponse
+    @withSession
+    @cacheControl(scope: PRIVATE)
+}
+
+type UserImpersonation {
+  firstName: String
+  lastName: String
+  email: String
+  userId: ID
+  error: String
+}
+
+type UserPermissions {
+  role: SimpleRole
+  permissions: [String]
+}
+
+type Pagination {
+  page: Int
+  pageSize: Int
+  total: Int
+}
+
+type UserPagination {
+  data: [User]
+  pagination: Pagination
+}
+
+type User {
+  id: ID
+  roleId: ID
+  userId: ID
+  clId: ID
+  orgId: ID
+  costId: ID
+  name: String!
+  email: String!
+  canImpersonate: Boolean
+  active: Boolean
+}
+
+type Organization {
+  id: ID
+  clId: ID
+  costId: ID
+  orgId: ID
+  roleId: ID
+}
+
+type Profile {
+  id: ID
+  name: String
+  features: [Feature]!
+  roleId: ID!
+  scoped: Boolean
+}
+
+input FeatureInput {
+  module: String!
+  features: [String]!
+}
+
+type FeatureType {
+  module: String!
+  features: [String]!
+}
+
+type FullFeature {
+  module: String!
+  name: String!
+  features: [SingleFeature]!
+}
+
+type Feature {
+  module: String!
+  name: String!
+  features: [String]!
+}
+
+type SingleFeature {
+  label: String!
+  value: String!
+}
+
+type Role {
+  id: ID
+  name: String!
+  locked: Boolean
+  slug: String
+  features: [FeatureType]
+}
+
+type SimpleRole {
+  id: ID
+  name: String!
+  slug: String
+}
+
+type MutationResponse {
+  id: String
+  status: String
+  message: String
+}
+
+type SettingsResponse {
+  adminSetup: Data
+}
+
+scalar Data

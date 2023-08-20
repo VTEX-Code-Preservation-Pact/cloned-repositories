@@ -1,0 +1,28 @@
+{
+  "modal-layout": {
+    "component": "Modal",
+    "composition": "children"
+  },
+  "modal-trigger": {
+    "component": "ModalTrigger",
+    "composition": "children"
+  },
+  "modal-header": {
+    "component": "ModalHeader",
+    "composition": "children"
+  },
+  "modal-content": {
+    "component": "ModalContent",
+    "composition": "children"
+  },
+  "modal-actions": {
+    "component": "ModalActions",
+    "composition": "children"
+  },
+  "modal-actions.close": {
+    "component": "CloseButton",
+    "content": {
+      "$ref": "app:vtex.modal-layout#/definitions/CloseButton"
+    }
+  }
+}

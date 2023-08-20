@@ -1,0 +1,31 @@
+{
+  "section": "products",
+  "titleId": "admin/catalog-translation.navigation.label",
+  "searchKeyWordsHelpers": "admin/catalog-translation.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin/catalog-translation.navigation.category",
+      "path": "/admin/catalog-translation/category"
+    },
+    {
+      "labelId": "admin/catalog-translation.navigation.product",
+      "path": "/admin/catalog-translation/product"
+    },
+    {
+      "labelId": "admin/catalog-translation.navigation.sku",
+      "path": "/admin/catalog-translation/sku"
+    },
+    {
+      "labelId": "admin/catalog-translation.navigation.brand",
+      "path": "/admin/catalog-translation/brand"
+    },
+    {
+      "labelId": "admin/catalog-translation.navigation.specifications",
+      "path": "/admin/catalog-translation/specifications"
+    },
+    {
+      "labelId": "admin/catalog-translation.navigation.collections",
+      "path": "/admin/catalog-translation/collections"
+    }
+  ]
+}

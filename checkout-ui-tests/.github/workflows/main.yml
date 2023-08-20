@@ -1,0 +1,71 @@
+name: End-to-end tests
+on:
+  pull_request:
+    paths:
+      - tests/**
+      - cypress/**
+      - utils/**
+  workflow_dispatch:
+    inputs:
+      title:
+        description: 'Title that will appear in the Dashboard'
+        required: false
+        default: 'E2E tests'
+      env:
+        description: 'Environment (beta or stable)'
+        required: false
+        default: 'stable'
+      workspace:
+        description: 'VTEX workspace'
+        required: false
+        default: 'master'
+      spec:
+        description: 'Specify the files to run. Example: **/*vtexgame1.test.js run only vtexgame1 tests'
+        required: false
+        default: '**/*'
+      containers:
+        description: 'Number of parallel containers'
+        required: false
+        default: '30'
+
+jobs:
+  setup_containers:
+    runs-on: ubuntu-20.04
+    outputs:
+      containers: ${{ steps.setup-containers.outputs.matrix }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup containers
+        id: setup-containers
+        run: bash .github/setup-containers.sh ${{ github.event.inputs.containers }}
+  cypress_run:
+    runs-on: ubuntu-20.04
+    needs: setup_containers
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        containers: ${{ fromJson(needs.setup_containers.outputs.containers) }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v3.0.0
+        with:
+          config-file: cypress.config.ts
+          tag: 'env:${{ github.event.inputs.env }},wks:${{ github.event.inputs.workspace }},spec:${{ github.event.inputs.spec }}'
+          group: ''
+          spec: ${{ github.event.inputs.spec }}
+          record: true
+          parallel: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY}}
+          CYPRESS_VTEX_ENV: ${{ github.event.inputs.env }}
+          CYPRESS_VTEX_WORKSPACE: ${{ github.event.inputs.workspace }}
+          CYPRESS_APP_KEY: ${{ secrets.APP_KEY }}
+          CYPRESS_APP_TOKEN: ${{ secrets.APP_TOKEN }}
+          COMMIT_INFO_MESSAGE: ${{ github.event.inputs.title }}
+          COMMIT_INFO_AUTHOR: ${{ github.actor }}
+          COMMIT_INFO_EMAIL: checkout-ui@vtex.com.br

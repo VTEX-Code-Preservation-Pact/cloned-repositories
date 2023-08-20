@@ -1,0 +1,44 @@
+{
+  "name": "@vtex/typescript",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "contributors": [
+    "Breno Calazans <breno@vtex.com.br>",
+    "Christian Kaisermann <christian.andrade@vtex.com.br>"
+  ],
+  "license": "MIT",
+  "repository": "vtex/typescript",
+  "bugs": {
+    "url": "https://github.com/vtex/typescript/issues"
+  },
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna clean && lerna run clean",
+    "format:check": "prettier --list-different \"./**/*.{ts,js,json}\"",
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx .",
+    "test": "lerna run test --concurrency 1",
+    "prepare": "husky install"
+  },
+  "prettier": "@vtex/prettier-config",
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@geut/chan": "^2.1.1",
+    "eslint": "^8.11.0",
+    "husky": "^7.0.0",
+    "lerna": "^3.18.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.2.0",
+    "typescript": "^4.6.2"
+  }
+}

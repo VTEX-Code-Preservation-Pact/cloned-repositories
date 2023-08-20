@@ -1,0 +1,49 @@
+mutation createAccountHolder(
+  $accountHolderCode: String!
+  $sellerId: String!
+  $country: String!
+  $legalBusinessName: String!
+  $email: String!
+  $legalEntity: String!
+  $processingTier: Int!
+) {
+  createAccountHolder(
+    accountHolderCode: $accountHolderCode
+    sellerId: $sellerId
+    country: $country
+    legalBusinessName: $legalBusinessName
+    email: $email
+    legalEntity: $legalEntity
+    processingTier: $processingTier
+  ) @context(provider: "vtex.adyen-platforms") {
+    adyenAccountHolder {
+      accountHolderCode
+      accountHolderStatus {
+        status
+        processingState {
+          disabled
+        }
+        payoutState {
+          disabled
+        }
+      }
+      accountHolderDetails {
+        email
+      }
+      accounts {
+        accountCode
+        payoutSchedule {
+          schedule
+        }
+        status
+      }
+    }
+    onboarding {
+      accountHolderCode
+      urlToken
+    }
+    invalidFields {
+      errorDescription
+    }
+  }
+}

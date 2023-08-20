@@ -1,0 +1,24 @@
+mutation saveDataInfo(
+  $customerClassValue: String
+  $polygon: String
+  $url: String
+  $urlMobile: String
+  $hrefImg: String
+  $idImg: String
+) {
+  saveDataInfo(
+    customerClassValue: $customerClassValue
+    polygon: $polygon
+    url: $url
+    urlMobile: $urlMobile
+    hrefImg: $hrefImg
+    idImg: $idImg
+  ) @context(provider: "vtex.image-protocol-example") {
+    customerClassValue
+    polygon
+    url
+    urlMobile
+    hrefImg
+    idImg
+  }
+}

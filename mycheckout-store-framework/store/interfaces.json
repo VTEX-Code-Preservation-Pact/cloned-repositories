@@ -1,0 +1,12 @@
+{
+  "kuikpay-button": {
+    "component": "QuickpayButtonV2"
+  },
+  "kuikpay-quota-information": {
+    "component": "KuikpayQuotaInformation",
+    "render": "client"
+  },
+  "kuikpay-wrapper": {
+    "component": "KuikpayWrapper"
+  }
+}

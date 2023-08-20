@@ -1,0 +1,15 @@
+name: "Internal Docs Integration"
+on:
+  push:
+    branches: [ $default-branch ]
+
+jobs:
+  Docs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: vtex/action-internal-docs@main
+      with:
+        repo-token: ${{ secrets.INTERNAL_DOCS_GH_TOKEN }}
+        docs-product: "YOUR_TEAM_NAME_HERE (e.g. Identity, Cloud-Services)"

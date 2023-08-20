@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "Gift Image",
+  "admin/editor.gift-image.description": "Product's gift image",
+  "admin/editor.gift-image.imageLabel.title": "Image label",
+  "admin/editor.gift-image.imageLabel.description": "Label to specify which image from the product should be displayed.",
+  "admin/editor.gift-name.title": "Gift Name",
+  "admin/editor.gift-name.description": "Name of the gift.",
+  "admin/editor.gift-name.linkToProduct.title": "Link to product page",
+  "admin/editor.gift-name.linkToProduct.description": "Whether or not the gift-name should also be a link to the product page.",
+  "admin/editor.gift-name.nameType.title": "Type of display name",
+  "admin/editor.gift-name.nameType.description": "Show the gift's skuName or productName.",
+  "admin/editor.product-gifts.title": "Product Gifts",
+  "admin/editor.product-gifts.description": "Display available gifts for the current product.",
+  "admin/editor.product-gifts.maxVisibleItems.title": "Maximum visible items",
+  "admin/editor.product-gifts.maxVisibleItems.description": "Maximum number of gifts that should be rendered at once. (use \"showAll\" to always show all available gifts)",
+  "admin/editor.product-gift-text.title": "Product Gifts Text",
+  "admin/editor.product-gift-text.description": "Additional information regarding available gifts",
+  "admin/editor.product-gift-text.text.title": "Text",
+  "admin/editor.product-gift-text.text.description": "A translatable string that has variables that might be used to render any text regarding the gifts. Its format uses UCI rules and the available variables are: totalGifts, exceedingItems and visibleItems."
+}

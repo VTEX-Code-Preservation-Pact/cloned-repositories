@@ -1,0 +1,29 @@
+{
+  "vendor": "vtex",
+  "name": "rtbhouse",
+  "version": "1.0.1",
+  "title": "RTB House",
+  "description": "RTB House pixel app",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "RTB house",
+    "type": "object",
+    "properties": {
+      "rtbhouseId": {
+        "title": "RTB House Id",
+        "description": "Enter your RTB House Id",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

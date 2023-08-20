@@ -1,0 +1,38 @@
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+
+.loading .message {
+  margin-top: 1rem;
+  font-family: 'Lato';
+  font-weight: lighter;
+  color: #011D1A;
+  text-align: center;
+  width: 50%;
+  position: relative;
+  top: -175px;
+}
+
+.placeholder {
+  display: block;
+  height: 150px;
+}
+
+@media screen and (min-width: 992px) {
+  .placeholder {
+    display: none;
+  }
+}

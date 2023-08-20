@@ -1,0 +1,9 @@
+query {
+  getPaymentsMethods @context(provider: "kuikpay.my-checkout") {
+    id
+    isActive
+    paymentMethodName
+    accountName
+    type
+  }
+}

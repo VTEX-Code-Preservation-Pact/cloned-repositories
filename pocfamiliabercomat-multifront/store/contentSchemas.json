@@ -1,0 +1,14 @@
+{
+    "definitions": {
+        "ConditionalFrontBlock": {
+            "type": "object",
+            "properties": {
+                "segmentValue": {
+                    "title": "segmentValue",
+                    "type": "number",
+                    "default": null
+                }
+            }   
+        }
+    }
+}

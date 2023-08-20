@@ -1,0 +1,31 @@
+type Query {
+  """
+  Request the marketplace to retrieve current seller's invoices
+  """
+  sellerInvoices(sellerInvoiceParams: SellerInvoiceParams): ListInvoices
+    @cacheControl(scope: PRIVATE, maxAge: LONG)
+  """
+  Request the marketplace to retrieve an Invoice
+  """
+  getInvoice(id: String!): Invoice @cacheControl(scope: PRIVATE, maxAge: SHORT)
+  """
+  Retrieve orders to seller
+  """
+  sellerOrders(searchOrdersParams: SearchOrdersParams): SearchOrdersResponse
+    @cacheControl(scope: PRIVATE, maxAge: LONG)
+  """
+  Retrieve template for order detail
+  """
+  getTemplate: String @cacheControl(scope: PRIVATE, maxAge: LONG)
+}
+
+type Mutation {
+  """
+  Request the marketplace to create an Invoice
+  """
+  createInvoice(invoiceData: InvoiceDataInput!): String
+  """
+  Send invoice data to a specific email address
+  """
+  sendEmail(emailData: EmailDataInput!): String
+}

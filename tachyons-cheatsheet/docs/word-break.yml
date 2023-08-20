@@ -1,0 +1,27 @@
+name: Word break
+
+docs:
+
+src: word-break
+
+description:
+
+base:
+  - word = word-break
+
+modifiers:
+  - -normal
+  - -wrap
+  - -nowrap
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - word wrap
+  - word spacing
+  - no wrap

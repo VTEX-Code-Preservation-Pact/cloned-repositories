@@ -1,0 +1,8 @@
+{
+  "promotion-banner": {
+    "component": "PromotionBanner"
+  }, 
+  "offline-warning": {
+    "component": "OfflineWarning"
+  }
+}

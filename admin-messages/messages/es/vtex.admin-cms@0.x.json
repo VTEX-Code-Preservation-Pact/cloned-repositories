@@ -1,0 +1,19 @@
+{
+  "Author": "Autor",
+  "Draft": "Borrador",
+  "Live": "Producción",
+  "Name": "Nombre",
+  "Type": "Tipo",
+  "High": "Alta",
+  "Low": "Baja",
+  "Medium": "Normal",
+  "of": "de",
+  "Search": "Buscar",
+  "Content": "Contenido",
+  "Hide all": "Ocultar todo",
+  "Show all": "Mostrar todo",
+  "Line density": "Densidad de línea",
+  "Show rows": "Mostrar filas",
+  "Last update": "Última actualización",
+  "Toggle visible fields": "Alternar campos visibles"
+}

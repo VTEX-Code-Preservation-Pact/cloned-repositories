@@ -1,0 +1,69 @@
+{
+  "footer-row#menu-col-1": {
+    "title": "Servicio al cliente",
+    "props": {
+      "inverted": true,
+      "blockClass": "vertical-menu"
+    },
+    "children": [
+      "rich-text#footer-services",
+      "menu#footer-services"
+    ]
+  },
+  "rich-text#footer-services": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Servicio al cliente",
+      "textColor": "c-action-primary",
+      "font": "t-heading-5"
+    }
+  },
+  "menu#footer-services": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#footer-col-1-menu1",
+      "menu-item#footer-col-1-menu2",
+      "menu-item#footer-col-1-menu3",
+      "menu-item#footer-col-1-menu4"
+    ]
+  },
+  "menu-item#footer-col-1-menu1": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "Estatus de la orden"
+      }
+    }
+  },
+  "menu-item#footer-col-1-menu2": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "Devoluciones"
+      }
+    }
+  },
+  "menu-item#footer-col-1-menu3": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "Envío"
+      }
+    }
+  },
+  "menu-item#footer-col-1-menu4": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "Contáctenos"
+      }
+    }
+  }
+}

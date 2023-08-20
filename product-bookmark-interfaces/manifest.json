@@ -1,0 +1,17 @@
+{
+  "vendor": "vtex",
+  "name": "product-bookmark-interfaces",
+  "version": "1.0.1",
+  "title": "Product Bookmark Interfaces",
+  "description": "Interfaces for a wishlist or list app",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {},
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,9 @@
+{
+  "tetrix.landing": {
+    "path": "/tetrix",
+    "cname": "tetrix.vtex.com"
+  },
+  "tetrix.examples": {
+    "path": "/tetrix/examples"
+  }
+}

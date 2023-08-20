@@ -1,0 +1,12 @@
+{
+  "section": "products",
+  "subSection": "catalog",
+  "subSectionItems": [
+    {
+      "labelId": "admin/wishlist.menu.label",
+      "searchKeyWordsHelpers": "",
+      "path": "/admin/wishlist",
+      "LMProductId": "19"
+    }
+  ]
+}

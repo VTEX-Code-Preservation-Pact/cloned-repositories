@@ -1,0 +1,10 @@
+mutation updateSalesChannel($orderFormId: ID, $salesChannel: String) {
+  updateSalesChannel(orderFormId: $orderFormId, salesChannel: $salesChannel)
+    @context(provider: "vtex.binding-selector") {
+    orderFormId
+    items {
+      quantity
+      uniqueId
+    }
+  }
+}

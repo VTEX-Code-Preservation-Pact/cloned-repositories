@@ -1,0 +1,38 @@
+type Product {
+  id: String!
+  name: String
+  description: String
+  shortDescription: String
+  title: String
+  locale: String
+  linkId: String
+}
+
+type ProductTranslationRequest {
+  requestId: String!
+  requestedBy: String!
+  categoryId: String!
+  error: Boolean
+  createdAt: String!
+  locale: String!
+  completedAt: String
+  estimatedTime: Int
+}
+
+input ProductTranslationUpload {
+  id: String!
+  name: String
+  description: String
+  shortDescription: String
+  title: String
+}
+
+type UploadRequest {
+  requestId: String!
+  translatedBy: String!
+  createdAt: String!
+  estimatedTime: Int!
+  error: Boolean
+  progress: Int
+  locale: String!
+}

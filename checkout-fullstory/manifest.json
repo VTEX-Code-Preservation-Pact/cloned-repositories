@@ -1,0 +1,15 @@
+{
+  "vendor": "vtex",
+  "name": "checkout-fullstory",
+  "version": "0.1.1",
+  "title": "Checkout IO Fullstory",
+  "description": "Checkout IO FullStory",
+  "builders": {
+    "docs": "0.x",
+    "pixel": "0.x"
+  },
+  "dependencies": {},
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "mustUpdateAt": "2020-10-30"
+}

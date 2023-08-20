@@ -1,0 +1,58 @@
+{
+  "name": "@vtex/tachyons-generator",
+  "description": "Generate a custom VTEX Tachyons build with a json configuration",
+  "version": "1.5.1",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "config.js",
+    "lib",
+    "docs",
+    "partials"
+  ],
+  "scripts": {
+    "test": "ava -v --timeout=20s",
+    "docs": "node docs/generate"
+  },
+  "repository": "tachyons-css/tachyons-generator",
+  "keywords": [
+    "tachyons",
+    "css",
+    "oocss",
+    "generator"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^8.6.3",
+    "camelcase": "^4.1.0",
+    "colorable": "^1.0.5",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^4.1.10",
+    "cxs": "^6.0.0",
+    "is-blank": "^2.1.0",
+    "isobject": "^3.0.1",
+    "kebab-case": "^1.0.0",
+    "mqify": "^0.1.1",
+    "palx": "^1.0.2",
+    "perfectionist": "^2.4.0",
+    "postcss": "^6.0.22",
+    "postcss-class-postfix": "^1.0.0",
+    "postcss-class-prefix": "^0.3.0",
+    "postcss-conditionals": "^2.1.0",
+    "postcss-css-variables": "^0.8.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-discard-comments": "^4.0.2",
+    "postcss-extend-rule": "^2.0.0",
+    "postcss-import": "^11.1.0",
+    "postcss-nested": "^3.0.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "strip-css-comments": "^3.0.0",
+    "strip-css-media-queries": "^1.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "globby": "^6.1.0",
+    "tachyons": "^4.11.1"
+  }
+}

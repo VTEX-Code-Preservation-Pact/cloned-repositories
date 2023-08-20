@@ -1,0 +1,16 @@
+{
+  "name": "Google Customer Review",
+  "headline": "This application allows Google to collect and post comments from customers who have made a purchase on your website.",
+  "overview": "This application allows integration with the free service offered by Google to collect reviews and comments from customers who have purchased at your store.\nThe information collected can be useful for monitoring, through the Google Merchant Center, how customers' experiences are going, also for Google AdWords and for product presentation on Google Shopping.",
+  "features": [
+    "Sending e-mail for customer evaluation with the 'Google Customer Reviews' opt-in",
+    "Google stamp with the seller rating (optional)",
+    "Customer opinion survey form (optional)",
+    "Seller rating on Google Shopping."
+  ],
+  "additionalInformation": "To use the application in your store and monitor the data collected, you must have an account at Google Merchant Center.",
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

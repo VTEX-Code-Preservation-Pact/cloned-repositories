@@ -1,0 +1,39 @@
+type Auth {
+  email: String!
+  code: Int!
+}
+
+type PaginatedUserResponse {
+  count: Int!
+  total: Int!
+  current: Int!
+  prev: Int!
+  next: Int!
+  data: [User!]!
+}
+
+type User {
+  accessToken: String
+  addresses: [Address]
+  cards: [Payments]
+  email: String!
+  habeasData: Boolean
+  id_number: String!
+  id_type: String!
+  id: ID
+  lastname: String!
+  name: String!
+  phone_code: String!
+  phone_number: String!
+  selectedAddress: Address
+  selectedPayment: SelectedPayment
+}
+
+type GeneralUserResponse {
+  message: String!
+  data: User
+}
+
+type GeneralResponse {
+  message: String!
+}

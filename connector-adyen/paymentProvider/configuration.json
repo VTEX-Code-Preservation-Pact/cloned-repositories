@@ -1,0 +1,44 @@
+{
+  "name": "Adyen Payments",
+  "implementsSplit": true,
+  "usesAutoSettleOptions": true,
+  "acceptSplitPartialRefund": true,
+  "paymentMethods": [
+    {
+      "name": "Visa",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "American Express",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Discover",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Mastercard",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "JCB",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Diners",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Visa Electron",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Maestro",
+      "allowsSplit": "onAuthorize"
+    },
+    {
+      "name": "Mastercard Debit",
+      "allowsSplit": "onAuthorize"
+    }
+  ]
+}

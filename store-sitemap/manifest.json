@@ -1,0 +1,129 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "name": "store-sitemap",
+  "vendor": "vtex",
+  "version": "2.15.0",
+  "title": "Sitemap",
+  "description": "Sitemap for vtex.store",
+  "mustUpdateAt": "2019-08-01",
+  "builders": {
+    "node": "6.x",
+    "graphql": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.messages": "1.x",
+    "gocommerce.sitemap-app": "1.x",
+    "vtex.catalog-api-proxy": "0.x",
+    "vtex.rewriter": "1.x",
+    "vtex.catalog-graphql": "1.x",
+    "vtex.routes-bootstrap": "0.x",
+    "vtex.graphql-server": "1.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/tenant/tenants"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/catalog_system/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "janus-edge.vtex.com.br",
+        "path": "/robots.txt"
+      }
+    },
+    {
+      "name": "vtex.catalog-graphql:resolve-graphql"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "read-write-user-routes"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "read-public-registry-assets"
+    },
+    {
+      "name": "read-private-registry-assets"
+    },
+    {
+      "name": "gocommerce.sitemap-app:sitemap-read"
+    },
+    {
+      "name": "vtex.catalog-api-proxy:catalog-proxy"
+    },
+    {
+      "name": "vtex.rewriter:resolve-graphql"
+    },
+    {
+      "name": "vtex.messages:graphql-save-translation-messages"
+    },
+    {
+      "name": "vtex.graphql-server:resolve-graphql"
+    },
+    {
+      "name": "sphinx-is-admin"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexid.vtex.com.br",
+        "path": "/api/vtexid/pub/authenticated/user"
+      }
+    }
+  ],
+  "credentialType": "absolute",
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "settingsSchema": {
+    "title": "VTEX Store sitemap",
+    "type": "object",
+    "properties": {
+      "enableProductRoutes": {
+        "title": "Enable product routes source",
+        "description": "This will enable the product routes source, generating product routes for the final sitemap.",
+        "type": "boolean",
+        "default": true
+      },
+      "enableNavigationRoutes": {
+        "title": "Enable navigation routes source",
+        "description": "This will enable the navigation routes source, generating navigation routes for the final sitemap.",
+        "type": "boolean",
+        "default": true
+      },
+      "enableAppsRoutes": {
+        "title": "Enable apps routes source",
+        "description": "This will enable the app routes source, adding to the final sitemap routes defined and exported by the routes.json files from apps built by the store@0.x builder.",
+        "type": "boolean",
+        "default": true
+      },
+      "disableRoutesTerm": {
+        "title": "Disable routes from userRoutes with the following string",
+        "description": "Routes that include the string below will be excluded from the sitemap. Useful for selecting which pages will be in that folder.",
+        "default": "",
+        "type": "string"
+      }
+    }
+  }
+}

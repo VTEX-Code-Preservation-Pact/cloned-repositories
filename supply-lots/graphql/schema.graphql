@@ -1,0 +1,86 @@
+type Query {
+  """
+  Check if a SKU and a Warehouse exist by their IDs and get their names
+  """
+  getSkuAndWarehouseNames(
+    """
+    SKU ID to be checked
+    """
+    skuId: String!
+    """
+    Warehouse ID to be checked
+    """
+    warehouseId: String!
+  ): [String]
+  """
+  List all Supply Lots of a SKU scheduled to arrive at a Warehouse
+  """
+  listSupplyLots(
+    """
+    SKU scheduled to arrive in the Supply Lot
+    """
+    skuId: ID!
+    """
+    Warehouse where the Supply Lot is scheduled to arrive
+    """
+    warehouseId: ID!
+    """
+    ID of the Supply Lot, in the case the Query is used to verify if a ID was already used
+    """
+    supplyLotId: ID
+    """
+    Whether to ignore Supply Lots with a totalQuantity of 0 (true by default, to ignore Deleted Supply Lots).
+    """
+    filterZeros: Boolean = true
+  ): [SupplyLot]
+}
+
+type Mutation {
+  """
+  Save or update a Supply Lot of a SKU scheduled to arrive at a Warehouse
+  """
+  setSupplyLot(
+    """
+    Information necessary to save or update a Supply Lot
+    """
+    supplyLotData: SupplyLotInput!
+    """
+    Whether the Mutation will update a existing Supply Lot if the provided ID is already being used 
+    """
+    updateExisting: Boolean
+  ): Boolean
+  """
+  Transfer a Supply Lot of a SKU/Warehouse to the active Inventory
+  """
+  transferSupplyLot(
+    """
+    SKU scheduled to arrive in the Supply Lot
+    """
+    skuId: ID!
+    """
+    Warehouse where the Supply Lot is scheduled to arrive
+    """
+    warehouseId: ID!
+    """
+    ID of the Supply Lot which will be transfered to the active Inventory
+    """
+    supplyLotId: ID!
+  ): Boolean
+  """
+  Deletes a Supply Lot of a SKU/Warehouse (the Supply Lot entity still exists, but with a Quantity set to 0).
+  """
+  deleteSupplyLot(
+    """
+    SKU scheduled to arrive in the Supply Lot
+    """
+    skuId: ID!
+    """
+    Warehouse where the Supply Lot is scheduled to arrive
+    """
+    warehouseId: ID!
+    """
+    ID of the Supply Lot which will be deleted
+    """
+    supplyLotId: ID!
+  ): Boolean
+}

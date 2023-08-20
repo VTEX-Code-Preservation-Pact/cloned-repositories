@@ -1,0 +1,15 @@
+{
+  "memory": 512,
+  "ttl": 10,
+  "timeout": 200,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 2,
+  "routes": {
+    
+    "prices": {
+      "path": "/v0/demo/prices/:itemId/:priceTableId",
+      "public": true
+    }
+  }
+}

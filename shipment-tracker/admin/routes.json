@@ -1,0 +1,6 @@
+{
+  "admin.app.shipping-tracker": {
+    "component": "Admin",
+    "path": "/admin/app/shipping-tracker"
+  }
+}

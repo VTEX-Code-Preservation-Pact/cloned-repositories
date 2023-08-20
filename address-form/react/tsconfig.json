@@ -1,0 +1,25 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "types": ["node", "jest", "@testing-library/jest-dom", "google.maps"],
+    "lib": ["dom", "esnext"],
+    "module": "esnext",
+    "allowJs": true,
+    "checkJs": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "test-utils": ["test-modules/test-utils"]
+    },
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./**/*.js", "./**/*.ts", "./**/*.jsx", "./**/*.tsx"],
+  "exclude": ["node_modules", "lib"]
+}

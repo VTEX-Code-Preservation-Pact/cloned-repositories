@@ -1,0 +1,35 @@
+{
+  "name": "@vtex/insane",
+  "version": "2.8.0",
+  "description": "Lean and configurable whitelist-oriented HTML sanitizer",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bevacqua/insane.git"
+  },
+  "author": "Nicolas Bevacqua <nicolasbevacqua@gmail.com> (https://ponyfoo.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bevacqua/insane/issues"
+  },
+  "homepage": "https://github.com/bevacqua/insane",
+  "main": "insane.js",
+  "browser": {
+    "he": "./she.js"
+  },
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "dependencies": {
+    "assignment": "2.0.0",
+    "he": "0.5.0"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.3.1",
+    "prettier": "^2.0.5",
+    "sinon": "1.17.5",
+    "tape": "3.5.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "Discount",
+  "store/totalizers.Items": "Subtotal",
+  "store/totalizers.Shipping": "Transport",
+  "store/totalizers.Tax": "TVA",
+  "store/totalizers.Interest": "Dobândă",
+  "store/totalizers.Change": "Total modificări",
+  "totalizers.Discounts": "Discount",
+  "totalizers.Items": "Subtotal",
+  "totalizers.Shipping": "Transport",
+  "totalizers.Tax": "TVA",
+  "totalizers.Interest": "Dobândă",
+  "totalizers.Change": "Total modificări"
+}

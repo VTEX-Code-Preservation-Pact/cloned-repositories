@@ -1,0 +1,55 @@
+#import '../fragments/product.graphql'
+#import '../fragments/item.graphql'
+#import '../fragments/seller.graphql'
+#import '../fragments/commertialOffer.graphql'
+#import '../fragments/installment.graphql'
+
+query productSuggestions(
+  $fullText: String!
+  $facetKey: String
+  $facetValue: String
+  $productOriginVtex: Boolean = false
+  $simulationBehavior: SimulationBehavior = default
+  $hideUnavailableItems: Boolean = false
+  $orderBy: String
+  $count: Int
+  $shippingOptions: [String]
+) {
+  productSuggestions(
+    fullText: $fullText
+    facetKey: $facetKey
+    facetValue: $facetValue
+    productOriginVtex: $productOriginVtex
+    simulationBehavior: $simulationBehavior
+    hideUnavailableItems: $hideUnavailableItems
+    orderBy: $orderBy
+    count: $count
+    shippingOptions: $shippingOptions
+  ) @context(provider: "vtex.search-graphql") {
+    count
+    misspelled
+    operator
+    products {
+      ...ProductFragment
+      items {
+        ...ItemFragment
+        sellers {
+          ...SellerFragment
+          commertialOffer {
+            ...CommertialOfferFragment
+            Installments {
+              ...InstallmentFragment
+            }
+          }
+        }
+      }
+      selectedProperties {
+        key
+        value
+      }
+      rule {
+        id
+      }
+    }
+  }
+}

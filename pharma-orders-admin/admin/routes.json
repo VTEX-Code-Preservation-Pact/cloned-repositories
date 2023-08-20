@@ -1,0 +1,6 @@
+{
+  "admin.app.pharma-orders": {
+    "component": "PharmaOrders",
+    "path": "/admin/app/pharma-orders"
+  }
+}

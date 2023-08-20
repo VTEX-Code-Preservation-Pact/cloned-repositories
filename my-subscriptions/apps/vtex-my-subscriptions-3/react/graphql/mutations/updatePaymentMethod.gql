@@ -1,0 +1,25 @@
+mutation UpdatePaymentMethod(
+  $subscriptionId: ID!
+  $paymentSystemId: ID!
+  $paymentAccountId: ID
+) {
+  updatePaymentMethod(
+    subscriptionId: $subscriptionId
+    paymentSystemId: $paymentSystemId
+    paymentAccountId: $paymentAccountId
+  ) @context(provider: "vtex.subscriptions-graphql") {
+    cacheId
+    purchaseSettings {
+      paymentMethod {
+        paymentSystemId
+        paymentSystemName
+        paymentSystemGroup
+        paymentAccount {
+          id
+          cardNumber
+        }
+      }
+    }
+    paymentAccountId
+  }
+}

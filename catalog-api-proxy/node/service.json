@@ -1,0 +1,23 @@
+{
+  "cpu": {
+    "type": "shared",
+    "value": 120,
+    "scalingPercentage": 80
+  },
+  "memory": 512,
+  "ttl": 30,
+  "timeout": 20,
+  "minReplicas": 5,
+  "maxReplicas": 400,
+  "routes": {
+    "catalog": {
+      "path": "/proxy/catalog/*path",
+      "public": false
+    },
+    "authenticatedCatalog": {
+      "path": "/proxy/authenticated/catalog/*path",
+      "public": false
+    }
+  },
+  "workers": 4
+}

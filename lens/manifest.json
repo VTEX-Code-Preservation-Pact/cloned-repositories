@@ -1,0 +1,32 @@
+{
+  "name": "VTEX Lens",
+  "version": "1.5.0",
+  "manifest_version": 2,
+  "description": "Lens: VTEX Development Tools as Chrome Extension",
+  "homepage_url": "http://www.github.com/vtex/lens",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "build/lib/uri.min.js",
+      "build/background.js"
+      ]
+  },
+  "browser_action": {
+    "default_icon": "icons/icon48.png",
+    "default_popup": "build/popup.html"
+  },
+  "permissions": [
+    "tabs",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+    "*://*/*",
+    "http://fonts.googleapis.com/",
+    "http://maxcdn.bootstrapcdn.com/"
+  ]
+}

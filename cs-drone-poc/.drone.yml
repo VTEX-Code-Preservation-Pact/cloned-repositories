@@ -1,0 +1,153 @@
+pipeline:
+
+  install-dependencies:
+    image: node:12
+    when:
+      event:
+        exclude:
+          - pull_request
+    commands:
+      - yarn
+
+  build-app:
+    image: node:12
+    when:
+      event:
+        exclude:
+          - pull_request
+    commands:
+      - yarn build
+
+  test-app:
+    image: node:12
+    when:
+      event:
+        exclude:
+          - pull_request
+    commands:
+      - yarn ci:test
+
+  build-image-and-publish:
+    when:
+      event: tag
+    image: plugins/ecr
+    region: us-east-1
+    repo: 558830342743.dkr.ecr.us-east-1.amazonaws.com/${DRONE_REPO_NAME}
+    tag:
+      - ${DRONE_TAG##v}
+    context: .
+    dockerfile: ./Dockerfile
+
+  deploy-app:
+    when:
+      event: tag
+    image: badouralix/curl-jq
+    commands: |
+      curl --location --request POST 'https://cs-control-plane.vtex.systems/service' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+          "name": "${DRONE_REPO_NAME}",
+          "imageRepository": "558830342743.dkr.ecr.us-east-1.amazonaws.com",
+          "imageName": "${DRONE_REPO_NAME}",
+          "version": "latest",
+          "ports": [
+            5000
+          ],
+          "healthCheckPath": "/healthcheck",
+          "replicas": 1,
+          "resources": {
+            "limits": {
+              "cpu": "500m",
+              "memory": "2048Mi"
+            },
+            "requests": {
+              "cpu": "250m",
+              "memory": "512Mi"
+            }
+          }
+      }'
+      
+  deploy-preview-publish:
+    when:
+      branch:
+        exclude:
+        - master
+      event:
+        exclude:
+          - tag
+    image: plugins/ecr
+    region: us-east-1
+    repo: 558830342743.dkr.ecr.us-east-1.amazonaws.com/${DRONE_REPO_NAME}
+    tag:
+      - ${DRONE_COMMIT_SHA}
+    context: .
+    dockerfile: ./Dockerfile
+  
+  deploy-preview:
+    when:
+      branch:
+        exclude:
+        - master
+      event:
+        exclude:
+          - tag
+    image: badouralix/curl-jq
+    commands: |
+      curl --location --request POST 'https://cs-control-plane.vtex.systems/service' \
+      --header 'Content-Type: application/json' \
+      --data-raw '{
+          "name": "${DRONE_BRANCH}--${DRONE_REPO_NAME}",
+          "imageRepository": "558830342743.dkr.ecr.us-east-1.amazonaws.com",
+          "imageName": "${DRONE_REPO_NAME}",
+          "version": "${DRONE_COMMIT_SHA}",
+          "ports": [
+            5000
+          ],
+          "healthCheckPath": "/healthcheck",
+          "replicas": 1,
+          "resources": {
+            "limits": {
+              "cpu": "500m",
+              "memory": "2048Mi"
+            },
+            "requests": {
+              "cpu": "250m",
+              "memory": "512Mi"
+            }
+          }
+      }'
+  
+  mark-as-latest-if-stable:
+    image: plugins/webhook
+    when:
+      event: tag
+    urls: http://releases.ingress.vtex.io/latest-if-stable/$${DRONE_REPO_NAME}/${DRONE_TAG##v}
+    method: PATCH
+
+  register:
+    image: plugins/webhook
+    when:
+      event: tag
+    urls: http://router.aws-us-east-1.vtex.io/_services
+    valid_response_codes: [200, 204]
+    environment:
+      HTTP_PROXY: io-integrations.internal.aws-us-east-1.vtex.io
+    template: >
+      {
+        "name": "$${DRONE_REPO_NAME}",
+        "version": "${DRONE_TAG##v}",
+        "image": "558830342743.dkr.ecr.us-east-1.amazonaws.com/$${DRONE_REPO_NAME}:${DRONE_TAG##v}",
+        "region": "aws-us-east-1",
+        "labels": {
+          "monitored": "true"
+        }
+      }
+  notify:
+    image: plugins/webhook
+    when:
+      event: tag
+      status: [success, failure]
+    urls: https://vtex.myvtex.com/_v/drone-notifications/notify
+    valid_response_codes: [200, 204]
+    username: drone
+    password: YzNWd1pYSnpaV055WlhSd1lYTnpkMjl5WkdsbVptOTFibVJqWVd4c09UUXdNekV3TWpBPQ==

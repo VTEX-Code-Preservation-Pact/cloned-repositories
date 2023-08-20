@@ -1,0 +1,1541 @@
+{
+  "orderFormId": "b44e12727763450a9293ce52e398d337",
+  "salesChannel": "1",
+  "loggedIn": false,
+  "canEditData": true,
+  "userProfileId": null,
+  "userType": null,
+  "ignoreProfileData": false,
+  "value": 969,
+  "messages": [],
+  "items": [
+    {
+      "id": "332867",
+      "productId": "100178488",
+      "refId": "891aa369-5fea-49af-87b4-65f724202bb6",
+      "name": "Celular Desbloqueado Huawei G3511 Preto com Vermelho Claro, Dual Chip, MP3 Player, Rádio FM",
+      "skuName": "Celular Desbloqueado Huawei G3511 Preto com Vermelho Claro, Dual Chip, MP3 Player, Rádio FM",
+      "modalType": "Químico",
+      "priceValidUntil": null,
+      "tax": 0,
+      "price": 699,
+      "listPrice": 9900,
+      "sellingPrice": 699,
+      "rewardValue": 1500,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Huawei",
+        "brandId": "1301",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/44/49/456/",
+      "productCategories": {
+        "44": "Telefonia",
+        "49": "Celulares de Operadoras",
+        "456": "Celular Desbloqueado Claro"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "imageUrl": "http://walmartv5.vtexcommercestable.vteximg.com.br/arquivos/ids/1067998-55-55/332867_292_292.jpg",
+      "detailUrl": "/332867-huawei-g3511-preto-com-vermelho-desbloqueado-claro/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [
+        {
+          "name": "placa",
+          "content": {
+            "Município": "RIO DE JANEIRO",
+            "Número": "",
+            "País": ""
+          }
+        }
+      ],
+      "itemAttachment": {
+        "name": "placa",
+        "content": {
+          "Município": "RIO DE JANEIRO",
+          "Número": "",
+          "País": ""
+        }
+      },
+      "attachmentOfferings": [
+        {
+          "name": "Informações",
+          "required": false,
+          "schema": {
+            "texto": {
+              "maximumNumberOfCharacters": 23,
+              "domain": [
+                "teste1",
+                " teste2",
+                " teste3"
+              ]
+            }
+          }
+        },
+        {
+          "name": "placa",
+          "required": true,
+          "schema": {
+            "Número": {
+              "maximumNumberOfCharacters": 1,
+              "domain": []
+            },
+            "Município": {
+              "maximumNumberOfCharacters": 30,
+              "domain": [
+                "RIO DE JANEIRO"
+              ]
+            },
+            "País": {
+              "maximumNumberOfCharacters": 3,
+              "domain": []
+            }
+          }
+        }
+      ],
+      "offerings": [
+        {
+          "type": "Garantia",
+          "id": "37",
+          "name": "Garantia",
+          "allowGiftMessage": false,
+          "attachmentOfferings": [
+            {
+              "name": "Informações",
+              "required": false,
+              "schema": {
+                "texto": {
+                  "maximumNumberOfCharacters": 23,
+                  "domain": [
+                    "teste1",
+                    " teste2",
+                    " teste3"
+                  ]
+                }
+              }
+            }
+          ],
+          "price": 1000
+        }
+      ],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1
+    }
+  ],
+  "selectableGifts": [],
+  "products": [],
+  "totalizers": [
+    {
+      "id": "Items",
+      "name": "Total dos Itens",
+      "value": 699
+    },
+    {
+      "id": "Shipping",
+      "name": "Total do Frete",
+      "value": 270
+    }
+  ],
+  "shippingData": {
+    "attachmentId": "shippingData",
+    "address": {
+      "addressType": "residential",
+      "receiverName": "auto auto",
+      "addressId": "-1425680551100",
+      "postalCode": "22260-000",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "country": "BRA",
+      "street": "Rua São Clemente",
+      "number": "teste",
+      "neighborhood": "Botafogo",
+      "complement": null,
+      "reference": null,
+      "geoCoordinates": []
+    },
+    "logisticsInfo": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "normal",
+        "slas": [
+          {
+            "id": "normal",
+            "name": "normal",
+            "deliveryIds": [
+              {
+                "courierId": "1a574b3",
+                "warehouseId": "1_1",
+                "dockId": "1_1_1",
+                "courierName": "Mundo",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "16bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 270,
+            "listPrice": 270,
+            "tax": 0
+          },
+          {
+            "id": "Entrega Agendada",
+            "name": "Entrega Agendada",
+            "deliveryIds": [
+              {
+                "courierId": "58",
+                "warehouseId": "1_1",
+                "dockId": "1_1_1",
+                "courierName": "Entrega Agendada",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "4bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [
+              {
+                "startDateUtc": "2015-03-13T08:00:00+00:00",
+                "endDateUtc": "2015-03-13T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-16T08:00:00+00:00",
+                "endDateUtc": "2015-03-16T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-16T00:00:00+00:00",
+                "endDateUtc": "2015-03-16T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-17T08:00:00+00:00",
+                "endDateUtc": "2015-03-17T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-17T00:00:00+00:00",
+                "endDateUtc": "2015-03-17T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-18T08:00:00+00:00",
+                "endDateUtc": "2015-03-18T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-18T00:00:00+00:00",
+                "endDateUtc": "2015-03-18T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-19T08:00:00+00:00",
+                "endDateUtc": "2015-03-19T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-19T00:00:00+00:00",
+                "endDateUtc": "2015-03-19T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-20T08:00:00+00:00",
+                "endDateUtc": "2015-03-20T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-20T00:00:00+00:00",
+                "endDateUtc": "2015-03-20T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-23T08:00:00+00:00",
+                "endDateUtc": "2015-03-23T13:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2015-03-23T00:00:00+00:00",
+                "endDateUtc": "2015-03-23T01:00:00+00:00",
+                "price": 510,
+                "lisPrice": 510,
+                "tax": 0
+              }
+            ],
+            "deliveryWindow": null,
+            "price": 267,
+            "listPrice": 267,
+            "tax": 0
+          },
+          {
+            "id": "PAC",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "56",
+                "warehouseId": "1_1",
+                "dockId": "1_1_1",
+                "courierName": "PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 880,
+            "listPrice": 880,
+            "tax": 0
+          },
+          {
+            "id": "Expressa",
+            "name": "Expressa",
+            "deliveryIds": [
+              {
+                "courierId": "55",
+                "warehouseId": "1_1",
+                "dockId": "1_1_1",
+                "courierName": "Sedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1650,
+            "listPrice": 1650,
+            "tax": 0
+          }
+        ],
+        "shipsTo": [
+          "BRA",
+          "COL",
+          "MEX"
+        ],
+        "itemId": "332867"
+      }
+    ],
+    "availableAddresses": [
+      {
+        "addressType": "residential",
+        "receiverName": "auto auto",
+        "addressId": "-1425680551100",
+        "postalCode": "22260-000",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "country": "BRA",
+        "street": "Rua São Clemente",
+        "number": "teste",
+        "neighborhood": "Botafogo",
+        "complement": null,
+        "reference": null,
+        "geoCoordinates": []
+      }
+    ]
+  },
+  "clientProfileData": {
+    "attachmentId": "clientProfileData",
+    "email": "shipping60.34932630136609@mailinator.com",
+    "firstName": "auto",
+    "lastName": "auto",
+    "document": "12345678909",
+    "documentType": "cpf",
+    "phone": "+552222222222",
+    "corporateName": null,
+    "tradeName": null,
+    "corporateDocument": null,
+    "stateInscription": null,
+    "corporatePhone": null,
+    "isCorporate": false
+  },
+  "paymentData": {
+    "installmentOptions": [
+      {
+        "paymentSystem": "2",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 484,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 484,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 323,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 323,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 242,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 242,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "1",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 484,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 484,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 323,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 323,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 242,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 242,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "4",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 484,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 484,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 323,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 323,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 242,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 242,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "9",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 484,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 484,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 323,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 323,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 242,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 242,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "18",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 484,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 484,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 323,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 323,
+                "total": 969
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 242,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 242,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "12",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "401",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "20",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "32",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "17",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "3",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "203",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "26",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "8",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "201",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "16",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "6",
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 969,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 969,
+            "total": 969,
+            "sellerMerchantInstallments": [
+              {
+                "id": "WALMARTV5",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 969,
+                "total": 969
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "paymentSystems": [
+      {
+        "id": 401,
+        "name": "LeaderCard",
+        "groupName": "customPrivate_401PaymentGroup",
+        "validator": {
+          "regex": "1(0(0(0(0([0-9])|[1-9][0-9])|[1-9][0-9]{0})|[1-9][0-9]{0})|[1-9][0-9]{0})|9(9(9(9(9([0-9])|[0-8][0-9])|[0-8][0-9]{0})|[0-8][0-9]{0})|[0-8][0-9]{0})|[2-8][0-9]{0}",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "*",
+          "cardCodeMask": "null",
+          "weights": [],
+          "useCvv": false,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": false
+        },
+        "stringId": "401",
+        "template": "customPrivate_401PaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": "LeaderCard",
+        "requiresAuthentication": true
+      },
+      {
+        "id": 18,
+        "name": "Mercado Pago",
+        "groupName": "MercadoPagoPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "18",
+        "template": "MercadoPagoPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 17,
+        "name": "Promissory",
+        "groupName": "promissoryPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "17",
+        "template": "promissoryPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 2,
+        "name": "Visa",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^4",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "2",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 1,
+        "name": "American Express",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^3[47][0-9]{13}$",
+          "mask": "9999 999999 99999",
+          "cardCodeRegex": "^[0-9]{4}$",
+          "cardCodeMask": "9999",
+          "weights": [
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "1",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 3,
+        "name": "Diners",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^3(0[0-5]|[68][0-9])[0-9]{11}$",
+          "mask": "9999 999999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "3",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 9,
+        "name": "Elo",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^((((636368)|(438935)|(504175)|(451416)|(636297))\\d{0,10})|((5067)|(4576)|(4011))\\d{0,12})$",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "9",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 26,
+        "name": "PagSeguro",
+        "groupName": "pagSeguroPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "26",
+        "template": "pagSeguroPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 12,
+        "name": "PayPal",
+        "groupName": "payPalPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "12",
+        "template": "payPalPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 8,
+        "name": "Hipercard",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^606282|^3841(?:[0|4|6]{1})0",
+          "mask": "9999999999999999999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            1,
+            1,
+            1
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "8",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 16,
+        "name": "Vale",
+        "groupName": "giftCardPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "16",
+        "template": "giftCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 6,
+        "name": "Boleto Bancário",
+        "groupName": "bankInvoicePaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "6",
+        "template": "bankInvoicePaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      },
+      {
+        "id": 4,
+        "name": "Mastercard",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^5(1(0(0(0([0-9])|[1-9][0-9])|[1-9][0-9]{0})|[1-9][0-9]{0})|3(0(4(0([0-9]))|[0-3][0-9]{0}))|2[0-9]{0})|^5(3(0(4(2([0-9])|[3-9][0-9])|[5-9][0-9]{0})|[1-9][0-9]{0})|5(9(9(9([0-9])|[0-8][0-9])|[0-8][0-9]{0})|[0-8][0-9]{0})|4[0-9]{0})",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1,
+            2
+          ],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "4",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false
+      }
+    ],
+    "payments": [
+      {
+        "paymentSystem": "26",
+        "bin": null,
+        "accountId": null,
+        "installments": 1,
+        "referenceValue": 969,
+        "value": 969,
+        "merchantSellerPayments": [
+          {
+            "id": "WALMARTV5",
+            "installments": 1,
+            "referenceValue": 969,
+            "value": 969,
+            "interestRate": 0,
+            "installmentValue": 969
+          }
+        ]
+      }
+    ],
+    "giftCards": [],
+    "giftCardMessages": [],
+    "availableAccounts": []
+  },
+  "marketingData": null,
+  "sellers": [
+    {
+      "id": "1",
+      "name": "WalmartV5",
+      "logo": "http://portal.vtexcommerce.com.br/arquivos/logo.jpg"
+    }
+  ],
+  "clientPreferencesData": {
+    "attachmentId": "clientPreferencesData",
+    "locale": "pt-BR",
+    "optinNewsLetter": false
+  },
+  "storePreferencesData": {
+    "countryCode": "BRA",
+    "checkToSavePersonDataByDefault": true,
+    "templateOptions": {
+      "toggleCorporate": false
+    },
+    "timeZone": "E. South America Standard Time",
+    "currencyCode": "BRL",
+    "currencyLocale": 1046,
+    "currencySymbol": "R$",
+    "currencyFormatInfo": {
+      "currencyDecimalDigits": 2,
+      "currencyDecimalSeparator": ",",
+      "currencyGroupSeparator": ".",
+      "currencyGroupSize": 3,
+      "startsWithCurrencySymbol": true
+    }
+  },
+  "giftRegistryData": null,
+  "openTextField": null,
+  "ratesAndBenefitsData": {
+    "attachmentId": "ratesAndBenefitsData",
+    "rateAndBenefitsIdentifiers": [],
+    "teaser": []
+  }
+}

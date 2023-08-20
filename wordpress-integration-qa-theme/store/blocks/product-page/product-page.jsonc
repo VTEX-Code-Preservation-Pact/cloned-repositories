@@ -1,0 +1,236 @@
+{
+	"store.not-found#product": {
+    "blocks": [
+      "info-card#not-found-banner",
+      "flex-layout.row#continue-shopping",
+      "flex-layout.row#shopByCategory"
+    ]
+  },
+  "info-card#not-found-banner": {
+    "props": {
+      "id": "info-card-not-found-banner",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://worldwidegolf.vteximg.com.br/arquivos/404-correct.jpg",
+      "headline": "Oops! You've landed in the bunker.",
+      "subhead": "The page you were looking for does not exist.",
+      "callToActionMode": "none",
+      "blockClass": "notFoundInfoCard"
+    }
+  },
+  "flex-layout.row#shopByCategory": {
+		"title": "Row - Shop by category",
+		"children": [
+			"flex-layout.col#shopByCategory__card1",
+			"flex-layout.col#shopByCategory__card2",
+			"flex-layout.col#shopByCategory__card3",
+			"flex-layout.col#shopByCategory__card4",
+			"flex-layout.col#shopByCategory__card5",
+			"flex-layout.col#shopByCategory__card6",
+			"flex-layout.col#shopByCategory__card7",
+			"flex-layout.col#shopByCategory__card8"
+		],
+		"props": {
+			"blockClass": "linksCategoryContainer",
+			"marginTop": 2
+		}
+	},
+
+	//? Card1
+	"flex-layout.col#shopByCategory__card1": {
+		"children": ["image#card1", "rich-text#shopByCategory__text1"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card1": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/golf-clubs" },
+			"src": "/arquivos/1-chubs.jpg",
+			"maxWidth": "88px"
+		}
+	},
+	"rich-text#shopByCategory__text1": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Clubs](/golf-clubs)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card2
+	"flex-layout.col#shopByCategory__card2": {
+		"children": ["image#card2", "rich-text#shopByCategory__text2"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card2": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/shoes" },
+			"src": "/arquivos/2-shoes.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text2": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Shoes](/shoes)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card3
+	"flex-layout.col#shopByCategory__card3": {
+		"children": ["image#card3", "rich-text#shopByCategory__text3"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card3": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/apparel" },
+			"src": "/arquivos/3-apparel.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text3": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Apparel](/apparel)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card4
+	"flex-layout.col#shopByCategory__card4": {
+		"children": ["image#card4", "rich-text#shopByCategory__text4"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card4": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/gps---tech" },
+			"src": "/arquivos/4-gpsTech.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text4": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[GPS & Tech](/gps---tech)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card5
+	"flex-layout.col#shopByCategory__card5": {
+		"children": ["image#card5", "rich-text#shopByCategory__text5"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card5": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/golf-balls" },
+			"src": "/arquivos/5-balls.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text5": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Balls](/golf-balls)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card6
+	"flex-layout.col#shopByCategory__card6": {
+		"children": ["image#card6", "rich-text#shopByCategory__text6"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card6": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/bags-carts-travel" },
+			"src": "/arquivos/6-bagsCarts.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text6": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Bags & Carts](/bags-carts-travel)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card7
+	"flex-layout.col#shopByCategory__card7": {
+		"children": ["image#card7", "rich-text#shopByCategory__text7"],
+		"props": {
+			"blockClass": ["shopByCategory__card"],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card7": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/accessories" },
+			"src": "/arquivos/7-accessories.jpg",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text7": {
+		"props": {
+			"blockClass": "shopByCategory__text",
+			"text": "[Accesories](/accessories)",
+			"textPosition": "CENTER"
+		}
+	},
+	//? Card8
+	"flex-layout.col#shopByCategory__card8": {
+		"children": ["image#card8", "rich-text#shopByCategory__text8"],
+		"props": {
+			"blockClass": [
+				"shopByCategory__card",
+				"shopByCategory__card--highlighted"
+			],
+			"preventVerticalStretch": true
+		}
+	},
+	"image#card8": {
+		"props": {
+			"blockClass": "shopByCategory__image",
+			"link": { "url": "/yes/?map=promotion" },
+			"src": "/arquivos/8-sale.png",
+			"maxWidth": "88px"
+		}
+	},
+
+	"rich-text#shopByCategory__text8": {
+		"props": {
+			"blockClass": [
+				"shopByCategory__text",
+				"shopByCategory__text--highlighted"
+			],
+			"text": "[Sale](/yes/?map=promotion)",
+			"textPosition": "CENTER"
+		}
+	}
+}

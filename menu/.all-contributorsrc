@@ -1,0 +1,24 @@
+{
+  "projectName": "menu",
+  "projectOwner": "vtex-apps",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "docs/README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "giovanapereira",
+      "name": "Giovana Pereira",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/26018620?v=4",
+      "profile": "http://giovanapereira.com.br/",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

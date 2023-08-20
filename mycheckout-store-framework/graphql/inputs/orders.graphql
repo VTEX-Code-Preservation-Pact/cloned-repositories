@@ -1,0 +1,67 @@
+input OrderInput {
+  items: [ItemInput]
+  gifts: [GiftInput]
+  offerings: [OfferingInput]
+  payment: PaymentDataInput
+  profile: ProfileInput
+  shipping: ShippingInput
+  account: AccountInput
+  channel: String
+  customData: CustomDataInput
+  marketingData: MarketingDataInput
+  ip: String!
+}
+
+input CustomDataInput {
+  customApps: [CustomAppsInput]
+}
+
+input CustomAppsInput {
+  id: String
+  major: Int
+  fields: [CustomFieldsInput]
+}
+
+input CustomFieldsInput {
+  key: String
+  value: String
+}
+
+input ShippingInput {
+  addressId: String
+  externalAddress: ExternalAddressInput
+  logisticsInfo: [LogisticInfoInput]
+}
+
+input OfferingInput {
+  id: String
+  parentItemId: String
+}
+
+input GiftInput {
+  id: String
+  seller: String
+  quantity: Int
+}
+
+input ItemInput {
+  id: String
+  quantity: Int
+  seller: String
+}
+
+input DeliveryWindowInput {
+  startDateUtc: String
+  endDateUtc: String
+}
+
+input LogisticInfoInput {
+  itemIndex: Int
+  selectedSla: String
+  selectedDeliveryChannel: String
+  deliveryWindow: DeliveryWindowInput
+}
+
+input MarketingDataInput {
+  coupon: String
+}

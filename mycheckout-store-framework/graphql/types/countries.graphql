@@ -1,0 +1,36 @@
+type PaginatedCountriesResponse {
+  count: Int!
+  total: Int!
+  current: Int!
+  prev: Int!
+  next: Int!
+  data: [Countries]
+}
+
+type Countries {
+  id: String
+  country: String
+  iso: String
+  phone: String
+  postal_code_regex: String
+  states: [States]
+}
+
+type States {
+  state: String
+  cities: [Cities]
+}
+
+type Cities {
+  city_id: String
+  city: String
+}
+
+type SearchCities {
+  city: String
+  state: String
+  country: String
+  phone: String
+  iso: String
+  postal_code: String
+}

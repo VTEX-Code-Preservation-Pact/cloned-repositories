@@ -1,0 +1,5 @@
+RewriteEngine On
+# Options -MultiViews
+# RewriteRule ^installments/?$ installments.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^ index.php [L]

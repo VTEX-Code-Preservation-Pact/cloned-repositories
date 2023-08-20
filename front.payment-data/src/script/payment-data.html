@@ -1,0 +1,58 @@
+<div class="step accordion-group" data-bind="css: {active: active, filled: visited() && !active()}, template: {afterRender: vtex.i18n.translateHtml}">
+    <div class="accordion-heading">
+        <span class="accordion-toggle collapsed" data-bind="css: {'accordion-toggle-active': active}">
+            <i class="icon-credit-card"></i>
+            <span data-i18n="paymentData.payment">Pagamento</span>
+            <a href="#/payment" class="link-box-edit btn btn-small" tabindex="-1" data-bind="visible: visited() && !active()" data-i18n="[title]global.edit"><i class="icon-edit"></i></a>
+        </span>
+    </div>
+    <div class="accordion-body collapse in payment-body">
+        <div class="accordion-inner">
+            <p class="notification" data-bind="visible: !active()" data-i18n="global.waiting"></p>
+            <div class="box-step">
+                <p data-bind="visible: active() && totalIsFree()" data-i18n="paymentData.totalIsFree"></p>
+
+                <!-- Mensagem de erro de validação -->
+                <div data-bind="visible: active() && validationError()" class="alert alert-block payment-alert-error fade in">
+                    <button type="button" class="close" data-bind="click: clearValidationError">×</button>
+                    <p data-i18n="global.validationErrorInThisForm"></p>
+                </div>
+
+                <!-- Loading do passo -->
+                <div class="loading loading-bg" data-bind="visible: loading">
+                    <div class="loading-img">
+                        <i class="icon-spinner icon-spin icon-2x">
+                            <span data-i18n="global.loading"></span>
+                        </i>
+                    </div>
+                </div>
+
+                <!-- Vale presentes -->
+                <div data-bind="visible: active(), template: {name: 'gift-card-list', if: giftCardList, data: giftCardList, afterRender: vtex.i18n.translateHtml }">
+                </div>
+
+                <!-- Pagamentos -->
+                <div class="box-step-content" data-bind="visible: active(),
+                    template: {name: 'payment-form', foreach: paymentForms, afterRender: vtex.i18n.translateHtml }">
+                </div>
+            </div>
+
+            <!-- Botões de adicionar pagamento ou vale -->
+            <div class="payment-difference" data-bind="visible: active() && paymentForms().length > 2">
+                <p class="payment-difference-text" data-bind="visible: totalPaidDifference() != 0">
+                    <span data-i18n="paymentData.totalPaidDifferenceExists"></span>
+                    <span data-bind="text: totalPaidDifference"></span>
+                </p>
+            </div>
+            <button class="payment-difference-add btn btn-link" data-bind="click: addPaymentForm, visible: active" data-i18n="paymentData.addPayment"></button>
+
+            <!-- Form para envio de pagamentos, preenchido e enviado programaticamente -->
+            <form id="sendPayments" target="_parent" data-event="sendPayments" method="post" name="sendPayments" action="">
+                <input id="paymentsArray" name="paymentsArray" type="hidden"/>
+                <input id="callbackURL" name="callbackUrl" type="hidden" data-bind="value: window.paymentData.gatewayCallbackUrl"/>
+            </form>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>

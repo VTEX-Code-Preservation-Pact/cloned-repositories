@@ -1,0 +1,473 @@
+/* add css module styles here (optional) */
+/*@font-face {
+  font-family: 'VTEXRegular';
+  src: url('https://io.vtex.com.br/fonts/vtex-trust/VTEXTrust-Regular.woff');
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  :global(.payment-form input:focus),
+  :global(.payment-form select:focus),
+  :global(.payment-form input.name:focus),
+  :global(.payment-form input.card-number:focus),
+  :global(.payment-form input.expiry:focus),
+  :global(.payment-form input.cvc:focus) {
+    font-size: 16px;
+    touch-action: pan-x pan-y;
+  }
+
+  .Checkoutless p,
+  .Checkoutless a,
+  .Checkoutless div {
+    font-size: 16px;
+    touch-action: pan-x pan-y;
+  }
+}
+
+.Checkoutless {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.Checkoutless .CheckoutlessButton {
+  width: 100%;
+}
+
+.Checkoutless p,
+.Checkoutless a,
+.Checkoutless div {
+  font-size: 14px;
+  font-family: 'Calibri', sans-serif;
+  color: #707685;
+  font-weight: 400;
+}
+
+.liteCheckoutless p,
+.liteCheckoutless a,
+.liteCheckoutless div {
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  color: #011d1a;
+  font-weight: 300;
+}
+
+.Checkoutless ul,
+.Checkoutless li,
+.Checkoutless h1,
+.Checkoutless h2,
+.Checkoutless h3,
+.Checkoutless p,
+.Checkoutless button {
+  margin: 0;
+  padding: 0;
+}
+
+.Checkoutless ul {
+  list-style: none;
+}
+
+.Checkoutless button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.Checkoutless input:focus {
+  outline: 0;
+}
+
+.Checkoutless select {
+  background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+)
+    no-repeat 95% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.Checkoutless select:disabled {
+  background-color: #fafafa;
+}
+
+/* Paymentez Classes */
+
+:global(.payment-form input),
+:global(.payment-form select),
+:global(.payment-form input.name),
+:global(.payment-form input.card-number),
+:global(.payment-form input.expiry),
+:global(.payment-form input.cvc) {
+  font-family: 'Calibri', sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  margin: 0px;
+  margin-bottom: 10px;
+  border: 1px solid #c4c5ca;
+  padding: 0 18px;
+}
+
+/* :global(.payment-form select) {
+  width: 100%;
+  height: 46px;
+  border-radius: 8px;
+  margin: 8px 0;
+} */
+
+:global(.payment-form .name-wrapper .icon),
+:global(.payment-form .card-number-wrapper .icon) {
+  top: 16px;
+}
+
+:global(.payment-form .card-number-wrapper .card-type-icon) {
+  top: 21px;
+}
+
+:global(.payment-form .expiry-wrapper .icon),
+:global(.payment-form .cvc-wrapper .icon) {
+  top: 16px;
+}
+
+:global(.payment-form .name-wrapper),
+:global(.payment-form .card-number-wrapper),
+:global(.payment-form .expiry-wrapper),
+:global(.payment-form .cvc-wrapper) {
+  margin-bottom: 0px;
+}
+
+/* end Paymentez Classes */
+
+.button.button {
+  width: 100%;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #f71963;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.buttonDisabled.buttonDisabled {
+  width: 100%;
+  height: 48px;
+  background-color: #f2f4f5;
+  border: 1px solid #9798a5;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.modalPadding {
+  padding: 12px;
+}
+
+.liteModalPadding {
+  padding: 0px 12px 11px 12px;
+}
+
+.Checkoutless .textSm {
+  font-size: 12px;
+}
+
+.Checkoutless .textBase {
+  font-size: 14px;
+}
+
+.Checkoutless .textLg {
+  font-size: 16px;
+}
+
+.Checkoutless .textXl {
+  font-size: 18px;
+}
+
+.Checkoutless .textXXl {
+  font-size: 20px;
+}
+
+.Checkoutless .regular {
+  font-weight: 400;
+}
+
+.Checkoutless .medium {
+  font-weight: 500;
+}
+
+.Checkoutless .semiBold {
+  font-weight: 600;
+}
+
+.Checkoutless .bold {
+  font-weight: 700;
+}
+
+.Checkoutless .darkPrimary {
+  color: #323845;
+}
+
+.Checkoutless .red {
+  color: #cb4242;
+}
+
+.Checkoutless .enphasis {
+  color: #f71963;
+}
+
+.Checkoutless .blue {
+  color: #2953b2;
+}
+
+.Checkoutless .liteBlue {
+  color: #0096c7;
+}
+
+.Checkoutless .green {
+  color: #368369;
+}
+
+.Checkoutless .disabled {
+  color: #9798a5;
+}
+
+.Checkoutless .gray {
+  color: #919191;
+}
+
+.Checkoutless .underline {
+  text-decoration: underline;
+}
+
+.Checkoutless .labelError {
+  color: #cb4242;
+}
+
+.Checkoutless .fontFamily {
+  font-family: 'Calibri', sans-serif;
+}
+
+.liteCheckoutless .fontFamily {
+  font-family: 'Lato', sans-serif;
+}
+
+.Checkoutless .iconPrimary {
+  fill: #f71963;
+}
+
+.Checkoutless .iconSecondary {
+  fill: #707070;
+}
+
+.Checkoutless .iconTerciary {
+  fill: #919191;
+}
+
+.Checkoutless .iconAlternative {
+  fill: #272525;
+}
+
+.Checkoutless .iconAlternativeStroke {
+  stroke: #272525;
+}
+
+.Checkoutless .iconAlternativeStrokeSecondary {
+  stroke: #0096c7;
+}
+
+.Checkoutless .iconAlternativeSecondary {
+  fill: #0096c7;
+}
+
+.Checkoutless .iconBackground {
+  fill: transparent;
+}
+
+.Checkoutless .iconBackgroundSecondary {
+  fill: #fff;
+}
+
+.Checkoutless .arrowDownIcon {
+  fill: #404040;
+}
+
+.Checkoutless .arrowUpIcon {
+  fill: #2953b2;
+}
+
+.Checkoutless .fillerCheckIcon {
+  fill: #368369;
+}
+
+.Checkoutless .fillCheckIcon {
+  fill: #ffffff;
+}
+
+.Checkoutless .fillCheckIconAlternative {
+  fill: #009e4f;
+}
+
+.Checkoutless .disabledIcon {
+  fill: #9798a5;
+}
+
+.Checkoutless .strokeCheckiconAlternativeStroke {
+  stroke: #009e4f;
+}
+
+.Checkoutless .borderBottom {
+  border-bottom: 1px solid #00000029;
+}
+
+.Checkoutless hr {
+  background-color: #f71963;
+  color: #f71963;
+}
+
+.Checkoutless :global(.Collapsible) {
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.Checkoutless .cart {
+  fill: #f71963;
+}
+
+.Checkoutless .backgroundCart {
+  fill: #c4c5ca;
+}
+
+.Checkoutless .containerError {
+  background: #fff0f2;
+  box-shadow: 0px 0px 11px 1px #00000029;
+}
+
+.modalContainer {
+  position: fixed;
+  box-shadow: 2px -2px 6px #00000029;
+  z-index: 1000000000000;
+  background-color: white;
+  justify-content: center;
+  padding-top: 0;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+.liteModalContainer {
+  max-height: 40%;
+}
+
+.modalDesktop {
+  width: 30%;
+  top: 0;
+  right: 0;
+  height: 100% !important;
+}
+
+.modalMobile {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.full {
+  height: 100%;
+}
+
+.auto {
+  height: auto;
+}
+
+.Checkoutless .modal {
+  display: block;
+}
+
+.Checkoutless .modal-hidden {
+  display: none;
+}
+
+.logo {
+}
+
+.headerModal {
+}
+.securityPayment {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 5px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+.securityPaymentTooltip {
+  box-shadow: 0px 3px 6px #00000029;
+  font-size: 14px !important;
+  color: #284859 !important;
+  position: absolute;
+  border-radius: 6px;
+  left: 100%;
+  min-width: 174px;
+  padding: 9px 13px;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .bodyWrapper {
+    margin: 25px 15px 0 15px;
+    padding-top: 30px;
+    border-top: 1px solid #e0e2e7;
+  }
+
+  .headerContainer {
+    padding: 0 12px;
+  }
+
+  .logoContainer {
+    top: 30px;
+    position: relative;
+  }
+
+  .modalPadding {
+    padding: 0px;
+  }
+
+  .Checkoutless .textXXl {
+    font-size: 30px !important;
+  }
+
+  .modalContainer::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f8f8f8;
+    height: 10px;
+  }
+
+  .modalContainer::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #e8e8e8;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .buttonFixed {
+    bottom: 0;
+    position: fixed;
+    width: 100% !important;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: inset 0 3px 6px rgb(0 0 0 / 6%);
+    z-index: 100;
+  }
+}

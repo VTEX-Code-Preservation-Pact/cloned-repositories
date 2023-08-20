@@ -1,0 +1,119 @@
+{
+  "definitions": {
+    "Carousel": {
+      "title": "Carousel with Banners",
+      "description": "Slider with large landscape images that link to pages",
+      "type": "object",
+      "properties": {
+        "images": {
+          "title": " ",
+          "type": "array",
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": " ",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
+              },
+              "link": {
+                "title": "URL address to link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Banners": {
+      "title": "Banners",
+      "description": "Up to two small landscape images that link to pages",
+      "type": "object",
+      "properties": {
+        "banners": {
+          "title": " ",
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": " ",
+                "description": "A picture",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
+              },
+              "link": {
+                "title": "URL address to link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Shelf": {
+      "title": "Carousel with Products",
+      "description": "Slider with products from a collection or the best selling ones",
+      "type": "object",
+      "properties": {
+        "shelfTitle": {
+          "title": "Title",
+          "type": "string"
+        },
+        "products": {
+          "title": "Products",
+          "properties": {
+            "filterOption": {
+              "title": "Origin",
+              "type": "string",
+              "enum": ["OrderByTopSaleDESC", "collection"],
+              "enumNames": [
+                "Show the best selling products",
+                "Display products from an existing collection"
+              ],
+              "default": "OrderByTopSaleDESC"
+            }
+          },
+          "required": ["filterOption"],
+          "dependencies": {
+            "filterOption": {
+              "oneOf": [
+                {
+                  "title": "Products",
+                  "properties": {
+                    "filterOption": {
+                      "enum": ["collection"]
+                    },
+                    "collection": {
+                      "title": "Collection ID",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["collection"]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "required": ["products"]
+    }
+  }
+}

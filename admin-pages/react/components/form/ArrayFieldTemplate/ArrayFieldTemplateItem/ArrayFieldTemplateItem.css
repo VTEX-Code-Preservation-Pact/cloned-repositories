@@ -1,0 +1,40 @@
+.action-menu-container {
+  opacity: 0;
+  transition: opacity ease-in 100ms;
+}
+
+.preview-container:hover .action-menu-container {
+  opacity: 1;
+}
+
+.preview-container {
+  height: 100%;
+}
+
+.multi-item {
+  width: calc(100% - 3rem);
+}
+
+.single-item {
+  width: calc(100% - 1rem);
+}
+
+.preview-text-container {
+  width: 100%;
+}
+
+.preview-image {
+  object-fit: cover;
+  transition: filter ease-in 100ms;
+}
+
+.preview-overlay {
+  background-color: black;
+  opacity: 0;
+  transition: opacity ease-in 100ms;
+  will-change: opacity;
+}
+
+.preview-container:hover .preview-overlay {
+  opacity: 0.15;
+}

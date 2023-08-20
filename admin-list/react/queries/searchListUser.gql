@@ -1,0 +1,9 @@
+query searchListUser($filter: [String]) {
+  searchListUser(filters: $filter) {
+    ownerEmail
+    ownerName
+    lists
+    purchase
+    status
+  }
+}

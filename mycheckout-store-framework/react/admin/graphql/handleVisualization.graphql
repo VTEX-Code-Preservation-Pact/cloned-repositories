@@ -1,0 +1,9 @@
+mutation ($visualization: [VisualizationInput]) {
+  handleVisualization(visualization: $visualization)
+    @context(provider: "kuikpay.my-checkout") {
+    visualization {
+      type
+      key
+    }
+  }
+}

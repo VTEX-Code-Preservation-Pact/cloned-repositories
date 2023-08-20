@@ -1,0 +1,14 @@
+{
+  "store/totalizers.Discounts": "Sleva",
+  "store/totalizers.Items": "Mezisoučet",
+  "store/totalizers.Shipping": "Odesílání",
+  "store/totalizers.Tax": "Daně",
+  "store/totalizers.Interest": "Úrok",
+  "store/totalizers.Change": "Úprav​y, celkem",
+  "totalizers.Discounts": "Sleva",
+  "totalizers.Items": "Mezisoučet",
+  "totalizers.Shipping": "Odesílání",
+  "totalizers.Tax": "Daně",
+  "totalizers.Interest": "Úrok",
+  "totalizers.Change": "Úprav​y, celkem"
+}

@@ -1,0 +1,23 @@
+query AppSettings($version: String) {
+  getAppSettings{
+    isLive
+    merchantId
+    merchantKey
+    sharedSecretKey
+    processor
+    region
+    orderSuffix
+    customNsu
+    useOrderIdForFingerprint
+    enableTax
+    enableTransactionPosting
+    salesChannelExclude
+    shippingProductCode
+    nexusRegions
+    merchantDictionary{
+      userInput
+      isValid
+      goodPortion
+    }
+  }
+}

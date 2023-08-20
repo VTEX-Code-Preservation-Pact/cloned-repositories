@@ -1,0 +1,106 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout-depl
+  labels:
+    app: checkout
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: checkout
+  template:
+    metadata:
+      labels:
+        app: checkout
+    spec:
+      containers:
+        - name: checkout
+          image: 666555811597.dkr.ecr.us-east-1.amazonaws.com/kuikpay-checkout-service:dev-1d9b538-1668790624347 # {"$imagepolicy": "flux-system:checkout"}
+          env:
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: checkout
+                  key: node_env
+            - name: CONTAINER
+              value: docker
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_SECRET_ACCESS_KEY
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: aws-credentials
+                  key: AWS_ACCESS_KEY_ID
+            - name: PAYMENTEZ_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-credentials
+                  key: PAYMENTEZ_API_KEY
+            - name: PAYMENTEZ_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-credentials
+                  key: PAYMENTEZ_API_TOKEN
+            - name: INFOBIP_APP_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: infobip-credentials
+                  key: INFOBIP_APP_KEY
+            - name: MERCADOPAGO_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: mercadopago-credentials
+                  key: MERCADOPAGO_ACCESS_TOKEN
+            - name: TWILIO_AUTH_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: twillio-credentials
+                  key: TWILIO_AUTH_TOKEN
+            - name: JWT_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_TOKEN
+            - name: MAILER_VTEX_APP_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: vtex-mailer-credentials
+                  key: MAILER_VTEX_APP_KEY
+            - name: MAILER_VTEX_APP_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: vtex-mailer-credentials
+                  key: MAILER_VTEX_APP_TOKEN
+          volumeMounts:
+            - name: config
+              mountPath: "/config"
+              readOnly: true
+      imagePullSecrets:
+        - name: regcred
+      volumes:
+        # You set volumes at the Pod level, then mount them into containers inside that Pod
+        - name: config
+          configMap:
+            # Provide the name of the ConfigMap you want to mount.
+            name: checkout
+            # An array of keys from the ConfigMap to create as files
+            items:
+              - key: "checkout.properties"
+                path: ".env"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-srv
+spec:
+  selector:
+    app: checkout
+  ports:
+    - name: checkout
+      protocol: TCP
+      port: 8080
+      targetPort: 8080

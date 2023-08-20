@@ -1,0 +1,24 @@
+<script async="true" type="text/javascript" src="https://s.kk-resources.com/leadtag.js" ></script>
+<script type="text/javascript">
+  (function () {
+    var merchantId = "{{settings.merchantId}}";
+    var countryCode = "{{settings.countryCode}}";
+
+    if (!merchantId) {
+      console.error('Warning: No Kelkoo Shop ID defined. Please configure it in the apps admin.');
+      return
+    }
+
+    if(!countryCode) {
+      console.error('Warning: No Kelkoo product country identifier is defined. Please configure it in the apps admin.');
+      return
+    }
+
+    window._kkstrack = {
+      merchantInfo: [{
+        country: countryCode,
+        merchantId: merchantId
+      }],
+    };
+  })()
+</script>

@@ -1,0 +1,10 @@
+{
+  "admin/editor.media.title": "Media",
+  "admin/editor.media.description": "Media block that supports images and videos",
+  "admin/editor.mediaType.title": "Media type",
+  "admin/editor.mediaType.image": "Image",
+  "admin/editor.mediaType.video": "Video",
+  "admin/editor.mediaList.title": "Media List",
+  "admin/editor.mediaList.description": "Media List block that supports a list of images and videos",
+  "admin/editor.mediaList.mobileVideo.title": "URL for mobile"
+}

@@ -1,0 +1,28 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "UpdateClientHook": {
+      "path": "/v1/vtex/clients",
+      "public": true
+    },
+    "CreateTrigger": {
+      "path": "/v1/vtex/triggers",
+      "public": true
+    },
+    "TestHook": {
+      "path": "/v1/vtex/test",
+      "public": true
+    }
+  },
+  "events": {
+    "orderState": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["payment-approved", "canceled", "ready-for-handling", "handling", "invoiced"]
+    }
+  }
+}

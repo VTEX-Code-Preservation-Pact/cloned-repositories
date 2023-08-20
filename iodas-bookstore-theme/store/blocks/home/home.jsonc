@@ -1,0 +1,105 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#home",
+      "slider-layout#benefits",
+      "shelf#lancamentos",
+      "flex-layout.row#special-cards",
+      "flex-layout.row#brands-carousel",
+      "image#special-campaign",
+      "shelf#mais-vendidos",
+      "newsletter"
+    ]
+  },
+  "newsletter": {
+    "props": {
+        "label": "Receba nossas notícias :D",
+        "placeholder": "Seu email",
+        "submit": "ENVIAR"
+    }
+  },
+
+  "flex-layout.row#special-cards": {
+    "children": [
+      "flex-layout.col#special-card-1",
+      "flex-layout.col#special-card-2",
+      "flex-layout.col#special-card-3",
+      "flex-layout.col#special-card-4"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": "3",
+      "marginBottom": "3"
+    }
+  },
+
+  "flex-layout.row#brands-carousel": {
+    "children": [
+      "slider-layout#brands-carousel"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": "3",
+      "marginBottom": "3"
+    }
+  },
+
+  "carousel#home": {
+    "props": {
+      "autoplay": false,
+      "banners": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-principal.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/banner.jpg",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ],
+      "height": 720,
+      "showArrows": true,
+      "showDots": true
+    }
+  },
+
+  "shelf#lancamentos": {
+      "blocks": ["product-summary.shelf"],
+      "props": {
+        "orderBy": "OrderByReleaseDateDESC",
+        "paginationDotsVisibility": "hidden",
+        "productList": {
+          "maxItems": 12,
+          "itemsPerPage": 4,
+          "minItemsPerPage": 1.5,
+          "scroll": "BY_PAGE",
+          "arrows": true,
+          "titleText": "Lançamentos"
+        }
+      }
+    },
+  "shelf#mais-vendidos": {
+        "blocks": ["product-summary.shelf"],
+        "props": {
+          "orderBy": "OrderByReleaseDateDESC",
+          "paginationDotsVisibility": "hidden",
+          "productList": {
+            "maxItems": 12,
+            "itemsPerPage": 4,
+            "minItemsPerPage": 1.5,
+            "scroll": "BY_PAGE",
+            "arrows": true,
+            "titleText": "Mais vendidos"
+          }
+        }
+      },
+
+  "image#special-campaign": {
+    "title": "Campanha em destaque",
+    "props": {
+        "src": "https://uploaddeimagens.com.br/images/002/473/060/original/bannerviagens.png?1572632764",
+        "maxWidth": "100%"
+    }
+  }
+
+}

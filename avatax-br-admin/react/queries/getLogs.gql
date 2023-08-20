@@ -1,0 +1,63 @@
+query getLogs($params: LogParamsInput) {
+  getLogs(params: $params) @context(provider: "vtex.avatax-br-service@1.x") {
+    pagination {
+      page
+      pageSize
+      total
+    }
+    data {
+      avalaraReturn {
+        skuId
+        lineAmount
+        numberOfItems
+        freightAmount
+        lineUnitPrice
+        useType       
+        itemDescriptor {
+          taxCode
+          hsCode
+          ex
+          cest
+          productType
+        }
+        taxDetails {
+          taxImpact {
+            impactOnFinalPrice
+          }
+          taxType
+          citation
+          subtotalTaxable
+          rate
+          tax    
+        }
+      }
+      client {
+        activitySector
+        icmsTaxPayer
+        taxRegime
+        stateTaxId
+        useType
+        cnpj
+        suframa
+        city
+        state
+      }
+      establishment { 
+        activitySector
+        icmsTaxPayer
+        taxRegime
+        stateTaxId
+        cnpj
+        suframa
+        entityType
+        city
+        state
+        dockName
+      }
+      email
+      createdIn
+      payload
+      orderId
+    }
+  }
+}

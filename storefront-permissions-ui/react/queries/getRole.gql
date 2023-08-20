@@ -1,0 +1,11 @@
+query GetRole($id: ID!) {
+  getRole(id: $id) @context(provider: "vtex.storefront-permissions") {
+    id
+    name
+    slug
+    features {
+      module
+      features
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "livestreaming-context": {
+    "component": "LivestreamingContextProvider",
+    "composition": "children",
+    "allowed": "*"
+  }
+}

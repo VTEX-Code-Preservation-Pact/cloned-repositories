@@ -1,0 +1,10 @@
+.cardsImgContainer {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.cardsImgContainer img {
+  margin-right: 10px;
+  height: 25px;
+}

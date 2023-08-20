@@ -1,0 +1,8 @@
+type OtherType {
+  message: String
+}
+
+type Query {
+  # You can place comments here
+  queryOne(argOne: String, argTwo: Int!): OtherType
+}

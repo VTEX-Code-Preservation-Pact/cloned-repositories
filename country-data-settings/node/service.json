@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "countrySettings": {
+      "path": "/country-settings/:country",
+      "settingsType": "workspace",
+      "access": "public",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["get"],
+          "principals": ["vrn:apps:*:{{account}}:{{workspace}}:app/vtex.*"]
+        }
+      ]
+    },
+    "allCountrySettings": {
+      "path": "/country-settings/",
+      "settingsType": "workspace",
+      "access": "public",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["get"],
+          "principals": ["vrn:apps:*:{{account}}:{{workspace}}:app/vtex.*"]
+        }
+      ]
+    }
+  }
+}

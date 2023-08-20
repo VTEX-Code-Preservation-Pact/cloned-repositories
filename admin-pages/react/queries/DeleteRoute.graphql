@@ -1,0 +1,3 @@
+mutation DeleteRoute($uuid: String!) {
+  deleteRoute(uuid: $uuid, dataSource: "vtex.rewriter")
+}

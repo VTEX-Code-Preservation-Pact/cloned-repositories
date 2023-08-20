@@ -1,0 +1,6 @@
+export const IO_DOCUMENTATION = 'vtex.io-documentation@0.x'
+export const CSE_CX = '017314625344810072686:u6y7vlxadyu'
+export const CSE_KEY = 'AIzaSyBgix5AaPDcyu6QbboYdAYjQPsOJtZLOdw'
+export const DOC_PROP_PLACEHOLDER_MATCH = '/%PROPS=([^%]+)/i'
+export const DOC_PROP_PLACEHOLDER = '%PROPS'
+export const LANG = 'en'

@@ -1,0 +1,58 @@
+{
+  "stack": "dotnet",
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 20,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "runtimeArgs": [],
+  "routes": {
+    "printHeaders": {
+      "path": "/affirm/print-headers",
+      "public": true
+    },
+    "printHeadersPriv": {
+      "path": "/affirm/print-headers-priv",
+      "public": false
+    },
+    "inbound": {
+      "path": "/affirm/payment-provider/payments/:paymentId/inbound/:actiontype",
+      "public": true
+    },
+    "paymentMethods": {
+      "path": "/affirm/payment-provider/payment-methods",
+      "public": true
+    },
+    "createPayment": {
+      "path": "/affirm/payment-provider/payments",
+      "public": true
+    },
+    "cancelPayment": {
+      "path": "/affirm/payment-provider/payments/:paymentId/cancellations",
+      "public": true
+    },
+    "capturePayment": {
+      "path": "/affirm/payment-provider/payments/:paymentId/settlements",
+      "public": true
+    },
+    "refundPayment": {
+      "path": "/affirm/payment-provider/payments/:paymentId/refunds",
+      "public": true
+    },
+    "getPaymentRequest": {
+      "path": "/affirm/payment-provider/payments/:paymentIdentifier/request",
+      "public": true
+    },
+    "getAppSettings": {
+      "path": "/affirm/payment-provider/payments/settings",
+      "public": false
+    }
+  },
+  "events": {
+    "onAppsLinked": {
+      "sender": "apps",
+      "keys": ["linked"]
+    }
+  }
+}

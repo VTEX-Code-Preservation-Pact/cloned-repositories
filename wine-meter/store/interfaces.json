@@ -1,0 +1,6 @@
+{
+  "wine-meter": {
+    "component": "WineMeter",
+    "composition": "children"
+  }
+}

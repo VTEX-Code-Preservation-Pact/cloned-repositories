@@ -1,0 +1,13 @@
+{
+  "definitions": {
+    "AdvertisingTrackingPreferences": {
+      "properties": {
+        "label": {
+          "title": "admin/editor.iubenda.advertisingTrackingPreferences.label",
+          "$ref": "app:vtex.native-types#/definitions/text",
+          "default": "store/iubenda.advertisingTrackingPreferences"
+        }
+      }
+    }
+  }
+}

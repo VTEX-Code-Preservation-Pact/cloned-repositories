@@ -1,0 +1,6 @@
+{
+  "telemarketing": {
+    "component": "index",
+    "render": "lazy"
+  }
+}

@@ -1,0 +1,14 @@
+## Sobre
+
+Gerencie melhor o relacionamento com seus clientes online fornecendo uma interface única para a interação com os visitantes do seu site.
+Compatível com todos os navegadores modernos, o tawk.to é um software de bate-papo ao vivo gratuito criado a partir da crescente necessidade de as empresas responderem em tempo real, com pessoas reais.
+
+Não existe uma versão 'premium', apenas uma versão repleta de recursos para todos.
+
+## Funcionalidades
+
+- Monitore as conversas em tempo real;
+- Implemente gatilhos automatizados;
+- Personalize os Widgets;
+- Opere em 27 idiomas;
+- Receba notificações por e-mail.

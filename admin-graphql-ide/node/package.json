@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "bluebird": "^3.5.4",
+    "co-body": "^6.0.0",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.26",
+    "@types/co-body": "^0.0.3",
+    "@types/node": "12.x",
+    "@types/ramda": "^0.26.8",
+    "@vtex/api": "^3.16.0",
+    "vtex.admin-graphql-ide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.admin-graphql-ide@3.6.0/public/@types/vtex.admin-graphql-ide",
+    "vtex.graphql-server": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.graphql-server@1.67.4/public/_types/react",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
+  },
+  "scripts": {
+    "check": "tsc --noEmit && tslint -c tslint.json './**/*.ts'"
+  },
+  "version": "3.7.0"
+}

@@ -1,0 +1,149 @@
+{
+  "definitions": {
+    "Media": {
+      "title": "admin/editor.media.title",
+      "description": "admin/editor.media.description",
+      "properties": {
+        "mediaType": {
+          "title": "admin/editor.mediaType.title",
+          "type": "string",
+          "enum": ["image", "video"],
+          "enumNames": [
+            "admin/editor.mediaType.image",
+            "admin/editor.mediaType.video"
+          ]
+        }
+      },
+      "required": ["mediaType"],
+      "dependencies": {
+        "mediaType": {
+          "oneOf": [
+            {
+              "properties": {
+                "mediaType": {
+                  "enum": ["image"]
+                },
+                "$ref": "app:vtex.store-image#/definitions/Image/properties"
+              },
+              "dependencies": {
+                "$ref": "app:vtex.store-image#/definitions/Image/dependencies"
+              }
+            },
+            {
+              "properties": {
+                "mediaType": {
+                  "enum": ["video"]
+                },
+                "videoUrl": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/src"
+                },
+                "name": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/name"
+                },
+                "description": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/description"
+                },
+                "width": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/width"
+                },
+                "height": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/height"
+                },
+                "autoPlay": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/autoPlay"
+                },
+                "loop": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/loop"
+                },
+                "playsInline": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/playsInline"
+                },
+                "poster": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/poster"
+                },
+                "uploadDate": {
+                  "$ref": "app:vtex.store-video#/definitions/Video/properties/uploadDate"
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "MediaList": {
+      "title": "admin/editor.mediaList.title",
+      "description": "admin/editor.mediaList.description",
+      "properties": {
+        "mediaList": {
+          "title": "admin/editor.mediaList.title",
+          "type": "array",
+          "items": {
+            "title": "admin/editor.mediaList.title",
+            "properties": {
+              "$ref": "app:vtex.store-media#/definitions/Media/properties"
+            },
+            "required": ["mediaType"],
+            "dependencies": {
+              "mediaType": {
+                "oneOf": [
+                  {
+                    "properties": {
+                      "mediaType": {
+                        "enum": ["image"]
+                      },
+                      "$ref": "app:vtex.store-image#/definitions/Images/items/properties"
+                    },
+                    "dependencies": {
+                      "$ref": "app:vtex.store-image#/definitions/Images/items/dependencies"
+                    }
+                  },
+                  {
+                    "properties": {
+                      "mediaType": {
+                        "enum": ["video"]
+                      },
+                      "video": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/src"
+                      },
+                      "mobileVideo": {
+                        "title": "admin/editor.mediaList.mobileVideo.title",
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/src"
+                      },
+                      "name": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/name"
+                      },
+                      "description": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/description"
+                      },
+                      "width": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/width"
+                      },
+                      "height": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/height"
+                      },
+                      "autoPlay": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/autoPlay"
+                      },
+                      "loop": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/loop"
+                      },
+                      "playsInline": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/playsInline"
+                      },
+                      "poster": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/poster"
+                      },
+                      "uploadDate": {
+                        "$ref": "app:vtex.store-video#/definitions/Video/properties/uploadDate"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

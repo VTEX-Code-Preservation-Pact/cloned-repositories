@@ -1,0 +1,15 @@
+.git
+src
+
+.gitignore
+./CHANGELOG.md
+README.md
+
+**/.DS_Store
+**/node_modules
+**/yarn-error.log
+
+**/*.{spec,test}.{ts,tsx}
+**/tests/**
+**/__fixtures__/**
+**/__mocks__/**

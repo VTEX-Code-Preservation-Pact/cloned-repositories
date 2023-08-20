@@ -1,0 +1,116 @@
+/* main structue */
+
+.pickupPoint {
+  background-color: #fff;
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+}
+
+:global .pkpmodal-points-list .pickupPoint {
+  box-shadow: 0 2px 2px 0 rgba(221, 221, 221, 0.5);
+}
+
+.pickupPointMain {
+  display: flex;
+  padding: 12px 10px 12px 0;
+}
+
+.pickupPointMarker {
+  flex: none;
+}
+
+:global .marker-image {
+  height: 26px;
+}
+
+.pickupPointInfo {
+  flex: 1 1 auto;
+  width: 96px;
+}
+
+/* marker */
+
+.pickupPointMarker,
+.pickupPointMarkerPostalCode {
+  vertical-align: top;
+  text-align: center;
+  width: 60px;
+}
+
+/* distance */
+
+.pickupPointDistance {
+  font-size: 10px;
+  line-height: 1;
+  margin: 4px 0 0;
+}
+
+/* name */
+
+.pickupPointName {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* address */
+
+.pickupPointAddress {
+  color: #666;
+  line-height: 1.5;
+}
+
+:global .pkpmodal-points-list :global .address-summary {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* sla info */
+
+.pickupPointSlaAvailability,
+.pickupPointSlaAvailabilityPostalCode {
+  border-top: 1px solid #f4f4f4;
+  padding: 8px 8px 8px 60px;
+}
+
+.pickupPointAvailability {
+  color: #c6840c;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.pickupPointNoneAvailable {
+  color: #666666;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.pickupPointPrice,
+.pickupPointSla {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.pickupPointAddress :global .postalCode,
+.pickupPointAddress :global .postalCode-delimiter,
+.pickupPointAddress :global .country,
+.pickupPointAddress :global .country-delimiter,
+.pickupPointAddress :global .line2-delimiter,
+.pickupPointAddress :global .line3-delimiter {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .pickupPointSlaAvailabilityPostalCode {
+    padding-left: 100px;
+  }
+
+  .pickupPointMarkerPostalCode {
+    width: 100px;
+  }
+}
+
+:global .pkpmodal-points-item:hover .pkpmodal-pickup-point {
+  border-color: #c4c4c4;
+}

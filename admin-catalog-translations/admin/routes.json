@@ -1,0 +1,26 @@
+{
+  "admin.app.catalog-translation-category": {
+    "component": "CategoryTranslation",
+    "path": "/admin/app/catalog-translation/category"
+  },
+  "admin.app.catalog-translation-product": {
+    "component": "ProductTranslation",
+    "path": "/admin/app/catalog-translation/product"
+  },
+  "admin.app.catalog-translation-sku": {
+    "component": "SKUTranslation",
+    "path": "/admin/app/catalog-translation/sku"
+  },
+  "admin.app.catalog-translation-brand": {
+    "component": "BrandTranslation",
+    "path": "/admin/app/catalog-translation/brand"
+  },
+  "admin.app.catalog-translation-specifications": {
+    "component": "SpecificationsTranslation",
+    "path": "/admin/app/catalog-translation/specifications"
+  },
+  "admin.app.catalog-translation-collections": {
+    "component": "CollectionsTranslation",
+    "path": "/admin/app/catalog-translation/collections"
+  }
+}

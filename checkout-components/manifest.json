@@ -1,0 +1,13 @@
+{
+  "vendor": "vtex",
+  "name": "checkout-components",
+  "version": "0.5.1",
+  "builders": {
+    "docs": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

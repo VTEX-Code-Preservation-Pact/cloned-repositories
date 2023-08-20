@@ -1,0 +1,25 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "workers": 4,
+  "routes": {
+    "notify": {
+      "path": "/notify",
+      "public": false
+    },
+    "notifySelf": {
+      "path": "/_v/self/notify",
+      "public": false,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": ["post"],
+          "principals": ["vrn:apps:*:*:*:app/vtex.broadcaster@*"]
+        }
+      ]
+    }
+  }
+}

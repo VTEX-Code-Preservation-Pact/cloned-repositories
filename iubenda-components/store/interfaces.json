@@ -1,0 +1,8 @@
+{
+  "advertising-tracking-preferences": {
+    "component": "AdvertisingTrackingPreferences",
+    "content": {
+      "$ref": "app:vtex.iubenda-components#/definitions/AdvertisingTrackingPreferences"
+    }
+  }
+}

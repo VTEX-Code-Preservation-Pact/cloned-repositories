@@ -1,0 +1,28 @@
+query SEARCH_SELLERS($param: SearchDashboardParams) {
+  searchSellersDashboard(searchDashboardParams: $param) {
+    dateStart
+    dateEnd
+    sellers {
+      id
+      name
+      account
+      statistics {
+        ordersCount
+        totalComission
+        totalOrderValue
+        outstandingBalance
+        dateInvoiced
+      }
+    }
+    statistics {
+      ordersCount
+      totalComission
+      totalOrderValue
+    }
+    pagination {
+      currentPage
+      pageSize
+      totalPage
+    }
+  }
+}

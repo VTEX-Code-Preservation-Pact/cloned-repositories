@@ -1,0 +1,270 @@
+/* Skeleton animation */
+@keyframes shimmer-anim {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(50%, 0, 0);
+  }
+}
+
+/* Limits the page width */
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 1500px) {
+  .wrapper {
+    max-width: 1400px;
+  }
+}
+
+/* Makes the header fixed */
+.navPusher {
+  left: 0;
+  min-height: 100%;
+  padding-top: 56px;
+  position: relative;
+  z-index: 99;
+}
+
+@media screen and (min-width: 1024px) {
+  .navPusher {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 56px);
+    padding-top: 56px;
+  }
+
+  .navPusher,
+  .navPusher > :first-child {
+    flex-grow: 1;
+  }
+}
+
+/* Sidebar */
+@media only screen and (min-width: 1024px) {
+  .docsNavContainer {
+    flex: 0 0 240px;
+    height: calc(100vh - 50px);
+    position: -webkit-sticky;
+    position: sticky;
+    overflow-y: auto;
+    top: 50px;
+  }
+}
+
+.t-body {
+  line-height: 24px;
+}
+
+/* Main content */
+.mainContainer {
+  flex: 1 1 0%;
+  max-width: 100%;
+}
+
+.mainContainer h1:first-of-type {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* On Page Nav */
+@media only screen and (min-width: 1024px) {
+  .onPageNav {
+    align-self: flex-start;
+    display: block;
+    flex: 0 0 240px;
+    max-height: calc(100vh - 90px);
+    overflow-y: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+  }
+}
+
+.shimmer {
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 50% 100%;
+  animation: shimmer-anim 0.7s linear infinite;
+}
+
+/* end Skeleton animation */
+
+.alert-info {
+  background-color: #edf4fa;
+  border-color: rgb(54, 141, 247);
+  border-radius: 4px;
+  border-width: 0px 0px 0px 4px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  margin-bottom: 1rem;
+  color: #0e4180;
+  line-height: 1.5rem;
+}
+
+.alert-info a {
+  color: #f71963;
+}
+
+.alert-info code {
+  font-size: 0.9rem;
+  background-color: #b6d7ff;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.alert-warning {
+  background-color: #fff6e0;
+  border-color: rgb(255, 177, 0);
+  border-radius: 4px;
+  border-width: 0px 0px 0px 4px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  margin-bottom: 1rem;
+  color: #804a0e;
+  line-height: 1.5rem;
+}
+
+.alert-warning code {
+  font-size: 0.9rem;
+  background-color: #ffdd91;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+
+.alert-warning a {
+  color: #f71963;
+}
+
+.alert-danger {
+  background-color: #ffe6e6;
+  border-color: rgb(255, 76, 76);
+  border-radius: 4px;
+  border-width: 0px 0px 0px 4px;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: 12px 16px;
+  margin-bottom: 1rem;
+}
+
+.alert-danger a {
+  color: #f71963;
+}
+
+.transparent-text {
+  color: transparent;
+}
+
+.searchResult {
+  padding-bottom: 35px;
+  line-height: 150%;
+}
+
+.searchResultBorder {
+  border-bottom: 1px solid #cacbcc;
+}
+
+.searchTitle {
+  line-height: 150%;
+}
+
+.searchSnippet {
+  color: #797979;
+  letter-spacing: 0.015em;
+}
+
+/* Base16 Atelier Sulphurpool Light - Theme */
+/* by Bram de Haan (http://atelierbram.github.io/syntax-highlighting/atelier-schemes/sulphurpool) */
+/* Original Base16 color scheme by Chris Kempson (https://github.com/chriskempson/base16) */
+
+/* Atelier-Sulphurpool Comment */
+.hljs-comment,
+.hljs-quote {
+  color: #6b7394;
+}
+
+/* Atelier-Sulphurpool Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-attribute,
+.hljs-tag,
+.hljs-name,
+.hljs-regexp,
+.hljs-link,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #c94922;
+}
+
+/* Atelier-Sulphurpool Orange */
+.hljs-number,
+.hljs-meta,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params {
+  color: #c76b29;
+}
+
+/* Atelier-Sulphurpool Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet {
+  color: #ac9739;
+}
+
+/* Atelier-Sulphurpool Blue */
+.hljs-title,
+.hljs-section {
+  color: #3d8fd1;
+}
+
+/* Atelier-Sulphurpool Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #6679cc;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #f5f7ff;
+  color: #5e6687;
+  padding: 1em;
+  font-size: 0.9rem;
+  border-radius: 4px;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}

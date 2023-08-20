@@ -1,0 +1,22 @@
+{
+  "memory": 128,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 5,
+  "workers": 1,
+  "events": {
+    "broadcasterNotification": {
+      "keys": ["broadcaster.notification"]
+    },
+    "indexRoutes": {
+      "keys": ["broadcaster.indexRoutes"]
+    }
+  },
+  "routes": {
+    "indexRoutes": {
+      "path": "/index-routes",
+      "public": false
+    }
+  }
+}

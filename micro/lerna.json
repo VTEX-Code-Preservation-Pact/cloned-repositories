@@ -1,0 +1,13 @@
+{
+  "version": "1.1.1-alpha.17",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "message": "Release: %v"
+    }
+  },
+  "packages": [
+    "packages/*"
+  ]
+}

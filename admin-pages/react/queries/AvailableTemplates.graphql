@@ -1,0 +1,5 @@
+query AvailableTemplates($interfaceId: String) {
+  availableTemplates(interfaceId: $interfaceId) {
+    id
+  }
+}

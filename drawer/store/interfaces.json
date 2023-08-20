@@ -1,0 +1,18 @@
+{
+  "drawer": {
+    "component": "Drawer",
+    "composition": "children",
+    "allowed": ["drawer-trigger", "drawer-header"]
+  },
+  "drawer-trigger": {
+    "component": "DrawerTrigger",
+    "composition": "children"
+  },
+  "drawer-header": {
+    "component": "DrawerHeader",
+    "composition": "children"
+  },
+  "drawer-close-button": {
+    "component": "DrawerCloseButton"
+  }
+}

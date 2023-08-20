@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "bubbles": {
+      "path": "/bubbles",
+      "auth": true
+    }
+  },
+  "extensions": {
+    "bubbles": {
+      "component": "Bubbles",
+      "ssr": false
+    }
+  }
+}

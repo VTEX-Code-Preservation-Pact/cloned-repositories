@@ -1,0 +1,23 @@
+type Query {
+
+  """
+  Get orderConfiguration from our backend
+  """
+  orderConfiguration: OrderConfig @cacheControl(scope: PRIVATE, maxAge: SHORT)
+}
+
+input FieldInput {
+  Key: String!
+  Value: String!
+}
+
+input OrderConfigInput {
+  fields: [FieldInput]
+}
+
+type Mutation {
+  """
+  Save an order configuration
+  """
+  saveOrderConfiguration(orderConfig: OrderConfigInput): Boolean @cacheControl(scope: PRIVATE, maxAge: SHORT)
+}

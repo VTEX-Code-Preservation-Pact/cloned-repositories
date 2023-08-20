@@ -1,0 +1,12 @@
+{
+  "stack": "nodejs",
+  "memory": 512,
+  "minReplicas": 3,
+  "workers": 1,
+  "routes": {
+    "categoriesMap": {
+      "path": "/_v/relevanc/categories-map",
+      "public": false
+    }
+  }
+}

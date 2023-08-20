@@ -1,0 +1,1 @@
+This application allows Google to collect and post comments from customers who have made a purchase on your website.

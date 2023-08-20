@@ -1,0 +1,10 @@
+type Pricelist {
+    tradePolicyId: String,
+    value: Float,
+    listPrice: Float,
+    minQuantity: Int
+}
+
+type Query{
+    getFixedPrice(skuId: String!, tableName: String!): [Pricelist]
+}

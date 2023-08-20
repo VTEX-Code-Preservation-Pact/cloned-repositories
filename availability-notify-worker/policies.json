@@ -1,0 +1,15 @@
+[
+  {
+    "name": "forward-notification",
+    "description": "Allows access to send notification to the marketplace from a seller",
+    "statements": [
+      {
+        "effect": "allow",
+        "actions": ["post"],
+        "resources": [
+          "vrn:vtex.availability-notify-worker:{{*}}:{{*}}:{{*}}:/forward-notification"
+        ]
+      }
+    ]
+  }
+]

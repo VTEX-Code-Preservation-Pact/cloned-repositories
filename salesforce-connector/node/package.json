@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "axios": "~0.24.0",
+    "co-body": "^6.0.0",
+    "dotenv": "^16.0.3",
+    "jsforce": "^1.11.1",
+    "nforce": "^1.12.2",
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "@types/co-body": "^0.0.3",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.0.0",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@vtex/api": "6.45.15",
+    "@vtex/test-tools": "^1.0.0",
+    "@vtex/tsconfig": "^0.5.6",
+    "felipedev.salesforce-connector": "https://salesforce--felipedev.myvtex.com/_v/private/typings/linked/v1/felipedev.salesforce-connector@0.0.1+build1686660096/public/_types/react",
+    "typescript": "3.9.7"
+  },
+  "resolutions": {
+    "@types/testing-library__dom": "6.12.1",
+    "@types/express": "4.16.0",
+    "@types/express-serve-static-core": "4.16.0"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit --pretty"
+  },
+  "version": "0.2.21"
+}

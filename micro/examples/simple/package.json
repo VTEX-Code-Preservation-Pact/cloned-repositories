@@ -1,0 +1,50 @@
+{
+  "name": "simple",
+  "version": "1.1.1-alpha.17",
+  "license": "MIT",
+  "micro": {
+    "plugins": [
+      "@vtex/micro-core",
+      "@vtex/micro-css",
+      "@vtex/micro-react",
+      "@vtex/micro-assets",
+      "@vtex/micro-react-intl",
+      "@vtex/micro-react-router"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "build": "yarn run micro build",
+    "watch": "yarn run micro link",
+    "clean": "rm -r dist",
+    "prepublish": "yarn build"
+  },
+  "main": "./dist/build/cjs/index.js",
+  "types": "./.micro/onBuild/cjs/index.js",
+  "module": "./dist/build/es6/components/index.js",
+  "browser": "./components/index.ts",
+  "dependencies": {
+    "@loadable/component": "^5.12.0",
+    "@vtex/micro-assets": "^1.1.1-alpha.17",
+    "@vtex/micro-cli": "^1.1.1-alpha.17",
+    "@vtex/micro-core": "^1.1.1-alpha.16",
+    "@vtex/micro-css": "^1.1.1-alpha.17",
+    "@vtex/micro-react": "^1.1.1-alpha.17",
+    "@vtex/micro-react-intl": "^1.1.1-alpha.17",
+    "@vtex/micro-react-router": "^1.1.1-alpha.17",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-prerendered-component": "^1.2.4",
+    "vtex-tachyons": "^3.2.0",
+    "webpack-blocks": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/loadable__component": "^5.10.0",
+    "@types/node": "^13.13.4",
+    "@types/react": "^16.9.34",
+    "@types/react-dom": "^16.9.7",
+    "@types/uikit": "^3.3.0",
+    "@types/webpack-blocks": "^2.0.0",
+    "typescript": "^3.8.3"
+  }
+}

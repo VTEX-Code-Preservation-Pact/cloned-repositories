@@ -1,0 +1,12 @@
+type Query {
+  getAllSchedulers: [SchedulerInformation]
+  getSchedulerById(id: ID!): SchedulerInformation
+}
+
+type Mutation {
+  createOrUpdateScheduler(
+    configuration: SchedulerConfigurationInput
+  ): SchedulerInformation
+
+  deleteScheduler(id: ID!): Boolean
+}

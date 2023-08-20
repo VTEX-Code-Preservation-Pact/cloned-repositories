@@ -1,0 +1,89 @@
+{
+  "name": "affirm-api",
+  "vendor": "vtex",
+  "version": "1.3.5",
+  "title": "Affirm",
+  "description": "An implementation of Affirm",
+  "categories": [],
+  "settingsSchema": {},
+  "registries": [
+    "smartcheckout"
+  ],
+  "builders": {
+    "dotnet": "2.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "bnb.data.bl.uk"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "nuget.org"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "sandbox.affirm.com",
+        "path": "/api/v2/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.affirm.com",
+        "path": "/api/v2/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "sandbox.katapult.com",
+        "path": "/api/v3/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.katapult.com",
+        "path": "/api/v3/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "katapult.com",
+        "path": "/api/v3/*"
+      }
+    },
+    {
+      "name": "vbase-read-write"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

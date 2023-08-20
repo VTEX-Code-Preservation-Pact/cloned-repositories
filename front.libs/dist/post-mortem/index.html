@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulário de Post Mortem</title>
+	<link rel="stylesheet" href="//io.vtex.com.br/front-libs/bootstrap/3.0.3/css/bootstrap.min.css" />
+	<style type="text/css">
+	form {
+		max-width: 640px;
+		padding: 15px;
+		margin: 0 auto;
+	}
+	fieldset.well {
+		margin-top: 20px;
+	}
+	fieldset.well legend {
+		border-bottom: 0;
+		margin-bottom: 5px;
+	}
+	fieldset {
+		margin-bottom: 30px;
+	}
+	.form-horizontal .control-label {font-size: 16px}
+	h1 {font-weight: 100}
+	</style>
+</head>
+<body>
+
+<div class="container">
+	<form class="form-horizontal"
+	method="post" name="0.1_FormWebToVtex" action="http://vtexcrm.ds.vtexcrm.com.br/WebToVtex/Execute?idWebToVtex=177&accountId=b5d1c565-a111-4a38-aba5-7f03c6b0e7e6&accountName=vtexcrm" target="_blank">
+	<h1>Formulário de Post Mortem</h1>
+			<div class="alert alert-info"><strong><span class="glyphicon glyphicon-info-sign"></span> É necessário preencher todos os campos</strong></div>
+
+			<fieldset>
+				<legend>1. Projeto</legend>
+					<select class="form-control input-lg" name="PM_Projeto" id="PM_Projeto">
+						<option value="">-- Escolha --</option>
+						<option value="Checkout">Checkout</option>
+						<option value="Checkout+UI">Checkout UI</option>
+						<option value="Concierge">Concierge</option>
+						<option value="Conversation+Tracker">Conversation Tracker</option>
+						<option value="CRM">CRM</option>
+						<option value="DWT">DWT</option>
+						<option value="Fullfilment">Fullfilment</option>
+						<option value="GiftCard">GiftCard</option>
+						<option value="Janus">Janus</option>
+						<option value="KPI+Tracker">KPI Tracker</option>
+						<option value="License+Manager">License Manager</option>
+						<option value="Logger">Logger</option>
+						<option value="Logistics">Logistics</option>
+						<option value="Mail+Sender">Mail Sender</option>
+						<option value="OMS">OMS</option>
+						<option value="PCI+Connector">PCI Connector</option>
+						<option value="Portal">Portal</option>
+						<option value="Profile+System">Profile System</option>
+						<option value="Request+Capture">Request Capture</option>
+						<option value="RnB">RnB</option>
+						<option value="Shipping+Notification">Shipping Notification</option>
+						<option value="Template+Render">Template Render</option>
+						<option value="VTEX+Channel">VTEX Channel</option>
+						<option value="VTEX+ID">VTEX ID</option>
+						<option value="Workflow">Workflow</option>
+						<option value="Infrastructure">Infrastructure</option>
+						<option value="App+Visa+Checkout">App Visa Checkout</option>
+					</select>
+			</fieldset>
+
+			<fieldset>
+			<legend>2. Esse incidente afetou a maioria dos clientes?</legend>
+				<label class="radio">
+					<input type="radio" value="true" name="PM_AfetaMaioriaClientes" id="PM_AfetaMaioriaClientes"> Sim
+				</label>
+				<label class="radio">
+					<input type="radio" value="false" name="PM_AfetaMaioriaClientes" id="PM_AfetaMaioriaClientes"> Não
+				</label>
+			</fieldset>
+
+			<fieldset class="well well-sm">
+			<legend>3. Data e hora</legend>
+
+			<div class="col-md-6">
+				<label class="col-md-2 control-label" for="PM_HoraInicio">Início</label>
+				<div class="col-md-10">
+						<input type="text" name="PM_HoraInicio" id="PM_HoraInicio" class="form-control input-lg">
+						<span class="help-block">Ex.: 2014-01-01T10:00:00</span>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<label class="col-md-2 control-label" for="PM_HoraFinal">Fim</label>
+				<div class="col-md-10">
+						<input type="text" name="PM_HoraFinal" id="PM_HoraFinal" class="form-control input-lg">
+						<span class="help-block">Ex.: 2014-01-01T10:00:00</span>
+				</div>
+			</div>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>4. Detalhes</legend>
+
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="textarea">Sintoma</label>
+					<div class="col-sm-10">
+						<textarea id="textarea" rows="3" name="PM_Sintoma" class="form-control"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="textarea2">Causa</label>
+					<div class="col-sm-10">
+						<textarea id="textarea2" rows="3" name="PM_Causa" class="form-control"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-2 control-label" for="textarea3">Ação</label>
+					<div class="col-sm-10">
+						<textarea id="textarea3" rows="3" name="PM_Acao" class="form-control"></textarea>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-10 col-sm-offset-1 control-label" for="textarea4" style="text-align: left;">Informação para o status (Cliente)</label>
+					<div class="col-sm-offset-1 col-sm-10">
+						<textarea id="textarea4" rows="3" name="PM_InformacaoStatus" class="form-control"></textarea>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="clearfix">
+				<button type="submit" class="btn btn-primary btn-lg pull-right">Enviar Post Mortem</button>
+			</div>	
+			<hr>
+	</form>
+
+</div>
+
+</body>
+</html>

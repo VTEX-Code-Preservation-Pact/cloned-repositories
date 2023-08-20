@@ -1,0 +1,12 @@
+ <svg id="mobile-24px" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <g id="Grupo_4782" data-name="Grupo 4782">
+      <path id="Vector" d="M0,0H24V24H0Z" fill="none" />
+      <path
+        id="Vector-2"
+        data-name="Vector"
+        d="M10.5,0h-8A2.5,2.5,0,0,0,0,2.5v17A2.5,2.5,0,0,0,2.5,22h8A2.5,2.5,0,0,0,13,19.5V2.5A2.5,2.5,0,0,0,10.5,0Zm-4,21A1.5,1.5,0,1,1,8,19.5,1.5,1.5,0,0,1,6.5,21ZM11,17H2V3h9Z"
+        transform="translate(5 1)"
+        fill="#134cd8"
+      />   
+    </g >
+  </svg>

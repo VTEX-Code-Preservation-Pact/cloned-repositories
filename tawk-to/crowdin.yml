@@ -1,0 +1,5 @@
+files:
+  - source: /public/metadata/messages/en-US.json
+    translation: /public/metadata/messages/%locale%.json
+  - source: /public/metadata/licenses/en-US.md
+    translation: /public/metadata/licenses/%locale%.md

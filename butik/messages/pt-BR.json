@@ -1,0 +1,16 @@
+{
+  "product-description.title": "Descrição do Produto",
+  "product-description.property": "Propriedade",
+  "product-description.specification": "Especificação",
+  "collapse.showMore": "Ver mais",
+  "collapse.showLess": "Ver menos",
+  "pricing.installment-display": "Ou {installments} {times} de {installmentPrice}",
+  "pricing.from": "De",
+  "pricing.to": "Por",
+  "pricing.savings": "Economize {savings}",
+  "pricing.interest-free": "sem juros",
+  "pricing.startingAtLabel": "A partir de",
+  "pricing.unavailable": "Indisponível",
+  "technicalspecifications.title": "Especificações Técnicas",
+  "sku-selector.select-warning": "Selecione"
+}

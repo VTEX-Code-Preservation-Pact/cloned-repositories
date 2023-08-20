@@ -1,0 +1,71 @@
+{
+  "blog-all-posts": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-latest-posts-preview": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-category-preview": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-category-list": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-post-container": {
+    "component": "Noop",
+    "extensible": "public",
+    "composition": "children"
+  },
+  "blog-post-details": {
+    "component": "Noop",
+    "extensible": "public",
+    "composition": "children",
+    "allowed": [
+      "blog-related-products"
+    ]
+  },
+  "blog-post-navigation": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-page-details": {
+    "component": "Noop",
+    "extensible": "public",
+    "composition": "children",
+    "allowed": [
+      "blog-related-products"
+    ]
+  },
+  "blog-search": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "search-blog-articles-preview": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "search-blog-articles-list": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-search-list": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-related-products": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-related-posts": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "blog-breadcrumb": {
+    "component": "Noop",
+    "extensible": "public"
+  }
+}

@@ -1,0 +1,19 @@
+.viewAll {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e31c58;
+  position: relative;
+  padding-right: 22px;
+  display: inline-block;
+}
+
+.viewAll svg {
+  cursor: pointer;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  top: 3px;
+}

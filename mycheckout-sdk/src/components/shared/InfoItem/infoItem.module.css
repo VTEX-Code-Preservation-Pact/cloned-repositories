@@ -1,0 +1,34 @@
+.infoItemContainer {
+  align-items: center;
+  display: flex;
+}
+
+.infoItemContainer .infoItemIcon {
+  align-items: center;
+  display: flex;
+  margin-right: 6px;
+}
+
+.infoItemContainer .infoItemContent {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-weight: var(--text-light);
+}
+
+.infoItemContent [class*='couponContainer'] {
+  padding: 0 0.5% 2.5% 0.5%;
+}
+
+.infoItemContent [class*='inputWithIcon'] {
+  padding-left: 26px;
+}
+
+.infoItemContent [class*='inputIconContainer']:first-child {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}

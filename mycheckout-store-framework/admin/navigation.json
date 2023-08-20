@@ -1,0 +1,23 @@
+{
+  "section": "storeSetup",
+  "titleId": "admin-example.navigation.label",
+  "searchKeyWordsHelpers": "admin-example.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-example.navigation.settings",
+      "path": "/admin/kuikpay/settings"
+    },
+    {
+      "labelId": "checkoutless.statistics",
+      "path": "/admin/kuikpay/statistics"
+    },
+    {
+      "labelId": "checkoutless.paymentsList",
+      "path": "/admin/kuikpay/payment-list"
+    },
+    {
+      "labelId": "checkoutless.styleSettings",
+      "path": "/admin/kuikpay/style-settings"
+    }
+  ]
+}

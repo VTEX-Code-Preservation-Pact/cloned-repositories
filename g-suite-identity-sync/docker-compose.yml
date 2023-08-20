@@ -1,0 +1,40 @@
+version: "3"
+
+services:
+  identity:
+    image: hlavki/g-suite-identity-sync
+    ports:
+      - 8181:8181
+      - 8101:8101
+    environment:
+      - SLAPD_BIND_DN=cn=admin,dc=example,dc=org
+      - SLAPD_BASE_DN=dc=example,dc=org
+      - SLAPD_PASSWORD=changeme
+      - GSUITE_DOMAIN=example.org
+      - GSUITE_SERVICE_ACCOUNT_EMAIL=gsuite-services-client@******.gserviceaccount.com
+      - GSUITE_SERVICE_ACCOUNT_SUBJECT=some-admin@example.org
+      - GSUITE_CLIENT_ID=*******.apps.googleusercontent.com
+      - GSUITE_CLIENT_SECRET=******
+    depends_on:
+      - ldap
+    volumes:
+      - identity-config:/opt/karaf/etc/identity
+
+  ldap:
+    image: osixia/openldap
+    ports:
+      - "389:389"
+    environment:
+      LDAP_LOG_LEVEL: "256"
+      LDAP_ORGANISATION: "Company ltd."
+      LDAP_DOMAIN: "example.com"
+      LDAP_ADMIN_PASSWORD: "changeme"
+      LDAP_CONFIG_PASSWORD: "changeme"
+    volumes:
+      - ldap-data:/var/lib/ldap
+      - ldap-config:/etc/ldap/slapd.d
+
+volumes:
+  identity-config:
+  ldap-config:
+  ldap-data:

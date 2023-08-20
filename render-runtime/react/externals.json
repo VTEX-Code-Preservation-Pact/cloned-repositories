@@ -1,0 +1,182 @@
+{
+  "commons": {
+    "dev": [
+      {
+        "clientOnly": true,
+        "path": "npm:vtex-render-session@1.9.2/dist/index.js"
+      },
+      {
+        "path": "npm:bluebird@3.5.1/js/browser/bluebird.js",
+        "serverOnly": true
+      },
+      {
+        "path": "npm:regenerator-runtime@0.11.1/runtime.js"
+      },
+      {
+        "global": "PropTypes",
+        "import": "prop-types",
+        "path": "npm:prop-types@15.7.2/prop-types.js"
+      },
+      {
+        "global": "React",
+        "import": "react",
+        "path": "npm:react@16.9.0/umd/react.development.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react@0.0.0-experimental-94c0244ba/umd/react.development.js"
+        }
+      },
+      {
+        "global": "ReactDOM",
+        "import": "react-dom",
+        "path": "npm:react-dom@16.9.0/umd/react-dom.development.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.development.js"
+        }
+      },
+      {
+        "global": "ReactDOMServer",
+        "import": "react-dom/server",
+        "path": "npm:react-dom@16.9.0/umd/react-dom-server.browser.development.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react-dom@0.0.0-experimental-94c0244ba/umd/react-dom-server.browser.development.js"
+        }
+      },
+      {
+        "global": "ReactIntl",
+        "import": "react-intl",
+        "path": "npm:react-intl@3.9.1/dist/react-intl.js"
+      },
+      {
+        "global": "History",
+        "import": "history",
+        "path": "npm:history@4.7.2/umd/history.js"
+      },
+      {
+        "global": "R",
+        "import": "ramda",
+        "path": "npm:ramda@0.26.1/dist/ramda.js"
+      },
+      {
+        "path": "npm:intl@1.2.5/dist/Intl.js",
+        "serverOnly": true
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:lazysizes@5.3.2/plugins/unveilhooks/ls.unveilhooks.min.js"
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:lazysizes@5.3.2/lazysizes.min.js"
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:fg-loadcss@2.1.0/dist/cssrelpreload.min.js"
+      },
+      {
+        "cssRelPreload": true,
+        "path": "npm:animate.css@3.7.0/animate.css"
+      },
+      {
+        "path": "npm:vtex-tachyons@3.1.0/tachyons.css"
+      },
+      {
+        "path": "runtime:AMP",
+        "serverOnly": true
+      },
+      {
+        "path": "runtime:intl-polyfill",
+        "serverOnly": true
+      }
+    ],
+    "prod": [
+      {
+        "clientOnly": true,
+        "path": "npm:vtex-render-session@1.9.2/dist/index.min.js"
+      },
+      {
+        "path": "npm:bluebird@3.5.1/js/browser/bluebird.min.js",
+        "serverOnly": true
+      },
+      {
+        "path": "npm:regenerator-runtime@0.11.1/runtime.js"
+      },
+      {
+        "global": "PropTypes",
+        "import": "prop-types",
+        "path": "npm:prop-types@15.7.2/prop-types.min.js"
+      },
+      {
+        "global": "React",
+        "import": "react",
+        "path": "npm:react@16.9.0/umd/react.production.min.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react@0.0.0-experimental-94c0244ba/umd/react.production.min.js"
+        }
+      },
+      {
+        "global": "ReactDOM",
+        "import": "react-dom",
+        "path": "npm:react-dom@16.9.0/umd/react-dom.production.min.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react-dom@0.0.0-experimental-94c0244ba/umd/react-dom.production.min.js"
+        }
+      },
+      {
+        "global": "ReactDOMServer",
+        "import": "react-dom/server",
+        "path": "npm:react-dom@16.9.0/umd/react-dom-server.browser.production.min.js",
+        "alternative": {
+          "enableConcurrentMode": "npm:react-dom@0.0.0-experimental-94c0244ba/umd/react-dom-server.browser.production.min.js"
+        }
+      },
+      {
+        "global": "ReactIntl",
+        "import": "react-intl",
+        "path": "npm:react-intl@3.9.1/dist/react-intl.min.js"
+      },
+      {
+        "global": "History",
+        "import": "history",
+        "path": "npm:history@4.7.2/umd/history.min.js"
+      },
+      {
+        "global": "R",
+        "import": "ramda",
+        "path": "npm:ramda@0.26.1/dist/ramda.min.js"
+      },
+      {
+        "path": "npm:intl@1.2.5/dist/Intl.min.js",
+        "serverOnly": true
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:lazysizes@5.3.2/plugins/unveilhooks/ls.unveilhooks.min.js"
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:lazysizes@5.3.2/lazysizes.min.js"
+      },
+      {
+        "clientOnly": true,
+        "path": "npm:fg-loadcss@2.1.0/dist/cssrelpreload.min.js"
+      },
+      {
+        "cssRelPreload": true,
+        "path": "npm:animate.css@3.7.0/animate.min.css"
+      },
+      {
+        "path": "npm:vtex-tachyons@3.1.0/tachyons.min.css"
+      },
+      {
+        "path": "runtime:AMP",
+        "serverOnly": true
+      },
+      {
+        "path": "runtime:intl-polyfill",
+        "serverOnly": true
+      }
+    ]
+  },
+  "vtex": {},
+  "gocommerce": {}
+}

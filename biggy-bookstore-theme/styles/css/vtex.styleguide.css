@@ -1,0 +1,8 @@
+.hideDecorators:focus {
+    outline: none;
+}
+
+.hideDecorators {
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+}

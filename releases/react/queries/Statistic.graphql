@@ -1,0 +1,8 @@
+query Statistic($appName: String = "", $env: String = "") {
+  statistic(appName: $appName, env: $env) {
+    lastHour
+    last3Hours
+    last7Days
+    last30Days
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "name": "@vtex/react-csv-parse",
+  "version": "3.0.2",
+  "description": "react-csv-parse React component",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
+  "scripts": {
+    "build": "nwb build-react-component",
+    "clean": "nwb clean-module && nwb clean-demo",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com:vtex/react-csv-parse.git"
+  },
+  "dependencies": {
+    "papaparse": "^4.5.0",
+    "ramda": "^0.25.0"
+  },
+  "peerDependencies": {
+    "react": "15.x"
+  },
+  "devDependencies": {
+    "babel-plugin-ramda": "^1.5.0",
+    "expect": "^22.4.3",
+    "nwb": "^0.21.5",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "react-component"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "header-row#menu": {
+    "props": {
+      "inverted": true
+    },
+    "children": [
+      "header-spacer",
+      "vtex.menu@2.x:menu#header",
+      "header-spacer"
+    ]
+  },
+  "vtex.menu@2.x:menu#header": {
+    "children": [
+      "menu-item#header-menu1",
+      "menu-item#header-menu2",
+      "menu-item#header-menu3",
+      "menu-item#header-menu4",
+      "menu-item#header-menu5",
+      "menu-item#header-menu6"
+    ]
+  },
+  "menu-item#header-menu1": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "HOMBRE"
+      }
+    }
+  },
+  "menu-item#header-menu2": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "MUJER"
+      }
+    }
+  },
+  "menu-item#header-menu3": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "NIÑOS"
+      }
+    }
+  },
+  "menu-item#header-menu4": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "EQUIPAMENTO"
+      }
+    }
+  },
+  "menu-item#header-menu5": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "ACCESORIOS"
+      }
+    }
+  },
+  "menu-item#header-menu6": {
+    "props": {
+      "type": "custom",
+      "itemProps": {
+	"href": "#",
+	"text": "SALE"
+      }
+    }
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "vendor": "vtex",
+  "name": "admin-example",
+  "version": "0.0.1",
+  "title": "VTEX Anaf",
+  "description": "VTEX Anaf",
+  "dependencies": {
+    "vtex.store-graphql": "2.x",
+    "vtex.styleguide": "9.x",
+    "vtex.format-currency": "0.x",
+    "vtex.store": "2.x",
+    "vtex.my-account": "1.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.store-resources": "0.x",
+    "vtex.store-session": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.react-portal": "0.x",
+    "vtex.store-icons": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.css-handles": "0.x"
+  },
+  "builders": {
+    "docs": "0.x",
+    "node": "6.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "webservicesp.anaf.ro",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.listafirme.ro",
+        "path": "*"
+      }
+    }
+  ],
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "settingsSchema": {
+    "title": "VTEX ANAF",
+    "type": "object",
+    "properties": {
+      "listaFirme": {
+        "title": "Key listafirme.ro",
+        "type": "string",
+        "description": "Your key for listafirme.ro"
+      },
+      "allowEdit": {
+        "title": "Allows the user to edit company data in checkout.",
+        "type": "boolean",
+        "default": false
+      },
+      "allowContinue": {
+        "title": "Allows the user to complete the order if the company's CUI is invalid",
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

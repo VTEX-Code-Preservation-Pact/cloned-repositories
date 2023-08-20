@@ -1,0 +1,13 @@
+.headerRow--logo-bar .headerRowContainer {
+  min-height: 120px;
+}
+
+.headerRow--logo-bar :global(.vtex-button):hover,
+.headerRow--logo-bar :global(.vtex-button):focus,
+.headerRow--logo-bar :global(.vtex-button):active {
+  background: #273b58;
+}
+
+.headerRowBackground--promo-bar {
+  background-color: #FFF;
+}

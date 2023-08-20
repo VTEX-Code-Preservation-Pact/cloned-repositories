@@ -1,0 +1,8 @@
+type Query {
+  sortSellers(
+    skuId: ID!
+    salesChannel: Int
+    country: String
+    postalCode: String
+  ): SortedSellers @cacheControl(scope: SEGMENT, maxAge: SHORT) @withSegment
+}

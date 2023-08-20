@@ -1,0 +1,14 @@
+{
+  "admin.app.assembly-options-register": {
+    "component": "AssemblyRegister",
+    "path": "/admin/app/assembly-options/register"
+  },
+  "admin.app.assembly-options-edit": {
+    "component": "AssemblyEdit",
+    "path": "/admin/app/assembly-options/edit/:assemblyOptionId"
+  },
+  "admin.app.assembly-options-list": {
+    "component": "AssemblyList",
+    "path": "/admin/app/assembly-options"
+  }
+}

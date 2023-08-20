@@ -1,0 +1,108 @@
+type CategoryData {
+  _id: String
+  totalPrice: Float
+  totalQuantity: Int
+  category: String
+}
+
+type SubcategoryData {
+  _id: String
+  totalPrice: Float
+  totalQuantity: Int
+  subcategory: String
+}
+
+type PaginationCategory {
+  total: Int
+  current: Int
+  next: Int
+  prev: Int
+  count: Int
+  data: [CategoryData]
+}
+
+type PaginationSubcategory {
+  total: Int
+  current: Int
+  next: Int
+  prev: Int
+  count: Int
+  data: [SubcategoryData]
+}
+
+type CategoryMetrics {
+  selectedPeriodCategory: PaginationCategory
+  previousPeriodCategory: PaginationCategory
+  currentDayCategory: Float
+  currentDayVariationCategory: Float
+  currentMonthCategory: Float
+}
+
+type SubcategoryMetrics {
+  category: String
+  selectedPeriodSubcategory: PaginationSubcategory
+  previousPeriodSubcategory: PaginationSubcategory
+  currentDaySubcategory: Float
+  currentDayVariationSubcategory: Float
+  currentMonthSubcategory: Float
+}
+
+type TicketAverageData {
+  _id: String
+  ticketAverage: Float
+}
+
+type TicketAverage {
+  selectedPeriodTicket: [TicketAverageData]
+  previousPeriodTicket: [TicketAverageData]
+  currentDayTicket: Float
+  currentDayVariationTicket: Float
+  currentMonthTicket: Float
+}
+
+type CheckoutData {
+  _id: String
+  closedPurchases: Int
+}
+
+type Checkout {
+  selectedPeriodCheckout: [CheckoutData]
+  previousPeriodCheckout: [CheckoutData]
+  currentDayCheckout: Float
+  currentDayVariationCheckout: Float
+  currentMonthCheckout: Float
+}
+
+type ButtonUsesData {
+  _id: String
+  use: Int
+}
+
+type ButtonUses {
+  selectedPeriodButton: [ButtonUsesData]
+  previousPeriodButton: [ButtonUsesData]
+  currentDayButton: Float
+  currentDayVariationButton: Float
+  currentMonthButton: Float
+}
+
+type ConversionRateData {
+  _id: String
+  cr: Int
+}
+
+type ConversionRate {
+  selectedPeriodCR: [ConversionRateData]
+  previousPeriodCR: [ConversionRateData]
+  currentDayCR: Float
+  currentDayVariationCR: Float
+  currentMonthCR: Float
+}
+
+type Categories {
+  id: String
+  name: String
+  hasChildren: Boolean
+  url: String
+  children: [Categories]
+}

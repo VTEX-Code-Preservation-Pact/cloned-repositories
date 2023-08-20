@@ -1,0 +1,83 @@
+version: 0.2
+
+#env:
+  #variables:
+     # key: "value"
+     # key: "value"
+  #parameter-store:
+   #   key: "environment"
+     # key: "value"
+  #secrets-manager:
+     # key: secret-id:json-key:version-stage:version-id
+     # key: secret-id:json-key:version-stage:version-id
+  #exported-variables:
+     # - variable
+     # - variable
+  #git-credential-helper: yes
+#batch:
+  #fast-fail: true
+  #build-list:
+  #build-matrix:
+  #build-graph:
+phases:
+  install:
+    #If you use the Ubuntu standard image 2.0 or later, you must specify runtime-versions.
+    #If you specify runtime-versions and use an image other than Ubuntu standard image 2.0, the build fails.
+    runtime-versions:
+       nodejs: 14
+      # name: version
+    commands:
+      - npm install -g yarn
+      - echo yarn -v
+      - yarn -v
+      # - command
+  pre_build:
+    commands:
+      - yarn install
+      # - command
+      # - command
+  build:
+    commands:
+       - yarn build
+      # - command
+  post_build:
+    commands:
+     # Clear S3 bucket.
+     # Clear S3 bucket.
+      - aws s3 rm s3://my-checkout-cms-portal-bundle/mycheckout-bundle.js
+      - echo S3 bucket is cleared.
+      # Copy dist folder to S3 bucket
+      - echo Copy dist folder to S3 bucket
+      - aws s3 cp dist/mycheckout-bundle.js s3://my-checkout-cms-portal-bundle/mycheckout-bundle.js
+      - echo Build completed on `date`
+      - echo CloudFront
+      - aws configure set preview.cloudfront true
+      - aws cloudfront create-invalidation --distribution-id E1TT99JH67TJHY --paths "/*"
+      - echo cloudfront invalidarte completed on `date`
+      # - command
+      # - command
+#reports:
+  #report-name-or-arn:
+    #files:
+      # - location
+      # - location
+    #base-directory: location
+    #discard-paths: yes
+    #file-format: JunitXml | CucumberJson
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist
+  #files:
+    # - location
+    # - location
+  #name: $(date +%Y-%m-%d)
+  #discard-paths: yes
+  #base-directory: location
+#cache:
+  #paths:
+    # - paths
+cache:
+  paths:
+    - '/root/.yarn-cache/**/*'
+    - 'node_modules/**/*'

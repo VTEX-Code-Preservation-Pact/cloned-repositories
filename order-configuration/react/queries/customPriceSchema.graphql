@@ -1,0 +1,5 @@
+query customPriceSchemaQuery {
+  customPriceSchema @context(provider: "b2bstore.custom-price-selector") {
+    schema
+  }
+}

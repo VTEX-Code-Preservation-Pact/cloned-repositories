@@ -1,0 +1,19 @@
+{
+  "Author": "作成者",
+  "Draft": "下書き",
+  "Live": "ライブ",
+  "Name": "名前",
+  "Type": "タイプ",
+  "High": "高い",
+  "Low": "低い",
+  "Medium": "中程度",
+  "of": "/",
+  "Search": "検索",
+  "Content": "コンテンツ",
+  "Hide all": "すべて非表示にする",
+  "Show all": "すべて表示する",
+  "Line density": "線密度",
+  "Show rows": "表示行数",
+  "Last update": "前回のアップデート",
+  "Toggle visible fields": "表示するフィールドの切り替え"
+}

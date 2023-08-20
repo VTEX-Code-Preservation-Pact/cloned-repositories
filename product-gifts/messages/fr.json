@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "Image du cadeau",
+  "admin/editor.gift-image.description": "Image du cadeau du produit",
+  "admin/editor.gift-image.imageLabel.title": "Étiquette de l’image",
+  "admin/editor.gift-image.imageLabel.description": "Étiquette pour spécifier quelle image du produit doit être affichée.",
+  "admin/editor.gift-name.title": "Nom du cadeau",
+  "admin/editor.gift-name.description": "Nom du cadeau.",
+  "admin/editor.gift-name.linkToProduct.title": "Lien vers la page produit",
+  "admin/editor.gift-name.linkToProduct.description": "Si le nom du cadeau doit être un lien vers la page du produit.",
+  "admin/editor.gift-name.nameType.title": "Type de nom d’affichage",
+  "admin/editor.gift-name.nameType.description": "Afficher le NomDeSku du cadeau ou le NomDuProduit.",
+  "admin/editor.product-gifts.title": "Cadeaux du produit",
+  "admin/editor.product-gifts.description": "Afficher les cadeaux disponibles pour le produit actuel.",
+  "admin/editor.product-gifts.maxVisibleItems.title": "Nombre maximum d’éléments visibles",
+  "admin/editor.product-gifts.maxVisibleItems.description": "Nombre maximum de cadeaux qui doivent être rendus en même temps. (utilisez \"toutAfficher\" pour toujours afficher tous les cadeaux disponibles)",
+  "admin/editor.product-gift-text.title": "Texte des cadeaux de produit",
+  "admin/editor.product-gift-text.description": "Informations complémentaires sur les cadeaux disponibles",
+  "admin/editor.product-gift-text.text.title": "Texte",
+  "admin/editor.product-gift-text.text.description": "Une chaîne de caractères traduisible qui a des variables qui pouvant être utilisées pour rendre n’importe quel texte concernant les cadeaux. Son format utilise les règles UCI et les variables disponibles sont : TotalCadeaux, ArticlesEnSurplus et ArticlesVisibles."
+}

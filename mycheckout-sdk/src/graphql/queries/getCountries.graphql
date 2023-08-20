@@ -1,0 +1,18 @@
+query getCountries {
+  getCountries {
+    data {
+      id
+      country
+      iso
+      phone
+      postal_code_regex
+      states {
+        state
+        cities {
+          city_id
+          city
+        }
+      }
+    }
+  }
+}

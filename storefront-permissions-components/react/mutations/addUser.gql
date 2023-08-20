@@ -1,0 +1,25 @@
+mutation add(
+  $id: ID
+  $roleId: ID!
+  $userId: ID
+  $orgId: ID
+  $costId: ID
+  $canImpersonate: Boolean
+  $name: String!
+  $email: String!
+) {
+  addUser(
+    id: $id
+    roleId: $roleId
+    userId: $userId
+    orgId: $orgId
+    costId: $costId
+    canImpersonate: $canImpersonate
+    name: $name
+    email: $email
+  ) @context(provider: "vtex.b2b-organizations-graphql") {
+    id
+    status
+    message
+  }
+}

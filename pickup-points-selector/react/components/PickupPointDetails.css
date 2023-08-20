@@ -1,0 +1,86 @@
+/* main structure */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  z-index: 101;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.detailsTop {
+  flex: none;
+  margin-bottom: 1px;
+}
+
+.detailsMiddle {
+  overflow: auto;
+  flex: 1 1 auto;
+  min-height: 0; /* fix firefox overflow bug */
+  -webkit-overflow-scrolling: touch;
+}
+
+.detailsBottom {
+  background: white;
+  flex: none;
+  bottom: 0;
+  padding: 10px;
+}
+
+/* middle section */
+
+.detailsStore {
+  padding: 12px;
+}
+
+.detailsInfo {
+  padding: 15px;
+}
+
+.detailsGroup {
+  margin-bottom: 20px;
+}
+
+.detailsInfoTitle {
+  font-weight: 300;
+  margin-top: 0;
+  font-size: 1.5rem;
+  line-height: 1.24;
+}
+
+/* business hours */
+
+.detailsHours {
+  font-size: 12px;
+  width: 100%;
+}
+
+.detailsHoursTd {
+  border-bottom: 1px solid #F2F4F5;
+  padding-top: 6px;
+}
+
+.detailsHoursRange
+.detailsHoursClosed {
+  text-align: right;
+}
+
+.detailsHoursClosed {
+  color: #FF4C4C;
+}
+
+/* links and icons */
+
+.detailsBackLink {
+  composes: button link from './Button.css';
+  display: block;
+  text-align: left;
+  padding: 8px 12px 9px;
+}
+
+.iconBackPickupPointsList {
+  font-size: 25px;
+  vertical-align: sub;
+  margin-right: 12px;
+  text-decoration: none;
+}

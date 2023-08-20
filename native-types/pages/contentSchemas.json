@@ -1,0 +1,121 @@
+{
+  "definitions": {
+    "brand": {
+      "format": "Brand",
+      "title": "admin/native-types.brand",
+      "type": "string"
+    },
+
+    "category": {
+      "format": "Category",
+      "title": "admin/native-types.category",
+      "type": "string"
+    },
+
+    "collection": {
+      "format": "Collection",
+      "title": "admin/native-types.collection",
+      "type": "string"
+    },
+
+    "department": {
+      "format": "Department",
+      "title": "admin/native-types.department",
+      "type": "string"
+    },
+
+    "image": {
+      "properties": {
+        "description": {
+          "$ref": "#/definitions/text",
+          "title": "admin/native-types.image.description"
+        },
+        "desktop": {
+          "$ref": "#/definitions/url",
+          "format": "Image",
+          "title": "admin/native-types.image.desktop"
+        },
+        "filename": {
+          "title": "admin/native-types.image.filename",
+          "type": "string"
+        },
+        "mobile": {
+          "$ref": "#/definitions/url",
+          "format": "Image",
+          "title": "admin/native-types.image.mobile"
+        }
+      },
+      "title": "admin/native-types.image",
+      "type": "object"
+    },
+
+    "link": {
+      "properties": {
+        "attributeNofollow": {
+          "default": false,
+          "title": "admin/native-types.link.attributeNofollow",
+          "type": "boolean"
+        },
+        "attributeTitle": {
+          "$ref": "#/definitions/text",  
+          "title": "admin/native-types.link.attributeTitle"
+        },
+        "newTab": {
+          "title": "admin/native-types.link.newTab",
+          "type": "boolean"
+        },
+        "url": {
+          "$ref": "#/definitions/url",
+          "title": "admin/native-types.link.url"
+        }
+      },
+      "title": "admin/native-types.link",
+      "type": "object"
+    },
+
+    "richText": {
+      "$ref": "#/definitions/text",
+      "format": "RichText",
+      "title": "admin/native-types.richText",
+      "type": "string",
+      "examples": ["store/native-types.richText"]
+    },
+
+    "text": {
+      "format": "IOMessage",
+      "title": "admin/native-types.text",
+      "type": "string",
+      "examples": ["store/native-types.text"]
+    },
+
+    "url": {
+      "$ref": "#/definitions/text",  
+      "title": "admin/native-types.url",
+      "type": "string",
+      "examples": ["store/native-types.url"]
+    },
+
+    "video": {
+      "properties": {
+        "description": {
+          "$ref": "#/definitions/text",
+          "title": "admin/native-types.video.description"
+        },
+        "thumbnail": {
+          "$ref": "#/definitions/image",
+          "title": "admin/native-types.video.thumbnail"
+        },
+        "title": {
+          "$ref": "#/definitions/text" ,
+          "title": "admin/native-types.video.title"
+        },
+        "url": {
+          "$ref": "#/definitions/url",
+          "title": "admin/native-types.video.url"
+        }
+      },
+      "title": "admin/native-types.video",
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "pixel": {
+    "component": "*",
+    "extensibility": "enterprise",
+    "render": "client"
+  },
+  "pixels": {
+    "component": "vtex.render-runtime/ExtensionContainer",
+    "allowed": ["pixel"],
+    "render": "client"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "vtex.admin-ui-example",
+  "version": "0.18.0",
+  "devDependencies": {
+    "@types/faker": "^5.5.9",
+    "@types/node": "^11.12.1",
+    "@types/react": "^16.8.10",
+    "@vtex/tsconfig": "^0.4.4",
+    "graphql": "^14.6.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "3.9.7",
+    "vtex.admin-interface": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.admin-interface@0.9.0/public/@types/vtex.admin-interface",
+    "vtex.gift-card-list": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.gift-card-list@1.14.0/public/@types/vtex.gift-card-list",
+    "vtex.list-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.list-graphql@3.3.0/public/@types/vtex.list-graphql",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+  },
+  "dependencies": {
+    "@vtex/admin-ui": "^0.131.2",
+    "admin-ui": "^3.3.13",
+    "faker": "^5.5.3",
+    "react-apollo": "^3.1.5",
+    "react-intl": "^5.21.0"
+  }
+}

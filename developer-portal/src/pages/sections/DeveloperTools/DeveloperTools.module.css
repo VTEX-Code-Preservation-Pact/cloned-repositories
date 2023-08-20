@@ -1,0 +1,39 @@
+.developerTools {
+  padding: 10vh 0;
+  background-color: #f8f7fc;
+  border-top: 1px solid #e7e9ee;
+  margin-top: 100px;
+}
+
+.devToolsContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentTitle {
+  display: flex;
+  align-items: center;
+  margin: 0 50px;
+}
+
+.contentTitle h3 {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.contentTools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 1220px) {
+  .contentTools {
+    display: none;
+  }
+  .contentTitle{
+    margin: 0;
+  }
+}

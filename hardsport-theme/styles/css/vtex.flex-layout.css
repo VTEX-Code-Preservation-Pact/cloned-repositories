@@ -1,0 +1,13 @@
+.flexCol--infocard, .flexRow--infocard {
+  position: relative;
+}
+
+.flexCol--brand {
+  justify-content: center;
+}
+
+.flexRow--brand-bar {
+  background: #FFF;
+  text-align: center;
+  padding: .75em 0;
+}

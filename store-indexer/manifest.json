@@ -1,0 +1,86 @@
+{
+  "name": "store-indexer",
+  "vendor": "vtex",
+  "version": "0.16.5",
+  "title": "Store Indexer",
+  "description": "Listens to  IO-broadcaster for catalog itens changes.",
+  "mustUpdateAt": "2020-07-29",
+  "categories": [],
+  "dependencies": {
+    "vtex.messages": "1.x",
+    "vtex.catalog-api-proxy": "0.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.catalog-graphql": "1.x",
+    "vtex.rewriter": "1.x"
+  },
+  "builders": {
+    "node": "6.x",
+    "docs": "0.x"
+  },
+  "settingsSchema": {
+    "title": "VTEX Store Indexer",
+    "type": "object",
+    "properties": {
+      "numberOfIndexedSearches": {
+        "title": "Number of search URLs to be indexed",
+        "type": "number",
+        "default": 0,
+        "description": "Store index will take this number of URLs, the most accessed ones based on access stats, make canonicals and index them at our sitemap."
+      },
+      "usesMultiLanguageSearch": {
+        "title": "Uses a Search that supports multi-language",
+        "type": "boolean",
+        "default": false,
+        "description": "Uses a Search that supports multi-language and can receive the search parameters in other languages"
+      }
+    }
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "graphql-query"
+    },
+    {
+      "name": "vtex.messages:graphql-save-translation-messages"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/checkout/pub/*"
+      }
+    },
+    {
+      "name": "vtex.search-graphql:resolve-graphql"
+    },
+    {
+      "name": "vtex.catalog-api-proxy:catalog-proxy"
+    },
+    {
+      "name": "vtex.rewriter:resolve-graphql"
+    }
+  ],
+  "registries": [
+    "smartcheckout"
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,40 @@
+query ProfileQuery($email: String!) {
+  checkoutProfile(email: $email) {
+    userProfileId
+    profileProvider
+    availableAccounts {
+      accountId
+      paymentSystem
+      paymentSystemName
+      cardNumber
+      bin
+    }
+    userProfile {
+      email
+      firstName
+      lastName
+      document
+      documentType
+      phone
+      corporateName
+      tradeName
+      corporateDocument
+      stateInscription
+      corporatePhone
+      isCorporate
+      profileCompleteOnLoading
+      profileErrorOnLoading
+      customerClass
+    }
+    availableAddresses {
+      addressId
+      addressType
+      city
+      complement
+      country
+      geoCoordinates
+      neighborhood
+      number
+    }
+  }
+}

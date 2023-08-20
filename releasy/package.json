@@ -1,0 +1,63 @@
+{
+  "name": "releasy",
+  "version": "1.13.1",
+  "description": "CLI tool to release node applications with tag and auto semver bump",
+  "main": "lib/releasy.js",
+  "bin": "bin/releasy.js",
+  "scripts": {
+    "test": "vtex-test-tools test",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vtex/releasy.git"
+  },
+  "keywords": [
+    "CLI",
+    "releasy",
+    "release",
+    "semver"
+  ],
+  "author": "Guiherme Rodrigues",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vtex/releasy/issues"
+  },
+  "homepage": "https://github.com/vtex/releasy",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn lint && yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "camelcase": "^5.3.1",
+    "chalk": "^2.4.2",
+    "commander": "~3.0.2",
+    "github-api": "^3.3.0",
+    "js-yaml": "^3.13.1",
+    "prompt": "^1.2.0",
+    "semver": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.9",
+    "@vtex/prettier-config": "^1.0.0",
+    "@vtex/test-tools": "^3.3.0",
+    "eslint": "^7.6.0",
+    "eslint-config-vtex": "^14.1.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "mock-fs": "^5.1.2",
+    "prettier": "^2.5.1",
+    "typescript": "^3.9.7"
+  }
+}

@@ -1,0 +1,11 @@
+query getPaginationData($term: String!, $page: Int!, $pageSize: Int!, $filters: ProductFilter) {
+  products(pageSize: $pageSize, page: $page, term: $term, filters: $filters)
+    @context(provider: "vtex.catalog-graphql") {
+    paging{
+      page
+      perPage
+      total
+      pages
+    }
+  }
+}

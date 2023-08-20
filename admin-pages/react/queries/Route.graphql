@@ -1,0 +1,32 @@
+query Route($domain: String, $routeId: String!, $bindingId: String) {
+  route(domain: $domain, routeId: $routeId, bindingId: $bindingId) {
+    auth
+    binding
+    blockId
+    context
+    declarer
+    domain
+    interfaceId
+    path
+    routeId
+    uuid
+    metaTags {
+      description
+      keywords
+    }
+    pages {
+      condition {
+        allMatches
+        id
+        statements {
+          subject
+          verb
+          objectJSON
+        }
+      }
+      pageId
+      template
+    }
+    title
+  }
+}

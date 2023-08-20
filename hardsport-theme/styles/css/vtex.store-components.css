@@ -1,0 +1,153 @@
+.infoCardContainer--full-banner,
+.infoCardContainer--full-banner-centered {
+  height: 370px;
+  background-position: bottom;
+  margin: 0 auto;
+  max-width: 1920px;
+  border: none;
+}
+
+.infoCardContainer--full-banner .infoCardHeadline,
+.infoCardContainer--full-banner-centered .infoCardHeadline {
+  color: #FFF;
+  font-size: 70px;
+  line-height: 70px;
+}
+
+.infoCardContainer--display {
+  height: 100%;
+  min-height: 295px;
+}
+
+.infoCardContainer--display .infoCardHeadline {
+  color: #FFF;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.infoCardContainer--display .infoCardTextContainer {
+  width: 70%;
+}
+
+.infoCardContainer--full-banner-centered .infoCardTextContainer {
+  width: 100%;
+}
+
+.infoCardContainer--full-banner-centered .infoCardHeadline {
+  width: 100%;
+  text-align: center;
+}
+
+.infoCardContainer--categories {
+  min-height: 180px;
+}
+
+.infoCardContainer--categories .infoCardHeadline {
+  color: #FFF;
+  font-weight: 400;
+  letter-spacing: .3em;
+  text-transform: uppercase;
+}
+
+.infoCardContainer--display .infoCardCallActionContainer,
+.infoCardContainer--categories .infoCardCallActionContainer,
+.infoCardContainer--full-banner .infoCardCallActionContainer,
+.infoCardContainer--full-banner-centered .infoCardCallActionContainer,
+.infoCardContainer--display .infoCardHeadline,
+.infoCardContainer--categories .infoCardHeadline,
+.infoCardContainer--full-banner .infoCardHeadline,
+.infoCardContainer--full-banner-centered .infoCardHeadline {
+  z-index: 1;
+}
+
+.infoCardContainer--categories .infoCardTextContainer {
+  width: 70%;
+}
+
+.infoCardContainer--display::after,
+.infoCardContainer--categories::after,
+.infoCardContainer--full-banner::after,
+.infoCardContainer--full-banner-centered::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: inline-block;
+  position: absolute;
+  z-index: 0;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  /* http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+50,0.5+100 */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#80000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.infoCardContainer--display:hover::after,
+.infoCardContainer--categories:hover::after,
+.infoCardContainer--full-banner:hover::after,
+.infoCardContainer--full-banner-centered:hover::after {
+  opacity: 1;
+}
+
+
+.notificationBarContainer {
+  background-color: #FFF;
+}
+
+.notificationBarInner {
+  min-height: 2.3em;
+  font-size: .875rem;
+}
+
+.logoContainer.sizeDesktop {
+  min-width: 200px;
+}
+
+.searchBarContainer {
+  width: auto;
+}
+
+.notificationBarContainer {
+  background-color: #FFF;
+}
+
+.notificationBarContainer .notificationContent {
+  color: #222435;
+}
+
+.newsletter {
+  background: inherit;
+}
+
+.newsletter .confirmationTitle,
+.newsletter .confirmationText {
+  text-align: inherit;
+}
+
+.newsletter .container {
+  padding: 0;
+}
+
+.inputGroup {
+  border: none;
+}
+
+.newsletter .label {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.newsletter .form {
+  text-align: left;
+}
+
+.discountInsideContainer {
+  z-index: 20;
+}

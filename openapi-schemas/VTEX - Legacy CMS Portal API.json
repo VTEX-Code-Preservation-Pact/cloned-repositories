@@ -1,0 +1,186 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Legacy CMS Portal API",
+        "description": "## Index\r\n\r\n### Change URI Schema\r\n\r\n- `PUT` [Update all account's websites internet communication protocol](https://developers.vtex.com/docs/api-reference/legacy-cms-portal-api#put-/api/catalog_system/pvt/virtualfolder/changeurischema/-protocol-)\r\n- `PUT` [Update specific website comunication protocol](https://developers.vtex.com/docs/api-reference/legacy-cms-portal-api#put-/api/catalog_system/pvt/virtualfolder/site/-websiteId-/changeurischema/-protocol-)",
+        "contact": {},
+        "version": "1.0"
+    },
+    "servers": [
+        {
+            "url": "https://{accountName}.{environment}.com.br",
+            "description": "VTEX server URL.",
+            "variables": {
+                "accountName": {
+                    "description": "Name of the VTEX account. Used as part of the URL.",
+                    "default": "{accountName}"
+                },
+                "environment": {
+                    "description": "Environment to use. Used as part of the URL.",
+                    "default": "{environment}"
+                }
+            }
+        }
+    ],
+    "components": {
+        "securitySchemes": {
+            "appKey": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-VTEX-API-AppKey"
+            },
+            "appToken": {
+                "type": "apiKey",
+                "in": "header",
+                "name": "X-VTEX-API-AppToken"
+            }
+        }
+    },
+    "paths": {
+        "/api/catalog_system/pvt/virtualfolder/changeurischema/{protocol}": {
+            "put": {
+                "tags": [
+                    "Change URI Schema"
+                ],
+                "summary": "Update all account's websites internet communication protocol",
+                "description": "Updates all account's websites protocols to `HTTP` or `HTTPS`.",
+                "operationId": "Changeentireaccount(allwebsites)",
+                "parameters": [
+                    {
+                        "name": "protocol",
+                        "in": "path",
+                        "description": "Internet communication protocol, it can be `HTTP` or `HTTPS`.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "example": "https"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "Describes the type of the content being sent.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "HTTP Client Negotiation _Accept_ Header. Indicates the types of responses the client can understand.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Request Status",
+                                    "description": "Message indicating that the request was successful.",
+                                    "type": "string",
+                                    "example": "OK"
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        },
+        "/api/catalog_system/pvt/virtualfolder/site/{websiteId}/changeurischema/{protocol}": {
+            "put": {
+                "tags": [
+                    "Change URI Schema"
+                ],
+                "summary": "Update specific website comunication protocol",
+                "description": "Updates a specific website protocol to `HTTP` or `HTTPS`",
+                "operationId": "Changespecificwebsite",
+                "parameters": [
+                    {
+                        "name": "websiteId",
+                        "in": "path",
+                        "description": "Specific website ID.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "example": "292c47c7-0b81-48f9-a5a0-dcf240100884"
+                        }
+                    },
+                    {
+                        "name": "protocol",
+                        "in": "path",
+                        "description": "Internet communication protocol, it can be `HTTP` or `HTTPS`.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "example": "https"
+                        }
+                    },
+                    {
+                        "name": "Content-Type",
+                        "in": "header",
+                        "description": "Describes the type of the content being sent.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    },
+                    {
+                        "name": "Accept",
+                        "in": "header",
+                        "description": "HTTP Client Negotiation _Accept_ Header. Indicates the types of responses the client can understand.",
+                        "required": true,
+                        "style": "simple",
+                        "schema": {
+                            "type": "string",
+                            "default": "application/json"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "title": "Request Status",
+                                    "description": "Message indicating that the request was successful.",
+                                    "type": "string",
+                                    "example": "OK"
+                                }
+                            }
+                        }
+                    }
+                },
+                "deprecated": false
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "Change URI Schema",
+            "description": "Changes CMS URI"
+        }
+    ],
+    "security": [
+        {
+            "appKey": [],
+            "appToken": []
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+.previewContainer {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-property: width;
+  width: 100%;
+}
+
+.previewContainerMobile {
+  display: flex;
+  justify-content: center;
+  max-width: 350px;
+}

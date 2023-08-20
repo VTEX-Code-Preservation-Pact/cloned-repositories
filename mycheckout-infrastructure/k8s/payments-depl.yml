@@ -1,0 +1,91 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: payments-depl
+  labels:
+    app: payments
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: payments
+  template:
+    metadata:
+      labels:
+        app: payments
+    spec:
+      containers:
+        - name: payments
+          image: 666555811597.dkr.ecr.us-east-1.amazonaws.com/kuikpay-payment-service:dev-d633f6d-1655930101875 # {"$imagepolicy": "flux-system:payments"}
+          env:
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: payments
+                  key: node_env
+            - name: CONTAINER
+              value: docker
+            - name: MONGO_INITDB_ROOT_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: payments-db-credentials
+                  key: DB_PASSWORD
+            - name: PROXY_SERVICE_AUTHORIZATION
+              valueFrom:
+                secretKeyRef:
+                  name: proxi-pci-credentials
+                  key: PROXY_SERVICE_AUTHORIZATION
+            - name: PROXY_SERVICE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: proxi-pci-credentials
+                  key: PROXY_SERVICE_API_KEY
+            - name: PAYMENTEZ_PROXY_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-mycheckout-credentials
+                  key: PAYMENTEZ_PROXY_API_TOKEN
+            - name: PAYMENTEZ_PROXY_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-mycheckout-credentials
+                  key: PAYMENTEZ_PROXY_API_KEY
+            - name: PAYMENTEZ_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-mycheckout-credentials
+                  key: PAYMENTEZ_API_TOKEN
+            - name: PAYMENTEZ_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: paymentez-mycheckout-credentials
+                  key: PAYMENTEZ_API_KEY
+          volumeMounts:
+            - name: config
+              mountPath: '/config'
+              readOnly: true
+      imagePullSecrets:
+        - name: regcred
+      volumes:
+        # You set volumes at the Pod level, then mount them into containers inside that Pod
+        - name: config
+          configMap:
+            # Provide the name of the ConfigMap you want to mount.
+            name: payments
+            # An array of keys from the ConfigMap to create as files
+            items:
+              - key: 'payments.properties'
+                path: '.env'
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: payments-srv
+spec:
+  selector:
+    app: payments
+  ports:
+    - name: payments
+      protocol: TCP
+      port: 8080
+      targetPort: 8080

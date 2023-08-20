@@ -1,0 +1,20 @@
+<script>
+  (function() {
+    var account = "{{settings.account}}";
+    var domain = "{{settings.domain}}";
+    if (!account | !domain) {
+      console.error('Warning: Missing Account or Domain definitions at vtex.alexa-certify. Please configure it in the apps admin.');
+      return
+    }
+    var _atrk_opts = { atrk_acct: account, domain: domain, dynamic: true };
+    (function() {
+      var as = document.createElement("script");
+      as.type = "text/javascript";
+      as.async = true;
+      as.src = "https://certify-js.alexametrics.com/atrk.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(as, s);
+    })();
+  })()
+</script>
+<noscript><img src="https://certify.alexametrics.com/atrk.gif?account={{settings.account}}" style="display:none" height="1" width="1" alt="" /></noscript>

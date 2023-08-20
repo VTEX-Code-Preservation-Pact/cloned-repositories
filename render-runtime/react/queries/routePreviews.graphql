@@ -1,0 +1,8 @@
+query RoutePreviews($routes: [PreviewRouteInput], $renderMajor: Int) {
+  defaultPages: routePreviews (
+    routes: $routes,
+    renderMajor: $renderMajor,
+  ) {
+    componentsJSON
+  }
+}

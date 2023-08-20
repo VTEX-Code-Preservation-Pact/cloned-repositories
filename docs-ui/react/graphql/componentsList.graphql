@@ -1,0 +1,68 @@
+query componentsList(
+  $appName: String
+  $locale: String
+  $useAppsDirectory: Boolean
+) {
+  componentsList(
+    appName: $appName
+    locale: $locale
+    useAppsDirectory: $useAppsDirectory
+  ) {
+    layout {
+      appName
+      file
+      title
+      description
+      url
+    }
+    general {
+      appName
+      file
+      title
+      description
+      url
+    }
+    content {
+      appName
+      file
+      title
+      description
+      url
+    }
+    navigation {
+      appName
+      file
+      title
+      description
+      url
+    }
+    product {
+      appName
+      file
+      title
+      description
+      url
+    }
+    pixel {
+      appName
+      file
+      title
+      description
+      url
+    }
+    functional {
+      appName
+      file
+      title
+      description
+      url
+    }
+    search {
+      appName
+      file
+      title
+      description
+      url
+    }
+  }
+}

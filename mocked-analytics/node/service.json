@@ -1,0 +1,27 @@
+{
+  "memory": 128,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "workers": 4,
+  "routes": {
+    "getLiveUsers": {
+      "path": "/_v/live-products",
+      "public": false,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "get"
+          ],
+          "principals": [
+            "vrn:apps:*:*:*:app/vtex.backend-course@*",
+            "vrn:apps:*:*:*:app/vtex.events-example@*"
+          ]
+        }
+      ]
+    }
+  }
+}

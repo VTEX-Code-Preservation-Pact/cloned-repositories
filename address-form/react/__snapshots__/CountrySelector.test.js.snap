@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountrySelector default value 1`] = `
+<p
+  className="input ship-country text"
+>
+  <label
+    htmlFor="ship-country"
+  >
+    Country
+  </label>
+  <select
+    className=""
+    disabled={false}
+    id="ship-country"
+    name="country"
+    onBlur={[Function]}
+    onChange={[Function]}
+    value="BRA"
+  >
+    <option
+      value="BRA"
+    >
+      Brazil
+    </option>
+    <option
+      value="USA"
+    >
+      United States of America
+    </option>
+  </select>
+</p>
+`;
+
+exports[`CountrySelector should sort the select 1`] = `
+<p
+  className="input ship-country text"
+>
+  <label
+    htmlFor="ship-country"
+  >
+    Country
+  </label>
+  <select
+    className=""
+    disabled={false}
+    id="ship-country"
+    name="country"
+    onBlur={[Function]}
+    onChange={[Function]}
+    value="BRA"
+  >
+    <option
+      value="BRA"
+    >
+      Brazil
+    </option>
+    <option
+      value="USA"
+    >
+      United States of America
+    </option>
+  </select>
+</p>
+`;
+
+exports[`CountrySelector show options 1`] = `
+<p
+  className="input ship-country text"
+>
+  <label
+    htmlFor="ship-country"
+  >
+    Country
+  </label>
+  <select
+    className=""
+    disabled={false}
+    id="ship-country"
+    name="country"
+    onBlur={[Function]}
+    onChange={[Function]}
+    value=""
+  >
+    <option
+      value="BRA"
+    >
+      Brazil
+    </option>
+    <option
+      value="USA"
+    >
+      United States of America
+    </option>
+  </select>
+</p>
+`;

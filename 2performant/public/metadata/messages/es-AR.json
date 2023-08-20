@@ -1,0 +1,15 @@
+{
+"name": "2Performant Tracking Code",
+"headline": "Integración de la plataforma de afiliación de marketing 2Performant",
+"overview": "2Performant es la principal plataforma de marketing de afiliados e influencers de Rumanía y una de las mayores plataformas de este tipo en Europa del Este. Al usar esta plataforma, las empresas pueden conectarse con socios, afiliados y personas influyentes para promocionar sus productos y promociones a un público más amplio. Esta aplicación de píxeles le permite agregar el código de seguimiento 2Performant a su tienda.",
+"features": [
+"Permite la integración del código de seguimiento 2Performant con su tienda VTEX",
+"Facilita el seguimiento de tus campañas de marketing de afiliación",
+"Junto con la aplicación Export Feeds, facilita el listado de sus productos en la plataforma 2Performant"
+],
+"additionalInformation": "Esta aplicación requiere una cuenta www.2performant.com válida.\\n\\nTenga en cuenta que la aplicación de píxeles de 2Performant no exportará su feed de productos a la plataforma de 2Performant. Para hacer eso, debe usar la aplicación Export Feeds.",
+"websiteURL": "https://www.2performant.com",
+"support": {
+"url": "https://support.vtex.com/hc/requests"
+}
+}

@@ -1,0 +1,23 @@
+type Query {
+  reverseGeocode(
+    """
+    Latitude of the point you want to get the Address object from
+    """
+    lat: String
+    """
+    Longitude of the point you want to get the Address object from
+    """
+    lng: String
+  ): Address
+
+  getAddressFromPostalCode(
+    """
+    Postal Code
+    """
+    postalCode: String
+    """
+    Alpha-3 code for the country
+    """
+    countryCode: String
+  ): Address
+}

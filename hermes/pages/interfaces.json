@@ -1,0 +1,10 @@
+{
+  "app": {
+    "component": "*",
+    "render": "client"
+  },
+  "app.hermes": {
+    "component": "index",
+    "render": "client"
+  }
+}

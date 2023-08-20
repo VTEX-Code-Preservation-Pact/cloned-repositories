@@ -1,0 +1,15 @@
+{
+  "version": "4.21.2-beta.2",
+  "license": "UNLICENSED",
+  "scripts": {
+    "test": "cd react && npm run test"
+  },
+  "devDependencies": {
+    "husky": "^3.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "cd react && npx lint-staged"
+    }
+  }
+}

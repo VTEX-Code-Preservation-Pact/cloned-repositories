@@ -1,0 +1,6 @@
+mutation ($buttonText: String, $styles: String, $restore: Boolean)
+@context(provider: "kuikpay.my-checkout") {
+  updateStyles(styles: $styles, buttonText: $buttonText, restore: $restore) {
+    account
+  }
+}

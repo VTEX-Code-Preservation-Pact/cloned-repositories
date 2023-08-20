@@ -1,0 +1,22 @@
+language: node_js
+sudo: false
+node_js:
+- '4.0'
+cache:
+  directories:
+  - node_modules
+env:
+- NODE_ENV=test
+before_install:
+- npm install -g grunt-cli
+before_deploy:
+- npm run dist
+deploy:
+  provider: npm
+  email: breno+npm@vtex.com.br
+  skip_cleanup: true
+  on:
+    tags: true
+    repo: vtex/front.phone
+  api_key:
+    secure: "dA4rUdiL8XPX1gK3MCrQlmYv9vLdsaOtehrtozoXd3TX0cNjVBj/L43blP5GzoFp4Dyj4thNYa9cuASytIBe8UDEXzZ68D90IMQ/f7IdckYZfMWB8rKvSg21QyeJiqwFHyG8Y6Ko/i4/LwqNZQS50AaCv3EyiB3PXHwcUlP3gBU="

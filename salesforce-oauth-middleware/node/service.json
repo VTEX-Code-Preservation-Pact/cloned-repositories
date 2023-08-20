@@ -1,0 +1,22 @@
+{
+  "memory": 4096,
+  "ttl": 43200,
+  "timeout": 60,
+  "minReplicas": 10,
+  "maxReplicas": 400,
+  "workers": 1,
+  "routes": {
+    "proxy": {
+      "path": "/_v/private/oauth-proxy/authorizations/*path",
+      "public": true
+    },
+    "access_token": {
+      "path": "/_v/private/oauth-proxy/autheticated/access-token/",
+      "public": true
+    },
+    "refresh_token": {
+      "path": "/_v/private/oauth-proxy/autheticated/refresh-token/",
+      "public": true
+    }
+  }
+}

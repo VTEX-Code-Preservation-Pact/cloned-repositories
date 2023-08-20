@@ -1,0 +1,12 @@
+type Order {
+  id: String
+  transaction: Transaction
+}
+
+type Transaction {
+  RedirectResponseCollection: [RedirectResponseCollection]
+}
+
+type RedirectResponseCollection {
+  redirectUrl: String
+}

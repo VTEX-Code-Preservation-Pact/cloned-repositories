@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "totalizer-translator",
+  "version": "2.5.1",
+  "title": "A React component that renders translated totalizer property from Checkout's OrderForm",
+  "description": "",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "mustUpdateAt": "2019-12-19",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

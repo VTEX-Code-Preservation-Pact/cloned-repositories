@@ -1,0 +1,14 @@
+type PaginatedDocumentResponse {
+  count: Int!
+  total: Int!
+  current: Int!
+  prev: Int!
+  next: Int!
+  data: [DocumentTypes]
+}
+
+type DocumentTypes {
+  id: ID
+  name: String
+  type: String
+}

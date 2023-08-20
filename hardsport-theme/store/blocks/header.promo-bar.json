@@ -1,0 +1,16 @@
+{
+  "header-row#promo-bar": {
+    "props": {
+      "blockClass": "promo-bar"
+    },
+    "children": [
+      "notification.bar"
+    ]
+  },
+  "notification.bar": {
+    "title": "Barra de Promoción",
+    "props": {
+      "content": "25% DE DESCUENTO USANDO EL CÓDIGO: FIESTASPATRIAS"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+## About
+
+Easily generate a fully customizable cookie banner, obtain consent and implement prior blocking with asynchronous reactivation.
+
+## Functionalities
+
+- Create your privacy and cookie policy in minutes;
+- Manage consent preferences for the ePrivacy, GDPR, and CCPA. Integrated with the IAB TCF and US Privacy Framework;
+- Create your terms and conditions in minutes;
+- Collect GDPR consent, document opt-ins and CCPA opt-outs via your web forms;
+- Document all the data processing activity within your organization.
+
+## How to set up
+
+1. Install the app from VTEX App Store;
+2. Add the Site ID and the Cookie Policy ID in the respective fields. You can find yours at Iubenda settings page;
+3. Save your changes.
+
+## Comments
+
+- To use the service, you must have an active Iubenda account. Some features are only available for specific plans.
+- Detailed installation instructions are available at https://vtex.io/docs/app/vtex.iubenda

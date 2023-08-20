@@ -1,0 +1,13 @@
+{
+  "apub-app-center.navigation.label-group": "APUB App Center",
+  "apub-app-center.navigation.search.kws": "app, admin, apub, apps",
+  "apub-app-center.hello-world": "APUB App Center",
+  "apub-app-center.details": "Nombre de la App",
+  "apub-app-center.filter-header": "Filtros",
+  "apub-app-center.filter": "Aplicar",
+  "apub-app-center.filter-category": "Categoria",
+  "apub-app-center.filter-store": "Tienda",
+  "apub-app-center.filter-status": "Status",
+  "apub-app-center.apps-header": "Totas las apps",
+  "apub-app-center.apps-view": "Ver más"
+}

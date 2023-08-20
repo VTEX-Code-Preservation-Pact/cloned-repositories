@@ -1,0 +1,13 @@
+query GetShipment($id: String!) {
+  shipment(id: $id) {
+    id
+    trackingNumber
+    carrier
+    delivered
+    orderId
+    invoiceId
+    externalLink
+    createdIn
+    lastInteractionDate
+  }
+}

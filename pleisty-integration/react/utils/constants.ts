@@ -1,0 +1,25 @@
+export const HP_RECOMMENDATIONS_PRODUCTS_WIDGET_ID = "W_af7d6744aa292e1a3a29364a7bdf45f7";
+export const HP_RECENTLY_VIEWED_PRODUCTS_WIDGET_ID = "W_bc8af84645a4bab700077595f5e9e0ae";
+export const HP_SPECIAL_FOR_YOU_PRODUCTS_WIDGET_ID = "W_04bd9f7452804c6916686d64a48286b0";
+export const HP_ACCESSORIES_RECOMMENDATIONS_PRODUCTS_WIDGET_ID = "W_38a77bd7472e93329499a72634e83ce9";
+export const RECENTLY_VIEWED_PRODUCTS_WIDGET_ID = "W_bc8af84645a4bab700077595f5e9e0ae-wrapper";
+export const PP_SIMILAR_PRODUCTS_WIDGET_ID = "W_eb764552ba03762938dc46db33a51ce2";
+export const PP_OTHER_RECOMMENDATIONS_PRODUCTS_WIDGET_ID = "W_bbe0d8d76440453220f7910e8160ae76";
+export const SPECIAL_FOR_YOU_PRODUCTS_WIDGET_ID = "W_5aaba4613bb64f2f64becdc818a679ac";
+export const PLEISTY_TEST_WIDGET_ID = "W_9cdd23ebded8f5cca0c08796669b29b9";
+export const PLEISTY_HISTORY_TEST_WIDGET_ID = "W_0cdc2f51f1677778efbdaf55de1d0814";
+
+
+export const ITEMS_PER_PAGE = {
+    desktop: 5,
+    tablet: 3,
+    phone: 2
+}
+export const INFINITE = true;
+export const NAVIGATION_STEP = "page";
+export const SHOW_NAVIGATION_ARROWS = "desktopOnly";
+export const SHOW_PAGINATION_DOTS = "always";
+export const USE_PAGINATION = true;
+export const FULL_WIDTH = false;
+export const ARROW_SIZE = 25;
+

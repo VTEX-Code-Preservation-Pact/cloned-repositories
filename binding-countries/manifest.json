@@ -1,0 +1,54 @@
+{
+  "name": "binding-countries",
+  "vendor": "vtex",
+  "version": "0.1.2",
+  "title": "Binding Countries",
+  "description": "Binding Countries",
+  "dependencies": {
+    "vtex.render-server": "8.x"
+  },
+  "builders": {
+    "docs": "0.x"
+  },
+  "scripts": {},
+  "credentialType": "absolute",
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "settingsSchema": {
+    "title": "Schema",
+    "type": "object",
+    "properties": {
+      "bindings": {
+        "default": [],
+        "title": "Bindings",
+        "type": "array",
+        "items": {
+          "default": [],
+          "type": "object",
+          "properties": {
+            "canonicalBaseAddress": {
+              "title": "Canonical Base Address",
+              "type": "string"
+            },
+            "targetCountries": {
+              "title": "Target Countries",
+              "oneOf": [
+                {
+                  "type": "array",
+                  "title": "Countries code list",
+                  "items": {
+                    "type": "string"
+                  },
+                  "minItems": 1
+                },
+                {
+                  "type": "null",
+                  "title": "None"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

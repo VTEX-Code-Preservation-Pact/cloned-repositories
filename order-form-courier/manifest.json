@@ -1,0 +1,22 @@
+{
+  "name": "order-form-courier",
+  "vendor": "vtex",
+  "version": "0.0.1",
+  "title": "Order Form Courier",
+  "description": "App that sends Order Form updates to Courier by listening to the checkout events.",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "docs": "0.x",
+    "pages": "0.x",
+    "react": "2.x",
+    "node": "6.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

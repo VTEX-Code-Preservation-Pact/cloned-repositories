@@ -1,0 +1,36 @@
+.toolItem {
+  width: 49%;
+  position: relative;
+}
+
+.toolTag {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+.tool {
+  border: 1px solid #e7e9ee;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.tool a:hover {
+  text-decoration: none;
+}
+
+.toolContent {
+  padding: 30px 30px 15px;
+}
+
+.tool h3 {
+  font-size: 15px;
+}
+
+.tool p {
+  color: #717786;
+}

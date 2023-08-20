@@ -1,0 +1,55 @@
+.container,
+.container2 {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container2 {
+  background: #142032;
+  top: -30vh;
+  height: 160vh;
+}
+
+.days {
+  z-index: 1;
+  font-size: 1.5em;
+}
+
+.timer {
+  z-index: 1;
+  font-size: 5em;
+  font-feature-settings: 'tnum';
+}
+
+.logos {
+  margin-top: 6em;
+}
+
+@media (min-width: 992px) {
+  .days {
+    font-size: 2em;
+  }
+
+  .timer {
+    font-size: 10em;
+  }
+}
+
+@media (min-width: 1500px) {
+  .days {
+    font-size: 3em;
+  }
+
+  .timer {
+    font-size: 16em;
+  }
+}

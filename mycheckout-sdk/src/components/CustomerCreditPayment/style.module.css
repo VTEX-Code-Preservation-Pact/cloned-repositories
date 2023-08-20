@@ -1,0 +1,78 @@
+.cartCustomerCredit {
+  box-shadow: 0px 3px 6px #00000029;
+  background: #fff;
+  margin: 0 0 20px;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 25px;
+  box-sizing: border-box;
+  width: calc(100% - 28px);
+}
+
+.cartCustomerCreditTitle {
+  color: #284859 !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.cartCustomerCreditDescription {
+  line-height: 20px !important;
+  color: #284859 !important;
+  text-align: center;
+}
+
+.cartCustomerCreditIcon {
+  width: 68px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.cartCustomerCredit .cartCustomerCreditDescription {
+  font-size: 14px !important;
+  max-width: 190px;
+}
+
+.cartCustomerCredit .cartCustomerCreditSuccessTitle {
+  color: #a1c10c !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.cartCustomerCredit .cartCustomerCreditSuccessApproved {
+  font-size: 14px !important;
+  text-align: center;
+  max-width: 160px;
+  margin: 3px auto 0;
+}
+
+.cartCustomerCredit .cartCustomerCreditSuccessApproved b {
+  font-weight: bold;
+  color: #1b998b !important;
+}
+
+.cartCustomerCredit .cartCustomerCreditSuccessMessage {
+  font-size: 14px !important;
+  font-weight: bold;
+  color: #284859;
+  margin-top: 7px;
+}
+
+.cartCustomerCredit .cartCustomerCreditDenyTitle {
+  color: #cb4242 !important;
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.cartCustomerCredit .cartCustomerCreditDenyMessage {
+  font-size: 12px !important;
+  color: #284859 !important;
+  line-height: 18px;
+  text-align: center;
+  max-width: 220px;
+}

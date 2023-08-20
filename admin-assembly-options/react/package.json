@@ -1,0 +1,30 @@
+{
+  "name": "vtex.admin-ui-example",
+  "version": "2.0.3",
+  "devDependencies": {
+    "@types/faker": "^5.5.9",
+    "@types/node": "^11.12.1",
+    "@types/react": "^16.8.10",
+    "@types/uniqid": "^5.3.2",
+    "@vtex/tsconfig": "^0.4.4",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "3.9.7",
+    "vtex.admin-shell-utils": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.admin-shell-utils@0.6.0/public/@types/vtex.admin-shell-utils",
+    "vtex.assembly-options-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.assembly-options-graphql@1.1.1/public/@types/vtex.assembly-options-graphql",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime"
+  },
+  "dependencies": {
+    "@rooks/use-did-mount": "^4.11.2",
+    "@rooks/use-will-unmount": "^4.11.2",
+    "@vtex/admin-formik": "^0.4.1-next.0",
+    "@vtex/admin-ui": "^0.120.3",
+    "@vtex/styleguide": "^9.145.2",
+    "faker": "^5.5.3",
+    "formik": "^2.2.9",
+    "react-apollo": "^3.1.5",
+    "react-intl": "^5.21.0",
+    "uniqid": "^5.4.0",
+    "yup": "^0.32.11"
+  }
+}

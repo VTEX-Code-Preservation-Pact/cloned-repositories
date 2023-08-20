@@ -1,0 +1,30 @@
+{
+  "name": "tracking-integration-boilerplate",
+  "vendor": "vtex",
+  "version": "0.1.0",
+  "title": "Boilerplates' Tracking",
+  "description": "Tracks Boilerplate Packages",
+  "categories": [],
+  "settingsSchema": { },
+  "registries": ["smartcheckout"],
+  "dependencies": {
+    "vtex.tracking-builder": "0.x"
+  },
+  "builders": {
+    "dotnet": "1.x",
+    "docs":  "0.x"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "tracking-sandbox.getsandbox.com",
+        "path": "/trackPackages"
+      }
+    }
+  ],
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

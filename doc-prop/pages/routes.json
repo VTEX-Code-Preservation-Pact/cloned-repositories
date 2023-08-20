@@ -1,0 +1,5 @@
+{
+  "doc-prop.table": {
+    "path": "/docs/props/app/:appId/:interfaceId"
+  }
+}

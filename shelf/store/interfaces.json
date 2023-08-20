@@ -1,0 +1,30 @@
+{
+  "shelf": {
+    "required": ["product-summary"],
+    "component": "Shelf",
+    "track": ["click"],
+    "preview": {
+      "type": "grid",
+      "height": 550
+    },
+    "content": {
+      "$ref": "app:vtex.shelf#/definitions/Shelf"
+    }
+  },
+  "shelf.relatedProducts": {
+    "required": ["product-summary"],
+    "component": "RelatedProducts",
+    "preview": {
+      "type": "grid",
+      "height": 550
+    }
+  },
+  "shelf.tabbed": {
+    "required": ["product-summary"],
+    "component": "TabbedShelf",
+    "preview": {
+      "type": "grid",
+      "height": 550
+    }
+  }
+}

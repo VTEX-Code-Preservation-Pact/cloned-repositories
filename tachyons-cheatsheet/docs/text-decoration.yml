@@ -1,0 +1,26 @@
+name: Text decoration
+
+docs: http://tachyons.io/docs/typography/text-decoration/
+
+src: text-decoration
+
+description:
+
+base:
+  - strike
+  - underline
+  - no-underline
+
+modifiers:
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - text
+  - decoration
+  - underline

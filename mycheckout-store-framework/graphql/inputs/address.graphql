@@ -1,0 +1,34 @@
+input AddressInput {
+  addressId: String
+  profileId: String
+  country: String
+  state: String
+  city: String
+  street: String
+  number: String
+  postalCode: String
+  receiverName: String
+  geoCoordinates: GeocoordinatesInput
+  neighborhood: String
+  reference: String
+}
+
+input ExternalAddressInput {
+  addressId: String
+  postalCode: String
+  country: String
+  state: String
+  city: String
+  street: String
+  number: String
+  geoCoordinates: GeocoordinatesInput
+  neighborhood: String
+  addressType: String
+  receiverName: String
+  reference: String
+}
+
+input GeocoordinatesInput {
+  latitude: String
+  longitude: String
+}

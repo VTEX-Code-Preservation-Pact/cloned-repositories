@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "ギフト画像",
+  "admin/editor.gift-image.description": "製品のギフト画像",
+  "admin/editor.gift-image.imageLabel.title": "画像ラベル",
+  "admin/editor.gift-image.imageLabel.description": "表示する製品の画像を指定するラベルです。",
+  "admin/editor.gift-name.title": "ギフト名",
+  "admin/editor.gift-name.description": "ギフトの名前です。",
+  "admin/editor.gift-name.linkToProduct.title": "製品ページへのリンク",
+  "admin/editor.gift-name.linkToProduct.description": "ギフト名が製品ページにもリンクするかどうかを定めます。",
+  "admin/editor.gift-name.nameType.title": "表示名タイプ",
+  "admin/editor.gift-name.nameType.description": "ギフトの SKU 名または製品名を表示します。",
+  "admin/editor.product-gifts.title": "製品ギフト",
+  "admin/editor.product-gifts.description": "現在の製品に利用できるギフトを表示します。",
+  "admin/editor.product-gifts.maxVisibleItems.title": "最大表示項目",
+  "admin/editor.product-gifts.maxVisibleItems.description": "同時にレンダリングされるギフトの最大数です。 (「すべて表示」を使うと、利用できるギフトを常にすべて表示します)",
+  "admin/editor.product-gift-text.title": "製品ギフトテキスト",
+  "admin/editor.product-gift-text.description": "利用できるギフトに関連した追加情報",
+  "admin/editor.product-gift-text.text.title": "テキスト",
+  "admin/editor.product-gift-text.text.description": "ギフトに関連したテキストのレンダリングに使う変数のある、翻訳可能な文字列です。フォーマットは UCI ルールを使っており、利用できる変数は以下の通りです: totalGifts、exceedingItems、visibleItems。"
+}

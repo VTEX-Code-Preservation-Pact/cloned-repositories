@@ -1,0 +1,11 @@
+mutation LeaveProject(
+  $edition: String!
+  $id: String!
+) {
+  leaveProject(edition: $edition, id: $id) {
+    team {
+      name
+      email
+    }
+  }
+}

@@ -1,0 +1,35 @@
+name: "units-test"
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  VTEX_APP_KEY: ${{ secrets.VTEX_APP_KEY }}
+  VTEX_APP_TOKEN: ${{ secrets.VTEX_APP_TOKEN }}
+
+jobs:
+  # unit tests
+  units:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - run: yarn install
+    - run: yarn run test
+
+  # test action works running from the graph
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Set App Specification content
+      run: echo 'APP_SPEC={"name":"starter-node-service","vendor":"vtex","version":"1.0.0-'$RANDOM-$RANDOM-$RANDOM'","services":[{"name":"service","folder":"./","image-name":"vtex-docker/starter-node-service","public":true}]}' >> $GITHUB_ENV
+      shell: bash
+
+    - uses: actions/checkout@v2
+    - uses: ./
+      with:
+        vtex-app-key: ${{ env.VTEX_APP_KEY }}
+        vtex-app-token: ${{ env.VTEX_APP_TOKEN }}
+        request-type: create-app-version
+        app-specification: ${{ env.APP_SPEC }}

@@ -1,0 +1,26 @@
+{
+  "name": "action-lint",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "test": "jest"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "fixtures"
+    ]
+  },
+  "dependencies": {
+    "actions-toolkit": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^0.1.4",
+    "eslint": "^6.8.0",
+    "eslint-config-vtex": "^12.3.2",
+    "jest": "^25.2.7",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  }
+}

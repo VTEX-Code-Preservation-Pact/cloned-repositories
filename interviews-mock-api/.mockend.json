@@ -1,0 +1,14 @@
+{
+  "Interview": {
+    "candidate": "string",
+    "date": "date",
+    "type": "string",
+    "result": "int",
+    "interviewers": "Interviewer[]"
+  },
+  "Interviewer": {
+    "interview": "Interview",
+    "name": "string",
+    "email": "string"
+  }
+}

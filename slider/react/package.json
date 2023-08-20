@@ -1,0 +1,32 @@
+{
+  "name": "vtex.slider",
+  "version": "0.8.3",
+  "description": "A React Slider component that works well in SPA and SSR",
+  "files": [
+    "react"
+  ],
+  "scripts": {
+    "pretest": "yarn",
+    "test": "vtex-test-tools test",
+    "test:watch": "vtex-test-tools test --watch",
+    "test:coverage": "vtex-test-tools test --collectCoverage",
+    "gen:coveralls": "yarn test:coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "debounce": "^1.2.0",
+    "prop-types": "^15.6.2",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-event-listener": "^0.6.5"
+  },
+  "devDependencies": {
+    "@vtex/test-tools": "^0.2.0",
+    "coveralls": "^3.0.3",
+    "eslint": "^5.15.3",
+    "eslint-config-vtex-react": "^4.0.0",
+    "jsdom": "^14.0.0",
+    "prettier": "^1.16.4",
+    "typescript": "3.9.7"
+  }
+}

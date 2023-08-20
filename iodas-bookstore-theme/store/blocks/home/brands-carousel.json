@@ -1,0 +1,61 @@
+{
+  "slider-layout#brands-carousel": {
+    "title": "Carrossel de marcas",
+    "children": [
+      "image#brand-1",
+      "image#brand-2",
+      "image#brand-3",
+      "image#brand-4",
+      "image#brand-5",
+      "image#brand-6"
+    ],
+    "props": {
+      "blockClass": "brand-carousel",
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "navigationStep": 1,
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 4,
+        "phone": 2
+      }
+    }
+  },
+  "image#brand-1": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/220/original/marca_1.png?1572620027",
+      "maxHeight": "96px"
+    }
+  },
+  "image#brand-2": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/226/original/marca_2.png?1572620063",
+      "maxHeight": "96px"
+    }
+  },
+  "image#brand-3": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/230/original/marca_3.png?1572620105",
+      "maxHeight": "96px"
+    }
+  },
+  "image#brand-4": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/233/original/marca_4.png?1572620153",
+      "maxHeight": "96px"
+    }
+  },
+  "image#brand-5": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/235/original/marca_5.png?1572620181",
+      "maxHeight": "96px"
+    }
+  },
+  "image#brand-6": {
+    "props": {
+      "src": "https://uploaddeimagens.com.br/images/002/472/239/original/marca_6.png?1572620215",
+      "maxHeight": "96px"
+    }
+  }
+}

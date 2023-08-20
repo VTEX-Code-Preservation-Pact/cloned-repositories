@@ -1,0 +1,26 @@
+{
+  "vendor": "vtex",
+  "name": "order-details",
+  "version": "1.10.0",
+  "title": "Order Details Components",
+  "description": "Components to display information on an order",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.shipping-estimate-translator": "2.x",
+    "vtex.address-form": "4.x",
+    "vtex.profile-form": "3.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.css-handles": "0.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

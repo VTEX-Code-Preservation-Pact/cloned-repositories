@@ -1,0 +1,80 @@
+{
+  "name": "@vtex/pickup-points-modal",
+  "version": "3.8.0",
+  "description": "Pickup Points Modal React component",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "css": "mv dist/styles.css lib/styles.css && mv dist/styles.css.map lib/styles.css.map ",
+    "removeMocks": "rm -rf lib/**/__mocks__ && rm -rf lib/__mocks__ && rm -rf dist",
+    "addLocales": "cp -R -f react/locales/ lib/locales/",
+    "postreleasy": "npm publish --access public",
+    "test": "vtex-test-tools test"
+  },
+  "keywords": [
+    "react-component",
+    "vtex",
+    "checkout",
+    "pickup-points"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/vtex/pickup-points-modal.git"
+  },
+  "author": "Fernando de Almeida Coelho <nandoacoelho@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@vtex/address-form": "^3.5.8",
+    "@vtex/estimate-calculator": "^1.1.0",
+    "axios": "^0.19.0",
+    "axios-retry": "^3.1.2",
+    "classnames": "2.2.5",
+    "lodash": "^4.17.5",
+    "react-infinite-scroller": "^1.2.4",
+    "react-intl": "^2.8.0",
+    "react-tooltip": "^3.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/vtex/pickup-points-modal/issues"
+  },
+  "homepage": "https://github.com/vtex/pickup-points-modal#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTestsAfterEnv.js"
+    ]
+  },
+  "vtexTestTools": {
+    "defaultLocale": "en"
+  },
+  "devDependencies": {
+    "@apollo/react-testing": "^4.0.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/google.maps": "^3.46.1",
+    "@types/node": "^16.11.6",
+    "@types/prop-types": "^15.7.4",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-intl": "2",
+    "@vtex/test-tools": "^3.4.3",
+    "enzyme": "^3.4.1",
+    "enzyme-adapter-react-16": "^1.2.0",
+    "i18n-iso-countries": "^3.5.0",
+    "jest-enzyme": "^6.0.3",
+    "mockdate": "^2.0.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-redux": "^5.0.7",
+    "react-test-renderer": "^16.12.0",
+    "redux": "^4.0.0",
+    "vtex.address-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.address-form@3.27.1/public/@types/vtex.address-form",
+    "vtex.country-codes": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.country-codes@1.1.2/public/_types/react",
+    "vtex.pickup-points-modal": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pickup-points-modal@3.7.2/public/@types/vtex.pickup-points-modal",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@7.45.0/public/@types/vtex.render-runtime",
+    "vtex.shipping-estimate-translator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shipping-estimate-translator@1.4.0/public/@types/vtex.shipping-estimate-translator"
+  }
+}

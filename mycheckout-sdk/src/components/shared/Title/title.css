@@ -1,0 +1,40 @@
+.titleContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.titleContainer .titleContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleContainer .titleIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0px 5px 0px 0px;
+}
+
+.titleContainer .titlePrimary {
+  align-items: center;
+  color: var(--primary-color-focus);
+  display: flex;
+  font-size: 16px;
+}
+
+.titleContainer .titleSecondary {
+  align-items: center;
+  color: var(--primary-text-color);
+  display: flex;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 992px) {
+  .titleContainer {
+    border-bottom: 1px solid var(--primary-color-focus);
+    padding-bottom: 4px;
+  }
+}

@@ -1,0 +1,5 @@
+module.exports = `
+.strike       { text-decoration: line-through; }
+.underline    { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+`

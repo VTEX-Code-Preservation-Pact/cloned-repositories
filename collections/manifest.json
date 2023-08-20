@@ -1,0 +1,43 @@
+{
+  "vendor": "vtex",
+  "name": "collections",
+  "version": "0.6.3",
+  "title": "Getting Started with VTEX Render",
+  "description": "A hello world app for VTEX Render",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "graphql": "1.x",
+    "node": "3.x",
+    "pages": "0.x",
+    "react": "2.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --public"
+  },
+  "dependencies": {
+    "vtex.store-graphql": "2.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercestable.com.br",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexcommercebeta.com.br",
+        "path": "/*"
+      }
+    }
+  ]
+}

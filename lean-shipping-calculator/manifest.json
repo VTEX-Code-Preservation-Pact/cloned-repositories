@@ -1,0 +1,19 @@
+{
+  "name": "lean-shipping-calculator",
+  "vendor": "vtex",
+  "version": "0.2.20",
+  "title": "Checkout's Lean Shipping Calculator",
+  "description": "Checkout's Lean Shipping Calculator",
+  "defaultLocale": "en",
+  "mustUpdateAt": "2019-01-08",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "dependencies": {},
+  "builders": {
+    "react": "2.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

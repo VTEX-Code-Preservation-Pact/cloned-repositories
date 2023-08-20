@@ -1,0 +1,18 @@
+<!-- Start Suiteshare -->
+<script>
+  (function (s,u,i,t,e) {
+      var siteId = "{{settings.siteId}}";
+      if (!siteId) {
+        console.error('Warning: No Suite Share site ID is defined. Please configure it in the apps admin.');
+        return
+      }
+
+      var share = s.createElement('script');
+      share.async = true;
+      share.id = 'suiteshare';
+      share.src = 'https://static.suiteshare.com/widgets.js';
+      share.setAttribute('init', siteId);
+      s.head.appendChild(share);
+  })( document, 'script');
+</script>
+<!-- End Suiteshare -->

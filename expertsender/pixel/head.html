@@ -1,0 +1,23 @@
+<script>
+  (function() {
+    var clickDomain = "{{settings.clickDomain}}";
+    var aid = "{{settings.aid}}";
+    var wid = "{{settings.wid}}";
+    if (!clickDomain || !aid || !wid) {
+      console.error('Warning: Missing required field for ExpertSender. Please configure it in the apps admin.');
+      return
+    }
+
+    window.adraker = {
+      aid: aid,
+      wid: wid,
+      clickDomain: clickDomain
+    };
+    (function () {
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true;
+      g.src = "//adraker-dev.azureedge.net/web.min.js?id=" + aid + "," + wid;
+      s.parentNode.insertBefore(g, s);
+    })();
+  })()
+</script>

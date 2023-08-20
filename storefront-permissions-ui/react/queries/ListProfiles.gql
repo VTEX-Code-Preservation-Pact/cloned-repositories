@@ -1,0 +1,11 @@
+query ListProfiles {
+  listProfiles @context(provider: "vtex.storefront-permissions") {
+    id
+    name
+    features {
+      module
+      features
+    }
+    roleId
+  }
+}

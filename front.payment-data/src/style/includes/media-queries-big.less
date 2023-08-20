@@ -1,0 +1,198 @@
+@media (min-width: 620px) {
+
+// payment form
+// -----------------------------------------------
+.payment-form-wrapper {
+	// overflow: hidden;
+	padding: 15px;
+	position: relative;
+	z-index: 99;
+}
+.payment-form-wrapper-many-payments { padding-top: 5px; }
+
+// elements to hide
+// -----------------------------------------------
+.payment-methods-condensed,
+.payment-card-number-label,
+.payment-card-name-label { display: none; }
+
+// description
+// -----------------------------------------------
+.payment-method-description { margin-right: 100px; }
+
+// skeuocard
+// -----------------------------------------------
+.skeuocard-wrapper { position: relative; }
+
+.skeuocard {
+	background: #e8e8e8 url('../img/skeuocard.jpg');
+	border-radius: 10px;
+	box-sizing: border-box;
+	.box-shadow;
+
+	span.error { font-size: 11px; }
+}
+
+// skeuocard frontside
+// -----------------------------------------------
+.skeuocard-frontside {
+	height: 180px;
+	padding: 10px 20px;
+	margin-bottom: 15px;
+	position: relative;
+	width: 330px;
+	z-index: 2;
+}
+
+// skeuocard backside
+// -----------------------------------------------
+.skeuocard-backside {
+	height: 105px;
+	top: 35px;
+	margin-left: 320px;
+	position: absolute;
+	width: 195px;
+	.payment-card-cvv-input { font-style: italic; }
+	&:after {
+		content: '';
+		background: #ccc;
+		display: block;
+		height: 20px;
+		position: absolute;
+		width: 100%;
+		top: 8px;
+	}
+}
+
+// skeuocard flag
+// -----------------------------------------------
+.skeuocard-flag {
+	bottom: 27px;
+	display: none;
+	position: absolute;
+	right: 34px;
+}
+
+// skeuocard bigger (amex)
+// -----------------------------------------------
+.skeuocard-bigger {
+	height: 210px;
+	width: 360px;
+	.payment-card-number { top: 70px; }
+	.payment-card-name { top: 155px; }
+	.payment-card-due-date { top: 115px; }
+	.skeuocard-flag { right: 28px; }
+}
+
+// fields absolute positioning
+// -----------------------------------------------
+.payment-card-number,
+.payment-card-due-date,
+.payment-card-name,
+.payment-card-empty-cvv { position: absolute; }
+
+// transitions
+// -----------------------------------------------
+.skeuocard-frontside,
+.skeuocard-backside,
+.payment-card-complementary-fields,
+.payment-card-name,
+.payment-card-due-date,
+.payment-card-number,
+.payment-card-cvv,
+.payment-card-cvv-label,
+input.payment-card-cvv-input { .transition; }
+
+// number
+// -----------------------------------------------
+.payment-card-number { top: 40px; }
+
+// name
+// -----------------------------------------------
+.payment-card-name { top: 125px; }
+
+// due date
+// -----------------------------------------------
+.payment-card-due-date {
+	left: 130px;
+	top: 85px;
+	label { width: 40px; }
+	input { width: 28px; }
+}
+.payment-card-due-date-month-input-wrapper {
+	span.error {
+		margin-top: 3px;
+		margin-left: -33px;
+		position: absolute;
+		text-align: right;
+	}
+}
+
+// due date and cvv special style
+// -----------------------------------------------
+.payment-card-due-date-label,
+.payment-card-empty-cvv .payment-card-cvv-label {
+	float: left;
+	font-size: 11px;
+	line-height: 1.2;
+	margin-right: 6px;
+	margin-top: 2px;
+	text-align: right;
+}
+
+// cvv
+// -----------------------------------------------
+.payment-card-empty-cvv {
+	width: 140px;
+	z-index: 9;
+	span.error { margin-left: 67px; }
+}
+.payment-card-cvv-frontside {
+	top: 35px;
+	right: 10px;
+}
+.payment-card-cvv-backside {
+	top: 68px;
+	right: -180px;
+	.payment-card-cvv-label { margin-top: 6px; }
+	.payment-card-cvv-input {
+		font-size: 18px;
+		height: 27px;
+		line-height: 1.2;
+	}
+}
+.payment-card-empty-cvv .payment-card-cvv-label { width: 60px; }
+
+// error special style
+// -----------------------------------------------
+.payment-card-due-date-month-input-wrapper,
+.payment-card-cvv-frontside {
+	span.error {
+		background: #e8e8e8;
+		padding: 2px;
+		z-index: 7;
+	}
+}
+
+// placeholder special style
+// -----------------------------------------------
+.payment-card-number,
+.payment-card-due-date,
+.payment-card-name {
+	::-webkit-input-placeholder { color: #cbcbcb; }
+	:-moz-placeholder { color: #e8e8e8; }
+	::-moz-placeholder { color: #e8e8e8; }
+	:-ms-input-placeholder { color: #e8e8e8; }
+	input {
+		font-family: "ocraregular", "OCR A Std", "OCR A", Courier, "Courier New", monospace;
+		text-transform: uppercase;
+	}
+}
+
+// card brand selector and installments selector
+// -----------------------------------------------
+.payment-card-complementary-fields-small {
+	display: none;
+}
+
+}

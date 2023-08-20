@@ -1,0 +1,45 @@
+{
+  "store.search#brand": {
+    "blocks": ["search-result"]
+  },
+  "store.search#department": {
+    "blocks": ["search-result"]
+  },
+  "store.search#category": {
+    "blocks": ["search-result"]
+  },
+  "store.search#subcategory": {
+    "blocks": ["search-result"]
+  },
+  "store.search#subcategory-terms": {
+    "blocks": ["search-result"]
+  },
+  "store.search#custom": {
+    "blocks": ["search-result"]
+  },
+  "store.search#configurable": {
+    "blocks": ["search-result"]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  },
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+  "store.custom": {
+    "parent": {
+      "header": "header.full"
+    }
+  },
+  "store.offline": {
+    "blocks": ["offline-warning"]
+  }
+}

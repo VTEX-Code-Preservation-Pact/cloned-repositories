@@ -1,0 +1,7 @@
+type Products {
+  sku: String
+  quantity: Int
+  price: Float
+  category: String
+  subcategory: String
+}

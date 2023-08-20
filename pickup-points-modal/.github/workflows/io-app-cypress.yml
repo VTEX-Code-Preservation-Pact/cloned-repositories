@@ -1,0 +1,44 @@
+name: IO App Cypress
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    types:
+    - opened
+    - synchronize
+
+jobs:
+  setup-accounts:
+    runs-on: ubuntu-latest
+
+    outputs:
+      accounts: ${{ steps.get-accounts.outputs.accounts }}
+
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        repository: vtex/checkout-ui-tests
+    - id: get-accounts
+      name: Get accounts.json
+      run: |
+        {
+          accounts=$(cat ./accounts.json)
+          echo "accounts<<EOF"
+          echo $accounts
+          echo "EOF"
+        } >> $GITHUB_OUTPUT
+      shell: bash
+
+  Cypress:
+    needs: setup-accounts
+    uses: vtex/action-io-app-cypress/.github/workflows/cypress.yml@v1
+    with:
+      accounts: ${{ needs.setup-accounts.outputs.accounts }}
+      tests-repository: vtex/checkout-ui-tests
+      parallel: true
+      containers: 30
+    secrets:
+      app-key: ${{ secrets.APP_KEY }}
+      app-token: ${{ secrets.APP_TOKEN }}
+      record-key: ${{ secrets.RECORD_KEY }}

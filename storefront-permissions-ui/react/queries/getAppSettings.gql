@@ -1,0 +1,5 @@
+query GetAppSettings {
+  getAppSettings @context(provider: "vtex.storefront-permissions") {
+    adminSetup
+  }
+}

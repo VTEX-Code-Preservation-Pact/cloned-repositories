@@ -1,0 +1,71 @@
+{
+  "admin.app.cms": {
+    "around": ["wrapper"]
+  },
+  "admin.app.cms.pages": {
+    "around": ["pages-wrapper"]
+  },
+  "admin.app.cms.pages.page-list": {
+    "component": "PageListWrapper",
+    "path": "/admin/app/cms/pages"
+  },
+  "admin.app.cms.pages.page-details": {
+    "component": "PageFormWrapper",
+    "path": "/admin/app/cms/pages/*id"
+  },
+  "admin.app.cms.pages.redirects": {
+    "component": "RedirectListWrapper",
+    "path": "/admin/app/cms/redirects"
+  },
+  "admin.app.cms.pages.redirect-details": {
+    "component": "RedirectForm",
+    "path": "/admin/app/cms/redirects/*path"
+  },
+  "admin.app.cms.content": {
+    "component": "InstitutionalPageList",
+    "path": "/admin/app/cms/content"
+  },
+  "admin.app.cms.content-details": {
+    "component": "InstitutionalPageForm",
+    "path": "/admin/app/cms/content/*id"
+  },
+  "admin.app.cms.site-editor-home": {
+    "component": "PageEditor",
+    "path": "/admin/app/cms/site-editor"
+  },
+  "admin.app.cms.site-editor": {
+    "component": "PageEditor",
+    "path": "/admin/app/cms/site-editor/*targetPath"
+  },
+  "admin.app.cms.storefront-home": {
+    "component": "PageEditor",
+    "path": "/admin/app/cms/storefront"
+  },
+  "admin.app.cms.storefront": {
+    "component": "PageEditor",
+    "path": "/admin/app/cms/storefront/*targetPath"
+  },
+  "admin.app.cms.styles": {
+    "component": "PageEditor",
+    "path": "/admin/app/cms/styles"
+  },
+  "admin.app.cms.store": {
+    "component": "StoreSettings",
+    "path": "/admin/app/cms/store"
+  },
+  "highlight-overlay.cms": {
+    "component": "HighlightOverlay",
+    "extensible": "vtex",
+    "render": "lazy"
+  },
+  "pages-wrapper": {
+    "component": "PagesAdminWrapper"
+  },
+  "wrapper": {
+    "component": "Wrapper"
+  },
+  "admin.app.cms.media-gallery": {
+    "component": "MediaGalleryWidget",
+    "path": "/admin/app/cms/media-gallery-widget"
+  }
+}

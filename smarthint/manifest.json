@@ -1,0 +1,26 @@
+{
+  "name": "smarthint",
+  "vendor": "vtex",
+  "version": "0.0.6",
+  "description": "Smarthint App",
+  "builders": {
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "credentialType": "absolute",
+  "settingsSchema": {
+    "title": "Smarthint Options",
+    "type": "object",
+    "properties": {
+      "smarthintkey": {
+        "title": "Smarthint Key",
+        "description": "Enter your Smarthint Key Ex.: SH-XXXXXX",
+        "type": "string"
+      }
+    }
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

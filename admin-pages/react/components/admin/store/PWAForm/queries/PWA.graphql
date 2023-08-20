@@ -1,0 +1,40 @@
+query PWA {
+  # Manifest
+  manifest {
+    start_url
+    theme_color
+    background_color
+    display
+    orientation
+    icons {
+      src
+      type
+      sizes
+    }
+  }
+  iOSIcons {
+    src
+    type
+    sizes
+  }
+  splashes {
+    src
+    type
+    sizes
+  }
+  pwaSettings {
+    disablePrompt
+    promptOnCustomEvent
+  }
+
+  # Styles
+  selectedStyle {
+    config {
+      semanticColors {
+        background {
+          base
+        }
+      }
+    }
+  }
+}

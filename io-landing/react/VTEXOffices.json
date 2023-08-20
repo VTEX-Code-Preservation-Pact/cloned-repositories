@@ -1,0 +1,110 @@
+{
+  "Offices": [
+    {
+      "short": "Barcelona",
+      "address1": "Carrer de Provença, 339",
+      "address2": "08037",
+      "city": "Barcelona, Spain"
+    },
+    {
+      "short": "Bogotá",
+      "address1": "Carrera 19 # 100-45, Oficina 14w-106",
+      "address2": "110121",
+      "city": "Bogotá, Colombia"
+    },
+    {
+      "short": "Bucharest",
+      "address1": "6, Iuliu Maniu Boulevard",
+      "address2": "Campus 6 Building 6.1, floor 1",
+      "address3": "011886",
+      "city": "Bucharest, Romania"
+    },
+    {
+      "short": "Buenos Aires",
+      "address1": "Av. Chiclana, 3578",
+      "address2": "4 andar, Distrito Tecnológico",
+      "address3": "CABA C1260ACP",
+      "city": "Buenos Aires, Argentina"
+    },
+    {
+      "short": "Ciudad de México",
+      "address1": "Blvd. Miguel De Cervantes Saavedra 169 Granada",
+      "address2": "11520, Miguel Hidalgo",
+      "city": "Ciudad de México, Mexico"
+    },
+    {
+      "short": "Curitiba",
+      "address1": "R. Prefeito Ângelo Lopes, 1528",
+      "address2": "Hugo Lange",
+      "address3": "PR 82590-300",
+      "city": "Curitiba, Brazil"
+    },
+    {
+      "short": "Fort Lauderdale",
+      "address1": "501 East Las Olas Blv",
+      "address2": "Suite 300",
+      "address3": "FL 33301",
+      "city": "Fort Lauderdale, USA"
+    },
+    {
+      "short": "João Pessoa",
+      "address1": "R. Antônio Rabelo Júnior, 161",
+      "address2": "25 andar, Jardim Rosas",
+      "address3": "PB 58032-090",
+      "city": "João Pessoa, Brazil"
+    },
+    {
+      "short": "London",
+      "address1": "Aviation House, 125 Kingsway",
+      "address2": "Holborn",
+      "address3": "WC2B 6NH",
+      "city": "London, United Kingdom"
+    },
+    {
+      "short": "Medellín",
+      "address1": "Edificio Ofi7 La Francia",
+      "address2": "Carrera 42 #5 Sur-145, Antioquia",
+      "city": "Medellín, Colombia"
+    },
+    {
+      "short": "Milan",
+      "address1": "Via Copernico, 28A",
+      "city": "Milan, Italy"
+    },
+    {
+      "short": "New York",
+      "address1": "12 E 49th St",
+      "address2": "Midtown Manhattan",
+      "address3": "NY 10017",
+      "city": "New York, USA"
+    },
+    {
+      "short": "Rio de Janeiro",
+      "address1": "Praia de Botafogo, 300",
+      "address2": "2 andar, Botafogo",
+      "address3": "RJ 22250-040",
+      "city": "Rio de Janeiro, Brazil"
+    },
+    {
+      "short": "Santiago de Chile",
+      "address1": "Av. Apoquindo 5950",
+      "address2": "Piso 3, Oficina 124, Las Condes",
+      "address3": "Región Metropolitana 7560949",
+      "city": "Santiago de Chile, Chile"
+    },
+    {
+      "short": "São Paulo",
+      "address1": "Av. Brigadeiro Faria Lima, 4440",
+      "address2": "10 andar, Itaim Bibi",
+      "address3": "SP 04538-132",
+      "city": "São Paulo, Brazil"
+    },
+    {
+      "short": "Teresópolis",
+      "address1": "R. Antônio Rabelo Júnior, 161",
+      "address2": "Sala 604, Várzea",
+      "address3": "RJ 25963-081",
+      "city": "Teresópolis, Brazil"
+    }
+  ]
+}

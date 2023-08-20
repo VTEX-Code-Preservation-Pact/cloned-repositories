@@ -1,0 +1,6 @@
+{
+  "admin.app": {
+    "component": "ABTest",
+    "path": "/admin/app/ab-test"
+  }
+}

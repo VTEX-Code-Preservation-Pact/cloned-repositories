@@ -1,0 +1,14 @@
+<script>
+  (function () {
+    const site_hash = "S_02dcfa878e0b3769d05a918a29d10ab1";
+    const domain = "pleisty.com"
+    const ldr = document.createElement('script');
+    ldr.type = 'text/javascript';
+    ldr.async = true;
+    ldr.src = document.location.protocol + '//tr-' +
+      site_hash.substr(2) + '.' + domain + '/tracker/load/' +
+      site_hash + '/tracker.js?_=' + (+new Date);
+    const s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ldr, s);
+  })();
+</script>

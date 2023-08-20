@@ -1,0 +1,62 @@
+{
+  "product-details.customizer": {
+    "allowed": ["product-details"],
+    "required": [
+      "product-name",
+      "product-images",
+      "product-price",
+      "product-description",
+      "buy-button",
+      "sku-selector",
+      "shipping-simulator",
+      "availability-subscriber",
+      "product-specifications"
+    ],
+    "component": "index"
+  },
+  "product-assembly-options": {
+    "component": "ProductAssemblyOptions",
+    "composition": "children",
+    "allowed": [
+      "flex-layout",
+      "assembly-option-input-values",
+      "assembly-option-item-image",
+      "assembly-option-item-quantity-selector",
+      "assembly-option-item-name",
+      "assembly-option-item-price",
+      "assembly-option-item-customize",
+      "assembly-option-item-children-description"
+    ]
+  },
+  "assembly-option-item-image": {
+    "component": "ProductAssemblyOptionItemImage"
+  },
+  "assembly-option-item-quantity-selector": {
+    "component": "ProductAssemblyOptionItemQuantity"
+  },
+  "assembly-option-item-name": {
+    "component": "ProductAssemblyOptionItemName"
+  },
+  "assembly-option-item-price": {
+    "component": "ProductAssemblyOptionItemPrice"
+  },
+  "assembly-option-item-customize": {
+    "component": "ProductAssemblyOptionItemCustomize",
+    "composition": "children",
+    "allowed": [
+      "flex-layout",
+      "assembly-option-item-image",
+      "assembly-option-item-quantity-selector",
+      "assembly-option-item-name",
+      "assembly-option-item-price",
+      "assembly-option-item-customize",
+      "assembly-option-item-children-description"
+    ]
+  },
+  "assembly-option-item-children-description": {
+    "component": "ProductAssemblyOptionItemChildrenDescription"
+  },
+  "assembly-option-input-values": {
+    "component": "ProductAssemblyOptionInputValues"
+  }
+}

@@ -1,0 +1,48 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Backend Service CI
+
+on:
+  workflow_call:
+    inputs:
+      APP_VERSION_INCREMENT_TYPE:
+        type: string
+        required: true
+      APP_VERSION_VISIBILITY:
+        type: string
+        required: true
+      WORK_DIR:
+        type: string
+        required: true
+
+jobs:
+  test:
+    name: lint, test, and build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+
+      - name: Get app metadata
+        id: app-metadata
+        uses: vtex/app-metadata-action@main
+
+      - run: yarn
+        working-directory: ${{ inputs.WORK_DIR }}
+
+      - run: yarn run lint
+        working-directory: ${{ inputs.WORK_DIR }}
+
+      - run: yarn run test
+        working-directory: ${{ inputs.WORK_DIR }}
+        env:
+          VTEX_APP_ID: ${{ steps.app-metadata.outputs.app-id }}
+
+      - run: yarn run build
+        working-directory: ${{ inputs.WORK_DIR }}

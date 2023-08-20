@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": [
+      "es6",
+      "dom",
+      "es2018.intl"
+    ],
+    "paths": {
+      "intl-messageformat-parser": [
+        "../intl-messageformat-parser"
+      ]
+    },
+    "sourceMap": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/*.ts"
+  ]
+}

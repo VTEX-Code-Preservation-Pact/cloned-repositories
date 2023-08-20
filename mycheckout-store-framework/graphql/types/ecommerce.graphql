@@ -1,0 +1,7 @@
+type Ecommerce {
+  event: String
+  userEmail: String
+  account: String
+  products: [Products]
+  product: Products
+}

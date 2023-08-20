@@ -1,0 +1,73 @@
+{
+  "name": "tachyonator",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "",
+  "author": "Christian Kaisermann <christian@kaisermann.me>",
+  "repository": "https://github.com/kaisermann/tachyonator",
+  "keywords": [],
+  "engines": {
+    "node": ">= 7.6.0"
+  },
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist/ && npm run lint",
+    "build": "tsc",
+    "dev": "tsc -w",
+    "test": "jest",
+    "test:ci": "jest --silent --no-cache",
+    "lint": "eslint . --ext ts",
+    "format": "prettier --loglevel silent --write \"src/**/*.ts\" && eslint --fix \"src/**/*.ts\"",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1 && git add CHANGELOG.md",
+    "tag": "git tag -a v$npm_package_version -m 'Release v$npm_package_version'",
+    "release": "npm run version && yarn && git add package.json yarn.lock && git commit -m \"chore(release): v$npm_package_version :tada:\"",
+    "minify": "babel-minify dist -d dist",
+    "prepublishOnly": "npm run test && npm run build && npm run minify && npm run release && npm run tag"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*.ts"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "'pre-commit'": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.1",
+    "@types/node": "^13.7.0",
+    "@types/stylus": "^0.48.32",
+    "babel-minify": "^0.5.1",
+    "conventional-changelog-cli": "^2.0.31",
+    "eslint": "^6.8.0",
+    "eslint-config-kaisermann": "0.1.0",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.1.0",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "mqify": "^1.0.0"
+  }
+}

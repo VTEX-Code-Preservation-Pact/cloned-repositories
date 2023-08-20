@@ -1,0 +1,25 @@
+{
+  "stack": "dotnet",
+  "memory": 256,
+  "runtimeArgs": [
+  ],
+  "routes": {
+    "notify": {
+      "path": "/notify",
+      "public": false,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [
+            "post"
+          ],
+          "principals": [
+            "vrn:apps:*:{{account}}:{{workspace}}:app/vtex.carrier-notifier@*",
+            "vrn:vtex.vtex-id:*:{{account}}:*:user/*@vtex.com.br"
+          ]
+        }
+      ]
+    }
+  }
+}

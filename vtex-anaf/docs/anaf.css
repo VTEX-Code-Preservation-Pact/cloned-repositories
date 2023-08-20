@@ -1,0 +1,28 @@
+.corporate-info-box p.client-company-document {
+    position: relative;
+}
+
+.corporate-info-box p.client-company-document .getCompanyInfo {
+    position: absolute;
+    height: 44px;
+    right: 0;
+    top: 20px;
+    background: #b3f498;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 9;
+}
+
+.cuiError {
+    font-weight: 600;
+    color: #cc0000;
+}
+
+.corporate-info-box {
+    flex-direction: column;
+}
+
+.corporate-info-box .client-company-document {
+    order: -1;
+}

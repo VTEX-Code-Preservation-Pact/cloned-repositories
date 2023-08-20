@@ -1,0 +1,47 @@
+type Query {
+  conversionReport(startDate: String, endDate: String): ConversionReport
+  merchantDefinedFields: [String]
+  getAppSettings: AppSettings
+}
+
+type Mutation {
+  initConfiguration: String @cacheControl(scope: PRIVATE)
+  removeConfiguration: String @cacheControl(scope: PRIVATE)
+  payerAuthorize(paymentId: String): String @cacheControl(scope: PRIVATE)
+}
+
+type ConversionReport {
+  conversionDetails: [ConversionDetail]
+}
+
+type ConversionDetail {
+  conversionTime: String
+  merchantReferenceNumber: String
+  newDecision: String
+  originalDecision: String
+  reviewer: String
+  reviewerComments: String
+}
+
+type AppSettings {
+  isLive: Boolean
+  merchantId: String
+  merchantKey: String
+  sharedSecretKey: String
+  processor: String
+  region: String
+  orderSuffix: String
+  customNsu: String
+  enableTax: Boolean
+  enableTransactionPosting: Boolean
+  salesChannelExclude: String
+  shippingProductCode: String
+  nexusRegions: String
+  merchantDictionary: [MerchantDefinedValueSetting]
+}
+
+type MerchantDefinedValueSetting {
+  userInput: String
+  goodPortion: String
+  isValid: Boolean
+}

@@ -1,0 +1,36 @@
+input AffiliateOrdersFilterInput {
+  affiliateId: [String]
+  dateRange: DateRange
+  status: String
+}
+
+input DateRange {
+  startDate: String!
+  endDate: String!
+}
+
+input Affiliate {
+  id: ID
+  name: String
+  email: String
+}
+
+input AffiliateOrdersSortingInput {
+  field: AffiliateOrdersSortingField!
+  order: SortingOrder!
+}
+
+enum AffiliateOrdersSortingField {
+  orderDate
+  orderTotal
+  orderTotalCommission
+}
+
+enum StatusType {
+  ORDER_CREATED
+  PAYMENT_APPROVED
+  PAYMENT_PENDING
+  INVOICED
+  CANCEL
+  ONGOING
+}

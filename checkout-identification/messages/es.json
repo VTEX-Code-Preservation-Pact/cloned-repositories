@@ -1,0 +1,10 @@
+{
+  "store/checkout-identification-back-to-store-label": "Volver a la Tienda",
+  "store/checkout-identification-email-label": "Correo electrónico",
+  "store/checkout-identification-continue-button-label": "Continuar",
+  "store/checkout-identification-benefits-label": "Tu podrás",
+  "store/checkout-identification-saved-addresses-message": "Usa direcciones y tarjetas guardadas",
+  "store/checkout-identification-gift-cards-message": "Aplica tus cupones guardados",
+  "store/checkout-identification-order-updates-message": "Reciba actualizaciones para su pedido",
+  "store/checkout-identification-invalid-email": "El correo electrónico no es válido"
+}

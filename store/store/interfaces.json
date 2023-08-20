@@ -1,0 +1,126 @@
+{
+  "store": {
+    "allowConditions": true,
+    "component": "*",
+    "around": ["storeWrapper", "challenge"],
+    "before": ["header.full"],
+    "after": ["footer", "pixels"],
+    "preview": {
+      "type": "transparent",
+      "height": 600
+    }
+  },
+  "store.home": {
+    "around": ["homeWrapper"],
+    "preview": {
+      "type": "box",
+      "height": 1400
+    }
+  },
+  "store.product": {
+    "around": ["productWrapper"],
+    "before": ["header.full"],
+    "context": "ProductContext",
+    "preview": {
+      "type": "box",
+      "height": 800
+    }
+  },
+  "store.search": {
+    "around": ["searchWrapper"],
+    "context": "SearchContext",
+    "preview": {
+      "type": "grid",
+      "height": 1400
+    }
+  },
+  "store.account": {
+    "required": ["my-account"],
+    "around": ["challenge.profile"],
+    "preview": {
+      "type": "text",
+      "height": 800
+    }
+  },
+  "store.login": {
+    "required": ["login-content"],
+    "preview": {
+      "type": "spinner",
+      "height": 600
+    }
+  },
+  "store.orderplaced": {
+    "preview": {
+      "type": "spinner",
+      "height": 600
+    }
+  },
+  "store.product-review-form": {
+    "preview": {
+      "type": "spinner",
+      "height": 800
+    }
+  },
+  "store.blog-home": {
+    "before": ["header.full"]
+  },
+  "store.blog-category": {
+    "before": ["header.full"],
+    "required": ["blog-category-list"]
+  },
+  "store.blog-post": {
+    "before": ["header.full"],
+    "required": ["blog-post-details"]
+  },
+  "store.blog-search-result": {
+    "before": ["header.full"],
+    "required": ["blog-search-list"]
+  },
+  "store.not-found": {
+    "preview": {
+      "type": "box",
+      "height": 800
+    }
+  },
+  "storeWrapper": {
+    "allowed": ["highlight-overlay"],
+    "component": "StoreWrapper"
+  },
+  "homeWrapper": {
+    "component": "HomeWrapper"
+  },
+  "productWrapper": {
+    "component": "ProductWrapper"
+  },
+  "searchWrapper": {
+    "component": "SearchWrapper"
+  },
+  "challenge": {
+    "component": "DefaultChallenge",
+    "extensible": "public"
+  },
+  "highlight-overlay": {
+    "component": "*",
+    "extensible": "vtex"
+  },
+  "challenge.profile": {
+    "component": "ProfileChallenge"
+  },
+  "promo-bar": {
+    "component": "*"
+  },
+  "store.custom": {},
+  "store.content": {
+    "context": "ContentPageContext"
+  },
+  "store.offline": {
+    "required": ["offline-warning"]
+  },
+  "__fold__": {
+    "component": "Fold"
+  },
+  "__fold__.mobile": {},
+  "__fold__.desktop": {},
+  "__fold__.experimentalLazyImages": {},
+  "__fold__.experimentalLazyAssets": {}
+}

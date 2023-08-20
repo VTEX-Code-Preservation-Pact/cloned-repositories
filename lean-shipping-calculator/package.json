@@ -1,0 +1,29 @@
+{
+  "name": "lean-shipping-calculator",
+  "version": "0.2.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "yarn --cwd react test",
+    "lint": "eslint --ext js,ts,jsx,tsx ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn run lint && yarn run test"
+    }
+  },
+  "devDependencies": {
+    "@vtex/prettier-config": "^1.0.0",
+    "@vtex/tsconfig": "^0.6.0",
+    "babel-eslint": "^8.2.2",
+    "eslint": "^8.24.0",
+    "eslint-config-vtex": "^15.0.1",
+    "eslint-config-vtex-react": "^9.0.1",
+    "husky": "^1.2.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}

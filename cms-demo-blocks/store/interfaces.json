@@ -1,0 +1,20 @@
+{
+  "custom-carousel": {
+    "component": "Carousel",
+    "content": {
+      "$ref": "#/definitions/Carousel"
+    }
+  },
+  "custom-shelf": {
+    "component": "Shelf",
+    "content": {
+      "$ref": "#/definitions/Shelf"
+    }
+  },
+  "custom-banners": {
+    "component": "Banners",
+    "content": {
+      "$ref": "#/definitions/Banners"
+    }
+  }
+}

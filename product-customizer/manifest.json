@@ -1,0 +1,28 @@
+{
+  "name": "product-customizer",
+  "vendor": "vtex",
+  "version": "2.12.2",
+  "title": "Product Customizer",
+  "description": "",
+  "mustUpdateAt": "2019-09-27",
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.store-components": "3.x",
+    "vtex.product-details": "1.x",
+    "vtex.product-context": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.native-types": "0.x"
+  },
+  "builders": {
+    "store": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,11 @@
+<script>
+  ;(function () {
+    var accountId = '{{settings.accountId}}'
+    if (!accountId) {
+      console.error(
+        'Warning: No BrightEdge Account Id is defined. Please configure it in the apps admin.'
+      )
+      return
+    }
+  })()
+</script>

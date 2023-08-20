@@ -1,0 +1,50 @@
+.container :global(.vtex-button) {
+  border: 1px solid var(--fresh-blue-dark);
+  border-radius: 4px;
+  min-height: 3rem;
+}
+
+.container :global(.vtex-button__label) {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.label {
+  display: block;
+  color: var(--fresh-blue);
+  text-transform: initial;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 0;
+}
+
+.profile {
+  color: inherit;
+}
+
+.sendButton :global(.vtex-button) {
+  background: #214d8e;
+  border: none;
+}
+
+@media (max-width: 64rem) {
+  .profile {
+    display: block;
+  }
+
+  .label {
+    font-size: 14px;
+    line-height: 32px;
+    font-weight: 500;
+  }
+}
+
+.buttonLink :global(.vtex-button) {
+  border-color: var(--fresh-blue-dark);
+  min-height: 2rem;
+}
+
+.buttonLink :global(.vtex-button__label) {
+  padding-left: 1.25rem;
+  padding-right: 1rem;
+}

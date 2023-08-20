@@ -1,0 +1,17 @@
+{
+  "name": "Iubenda",
+  "headline": "Soluções de implementação fácil para tornar seu site compatível com a lei em vários países e legislações.",
+  "overview": "Gere facilmente um banner de cookie totalmente personalizável, obtenha o consentimento e implemente o bloqueio prévio com a reativação assíncrona.",
+  "features": [
+    "Crie sua política de privacidade e cookies em minutos",
+    "Gerencie preferências de consentimento para ePrivacy, GDPR e CCPA. Integrado ao IAB TCF e US Privacy Framework",
+    "Crie seus termos e condições em minutos",
+    "Colete o consentimento do GDPR, aceite documentos e desative o CCPA por meio de seus formulários da web",
+    "Documente toda a atividade de processamento de dados na sua organização"
+  ],
+  "additionalInformation": "Para utilizar o serviço é preciso ter uma conta Iubenda ativa. Algumas funcionalidades só estão disponíveis para planos específicos.",
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

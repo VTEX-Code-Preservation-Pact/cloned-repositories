@@ -1,0 +1,1941 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCustomizer components  render with no variations and press on Small SKU 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-ns pv6-ns justify-center-ns"
+  >
+    <div
+      class="w-100 w-third-ns flex tc items-center-ns h-100-ns ph2-ns"
+    >
+      <img
+        alt="Suprema"
+        class="vtex-product-customizer__image"
+        src="https://delivery.vteximg.com.br/arquivos/ids/155442/super-supreme.e34cdf7984831c25c4eda14a2d361a20.1.jpg?v=636770452538570000"
+      />
+    </div>
+    <div
+      class="w-40-ns ph2-ns"
+    >
+      <div
+        class="t-heading-4 c-on-base ph5 pt5-s"
+      >
+        Super Suprema
+      </div>
+      <div
+        class="ph5 pt4 pb2 pb4-ns"
+      />
+      <div
+        class="ph5 pb4 c-muted-2 t-small"
+      >
+        Pick one size
+      </div>
+      <div
+        class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Small
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Medium
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Large
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div />
+      <div
+        class="vtex-product-customizer__actions w-100"
+      />
+      <div
+        class="vtex-product-customizer__actions z-2 fixed bg-white bottom-0 w-40-ns ph1-ns w-100 bt b--light-gray"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProductCustomizer components  render with no variations and press on Small SKU 2`] = `
+<DocumentFragment>
+  <div
+    class="flex-ns pv6-ns justify-center-ns"
+  >
+    <div
+      class="w-100 w-third-ns flex tc items-center-ns h-100-ns ph2-ns"
+    >
+      <img
+        alt="Suprema"
+        class="vtex-product-customizer__image"
+        src="https://delivery.vteximg.com.br/arquivos/ids/155442/super-supreme.e34cdf7984831c25c4eda14a2d361a20.1.jpg?v=636770452538570000"
+      />
+    </div>
+    <div
+      class="w-40-ns ph2-ns"
+    >
+      <div
+        class="t-heading-4 c-on-base ph5 pt5-s"
+      >
+        Super Suprema
+      </div>
+      <div
+        class="ph5 pt4 pb2 pb4-ns"
+      >
+        <div>
+          ProductPrice
+        </div>
+      </div>
+      <div
+        class="ph5 pb4 c-muted-2 t-small"
+      >
+        Pick one size
+      </div>
+      <div
+        class="selected bg-muted-5 hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Small
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--action-primary pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(1); transition: transform 80ms ease-out;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Medium
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+        role="button"
+        tabindex="0"
+      >
+        <div
+          class="relative flex items-center justify-between pv5"
+        >
+          <div
+            class="flex"
+          >
+            <div />
+            <div
+              class="multiple-choice__title flex flex-column justify-center"
+            >
+              <div
+                class="multiple-choice__name t-heading-5 c-on-base"
+              >
+                Large
+              </div>
+              <div
+                class="single-choice__description"
+              >
+                <div
+                  class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                >
+                  <div>
+                    ProductPrice
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mt3"
+          >
+            <div
+              class="vtex-radio flex items-start relative pointer mb3"
+            >
+              <div
+                class="vtex-radio__fakeRadioContainer"
+              >
+                <div
+                  class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                  style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                    style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                  />
+                </div>
+              </div>
+              <input
+                class="vtex-radio__input absolute o-0 pointer"
+                id=""
+                name=""
+                style="height: 1.5rem; width: 1.5rem;"
+                type="radio"
+                value=""
+              />
+              <label
+                class="vtex-radio__label c-on-base pointer flex flex-auto"
+                for=""
+                style="word-break: break-word;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div
+          class=""
+        >
+          <div
+            class="ph5 pv4 c-muted-2 t-small"
+          >
+            Pick one crust
+          </div>
+          <div
+            class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="relative flex items-center justify-between pv5"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155411/cheesy-bites.png?v=636759865607400000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Cheesy Bites
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt3"
+              >
+                <div
+                  class="vtex-radio flex items-start relative pointer mb3"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioContainer"
+                  >
+                    <div
+                      class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                      style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                    >
+                      <div
+                        class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                        style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                      />
+                    </div>
+                  </div>
+                  <input
+                    class="vtex-radio__input absolute o-0 pointer"
+                    id=""
+                    name=""
+                    style="height: 1.5rem; width: 1.5rem;"
+                    type="radio"
+                    value=""
+                  />
+                  <label
+                    class="vtex-radio__label c-on-base pointer flex flex-auto"
+                    for=""
+                    style="word-break: break-word;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="relative flex items-center justify-between pv5"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155412/stuffed-crust.png?v=636759865852770000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Stuffed Crust
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="single-choice__price flex t-small fw5 c-action-primary mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="mt3"
+              >
+                <div
+                  class="vtex-radio flex items-start relative pointer mb3"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioContainer"
+                  >
+                    <div
+                      class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                      style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                    >
+                      <div
+                        class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                        style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                      />
+                    </div>
+                  </div>
+                  <input
+                    class="vtex-radio__input absolute o-0 pointer"
+                    id=""
+                    name=""
+                    style="height: 1.5rem; width: 1.5rem;"
+                    type="radio"
+                    value=""
+                  />
+                  <label
+                    class="vtex-radio__label c-on-base pointer flex flex-auto"
+                    for=""
+                    style="word-break: break-word;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="false hover-bg-muted-5 ph4 pointer bb b--muted-5 bw1"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="relative flex items-center justify-between pv5"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155413/classic.png?v=636759866429100000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Classic Crust
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  />
+                </div>
+              </div>
+              <div
+                class="mt3"
+              >
+                <div
+                  class="vtex-radio flex items-start relative pointer mb3"
+                >
+                  <div
+                    class="vtex-radio__fakeRadioContainer"
+                  >
+                    <div
+                      class="vtex-radio__fakeRadio fake-radio relative ba br-100 mr3 flex justify-center items-center b--muted-4 pointer"
+                      style="border-width: 3px; height: 1.25rem; width: 1.25rem; transition: border 100ms ease-in-out;"
+                    >
+                      <div
+                        class="vtex-radio__fakeRadioInner br-100 bg-action-primary"
+                        style="height: 0.5rem; width: 0.5rem; transform: scale(0); transition: transform 80ms ease-in;"
+                      />
+                    </div>
+                  </div>
+                  <input
+                    class="vtex-radio__input absolute o-0 pointer"
+                    id=""
+                    name=""
+                    style="height: 1.5rem; width: 1.5rem;"
+                    type="radio"
+                    value=""
+                  />
+                  <label
+                    class="vtex-radio__label c-on-base pointer flex flex-auto"
+                    for=""
+                    style="word-break: break-word;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="dn"
+        >
+          <div
+            class="ph5 pv4 c-muted-2 t-small"
+          >
+            Basic ingredients
+          </div>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155431/PIMIENTO-VERDE.png?v=636766050771230000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Green Pepper
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Green Pepper-choice"
+                      name="Green Pepper"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155430/Topping_Aceitunas-Negras.jpg.png?v=636766049376970000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Black Olives
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Black Olives-choice"
+                      name="Black Olives"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155432/Topping_Jamon.jpg.png?v=636766052579200000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Ham
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Ham-choice"
+                      name="Ham"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155428/Topping_Pepperoni.jpg.png?v=636766047561270000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Pepperoni
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Pepperoni-choice"
+                      name="Pepperoni"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155436/Topping_Champinones.png?v=636766057405600000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Champignon
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Champignon-choice"
+                      name="Champignon"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+          <label
+            class="vtex-product-customizer__toggled-choice selected bg-washed-blue db pa4 pointer bb b--light-gray"
+          >
+            <div
+              class="relative flex items-center"
+            >
+              <div
+                class="flex-none pv2"
+              >
+                <img
+                  class="br3"
+                  src="https://delivery.vteximg.com.br/arquivos/ids/155427/Topping_Cebolla.jpg.png?v=636766046799500000"
+                  width="48"
+                />
+              </div>
+              <div
+                class="flex-auto ml5"
+              >
+                <div
+                  class="toggled-choice__name t-heading-5"
+                >
+                  Onion
+                </div>
+              </div>
+              <div
+                class=""
+              >
+                <div
+                  class="vtex-checkbox__line-container flex items-start relative pointer"
+                >
+                  <div
+                    class="vtex-checkbox__container relative w1 h1"
+                  >
+                    <div
+                      class="vtex-checkbox__inner-container h1 w1 absolute ba bw1 br1  b--action-primary bg-action-primary"
+                      style="transition: background 20ms, border 100ms;"
+                    />
+                    <div
+                      class="vtex-checkbox__box-wrapper absolute w1 h1 flex o-100"
+                      style="left: 0px;"
+                    >
+                      <div
+                        class="vtex-checkbox__box absolute top-0 left-0 bottom-0 overflow-hidden w-100 flex items-center align-center justify-center c-on-action-primary"
+                        style="transition: right 110ms ease-in-out 30ms;"
+                      >
+                        <svg
+                          class="vtex__icon-check  "
+                          fill="none"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          width="12"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                        >
+                          <path
+                            d="M10.8 4.4L9.4 3L5.4 7L3.4 5L2 6.4L5.4 9.8L10.8 4.4Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <input
+                      checked=""
+                      class="vtex-checkbox__input h1 w1 absolute o-0 pointer"
+                      id="Onion-choice"
+                      name="Onion"
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </label>
+        </div>
+        <div
+          class="dn"
+        >
+          <div
+            class="ph5 pv4 c-muted-2 t-small"
+          >
+            Extra ingredients
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155432/Topping_Jamon.jpg.png?v=636766052579200000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Ham
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155428/Topping_Pepperoni.jpg.png?v=636766047561270000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Pepperoni
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155436/Topping_Champinones.png?v=636766057405600000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Champignon
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155427/Topping_Cebolla.jpg.png?v=636766046799500000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Onion
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155430/Topping_Aceitunas-Negras.jpg.png?v=636766049376970000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Black Olives
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155431/PIMIENTO-VERDE.png?v=636766050771230000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Green Pepper
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="vtex-product-customizer__multiple-choice false hover-bg-muted-5 w-100 ph4 pv5 bb b--muted-5"
+          >
+            <div
+              class="relative flex justify-between items-center"
+            >
+              <div
+                class="flex"
+              >
+                <div>
+                  <img
+                    class="br3 mr4"
+                    src="https://delivery.vteximg.com.br/arquivos/ids/155435/Topping_Pina.jpg.png?v=636766056177370000"
+                    style="height: 54px; width: 54px;"
+                  />
+                </div>
+                <div
+                  class="multiple-choice__title flex flex-column justify-center"
+                >
+                  <div
+                    class="multiple-choice__name t-heading-5 c-on-base"
+                  >
+                    Pineapple
+                  </div>
+                  <div
+                    class="single-choice__description"
+                  >
+                    <div
+                      class="multiple-choice__price flex items-center c-action-primary t-small fw5 mt1"
+                    >
+                      <div>
+                        + 
+                      </div>
+                      <div>
+                        ProductPrice
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex-auto flex-none-ns flex justify-end"
+              >
+                <div
+                  class="multiple-choice__actions flex-none ml4 c-action-primary t-body fw5 z-1"
+                >
+                  <div
+                    class="vtex-numeric-stepper-wrapper numeric-stepper-wrapper"
+                  >
+                    <div
+                      class="vtex-numeric-stepper-container numeric-stepper-container flex self-start"
+                    >
+                      <input
+                        class="vtex-numeric-stepper__input numeric-stepper__input z-1 order-1 tc bw1 b--transparent  br0 h-regular t-body w2 br2 hover-b--muted-4 ba outline-transparent hideDecorators"
+                        step="1"
+                        type="tel"
+                        value="0"
+                      />
+                      <div
+                        class="vtex-numeric-stepper__plus-button-container numeric-stepper__plus-button-container z-2 order-2 flex-none"
+                      >
+                        <button
+                          aria-label="+"
+                          class="vtex-numeric-stepper__plus-button numeric-stepper__plus-button br2 pa0 bl-0 flex items-center justify-center b--transparent  h-regular f4  pointer bg-base c-action-primary outline-0 "
+                          style="border-top-left-radius: 0; border-bottom-left-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <div
+                            class="vtex-numeric-stepper__plus-button__text numeric-stepper__plus-button__text b"
+                          >
+                            ＋
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="vtex-numeric-stepper__minus-button-container numeric-stepper__minus-button-container z-2 order-0 flex-none"
+                      >
+                        <button
+                          aria-label="−"
+                          class="vtex-numeric-stepper__minus-button numeric-stepper__minus-button br2 pa0 br-0 flex items-center justify-center b--transparent  h-regular f4  c-disabled bg-transparent "
+                          disabled=""
+                          style="border-top-right-radius: 0; border-bottom-right-radius: 0; width: 2em; transition: opacity 150ms;"
+                          tabindex="0"
+                          type="button"
+                        >
+                          <span
+                            class="vtex-numeric-stepper__minus-button__text numeric-stepper__minus-button__text b"
+                          >
+                            －
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="vtex-product-customizer__actions w-100"
+      />
+      <div
+        class="vtex-product-customizer__actions z-2 fixed bg-white bottom-0 w-40-ns ph1-ns w-100 bt b--light-gray"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProductCustomizer components  render with variations example, show sku selector 1`] = `
+<DocumentFragment>
+  <div
+    class="flex-ns pv6-ns justify-center-ns"
+  >
+    <div
+      class="w-100 w-third-ns flex tc items-center-ns h-100-ns ph2-ns"
+    >
+      <img
+        alt="PARRILLADA"
+        class="vtex-product-customizer__image"
+        src="https://phmex.vteximg.com.br/arquivos/ids/155565/PARRILLADA.jpg?v=636834183659030000"
+      />
+    </div>
+    <div
+      class="w-40-ns ph2-ns"
+    >
+      <div
+        class="t-heading-4 c-on-base ph5 pt5-s"
+      >
+        Parrillada
+      </div>
+      <div
+        class="ph5 pt4 pb2 pb4-ns"
+      />
+      <div
+        class="ph5"
+      >
+        <div>
+          ExtensionPoint id="sku-selector"
+        </div>
+      </div>
+      <div />
+      <div
+        class="vtex-product-customizer__actions w-100"
+      />
+      <div
+        class="vtex-product-customizer__actions z-2 fixed bg-white bottom-0 w-40-ns ph1-ns w-100 bt b--light-gray"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

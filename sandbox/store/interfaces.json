@@ -1,0 +1,11 @@
+{
+  "sandbox": {
+    "component": "Sandbox"
+  },
+  "sandbox.product": {
+    "component": "SandboxProduct"
+  },
+  "sandbox.order": {
+    "component": "SandboxOrder"
+  }
+}

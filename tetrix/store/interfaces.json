@@ -1,0 +1,13 @@
+{
+  "tetrix": {
+    "blocks": [
+      "tetrix.landing"
+    ]
+  },
+  "tetrix.landing": {
+    "component": "Tetrix"
+  },
+  "tetrix.examples": {
+    "component": "ExampleQuestions"
+  }
+}

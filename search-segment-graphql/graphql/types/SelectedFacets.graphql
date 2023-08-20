@@ -1,0 +1,9 @@
+type SelectedFacets {
+  key: String
+  value: String
+}
+
+input SelectedFacetsInput {
+  key: String
+  value: String
+}

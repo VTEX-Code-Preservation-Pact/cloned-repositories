@@ -1,0 +1,100 @@
+{
+  "name": "proxy-mailing-flow",
+  "vendor": "vtexarg",
+  "version": "3.0.8",
+  "title": "Proxy mailing Flow",
+  "description": "Proxy that handle the mailing flow",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x",
+    "docs": "0.x"
+  },
+  "billingOptions": {
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/oms/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "serv-11.carrefour.com.ar",
+        "path": "/*"
+      }
+    },
+    {
+      "name": "OMSViewer"
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "AdminPortal"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "settingsSchema": {
+    "title": "VTEX Proxy Mailing Flow",
+    "type": "object",
+    "properties": {
+      "defaultEmail": {
+        "title": "Default Email",
+        "type": "string"
+      },
+      "subscriberEntityList": {
+        "title": "Suscriber MasterData Entity List",
+        "description": "Separated by commas (,)",
+        "type": "string"
+      },
+      "clientTemplateCreated": {
+        "title": "Client Mailing Template Name (order-created)",
+        "description": "The name at the end of the message-center template url.",
+        "type": "string"
+      },
+      "clientTemplateInvoiced": {
+        "title": "Client Mailing Template Name (invoiced)",
+        "description": "The name at the end of the message-center template url.",
+        "type": "string"
+      },
+      "subscribersTemplateCreated": {
+        "title": "Subscribers Mailing Template Name (order-created)",
+        "description": "The name at the end of the message-center template url.",
+        "type": "string"
+      },
+      "subscribersTemplateInvoiced": {
+        "title": "Subscribers Mailing Template Name (invoiced)",
+        "description": "The name at the end of the message-center template url.",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

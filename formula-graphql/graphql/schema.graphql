@@ -1,0 +1,106 @@
+type Project {
+  demoURL: String
+  description: String
+  edition: String
+  id: String
+  name: String
+  owner: String
+  team: [ProfileData]
+}
+
+type ProfileData {
+  name: String
+  email: String
+  picture: String
+  id: String
+}
+
+type Vote {
+  projectID: String
+  userID: String
+  execution: Int
+  relevance: Int
+}
+
+type Score {
+  projectID: String
+  score: Int
+}
+
+enum FormulaStatus {
+  REGISTRATION
+  RUNNING
+  VOTING
+  RESULTS
+}
+
+type InfoData {
+  status: FormulaStatus
+  timeRemainingSeconds: Int
+  timeTotalSeconds: Int
+}
+
+type Query {
+  project(
+    edition: String!
+    id: String!
+  ): Project @cacheControl(scope: PRIVATE)
+
+  projects(
+    edition: String!
+  ): [Project] @cacheControl(scope: PRIVATE)
+
+  profile: ProfileData @cacheControl(scope: PRIVATE)
+
+  votes(
+    edition: String!
+  ): [Vote] @cacheControl(scope: PRIVATE)
+
+  scores(
+    edition: String!
+  ): [Score] @cacheControl(scope: PRIVATE)
+
+  info(
+    edition: String!
+  ): InfoData @cacheControl(scope: PRIVATE)
+
+  finalists(
+    edition: String!
+  ): [Project] @cacheControl(scope: PRIVATE)
+}
+
+type Mutation {
+  updateVote(
+    edition: String
+    projectID: String
+    execution: Int
+    relevance: Int
+  ): Vote
+
+  updateProject(
+    edition: String!
+    id: String
+    demoURL: String
+    description: String
+    name: String
+  ): Project
+
+  deleteProject(
+    edition: String!
+    id: String!
+  ): Boolean
+
+  joinProject(
+    edition: String!
+    id: String!
+  ): Project
+
+  leaveProject(
+    edition: String!
+    id: String!
+  ): Project
+
+  updateScores(
+    edition: String!
+  ): [Score]
+}

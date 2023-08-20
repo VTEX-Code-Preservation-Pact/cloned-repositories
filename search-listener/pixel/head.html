@@ -1,0 +1,68 @@
+<script>
+  (function() {
+
+    function isMobileCheck () {
+      let navegador = navigator.userAgent;
+      return window.innerWidth <= 768 || navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/Windows Phone/i);
+    }
+
+    function getElementBySelector (querySelector) {
+      return document.querySelector(querySelector);
+    }
+
+    function doneTyping(){
+      const searchInput = getElementBySelector('.vtex-styleguide-9-x-input');
+      searchInput.setAttribute("readonly", "readonly");
+      setTimeout(() => {
+        searchInput.removeAttribute("readonly");
+        // var a = getElementBySelector(".vtex-store-components-3-x-resultsItem");
+        // a.click();
+        var inputValue = searchInput.value?.toLowerCase();
+        var a = document.createElement('a');
+        a.href = '/' + inputValue + '?map=ft';
+        a.click();
+      }, 2000);
+    }
+
+    if (isMobileCheck()) {
+
+      function createObserver(){
+        let listenerCreated = false;
+        const observerSearch = new MutationObserver((mutations, obsS) => {
+
+          const allSearch = getElementBySelector('.vtex-store-components-3-x-searchBarContainer');
+
+          if (document.contains(allSearch)) {
+            if (!listenerCreated){
+              var typingTimer;
+              var doneTypingInterval = 1000;
+
+              allSearch.addEventListener("keyup", function(event) {
+                clearTimeout(typingTimer);
+                const searchInput = getElementBySelector('.vtex-styleguide-9-x-input');
+                searchInput.setAttribute('autocorrect', 'off');
+                searchInput.setAttribute('autocapitalize', 'off');
+                if(searchInput.value){
+                  typingTimer = setTimeout(doneTyping, doneTypingInterval);
+                }
+              });
+
+              listenerCreated = true;
+              setTimeout(() => {
+                console.log('listener => false')
+                listenerCreated = false;
+              }, 3000);
+            }
+          }
+        });
+        observerSearch.observe(document, {
+          childList: true,
+          subtree: true,
+        });
+        }
+      createObserver();
+    } else {
+      console.log("No estás usando un móvil");
+    }
+  })()
+</script>

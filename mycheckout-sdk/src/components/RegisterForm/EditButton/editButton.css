@@ -1,0 +1,17 @@
+.iconEditContainer {
+  display: initial;
+}
+
+.iconCreateContainer {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .iconEditContainer {
+    display: none;
+  }
+  
+  .iconCreateContainer {
+    display: initial;
+  }
+}

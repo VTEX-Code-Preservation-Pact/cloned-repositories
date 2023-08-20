@@ -1,0 +1,29 @@
+{
+  "footer-row#menu-col-4": {
+    "title": "Ofertas Semanales",
+    "props": {
+      "inverted": true,
+      "blockClass": "vertical-menu"
+    },
+    "children": [
+      "rich-text#footer-weekly-deals",
+      "newsletter#footer"
+    ]
+  },
+  "rich-text#footer-weekly-deals": {
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Ofertas Semanales",
+      "textColor": "c-action-primary",
+      "font": "t-heading-5"
+    }
+  },
+  "newsletter#footer": {
+    "props": {
+      "label": "¿Quieres ofertas exclusivas y acceso a productos? Regístrate para recibir alertas.",
+      "placeholder": "Tu dirección de correo eletrónico",
+      "submit": "OK"
+    }
+  }
+}

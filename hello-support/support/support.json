@@ -1,0 +1,34 @@
+[
+  {
+    "role": "app-developer",
+    "policies": [
+      {
+        "name": "read-write-workspace"
+      },
+      {
+        "name": "read-workspace-info"
+      },
+      {
+        "name": "read-workspace-apps"
+      },
+      {
+        "name": "link-apps",
+        "attrs": {
+          "appName": "vendor.appName"
+        },
+        "reason": "Insert reason here."
+      }
+    ]
+  },
+  {
+    "role": "support-agent",
+    "policies": [
+      {
+        "name": "read-workspace-info"
+      },
+      {
+        "name": "read-workspace-apps"
+      }
+    ]
+  }
+]

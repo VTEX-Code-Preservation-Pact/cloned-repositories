@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "선물 이미지",
+  "admin/editor.gift-image.description": "제품의 선물 이미지",
+  "admin/editor.gift-image.imageLabel.title": "이미지 라벨",
+  "admin/editor.gift-image.imageLabel.description": "표시할 제품의 이미지를 지정하는 라벨.",
+  "admin/editor.gift-name.title": "선물 이름",
+  "admin/editor.gift-name.description": "선물 이름.",
+  "admin/editor.gift-name.linkToProduct.title": "제품 페이지 링크",
+  "admin/editor.gift-name.linkToProduct.description": "선물 이름이 제품 페이지에 대한 링크여야 하는지.",
+  "admin/editor.gift-name.nameType.title": "표시 이름 유형",
+  "admin/editor.gift-name.nameType.description": "선물의 skuName 또는 productName을 표시합니다.",
+  "admin/editor.product-gifts.title": "제품 선물",
+  "admin/editor.product-gifts.description": "현재 제품에 사용할 수 있는 선물 표시.",
+  "admin/editor.product-gifts.maxVisibleItems.title": "표시되는 최대 항목 수",
+  "admin/editor.product-gifts.maxVisibleItems.description": "한 번에 제공해야 하는 최대 선물 수입니다.(사용 가능한 모든 선물을 항상 표시하려면 \"모두 표시\" 사용)",
+  "admin/editor.product-gift-text.title": "제품 선물 텍스트",
+  "admin/editor.product-gift-text.description": "사용 가능한 선물에 대한 추가 정보",
+  "admin/editor.product-gift-text.text.title": "텍스트",
+  "admin/editor.product-gift-text.text.description": "선물에 관한 텍스트를 렌더링하는 데 사용할 수있는 변수가 있는 번역 가능한 문자열입니다. 형식은 UCI 규칙을 사용하며 사용 가능한 변수는 totalGifts, exceedingItems 및 visibleItems입니다."
+}

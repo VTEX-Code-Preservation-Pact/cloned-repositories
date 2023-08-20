@@ -1,0 +1,16 @@
+{
+  "product-details.customizer": {
+    "blocks": [
+      "product-details",
+      "product-name",
+      "product-images",
+      "product-price",
+      "product-description",
+      "buy-button",
+      "sku-selector",
+      "shipping-simulator",
+      "availability-subscriber",
+      "product-specifications"
+    ]
+  }
+}

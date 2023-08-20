@@ -1,0 +1,22 @@
+{
+  "product-review-form": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "product-reviews": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "product-questions-and-answers": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "product-rating-summary": {
+    "component": "Noop",
+    "extensible": "public"
+  },
+  "product-rating-inline": {
+    "component": "Noop",
+    "extensible": "public"
+  }
+}

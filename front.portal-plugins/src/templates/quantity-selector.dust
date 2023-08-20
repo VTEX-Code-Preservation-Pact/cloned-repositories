@@ -1,0 +1,17 @@
+<div class="quantidade select-qtd qty-selector">
+  {#unitBased}
+  <div class="unitSelector">
+    <label>
+      <span class="unitText">Eu quero</span> 
+      <input type="tel" min="{unitMin}" max="{unitMax}" value="{units}"/>
+      <span class="unitOfMeasurement measurementUnit">{measurementUnit}</span>.
+    </label>
+  </div>
+  {/unitBased}
+  <div class="quantitySelector">
+    <label>
+      <span class="quantityText">Quantidade:</span>
+      <input type="number" step="1" min="1" max="{max}" value="{quantity}">
+    </label>
+  </div>
+</div>

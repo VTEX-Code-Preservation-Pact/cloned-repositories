@@ -1,0 +1,43 @@
+@import '//io.vtex.com.br/fonts/fabriga/stylesheet.css';
+
+html,
+body,
+#render-container,
+#render-provider,
+.render-container,
+.render-provider,
+
+/* Fixes Safari position:fixed + z-index bug https://www.queness.com/code-snippet/16824/fix-mobile-safari-positionfixed-and-z-index-issue */
+.safari-positioning {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.font-display,
+.font-body {
+  font-family: 'Fabriga', 'Helvetica Neue', 'Arial', sans-serif;
+}
+
+.c-action-primary {
+  color: #f71963;
+}
+
+.bg-action-primary {
+  background-color: #f71963;
+}
+
+.b--action-primary {
+  border-color: #f71963;
+}
+
+.vtex-pageHeader__container {
+  background-color: white;
+}
+
+.hover-bg-action-primary:hover {
+  background-color: #dd1659;
+}
+
+.hover-b--action-primary:hover {
+  background-color: #dd1659;
+}

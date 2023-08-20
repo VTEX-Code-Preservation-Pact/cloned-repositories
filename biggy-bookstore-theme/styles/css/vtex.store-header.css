@@ -1,0 +1,47 @@
+.headerRow--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.headerRow .headerRowBackground {
+  background-color: #4FC3F7;
+}
+
+.headerRow--main-header :global(.vtex-menu-2-x-styledLink)  {
+  font-size: 14px;
+}
+
+.headerRow--main-header-mobile .headerRowBackground {
+  padding: 10px 0px;
+  background-color: #4FC3F7;
+}
+
+.headerRowBackground--input-header-mobile {
+  background: #4FC3F7;
+}
+
+.headerRowContainer--main-header-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerRowContainer--input-header-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 640px) {
+  .headerRowContainer--secondary-header {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .headerRowContainer--main-header {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.headerRowBackground.headerRowBackground--secondary-header {
+  background-color: #e6e6e6;
+}

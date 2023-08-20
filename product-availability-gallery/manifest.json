@@ -1,0 +1,76 @@
+{
+  "name": "product-availability-gallery",
+  "vendor": "vtexarg",
+  "version": "1.1.2",
+  "title": "Custom product availability component",
+  "description": "To display available stock x product",
+  "mustUpdateAt": "2018-01-04",
+  "categories": [],
+  "dependencies": {
+    "vtex.product-context": "0.x",
+    "vtex.css-handles": "1.x",
+    "vtex.session-client": "1.x",
+    "vtex.store-graphql": "2.x"
+  },
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "node": "6.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "billingOptions": {
+    "support": {
+      "email": "help@vtex.com"
+    },
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercebeta.com.br",
+        "path": "/api/logistics/pvt/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/logistics/pvt/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "POWER_USER_DS"
+    },
+    {
+      "name": "READONLY_USER_DS"
+    },
+    {
+      "name": "1_dataentity_edit"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

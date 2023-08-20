@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "lib/typings",
+      "router/typings",
+      "plugins/typings",
+      "components/typings"
+    ],
+    "lib": [
+      "ES2019",
+      "ES2019.Array",
+      "ESNext.Array"
+    ],
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "dist/build/cjs",
+    "jsx": "preserve",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
+    "skipLibCheck": true,
+    "declaration": true
+  },
+  "include": [
+    "index.ts",
+    "lib",
+    "router",
+    "plugins",
+    "components"
+  ],
+  "exclude": [
+    "dist",
+    "pages"
+  ]
+}

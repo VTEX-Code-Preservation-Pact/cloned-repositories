@@ -1,0 +1,30 @@
+name: Borders
+
+docs: http://tachyons.io/docs/themes/borders/
+
+src: borders
+
+description: >
+
+base:
+  - b
+
+modifiers:
+  - a = all
+  - t = top
+  - r = right
+  - b = bottom
+  - l = left
+  - n = none
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - border
+  - base
+  - border-style

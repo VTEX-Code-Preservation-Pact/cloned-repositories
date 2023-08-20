@@ -1,0 +1,79 @@
+.orderPlacedContainer {
+  margin-top: 28px;
+  position: relative;
+  width: 100%;
+}
+
+.orderPlacedContainer .orderPlacedContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.orderPlacedContainer .orderPlacedIcon {
+  height: 46px;
+  width: 46px;
+}
+
+.orderPlacedContainer .orderPlacedTextThanks {
+  color: var(--success-color);
+  font-size: 22px;
+  margin-bottom: 20px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.orderPlacedContainer .orderPlacedTextTitlePending {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.orderPlacedContainer .orderPlacedTextPending {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .orderPlacedContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    inset: 0;
+    justify-content: center;
+    margin: 0;
+    padding: 0 30px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .orderPlacedContainer .orderPlacedIcon {
+    height: 88px;
+    width: 88px;
+  }
+
+  .orderPlacedContainer .orderPlacedTextThanks {
+    font-weight: var(--text-bold);
+  }
+
+  .orderPlacedContainer .orderPlacedTextTitlePending {
+    font-size: 22px;
+    font-weight: var(--text-bold);
+  }
+
+  .orderPlacedContainer .orderPlacedText {
+    padding: 20px 22% 40px 22%;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .orderPlacedContainer .orderPlacedTextPending {
+    padding: 20px 10% 40px 10%;
+    font-size: 16px;
+    text-align: center;
+  }
+}

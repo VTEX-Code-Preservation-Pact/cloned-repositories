@@ -1,0 +1,25 @@
+.cls1 {
+  stroke-width: 2.42px;
+}
+
+.cls1,
+.cls2,
+.cls3 {
+  stroke-miterlimit: 10;
+}
+
+.cls1,
+.cls3 {
+  fill: #2d2d2c;
+  stroke: #2d2d2c;
+}
+
+.cls2 {
+  fill: none;
+  stroke: #0097c8;
+  stroke-width: 3.3px;
+}
+
+.cls3 {
+  stroke-width: 1.09px;
+}

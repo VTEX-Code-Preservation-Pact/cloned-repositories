@@ -1,0 +1,29 @@
+#######################
+##### BASE STAGE ######
+#######################
+FROM --platform=linux/x86-64 node:14 AS base
+
+WORKDIR /checkoutless/src/app
+
+COPY package*.json ./
+
+RUN npm install
+
+#######################
+## DEVELOPMENT STAGE ##
+#######################
+FROM --platform=linux/x86-64 node:14-alpine AS development
+
+# Set node env to prod
+ARG NODE_ENV=development
+ENV NODE_ENV=${NODE_ENV}
+
+# Specify our working directory, this is in our container/in our image
+WORKDIR /checkoutless/src/app
+
+# Bundle app source / copy all other files
+COPY . .
+# Copy node modules from base stage
+COPY --from=base /checkoutless/src/app/node_modules ./node_modules
+
+CMD ["npm", "run", "start:dev"]

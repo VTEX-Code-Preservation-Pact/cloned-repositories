@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex: auto;
+}
+
+/* actions */
+
+.manualGeolocation {
+  font-size: 14px;
+}

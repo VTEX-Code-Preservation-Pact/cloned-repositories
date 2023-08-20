@@ -1,0 +1,19 @@
+{
+  "Author": "작성자",
+  "Draft": "초안",
+  "Live": "라이브",
+  "Name": "이름",
+  "Type": "유형",
+  "High": "높음",
+  "Low": "낮음",
+  "Medium": "중간",
+  "of": "/",
+  "Search": "검색",
+  "Content": "콘텐츠",
+  "Hide all": "모두 숨기기",
+  "Show all": "모두 표시",
+  "Line density": "선 밀도",
+  "Show rows": "행 표시",
+  "Last update": "마지막 업데이트",
+  "Toggle visible fields": "표시된 필드 표시/숨기기"
+}

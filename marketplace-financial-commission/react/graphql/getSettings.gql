@@ -1,0 +1,9 @@
+query GET_SETTINGS($id: String) {
+  getSettings(id: $id) {
+    sellerName
+    startDate
+    endDate
+    billingCycle
+    integration
+  }
+}

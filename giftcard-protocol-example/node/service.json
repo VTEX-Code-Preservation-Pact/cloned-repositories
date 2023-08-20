@@ -1,0 +1,40 @@
+{
+  "stack": "nodejs",
+  "memory": 512,
+  "ttl": 43200,
+  "timeout": 300,
+  "routes": {
+    "list": {
+      "path": "/my-provider/giftcards/_search",
+      "public": true
+    },
+    "create": {
+      "path": "/my-provider/giftcards",
+      "public": true
+    },
+    "get": {
+      "path": "/my-provider/giftcards/:id/",
+      "public": true
+    },
+    "transactions": {
+      "path": "/my-provider/giftcards/:giftCardId/transactions",
+      "public": true
+    },
+    "getTransaction": {
+      "path": "/my-provider/giftcards/:giftCardId/transactions/:id/",
+      "public": true
+    },
+    "authorization": {
+      "path": "/my-provider/giftcards/:giftCardId/transactions/:id/authorization",
+      "public": true
+    },
+    "cancellation": {
+      "path": "/my-provider/giftcards/:giftCardId/transactions/:id/cancellations",
+      "public": true
+    },
+    "settlement": {
+      "path": "/my-provider/giftcards/:giftCardId/transactions/:id/settlements",
+      "public": true
+    }
+  }
+}

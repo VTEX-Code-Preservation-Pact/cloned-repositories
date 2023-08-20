@@ -1,0 +1,18 @@
+.floatButton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  z-index: 1000000000000;
+}
+
+.floatButton img {
+  content: '';
+  background-size: 94px 94px;
+  background-repeat: no-repeat;
+  height: 94px;
+  width: 94px;
+  position: absolute;
+}

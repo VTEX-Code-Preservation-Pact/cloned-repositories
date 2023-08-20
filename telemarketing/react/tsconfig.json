@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "types": ["node", "jest", "graphql"],
+    "typeRoots": ["node_modules/@types"],
+    "target": "es2017",
+    "module": "esnext",
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
+    "strictPropertyInitialization": true,
+    "resolveJsonModule": true
+  },
+  "typeAcquisition": {
+    "enable": false
+  },
+  "exclude": ["node_modules", "./**/*__mocks__", "./**/*__tests__"],
+  "include": ["./typings/*.d.ts", "./**/*.tsx"]
+}

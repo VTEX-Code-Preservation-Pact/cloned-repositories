@@ -1,0 +1,161 @@
+query orderForm {
+  orderForm @context(scope: "private") {
+    cacheId
+    sellers {
+      id
+      name
+    }
+    orderFormId
+    userProfileId
+    customData {
+      customApps {
+        id
+        fields
+      }
+    }
+    itemMetadata {
+      items {
+        id
+        name
+        assemblyOptions {
+          id
+          name
+          composition {
+            items {
+              id
+              seller
+            }
+          }
+        }
+      }
+      priceTable {
+        type
+        values {
+          id
+          price
+        }
+      }
+    }
+    value
+    totalizers {
+      id
+      name
+      value
+    }
+    items {
+      id
+      productId
+      name
+      imageUrl
+      detailUrl
+      productRefId
+      additionalInfo {
+        brandName
+      }
+      canHaveAttachment
+      productCategoryIds
+      productCategories
+      skuName
+      quantity
+      sellingPrice
+      listPrice
+      parentItemIndex
+      parentAssemblyBinding
+      cartIndex
+      sellingPriceWithAssemblies
+      assemblyOptions {
+        added {
+          item {
+            name
+            sellingPrice
+            quantity
+            sellingPriceWithAssemblies
+            assemblyOptions {
+              added {
+                item {
+                  name
+                  sellingPrice
+                  quantity
+                  sellingPriceWithAssemblies
+                }
+                normalizedQuantity
+                choiceType
+                extraQuantity
+              }
+              removed {
+                removedQuantity
+                initialQuantity
+                name
+              }
+              parentPrice
+            }
+          }
+          normalizedQuantity
+          choiceType
+          extraQuantity
+        }
+        removed {
+          removedQuantity
+          initialQuantity
+          name
+        }
+        parentPrice
+      }
+      seller
+      priceDefinition {
+        calculatedSellingPrice
+        total
+        sellingPrices {
+          quantity
+          value
+        }
+      }
+    }
+    shippingData {
+      address {
+        id
+        neighborhood
+        complement
+        number
+        street
+        postalCode
+        city
+        reference
+        addressName
+        addressType
+        geoCoordinates
+        state
+        receiverName
+        country
+      }
+      availableAddresses {
+        id
+        neighborhood
+        complement
+        number
+        street
+        postalCode
+        city
+        reference
+        addressName
+        addressType
+        geoCoordinates
+        state
+        receiverName
+        country
+      }
+    }
+    clientProfileData {
+      email
+      firstName
+      lastName
+    }
+    storePreferencesData {
+      countryCode
+      currencyCode
+      timeZone
+    }
+    checkedInPickupPointId
+    isCheckedIn
+  }
+}

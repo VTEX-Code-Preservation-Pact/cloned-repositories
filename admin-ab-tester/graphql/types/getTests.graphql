@@ -1,0 +1,24 @@
+type GetTestsResponse{
+  data: [DataResponse]
+  status: Int
+  error: String
+}
+
+type DataResponse {
+  ABTestBeginning: String
+  WorkspaceA: String
+  WorkspaceB: String
+  Winner: String
+  ConversionA: Float
+  ConversionALast24Hours: Float
+  ConversionB: Float
+  ConversionBLast24Hours: Float
+  WorkspaceASessions: Int
+  WorkspaceBSessions: Int
+  WorkspaceASessionsLast24Hours: Int
+  WorkspaceBSessionsLast24Hours: Int
+  hours: Int
+  proportion: Int
+  type: String
+  Finish: String
+}

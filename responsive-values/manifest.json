@@ -1,0 +1,16 @@
+{
+  "vendor": "vtex",
+  "name": "responsive-values",
+  "version": "0.4.2",
+  "title": "Responsive Values",
+  "description": "Accept different values for different devices",
+  "builders": {
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.device-detector": "0.x"
+  },
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

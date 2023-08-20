@@ -1,0 +1,11 @@
+{
+  "name": "admin-messages",
+  "vendor": "vtex",
+  "version": "1.3.0",
+  "title": "Admin Messages",
+  "description": "Contains all admin messages for vendor VTEX",
+  "builders": {
+    "messages": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

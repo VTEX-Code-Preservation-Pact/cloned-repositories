@@ -1,0 +1,31 @@
+query getButtonUses(
+  $visualization: String
+  $selectedFrom: String
+  $selectedUntil: String
+  $previousFrom: String
+  $previousUntil: String
+  $timezone: String
+) {
+  button(
+    data: {
+      filters: {
+        visualization: $visualization
+        selectedPeriod: { from: $selectedFrom, until: $selectedUntil }
+        previousPeriod: { from: $previousFrom, until: $previousUntil }
+      }
+      timezone: $timezone
+    }
+  ) @context(provider: "kuikpay.my-checkout") {
+    selectedPeriodButton {
+      _id
+      use
+    }
+    currentDayButton
+    currentMonthButton
+    currentDayVariationButton
+    previousPeriodButton {
+      _id
+      use
+    }
+  }
+}

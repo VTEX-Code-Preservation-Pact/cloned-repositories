@@ -1,0 +1,62 @@
+type Query {
+  searchProducts(
+    terms: String = ""
+    page: Int = 1
+    salesChannel: String
+    sortBy: String
+    filter: [String]
+    productFormat: String
+    resultsPerPage: Int = 12
+  ): ChaordicSearchOutput!
+    @cacheControl(scope: SEGMENT, maxAge: SHORT)
+    @withSecretKeys
+
+  searchProductsAutoComplete(
+    salesChannel: String
+    terms: String = ""
+  ): ChaordicSearchAutoCompleteOutput!
+    @cacheControl(scope: SEGMENT, maxAge: SHORT)
+    @withSecretKeys
+
+  searchProductsAutoCompletePopular: ChaordicSearchAutoCompletePopularOutput!
+    @withSecretKeys
+
+  chaordicRecommendations(
+    showOnlyAvailable: Boolean = true
+    chaordicBrowserId: String!
+    pathName: String!
+    source: String!
+    userId: String
+    category: [String]
+    salesChannel: String
+    name: String
+    productId: String
+  ): ChaordicRecommendationsResult!
+    @cacheControl(scope: SEGMENT, maxAge: SHORT)
+    @withSecretKeys
+
+  chaordicProductPageRecommendations(
+    chaordicBrowserId: String!
+    productId: String!
+    salesChannel: String
+    type: String
+    size: Int
+  ): ChaordicProductPageRecommendations!
+    @cacheControl(scope: SEGMENT, maxAge: SHORT)
+    @withSecretKeys
+
+   searchProductsNavigates(
+    fields: String,
+    category: String,
+    multicategory: [String],
+    page: Int = 1,
+    resultsPerPage: Int = 10,
+    sortBy: String = "relevance",
+    filter: String
+  ): ChaordicNavigatesOutput! @cacheControl(scope: PUBLIC, maxAge: SHORT) @withSecretKeys
+
+}
+
+type Mutation {
+  ChaordicImpression(impressionUrl: String!): Boolean @withSecretKeys
+}

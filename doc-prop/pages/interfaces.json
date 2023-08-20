@@ -1,0 +1,8 @@
+{
+  "doc-prop": {
+    "around": []
+  },
+  "doc-prop.table": {
+    "component": "DocProp"
+  }
+}

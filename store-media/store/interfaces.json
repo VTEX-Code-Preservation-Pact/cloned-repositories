@@ -1,0 +1,15 @@
+{
+  "media": {
+    "component": "Media",
+    "content": {
+      "$ref": "app:vtex.store-media#/definitions/Media"
+    }
+  },
+  "list-context.media-list": {
+    "component": "MediaList",
+    "composition": "children",
+    "content": {
+      "$ref": "app:vtex.store-media#/definitions/MediaList"
+    }
+  }
+}

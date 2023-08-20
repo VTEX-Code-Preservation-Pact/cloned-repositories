@@ -1,0 +1,177 @@
+.modalSearch {
+  position: relative;
+  z-index: 10;
+}
+
+.modalPostalCode {
+  margin: 20px auto;
+  text-align: left;
+  width: 280px;
+}
+
+:global .pkpmodal-search #ship-postalCode {
+  width: auto;
+}
+
+.searchAlone .modalSearch {
+  margin-top: 20px;
+}
+
+.modalSearch input::placeholder {
+  color: #c2c2c3;
+}
+
+.modalSearch input {
+  font-size: 16px;
+  height: auto;
+  padding: 12px 52px 12px 46px !important;
+  box-shadow: 0 1px 1px 0 rgba(204, 204, 204, 0.5);
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.modalPostalCode input {
+  font-size: 16px;
+  height: auto;
+  padding: 12px !important;
+  box-shadow: 0 1px 1px 0 rgba(204, 204, 204, 0.5);
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0;
+  width: 100px;
+  margin-right: 8px;
+}
+
+.modalPostalCode :global .input {
+  float: none;
+}
+
+.modalPostalCode select {
+  width: 100%;
+}
+
+:global .pkpmodal-search input {
+  font-size: 16px;
+  height: auto;
+  padding: 12px 52px 12px 46px !important;
+  background-color: #ffffff;
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+:global .pkpmodal-search.full input {
+  box-shadow: 0px 3px 9px rgba(61, 62, 64, 0.25);
+  border-radius: 5px;
+}
+
+/* ask for geolocation */
+
+.askGeolocationBtn:active,
+.askGeolocationBtn:focus {
+  outline: none !important;
+}
+
+.askGeolocationBtn {
+  background: #fff;
+  border: 0;
+  border-left: 1px solid #eee;
+  color: #2d78f6;
+  display: flex;
+  flex: none;
+  height: 100%;
+  padding: 10px 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.256s ease-in;
+}
+
+.askGeolocationBtn {
+  opacity: 0.9;
+}
+
+.askGeolocationBtn:hover {
+  color: #2d78f6;
+  background: #fdfdfd;
+  opacity: 1;
+}
+
+.askGeolocationBtnPostalCode:hover,
+.askGeolocationBtnPostalCode {
+  top: 24px;
+  z-index: 99;
+}
+
+/* Google Maps autocomplete */
+
+:global .pac-item {
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+:global .pac-item:hover {
+  background: #f1f8fe;
+  cursor: pointer;
+}
+
+:global .pac-item,
+:global .pac-item-query,
+:global .pac-matched {
+  font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+  .searchAlone .modalSearch input {
+    font-size: 24px;
+    height: auto;
+    padding: 24px 86px 24px 56px !important;
+  }
+
+  .searchAlone .modalPostalCode {
+    margin-top: 32px;
+  }
+
+  .searchAlone .modalPostalCode input {
+    font-size: 24px;
+    width: 130px;
+  }
+
+  .searchAlone .modalSearchIcon {
+    position: absolute;
+    z-index: 99;
+    left: 23px;
+    top: 31px;
+  }
+
+  .searchAlone .askGeolocationBtn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 30px 24px;
+  }
+
+  .searchAlone .pkpmodal-use-geolocationIcon {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.isLoadingGeolocation {
+  animation: blink 1s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

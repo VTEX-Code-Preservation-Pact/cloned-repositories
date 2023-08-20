@@ -1,0 +1,7 @@
+package-lock.json
+pnpm-lock.yaml
+yarn-lock.json
+node_modules
+.gitignore
+exec.sh
+exec.ps1

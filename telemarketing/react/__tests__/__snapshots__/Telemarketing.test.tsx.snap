@@ -1,0 +1,328 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Telemarketing /> component should match snapshot with client 1`] = `
+<DocumentFragment>
+  <div
+    class="w-100 wrapper bg-emphasis c-on-emphasis"
+  >
+    <section
+      class="Container-mock container flex justify-center tc h2 t-mini pa2 w-100"
+    >
+      <div
+        class="telemarketingBar flex justify-between w-100 mw9"
+      >
+        <div
+          class="attendantContainer flex pl3 w-50 items-center c-on-base--inverted"
+        >
+          <svg
+            class="IconAssistantSales-mock  "
+            height="20"
+            width="20"
+          >
+            <rect
+              height="20"
+              width="20"
+            />
+          </svg>
+          <div
+            class="attendantEmail ml2"
+          >
+            <span>
+              Attendant: attendant@vtex.com
+            </span>
+          </div>
+        </div>
+        <div
+          class="logout false"
+        >
+          <div
+            class="popoverContainer relative flex h-100 items-center pr4"
+          >
+            <div
+              class="pointer w-100"
+            >
+              <div
+                class="logoutHeader c-on-base--inverted flex items-center"
+              >
+                <svg
+                  class="IconProfile-mock  "
+                  height="20"
+                  width="20"
+                >
+                  <rect
+                    height="20"
+                    width="20"
+                  />
+                </svg>
+                <div
+                  class="pa2 clientNameBar w-100"
+                >
+                  name
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="popoverBox absolute-ns top-2 z-max bb b--muted-3 fixed-s dn"
+              >
+                <div
+                  class="popoverContentContainer mt3-ns bg-base shadow-3-ns"
+                >
+                  <div
+                    class="popoverHeader bg-emphasis w-100 pa7"
+                  >
+                    <div
+                      class="popoverHeaderIcon c-on-base--inverted"
+                    >
+                      <svg
+                        class="IconAssistantSales-mock  "
+                        height="50"
+                        width="50"
+                      >
+                        <rect
+                          height="50"
+                          width="50"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="popoverHeaderEmail c-on-emphasis"
+                    >
+                      attendant@vtex.com
+                    </div>
+                  </div>
+                  <div
+                    class="logoutInfoContainer bg-base w-100 pt7 pb5 ph5"
+                  >
+                    <div
+                      class="logoutForm c-disabled"
+                    >
+                      <div
+                        class="w-100 bw1 bb b--muted-5 flex-wrap"
+                      >
+                        <div
+                          class="clientName w-100 t-heading-5 center pb5 c-on-base"
+                        >
+                          name
+                        </div>
+                        <div
+                          class="emailContainer w-100 flex flex-wrap t-small"
+                        >
+                          <div
+                            class="emailField tl pb5 pr2"
+                          >
+                            Email
+                          </div>
+                          <div
+                            class="emailValue pb5 pl2 c-muted-1"
+                          >
+                            client@vtex.com
+                          </div>
+                        </div>
+                        <div
+                          class="documentContainer w-100 flex flex-wrap t-small"
+                        >
+                          <div
+                            class="documentField tl pb5 pr2"
+                          >
+                            <span>
+                              Document
+                            </span>
+                          </div>
+                          <div
+                            class="documentValue pb5 pl2 c-muted-1"
+                          >
+                            document
+                          </div>
+                        </div>
+                        <div
+                          class="phoneContainer w-100 flex flex-wrap t-small"
+                        >
+                          <div
+                            class="phoneField tl pb5 pr2"
+                          >
+                            <span>
+                              Phone
+                            </span>
+                          </div>
+                          <div
+                            class="phoneValue pb5 pl2 c-muted-1"
+                          >
+                            phone
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="logoutButtonsContainer flex justify-around mt5"
+                      >
+                        <a
+                          href="store.account"
+                        >
+                          <button
+                            type="button"
+                          >
+                            <span>
+                              Orders
+                            </span>
+                          </button>
+                        </a>
+                        <button
+                          type="button"
+                        >
+                          <span>
+                            Logout
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="popoverArrowUp absolute top-0 rotate-135 dib-ns dn-s bg-emphasis"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`<Telemarketing /> component should match snapshot without client 1`] = `
+<DocumentFragment>
+  <div
+    class="w-100 wrapper bg-base--inverted c-on-base--inverted"
+  >
+    <section
+      class="Container-mock container flex justify-center tc h2 t-mini pa2 w-100"
+    >
+      <div
+        class="telemarketingBar flex justify-between w-100 mw9"
+      >
+        <div
+          class="attendantContainer flex pl3 w-50 items-center c-on-base--inverted"
+        >
+          <svg
+            class="IconAssistantSales-mock  "
+            height="20"
+            width="20"
+          >
+            <rect
+              height="20"
+              width="20"
+            />
+          </svg>
+          <div
+            class="attendantEmail ml2"
+          >
+            <span>
+              Attendant: attendant@vtex.com
+            </span>
+          </div>
+        </div>
+        <div
+          class="login w-50 flex flex-row-reverse-ns flex-row-s"
+        >
+          <div
+            class="popoverContainer relative flex h-100 items-center pr4"
+          >
+            <div
+              class="pointer w-100"
+            >
+              <div
+                class="loginButton flex items-center c-on-base--inverted"
+              >
+                <svg
+                  class="IconProfile-mock  "
+                  height="20"
+                  width="20"
+                >
+                  <rect
+                    height="20"
+                    width="20"
+                  />
+                </svg>
+                <div
+                  class="loginAsText ml2"
+                >
+                  <span>
+                    Login as
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div
+                class="popoverBox absolute-ns top-2 z-max bb b--muted-3 fixed-s dn"
+              >
+                <div
+                  class="popoverContentContainer mt3-ns bg-base shadow-3-ns"
+                >
+                  <div
+                    class="popoverHeader bg-base--inverted w-100 pa7 c-on-base--inverted"
+                  >
+                    <div
+                      class="popoverHeaderIcon"
+                    >
+                      <svg
+                        class="IconAssistantSales-mock  "
+                        height="50"
+                        width="50"
+                      >
+                        <rect
+                          height="50"
+                          width="50"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="popoverHeaderEmail white-50 mt3"
+                    >
+                      attendant@vtex.com
+                    </div>
+                  </div>
+                  <div
+                    class="loginFormContainer bg-base w-100 ph5 pb5 pt7"
+                  >
+                    <div
+                      class="loginForm c-disabled"
+                    >
+                      <div
+                        class="loginFormMessage t-small tl mb3"
+                      >
+                        <span>
+                          Login as
+                        </span>
+                      </div>
+                      <div
+                        class="emailInput mb5"
+                      >
+                        <input
+                          placeholder="Ex: example@mail.com"
+                          value="email@vtex.com"
+                        />
+                      </div>
+                      <button
+                        type="button"
+                      >
+                        <span>
+                          Login
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="popoverArrowUp absolute top-0 rotate-135 dib-ns dn-s bg-base--inverted"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</DocumentFragment>
+`;

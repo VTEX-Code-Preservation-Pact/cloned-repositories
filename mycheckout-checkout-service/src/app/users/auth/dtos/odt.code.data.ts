@@ -1,0 +1,46 @@
+export const ODTCodeData = {
+  TemplateName: 'vtexid_check_email',
+  JsonData: {
+    to: [
+      {
+        name: '',
+        email: '',
+      },
+    ],
+    aditionalData: {
+      accessKey: '',
+      locale: 'es',
+      userAgent: 'Chrome, Mac OS X',
+      geolocation: {
+        country: 'Colombia',
+        region: 'DC',
+        city: 'Bogot�',
+        ip: '186.80.52.72',
+      },
+    },
+    _accountInfo: {
+      MainAccountName: 'vtexlatam',
+      AccountName: 'vtexlatam',
+      Cnpj: '99999999999999',
+      Id: '57703872-29ef-4b3d-a728-8a4ca67b69f0',
+      IsActive: true,
+      IsOperating: true,
+      CreationDate: '2014-08-22T00:00:00',
+      OperationDate: '2020-06-02T22:49:43',
+      CompanyName: 'VTEX LATAM',
+      TradingName: 'VTEX LATAM',
+      City: null,
+      Complement: null,
+      Country: null,
+      State: null,
+      Address: null,
+      District: null,
+      Number: null,
+      PostalCode: null,
+      Licences: null,
+      ParentAccountName: null,
+      InactivationDate: null,
+      Platform: 'vtex',
+    },
+  },
+};

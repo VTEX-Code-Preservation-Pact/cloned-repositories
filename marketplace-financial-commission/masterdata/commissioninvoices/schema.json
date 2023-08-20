@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "title": "CommissionInvoice",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string",
+      "enum": ["partial", "unpaid", "paid"]
+    },
+    "invoiceCreatedDate": {
+      "type": "string"
+    },
+    "seller": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "phone": {
+              "type": ["string", "null"]
+            },
+            "email": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "orderId": {
+            "type": "string"
+          },
+          "sellerOrderId": {
+            "type": "string"
+          },
+          "totalComission": {
+            "type": "number"
+          },
+          "totalOrderValue": {
+            "type": "number"
+          },
+          "totalOrderRate": {
+            "type": ["number", "null"]
+          }
+        }
+      }
+    },
+    "totalizers": {
+      "type": "object",
+      "properties": {
+        "subTotal": {
+          "type": "number"
+        },
+        "fee": {
+          "type": ["number", "null"]
+        },
+        "total": {
+          "type": "number"
+        }
+      }
+    },
+    "comment": {
+      "type": ["string", "null"]
+    }
+  },
+  "v-indexed": ["id", "status", "invoiceCreatedDate", "seller"],
+  "required": [
+    "status",
+    "invoiceCreatedDate",
+    "seller",
+    "orders",
+    "totalizers"
+  ],
+  "v-cache": false,
+  "v-immediate-indexing": true
+}

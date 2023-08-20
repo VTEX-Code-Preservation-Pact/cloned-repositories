@@ -1,0 +1,7 @@
+{
+    "appBackendBaseUrl": {
+        "localServer": "http://localhost:8080",
+        "development": "https://vtex-app-poc-backend.vtex.io",
+        "production": "https://vtex-app-poc-backend.vtex.io"
+    }
+}

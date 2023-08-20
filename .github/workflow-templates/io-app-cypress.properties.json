@@ -1,0 +1,6 @@
+{
+  "name": "VTEX IO Cypress Tests",
+  "description": "VTEX CI starter for running Cypress tests on IO Apps.",
+  "categories": ["JavaScript", "TypeScript", "TSX"],
+  "filePatterns": ["manifest.json"]
+}

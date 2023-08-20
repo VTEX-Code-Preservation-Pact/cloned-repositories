@@ -1,0 +1,39 @@
+.detailViewContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.detailViewContainer .detailViewContent {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px;
+  width: 100%;
+}
+
+.detailViewContainer .secureFieldInput {
+  border-bottom: 1px solid var(--primary-color-focus);
+  border-radius: 0;
+  cursor: text;
+  display: inline-block;
+  height: 23px;
+  line-height: 1.3;
+  padding: 0;
+  width: 38px;
+}
+
+.detailViewContainer .secureFieldValid {
+  border-bottom: 1px solid var(--success-color);
+}
+
+.detailViewContainer .secureFieldInvalidLite {
+  border-bottom: 1px solid var(--error-color);
+}
+
+@media screen and (min-width: 992px) {
+  .detailViewContainer {
+    display: none;
+  }
+}

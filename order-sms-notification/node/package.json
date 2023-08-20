@@ -1,0 +1,21 @@
+{
+  "name": "vtex.order-sms-notification",
+  "version": null,
+  "dependencies": {
+    "@vtex/api": "^2.4.0",
+    "axios": "^0.18.0",
+    "co-body": "^6.0.0",
+    "node-fetch": "^2.1.1",
+    "splunk-events": "^1.2.3"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.39",
+    "@types/node": "^7.0.8",
+    "tslint": "^5.8.0",
+    "tslint-config-vtex": "^2.0.0",
+    "typescript": "^2.4.2"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit && tslint -c tslint.json './**/*.ts'"
+  }
+}

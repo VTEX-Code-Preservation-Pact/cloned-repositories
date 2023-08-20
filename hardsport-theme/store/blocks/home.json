@@ -1,0 +1,13 @@
+{
+  "store.home": {
+    "blocks": [
+      "carousel#home",
+      "flex-layout.row#brand-bar",
+      "flex-layout.row#display",
+      "shelf#home",
+      "rich-text#categories-title",
+      "flex-layout.row#categories",
+      "flex-layout.row#bottom-banner"
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "spreadsheet-event-broadcaster",
+  "vendor": "vtex",
+  "version": "0.2.0",
+  "title": "Spreadsheet Event Broadcaster",
+  "description": "This service reads a spreadsheet from a file (.csv, .xls, .xlsx) and broadcasts an event for each row in the sheet.",
+  "mustUpdateAt": "2018-01-04",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "6.x",
+    "masterdata": "1.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "ADMIN_DS"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

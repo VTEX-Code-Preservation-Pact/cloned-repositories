@@ -1,0 +1,149 @@
+.addressValidation__box {
+  clear: both;
+  padding: 5px 30px 30px 30px;
+  background: #FFF;
+  margin-bottom: 30px;
+}
+
+.addressValidation__box--wrap {
+  color: #333333;
+}
+
+button.addressValidation__box--button {
+  background: #1a73e8;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+}
+.addressValidation__box--button.js-loading {
+	opacity: 0.8;
+}
+.addressValidation__box--button.js-loading:after {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #1a73e8;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+  content: "";
+  display: inline-block;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+h4.addressValidation__box--title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.addressValidation__box--addresses {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+
+
+.addressValidation__box--addressOption {
+  display: block;
+  transition: all ease 0.3s;
+  padding: 10px 10px 10px 35px;
+  margin: 15px 0;
+  background: #f9f9f9;
+  position:relative;
+  border:1px solid transparent;
+  transition: all ease 0.3s;
+}
+
+.addressValidation__box--addressOption p {
+  font-weight: bold;
+}
+
+.addressValidation__box--addressOption > * {display:block;}
+
+.addressValidation__box--addressOption b {font-style: italic;}
+
+
+.addressValidation__box--addressOption:hover{
+  border-color:#333;
+}
+
+.addressValidation__box--addressOption input {
+  position:absolute;
+  top:7px;
+  left:10px;
+  width:15px;
+  height:15px
+}
+
+p.addressValidation__box--text {
+  margin-bottom: 0;
+  border: 1px solid #fadda9;
+  display: flex;
+  align-items: center;
+
+}
+
+p.addressValidation__box--text .icon {
+  background:#fadda9;
+  padding: 16px;
+  margin-right: 15px;
+}
+
+p.addressValidation__box--text svg {
+  height: 26px;
+}
+
+button.addressValidation__box--close {
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  background: #1a73e8;
+  border: none;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  line-height: 12px;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+.addressValidation__box.addressValidation__box--error .addressValidation__box--text {
+    margin-bottom:12px;
+}
+
+.addressValidation__box.addressValidation__box--error h4.addressValidation__box--title:before {
+    content:"x";
+    width:30px;
+    height:30px;
+    display:inline-block;
+    background: #ff4e4e;
+    text-align:center;
+    line-height:30px;
+    color:#FFF;
+    margin-right:10px;
+    border-radius:100%;
+    font-weight: normal;
+}
+
+
+body.js-addressValidation-active {}
+  body.js-addressValidation-active.v-custom-fnsCustomAddressForm div#shipping-data {
+    margin-bottom: 0 !important;
+    padding-bottom: 0;
+  }
+  body.js-addressValidation-active .orderform-template-holder #shipping-data .accordion-inner {
+    display:none;
+  }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

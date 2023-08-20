@@ -1,0 +1,13 @@
+{
+    "name": "Google Search Console",
+      "headline": "Connect your VTEX store to Google's indexing optimization service.",
+    "overview": "Search Console is a free service from Google to check your store's indexing status on search engines and optimize the visibility of your ecommerce.\\n\\n This app implements the Google Search Console configuration in your store using the admin of VTEX. You’ll need to enter your Search Console ID on the app’s configuration page.",
+    "features": [
+      "Configure Google Search Console using the VTEX admin"
+    ],
+      "additionalInformation": "The management of indexing optimization is done directly through the Google Search Console platform (https://search.google.com/search-console/) after installing and configuring the app.",
+    "websiteURL": "https://vtex.com/",
+    "support": {
+        "url": "https://support.vtex.com/hc/requests"
+      }
+  }

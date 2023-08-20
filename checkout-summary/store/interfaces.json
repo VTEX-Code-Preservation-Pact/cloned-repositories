@@ -1,0 +1,52 @@
+{
+  "checkout-summary": {
+    "component": "Summary",
+    "allowed": [
+      "drawer"
+    ],
+    "composition": "children",
+    "content": {
+      "$ref": "#/definitions/Summary"
+    }
+  },
+  "checkout-summary.compact": {
+    "component": "SummarySmall",
+    "allowed": [
+      "summary-totalizers"
+    ],
+    "composition": "children"
+  },
+  "summary-coupon": {
+    "component": "SummaryCoupon",
+    "allowed": [
+      "coupon"
+    ],
+    "preview": {
+      "type": "box",
+      "height": 32,
+      "width": 240,
+      "options": {
+        "padding": 0
+      }
+    }
+  },
+  "summary-totalizers": {
+    "component": "SummaryTotalizers",
+    "preview": {
+      "type": "text",
+      "height": 108,
+      "fullWidth": true,
+      "options": {
+        "padding": 0,
+        "fontSize": 24,
+        "paragraph": false
+      }
+    }
+  },
+  "summary-installments": {
+    "component": "SummaryInstallments",
+    "content": {
+      "$ref": "app:vtex.checkout-summary#/definitions/SummaryInstallments"
+    }
+  }
+}

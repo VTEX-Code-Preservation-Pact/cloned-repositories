@@ -1,0 +1,14 @@
+build/
+build-raw/
+deploy/
+node_modules/
+.idea/
+bower_components/
+npm-debug.log
+tmp-deploy/
+.tmp/
+.grunt/
+countries/*
+!src/countries
+*.js
+.DS_Store

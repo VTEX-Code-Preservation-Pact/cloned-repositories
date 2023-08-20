@@ -1,0 +1,30 @@
+{
+  "admin.app.checkoutless-settings": {
+    "component": "adminExample",
+    "path": "/admin/app/kuikpay/settings"
+  },
+  "admin.app.checkoutless-linksList": {
+    "component": "adminLinksList",
+    "path": "/admin/app/kuikpay/links"
+  },
+  "admin.app.checkoutless-linkForm": {
+    "component": "adminLinkForm",
+    "path": "/admin/app/kuikpay/links/new"
+  },
+  "admin.app.checkoutless-form": {
+    "component": "adminJsonSchema",
+    "path": "/admin/app/kuikpay/form"
+  },
+  "admin.app.checkoutless-statistics": {
+    "component": "adminStatistics",
+    "path": "/admin/app/kuikpay/statistics"
+  },
+  "admin.app.payment-list": {
+    "component": "adminPaymentList",
+    "path": "/admin/app/kuikpay/payment-list"
+  },
+  "admin.app.styles-settings": {
+    "component": "adminStyleSettings",
+    "path": "/admin/app/kuikpay/style-settings"
+  }
+}

@@ -1,0 +1,49 @@
+.section {
+  padding: 10vh 0 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.sectionContent {
+  display: flex;
+  width: 48%;
+  align-items: center;
+}
+
+.contentTag {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 20px;
+}
+
+.sectionContent h3 {
+  font-family: 'Zen Kaku Gothic Antique', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.contentDescription {
+  color: #717786;
+}
+
+.section img {
+  width: 35%;
+  padding: 25px 0;
+}
+
+@media screen and (max-width: 1220px) {
+  .section {
+    flex-direction: column;
+  }
+  .sectionContent {
+    width: 100%;
+  }
+  .section img {
+    display: block;
+    margin: auto auto;
+    width: 450px;
+  }
+}

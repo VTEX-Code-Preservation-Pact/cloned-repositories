@@ -1,0 +1,16 @@
+{
+  "name": "vtex.collections",
+  "version": "0.0.0",
+  "dependencies": {
+    "@vtex/styleguide": "^2.0.0-rc.32",
+    "debounce": "^1.1.0",
+    "downshift": "^1.30.0",
+    "lodash": "^4.17.5",
+    "moment": "^2.21.0",
+    "rc-time-picker": "^3.3.1",
+    "react": "^16.2.0",
+    "react-autocomplete-tags": "^1.0.13-alpha",
+    "react-dates": "^16.3.6",
+    "react-dom": "^16.2.0"
+  }
+}

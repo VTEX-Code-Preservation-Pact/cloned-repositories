@@ -1,0 +1,18 @@
+{
+  "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "stream": true,
+  "packages": ["packages/*"],
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "{.*,*}{.config,rc,ignore}{,.js}",
+        "LICENSE",
+        "lerna.json"
+      ],
+      "message": "chore(release): :robot: publish",
+      "registry": "https://registry.npmjs.org"
+    }
+  }
+}

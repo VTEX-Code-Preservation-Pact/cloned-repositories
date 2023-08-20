@@ -1,0 +1,12 @@
+{
+  "amp-store": {
+    "component": "*",
+    "before": ["header.full"],
+    "after": ["footer"],
+    "around": ["ampProvider"]
+  },
+  "amp-store.home": {},
+  "ampProvider": {
+    "component": "AmpProvider"
+  }
+}

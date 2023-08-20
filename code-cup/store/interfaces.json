@@ -1,0 +1,13 @@
+{
+  "codecup": {
+    "blocks": [
+      "codecup.landing"
+    ]
+  },
+  "codecup.landing": {
+    "component": "CodeCup"
+  },
+  "codecup.rules": {
+    "component": "CodeCupRules"
+  }
+}

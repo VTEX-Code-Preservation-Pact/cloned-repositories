@@ -1,0 +1,21 @@
+{
+  "vendor": "vtex",
+  "name": "list-context",
+  "version": "0.2.1",
+  "title": "VTEX List Context",
+  "description": "Interfaces that enable the use of list-contexts in VTEX IO Store Framework",
+  "builders": {
+    "store": "0.x",
+    "react": "3.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.native-types": "0.x",
+    "vtex.css-handles": "1.x"
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

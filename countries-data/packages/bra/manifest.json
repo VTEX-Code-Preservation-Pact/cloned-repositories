@@ -1,0 +1,10 @@
+{
+  "vendor": "vtex",
+  "name": "country-data-bra",
+  "version": "0.2.1",
+  "title": "Brazil Data for Places Components",
+  "builders": {
+    "vtex.country-data-settings": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

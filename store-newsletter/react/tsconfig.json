@@ -1,0 +1,10 @@
+{
+  "extends": "@vtex/tsconfig",
+  "compilerOptions": {
+    "lib": ["es2017", "dom", "es2018.promise", "esnext.asynciterable"],
+    "noEmitOnError": false,
+    "types": ["node", "jest", "graphql"],
+    "module": "esnext",
+    "moduleResolution": "node"
+  }
+}

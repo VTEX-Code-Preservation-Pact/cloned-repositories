@@ -1,0 +1,38 @@
+{
+  "special-for-you": {
+    "component": "SpecialForYou"
+  },
+  "hp-special-for-you": {
+    "component": "HomePageSpecialForYou"
+  },
+  "hp-accessories-recommendations": {
+    "component": "HomePageAccessoriesRecommendations"
+  },
+  "recommendations-for-you": {
+    "component": "HomePageRecommendationsForYou"
+  },
+  "recently-viewed-products": {
+    "component": "RecentlyViewedProducts"
+  },
+  "hp-recently-viewed-products": {
+    "component": "HomePageRecentlyViewedProducts"
+  },
+  "similar-products": {
+    "component": "SimilarProducts"
+  },
+  "pp-similar-products": {
+    "component": "ProductPageSimilarProducts"
+  },
+  "other-recommendations": {
+    "component": "ProductPageOtherRecommendations"
+  },
+  "pleisty-carousel-test": {
+    "component": "PleistyCarouselTest"
+  },
+  "pleisty-carousel-history-test": {
+    "component": "PleistyCarouselHistoryTest"
+  },
+  "pixel.thank-you": {
+    "component": "index"
+  }
+}

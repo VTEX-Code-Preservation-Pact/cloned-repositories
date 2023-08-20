@@ -1,0 +1,113 @@
+// mobile
+// -----------------------------------------------
+@media (max-width: 490px) {
+	// security badge
+	// -----------------------------------------------
+	.payment-security {
+		padding: 1px 3px 1px 0;
+		position: absolute;
+		right: 0;
+		top: -35px;
+		.border-radius(0 0 0 5px);
+	}
+	.payment-security-text { display: none; }
+	.payment-card-saved { width: 100%; }
+}
+
+// mobile and tablet
+// -----------------------------------------------
+@media (max-width: 767px) {
+	.payment-data .payment-methods { float: none; }
+	.payment-paypal-benefit { padding-bottom: 10px; }
+	.payment-paypal-benefit-title { margin-bottom: 2px; }
+	.payment-paypal-postscript {
+		box-sizing: border-box;
+		padding-right: 20%;
+	}
+}
+
+// less than desktop
+// -----------------------------------------------
+@media (max-width: 979px) {
+	.payment-data {
+		.steps-view,
+		.gift-card-section,
+		.payment-discounts-alert { width: 462px; }
+		.gift-card-section,
+		.payment-discounts-alert { margin-left: 192px; }
+	}
+	.payment-confirmation-wrap {
+		background: none;
+		position: relative;
+		padding: 0;
+		bottom: 5px;
+		width: 100%;
+		border-top: 1px dotted #ccc;
+		padding-top: 10px;
+	}
+
+	.fast-shopping-checkbox { margin-top: 10px; }
+	.payment-submit-wrap { margin-top: 15px; }
+	.payment-safetypay-benefit {
+		overflow: hidden;
+	}
+
+}
+
+// less than tablet
+// -----------------------------------------------
+@media (max-width: 767px) {
+	// .payment-data {
+	// 	.input-large,
+	// 	.input-xlarge,
+	// 	.input-xxlarge,
+	// 	input[class*="span"],
+	// 	select[class*="span"],
+	// 	textarea[class*="span"],
+	// 	.uneditable-input {
+	// 		max-width: 185px;
+	// 	}
+	// 	.payment-methods,
+	// 	.link-gift-card {
+	// 		margin: 0 auto 10px;
+	// 		// max-width: 240px;
+	// 		position: relative;
+	// 	}
+	// 	.payment-methods {
+	// 		a {
+	// 			border: 2px solid @smooth;
+	// 			margin-left: 0;
+	// 			.border-radius;
+	// 			span {
+	// 				width: auto;
+	// 			}
+	// 		}
+	// 	}
+	// 	.steps-view,
+	// 	.gift-card-section,
+	// 	.payment-discounts-alert {
+	// 		float: none;
+	// 		margin-left: 0;
+	// 		width: auto;
+	// 	}
+	// 	.steps-view {
+	// 		min-height: 0;
+	// 		padding-bottom: 15px;
+	// 	}
+	// 	.gift-card-section {
+	// 		margin-top: 10px;
+	// 	}
+	// 	.fast-shopping,
+	// 	p.submit {
+	// 		bottom: auto;
+	// 		margin-top: 10px;
+	// 		position: relative;
+	// 		right: auto;
+	// 		label span {
+	// 			width: auto;
+	// 		}
+	// 	}
+	// }
+}
+
+

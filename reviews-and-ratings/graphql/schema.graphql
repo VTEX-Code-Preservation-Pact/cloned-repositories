@@ -1,0 +1,159 @@
+type Review {
+  id: String!
+  productId: String!
+  rating: Int!
+  title: String
+  text: String
+  reviewerName: String
+  location: String
+  locale: String
+  pastReviews: Boolean
+  reviewDateTime: String
+  verifiedPurchaser: Boolean
+  sku: String
+  approved: Boolean
+  shopperId: String
+}
+
+type ReviewsResult {
+  data: [Review]
+  range: Range
+}
+
+type Data {
+  id: String!
+  productId: String!
+  rating: Int!
+  title: String
+  text: String
+  reviewerName: String
+  shopperId: String
+  location: String
+  locale: String
+  pastReviews: Boolean
+  reviewDateTime: String
+  verifiedPurchaser: Boolean
+  sku: String
+  approved: Boolean
+}
+
+type Range {
+  total: Int
+  from: Int
+  to: Int
+}
+
+type AppSettings {
+  allowAnonymousReviews: Boolean
+  requireApproval: Boolean
+  useLocation: Boolean
+  defaultOpen: Boolean
+  defaultStarsRating: Int
+  defaultOpenCount: Int
+  showGraph: Boolean
+  displaySummaryIfNone: Boolean
+  displayInlineIfNone: Boolean
+  displaySummaryTotalReviews: Boolean
+  displaySummaryAddButton: Boolean
+}
+
+type AverageResponse {
+  average: Float
+  starsFive: Int
+  starsFour: Int
+  starsThree: Int
+  starsTwo: Int
+  starsOne: Int
+  total: Int
+}
+
+type Query {
+  review(id: ID!): Review @cacheControl(scope: PUBLIC, maxAge: MEDIUM)
+  reviews(
+    searchTerm: String
+    from: Int = 0
+    to: Int = 9
+    orderBy: String
+    status: String
+  ): ReviewsResult @cacheControl(scope: PRIVATE)
+  reviewsByProductId(
+    productId: String!
+    rating: Int
+    locale: String
+    pastReviews: Boolean
+    from: Int = 0
+    to: Int = 9
+    orderBy: String
+    status: String
+  ): ReviewsResult @cacheControl(scope: PRIVATE)
+  averageRatingByProductId(productId: String!): AverageResponse
+    @cacheControl(scope: PUBLIC, maxAge: 30)
+  totalReviewsByProductId(productId: String!): Int
+    @cacheControl(scope: PUBLIC, maxAge: 30)
+  reviewsByShopperId(
+    shopperId: String!
+    from: Int = 0
+    to: Int = 9
+    orderBy: String
+    status: String
+  ): ReviewsResult @cacheControl(scope: SEGMENT, maxAge: SHORT)
+  reviewByreviewDateTime(
+    reviewDateTime: String!
+    from: Int = 0
+    to: Int = 9
+    orderBy: String
+    status: String
+  ): ReviewsResult
+    @cacheControl(scope: PUBLIC, maxAge: MEDIUM)
+    @deprecated(
+      reason: "This query was deprecated, please use reviewByDateRange instead."
+    )
+  reviewByDateRange(
+    fromDate: String!
+    toDate: String!
+    orderBy: String
+    status: String
+  ): ReviewsResult @cacheControl(scope: PUBLIC, maxAge: MEDIUM)
+  hasShopperReviewed(shopperId: String!, productId: String!): Boolean
+    @cacheControl(scope: PRIVATE)
+  appSettings: AppSettings
+  verifySchema: String @cacheControl(scope: PUBLIC, maxAge: SHORT)
+  migrateData: String @cacheControl(scope: PUBLIC, maxAge: SHORT)
+  verifyMigration: String @cacheControl(scope: PUBLIC, maxAge: SHORT)
+  successfulMigration: String @cacheControl(scope: PUBLIC, maxAge: SHORT)
+}
+
+# Mutations
+
+input ReviewInput {
+  id: String
+  productId: String!
+  rating: Int!
+  title: String
+  text: String
+  reviewerName: String
+  reviewDateTime: String
+  sku: String
+  approved: Boolean
+}
+
+input EditReviewInput {
+  id: String
+  productId: String
+  rating: Int
+  title: String
+  text: String
+  reviewerName: String
+  reviewDateTime: String
+  sku: String
+  shopperId: String
+}
+
+type Mutation {
+  newReview(review: ReviewInput!): Review
+  editReview(id: String!, review: EditReviewInput!): Review
+    @cacheControl(scope: PRIVATE)
+  deleteReview(ids: [String!]): Boolean @cacheControl(scope: PRIVATE)
+  moderateReview(ids: [String!], approved: Boolean!): Boolean
+    @cacheControl(scope: PRIVATE)
+}

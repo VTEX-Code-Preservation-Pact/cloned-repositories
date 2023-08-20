@@ -1,0 +1,154 @@
+<!-- block link for card scanner -->
+<p class="card-scanner-scan" data-bind="if: window.paymentData.isTotem">
+    <a class="card-scanner-scan-link" href="javascript:void(0);"
+       data-bind="visible: canUseCardScanner() && !labelCardFields(), click: toggleCardForm"
+       data-i18n="paymentData.paymentGroup.creditCard.scanner.scanCard">Usar leitor de cartão</a>
+</p>
+<!-- block /link for card scanner -->
+
+<div class="skeuocard-wrapper">
+    <!-- block desktop/tablet: skeuocard frontside -->
+    <div class="skeuocard skeuocard-frontside" data-bind="css: { 'skeuocard-bigger': cardCodeMask().length > 3, 'skeuocard-custom-card': isCreditCardCustom }">
+
+        <!-- block number -->
+        <div class="payment-card-number input text required clearLeft">
+            <label class="payment-card-number-label" data-bind="attr: {'for': $parent.identifier()+'payment-card' + id + 'Number', htmlFor: $parent.identifier()+'payment-card' + id + 'Number'}">
+                <span data-i18n="paymentData.paymentGroup.creditCard.number">Número</span>
+            </label>
+            <p class="payment-card-number-input-wrapper">
+                <!-- ko if: window.paymentData.isTotem -->
+                <input type="password"
+                       data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Number', maxlength: 19 },
+                            value: cardNumberTotem, valueUpdate: 'afterkeydown', validate: validateCreditCard, required: true,
+                            disable: window.paymentData.loading"
+                       class="payment-card-number-input input-medium autofocus input-totem dont-track-input">
+                <!-- /ko -->
+                <!-- ko ifnot: window.paymentData.isTotem -->
+                <input type="tel"
+                       data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Number'},
+                            value: cardNumber, valueUpdate: 'afterkeydown', validate: validateCreditCard, required: true,
+                            disable: window.paymentData.loading"
+                       class="payment-card-number-input payment-card-number-input-totem input-medium autofocus dont-track-input" data-i18n="[placeholder]paymentData.paymentGroup.creditCard.number">
+                <!-- /ko -->
+            </p>
+            <!-- block /number -->
+
+
+            <!-- block number help popover -->
+            <span class="payment-card-number-help help hide">
+                <span class="help-title" href="javascript:void(0);" data-i18n="global.help">Ajuda</span>
+                <span class="help-message hide" data-i18n="paymentData.paymentGroup.creditCard.helpHiperCard">
+                    Se o seu cartão Hipercard possui uma sequência de 6 números acima da sequência principal de 13 dígitos, será necessário digitar todos os números, começando pelos 6 pequenos, totalizando 19 dígitos.
+                </span>
+            </span>
+            <!-- block /number help popover -->
+        </div>
+
+        <!-- block complementary fields: flag selector / installments -->
+        <div class="payment-card-complementary-fields payment-card-complementary-fields-small clearfix " data-bind="template: 'card-flags-installments'"></div>
+        <!-- block /complementary fields: flag selector / installments -->
+
+        <!-- block due date -->
+        <div class="payment-card-due-date text" data-bind="css: {'hide': !cardExpirationDateRequired()}">
+            <label class="payment-card-due-date-label" data-bind="attr: {'for': $parent.identifier()+'payment-card' + id + 'Month'}">
+                <span data-i18n="paymentData.paymentGroup.creditCard.dueDate">Válido até</span>
+            </label>
+
+            <p class="payment-card-due-date-month-input-wrapper input text" data-bind="css: {'required': cardExpirationDateRequired}">
+                <input type="tel" class="payment-card-due-date-month-input input-nano" data-i18n="[placeholder]paymentData.paymentGroup.creditCard.dueMonth" maxlength="2" data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Month'}, value: cardDueMonth, validate: validateDueMonth, required: cardExpirationDateRequired, disable: window.paymentData.loading" />
+            </p>
+
+            <p class="payment-card-due-date-lash">/</p>
+
+            <p class="payment-card-due-date-year-input-wrapper input text" data-bind="css: {'required': cardExpirationDateRequired}">
+                <input type="tel" class="payment-card-due-date-year-input input-nano" data-i18n="[placeholder]paymentData.paymentGroup.creditCard.dueYear" maxlength="2" data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Year'}, value: cardDueYear, validate: validateDueYear, required: cardExpirationDateRequired, disable: window.paymentData.loading">
+            </p>
+        </div>
+        <!-- block /due date -->
+
+        <!-- block name -->
+        <div class="payment-card-name input text" data-bind="css: {'required': cardOwnerNameRequired, 'hide': !cardOwnerNameRequired()}">
+            <label class="payment-card-name-label" data-bind="attr: {'for': $parent.identifier()+'payment-card' + id + 'Name', htmlFor: $parent.identifier()+'payment-card' + id + 'Name'}">
+                <span data-i18n="paymentData.paymentGroup.creditCard.holderName">Nome impresso no cartão</span>
+            </label>
+            <p class="payment-card-name-input-wrapper">
+                <input type="text" class="payment-card-name-input input-large"
+                   data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Name'},
+                       value: cardOwnerName, valueUpdate:'afterkeydown',
+                       validate: 'alpha', required: cardOwnerNameRequired, disable: window.paymentData.loading"
+                    data-i18n="[placeholder]paymentData.paymentGroup.creditCard.holderName">
+            </p>
+        </div>
+        <!-- block /name -->
+        <!-- block cvv -->
+        <div class="payment-card-cvv payment-card-empty-cvv input text" data-bind="template: 'cvv', css: { 'payment-card-cvv-backside': cardCodeMask().length <= 3, 'payment-card-cvv-frontside': cardCodeMask().length > 3, 'required': cardSafetyCodeRequired }"></div>
+        <!-- block /cvv -->
+        <!-- block card flag -->
+        <!-- ko foreach: paymentGroup.paymentSystems -->
+        <span class="skeuocard-flag" data-bind="visible: $parent.paymentGroup.paymentSystem() == $data && $parent.cardNumber.lastValidationResult,
+            attr: {'class': 'skeuocard-flag card-flag card-selected ' + name()}"></span>
+        <!-- /ko -->
+        <!-- block /card flag -->
+    </div>
+    <!-- block desktop/tablet: skeuocard frontside -->
+    <!-- block complementary fields: flag selector / installments -->
+    <div class="payment-card-complementary-fields payment-card-complementary-fields-large clearfix" data-bind="template: 'card-flags-installments'"></div>
+    <!-- block /complementary fields: flag selector / installments -->
+
+
+    <!-- block desktop/tablet: skeuocard backside -->
+    <div class="skeuocard skeuocard-backside" data-bind="css: {'transparent': !cardSafetyCodeRequired() || cardCodeMask().length > 3 }"></div>
+    <!-- block /desktop/tablet: skeuocard backside -->
+</div>
+
+<!-- block card scanner resume -->
+<div class="card-scanner-resume clearfix" data-bind="if: labelCardFields">
+    <div class="card-scanner-resume-info">
+        <p class="card-scanner-resume-header">
+            <!-- ko foreach: paymentGroup.paymentSystems -->
+            <!-- ko if: $parent.paymentGroup.paymentSystem() == $data -->
+             <span class="card-flag card-scanner-resume-card-flag" data-bind="text: name, attr: {'class': 'card-flag card-scanner-resume-card-flag card-selected ' + name()}"></span>
+            <!-- /ko -->
+            <!-- /ko -->
+            <span class="card-scanner-resume-number" data-bind="text: cardNumberTotemLabel"></span>
+            <a class="card-scanner-resume-dismiss-link" href="javascript:void(0);" data-bind="click: toggleCardForm" data-i18n="[title]paymentData.paymentGroup.creditCard.scanner.useAnotherCard">
+                <small><i class="icon-remove-sign"></i></small>
+            </a>
+        </p>
+        <p class="card-scanner-resume-holder-name hide" data-bind="visible: isCardOwnerNameLabel">
+            <span class="card-scanner-resume-holder-name-label" data-i18n="paymentData.paymentGroup.creditCard.holderName"></span>:
+            <span class="card-scanner-resume-holder-name-value" data-bind="text: cardOwnerName"></span>
+        </p>
+        <p class="card-scanner-resume-due-date hide">
+            <span class="card-scanner-resume-due-date-label" data-i18n="paymentData.paymentGroup.creditCard.dueDate"></span>:
+            <span class="card-scanner-resume-due-date-month" data-bind="text: cardDueMonth"></span><span class="card-scanner-resume-due-date-dep">/</span><span class="card-scanner-resume-due-date-year" data-bind="text: cardDueYear"></span>
+        </p>
+    </div>
+
+    <div class="payment-card-name input text" data-bind="css: {'required': cardOwnerNameRequired, 'hide': !cardOwnerNameRequired() || isCardOwnerNameLabel()}">
+        <label class="payment-card-name-label" data-bind="attr: {'for': $parent.identifier()+'payment-card' + id + 'Name', htmlFor: $parent.identifier()+'payment-card' + id + 'Name'}">
+            <span data-i18n="paymentData.paymentGroup.creditCard.holderName">Nome impresso no cartão</span>
+        </label>
+        <p class="payment-card-name-input-wrapper">
+            <input type="text" class="payment-card-name-input input-medium"
+               data-bind="attr: {id: $parent.identifier()+'payment-card' + id + 'Name'},
+                   value: cardOwnerName, valueUpdate:'afterkeydown',
+                   validate: 'alpha', required: cardOwnerNameRequired, disable: window.paymentData.loading">
+        </p>
+    </div>
+</div>
+<!-- block /card scanner resume -->
+
+<!-- block holder document -->
+<div class="payment-card-holder-document input text required mask" data-bind="css: {'holder-document-required':holderDocumentRequired, 'hide': !holderDocumentRequired()}">
+    <label class="payment-card-holder-document-label" for="payment-card-holder-document">
+        <span data-i18n="paymentData.paymentGroup.creditCard.cpfOwner">CPF do Portador</span>
+    </label>
+    <p class="payment-card-holder-document-input-wrapper">
+        <input type="text" id="payment-card-holder-document" class="payment-card-holder-document-input input-small"
+               data-bind="value: document, valueUpdate:'afterkeydown',
+                    validate: validateDocument, required: holderDocumentRequired,
+                    maskOnBlur: documentMask, attr: documentAttributeBindings, disable: window.paymentData.loading">
+    </p>
+</div>
+<!-- block /holder document -->

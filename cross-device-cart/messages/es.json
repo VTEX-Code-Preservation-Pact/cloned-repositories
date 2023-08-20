@@ -1,0 +1,13 @@
+{
+  "store/crossCart.challenge.cta": "Hazlo",
+  "store/crossCart.challenge.text": "Parece que has dejado un carrito en otro dispositivo. ¿Quieres recuperarlo?",
+  "store/crossCart.toast.success": "Tu ultimo carrito ha sido recuperado",
+  "store/crossCart.toast.error": "Un error ocurrio al recuperar tu carrito",
+  "admin/cross-device-cart.title": "Cross Device Cart",
+  "admin/cross-device-cart.subtitle": "Configuración de la aplicación",
+  "admin/cross-device-cart.error": "Ha ocurrido un problema cargando la configuración de la aplicación",
+  "admin/cross-device-cart.automatic-toggle-automatic": "Automático",
+  "admin/cross-device-cart.automatic-toggle-manual": "Manual",
+  "admin/cross-device-cart.automatic-toggle-help-text": "Elija entre el modo Automático o Manual para el cross device cart.",
+  "admin/cross-device-cart.automatic-toggle-explanation": "Cuando se selecciona el modo 'Automático' no se le pedirá al usuario que realice ninguna acción. Si se selecciona el modo 'Manual' el usuario deberá confirmar qué quiere hacer con los artículos que estaban previamente en el carrito."
+}

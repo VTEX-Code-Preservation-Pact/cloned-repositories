@@ -1,0 +1,70 @@
+{
+  "name": "releases-graphql",
+  "vendor": "vtex",
+  "version": "0.4.1",
+  "title": "Releases Graphql",
+  "description": "VTEX Releases GraphQL server",
+  "mustUpdateAt": "2019-08-09",
+  "builders": {
+    "graphql": "1.x",
+    "node": "4.x",
+    "docs": "0.x"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "read-public-registry-assets"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "koto.vtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "koto.vtex.com",
+        "path": "/api/Authentication"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "delorean.vtex.com",
+        "path": "/publications/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "rlsnts-env-stable.us-east-1.elasticbeanstalk.com",
+        "path": "/releases/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexid.vtex.com.br",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/license_manager/*"
+      }
+    }
+  ]
+}

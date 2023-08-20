@@ -1,0 +1,10 @@
+<script>
+  (function(window) {
+    var rtbhouseId = "{{settings.rtbhouseId}}";
+    if (rtbhouseId) {
+      window.rtbhouseId = rtbhouseId;
+    } else {
+      console.error("RTB House ID not set.");
+    }
+  })(window);
+</script>

@@ -1,0 +1,20 @@
+{
+  "admin/editor.gift-image.title": "Imagen del regalo",
+  "admin/editor.gift-image.description": "Imagen de regalo del producto",
+  "admin/editor.gift-image.imageLabel.title": "Etiqueta de imagen",
+  "admin/editor.gift-image.imageLabel.description": "Etiqueta para especificar qué imagen del producto debe mostrarse.",
+  "admin/editor.gift-name.title": "Nombre del regalo",
+  "admin/editor.gift-name.description": "Nombre del regalo.",
+  "admin/editor.gift-name.linkToProduct.title": "Link a la página de producto",
+  "admin/editor.gift-name.linkToProduct.description": "Si el nombre del regalo también debe ser un link a la página de producto.",
+  "admin/editor.gift-name.nameType.title": "Tipo de nombre mostrado",
+  "admin/editor.gift-name.nameType.description": "Mostrar el skuName o productName del regalo.",
+  "admin/editor.product-gifts.title": "Regalos de productos",
+  "admin/editor.product-gifts.description": "Mostrar regalos disponibles para el producto actual.",
+  "admin/editor.product-gifts.maxVisibleItems.title": "Máximo de ítems visibles",
+  "admin/editor.product-gifts.maxVisibleItems.description": "Número máximo de regalos que se deben renderizar a la vez. (Utiliza \"showAll\" para mostrar siempre todos los regalos disponibles.)",
+  "admin/editor.product-gift-text.title": "Texto de regalos del producto",
+  "admin/editor.product-gift-text.description": "Información adicional sobre regalos disponibles.",
+  "admin/editor.product-gift-text.text.title": "Texto",
+  "admin/editor.product-gift-text.text.description": "Una cadena traducible que tiene variables que podrían usarse para renderizar cualquier texto relacionado con los regalos. Su formato utiliza reglas UCI y las variables disponibles son: totalGifts, exceedingItems y visibleItems."
+}

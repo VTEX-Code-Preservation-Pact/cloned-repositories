@@ -1,0 +1,6 @@
+{
+  "admin.app.glovo-integration": {
+    "component": "AdminPanel",
+    "path": "/admin/app/glovo-integration"
+  }
+}

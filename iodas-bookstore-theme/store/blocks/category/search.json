@@ -1,0 +1,8 @@
+{
+  "store.search#category": {
+    "blocks": ["carousel#store-search", "search-result-layout"]
+  },
+  "store.search#subcategory": {
+    "blocks": ["carousel#store-search", "search-result-layout"]
+  }
+}

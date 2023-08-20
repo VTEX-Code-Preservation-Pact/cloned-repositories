@@ -1,0 +1,86 @@
+{
+  "flex-layout.row#display": {
+    "title": "Destacados",
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 6,
+      "colGap": 8,
+      "rowGap": 8,
+      "fullWidth": false
+    },
+    "children": [
+      "flex-layout.col#display1",
+      "flex-layout.col#display2",
+      "flex-layout.col#display3"
+    ]
+  },
+  "flex-layout.col#display1": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#display1"
+    ]
+  },
+  "flex-layout.col#display2": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#display2"
+    ]
+  },
+  "flex-layout.col#display3": {
+    "props": {
+      "blockClass": "infocard"
+    },
+    "children": [
+      "info-card#display3"
+    ]
+  },
+  "info-card#display1": {
+    "title": "Destado 1",
+    "props": {
+      "blockClass": "display",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/stepping-up-infocard-1823918.png",
+      "headline": "Nueva temporada.",
+      "subhead": "",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#display2": {
+    "title": "Destado 2",
+    "props": {
+      "blockClass": "display",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/man-lifiting.png",
+      "headline": "Zapatillas favoritas.",
+      "subhead": "",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#display3": {
+    "title": "Destado 3",
+    "props": {
+      "blockClass": "display",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://partnerchallenge29.vteximg.com.br/arquivos/winter-boots-2811.png",
+      "headline": "Moda de invierno.",
+      "subhead": "",
+      "callToActionText": "Shop Now",
+      "callToActionUrl": "#",
+      "imageActionUrl": "#",
+      "textAlignment": "center"
+    }
+  }
+}

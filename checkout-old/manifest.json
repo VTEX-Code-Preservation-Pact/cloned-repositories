@@ -1,0 +1,24 @@
+{
+  "vendor": "vtex",
+  "name": "checkout",
+  "version": "0.1.0",
+  "title": "Checkout UI",
+  "description": "Checkout UI for the Store Framework",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2019-04-02",
+  "dependencies": {
+    "vtex.store-header": "2.x",
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.styleguide": "9.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store": "2.x",
+    "vtex.checkout-cart": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

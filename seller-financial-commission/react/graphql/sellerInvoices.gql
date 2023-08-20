@@ -1,0 +1,19 @@
+query SELLER_INVOICES($sellerInvoiceParams: SellerInvoiceParams) {
+  invoicesBySeller: sellerInvoices(sellerInvoiceParams: $sellerInvoiceParams) {
+    data {
+      id
+      status
+      invoiceCreatedDate
+      totalizers {
+        subTotal
+        fee
+        total
+      }
+    }
+    pagination {
+      total
+      page
+      pageSize
+    }
+  }
+}

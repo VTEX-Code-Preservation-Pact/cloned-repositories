@@ -1,0 +1,40 @@
+{
+  "version": "0.1.0",
+  "name": "standard-modal",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint --ext js,jsx,ts,tsx .",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json}\"",
+    "lint:locales": "intl-equalizer",
+    "test": "cd ./react && yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && intl-equalizer && intl-equalizer --fix"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js,tsx,jsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
+    ]
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@types/node": "^12.12.21",
+    "@types/co-body": "^6.1.0",
+    "@vtex/prettier-config": "^0.3.5",
+    "eslint": "^7.14.0",
+    "eslint-config-vtex": "^12.8.11",
+    "eslint-config-vtex-react": "^8.1.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.2.0",
+    "typescript": "^3.9.6",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  }
+}

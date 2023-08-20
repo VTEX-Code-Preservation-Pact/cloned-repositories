@@ -1,0 +1,13 @@
+.idea
+.idea_modules
+*.iml
+*.ipr
+*.jfr
+target
+coveralls-token.txt
+/*.html
+dump.rdb
+logs
+.ensime
+.ensime_lucene
+.ensime_cache

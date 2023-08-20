@@ -1,0 +1,9 @@
+{
+  "resource_deleted": "Resource deleted correctly",
+  "resource_updated": "Resource updated correctly",
+  "resource_created_updated": "Resource created or updated correctly",
+  "user_login_email_sent": "An email was sent to the user with the login code",
+  "user_login_sent": "A notification was sent to the user with the login code",
+  "authenticated": "Authenticated correctly",
+  "sms_body": "Hello, {name}. Your access code is: {code}.\n\n@{origin} #{code}"
+}

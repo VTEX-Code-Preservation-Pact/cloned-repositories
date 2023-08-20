@@ -1,0 +1,23 @@
+{
+  "vendor": "vtex",
+  "name": "checkout",
+  "version": "3.0.0",
+  "title": "Checkout UI",
+  "description": "Checkout UI for the Store Framework",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "docs": "0.x",
+    "node": "6.x"
+  },
+  "dependencies": {},
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "checkout.vtex.io",
+        "path": "*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

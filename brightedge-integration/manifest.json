@@ -1,0 +1,31 @@
+{
+  "name": "brightedge-integration",
+  "vendor": "vtex",
+  "version": "0.0.2",
+  "title": "BrightEdge",
+  "description": "An implementation of BrightEdge AutoPilot link blocks for SEO optimization",
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.store": "2.x",
+    "vtex.product-context": "0.x"
+  },
+  "settingsSchema": {
+    "title": "BrightEdge",
+    "type": "object",
+    "properties": {
+      "accountId": {
+        "title": "Account ID",
+        "description": "Enter your Account ID for BrightEdge",
+        "type": "string",
+        "access": "public"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

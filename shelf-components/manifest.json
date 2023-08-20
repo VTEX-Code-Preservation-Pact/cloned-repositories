@@ -1,0 +1,36 @@
+{
+  "vendor": "vtex",
+  "name": "shelf-components",
+  "version": "0.10.0",
+  "title": "Shelf components",
+  "description": "Components of the new shelves",
+  "builders": {
+    "docs": "0.x",
+    "messages": "1.x",
+    "react": "3.x",
+    "store": "0.x",
+    "styles": "2.x"
+  },
+  "dependencies": {
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.css-handles": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.format-currency": "0.x",
+    "vtex.messages": "1.x",
+    "vtex.pixel-manager": "1.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-group-context": "0.x",
+    "vtex.product-list-context": "0.x",
+    "vtex.product-price": "1.x",
+    "vtex.product-summary": "2.x",
+    "vtex.responsive-layout": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.styleguide": "9.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.store-resources": "0.x",
+    "vtex.search-graphql": "0.x",
+    "vtex.recommendation-context": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

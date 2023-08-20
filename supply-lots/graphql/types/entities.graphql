@@ -1,0 +1,78 @@
+type transfer {
+  isTransfered: Boolean
+  destinationItemAvailabilityId: String
+  dateOfTransferUTC: String
+  user: String
+}
+
+type SupplyLot {
+  """
+  ID of the Supply Lot in which the SKU's scheduling should be considered
+  """
+  supplyLotId: ID
+  """
+  SKU scheduled to arrive in the Supply Lot
+  """
+  skuId: ID
+  """
+  Warehouse where the Supply Lot is scheduled to arrive
+  """
+  warehouseId: ID
+  """
+  Total quantity in the Supply Lot
+  """
+  totalQuantity: Int
+  """
+  Quantity still available to be sold in the Supply Lot
+  """
+  availableQuantity: Int
+  """
+  Quantity already reserved in the Supply Lot
+  """
+  reservedQuantity: Int
+  """
+  Date to be considered in the SKU's scheduling
+  """
+  dateOfSupplyUtc: String
+  """
+  Whether to keep selling from the Supply the date expired
+  """
+  keepSellingAfterExpiration: Boolean
+  """
+  Details about a Supply Lot transfer, if it was already transfered
+  """
+  transfer: Boolean
+  dockId: ID
+  isUnlimited: Boolean
+  salesChannel: [String]
+  deliveryChannels: [String]
+  timeToRefill: String
+
+}
+ 
+ input SupplyLotInput {
+  """
+  ID of the Supply Lot in which the SKU's scheduling should be considered
+  """
+  supplyLotId: ID
+  """
+  SKU which will be scheduled to arrive in the Supply Lot
+  """
+  skuId: ID!
+  """
+  Warehouse where the Supply Lot will be scheduled to arrive
+  """
+  warehouseId: ID!
+  """
+  SKU quantity in the Supply Lot
+  """
+  totalQuantity: Int!
+  """
+  Date to be considered in the SKU's scheduling
+  """
+  dateOfSupplyUtc: String!
+  """
+  Whether to keep selling from the Supply the date expired
+  """
+  keepSellingAfterExpiration: Boolean!
+}

@@ -1,0 +1,22 @@
+{
+  "formula.title": "Formula",
+  "formula.hello": "Hello,",
+  "formula.signup": "Let's do this!",
+  "formula.logout": "Logout",
+  "formula.seeDetails": "Edit",
+  "formula.team": "Team",
+  "formula.back": "Back",
+  "formula.save": "Save",
+  "formula.join": "Join Team",
+  "formula.leave": "Leave Team",
+  "formula.delete": "Delete",
+  "formula.newProject": "Create a project",
+  "formula.status.registration": "It's almost time!",
+  "formula.status.running": "Run, Forrest, run!",
+  "formula.status.voting": "And it's a wrap!",
+  "formula.status.voting.details": "Time to vote.",
+  "formula.status.results": "That was great.",
+  "formula.status.results.details": "Thanks!",
+  "formula.projectDetails": "Project",
+  "formula.viewDemo": "View Demo"
+}

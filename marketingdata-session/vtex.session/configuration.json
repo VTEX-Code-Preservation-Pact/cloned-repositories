@@ -1,0 +1,26 @@
+{
+	"marketingdata": {
+		"input": {
+			"public": [ 
+				"gclid", 
+				"utm_source",
+				"utm_medium",
+				"utm_campaign",
+				"utmi_cp",
+				"utmi_p",
+				"utmi_pc"
+			]			
+		},
+		"output": {
+			"marketingdata": [  
+				"utm_source",
+				"utm_medium",
+				"utm_campaign",
+				"utmi_cp",
+				"utmi_p",
+				"utmi_pc"
+			],
+			"public": [ "utm_source" ]
+		}		
+	}
+}

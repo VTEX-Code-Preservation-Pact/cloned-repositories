@@ -1,0 +1,16 @@
+{
+  "extends": [
+    "eslint-config-vtex",
+    "plugin:jasmine/recommended"
+  ],
+  "plugins":[
+    "jasmine"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    }
+  }
+}

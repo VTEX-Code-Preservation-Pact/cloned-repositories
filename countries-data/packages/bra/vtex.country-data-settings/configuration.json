@@ -1,0 +1,251 @@
+{
+  "countryISO": "BRA",
+  "addressFields": {
+    "country": {
+      "label": "country",
+      "hidden": true,
+      "maxLength": 100
+    },
+    "state": {
+      "label": "stateAbbreviation",
+      "maxLength": 100,
+      "required": true,
+      "optionsCaption": "UF",
+      "options": [
+        {
+          "label": "AC",
+          "value": "AC"
+        },
+        {
+          "label": "AL",
+          "value": "AL"
+        },
+        {
+          "label": "AP",
+          "value": "AP"
+        },
+        {
+          "label": "AM",
+          "value": "AM"
+        },
+        {
+          "label": "BA",
+          "value": "BA"
+        },
+        {
+          "label": "CE",
+          "value": "CE"
+        },
+        {
+          "label": "DF",
+          "value": "DF"
+        },
+        {
+          "label": "ES",
+          "value": "ES"
+        },
+        {
+          "label": "GO",
+          "value": "GO"
+        },
+        {
+          "label": "MA",
+          "value": "MA"
+        },
+        {
+          "label": "MT",
+          "value": "MT"
+        },
+        {
+          "label": "MS",
+          "value": "MS"
+        },
+        {
+          "label": "MG",
+          "value": "MG"
+        },
+        {
+          "label": "PA",
+          "value": "PA"
+        },
+        {
+          "label": "PB",
+          "value": "PB"
+        },
+        {
+          "label": "PR",
+          "value": "PR"
+        },
+        {
+          "label": "PE",
+          "value": "PE"
+        },
+        {
+          "label": "PI",
+          "value": "PI"
+        },
+        {
+          "label": "RJ",
+          "value": "RJ"
+        },
+        {
+          "label": "RN",
+          "value": "RN"
+        },
+        {
+          "label": "RS",
+          "value": "RS"
+        },
+        {
+          "label": "RO",
+          "value": "RO"
+        },
+        {
+          "label": "RR",
+          "value": "RR"
+        },
+        {
+          "label": "SC",
+          "value": "SC"
+        },
+        {
+          "label": "SP",
+          "value": "SP"
+        },
+        {
+          "label": "SE",
+          "value": "SE"
+        },
+        {
+          "label": "TO",
+          "value": "TO"
+        }
+      ]
+    },
+    "city": {
+      "label": "city",
+      "maxLength": 100,
+      "required": true
+    },
+    "neighborhood": {
+      "label": "neighborhood",
+      "maxLength": 100,
+      "required": true
+    },
+    "street": {
+      "label": "streetRoadAvenue",
+      "required": true
+    },
+    "number": {
+      "label": "numberOption",
+      "maxLength": 750,
+      "required": true,
+      "autoComplete": "off"
+    },
+    "complement": {
+      "label": "complement",
+      "maxLength": 750
+    },
+    "reference": {
+      "label": "reference",
+      "hidden": true,
+      "maxLength": 750
+    },
+    "receiverName": {
+      "label": "receiverName",
+      "elementName": "receiver",
+      "maxLength": 750,
+      "required": true
+    },
+    "postalCode": {
+      "mask": "99999-999",
+      "pattern": "^(\\d){5}-?(\\d){3}$",
+      "label": "postalCode",
+      "forgottenURL": "https://buscacepinter.correios.com.br/app/endereco/index.php"
+    }
+  },
+  "display": {
+    "minimal": [
+      [
+        {
+          "name": "postalCode"
+        }
+      ]
+    ],
+    "compact": [
+      [
+        {
+          "name": "street"
+        },
+        {
+          "delimiter": " ",
+          "name": "number"
+        }
+      ],
+      [
+        {
+          "name": "neighborhood"
+        }
+      ],
+      [
+        {
+          "name": "city"
+        },
+        {
+          "delimiter": " - ",
+          "name": "state"
+        }
+      ],
+      [
+        {
+          "name": "postalCode"
+        }
+      ]
+    ],
+    "extended": [
+      [
+        {
+          "name": "receiverName"
+        }
+      ],
+      [
+        {
+          "name": "street"
+        },
+        {
+          "delimiter": " ",
+          "name": "number"
+        }
+      ],
+      [
+        {
+          "name": "complement"
+        }
+      ],
+      [
+        {
+          "name": "neighborhood"
+        }
+      ],
+      [
+        {
+          "name": "city"
+        },
+        {
+          "delimiter": " - ",
+          "name": "state"
+        }
+      ],
+      [
+        {
+          "name": "postalCode"
+        }
+      ]
+    ]
+  },
+  "phone": {
+    "countryCode": "55",
+    "mask": "(99) 9 9999-9999",
+    "pattern": "^(?:(?:(?:\\+|)(?:55|)|))(?:0|)(?:(?:(?:1[1-9]|2[12478]|3[1-8]|6[1-9]|7[134579]|8[1-9]|9[1-9]|4[1-9]|5[1-5])(?:9\\d{8}|\\d{8})))$"
+  }
+}

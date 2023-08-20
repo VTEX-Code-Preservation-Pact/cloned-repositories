@@ -1,0 +1,25 @@
+{
+  "name": "formula",
+  "vendor": "vtex",
+  "version": "0.3.1",
+  "title": "VTEX Formula",
+  "description": "The VTEX Formula Hackathon Manager",
+  "credentialType": "absolute",
+  "settingsSchema": {},
+  "dependencies": {
+    "vtex.formula-graphql": "0.x",
+    "vtex.styleguide": "7.x"
+  },
+  "builders": {
+    "pages": "0.x",
+    "react": "2.x",
+    "docs": "0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vtex-apps/formula.git"
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  }
+}

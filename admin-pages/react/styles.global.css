@@ -1,0 +1,109 @@
+@import '~react-select/dist/react-select.css';
+
+.vtex-admin-pages-4-x .form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.vtex-admin-pages-4-x .form-group.field.field-object > label {
+  border-top: 2px solid #f0f2f4;
+  color: #c3c4c5;
+  font-weight: 700;
+  margin-top: 10px;
+  padding: 20px 0px 5px;
+  text-transform: uppercase;
+}
+
+.vtex-admin-pages-4-x .form-group.field.field-object:first-child > label {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.vtex-admin-pages-4-x .field-description {
+  font-size: 12px;
+  color: #979899;
+  margin-top: 0px;
+  font-style: italic;
+}
+
+.vtex-admin-pages-4-x .form-control {
+  border: 2px solid #e1e3e5;
+  height: 40px;
+  width: 100%;
+  font-size: 14px;
+  padding-left: 12px;
+  background-color: #ffffff;
+}
+
+.vtex-admin-pages-4-x .radio-inline > span > span {
+  padding-left: 5px;
+  padding-right: 15px;
+}
+
+.vtex-admin-pages-4-x .field-range-wrapper > input {
+  width: 80%;
+}
+
+.vtex-admin-pages-4-x .field-range-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vtex-admin-pages-4-x .field-range-wrapper > span {
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 3px;
+  color: #368df7;
+}
+
+.vtex-admin-pages-4-x .panel-danger {
+  position: fixed;
+  width: 100%;
+}
+
+.vtex-admin-pages-4-x .binding-selector .vtex-dropdown label > div {
+  background: #eef3f7;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.vtex-admin-pages-4-x .binding-selector .vtex-dropdown .vtex-dropdown__caption {
+  color: #134cd8;
+}
+
+.vtex-admin-pages-4-x
+  .binding-selector-disabled
+  .vtex-dropdown
+  .vtex-dropdown__caption {
+  color: #979899;
+}
+
+.vtex-admin-pages-4-x
+  .locale-selector-with-bindings
+  .vtex-dropdown
+  label
+  > div {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.vtex-admin-pages-4-x
+  .locale-selector-with-bindings
+  .vtex-dropdown
+  .vtex-dropdown__arrow {
+  color: #3f3f40;
+}
+
+@media screen and (min-width: 30em) {
+  .vtex-admin-pages-4-x .w-18em-ns {
+    width: 18em;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .vtex-admin-pages-4-x .field-range-wrapper > input {
+    width: 85%;
+  }
+}

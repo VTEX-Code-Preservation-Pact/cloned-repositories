@@ -1,0 +1,14 @@
+{
+  "name": "AB Tester",
+  "headline": "Create, list and finish AB tests.",
+  "overview": "AB Tester allows you to run different versions of your store to test ideas and improve the user experience.",
+  "features": [
+    "Get current AB Test",
+    "Finish an AB Test",
+    "Create a AB Test"
+  ],
+  "websiteURL": "https://vtex.com/",
+  "support": {
+    "url": "https://support.vtex.com/hc/requests"
+  }
+}

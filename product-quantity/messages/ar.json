@@ -1,0 +1,10 @@
+{
+  "store/product-quantity.quantity": "الكمية",
+  "store/product-quantity.quantity-available": "{availableQuantity, plural, one {# متاح} other {# متاحة}}",
+  "admin/editor.product-quantity.title": "مكون كمية المنتج",
+  "admin/editor.product-quantity.description": "مكون يسمح للمستخدم بتحديد كمية العناصر لإضافتها إلى سلة التسوق",
+  "admin/editor.product-quantity.warningQuantityThreshold.title": "تحذير بعتبة الكمية المتاحة",
+  "admin/editor.product-quantity.warningQuantityThreshold.description": "اعرض فقط كمية العناصر المتبقية في المخزون إذا كانت الكمية المتاحة للعنصر أقل من القيمة التي تم تمريرها في هذه المؤسسة أو تساويها",
+  "admin/editor.product-quantity.showUnit.title": "وحدة القياس في منتقي الكمية",
+  "admin/editor.product-quantity.showUnit.description": "إظهار أو إخفاء وحدة القياس في منتقي الكمية"
+}

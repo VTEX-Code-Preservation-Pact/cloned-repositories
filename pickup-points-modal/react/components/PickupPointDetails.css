@@ -1,0 +1,112 @@
+/* main structure */
+
+.modalDetails {
+  display: flex;
+  flex-direction: column;
+  z-index: 101;
+  flex: 1 1 auto;
+  position: relative;
+  height: 80%;
+}
+
+.modalDetailsTop {
+  display: flex;
+  flex-shrink: 0;
+  flex-grow: 0;
+  height: 67px;
+  margin-bottom: 1px;
+}
+
+.modalDetailsMiddle {
+  overflow: auto;
+  flex: 1 1 auto;
+  min-height: 0; /* fix firefox overflow bug */
+  -webkit-overflow-scrolling: touch;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)),
+    linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
+    linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.08) 0%, rgba(0, 0, 0, 0) 100%) 0 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 40px, 100% 40px, 100% 10px, 100% 10px;
+
+  /* Opera doesn't support this in the shorthand */
+  background-attachment: local, local, scroll, scroll;
+}
+
+.modalDetailsBottom {
+  background: white;
+  flex: none;
+  bottom: 0;
+  padding: 10px;
+  padding-bottom: calc(env(safe-area-inset-bottom) + 10px);
+}
+
+/* middle section */
+
+.modalDetailsStore {
+  padding: 12px;
+}
+
+.modalDetailsInfo {
+  padding: 15px;
+}
+
+.modalDetailsGroup {
+  margin-bottom: 20px;
+}
+
+.modalDetailsInfoTitle {
+  font-weight: 500;
+  color: #666666;
+  margin-top: 0;
+}
+
+/* links and icons */
+
+.modalDetailsBackLnk {
+  color: #4c8eef;
+  display: flex;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 8px 12px 9px;
+  text-align: left;
+}
+
+.iconBackPickupPointsList {
+  font-size: 25px;
+  vertical-align: sub;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+.pickupDetailsHeader {
+  align-items: center;
+  display: flex;
+  height: 45px;
+  justify-content: space-between;
+  padding-left: 13px;
+  border: 1px solid #eeeeee;
+}
+
+.pickupDetailsHeaderTitle {
+  color: #666666;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.pickupDetailsHeaderButton {
+  background: transparent;
+  color: #4c8eef;
+  height: 45px;
+  width: 45px;
+  outline: none;
+  border: none;
+  border-left: 1px solid #eeeeee;
+}
+
+.firstOrLast {
+  color: #666666;
+  cursor: unset;
+}

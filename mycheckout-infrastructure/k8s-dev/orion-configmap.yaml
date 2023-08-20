@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: orion
+data:
+  node_env: development
+  # file-like keys
+  orion.properties: |
+    DB=checkout.qa
+    DB_REGION=us-east-1 
+    ORION_ENDPOINT=https://baas-waf-qa.apps.ambientesbc.com
+    COGNITO_ENDPOINT=https://bnpl-qa.auth.us-east-1.amazoncognito.com
+    API_NAME=orion
+    BNPL_METHOD=bancolombia-bnpl
+    KUIKPAY_API_CHECKOUT=http://checkout-srv:8080/api/checkout

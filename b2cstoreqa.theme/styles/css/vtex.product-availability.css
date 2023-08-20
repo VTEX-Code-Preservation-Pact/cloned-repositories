@@ -1,0 +1,21 @@
+.lowStockText,
+.lowStockHighlight,
+.lowStockText {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--serious-orange);
+  font-weight: 700;
+}
+
+.highStockText {
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.highStockText {
+  color: var(--fresh-orange);
+  font-weight: 500;
+  font-size: 14px;
+}

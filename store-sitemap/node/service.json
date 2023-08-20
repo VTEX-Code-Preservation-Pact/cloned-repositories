@@ -1,0 +1,48 @@
+{
+  "memory": 512,
+  "ttl": 60,
+  "timeout": 55,
+  "minReplicas": 2,
+  "maxReplicas": 10,
+  "workers": 4,
+  "routes": {
+    "sitemap": {
+      "path": "/sitemap.xml",
+      "public": true
+    },
+    "sitemapEntry": {
+      "path": "/sitemap/:path",
+      "public": true
+    },
+    "generateSitemap": {
+      "path": "/generate-sitemap",
+      "public": false
+    },
+    "robots": {
+      "path": "/robots.txt",
+      "public": true
+    }
+  },
+  "events": {
+    "generateSitemap": {
+      "sender": "vtex.store-sitemap",
+      "keys": ["sitemap.generate"]
+    },
+    "generateRewriterRoutes": {
+      "sender": "vtex.store-sitemap",
+      "keys": ["sitemap.generate:rewriter-routes"]
+    },
+    "generateProductRoutes": {
+      "sender": "vtex.store-sitemap",
+      "keys": ["sitemap.generate:product-routes"]
+    },
+    "generateAppsRoutes": {
+      "sender": "vtex.store-sitemap",
+      "keys": ["sitemap.generate:apps-routes"]
+    },
+    "groupEntries": {
+      "sender": "vtex.store-sitemap",
+      "keys": ["sitemap.generate:group-entries"]
+    }
+  }
+}

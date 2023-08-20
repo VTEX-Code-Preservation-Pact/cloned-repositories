@@ -1,0 +1,95 @@
+{
+  "name": "checkout-ui-tests",
+  "version": "0.19.1",
+  "description": "",
+  "main": "src/monitoring/index.js",
+  "scripts": {
+    "test": "node ./src/monitoring/index.mjs",
+    "test:stable": "node ./src/monitoring/index.mjs --env stable",
+    "test:beta-io": "node ./src/monitoring/index.mjs --env beta-io --workspace beta",
+    "test:beta": "node ./src/monitoring/index.mjs --env beta",
+    "cypress:run": "cypress run",
+    "test:ci-stable": "make ENVIRONMENT=stable",
+    "test:ci-beta": "make ENVIRONMENT=beta",
+    "test:ci-beta-io": "make ENVIRONMENT=beta-io",
+    "lint": "eslint --ext js,ts,mjs .",
+    "lint:fix": "eslint --fix --ext js,ts,mjs .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vtex/checkout-ui-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vtex/checkout-ui-tests/issues"
+  },
+  "homepage": "https://github.com/vtex/checkout-ui-tests#readme",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+    "@testing-library/cypress": "^8.0.3",
+    "aws-sdk": "^2.1093.0",
+    "axios": "^0.19.0",
+    "bluebird": "^3.7.2",
+    "chalk": "^4.1.0",
+    "commander": "^6.0.0",
+    "cypress": "^10.11.0",
+    "cypress-log-to-output": "^1.0.4",
+    "dotenv": "^16.0.0",
+    "globby": "^11.0.1",
+    "minimist": "^1.2.3",
+    "node-window-polyfill": "^1.0.0",
+    "pug": "^3.0.2",
+    "uuid": "^8.3.2"
+  },
+  "horus": {
+    "host": "vtexgame1.vtexcommercestable.com.br/checkout",
+    "path": "checkout",
+    "applicationName": "checkout-ui-tests",
+    "moduleName": "Checkout UI",
+    "description": "E2E tests for Checkout UI shopping scenarios",
+    "branch": "master",
+    "hasBeta": true,
+    "cypressDashboardKeys": {
+      "integration": "6ecaeca9-8292-49d5-b954-f5d330526703"
+    },
+    "monitoringFolder": "tests",
+    "cypressConfig": {
+      "local": {
+        "record": false,
+        "video": false
+      },
+      "remote": {
+        "record": false,
+        "video": false
+      }
+    },
+    "slack": {
+      "hook": "https://hooks.slack.com/services/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",
+      "notify": {
+        "success": false,
+        "error": true
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "@vtex/prettier-config": "^1.0.0",
+    "eslint": "^8.11.0",
+    "eslint-config-vtex": "^15.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "husky": "^7.0.0",
+    "lint-staged": ">=12.3.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.6.2"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  }
+}

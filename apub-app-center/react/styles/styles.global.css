@@ -1,0 +1,30 @@
+html,
+body,
+#render-container,
+#render-provider,
+.render-container,
+.render-provider {
+  height: 100%;
+}
+
+.card-hover:hover {
+  box-shadow: rgba(61, 62, 64, 0.2) 0px 3px 9px 0px;
+}
+
+.image-size{
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.image-size-detail {
+  width: 10rem;
+  height: 10rem;
+}
+
+.card-div-name {
+  width: calc(100% - 75px);
+}
+
+.vtex-tag {
+  padding: .1rem .4rem;
+}

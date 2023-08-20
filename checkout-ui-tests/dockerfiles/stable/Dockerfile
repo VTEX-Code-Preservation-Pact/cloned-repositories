@@ -1,0 +1,22 @@
+FROM cypress/base:16.13.0
+
+ARG HORUS_PROXY_KEY
+ENV HORUS_PROXY_KEY=$HORUS_PROXY_KEY
+
+ARG HORUS_COGNITO_CREDENTIALS
+ENV HORUS_COGNITO_CREDENTIALS=$HORUS_COGNITO_CREDENTIALS
+
+ARG CYPRESS_RECORD_KEY
+ENV CYPRESS_RECORD_KEY=$CYPRESS_RECORD_KEY
+
+RUN \
+  apt-get update && \
+  rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+COPY ./ ./
+
+RUN \
+  yarn install && \
+  yarn cypress verify

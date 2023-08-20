@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.switchContainer {
+  display: flex;
+  max-width: 326px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.marginContainer {
+  margin-top: 15px;
+}
+
+.picker {
+  border: 1px solid #c4c5ca;
+  border-radius: 100px;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 10px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.selected,
+.selected.selected p {
+  color: #2953b2;
+  border-color: #2953b2;
+}
+
+.pickerContainer {
+  margin: 15px 0px;
+  padding: 12px 0px;
+  border-bottom: solid 1px;
+  border-top: solid 1px;
+  border-color: #00000029;
+}
+
+.dateContainer,
+.storeContainer,
+.scheduleDeliveryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deliveryChannelContainer {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+.oneOptionDelivery {
+  padding-top: 15px;
+  margin-left: 3px;
+}
+
+.dateSelect {
+  width: 46%;
+}
+
+.timeSelect {
+  width: 53%;
+}
+
+.summaryContainer {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e0e2e7;
+}
+
+.RegisterSummaryContainer {
+  padding: 8px 0px;
+  border-top: 1px solid #e0e2e7;
+}
+
+.summaryItem {
+  display: flex;
+  margin: 4px 0px;
+}
+
+.packagesContainer {
+  display: flex;
+}
+
+.packagesContainer p {
+  margin: 12px 14px 8px 0px;
+}
+
+.imagesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.imagesContainer img {
+  height: 52px;
+  margin-top: 8px;
+}
+
+.marginRightIcon {
+  margin-right: 22px;
+}
+
+.shippingContainer {
+  margin-top: 16px;
+}
+
+.scheduleContainer {
+  margin: 15px 0px 10px 0px;
+  height: 28px;
+}
+
+@media (min-width: 992px) {
+  .buyButtonContainer {
+    position: fixed;
+    padding: 14px;
+    margin-top: 14px;
+    box-shadow: inset 0px 3px 6px #0000000f;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index: 10;
+  }
+}

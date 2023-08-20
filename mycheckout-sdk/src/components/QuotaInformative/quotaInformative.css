@@ -1,0 +1,99 @@
+.quotaInformationContainer {
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  color: #284859;
+  font-weight: 700 !important;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
+}
+.quotaInformationStore,
+.quotaInformationQuantity,
+.quotaInformationValue {
+  color: #1b998b;
+}
+
+.quotaInformationOverlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #23232587;
+  z-index: 1000000;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: initial;
+}
+.quotaInformationModalContainer {
+  width: 415px;
+  max-width: 100%;
+  background: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 24px 26px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: initial;
+  margin: 14px;
+}
+
+.quotaInformationModalContainer .quotaInformationModalTitle {
+  font-size: 26px !important;
+  font-weight: bold !important;
+  color: #1b998b !important;
+  text-align: center;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 8.5px;
+}
+.quotaInformationModalList {
+  margin-top: 25px;
+}
+.quotaInformationModalDescription {
+  padding-top: 8.5px;
+  font-size: 14px !important;
+  color: #284859 !important;
+  font-weight: bold !important;
+  line-height: 16px !important;
+}
+
+.quotaInformationModalDescription span {
+  color: #1b998b !important;
+}
+
+.quotaInformationModalItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.quotaInformationModalItemIcon {
+  width: 58px;
+  margin-right: 20px;
+}
+.quotaInformationModalList .quotaInformationModalItemDescription {
+  font-size: 14px !important;
+  line-height: 16px !important;
+  width: calc(100% - 80px) !important;
+  line-height: 16px;
+}
+
+.quotaButton {
+  height: 46px;
+  width: 100%;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #eb5b2b !important;
+  cursor: pointer;
+}
+
+.quotaInformationModalClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}

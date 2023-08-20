@@ -1,0 +1,66 @@
+{
+  "name": "connector-adyen",
+  "vendor": "vtex",
+  "version": "0.2.0",
+  "title": "Adyen",
+  "description": "Payment Provider integration for Adyen",
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.apps-graphql": "2.x"
+  },
+  "builders": {
+    "paymentProvider": "1.x",
+    "node": "6.x",
+    "docs": "0.x",
+    "admin": "0.x",
+    "react": "3.x",
+    "graphql": "1.x",
+    "messages": "1.x"
+  },
+  "policies": [
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ViewPayments"
+    },
+    {
+      "name": "MakePayments"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.myvtex.com/_v/api/adyen-platforms",
+        "path": "/v0/hook"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "checkout-test.adyen.com",
+        "path": "/checkout/v67/payments"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "heimdall.vtexpayments.com.br",
+        "path": "/api/payment-provider/callback/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

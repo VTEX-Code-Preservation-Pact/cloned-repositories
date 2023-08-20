@@ -1,0 +1,43 @@
+type Query {
+  getGiftCardProviders: [GiftCardProvider]
+}
+
+type Mutation {
+  setGiftCardProvider(
+    id: String
+    giftCardProvInput: GiftCardProviderInput
+  ): GiftCardProviderResponse
+  deleteGiftCardProvider(id: String): GiftCardProviderResponse
+}
+
+type GiftCardProvider {
+  serviceUrl: String
+  oauthProvider: String
+  preAuthEnabled: Boolean
+  cancelEnabled: Boolean
+}
+
+input GiftCardProviderInput {
+  serviceUrl: String
+  oauthProvider: String
+  preAuthEnabled: Boolean
+  cancelEnabled: Boolean
+}
+
+type GiftCardProviderResponse {
+  serviceUrl: String
+  oauthProvider: String
+  preAuthEnabled: Boolean
+  cancelEnabled: Boolean
+  id: String
+  caption: String
+  _self: Self
+}
+
+input SelfInput {
+  href: String
+}
+
+type Self {
+  href: String
+}

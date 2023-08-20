@@ -1,0 +1,17 @@
+query Review($id: ID!) {
+  review(id: $id) @context(provider: "vtex.reviews-and-ratings") {
+    id
+    productId
+    rating
+    title
+    text
+    reviewerName
+    location
+    locale
+    shopperId
+    reviewDateTime
+    verifiedPurchaser
+    sku
+    approved
+  }
+}

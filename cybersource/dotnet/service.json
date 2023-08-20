@@ -1,0 +1,146 @@
+{
+  "stack": "dotnet",
+  "memory": 512,
+  "ttl": 60,
+  "timeout": 60,
+  "minReplicas": 10,
+  "maxReplicas": 100,
+  "runtimeArgs": [
+  ],
+  "routes": {
+    "paymentMethods": {
+      "path": "/cybersource/payment-provider/payment-methods",
+      "public": true
+    },
+    "manifest": {
+      "path": "/cybersource/payment-provider/manifest",
+      "public": true
+    },
+    "createPayment": {
+      "path": "/cybersource/payment-provider/payments",
+      "public": true
+    },
+    "cancelPayment": {
+      "path": "/cybersource/payment-provider/payments/:paymentId/cancellations",
+      "public": true
+    },
+    "capturePayment": {
+      "path": "/cybersource/payment-provider/payments/:paymentId/settlements",
+      "public": true
+    },
+    "refundPayment": {
+      "path": "/cybersource/payment-provider/payments/:paymentId/refunds",
+      "public": true
+    },
+    "getPaymentRequest": {
+      "path": "/cybersource/payment-provider/payments/:paymentIdentifier/request",
+      "public": true
+    },
+    "sendAntifraudPreAnalysisData": {
+      "path": "/cybersource/payment-provider/pre-analysis",
+      "public": true,
+      "access": "authorized",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [ "post" ],
+          "principals": [
+            "vrn:apps:*:vtexus:*:app/vtex.cybersource-fraud@*"
+          ]
+        }
+      ]
+    },
+    "sendAntifraudData": {
+      "path": "/cybersource/payment-provider/transactions",
+      "public": true,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [ "post" ],
+          "principals": [
+            "vrn:apps:*:vtexus:*:app/vtex.cybersource-fraud@*"
+          ]
+        }
+      ]
+    },
+    "getAntifraudStatus": {
+      "path": "/cybersource/payment-provider/transactions/:transactionId",
+      "public": true,
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": [ "get" ],
+          "principals": [
+            "vrn:apps:*:vtexus:*:app/vtex.cybersource-fraud@*"
+          ]
+        }
+      ]
+    },
+    "conversionDetailReport": {
+      "path": "/cybersource/reporting/conversion-details",
+      "public": true
+    },
+    "retrieveAvailableReports": {
+      "path": "/cybersource/reporting/available-reports",
+      "public": true
+    },
+    "getPurchaseAndRefundDetails": {
+      "path": "/cybersource/reporting/purchase-refund-details",
+      "public": true
+    },
+    "taxHandler": {
+      "path": "/cybersource/checkout/order-tax",
+      "public": true
+    },
+    "toggleTax": {
+      "path": "/cybersource/tax/toggle-tax/:useCyberTax",
+      "public": true
+    },
+    "cybersourceResponseToVtexResponse": {
+      "path": "/cybersource/tax/test-tax",
+      "public": true
+    },
+    "processConversions": {
+      "path": "/cybersource/payment-provider/process-conversions",
+      "public": true
+    },
+    "decisionManagerNotify": {
+      "path": "/cybersource/notify",
+      "public": true
+    },
+    "testFlattenCustomData": {
+      "path": "/cybersource/test-custom-data",
+      "public": true
+    },
+    "testMerchantDefinedData": {
+      "path": "/cybersource/test-mdd",
+      "public": true
+    },
+    "payerAuth": {
+      "path": "/cybersource/payer-auth/:paymentId",
+      "public": true
+    },
+    "payerAuthResponse": {
+      "path": "/cybersource/payer-auth-response",
+      "public": true
+    },
+    "validateAuthenticationResults": {
+      "path": "/cybersource/validate-auth/:paymentId/:authenticationTransactionId",
+      "public": true
+    },
+    "checkAuthStatus": {
+      "path": "/cybersource/payer-auth/status/:paymentId",
+      "public": true
+    },
+    "retrieveTransaction": {
+      "path": "/cybersource/payment-provider/retrieve-transaction/:requestId",
+      "public": false
+    }
+  },
+  "events": {
+    "allStates": {
+      "sender": "vtex.orders-broadcast",
+      "topics": [ "order-status-updated" ]
+    }
+  }
+}

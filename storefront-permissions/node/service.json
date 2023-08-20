@@ -1,0 +1,24 @@
+{
+  "stack": "nodejs",
+  "memory": 256,
+  "ttl": 60,
+  "timeout": 30,
+  "cpu": {
+    "type": "shared",
+    "value": 5,
+    "scalingPercentage": 20
+  },
+  "minReplicas": 8,
+  "maxReplicas": 80,
+  "workers": 1,
+  "routes": {
+    "setProfile": {
+      "path": "/_v/storefront-permissions/session/transform",
+      "public": true
+    },
+    "checkPermissions": {
+      "path": "/_v/storefront-permissions/check-permissions",
+      "public": false
+    }
+  }
+}

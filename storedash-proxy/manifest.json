@@ -1,0 +1,34 @@
+{
+  "name": "storedash-proxy",
+  "vendor": "vtex",
+  "version": "0.2.0",
+  "title": "IO Console API",
+  "description": "VTEX developer console API",
+  "mustUpdateAt": "2019-10-16",
+  "scripts": {
+    "postreleasy": "vtex publish --public"
+  },
+  "builders": {
+    "node": "3.x",
+    "graphql": "1.x"
+  },
+  "credential": "relative",
+  "policies": [
+    {
+      "name": "read-workspace-apps"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "read-private-registry-assets"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/storedash/{{account}}/metrics/*"
+      }
+    }
+  ]
+}

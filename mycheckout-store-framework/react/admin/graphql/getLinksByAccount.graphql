@@ -1,0 +1,9 @@
+{
+  getLinksByAccount @context(provider: "kuikpay.my-checkout") {
+    account
+    status
+    date
+    approver
+    id
+  }
+}

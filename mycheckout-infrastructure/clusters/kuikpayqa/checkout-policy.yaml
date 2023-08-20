@@ -1,0 +1,15 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta1
+kind: ImagePolicy
+metadata:
+  name: checkout
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: checkout
+  filterTags:
+    pattern: '^dev-[a-fA-F0-9]+-(?P<ts>.*)'
+    extract: '$ts'
+  policy:
+    numerical:
+      order: asc

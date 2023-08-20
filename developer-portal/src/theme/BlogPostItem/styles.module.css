@@ -1,0 +1,25 @@
+/**
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+.blogPostTitle {
+  font-size: 3rem;
+  line-height:0px;
+}
+
+.blogPostTitle a{
+  font-size: 1.25rem;
+}
+
+.blogPostData {
+  font-size: 0.8rem;
+  color:#5B6E84;
+  padding-top:0.5rem;
+}
+
+.blogPostDetailsFull {
+  flex-direction: column;
+}

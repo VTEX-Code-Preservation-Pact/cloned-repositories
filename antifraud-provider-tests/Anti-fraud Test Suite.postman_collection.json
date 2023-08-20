@@ -1,0 +1,1019 @@
+{
+	"info": {
+		"_postman_id": "23b7eb5b-69fe-4276-b829-415fe958df20",
+		"name": "Anti-fraud Test Suite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20194184"
+	},
+	"item": [
+		{
+			"name": "Authorize",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}1\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is approved\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('approved');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Deny",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}2\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is denied\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('denied');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Async Authorize",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}3\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Undefined",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is undefined\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('undefined');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Approved",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is approved\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('approved');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Async Deny",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}4\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Undefined",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is undefined\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('undefined');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Denied",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is denied\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('denied');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Async Authorize Hook",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}5\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});",
+									"",
+									"// set hook to env",
+									"var jsonData = pm.response.json();",
+									"pm.environment.set(\"webhookUrl\", jsonData.hook);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Undefined",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is undefined\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('undefined');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status Notification Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"tid\": \"{{$guid}}\",\n  \"status\": \"approved\",\n  \"code\": \"async\",\n  \"message\": \"Low risk of fraud\",\n  \"analysisType\": \"automatic\",\n  \"score\": 5.01,\n  \"responses\": {\n    \"customIdentifier\": \"test\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}",
+							"host": [
+								"{{mockServerAddress}}"
+							],
+							"path": [
+								"antifraud-provider",
+								"transactions",
+								"{{requestId}}",
+								"hook"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "{{accountName}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Approved",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is approved\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('approved');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Async Deny Hook",
+			"item": [
+				{
+					"name": "SendAntifraudDataRequest",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const guid = pm.variables.replaceIn(\"{{$guid}}6\");",
+									"const formattedGuid = guid.replace(/-/g, '').toUpperCase()",
+									"pm.environment.set(\"requestId\", formattedGuid);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200 or 201\", function () {",
+									"    pm.expect(pm.response.code).to.be.oneOf([200,201]);",
+									"});",
+									"",
+									"pm.test(\"Response status should be 'received'\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('received');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"reference\": \"{{$guid}}\",\n  \"value\": 150.6,\n  \"ip\": \"192.168.0.1\",\n  \"deviceFingerprint\": \"12ade389087fexd\",\n  \"miniCart\": {\n    \"buyer\": {\n      \"id\": null,\n      \"firstName\": \"John\",\n      \"lastName\": \"Doe\",\n      \"document\": \"01234567890\",\n      \"documentType\": \"CPF\",\n      \"email\": \"john.doe@example.com\",\n      \"phone\": \"+5521987654321\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Brig. Faria Lima Avenue\",\n        \"number\": \"4440\",\n        \"complement\": \"10th Floor\",\n        \"neighborhood\": \"Itaim Bibi\",\n        \"postalCode\": \"04538132\",\n        \"city\": \"São Paulo\",\n        \"state\": \"SP\"\n      }\n    },\n    \"shipping\": {\n      \"value\": 10.3,\n      \"estimatedDate\": \"2017-08-02T14:46:47\",\n      \"address\": {\n        \"country\": \"BRA\",\n        \"street\": \"Praia de Botafogo St.\",\n        \"number\": \"300\",\n        \"complement\": \"3rd Floor\",\n        \"neighborhood\": \"Botafogo\",\n        \"postalCode\": \"22250040\",\n        \"city\": \"Rio de Janeiro\",\n        \"state\": \"RJ\"\n      }\n    },\n    \"items\": [\n      {\n        \"id\": \"132981\",\n        \"name\": \"Some useful product\",\n        \"price\": 140.3,\n        \"quantity\": 1,\n        \"deliveryType\": \"Normal\",\n        \"deliverySlaInMinutes\": 4320,\n        \"categoryId\": \"111\",\n        \"categoryName\": \"Electronics\",\n        \"discount\": 0\n      }\n    ],\n    \"taxValue\": 0,\n    \"listRegistry\": {\n      \"name\": \"My Wedding List\",\n      \"deliveryToOwner\": false\n    }\n  },\n  \"payments\": [\n    {\n      \"id\": \"{{$guid}}\",\n      \"method\": \"CreditCard\",\n      \"name\": \"Visa\",\n      \"value\": 150.6,\n      \"installments\": 3,\n      \"details\": {\n        \"bin\": \"486902\",\n        \"lastDigits\": \"8214\",\n        \"holder\": \"John Doe\",\n        \"address\": {\n          \"country\": \"BRA\",\n          \"street\": \"Praia de Botafogo St.\",\n          \"number\": \"300\",\n          \"complement\": \"3rd Floor\",\n          \"neighborhood\": \"Botafogo\",\n          \"postalCode\": \"22250040\",\n          \"city\": \"Rio de Janeiro\",\n          \"state\": \"RJ\"\n        }\n      }\n    }\n  ],\n  \"hook\": \"{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{serviceUrl}}/transactions",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Undefined",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is undefined\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('undefined');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Status Notification Webhook",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppKey",
+								"value": "{{appKey}}",
+								"type": "text"
+							},
+							{
+								"key": "X-PROVIDER-API-AppToken",
+								"value": "{{appToken}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"{{requestId}}\",\n  \"tid\": \"{{$guid}}\",\n  \"status\": \"denied\",\n  \"code\": \"async\",\n  \"message\": \"Extremely risky\",\n  \"analysisType\": \"automatic\",\n  \"score\": 99.01,\n  \"responses\": {\n    \"customIdentifier\": \"test\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{mockServerAddress}}/antifraud-provider/transactions/{{requestId}}/hook?accountName={{accountName}}",
+							"host": [
+								"{{mockServerAddress}}"
+							],
+							"path": [
+								"antifraud-provider",
+								"transactions",
+								"{{requestId}}",
+								"hook"
+							],
+							"query": [
+								{
+									"key": "accountName",
+									"value": "{{accountName}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAntifraudStatus - Denied",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response Status is denied\", function () {",
+									"    var response = pm.response.json();",
+									"    pm.expect(response.status).to.be.equal('denied');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-PROVIDER-API-IS-TESTSUITE",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{serviceUrl}}/transactions/{{requestId}}",
+							"host": [
+								"{{serviceUrl}}"
+							],
+							"path": [
+								"transactions",
+								"{{requestId}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

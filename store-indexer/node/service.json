@@ -1,0 +1,23 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "events": {
+    "broadcasterProduct": {
+      "keys": ["broadcaster.product"]
+    },
+    "broadcasterBrand": {
+      "keys": ["broadcaster.brand"]
+    },
+    "broadcasterCategory": {
+      "keys": ["broadcaster.category"]
+    },
+    "searchUrlsCountIndex": {
+      "sender": "vtex.search-graphql",
+      "keys": ["searchUrlsCountIndex"]
+    }
+  }
+}

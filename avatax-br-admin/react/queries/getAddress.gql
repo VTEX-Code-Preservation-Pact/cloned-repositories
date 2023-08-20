@@ -1,0 +1,14 @@
+mutation getAddress($zipCode: String) {
+  getAddress(zipCode: $zipCode)
+    @context(provider: "vtex.avatax-br-service@1.x") {
+    postalCode
+    city
+    state
+    street
+    number
+    neighborhood
+    complement
+    reference
+    geoCoordinates
+  }
+}

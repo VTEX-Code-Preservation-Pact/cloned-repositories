@@ -1,0 +1,36 @@
+name: Display
+
+docs: http://tachyons.io/docs/layout/display/
+
+src: display
+
+description: >
+  Use in combination with the position module.
+
+base:
+  - d
+
+modifiers:
+  - n = none
+  - b = block
+  - ib = inline-block
+  - it = inline-table
+  - t = table
+  - tc = table-cell
+  - t-ro = table-row
+  - t-co = table-column
+  - t-column-group = table-column-group
+  - t--fixed
+
+media:
+  - -s = small
+  - -ns = not-small
+  - -m  = medium
+  - -l  = large
+  - -xl  = large
+
+tags:
+  - display
+  - table
+  - inline
+  - inline-block

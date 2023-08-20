@@ -1,0 +1,35 @@
+{
+  "vendor": "vtex",
+  "name": "shopback",
+  "version": "0.0.2",
+  "title": "Shopback",
+  "description": "Shopback pixel app",
+  "billingOptions": {
+    "termsURL": "",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true
+  },
+  "builders": {
+    "react": "3.x",
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x"
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Shopback",
+    "type": "object",
+    "properties": {
+      "shopbackId": {
+        "title": "Shopback Id",
+        "description": "Enter your Shopback Id",
+        "type": "string"
+      }
+    }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

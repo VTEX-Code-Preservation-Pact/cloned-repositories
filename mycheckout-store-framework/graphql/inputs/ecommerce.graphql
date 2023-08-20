@@ -1,0 +1,10 @@
+input DataInput {
+  products: [ProductsInput]
+}
+
+input EcommerceInput {
+  event: String
+  userEmail: String
+  account: String
+  data: DataInput
+}

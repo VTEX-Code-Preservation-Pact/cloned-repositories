@@ -1,0 +1,6 @@
+{
+  "checkout-identification": {
+    "component": "Identification",
+    "allowed": ["image", "logo"]
+  }
+}

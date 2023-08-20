@@ -1,0 +1,42 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.10.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "name": "@vtex/babel-plugin-vtex-cms",
+  "module": "dist/babel-plugin-vtex-cms.esm.js",
+  "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.10.4",
+    "@babel/types": "^7.10.5",
+    "@vtex/prettier-config": "^0.3.1",
+    "@babel/preset-typescript": "^7.10.4",
+    "babel-plugin-tester": "^9.2.0",
+    "eslint-config-vtex": "^12.7.1",
+    "husky": "^4.2.5",
+    "tsdx": "^0.13.2",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.7"
+  }
+}

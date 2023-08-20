@@ -1,0 +1,17 @@
+usage: !include documentation/secured/usage.md
+description: !include documentation/secured/documentation.md
+headers:
+  Authorization:
+    description: !include documentation/secured/headers.Authorization.description.md
+    type: string
+    required: true
+    example: Bearer AbCdEf123456
+responses:
+  401:
+    description: !include documentation/secured/responses/401/description.md
+    headers:
+      WWW-Authenticate:
+        description: !include documentation/secured/responses/401/headers.WWW-Authenticate.description.md
+        type: string
+        required: true
+        example: !include documentation/secured/responses/401/headers.WWW-Authenticate.example.md

@@ -1,0 +1,104 @@
+.Container {
+  display: flex;
+  width: 95%;
+
+  margin: 0 10%;
+  max-width: var(--ifm-container-width);
+  padding: 10rem 0 16rem 0;
+  transition: padding 100ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.HeaderImage {
+  position: absolute;
+  right: 5%;
+  top: 0;
+  max-width: 800px;
+  
+}
+
+.TagLine{
+  color: var(--ifm-color-primary);
+  font-size: var(--ifm-font-size-18);
+  font-weight: bold;
+  max-width: 400px;
+}
+
+.SeparatorText {
+  color: var(--ifm-navbar-link-active-color);
+  font-size: var(--ifm-font-size-36);
+}
+
+.DescriptionText {
+  color: var(--ifm-color-primary-lightest);
+  font-size: var(--ifm-font-size-24);
+  max-width: 500px;
+
+  transition: font-size 100ms cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.GithubButton {
+  width: 200px;
+}
+
+.GetStartedButton {
+  width: 200px;
+  margin-right: 20px;
+}
+
+@media (max-width: 900px) {
+  .HeaderImage {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .Container {
+    padding: 8rem 0 0 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .HeaderTitle {
+    font-size: var(--ifm-font-size-28);
+  }
+
+  .SeparatorText {
+    font-size: var(--ifm-font-size-28);
+  }
+
+  .HeaderTyper {
+    justify-content: center;
+  }
+
+  .ButtonContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .GetStartedButton {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-height: 800px) and (max-width: 768px) {
+  .Container {
+    padding: 2rem 0 5rem 0 !important;
+  }
+}
+
+.imageStyle{
+  filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
+  border-radius: 1%;
+  width: 93%;
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}

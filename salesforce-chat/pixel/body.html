@@ -1,0 +1,100 @@
+<script type="text/javascript">
+  var callback = function() {
+    // Handler when the DOM is fully loaded
+    var initESW = function(gslbBaseURL) {
+      embedded_svc.settings.displayHelpButton = true
+      if ('{{settings.language}}' != '') {
+        embedded_svc.settings.language = window.decodeURIComponent(
+          '{{settings.language}}'
+        )
+      }
+      if ('{{settings.defaultMinimizedText}}' != '') {
+        //(Toma como valor predeterminado Sesión de chat con un experto)
+        embedded_svc.settings.defaultMinimizedText = window.decodeURIComponent(
+          '{{settings.defaultMinimizedText}}'
+        )
+      }
+      if ('{{settings.disabledMinimizedText}}' != '') {
+        //(Toma como valor predeterminado Agente sin conexión)
+        embedded_svc.settings.disabledMinimizedText = window.decodeURIComponent(
+          '{{settings.disabledMinimizedText}}'
+        )
+      }
+      if ('{{settings.loadingText}}' != '') {
+        //(Toma como valor predeterminado Cargando)
+        embedded_svc.settings.loadingText = window.decodeURIComponent(
+          '{{settings.loadingText}}'
+        )
+      }
+
+      //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Establece el dominio para su desarrollo de modo que los visitantes puedan navegar por subdominios durante una sesión de chat)
+
+      // Configuración para Chat
+      //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+      // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+      // Returns a valid button ID.
+      //};
+      //embedded_svc.settings.prepopulatedPrechatFields = {}; //Establece la cumplimentación automática de los campos del formulario previo al chat
+      //embedded_svc.settings.fallbackRouting = []; //Una matriz de identificadores de botones, de usuario o userId_buttonId
+      //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Toma como valor predeterminado la opción Contacto)
+
+      var extraPrechatFormDetails = window.decodeURIComponent(
+        '{{settings.extraPrechatFormDetails}}'
+      )
+      embedded_svc.settings.extraPrechatFormDetails = JSON.parse(
+        extraPrechatFormDetails
+      )
+
+      var extraPrechatInfo = window.decodeURIComponent(
+        '{{settings.extraPrechatInfo}}'
+      )
+      embedded_svc.settings.extraPrechatInfo = JSON.parse(extraPrechatInfo)
+
+      var enabledFeatures = window.decodeURIComponent(
+        '{{settings.enabledFeatures}}'
+      )
+      embedded_svc.settings.enabledFeatures = JSON.parse(enabledFeatures)
+      embedded_svc.settings.entryFeature = '{{settings.entryFeature}}'
+
+      var baseLiveAgentContentURL = window.decodeURIComponent('{{settings.baseLiveAgentContentURL}}')
+
+      var baseLiveAgentURL = window.decodeURIComponent('{{settings.baseLiveAgentURL}}')
+
+      embedded_svc.init(
+        window.decodeURIComponent('{{settings.baseCoreURL}}'),
+        window.decodeURIComponent('{{settings.communityEndpointURL}}'),
+        gslbBaseURL,
+        '{{settings.organizationId}}',
+        '{{settings.accountName}}',
+        {
+          baseLiveAgentContentURL: baseLiveAgentContentURL,
+          deploymentId: '{{settings.deploymentId}}',
+          buttonId: '{{settings.buttonId}}',
+          baseLiveAgentURL: baseLiveAgentURL,
+          eswLiveAgentDevName: '{{settings.eswLiveAgentDevName}}',
+          isOfflineSupportEnabled: {{settings.isOfflineSupportEnabled}},
+        }
+      )
+    }
+
+    if (!window.embedded_svc) {
+      var s = document.createElement('script')
+      s.setAttribute('src', window.decodeURIComponent('{{settings.baseCoreURL}}')+'/embeddedservice/5.0/esw.min.js')
+      s.onload = function() {
+        initESW(null)
+      }
+      document.body.appendChild(s)
+    } else {
+      initESW('https://service.force.com')
+    }
+  }
+
+  if (
+    document.readyState === 'complete' ||
+    (document.readyState !== 'loading' && !document.documentElement.doScroll)
+  ) {
+    callback()
+  } else {
+    document.addEventListener('DOMContentLoaded', callback)
+  }
+</script>

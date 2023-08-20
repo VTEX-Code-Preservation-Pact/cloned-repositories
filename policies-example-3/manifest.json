@@ -1,0 +1,30 @@
+{
+  "name": "policies-example-3",
+  "vendor": "vtex",
+  "version": "0.0.13",
+  "title": "Example using policies",
+  "description": "",
+  "mustUpdateAt": "2022-08-28",
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.policies-example": "0.x",
+    "vtex.policies-example-2": "0.x"
+  },
+  "policies": [
+    {
+      "name": "vtex.policies-example-2:constructor-policie"
+    }
+  ],
+  "builders": {
+    "react": "3.x",
+    "admin": "0.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "node": "6.x",
+    "graphql": "1.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

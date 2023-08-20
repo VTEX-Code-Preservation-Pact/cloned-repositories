@@ -1,0 +1,92 @@
+type Installment {
+  count: Int!
+  hasInterestRate: Boolean
+  interestRate: Int
+  value: Float
+  total: Float!
+}
+
+type InstallmentOption {
+  paymentSystem: String!
+  bin: String
+  paymentName: String
+  paymentGroupName: String
+  value: Float!
+  installments: [Installment!]!
+}
+
+type Validator {
+  regex: String
+  mask: String
+  cardCodeRegex: String
+  cardCodeMask: String
+  weights: [Int]
+  useCvv: Boolean
+  useExpirationDate: Boolean
+  useCardHolderName: Boolean
+  useBillingAddress: Boolean
+}
+
+type PaymentSystem {
+  id: String!
+  name: String!
+  groupName: String!
+  validator: Validator
+  stringId: String!
+  requiresDocument: Boolean!
+  isCustom: Boolean!
+  description: String
+  requiresAuthentication: Boolean
+  dueDate: String
+}
+
+type Payment {
+  paymentSystem: String
+  bin: String
+  accountId: String
+  tokenId: String
+  installments: Int
+  referenceValue: Float
+  value: Float
+}
+
+type AvailableAccount {
+  accountId: String!
+  paymentSystem: String!
+  paymentSystemName: String!
+  cardNumber: String!
+  bin: String!
+}
+
+type PaymentData {
+  installmentOptions: [InstallmentOption!]!
+  paymentSystems: [PaymentSystem!]!
+  payments: [Payment!]!
+  availableAccounts: [AvailableAccount!]!
+  isValid: Boolean!
+}
+
+type SavePaymentTokenPayload {
+  status: String
+}
+
+input PaymentInput {
+  hasDefaultBillingAddress: Boolean
+  installmentsInterestRate: Int
+  paymentSystem: String
+  bin: String
+  accountId: String
+  tokenId: String
+  installments: Int
+  referenceValue: Int
+  value: Int
+}
+
+input PaymentDataInput {
+  payments: [PaymentInput!]!
+}
+
+input PaymentToken {
+  creditCardToken: String!
+  paymentSystem: String!
+}

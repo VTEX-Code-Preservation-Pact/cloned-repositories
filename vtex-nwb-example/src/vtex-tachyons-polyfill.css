@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+}
+
+.border-box,
+.vtex-lib,
+.vtex-lib a,
+.vtex-lib article,
+.vtex-lib div,
+.vtex-lib fieldset,
+.vtex-lib footer,
+.vtex-lib form,
+.vtex-lib h1,
+.vtex-lib h2,
+.vtex-lib h3,
+.vtex-lib h4,
+.vtex-lib h5,
+.vtex-lib h6,
+.vtex-lib header,
+.vtex-lib input[type='email'],
+.vtex-lib input[type='number'],
+.vtex-lib input[type='tel'],
+.vtex-lib input[type='text'],
+.vtex-lib legend,
+.vtex-lib li,
+.vtex-lib main,
+.vtex-lib ol,
+.vtex-lib p,
+.vtex-lib section,
+.vtex-lib table,
+.vtex-lib td,
+.vtex-lib textarea,
+.vtex-lib th,
+.vtex-lib tr,
+.vtex-lib ul {
+  box-sizing: border-box;
+}
+
+.aspect-ratio--object {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  zindex: 100;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.db {
+  display: block;
+}
+
+.bb-0 {
+  border-bottom: 0;
+}
+
+.ph0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.pa0 {
+  padding: 0;
+}
+
+.ma0 {
+  margin: 0;
+}
+
+.tc {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.w-100 {
+  width: 100%;
+}

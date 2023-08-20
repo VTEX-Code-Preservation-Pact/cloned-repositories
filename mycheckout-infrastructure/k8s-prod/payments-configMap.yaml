@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: payments
+data:
+  node_env: production
+  # file-like keys
+  payments.properties: |
+    MONGO_INITDB_ROOT_USERNAME=root
+    MONGO_DB=kuikpay-payments
+    MONGO_PORT=27017
+    MONGO_HOST=localhost
+    MONGO_CONNECTION=mongodb
+    PROXY_SERVICE_TOKEN=https://api.datatrans.com
+    PROXY_SERVICE_PULL=https://api.pci-proxy.com
+    PROXY_SERVICE_MERCHANT=

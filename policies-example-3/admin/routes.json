@@ -1,0 +1,6 @@
+{
+  "admin.app.example": {
+    "component": "F1",
+    "path": "/admin/app/policies-example"
+  }
+}

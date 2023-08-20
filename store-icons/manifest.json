@@ -1,0 +1,22 @@
+{
+  "name": "store-icons",
+  "vendor": "vtex",
+  "version": "0.18.1",
+  "title": "VTEX Store icons",
+  "description": "All icons that store apps use.",
+  "mustUpdateAt": "2020-01-30",
+  "scripts": {
+    "prereleasy": "yarn && node docs/script/scrap-svg.js",
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.css-handles": "0.x"
+  },
+  "builders": {
+    "react": "3.x",
+    "styles": "1.x",
+    "store": "0.x",
+    "docs": "0.x"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

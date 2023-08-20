@@ -1,0 +1,38 @@
+{
+  "definitions": {
+    "ProductQuantity": {
+      "type": "object",
+      "properties": {
+        "warningQuantityThreshold": {
+          "title": "admin/editor.product-quantity.warningQuantityThreshold.title",
+          "description": "admin/editor.product-quantity.warningQuantityThreshold.title",
+          "type": "number",
+          "default": 0
+        },
+        "showUnit": {
+          "title": "admin/editor.product-quantity.showUnit.title",
+          "description": "admin/editor.product-quantity.showUnit.title",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    "ProductSummaryQuantity": {
+      "type": "object",
+      "properties": {
+        "warningQuantityThreshold": {
+          "title": "admin/editor.product-quantity.warningQuantityThreshold.title",
+          "description": "admin/editor.product-quantity.warningQuantityThreshold.title",
+          "type": "number",
+          "default": 0
+        },
+        "showUnit": {
+          "title": "admin/editor.product-quantity.showUnit.title",
+          "description": "admin/editor.product-quantity.showUnit.description",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    }
+  }
+}

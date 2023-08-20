@@ -1,0 +1,57 @@
+
+type RatingElement {
+  ProductId: Int,
+  TotalRatings: Int,
+  Rating: Float,
+}
+
+type Rating {
+  HasErrors: Boolean,
+  Element: [RatingElement],
+  ErrorList: [String],
+  Total: Int,
+  CurrentPage: Int
+}
+
+type Fields {
+  Name: String,
+  Values: [String]
+}
+
+type User {
+  Name: String,
+  Email: String,
+  CPF: String,
+  City: String,
+  State: String,
+  UserId: String,
+  ExhibitionName: String,
+}
+
+type ReviewElement {
+  ReviewId: Int,
+  Rating: Int,
+  Review: String,
+  Date: String,
+  Likes: Int,
+  Dislikes: Int,
+  CustomFields: [Fields],
+  User: User,
+  ReferenceOrder: String,
+  ReviewTitle: String,
+  BoughtProduct: Boolean
+}
+
+type Reviews {
+  HasErrors: Boolean,
+  Element: [ReviewElement],
+  ErrorList: [String],
+  Total: Int,
+  CurrentPage: Int
+}
+
+type Query {
+  rating(productId: String): Rating @withSecretKeys
+  ratings(productIds: [String!]): Rating @withSecretKeys
+  reviews(productId: String): Reviews @withSecretKeys
+}

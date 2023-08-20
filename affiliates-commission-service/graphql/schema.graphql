@@ -1,0 +1,38 @@
+type Query {
+  affiliateOrders(
+    page: Int!
+    pageSize: Int!
+    filter: AffiliateOrdersFilterInput
+    sorting: AffiliateOrdersSortingInput
+  ): AffiliateOrdersPage
+
+  affiliateOrder(orderId: ID!): AffiliateOrder
+
+  commissionsBySKU(
+    page: Int!
+    pageSize: Int!
+    filter: CommissionsBySKUFilterInput
+    sorting: CommissionsBySKUSortingInput
+  ): CommissionsBySKUPage
+
+  lastImportedCommissionFileInfo: ImportedCommissionsFileInfo
+}
+
+type Mutation {
+  updateCommission(newCommission: UpdateCommissionInput!): CommissionBySKU
+
+  exportAffiliateOrders(
+    filter: AffiliateOrdersFilterInput
+    sorting: AffiliateOrdersSortingInput
+    affiliates: [Affiliate]
+  ): Boolean
+
+  exportCommissionsBySKU(
+    filter: CommissionsBySKUFilterInput
+    sorting: CommissionsBySKUSortingInput
+  ): Boolean
+
+  importCommissionsBySKU(file: Upload!): Boolean
+}
+
+scalar File

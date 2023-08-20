@@ -1,0 +1,107 @@
+{
+  "flex-layout.row#brand-bar": {
+    "title": "Barra de marcas",
+    "props": {
+      "blockClass": "brand-bar",
+      "colGap": 5
+    },
+    "children": [
+      "flex-layout.col#brand1",
+      "flex-layout.col#brand2",
+      "flex-layout.col#brand3",
+      "flex-layout.col#brand4",
+      "flex-layout.col#brand5",
+      "flex-layout.col#brand6"
+    ]
+  },
+  "flex-layout.col#brand1": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand1"
+    ]
+  },
+  "flex-layout.col#brand2": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand2"
+    ]
+  },
+  "flex-layout.col#brand3": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand3"
+    ]
+  },
+  "flex-layout.col#brand4": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand4"
+    ]
+  },
+  "flex-layout.col#brand5": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand5"
+    ]
+  },
+  "flex-layout.col#brand6": {
+    "props": {
+      "blockClass": "brand",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#brand6"
+    ]
+  },
+  "image#brand1": {
+    "title": "brand 1",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-adidas-1238108.png"
+    }
+  },
+  "image#brand2": {
+    "title": "brand 2",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-mizuno-398108.png"
+    }
+  },
+  "image#brand3": {
+    "title": "brand 3",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-nike-191.png"
+    }
+  },
+  "image#brand4": {
+    "title": "brand 4",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-puma-12891371.png"
+    }
+  },
+  "image#brand5": {
+    "title": "brand 5",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-tnf-89231978.png"
+    }
+  },
+  "image#brand6": {
+    "title": "brand 6",
+    "props": {
+      "src": "https://partnerchallenge29.vteximg.com.br/arquivos/brand-under-amour-12818.png"
+    }
+  }
+}

@@ -1,0 +1,336 @@
+{
+  "countryISO": "USA",
+  "addressFields": {
+    "country": {
+      "label": "country",
+      "hidden": true,
+      "maxLength": 100
+    },
+    "state": {
+      "label": "stateAbbreviation",
+      "maxLength": 100,
+      "required": true,
+      "options": [
+        {
+          "label": "AL",
+          "value": "AL"
+        },
+        {
+          "label": "AK",
+          "value": "AK"
+        },
+        {
+          "label": "AZ",
+          "value": "AZ"
+        },
+        {
+          "label": "AR",
+          "value": "AR"
+        },
+        {
+          "label": "CA",
+          "value": "CA"
+        },
+        {
+          "label": "CO",
+          "value": "CO"
+        },
+        {
+          "label": "CT",
+          "value": "CT"
+        },
+        {
+          "label": "DE",
+          "value": "DE"
+        },
+        {
+          "label": "DC",
+          "value": "DC"
+        },
+        {
+          "label": "FL",
+          "value": "FL"
+        },
+        {
+          "label": "GA",
+          "value": "GA"
+        },
+        {
+          "label": "HI",
+          "value": "HI"
+        },
+        {
+          "label": "ID",
+          "value": "ID"
+        },
+        {
+          "label": "IL",
+          "value": "IL"
+        },
+        {
+          "label": "IN",
+          "value": "IN"
+        },
+        {
+          "label": "IA",
+          "value": "IA"
+        },
+        {
+          "label": "KS",
+          "value": "KS"
+        },
+        {
+          "label": "KY",
+          "value": "KY"
+        },
+        {
+          "label": "LA",
+          "value": "LA"
+        },
+        {
+          "label": "ME",
+          "value": "ME"
+        },
+        {
+          "label": "MD",
+          "value": "MD"
+        },
+        {
+          "label": "MA",
+          "value": "MA"
+        },
+        {
+          "label": "MI",
+          "value": "MI"
+        },
+        {
+          "label": "MN",
+          "value": "MN"
+        },
+        {
+          "label": "MS",
+          "value": "MS"
+        },
+        {
+          "label": "MO",
+          "value": "MO"
+        },
+        {
+          "label": "MT",
+          "value": "MT"
+        },
+        {
+          "label": "NE",
+          "value": "NE"
+        },
+        {
+          "label": "NV",
+          "value": "NV"
+        },
+        {
+          "label": "NH",
+          "value": "NH"
+        },
+        {
+          "label": "NJ",
+          "value": "NJ"
+        },
+        {
+          "label": "NM",
+          "value": "NM"
+        },
+        {
+          "label": "NY",
+          "value": "NY"
+        },
+        {
+          "label": "NC",
+          "value": "NC"
+        },
+        {
+          "label": "ND",
+          "value": "ND"
+        },
+        {
+          "label": "OH",
+          "value": "OH"
+        },
+        {
+          "label": "OK",
+          "value": "OK"
+        },
+        {
+          "label": "OR",
+          "value": "OR"
+        },
+        {
+          "label": "PA",
+          "value": "PA"
+        },
+        {
+          "label": "PR",
+          "value": "PR"
+        },
+        {
+          "label": "RI",
+          "value": "RI"
+        },
+        {
+          "label": "SC",
+          "value": "SC"
+        },
+        {
+          "label": "SD",
+          "value": "SD"
+        },
+        {
+          "label": "TN",
+          "value": "TN"
+        },
+        {
+          "label": "TX",
+          "value": "TX"
+        },
+        {
+          "label": "UT",
+          "value": "UT"
+        },
+        {
+          "label": "VT",
+          "value": "VT"
+        },
+        {
+          "label": "VA",
+          "value": "VA"
+        },
+        {
+          "label": "WA",
+          "value": "WA"
+        },
+        {
+          "label": "WV",
+          "value": "WV"
+        },
+        {
+          "label": "WI",
+          "value": "WI"
+        },
+        {
+          "label": "WY",
+          "value": "WY"
+        }
+      ]
+    },
+    "city": {
+      "label": "city",
+      "maxLength": 100,
+      "required": true
+    },
+    "neighborhood": {
+      "label": "neighborhood",
+      "hidden": true,
+      "maxLength": 100
+    },
+    "street": {
+      "label": "streetRoadAvenue",
+      "required": true
+    },
+    "number": {
+      "label": "numberOption",
+      "maxLength": 750,
+      "hidden": true,
+      "autoComplete": "off"
+    },
+    "complement": {
+      "label": "complement",
+      "maxLength": 750
+    },
+    "reference": {
+      "label": "reference",
+      "hidden": true,
+      "maxLength": 750
+    },
+    "receiverName": {
+      "label": "receiverName",
+      "elementName": "receiver",
+      "maxLength": 750,
+      "required": true
+    },
+    "postalCode": {
+      "label": "postalCode",
+      "forgottenURL": "https://tools.usps.com/go/ZipLookupAction_input"
+    }
+  },
+  "display": {
+    "minimal": [
+      [
+        {
+          "name": "postalCode"
+        }
+      ]
+    ],
+    "compact": [
+      [
+        {
+          "name": "street"
+        }
+      ],
+      [
+        {
+          "name": "city"
+        },
+        {
+          "delimiter": " ",
+          "name": "state"
+        },
+        {
+          "delimiter": " ",
+          "name": "postalCode"
+        }
+      ]
+    ],
+    "extended": [
+      [
+        {
+          "name": "receiverName"
+        }
+      ],
+      [
+        {
+          "name": "street"
+        },
+        {
+          "delimiter": " ",
+          "name": "complement"
+        }
+      ],
+      [
+        {
+          "name": "number"
+        },
+        {
+          "delimiter": ", ",
+          "name": "neighborhood"
+        }
+      ],
+      [
+        {
+          "name": "city"
+        },
+        {
+          "delimiter": " ",
+          "name": "state"
+        },
+        {
+          "delimiter": " ",
+          "name": "postalCode"
+        }
+      ]
+    ]
+  },
+  "phone": {
+    "countryCode": "1",
+    "mask": "999-999-9999",
+    "pattern": "/^(?:(?:(?:\\+|)(?:1|))|)(?:1|)(?:2(?:0[1-9]|1[02-9]|2[4-9]|3[1469]|4[089]|5[01-46]|6[0279]|7[0468]|8[139])|3(?:0[1-9]|1[02-9]|2[01235]|3[014679]|4[01367]|5[12]|6[01459]|8[056])|4(?:0[1-9]|1[02-9]|2[345]|3[0-24578]|4[023578]|5[08]|6[49]|7[0589]|8[04]|50[1-57-9])|5(?:0[1-9]|1[02-9]|20|3[014]|4[01]|5[179]|6[1-47]|7[013-59]|8[01567])|6(?:0[1-9]|1[0234-9]|2[036-8]|3[0169]|4[167]|5[0179]|6[01279]|7[0189]|8[1249])|7(?:0[1-9]|1[2-9]|2[047]|3[01247]|4[07]|5[247]|6[02-59]|7[02-589]|8[01567])|8(?:0[1-8]|1[0-9]|28|3[0-25]|4[3578]|5[06-9]|6[02-57]|7[0238])|9(?:0[1-9]|1[02-9]|2[0578]|3[15-9]|4[0179]|5[124679]|7[0-3589]|8[045]|89))\\d{7}$/"
+  }
+}

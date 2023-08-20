@@ -1,0 +1,43 @@
+{
+  "projectName": "modal-layout",
+  "projectOwner": "vtex-apps",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "docs/README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "BeatrizMiranda",
+      "name": "Beatriz Miranda",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/28959326?v=4",
+      "profile": "https://github.com/BeatrizMiranda",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "weslybrandao",
+      "name": "weslybrandao",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/38354801?v=4",
+      "profile": "https://acct.global/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "renanguerraa1",
+      "name": "Renan Guerra",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/69531548?v=4",
+      "profile": "https://github.com/renanguerraa1",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true
+}

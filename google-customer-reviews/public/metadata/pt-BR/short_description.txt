@@ -1,0 +1,1 @@
+Este aplicativo permite que o Google colete e publique comentários de clientes que fizeram uma compra no seu site.

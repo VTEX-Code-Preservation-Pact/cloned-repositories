@@ -1,0 +1,63 @@
+{
+  "vendor": "vtex",
+  "name": "omnichannel-order-status",
+  "version": "0.2.0",
+  "title": "B2B Order",
+  "description": "Allows customers to view order status on standardized external APIs",
+  "defaultLocale": "pt-BR",
+  "builders": {
+    "styles": "2.x",
+    "messages": "1.x",
+    "node": "4.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.my-account-commons": "1.x",
+    "vtex.my-account": "1.x",
+    "vtex.format-currency": "0.x"
+  },
+  "settingsSchema": {
+    "title": "Orders B2B",
+    "type": "object",
+    "properties": {
+      "endpoint": {
+        "title": "Link endpoint",
+        "type": "string"
+      },
+      "user": {
+        "title": "Login",
+        "type": "string"
+      },
+      "token": {
+        "title": "Token",
+        "type": "string"
+      }
+    }
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "apivtex.digimess.com.br",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "apidev.atma-it.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

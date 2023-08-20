@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Super Web Page",
+    "description": "Teste new page",
+    "slug": "/updated-slug"
+  },
+  "blocks": [
+    {
+      "id": "1594403361656",
+      "name": "Header",
+      "props": {}
+    }
+  ]
+}

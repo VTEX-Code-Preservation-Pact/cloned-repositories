@@ -1,0 +1,146 @@
+---
+base:
+  secrets:
+    enabled: true
+    name: VTEX_QE
+  vtex:
+    account: productusqa
+    id: 2001459804
+    domain: myvtex.com
+    urlExternalSeller:
+    vtexIdUrl: https://vtexid.vtex.com.br/api/vtexid/pub/authenticate/default
+  jira:
+    enabled: true
+    account: vtex-dev
+    board: CYBRSOURCE
+    issueType: Bug
+    priority: High
+  slack:
+    enabled: false
+    channel: some-channel
+  cypress:
+    devMode: false
+    runHeaded: false
+    getCookies: true
+    maxJobs: 2
+    quiet: true
+    projectId: ny5emv
+    video: false
+    videoCompression: false
+    videoUploadOnPasses: false
+    screenshotOnRunFailure: true
+    trashAssetsBeforeRuns: false
+    viewportWidth: 1440
+    viewportHeight: 1500
+    defaultCommandTimeout: 25000
+    requestTimeout: 25000
+    watchForFileChanges: false
+    pageLoadTimeout: 45000
+    browser: chrome
+    chromeWebSecurity: false
+  stateFiles: [.orders.json]
+
+workspace:
+  name: random
+  prefix: cybersource
+  # The nex configuration avoid apps that need account
+  # level resources from running in parallel
+  reserveAccount:
+    enabled: true
+    setup:
+      - orderForm
+  linkApp:
+    enabled: true
+  installApps:
+    - vtex.cybersource-fraud
+    - vtex.cybersource-ui
+    - vtex.cybersource-payer-auth
+  removeApps: []
+  wipe:
+    enabled: true
+    stopOnFail: false
+    specs:
+      - cypress/integration/wipe.spec.js
+  teardown:
+    enabled: true
+
+strategy:
+  configureAffiliationWithPayerAuthAsActive:
+    enabled: true
+    sendDashboard: true
+    hardTries: 1
+    stopOnFail: true
+    parallel: false
+    specs:
+      - cypress/integration/2.1-ConfigureAffiliationWithPayerAuthActive.spec.js
+  splitAndNonSplitSkuTest: 
+    enabled: true
+    sendDashboard: true
+    hardTries: 1
+    stopOnFail: true
+    parallel: false
+    specs:
+      - cypress/integration/sku.spec.js
+    dependency:
+      - cypress/integration/2.1-ConfigureAffiliationWithPayerAuthActive.spec.js
+  payerAuthActiveTests:
+    enabled: true
+    sendDashboard: true
+    hardTries: 2
+    stopOnFail: false
+    parallel: true
+    specs:
+      - cypress/integration/2.2-singleProduct.spec.js
+      - cypress/integration/2.6-discountProduct.spec.js
+    dependency:
+      - cypress/integration/sku.spec.js
+  configureAffiliationWithPayerAuthAsDisabled:
+    enabled: true
+    sendDashboard: true
+    hardTries: 2
+    stopOnFail: false
+    parallel: false
+    specs:
+      - cypress/integration/2.4-ConfigureAffiliationWithPayerAuthDisable.spec.js
+    dependency:
+      - cypress/integration/2.2-singleProduct.spec.js
+      - cypress/integration/2.6-discountProduct.spec.js
+  payerAuthDisableTests:
+    enabled: true
+    sendDashboard: true
+    hardTries: 2
+    stopOnFail: false
+    parallel: true
+    specs:
+      - cypress/integration/2.3-multiProduct.spec.js
+      - cypress/integration/2.5-promotionalProduct.spec.js
+      - cypress/integration/2.8-externalSeller.spec.js
+      - cypress/integration/2.7-discountShipping.spec.js
+    dependency:
+      - cypress/integration/2.4-ConfigureAffiliationWithPayerAuthDisable.spec.js
+  verifySettlements: 
+    enabled: true
+    sendDashboard: true
+    hardTries: 2
+    stopOnFail: false
+    parallel: false
+    specs:
+      - cypress/integration/2.9-settlements.spec.js
+    dependency:
+      - cypress/integration/2.2-singleProduct.spec.js
+      - cypress/integration/2.3-multiProduct.spec.js
+      - cypress/integration/2.5-promotionalProduct.spec.js
+      - cypress/integration/2.6-discountProduct.spec.js
+      - cypress/integration/2.7-discountShipping.spec.js
+      - cypress/integration/2.8-externalSeller.spec.js
+  refund:
+    enabled: true
+    sendDashboard: true
+    hardTries: 2
+    stopOnFail: false
+    parallel: false
+    specs:
+      - cypress/integration/2.10-fullRefund.spec.js
+      - cypress/integration/2.11-partialRefund.spec.js
+    dependency:
+      - cypress/integration/2.9-settlements.spec.js

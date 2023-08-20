@@ -1,0 +1,422 @@
+.container {
+  width: 100%;
+}
+
+.containerDocument {
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerDocumentType {
+  width: 39%;
+}
+
+.containerDocumentNumber {
+  width: 59%;
+}
+
+.containerData {
+  padding: 0px 32px;
+  margin-bottom: 8px;
+}
+
+.radioHide {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.paymentLabelContainer {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.paymentLabelContainer label {
+  cursor: pointer;
+}
+
+/* When the radio button is checked, add a blue background */
+.checkmarkChecked {
+  background-color: #fff;
+  border: 1px solid #1b998b;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkNoChecked::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.checkmarkChecked::after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.checkmarkContainer {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #1b998b;
+}
+
+.paymentLabel {
+  font-size: 16px;
+}
+
+.paymentMethodContainer {
+  padding: 8px 0;
+}
+
+.paymentMethodContainer input,
+.paymentMethodContainer select {
+  /* quitar cuando se solucione font-family de PCI */
+  font-weight: 500;
+}
+
+.paymentMethodPromissory {
+  margin: 0px 15px;
+  width: 90%;
+  padding: 35px;
+  box-shadow: 0px 3px 6px #00000029;
+  margin-bottom: 15px;
+}
+
+.formGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputGroup {
+  width: 48%;
+}
+
+.labelError {
+  color: #cb4242;
+}
+
+.containerLocation {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cityContainer {
+  margin-top: 15px;
+}
+
+.cityContainer div {
+  z-index: 101;
+}
+
+.marginTop {
+  margin-top: 12px;
+}
+
+.habeasDataLink.habeasDataLink {
+  text-decoration: underline;
+}
+
+.radioButtonContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardsImgContainer {
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.cardsImgContainer img {
+  margin-right: 10px;
+  height: 25px;
+}
+
+.logisticsContainer {
+  border-top: 1px solid #e0e2e7;
+  padding-top: 12px;
+}
+
+.textUnderline {
+  text-decoration: underline;
+}
+
+.locationContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.locationContainer p {
+  font-weight: 600;
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.containerDuesExpiry {
+  display: flex;
+  align-items: flex-end;
+}
+
+.containerDuesExpiry .dues {
+  margin-right: 9px;
+}
+
+.containerDuesExpiry .dues select {
+  background-color: #ffffff;
+}
+
+.containerDuesExpiry .expiryDate {
+  width: 99% !important;
+}
+
+.containerFifty {
+  width: 50%;
+}
+
+.secureField__input {
+  display: inline-block;
+  width: 100%;
+  line-height: 1.3;
+  cursor: text;
+  height: 46px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 0 17.3px;
+  border: 1px solid #919191;
+  color: white;
+  background-color: #fff;
+}
+
+.secureFieldLite {
+  height: 23px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #707685;
+  border-radius: 0;
+}
+
+.secureFieldInvalid {
+  border: 1px solid #bc4c47;
+}
+
+.secureFieldInvalidLite {
+  border-bottom: 1px solid #bc4c47;
+}
+
+.secureFieldValid {
+  border: 1px solid #a1c10c;
+}
+
+.secureFieldValidLite {
+  border-bottom: 1px solid #a1c10c;
+}
+
+.secureField__inputContainer {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secureField__actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+  pointer-events: none;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+}
+
+.secureField__action {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 100%;
+  padding: 12px 0 10px;
+  pointer-events: auto;
+  cursor: pointer;
+  transition: color 200ms ease;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-transition: color 200ms ease;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: row nowrap;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+}
+
+.secureField__action.secureField__actionCardIcon {
+  width: 40px;
+  height: 100%;
+  padding: 0;
+  pointer-events: none;
+}
+
+.secureField__actionCardWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.secureField__cardIcon {
+  position: absolute;
+  top: 43%;
+  right: 0;
+  display: block;
+  max-width: 100%;
+  transform: translate3d(0, -50%, 0);
+  -webkit-transform: translate3d(0, -50%, 0);
+}
+
+.labelError.labelError {
+  color: #cb4242;
+  margin-top: -7px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.paymentCardContainer {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e2e7;
+  padding-bottom: 10px;
+}
+
+.paymentPromissoryContainer {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.paymentLabelContainer .paymentCustomCreditLabel {
+  font-size: 14px !important;
+  color: #284859;
+  line-height: 24px;
+  margin: 12px 0px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px #0000000f;
+  padding: 5px 28px;
+  margin-bottom: 15px;
+  cursor: initial;
+}
+
+.paymentLabelContainer .paymentCustomCreditLabel b {
+  color: #1b998b;
+}
+
+.paymentCustomCreditLabelInfo {
+  font-weight: bold;
+  color: #1b998b;
+}
+
+.paymentCustomerCreditContainer .checkmark {
+  top: 1.5px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.display {
+  display: none;
+}
+
+.marginLeft.marginLeft {
+  margin-left: 5px;
+}
+
+.marginBottom {
+  margin-bottom: 12px;
+}
+
+.loadingContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 992px) {
+  .buyButtonContainer {
+    position: fixed;
+    padding: 14px;
+    margin-top: 14px;
+    box-shadow: inset 0px 3px 6px #0000000f;
+    width: 30%;
+    right: 0;
+    bottom: 0;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    z-index: 100;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    margin-bottom: 35%;
+  }
+}
+
+.summary {
+  margin-bottom: 22%;
+}
+
+@media screen and (max-width: 792px) {
+  .paymentMethodLiteContainer {
+    padding-bottom: 70px;
+  }
+}

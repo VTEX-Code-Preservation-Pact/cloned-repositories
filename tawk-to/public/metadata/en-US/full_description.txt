@@ -1,0 +1,14 @@
+## About
+
+tawk.to is designed to increase the effectiveness in managing the online customer engagement experience, enabling multiple websites and agents in a single dashboard interface to chat with the visitors on your website.
+Compatible with all modern browsers, tawk.to is a free live chat software created out of the growing need for businesses to respond in real time, with real people.
+
+There is no 'premium' version, just one feature packed version for everyone.
+
+## Functionalities
+
+- Monitor conversations in real time;
+- Implement automated triggers;
+- Customize the Widgets;
+- Operate in 27 languages;
+- Receive email notifications.

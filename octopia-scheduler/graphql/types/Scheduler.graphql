@@ -1,0 +1,70 @@
+type SchedulerInformation {
+  id: ID!
+  workspace: String!
+  app: String!
+  attempt: Int!
+  endDate: String!
+  expression: String!
+  NextExecution: String!
+  request: Request!
+  retry: Retry!
+}
+
+type SchedulerConfiguration {
+  id: ID!
+  scheduler: Scheduler
+  request: Request
+  retry: Retry
+}
+
+type SchedulerConfigurationPayload {
+  type: String!
+  production: Boolean!
+  account: String!
+  workspace: String!
+  id: String
+  endDate: String
+  expression: String
+  uri: String
+  headers: JSON
+  body: JSON
+}
+
+scalar JSON
+
+type Request {
+  uri: String!
+  method: String!
+  headers: JSON!
+  body: JSON
+}
+
+type Retry {
+  delay: Delay
+  times: Int!
+  backOffRate: Int!
+}
+
+type Delay {
+  addMinutes: Int!
+  addHours: Int!
+  addDays: Int!
+}
+
+type Scheduler {
+  expression: String!
+  endDate: String!
+}
+
+input SchedulerConfigurationInput {
+  type: String!
+  production: Boolean!
+  account: String!
+  workspace: String!
+  id: String
+  endDate: String
+  expression: String
+  uri: String
+  headers: JSON
+  body: JSON
+}

@@ -1,0 +1,74 @@
+{
+  "name": "react-hook-form-jsonschema",
+  "version": "0.2.0",
+  "description": "Wrapper arround react-hook-form to create forms from a JSON schema.",
+  "main": "output/index.cjs.js",
+  "module": "output/index.esm.js",
+  "types": "output/index.d.ts",
+  "files": [
+    "output"
+  ],
+  "author": "Helena Steck <helena.steck@vtex.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@testing-library/react-hooks": "^7.0.1",
+    "@types/react": "^16.8.22",
+    "@types/react-intl": "^2.3.18",
+    "@vtex/test-tools": "^0.3.2",
+    "@vtex/tsconfig": "^0.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-vtex-react": "^5.1.0",
+    "husky": "^4.2.0",
+    "mutationobserver-shim": "^0.3.3",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.18.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.29.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.4"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "./setupTest.js"
+    ]
+  },
+  "scripts": {
+    "build": "rm -rf output && rollup -c",
+    "build:watch": "rollup -cw",
+    "test": "vtex-test-tools test",
+    "test:watch": "vtex-test-tools test --watch",
+    "lint": "tsc --noEmit && eslint --quiet --fix --ext ts,tsx src/",
+    "prepublishOnly": "run-s lint test build"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "run-s lint",
+      "pre-push": "set -o pipefail && git stash push --keep-index -m 'husky-pre-commit' && run-s test && git stash pop || true"
+    }
+  },
+  "dependencies": {
+    "react-hook-form": "^4.4.4"
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "repository": "git@github.com:vtex/react-hook-form-jsonschema.git",
+  "keywords": [
+    "react",
+    "hooks",
+    "json-schema",
+    "jsonschema",
+    "form",
+    "form-validation",
+    "validation",
+    "typescript",
+    "react-hooks"
+  ],
+  "homepage": "https://github.com/vtex/react-hook-form-jsonschema"
+}

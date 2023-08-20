@@ -1,0 +1,50 @@
+[
+  {
+    "title": "New property for creating a single page of a content type",
+    "product": "CMS",
+    "fileName": "2023-04-06-cms",
+    "description": "Create a single page for a content type with the new `isSingleton` property, ensuring consistency and preventing duplication of layout updates."
+    },
+  {
+    "title": "New property for creating setting-only content types",
+    "product": "CMS",
+    "fileName": "2023-04-03-cms",
+    "description": "Create settings-only content types with the new onlySettings property, ideal for non-storefront content like SEO pages."
+    },
+  {
+    "title": "New Calendar Views to manage Releases",
+    "product": "CMS",
+    "fileName": "2023-03-23-cms",
+    "description": "Upgrade release planning with improved Calendar Views. Easily manage planned releases through Monthly, Weekly, and Daily Views in Releases module."
+    },
+  {
+    "title": "Introducing Media Admin",
+    "product": "CMS",
+    "fileName": "2023-02-28-cms",
+    "description": ": Discover a new way to upload, organize, and manage all your digital assets with the new Media Admin app."
+    },
+  {
+    "title": "VTEX Headless CMS previews now available for Base Store (Next.js)",
+    "product": "CMS",
+    "fileName": "2022-10-05-cms",
+    "description": "Use the Preview option while writing a draft on VTEX Headless CMS to preview content changes immediately and whenever you want."
+    },
+  {
+    "title": "FastStore - August, 2022",
+    "product": "FastStore",
+    "fileName": "2022-09-13-faststore",
+    "description": "Gift, OrderSummary, SkuSelector, and CartItem components are now available in the FastStore UI. Also, updates to the FastStore API improve the shopping cart UX and allow adding user's session information to the orderForm."
+    },
+    {
+      "title": "New environment flag improves deploy cache use",
+      "product": "WebOps",
+      "fileName": "2022-09-10-webops",
+      "description": "WebOps can now reuse cache from previous commits in newer deploy previews. This is because of a new environment flag you can set in the `vtex.env` file of your FastStore project: `USE_BUILD_CACHE`."
+  },
+  {
+    "title": "Preview deploys are now on GitHub environments",
+    "product": "WebOps",
+    "fileName": "2022-09-08-webops",
+    "description": "The automatic previews of your FastStore project's pull requests are now deployed with GitHub environments."
+  }
+]

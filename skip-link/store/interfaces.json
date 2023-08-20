@@ -1,0 +1,8 @@
+{
+  "skip-link": {
+    "component": "SkipLink"
+  },
+  "skip-link-anchor": {
+    "component": "SkipLinkAnchor"
+  }
+}

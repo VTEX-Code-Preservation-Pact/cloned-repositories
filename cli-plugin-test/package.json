@@ -1,0 +1,83 @@
+{
+  "name": "@vtex/cli-plugin-test",
+  "description": "vtex plugin test",
+  "version": "1.0.4",
+  "bugs": "https://github.com/vtex/cli-plugin-test/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@tiagonapoli/oclif-plugin-spaced-commands": "^0.0.6",
+    "@vtex/api": "3.77.0",
+    "async-retry": "^1.3.1",
+    "chalk": "^4.1.0",
+    "ramda": "0.25.0",
+    "tslib": "^1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "@oclif/plugin-help": "^3",
+    "@types/jest": "^26.0.3",
+    "@types/node": "^14.0.14",
+    "@types/ramda": "0.25.24",
+    "eslint": "^6.8.0",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-oclif-typescript": "^0.1",
+    "eslint-config-vtex": "^12.3.0",
+    "globby": "^10",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "nodemon-notifier-cli": "https://github.com/Slessi/nodemon-notifier-cli.git",
+    "prettier": "^2.0.1",
+    "ts-jest": "^25.2.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7",
+    "vtex": "3.8.0-beta.1"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "files": [
+    "/build",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/yarn.lock"
+  ],
+  "homepage": "https://github.com/vtex/cli-plugin-test",
+  "keywords": [
+    "oclif-plugin"
+  ],
+  "license": "MIT",
+  "oclif": {
+    "commands": "./build/commands",
+    "bin": "oclif-example",
+    "plugins": [
+      "@tiagonapoli/oclif-plugin-spaced-commands"
+    ],
+    "devPlugins": [
+      "@oclif/plugin-help"
+    ],
+    "topics": {
+      "test": {
+        "description": "Test commands. Run 'vtex test' to see all subcommands"
+      }
+    }
+  },
+  "repository": "vtex/cli-plugin-test",
+  "scripts": {
+    "build-clean": "rm -rf build",
+    "build-incremental": "tsc --incremental",
+    "build": "yarn build-clean && yarn tsc && OCLIF_COMPILATION=true yarn oclif-dev manifest",
+    "ci:prettier-check": "prettier --check --config ./.prettierrc \"./src/**/*.{ts,tsx,js,jsx,json}\"",
+    "ci:test": "yarn test --ci",
+    "format-lint": "yarn format && yarn lint",
+    "format": "prettier --config ./.prettierrc --write \"**/*.{ts,js,json}\"",
+    "lint": "eslint ./src --cache --ext .ts --config .eslintrc",
+    "postpack": "rm -f oclif.manifest.json",
+    "posttest": "eslint . --ext .ts --config .eslintrc",
+    "prepack": "rm -rf build && tsc -b && OCLIF_COMPILATION=true oclif-dev manifest && oclif-dev readme",
+    "prepublishOnly": "bash ./scripts/publishLock.sh",
+    "test": "jest --passWithNoTests",
+    "version": "oclif-dev readme && git add README.md",
+    "watch": "yarn build-clean && yarn nodemon"
+  }
+}

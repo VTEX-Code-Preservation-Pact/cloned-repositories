@@ -1,0 +1,28 @@
+query ReviewByDateRange(
+  $fromDate: String!
+  $toDate: String!
+  $orderBy: String
+) {
+  reviewByDateRange(fromDate: $fromDate, toDate: $toDate, orderBy: $orderBy)
+    @context(provider: "vtex.reviews-and-ratings") {
+    data {
+      id
+      productId
+      rating
+      title
+      text
+      reviewerName
+      location
+      locale
+      reviewDateTime
+      verifiedPurchaser
+      sku
+      approved
+    }
+    range {
+      total
+      from
+      to
+    }
+  }
+}

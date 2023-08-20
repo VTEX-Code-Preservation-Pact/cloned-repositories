@@ -1,0 +1,133 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+
+  "store.login": {
+    "blocks": ["login-content#default"]
+  },
+
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+
+  "store.not-found#product": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "store.not-found#search": {
+    "blocks": ["rich-text#not-found"]
+  },
+
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  },
+  "shopper-location": {
+    "children": [
+      "modal-trigger#address"
+    ],
+    "props": {
+      "autofill": [
+        "city",
+        "country",
+        "neighborhood",
+        "number",
+        "postalCode",
+        "state",
+        "street"
+      ]
+    }
+  },
+  "modal-trigger#address": {
+    "children": [
+      "user-address",
+      "modal-layout#address"
+    ]
+  },
+  "user-address": {
+    "props": {
+      "variation": "bar",
+      "showStreet": false,
+      "showCityAndState": true,
+      "showPostalCode": true,
+      "showPrefix": false,
+      "showIfEmpty": true
+    }
+  },
+  "modal-layout#address": {
+    "children": [
+      "modal-header#address",
+      "modal-content#address"
+    ]
+  },
+  "modal-header#address": {
+    "children": [
+      "flex-layout.col#address-header"
+    ]
+  },
+  "flex-layout.col#address-header": {
+    "children": [
+      "rich-text#address-header"
+    ],
+    "props": {
+      "paddingLeft": 5
+    }
+  },
+  "rich-text#address-header": {
+    "props": {
+      "text": "### Change Location"
+    }
+  },
+  "modal-content#address": {
+    "children": [
+      "change-location"
+    ]
+  },
+  "change-location": {
+    "props": {
+      "postalCode": "first",
+      "autocomplete": true,
+      "notRequired": [
+        "street",
+        "number",
+        "city",
+        "state"
+      ],
+      "hideFields": [
+        "complement",
+        "neighborhood",
+        "receiverName",
+        "reference"
+      ]
+    }
+  }
+}

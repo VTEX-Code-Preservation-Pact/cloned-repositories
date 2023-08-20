@@ -1,0 +1,25 @@
+{
+  "scripts": {
+    "test": "vtex-test-tools test",
+    "lint": "tsc --noEmit && eslint --ext ts,tsx ."
+  },
+  "dependencies": {
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "prettier": "@vtex/prettier-config",
+  "devDependencies": {
+    "@types/graphql": "^14.2.0",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.0",
+    "@types/prop-types": "^15.7.0",
+    "@types/react": "^16.8.10",
+    "@vtex/prettier-config": "^0.0.1",
+    "apollo-client": "^2.5.1",
+    "eslint": "^5.16.0",
+    "eslint-config-vtex": "^10.1.0",
+    "prettier": "^1.19.1",
+    "typescript": "3.7.3"
+  },
+  "version": "1.0.1"
+}

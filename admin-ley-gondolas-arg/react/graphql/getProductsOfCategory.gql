@@ -1,0 +1,23 @@
+query getProductsOfCategory($categoryTree: String, $from: Int!, $to: Int!, $params: String ) {
+  getProductsOfCategory(categoryTree: $categoryTree, from: $from, to: $to, params: $params) {
+    status
+    data {
+      productId
+      productName
+      brand
+      categoryId
+      pricePerUnit
+      leyDeGondolas
+      linkText
+      items {
+        itemId
+        name
+        images {
+          imageId
+          imageUrl
+          imageText
+        }
+      }
+    }
+  }
+}

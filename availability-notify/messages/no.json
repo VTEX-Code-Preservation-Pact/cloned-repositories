@@ -1,0 +1,22 @@
+{
+  "store/availability-notify.title": "Dette produktet er ikke tilgjengelig nå",
+  "store/availability-notify.notify-label": "Jeg ønsker å få beskjed når dette produktet blir tilgjengelig",
+  "store/availability-notify.email-placeholder": "E-post",
+  "store/availability-notify.name-placeholder": "Navn",
+  "store/availability-notify.send-label": "Send",
+  "store/availability-notify.invalid-email": "Ugyldig e-post",
+  "store/availability-notify.added-message": "E-postadressen ble registrert",
+  "store/availability-notify.error-register": "E-postadressen er allerede registrert",
+  "store/availability-notify.error-message": "Mislyktes, prøv igjen",
+  "admin/availability-notify.menu.label": "Tilgjengelighetsvarsel",
+  "admin/request.menu.label": "Tilgjengelighetsvarsel",
+  "admin/settings.download": "Nedlastingsforespørsler",
+  "admin/settings.process-unsent": "Bahandle usendte",
+  "admin/settings.verify-availability": "Godkjenn tilgjengelighet",
+  "admin/settings.marketplace-to-notify": "Markedsplass(er) som skal varsles",
+  "admin/settings.download-helptext": "Last ned en XLS-fil om alle varsler om oppføringer.",
+  "admin/settings.process-unsent-helptext": "Behandle alle usendte forespørsler for å varsle og laste ned en XLS-fil av resultatene.",
+  "admin/settings.verify-availability-helptext": "Kjører en frakt-simulering for å godkjenne at varen kan sendes til kjøperen før du sender et varsel.",
+  "admin/settings.marketplace-to-notify-helptext": "Tillater en selgerkonto å spesifisere en kommadelt liste over navn på markedsplassen for å varsle om lageroppdateringer.",
+  "admin/settings.label": "Innstillinger"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "b2b-suite",
+  "vendor": "vtex",
+  "version": "0.2.1",
+  "title": "B2B Suite",
+  "description": "Suite of apps to add various essential B2B functionalities to your VTEX store",
+  "mustUpdateAt": "2022-08-28",
+  "scripts": {
+    "postreleasy": "vtex publish"
+  },
+  "dependencies": {
+    "vtex.admin-customers": "2.x",
+    "vtex.b2b-checkout-settings": "1.x",
+    "vtex.b2b-orders-history": "0.x",
+    "vtex.b2b-organizations": "1.x",
+    "vtex.b2b-quotes": "1.x",
+    "vtex.store": "2.x",
+    "vtex.storefront-permissions-ui": "1.x"
+  },
+  "builders": {
+    "admin": "0.x",
+    "docs": "0.x",
+    "react": "3.x",
+    "store": "0.x"
+  },
+  "billingOptions": {
+    "support": {
+      "url": "https://help-tickets.vtex.com/en/support?app=vtex.b2b-suite"
+    },
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

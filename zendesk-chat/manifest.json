@@ -1,0 +1,157 @@
+{
+  "vendor": "vtex",
+  "name": "zendesk-chat",
+  "version": "1.4.1",
+  "title": "Zendesk Chat",
+  "description": "Start using Zendesk chat with just a few clicks.",
+  "builders": {
+    "store": "0.x",
+    "pixel": "0.x",
+    "docs": "0.x",
+    "react": "3.x"
+  },
+  "mustUpdateAt": "2019-10-01",
+  "billingOptions": {
+    "termsURL": "https://compliance.vtex.com/gdpr/policies/vtex-privacy-policy",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "free": true,
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
+  },
+  "dependencies": {
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.render-runtime": "8.x"
+  },
+  "settingsSchema": {
+    "title": "Zendesk Chat",
+    "type": "object",
+    "required": [
+      "accountKey"
+    ],
+    "properties": {
+      "titlePreffix": {
+        "title": "Title prefix",
+        "description": "Prefix to add to the title of the widget",
+        "type": "string"
+      },
+      "accountKey": {
+        "title": "Account Key",
+        "description": "Enter your Account Key",
+        "type": "string"
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "Specifies whether to enable or disable Google Analytics tracking",
+        "type": "boolean"
+      },
+      "webWidget": {
+        "title": "Web Widget",
+        "description": "",
+        "type": "object",
+        "properties": {
+          "theme": {
+            "title": "Theme",
+            "type": "object",
+            "description": "Configurations for the Zendesk chat button. This overwrites any configuration made directly from the Zendesk dashboard.",
+            "properties": {
+              "theme": {
+                "title": "General theme color",
+                "description": "This prop may be used as a base, determining the overall color scheme of the widget. Use hex format i.e #FFFFFF.",
+                "type": "string"
+              },
+              "launcherLabel": {
+                "title": "Launcher label",
+                "description": "Label of the starting launcher button.",
+                "type": "string"
+              },
+              "launcherColor": {
+                "title": "Launcher color",
+                "description": "Defines the chat button background color. Use hex format i.e #FFFFFF.",
+                "type": "string"
+              },
+              "launcherTextColor": {
+                "title": "Launcher text color",
+                "description": "Defines the chat button text color. Use hex format i.e #000000.",
+                "type": "string"
+              },
+              "launcherPosition": {
+                "title": "Launcher position",
+                "description": "Defines the horizontal position of the chat button.",
+                "type": "string",
+                "default": "right",
+                "enum": [
+                  "left",
+                  "right"
+                ],
+                "enumNames": [
+                  "Bottom left",
+                  "Bottom right"
+                ]
+              },
+              "widgetZindex": {
+                "title": "Launcher z-index",
+                "description": "Defines the z-index of the chat button.",
+                "type": "string",
+                "default": "999998"
+              }
+            }
+          },
+          "helpCenter": {
+            "title": "Help Center",
+            "description": "",
+            "type": "object",
+            "properties": {
+              "suppress": {
+                "title": "Suppress Help Center",
+                "description": "",
+                "type": "boolean"
+              }
+            }
+          },
+          "chat": {
+            "title": "Chat",
+            "description": "",
+            "type": "object",
+            "properties": {
+              "departments": {
+                "title": "Departments",
+                "type": "object",
+                "properties": {
+                  "tags": {
+                    "title": "Tags",
+                    "description": "",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "enabled": {
+                    "title": "Enabled",
+                    "description": "Displays the specified departments in the pre-chat form",
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  },
+                  "select": {
+                    "title": "Select",
+                    "description": "Sets the visitor’s default department for the current session",
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

@@ -1,0 +1,6 @@
+{
+  "admin.app.example": {
+    "component": "AvataxAdmin",
+    "path": "/admin/app/avatax-br"
+  }
+}

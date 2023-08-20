@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "apollo-client": "^2.5.1",
+    "graphiql": "^0.13.0",
+    "graphql": "^14.3.0",
+    "punycode": "^2.1.1",
+    "ramda": "^0.26.1",
+    "react": "^16.6.3",
+    "react-apollo": "^2.5.5",
+    "react-dom": "^16.0.0",
+    "react-intl": "^2.9.0"
+  },
+  "resolutions": {
+    "graphql-language-service-parser": "1.2.2",
+    "graphql-language-service-types": "1.2.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "12.x",
+    "@types/ramda": "^0.26.8",
+    "@types/react": "^16.7.17",
+    "@types/react-intl": "^2.3.17",
+    "vtex.admin-graphql-ide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.admin-graphql-ide@3.6.0/public/@types/vtex.admin-graphql-ide",
+    "vtex.graphql-server": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.graphql-server@1.67.4/public/_types/react",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit && tslint -c tslint.json './**/*.ts'"
+  },
+  "version": "3.7.0"
+}

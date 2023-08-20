@@ -1,0 +1,6 @@
+mutation DeleteLink($id: String) {
+  deleteLink(id: $id) @context(provider: "kuikpay.my-checkout") {
+    removed
+    id
+  }
+}

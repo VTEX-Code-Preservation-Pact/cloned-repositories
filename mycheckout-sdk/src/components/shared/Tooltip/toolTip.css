@@ -1,0 +1,29 @@
+.tooltip .contentTooltip {
+  visibility: hidden;
+  position: absolute;
+  min-width: 120px;
+  max-width: 340px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  z-index: 1000000000000;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  background: #ffffff;
+  right: 0;
+  top: -40px;
+}
+
+.tooltip:hover .contentTooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltipChildren {
+  cursor: pointer;
+}
+
+.contentTooltip span {
+  color: #1b998b;
+}

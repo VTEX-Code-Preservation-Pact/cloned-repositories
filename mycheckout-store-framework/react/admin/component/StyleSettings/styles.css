@@ -1,0 +1,31 @@
+.StyleSettingsContainer {
+  background-color: #f2f4f5;
+  padding: 26px;
+  margin-right: 300px;
+  min-height: 100vh;
+}
+
+.StyleSettingsContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.StyleSettingsPreview {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.StyleSettingsMenu {
+  background: #fff;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+}

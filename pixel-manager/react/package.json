@@ -1,0 +1,28 @@
+{
+  "name": "vtex.pixel-manager",
+  "version": "1.9.0",
+  "private": true,
+  "scripts": {
+    "test": "vtex-test-tools test"
+  },
+  "dependencies": {
+    "graphql": "^14.0.2",
+    "hoist-non-react-statics": "^3.2.1",
+    "ramda": "^0.26.1",
+    "react-apollo": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/hoist-non-react-statics": "^3.0.1",
+    "@types/jest": "^24.0.3",
+    "@types/prop-types": "^15.5.8",
+    "@types/ramda": "types/npm-ramda#dist",
+    "@types/react": "^16.7.17",
+    "@vtex/test-tools": "^3.3.2",
+    "@vtex/tsconfig": "^0.4.4",
+    "graphql-tag": "^2.10.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
+    "typescript": "3.9.7",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.128.2/public/@types/vtex.render-runtime"
+  }
+}

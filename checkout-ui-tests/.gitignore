@@ -1,0 +1,10 @@
+/node_modules
+/dist
+cypress/videos
+cypress/screenshots
+cypress/results
+.DS_Store
+.env
+output.html
+yarn-error.log
+.eslintcache
