@@ -30,7 +30,7 @@
     "is-retry-allowed": "^1.1.0"
   },
   "devDependencies": {
-    "axios": "^0.15.2",
+    "axios": "^1.6.0",
     "babel-cli": "^6.10.1",
     "babel-eslint": "^8.2.2",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
