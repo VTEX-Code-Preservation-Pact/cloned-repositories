@@ -1,0 +1,46 @@
+.group {
+  font-size: 13px;
+  padding: 8px 0 12px;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+}
+
+.info {
+  flex: auto;
+  border-right: 1px solid #eee;
+  padding-right: 6px;
+}
+
+.price {
+  flex: none;
+  padding: 0 4px 0 12px;
+}
+
+.summaryPackage:last-child {
+  margin-bottom: 0;
+}
+
+.address {
+  margin-bottom: 8px;
+}
+
+.pickupAddress {
+  display: none;
+}
+
+.address :global .postal-code-dash,
+.address :global .postal-code,
+.address :global .country-dash,
+.address :global .country {
+  display: none;
+}

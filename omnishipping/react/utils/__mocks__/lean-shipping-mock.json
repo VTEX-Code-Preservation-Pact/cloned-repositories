@@ -1,0 +1,1634 @@
+{
+  "delivery": {
+    "CHEAPEST": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Econômica",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "37",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 1,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 200,
+            "listPrice": 200,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "38",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 2,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 24,
+            "listPrice": 24,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 91,
+            "listPrice": 91,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "250",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 3,
+        "selectedSla": "PAC",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 37,
+            "listPrice": 37,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 500,
+            "listPrice": 500,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "260",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 4,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 36,
+            "listPrice": 36,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 238,
+            "listPrice": 238,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 909,
+            "listPrice": 909,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "261",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 5,
+        "selectedSla": "retirada na loja (141125d)",
+        "selectedDeliveryChannel": "pickup-in-point",
+        "addressId": "-6095975179840",
+        "slas": [
+          {
+            "id": "Expressa",
+            "deliveryChannel": "delivery",
+            "name": "Expressa",
+            "deliveryIds": [
+              {
+                "courierId": "2",
+                "warehouseId": "1c55d69",
+                "dockId": "1aa7e0f",
+                "courierName": "SEDEX",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "5bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1000,
+            "listPrice": 1000,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "retirada na loja (141125d)",
+            "deliveryChannel": "pickup-in-point",
+            "name": "retirada na loja (141125d)",
+            "deliveryIds": [
+              {
+                "courierId": "1765348",
+                "warehouseId": "155d8ff",
+                "dockId": "12db23b",
+                "courierName": "Retirada na loja",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "0bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": true,
+              "friendlyName": "Rio de Janeiro",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "141125d",
+                "postalCode": "22011050",
+                "city": "Rio de Janeiro",
+                "state": "RJ",
+                "country": "BRA",
+                "street": "Rua General Azevedo Pimentel",
+                "number": "5",
+                "neighborhood": "Copacabana",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [-43.18080139160156, -22.96540069580078]
+              },
+              "additionalInfo": "",
+              "dockId": "12db23b",
+              "distance": 2.1920940010984267
+            },
+            "pickupPointId": "1_141125d"
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "35",
+        "deliveryChannels": [
+          {
+            "id": "pickup-in-point"
+          },
+          {
+            "id": "delivery"
+          }
+        ]
+      }
+    ],
+    "FASTEST": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Econômica",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "37",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 1,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 200,
+            "listPrice": 200,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "38",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 2,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 24,
+            "listPrice": 24,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 91,
+            "listPrice": 91,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "250",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 3,
+        "selectedSla": "PAC",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 37,
+            "listPrice": 37,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 500,
+            "listPrice": 500,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "260",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 4,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 36,
+            "listPrice": 36,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 238,
+            "listPrice": 238,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 909,
+            "listPrice": 909,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "261",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 5,
+        "selectedSla": "retirada na loja (141125d)",
+        "selectedDeliveryChannel": "pickup-in-point",
+        "addressId": "-6095975179840",
+        "slas": [
+          {
+            "id": "Expressa",
+            "deliveryChannel": "delivery",
+            "name": "Expressa",
+            "deliveryIds": [
+              {
+                "courierId": "2",
+                "warehouseId": "1c55d69",
+                "dockId": "1aa7e0f",
+                "courierName": "SEDEX",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "5bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1000,
+            "listPrice": 1000,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "retirada na loja (141125d)",
+            "deliveryChannel": "pickup-in-point",
+            "name": "retirada na loja (141125d)",
+            "deliveryIds": [
+              {
+                "courierId": "1765348",
+                "warehouseId": "155d8ff",
+                "dockId": "12db23b",
+                "courierName": "Retirada na loja",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "0bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": true,
+              "friendlyName": "Rio de Janeiro",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "141125d",
+                "postalCode": "22011050",
+                "city": "Rio de Janeiro",
+                "state": "RJ",
+                "country": "BRA",
+                "street": "Rua General Azevedo Pimentel",
+                "number": "5",
+                "neighborhood": "Copacabana",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [-43.18080139160156, -22.96540069580078]
+              },
+              "additionalInfo": "",
+              "dockId": "12db23b",
+              "distance": 2.1920940010984267
+            },
+            "pickupPointId": "1_141125d"
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "35",
+        "deliveryChannels": [
+          {
+            "id": "pickup-in-point"
+          },
+          {
+            "id": "delivery"
+          }
+        ]
+      }
+    ],
+    "COMBINED": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Econômica",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "37",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 1,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 200,
+            "listPrice": 200,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "38",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 3,
+        "selectedSla": "PAC",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 37,
+            "listPrice": 37,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 500,
+            "listPrice": 500,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "260",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 2,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 24,
+            "listPrice": 24,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 91,
+            "listPrice": 91,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "250",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 4,
+        "selectedSla": "Motoboy",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-4571981384880",
+        "slas": [
+          {
+            "id": "Econômica",
+            "deliveryChannel": "delivery",
+            "name": "Econômica",
+            "deliveryIds": [
+              {
+                "courierId": "10014ba",
+                "warehouseId": "14a6ebe",
+                "dockId": "11d7fbf",
+                "courierName": "Baratex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "10bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "13dc8d5",
+                "warehouseId": "18c66ea",
+                "dockId": "14415ab",
+                "courierName": "Default",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 36,
+            "listPrice": 36,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "12ee196",
+                "warehouseId": "1033885",
+                "dockId": "1cdc3ec",
+                "courierName": "Novo PAC",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 238,
+            "listPrice": 238,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "Motoboy",
+            "deliveryChannel": "delivery",
+            "name": "Motoboy",
+            "deliveryIds": [
+              {
+                "courierId": "1c663a9",
+                "warehouseId": "12a870c",
+                "dockId": "17053b4",
+                "courierName": "Bike Delivery",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "60m",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 909,
+            "listPrice": 909,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "261",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 5,
+        "selectedSla": "retirada na loja (141125d)",
+        "selectedDeliveryChannel": "pickup-in-point",
+        "addressId": "-6095975179840",
+        "slas": [
+          {
+            "id": "Expressa",
+            "deliveryChannel": "delivery",
+            "name": "Expressa",
+            "deliveryIds": [
+              {
+                "courierId": "2",
+                "warehouseId": "1c55d69",
+                "dockId": "1aa7e0f",
+                "courierName": "SEDEX",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "5bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1000,
+            "listPrice": 1000,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null,
+              "distance": null
+            },
+            "pickupPointId": null
+          },
+          {
+            "id": "retirada na loja (141125d)",
+            "deliveryChannel": "pickup-in-point",
+            "name": "retirada na loja (141125d)",
+            "deliveryIds": [
+              {
+                "courierId": "1765348",
+                "warehouseId": "155d8ff",
+                "dockId": "12db23b",
+                "courierName": "Retirada na loja",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "0bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": true,
+              "friendlyName": "Rio de Janeiro",
+              "address": {
+                "addressType": "pickup",
+                "receiverName": null,
+                "addressId": "141125d",
+                "postalCode": "22011050",
+                "city": "Rio de Janeiro",
+                "state": "RJ",
+                "country": "BRA",
+                "street": "Rua General Azevedo Pimentel",
+                "number": "5",
+                "neighborhood": "Copacabana",
+                "complement": "",
+                "reference": null,
+                "geoCoordinates": [-43.18080139160156, -22.96540069580078]
+              },
+              "additionalInfo": "",
+              "dockId": "12db23b",
+              "distance": 2.1920940010984267
+            },
+            "pickupPointId": "1_141125d"
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "35",
+        "deliveryChannels": [
+          {
+            "id": "pickup-in-point"
+          },
+          {
+            "id": "delivery"
+          }
+        ]
+      }
+    ],
+    "activeDeliveryOption": "CHEAPEST"
+  }
+}

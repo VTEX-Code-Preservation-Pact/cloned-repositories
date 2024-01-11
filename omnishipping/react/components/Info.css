@@ -1,0 +1,25 @@
+.alert {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #368df7;
+  border-radius: 4px;
+  font-size: 12px;
+  margin-bottom: 20px;
+  padding: 10px;
+  line-height: 1.2;
+}
+
+.infoIcon {
+  border: 1px solid #368df7;
+  border-radius: 100%;
+  display: block;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  margin-right: 8px;
+  flex: none;
+}
+
+.text {
+  flex: auto;
+}

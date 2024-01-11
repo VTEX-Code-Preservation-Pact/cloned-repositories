@@ -1,0 +1,31 @@
+.toggle {
+  background-color: #969799;
+  border-radius: 20px;
+  height: 12px;
+  margin-right: 14px;
+  position: relative;
+  width: 24px;
+  transition: 0.3s ease;
+}
+
+.toggleActive {
+  background-color: #368df7;
+}
+
+.toggleInner {
+  background-color: #ffffff;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
+  margin: 1.5px 2px;
+  top: 1px;
+  left: 0;
+  position: absolute;
+  transition: 0.3s ease;
+}
+
+.toggleInnerActive {
+  background-color: #ffffff;
+  left: unset;
+  right: 0;
+}

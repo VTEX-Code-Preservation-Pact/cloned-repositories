@@ -1,0 +1,83 @@
+.date {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.datePopper {
+  z-index: 10 !important;
+}
+
+.dateLinkModify {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: #08c;
+  font-size: 13px;
+  outline: none;
+  margin: 0;
+  padding: 2px 0 4px;
+}
+
+.dateLink {
+  border: 1px solid #357edd;
+  border-radius: 4px;
+  color: #357edd;
+  display: block;
+  font-size: 12px;
+  margin: 10px 0;
+  padding: 5px 8px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+@media (max-width: 490px) {
+  .dateLink {
+    width: calc(100vw - 50px);
+  }
+}
+
+@media (min-width: 491px) and (max-width: 766px) {
+  .dateLink {
+    width: calc(100vw - 100px);
+  }
+}
+
+@media (min-width: 767px) {
+  .dateLink {
+    width: 270px;
+  }
+}
+
+.dateLinkInvalid {
+  border: 1px solid red;
+  color: red;
+}
+
+.selectedDate {
+  display: inline-block;
+  margin-right: 4px;
+  margin: 10px 4px 10px 0;
+}
+
+.dateLink,
+.dateLink:hover,
+.dateLink:active {
+  background: none;
+}
+
+.scheduledDelivery {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 12px;
+}
+
+.scheduledDeliveryTitle {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.deliveryWindowPrice {
+  margin-left: 10px;
+}

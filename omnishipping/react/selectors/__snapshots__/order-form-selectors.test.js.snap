@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`order-form-selectors should get selected delivery address 1`] = `
+Object {
+  "addressType": "residential",
+}
+`;
+
+exports[`order-form-selectors should get shippingData 1`] = `
+Object {
+  "logisticsInfo": Array [
+    Object {
+      "itemIndex": 0,
+      "selectedDeliveryChannel": "delivery",
+      "selectedSla": "Entrega Agendada",
+      "shipsTo": Array [
+        "BRA",
+      ],
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [
+            Object {},
+          ],
+          "deliveryChannel": "delivery",
+          "deliveryWindow": null,
+          "id": "Entrega Agendada",
+        },
+      ],
+    },
+    Object {
+      "itemIndex": 1,
+      "selectedDeliveryChannel": "pickup-in-point",
+      "selectedSla": "pickup-in-point",
+      "shipsTo": Array [
+        "BRA",
+      ],
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "deliveryWindow": null,
+          "id": "pickup-in-point",
+        },
+      ],
+    },
+    Object {
+      "itemIndex": 2,
+      "selectedDeliveryChannel": "delivery",
+      "selectedSla": "delivery",
+      "shipsTo": Array [
+        "BRA",
+      ],
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [
+            Object {},
+          ],
+          "deliveryChannel": "delivery",
+          "deliveryWindow": null,
+          "id": "delivery",
+        },
+      ],
+    },
+  ],
+  "selectedAddresses": Array [
+    Object {
+      "addressType": "residential",
+    },
+  ],
+}
+`;

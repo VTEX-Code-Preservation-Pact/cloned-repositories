@@ -1,0 +1,253 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderForm reducer should handle UPDATE_ADDRESS_FORM if it's the different addressId 1`] = `
+Object {
+  "canEditData": true,
+  "shippingData": Object {
+    "availableAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "residential",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+    "logisticsInfo": Array [
+      Object {
+        "addressId": "12341116",
+        "selectedDeliveryChannel": "delivery",
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "residential",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "countryCode": "BRA",
+  },
+}
+`;
+
+exports[`OrderForm reducer should handle UPDATE_ADDRESS_FORM if it's the same addressId 1`] = `
+Object {
+  "shippingData": Object {
+    "logisticsInfo": Array [
+      Object {
+        "addressId": "11",
+        "selectedDeliveryChannel": "delivery",
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "search",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "countryCode": "BRA",
+  },
+}
+`;
+
+exports[`OrderForm reducer should handle UPDATE_ORDERFORM with delivery 1`] = `
+Object {
+  "canEditData": true,
+  "clientPreferencesData": Object {},
+  "clientProfileData": Object {},
+  "giftRegistryData": Object {},
+  "items": Array [
+    Object {},
+  ],
+  "loggedIn": false,
+  "marketingData": undefined,
+  "orderFormId": "test",
+  "salesChannel": "2",
+  "selectableGifts": undefined,
+  "sellers": Array [],
+  "shippingData": Object {
+    "address": Object {
+      "addressId": "10",
+    },
+    "logisticsInfo": Array [
+      Object {
+        "addressId": undefined,
+        "deliveryChannels": Array [
+          Object {
+            "id": "pickup-in-point",
+          },
+          Object {
+            "id": "delivery",
+          },
+        ],
+        "slas": Array [
+          Object {
+            "id": "Test",
+          },
+        ],
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressType": "residential",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "currencyFormatInfo": Object {
+      "currencyDecimalDigits": "",
+      "currencyDecimalSeparator": "",
+      "currencyGroupSeparator": "",
+      "startsWithCurrencySymbol": "",
+    },
+    "currencySymbol": "",
+  },
+}
+`;
+
+exports[`OrderForm reducer should handle UPDATE_ORDERFORM with only PICKUP 1`] = `
+Object {
+  "canEditData": true,
+  "clientPreferencesData": Object {},
+  "clientProfileData": Object {},
+  "giftRegistryData": Object {},
+  "items": Array [
+    Object {},
+  ],
+  "loggedIn": false,
+  "marketingData": undefined,
+  "orderFormId": "test",
+  "salesChannel": "2",
+  "selectableGifts": undefined,
+  "sellers": Array [],
+  "shippingData": Object {
+    "address": Object {
+      "addressId": "10",
+    },
+    "logisticsInfo": Array [
+      Object {
+        "addressId": undefined,
+        "deliveryChannels": Array [
+          Object {
+            "id": "pickup-in-point",
+          },
+        ],
+        "slas": Array [
+          Object {
+            "id": "Test",
+          },
+        ],
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressType": "residential",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "currencyFormatInfo": Object {
+      "currencyDecimalDigits": "",
+      "currencyDecimalSeparator": "",
+      "currencyGroupSeparator": "",
+      "startsWithCurrencySymbol": "",
+    },
+    "currencySymbol": "",
+  },
+}
+`;
+
+exports[`OrderForm reducer should handle UPDATE_ORDERFORM with validation 1`] = `
+Object {
+  "canEditData": true,
+  "clientPreferencesData": Object {},
+  "clientProfileData": Object {},
+  "giftRegistryData": Object {},
+  "items": Array [
+    Object {},
+  ],
+  "loggedIn": false,
+  "marketingData": undefined,
+  "orderFormId": "test",
+  "salesChannel": "2",
+  "selectableGifts": undefined,
+  "sellers": Array [],
+  "shippingData": Object {
+    "address": Object {
+      "addressId": Object {
+        "value": "10",
+      },
+    },
+    "logisticsInfo": Array [
+      Object {
+        "addressId": undefined,
+        "deliveryChannels": Array [
+          Object {
+            "id": "pickup-in-point",
+          },
+          Object {
+            "id": "delivery",
+          },
+        ],
+        "slas": Array [
+          Object {
+            "id": "Test",
+          },
+        ],
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressType": "residential",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "currencyFormatInfo": Object {
+      "currencyDecimalDigits": "",
+      "currencyDecimalSeparator": "",
+      "currencyGroupSeparator": "",
+      "startsWithCurrencySymbol": "",
+    },
+    "currencySymbol": "",
+  },
+}
+`;
+
+exports[`OrderForm reducer should handle UPDATE_ORDERFORM with without slas 1`] = `Array []`;
+
+exports[`OrderForm reducer should return the initial state 1`] = `Object {}`;

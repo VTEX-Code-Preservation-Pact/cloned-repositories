@@ -1,0 +1,3789 @@
+{
+  "orderFormId": "36a8e10fc5df45b0a0b41bd2ed980f0c",
+  "salesChannel": "1",
+  "loggedIn": false,
+  "isCheckedIn": false,
+  "storeId": null,
+  "allowManualPrice": false,
+  "canEditData": true,
+  "userProfileId": null,
+  "userType": null,
+  "ignoreProfileData": false,
+  "value": 36607,
+  "messages": [],
+  "items": [
+    {
+      "uniqueId": "84EED5028AD24938A7969F689BADE441",
+      "id": "15",
+      "productId": "4",
+      "refId": "produtohomologação",
+      "ean": "produtohomologação",
+      "name": "Novalgina",
+      "skuName": "Novalgina",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 5700,
+      "listPrice": 8000,
+      "manualPrice": null,
+      "sellingPrice": 5700,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/5/",
+      "productCategories": {
+        "5": "Categoria 2.3 (Campo Produto)",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155400-55-55/Novalgina.jpg?v=635985172600570000",
+      "detailUrl": "/novalgina/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [
+        {
+          "name": "Receita",
+          "required": false,
+          "schema": {
+            "Nome1": {
+              "maximumNumberOfCharacters": 5,
+              "domain": []
+            },
+            "Teste": {
+              "maximumNumberOfCharacters": 10,
+              "domain": ["0987654321"]
+            },
+            "Embalagem": {
+              "maximumNumberOfCharacters": 6,
+              "domain": ["true", " false"]
+            }
+          }
+        }
+      ],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "2B7F342DA8EC49608892F4028ECF5D33",
+      "id": "1",
+      "productId": "1",
+      "refId": null,
+      "ean": "SKUUN14",
+      "name": "Produto Simples 2 Sku Simples 2",
+      "skuName": "Sku Simples 2",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 7000,
+      "listPrice": 10000,
+      "manualPrice": null,
+      "sellingPrice": 7000,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/7/",
+      "productCategories": {
+        "7": "Categoria 2.1",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1", "qamarketplacefranquia5"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155378-55-55/ProdutoSimples2.png?v=635930460938200000",
+      "detailUrl": "/produto-simples-2/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [
+        {
+          "name": "Anexo não obrigatório",
+          "required": false,
+          "schema": {
+            "Embalagem": {
+              "maximumNumberOfCharacters": 5,
+              "domain": ["true", "false"]
+            }
+          }
+        }
+      ],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "378B5AE1F42A46789B2605DC6E1635DF",
+      "id": "13",
+      "productId": "2",
+      "refId": null,
+      "ean": "SKUVR2",
+      "name": "Produto Variação SKU Variação 2 Verde",
+      "skuName": "SKU Variação 2 Verde",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 8000,
+      "listPrice": 10000,
+      "manualPrice": null,
+      "sellingPrice": 8000,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/6/",
+      "productCategories": {
+        "6": "Categoria 2.2 ( campo sku)",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155380-55-55/ProdutoVariacaoSku.png?v=635930463741570000",
+      "detailUrl": "/produto-variacao/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "38147E06551B4168A505D9E7650C63B2",
+      "id": "14",
+      "productId": "2",
+      "refId": null,
+      "ean": "SKUVR3",
+      "name": "Produto Variação SKU Variação 3 Vermelha",
+      "skuName": "SKU Variação 3 Vermelha",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 8000,
+      "listPrice": 10000,
+      "manualPrice": null,
+      "sellingPrice": 8000,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/6/",
+      "productCategories": {
+        "6": "Categoria 2.2 ( campo sku)",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155381-55-55/ProdutoVariacaoSku.png?v=635930463979270000",
+      "detailUrl": "/produto-variacao/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "78029232481A4F80AE1C8C2B7B8721D0",
+      "id": "26",
+      "productId": "15",
+      "refId": null,
+      "ean": "Sku anexo obrigatorio",
+      "name": "Produto com anexo obrigatorio Sku anexo obrigatorio",
+      "skuName": "Sku anexo obrigatorio",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 820,
+      "listPrice": 1399,
+      "manualPrice": null,
+      "sellingPrice": 820,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca 2",
+        "brandId": "2000002",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/1/2/",
+      "productCategories": {
+        "2": "Categoria 1.1",
+        "1": "Departamento 1"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155363-55-55/Produto-com-item-attachment-obrigatorio.png?v=635815593663570000",
+      "detailUrl": "/produto-com-anexo-obrigatorio/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [
+        {
+          "name": "Principa2",
+          "content": {
+            "periodo": "1 semana"
+          }
+        }
+      ],
+      "itemAttachment": {
+        "name": "Principa2",
+        "content": {
+          "periodo": "1 semana"
+        }
+      },
+      "attachmentOfferings": [
+        {
+          "name": "Principa2",
+          "required": true,
+          "schema": {
+            "periodo": {
+              "maximumNumberOfCharacters": 8,
+              "domain": ["1 semana"]
+            }
+          }
+        }
+      ],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "920F53537AFD49CBAF7484FD33F953AE",
+      "id": "30",
+      "productId": "19",
+      "refId": null,
+      "ean": "Sku Entrega Agendada",
+      "name": "Produto Entrega Agendada Sku Entrega Agendada",
+      "skuName": "Sku Entrega Agendada",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 250,
+      "listPrice": 300,
+      "manualPrice": null,
+      "sellingPrice": 250,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca 2",
+        "brandId": "2000002",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/7/",
+      "productCategories": {
+        "7": "Categoria 2.1",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155368-55-55/Produto-com-entrega-agendada.png?v=635830207919730000",
+      "detailUrl": "/produto-entregaga-agendada/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [],
+      "offerings": [],
+      "priceTags": [
+        {
+          "name":
+            "tax@shipping-64923ac1-c3d9-4a01-80a6-abbe386603f6#1c844dd8-6462-40c2-95c6-dc0f2a1a68fb",
+          "value": 10,
+          "rawValue": 0.1,
+          "isPercentual": true,
+          "identifier": "64923ac1-c3d9-4a01-80a6-abbe386603f6"
+        }
+      ],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "477CD38561FF45FB8E0664D3ABC727DA",
+      "id": "12",
+      "productId": "3",
+      "refId": null,
+      "ean": "SKUVRCOR2TAM5",
+      "name": "Produto Variação Cor e Tam SKU Variação Cor2 e Tam 5",
+      "skuName": "SKU Variação Cor2 e Tam 5",
+      "modalType": null,
+      "priceValidUntil": "2018-11-06T13:28:40.1538052Z",
+      "tax": 0,
+      "price": 4099,
+      "listPrice": 10000,
+      "manualPrice": null,
+      "sellingPrice": 4099,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/4/5/",
+      "productCategories": {
+        "5": "Categoria 2.3 (Campo Produto)",
+        "4": "Departamento 2"
+      },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "1",
+      "sellerChain": ["1"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155388-55-55/ProdutoVariacaoCorTamanho.png?v=635930470529700000",
+      "detailUrl": "/produto-variacao-cor-e-tam/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": {
+        "name": null,
+        "content": {}
+      },
+      "attachmentOfferings": [],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    }
+  ],
+  "selectableGifts": [],
+  "products": [],
+  "totalizers": [
+    {
+      "id": "Items",
+      "name": "Total dos Itens",
+      "value": 33869
+    },
+    {
+      "id": "Shipping",
+      "name": "Total do Frete",
+      "value": 2710
+    },
+    {
+      "id": "Tax",
+      "name": "Total da Taxa",
+      "value": 28
+    }
+  ],
+  "shippingData": {
+    "attachmentId": "shippingData",
+    "address": {
+      "addressType": "residential",
+      "receiverName": null,
+      "addressId": "-1509974906231",
+      "postalCode": "22071060",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "country": "BRA",
+      "street": "Rua Saint Roman",
+      "number": null,
+      "neighborhood": "Copacabana",
+      "complement": null,
+      "reference": null,
+      "geoCoordinates": []
+    },
+    "logisticsInfo": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "1",
+                "warehouseId": "169cdbc",
+                "dockId": "1",
+                "courierName": "Transportadora",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8d",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 43,
+            "listPrice": 43,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "15",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 1,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "176f0c8",
+                "warehouseId": "1029fdd",
+                "dockId": "12803e3",
+                "courierName": "Normal",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "7bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1099,
+            "listPrice": 1099,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "1",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 2,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "1",
+                "warehouseId": "169cdbc",
+                "dockId": "1",
+                "courierName": "Transportadora",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8d",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 429,
+            "listPrice": 429,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "13",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 3,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "1",
+                "warehouseId": "169cdbc",
+                "dockId": "1",
+                "courierName": "Transportadora",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8d",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 429,
+            "listPrice": 429,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "14",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 4,
+        "selectedSla": "PAC",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "PAC",
+            "deliveryChannel": "delivery",
+            "name": "PAC",
+            "deliveryIds": [
+              {
+                "courierId": "155ad08",
+                "warehouseId": "1f995ee",
+                "dockId": "1125a08",
+                "courierName": "[Teste QA] Nao Mexer",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "1",
+                "warehouseId": "169cdbc",
+                "dockId": "1",
+                "courierName": "Transportadora",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8d",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 172,
+            "listPrice": 172,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Entrega Agendada",
+            "deliveryChannel": "delivery",
+            "name": "Entrega Agendada",
+            "deliveryIds": [
+              {
+                "courierId": "19029e0",
+                "warehouseId": "19a797c",
+                "dockId": "1befa63",
+                "courierName": "Transportadadora Entrega Agendada",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [
+              {
+                "startDateUtc": "2017-11-09T12:00:00+00:00",
+                "endDateUtc": "2017-11-09T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-09T17:00:00+00:00",
+                "endDateUtc": "2017-11-09T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-09T22:00:00+00:00",
+                "endDateUtc": "2017-11-09T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T06:00:00+00:00",
+                "endDateUtc": "2017-11-10T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T12:00:00+00:00",
+                "endDateUtc": "2017-11-10T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T17:00:00+00:00",
+                "endDateUtc": "2017-11-10T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T22:00:00+00:00",
+                "endDateUtc": "2017-11-10T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T06:00:00+00:00",
+                "endDateUtc": "2017-11-11T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T12:00:00+00:00",
+                "endDateUtc": "2017-11-11T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T17:00:00+00:00",
+                "endDateUtc": "2017-11-11T22:00:00+00:00",
+                "price": 300,
+                "lisPrice": 300,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T22:00:00+00:00",
+                "endDateUtc": "2017-11-11T00:00:00+00:00",
+                "price": 400,
+                "lisPrice": 400,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T06:00:00+00:00",
+                "endDateUtc": "2017-11-12T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T12:00:00+00:00",
+                "endDateUtc": "2017-11-12T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T17:00:00+00:00",
+                "endDateUtc": "2017-11-12T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T22:00:00+00:00",
+                "endDateUtc": "2017-11-12T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 0
+              }
+            ],
+            "deliveryWindow": null,
+            "price": 249,
+            "listPrice": 249,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Sedex",
+            "deliveryChannel": "delivery",
+            "name": "Sedex",
+            "deliveryIds": [
+              {
+                "courierId": "1d1b046",
+                "warehouseId": "1_1",
+                "dockId": "TESTE CHECKOUT",
+                "courierName": "Teste CHECKOUT Sedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "7bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 6512,
+            "listPrice": 6512,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "26",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 5,
+        "selectedSla": "Entrega Agendada",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Entrega Agendada",
+            "deliveryChannel": "delivery",
+            "name": "Entrega Agendada",
+            "deliveryIds": [
+              {
+                "courierId": "19029e0",
+                "warehouseId": "19a797c",
+                "dockId": "1befa63",
+                "courierName": "Transportadadora Entrega Agendada",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [
+              {
+                "startDateUtc": "2017-11-09T12:00:00+00:00",
+                "endDateUtc": "2017-11-09T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-09T17:00:00+00:00",
+                "endDateUtc": "2017-11-09T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-09T22:00:00+00:00",
+                "endDateUtc": "2017-11-09T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-10T06:00:00+00:00",
+                "endDateUtc": "2017-11-10T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-10T12:00:00+00:00",
+                "endDateUtc": "2017-11-10T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-10T17:00:00+00:00",
+                "endDateUtc": "2017-11-10T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-10T22:00:00+00:00",
+                "endDateUtc": "2017-11-10T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-11T06:00:00+00:00",
+                "endDateUtc": "2017-11-11T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-11T12:00:00+00:00",
+                "endDateUtc": "2017-11-11T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-11T17:00:00+00:00",
+                "endDateUtc": "2017-11-11T22:00:00+00:00",
+                "price": 300,
+                "lisPrice": 300,
+                "tax": 30
+              },
+              {
+                "startDateUtc": "2017-11-11T22:00:00+00:00",
+                "endDateUtc": "2017-11-11T00:00:00+00:00",
+                "price": 400,
+                "lisPrice": 400,
+                "tax": 40
+              },
+              {
+                "startDateUtc": "2017-11-12T06:00:00+00:00",
+                "endDateUtc": "2017-11-12T12:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-12T12:00:00+00:00",
+                "endDateUtc": "2017-11-12T15:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-12T17:00:00+00:00",
+                "endDateUtc": "2017-11-12T22:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              },
+              {
+                "startDateUtc": "2017-11-12T22:00:00+00:00",
+                "endDateUtc": "2017-11-12T00:00:00+00:00",
+                "price": 200,
+                "lisPrice": 200,
+                "tax": 20
+              }
+            ],
+            "deliveryWindow": null,
+            "price": 281,
+            "listPrice": 281,
+            "tax": 28,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "30",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      },
+      {
+        "itemIndex": 6,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1509974906231",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "1",
+                "warehouseId": "169cdbc",
+                "dockId": "1",
+                "courierName": "Transportadora",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "8d",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 429,
+            "listPrice": 429,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "12",
+        "deliveryChannels": [
+          {
+            "id": "delivery"
+          }
+        ]
+      }
+    ],
+    "selectedAddresses": [
+      {
+        "addressType": "residential",
+        "receiverName": null,
+        "addressId": "-1509974906231",
+        "postalCode": "22071060",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "country": "BRA",
+        "street": "Rua Saint Roman",
+        "number": null,
+        "neighborhood": "Copacabana",
+        "complement": null,
+        "reference": null,
+        "geoCoordinates": []
+      }
+    ],
+    "availableAddresses": [
+      {
+        "addressType": "residential",
+        "receiverName": null,
+        "addressId": "-1509974906231",
+        "postalCode": "22071060",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "country": "BRA",
+        "street": "Rua Saint Roman",
+        "number": null,
+        "neighborhood": "Copacabana",
+        "complement": null,
+        "reference": null,
+        "geoCoordinates": []
+      }
+    ]
+  },
+  "clientProfileData": {
+    "attachmentId": "clientProfileData",
+    "email": "shipping10.802957305089823@mailinator.com",
+    "firstName": "auto",
+    "lastName": "auto",
+    "document": "12345678909",
+    "documentType": "cpf",
+    "phone": "+552222222222",
+    "corporateName": null,
+    "tradeName": null,
+    "corporateDocument": null,
+    "stateInscription": null,
+    "corporatePhone": null,
+    "isCorporate": false,
+    "profileCompleteOnLoading": false,
+    "profileErrorOnLoading": false,
+    "customerClass": null
+  },
+  "paymentData": {
+    "installmentOptions": [
+      {
+        "paymentSystem": "1",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": true,
+            "interestRate": 100,
+            "value": 18578,
+            "total": 37156,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": true,
+                "interestRate": 100,
+                "value": 18578,
+                "total": 37156
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": true,
+            "interestRate": 200,
+            "value": 12693,
+            "total": 38079,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 3,
+                "hasInterestRate": true,
+                "interestRate": 200,
+                "value": 12693,
+                "total": 38079
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "2",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 12,
+            "hasInterestRate": true,
+            "interestRate": 2769,
+            "value": 10706,
+            "total": 128472,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 12,
+                "hasInterestRate": true,
+                "interestRate": 2769,
+                "value": 10706,
+                "total": 128472
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "3",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 18303,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 18303,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "4",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 18303,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 18303,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 12202,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 12202,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 9151,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 9151,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 7321,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 7321,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 6101,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 6101,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 7,
+            "hasInterestRate": true,
+            "interestRate": 100,
+            "value": 5440,
+            "total": 38080,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 7,
+                "hasInterestRate": true,
+                "interestRate": 100,
+                "value": 5440,
+                "total": 38080
+              }
+            ]
+          },
+          {
+            "count": 8,
+            "hasInterestRate": true,
+            "interestRate": 200,
+            "value": 4997,
+            "total": 39976,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 8,
+                "hasInterestRate": true,
+                "interestRate": 200,
+                "value": 4997,
+                "total": 39976
+              }
+            ]
+          },
+          {
+            "count": 9,
+            "hasInterestRate": true,
+            "interestRate": 300,
+            "value": 4701,
+            "total": 42309,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 9,
+                "hasInterestRate": true,
+                "interestRate": 300,
+                "value": 4701,
+                "total": 42309
+              }
+            ]
+          },
+          {
+            "count": 10,
+            "hasInterestRate": true,
+            "interestRate": 400,
+            "value": 4513,
+            "total": 45130,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 10,
+                "hasInterestRate": true,
+                "interestRate": 400,
+                "value": 4513,
+                "total": 45130
+              }
+            ]
+          },
+          {
+            "count": 11,
+            "hasInterestRate": true,
+            "interestRate": 500,
+            "value": 4407,
+            "total": 48477,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 11,
+                "hasInterestRate": true,
+                "interestRate": 500,
+                "value": 4407,
+                "total": 48477
+              }
+            ]
+          },
+          {
+            "count": 12,
+            "hasInterestRate": true,
+            "interestRate": 600,
+            "value": 4366,
+            "total": 52392,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 12,
+                "hasInterestRate": true,
+                "interestRate": 600,
+                "value": 4366,
+                "total": 52392
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "5",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "6",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "7",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 18303,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 18303,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 12202,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 12202,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 9151,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 9151,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 7321,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 7321,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 6101,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 6101,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 7,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 5229,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 7,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 5229,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 8,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 4575,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 8,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 4575,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 9,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 4067,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 9,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 4067,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 10,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 3660,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 10,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 3660,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 11,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 3327,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 11,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 3327,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 12,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 3050,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 12,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 3050,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 13,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2815,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 13,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2815,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 14,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2614,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 14,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2614,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 15,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2440,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 15,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2440,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 16,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2287,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 16,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2287,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 17,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2153,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 17,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2153,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 18,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 2033,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 18,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 2033,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 19,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1926,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 19,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1926,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 20,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1830,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 20,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1830,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 21,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1743,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 21,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1743,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 22,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1663,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 22,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1663,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 23,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1591,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 23,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1591,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 24,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 1525,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 24,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 1525,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "8",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 18303,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 18303,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 12202,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 12202,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 9151,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 9151,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 7321,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 7321,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 6101,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 6101,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 7,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 5229,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 7,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 5229,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 8,
+            "hasInterestRate": true,
+            "interestRate": 100,
+            "value": 4784,
+            "total": 38272,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 8,
+                "hasInterestRate": true,
+                "interestRate": 100,
+                "value": 4784,
+                "total": 38272
+              }
+            ]
+          },
+          {
+            "count": 9,
+            "hasInterestRate": true,
+            "interestRate": 200,
+            "value": 4484,
+            "total": 40356,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 9,
+                "hasInterestRate": true,
+                "interestRate": 200,
+                "value": 4484,
+                "total": 40356
+              }
+            ]
+          },
+          {
+            "count": 10,
+            "hasInterestRate": true,
+            "interestRate": 300,
+            "value": 4291,
+            "total": 42910,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 10,
+                "hasInterestRate": true,
+                "interestRate": 300,
+                "value": 4291,
+                "total": 42910
+              }
+            ]
+          },
+          {
+            "count": 11,
+            "hasInterestRate": true,
+            "interestRate": 400,
+            "value": 4178,
+            "total": 45958,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 11,
+                "hasInterestRate": true,
+                "interestRate": 400,
+                "value": 4178,
+                "total": 45958
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "10",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "12",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "14",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 18303,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 18303,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "16",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "22",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "30",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "44",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "45",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "47",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "49",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 5,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 7321,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 7321,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 6101,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 6101,
+                "total": 36607
+              }
+            ]
+          },
+          {
+            "count": 7,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 5229,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 7,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 5229,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "202",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "204",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "601",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430001",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430002",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430003",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430004",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430005",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430006",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430014",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430015",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430101",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430102",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "430108",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "560101",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "560102",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 36607,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 36607,
+            "total": 36607,
+            "sellerMerchantInstallments": [
+              {
+                "id": "QAMARKETPLACE",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 36607,
+                "total": 36607
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "paymentSystems": [
+      {
+        "id": 601,
+        "name": "CardPromissory",
+        "groupName": "cardPromissoryPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "601",
+        "template": "cardPromissoryPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-13T13:18:11.8986998Z",
+        "availablePayments": [
+          {
+            "Id": 1,
+            "Name": "American Express"
+          },
+          {
+            "Id": 2,
+            "Name": "Visa"
+          },
+          {
+            "Id": 3,
+            "Name": "Diners"
+          },
+          {
+            "Id": 4,
+            "Name": "Mastercard"
+          }
+        ]
+      },
+      {
+        "id": 30,
+        "name": "Webpay",
+        "groupName": "webpayPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "30",
+        "template": "webpayPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:11.9317035Z",
+        "availablePayments": null
+      },
+      {
+        "id": 12,
+        "name": "PayPal",
+        "groupName": "payPalPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "12",
+        "template": "payPalPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-08T01:18:11.9637102Z",
+        "availablePayments": null
+      },
+      {
+        "id": 5,
+        "name": "Discover",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^(6011|65[0-9]{2})[0-9]{12}$",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "5",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.0237147Z",
+        "availablePayments": null
+      },
+      {
+        "id": 10,
+        "name": "Visa Electron",
+        "groupName": "debitCardPaymentGroup",
+        "validator": {
+          "regex": "^4[0-9]{15}$",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "10",
+        "template": "debitCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.0916941Z",
+        "availablePayments": null
+      },
+      {
+        "id": 22,
+        "name": "Débito Itau",
+        "groupName": "debitPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "22",
+        "template": "debitPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.1256942Z",
+        "availablePayments": null
+      },
+      {
+        "id": 7,
+        "name": "Aura",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^50[0-9]{17}$",
+          "mask": "9999999999999999999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "7",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.2157072Z",
+        "availablePayments": null
+      },
+      {
+        "id": 47,
+        "name": "Cash",
+        "groupName": "cashPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "47",
+        "template": "cashPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-13T13:18:12.2427066Z",
+        "availablePayments": null
+      },
+      {
+        "id": 16,
+        "name": "Vale",
+        "groupName": "giftCardPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "16",
+        "template": "giftCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.2697103Z",
+        "availablePayments": null
+      },
+      {
+        "id": 202,
+        "name": "Dinheiro",
+        "groupName": "custom202PaymentGroupPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "202",
+        "template": "custom202PaymentGroupPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": "",
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-13T13:18:12.2967133Z",
+        "availablePayments": null
+      },
+      {
+        "id": 14,
+        "name": "Banricompras",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^(6396|5304\\s{0,1}1)",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "14",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": true,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T22:54:12.3246927Z",
+        "availablePayments": null
+      },
+      {
+        "id": 204,
+        "name": "testGTW",
+        "groupName": "custom204PaymentGroupPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "204",
+        "template": "custom204PaymentGroupPaymentGroup-template",
+        "requiresDocument": true,
+        "isCustom": true,
+        "description": "",
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T22:54:12.3586932Z",
+        "availablePayments": null
+      },
+      {
+        "id": 6,
+        "name": "Boleto Bancário",
+        "groupName": "bankInvoicePaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "6",
+        "template": "bankInvoicePaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T23:59:59.999Z",
+        "availablePayments": null
+      },
+      {
+        "id": 8,
+        "name": "Hipercard",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^606282|^3841(?:[0|4|6]{1})0",
+          "mask": "9999999999999999999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 1, 1, 1],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "8",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.4087258Z",
+        "availablePayments": null
+      },
+      {
+        "id": 4,
+        "name": "Mastercard",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex":
+            "^((5(1(0(0(0([0-9])|[1-9][0-9])|[1-9][0-9]{0})|[1-9][0-9]{0})|3(0(4(0([0-9]))|[0-3][0-9]{0}))|2[0-9]{0})|^5(3(0(4(2([0-9])|[3-9][0-9])|[5-9][0-9]{0})|[1-9][0-9]{0})|5(9(9(9([0-9])|[0-8][0-9])|[0-8][0-9]{0})|[0-8][0-9]{0})|4[0-9]{0}))|((508116)\\d{0,10})|((502121)\\d{0,10})|((589916)\\d{0,10})|(2[0-9]{15})|(506387)\\d{0,10})",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "4",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.463733Z",
+        "availablePayments": null
+      },
+      {
+        "id": 49,
+        "name": "PayPalPlus",
+        "groupName": "PayPalPlusPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "49",
+        "template": "PayPalPlusPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-08T01:18:12.4967348Z",
+        "availablePayments": null
+      },
+      {
+        "id": 1,
+        "name": "American Express",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^3[47][0-9]{13}$",
+          "mask": "9999 999999 99999",
+          "cardCodeRegex": "^[0-9]{4}$",
+          "cardCodeMask": "9999",
+          "weights": [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "1",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.5527428Z",
+        "availablePayments": null
+      },
+      {
+        "id": 44,
+        "name": "Venda Direta Debito",
+        "groupName": "debitDirectSalePaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "44",
+        "template": "debitDirectSalePaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.5847456Z",
+        "availablePayments": null
+      },
+      {
+        "id": 45,
+        "name": "Venda Direta Credito",
+        "groupName": "creditDirectSalePaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "45",
+        "template": "creditDirectSalePaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.6137484Z",
+        "availablePayments": null
+      },
+      {
+        "id": 3,
+        "name": "Diners",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^3(0[0-5]|[68][0-9])[0-9]{11}$",
+          "mask": "9999 999999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "3",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": true,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T22:54:12.6407035Z",
+        "availablePayments": null
+      },
+      {
+        "id": 2,
+        "name": "Visa",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^4[0-9]{15}$",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "2",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-09T13:18:12.695758Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430001,
+        "name": "Visa (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430001",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.7527631Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430002,
+        "name": "MasterCard (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430002",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.8447736Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430003,
+        "name": "Oca (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430003",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.876781Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430004,
+        "name": "RedPagos (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430004",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.9027807Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430005,
+        "name": "E-Brou - SistarBanc (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430005",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:12.9307879Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430006,
+        "name": "Banred (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430006",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.0367948Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430014,
+        "name": "Abitab (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430014",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.0677993Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430015,
+        "name": "Cabal (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430015",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.1127735Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430101,
+        "name": "Visa Itaú (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430101",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.1447779Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430102,
+        "name": "Master Itaú (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430102",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.1817402Z",
+        "availablePayments": null
+      },
+      {
+        "id": 430108,
+        "name": "Diners Itau (PagosWeb) ",
+        "groupName": "PagosWebPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "430108",
+        "template": "PagosWebPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.2587902Z",
+        "availablePayments": null
+      },
+      {
+        "id": 560101,
+        "name": "WEBPAY (PaymentHub) ",
+        "groupName": "PaymentHubPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "560101",
+        "template": "PaymentHubPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.2857914Z",
+        "availablePayments": null
+      },
+      {
+        "id": 560102,
+        "name": "CAT (PaymentHub) ",
+        "groupName": "PaymentHubPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "560102",
+        "template": "PaymentHubPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": true,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-07T13:18:13.3127959Z",
+        "availablePayments": null
+      }
+    ],
+    "payments": [],
+    "giftCards": [],
+    "giftCardMessages": [],
+    "availableAccounts": [],
+    "availableTokens": []
+  },
+  "marketingData": null,
+  "sellers": [
+    {
+      "id": "1",
+      "name": "qamarketplace",
+      "logo": ""
+    }
+  ],
+  "clientPreferencesData": {
+    "attachmentId": "clientPreferencesData",
+    "locale": "pt-BR",
+    "optinNewsLetter": true
+  },
+  "commercialConditionData": null,
+  "storePreferencesData": {
+    "countryCode": "BRA",
+    "checkToSavePersonDataByDefault": true,
+    "templateOptions": {
+      "toggleCorporate": false
+    },
+    "timeZone": "E. South America Standard Time",
+    "currencyCode": "BRL",
+    "currencyLocale": 1046,
+    "currencySymbol": "R$",
+    "currencyFormatInfo": {
+      "currencyDecimalDigits": 2,
+      "currencyDecimalSeparator": ",",
+      "currencyGroupSeparator": ".",
+      "currencyGroupSize": 3,
+      "startsWithCurrencySymbol": true
+    }
+  },
+  "giftRegistryData": null,
+  "openTextField": null,
+  "customData": null,
+  "hooksData": null,
+  "ratesAndBenefitsData": {
+    "attachmentId": "ratesAndBenefitsData",
+    "rateAndBenefitsIdentifiers": [],
+    "teaser": []
+  },
+  "itemsOrdination": null
+}

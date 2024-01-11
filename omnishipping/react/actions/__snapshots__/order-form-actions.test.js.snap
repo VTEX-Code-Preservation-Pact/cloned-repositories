@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderForm Actions should create an action change active SLAOption from a product 1`] = `[Function]`;
+
+exports[`OrderForm Actions should create an action change active tab from a product 1`] = `[Function]`;
+
+exports[`OrderForm Actions should create an action update orderForm object 1`] = `[Function]`;

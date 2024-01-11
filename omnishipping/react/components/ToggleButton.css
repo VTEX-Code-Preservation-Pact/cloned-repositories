@@ -1,0 +1,58 @@
+.deliveryChannelsOption {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  flex: 1;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  outline: none;
+  padding: 6px 0;
+  transition: 0.3s;
+  width: 50%;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  min-height: 40px;
+}
+
+.deliveryChannelsComplement {
+  font-size: 12px;
+  display: block;
+}
+
+.deliveryOptionActive {
+  color: #fff;
+}
+
+.deliveryOptionInactive {
+  color: #666;
+}
+
+.unavailable {
+  font-size: 11px;
+}
+
+.deliveryChannelsLoader {
+  width: 10px;
+  height: 10px;
+  border: 3px solid #bbb;
+  border-top: 3px solid #fff;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0.4;
+  bottom: 0;
+  left: 15px;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

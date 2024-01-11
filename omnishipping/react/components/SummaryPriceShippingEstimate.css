@@ -1,0 +1,12 @@
+.summaryPackage:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.summaryPackageTitle {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.estimateMultiple {
+  text-transform: lowercase;
+}

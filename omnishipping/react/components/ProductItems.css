@@ -1,0 +1,34 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 84px;
+  padding: 8px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item {
+  display: inline-block;
+  text-align: center;
+  width: 25%;
+}
+
+.image {
+  border: 1px solid #eee;
+  margin: 4px 0;
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.unavailable {
+  opacity: 0.5;
+}
+
+.itemsGroup {
+  margin: 8px 0 0;
+}
+
+:global .__react_component_tooltip {
+  max-width: 200px;
+}

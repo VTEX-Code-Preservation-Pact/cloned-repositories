@@ -1,0 +1,26 @@
+.addressList {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(204, 204, 204, 0.5);
+  margin-bottom: 16px;
+}
+
+.buttonEditAddress,
+.buttonCreateAddress {
+  display: block;
+  border: 1px dashed #bed0df;
+  margin-top: 10px;
+  padding: 5px 8px;
+  font-size: 12px;
+  width: 100%;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.buttonEditAddress:hover,
+.buttonCreateAddress:hover {
+  text-decoration: none;
+  border-color: #005580;
+  color: #005580;
+}

@@ -1,0 +1,1027 @@
+{
+  "orderFormId": "1b9ea670373e4eaea227ce55176b003f",
+  "salesChannel": "1",
+  "loggedIn": false,
+  "isCheckedIn": false,
+  "storeId": null,
+  "allowManualPrice": false,
+  "canEditData": true,
+  "userProfileId": null,
+  "userType": null,
+  "ignoreProfileData": false,
+  "value": 270330,
+  "messages": [],
+  "items": [
+    {
+      "uniqueId": "1EC0641585324B5CA2FD49AC22DB955C",
+      "id": "44",
+      "productId": "31",
+      "refId": null,
+      "ean": "123435terwedfq3241",
+      "name": "Produto do seller com Split",
+      "skuName": "Produto do seller com Split",
+      "modalType": null,
+      "priceValidUntil": "2018-11-07T17:43:38.4615819Z",
+      "tax": 0,
+      "price": 70000,
+      "listPrice": 70000,
+      "manualPrice": null,
+      "sellingPrice": 70000,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca 2",
+        "brandId": "2000002",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/1/",
+      "productCategories": { "1": "Departamento 1" },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "caesegatoscsplit",
+      "sellerChain": ["caesegatoscsplit"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155362-55-55/griffon-de-bruxelas_0.jpg?v=635812747651330000",
+      "detailUrl": "/produto-do-seller-com-split/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": { "name": null, "content": {} },
+      "attachmentOfferings": [],
+      "offerings": [
+        {
+          "type": "[TESTE QA]",
+          "id": "7",
+          "name": "[TESTE QA]",
+          "allowGiftMessage": false,
+          "attachmentOfferings": [],
+          "price": 5000
+        }
+      ],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    },
+    {
+      "uniqueId": "AE8BAF25007C4809A1864C6F373B4504",
+      "id": "20",
+      "productId": "9",
+      "refId": "Cod-Ref-Item-ModeloC",
+      "ean": "12345678",
+      "name": "Produto Exemplo 2 Exemplo 2",
+      "skuName": "Exemplo 2",
+      "modalType": null,
+      "priceValidUntil": "2018-11-07T17:43:38.4615819Z",
+      "tax": 0,
+      "price": 200000,
+      "listPrice": 300000,
+      "manualPrice": null,
+      "sellingPrice": 200000,
+      "orderRewardStatus": "invoiced",
+      "rewardValue": 0,
+      "isGift": false,
+      "additionalInfo": {
+        "brandName": "Marca Exemplo",
+        "brandId": "2000000",
+        "offeringInfo": null,
+        "offeringType": null,
+        "offeringTypeId": null
+      },
+      "preSaleDate": null,
+      "productCategoryIds": "/1/",
+      "productCategories": { "1": "Departamento 1" },
+      "defaultPicker": null,
+      "handlerSequence": 0,
+      "handling": false,
+      "quantity": 1,
+      "seller": "caesegatos",
+      "sellerChain": ["caesegatos"],
+      "imageUrl":
+        "http://qamarketplace.vteximg.com.br/arquivos/ids/155356-55-55/Exemplo-2_0.jpg?v=635812233096500000",
+      "detailUrl": "/produto-exemplo-2-9/p",
+      "components": [],
+      "bundleItems": [],
+      "attachments": [],
+      "itemAttachment": { "name": null, "content": {} },
+      "attachmentOfferings": [],
+      "offerings": [],
+      "priceTags": [],
+      "availability": "available",
+      "measurementUnit": "un",
+      "unitMultiplier": 1.0
+    }
+  ],
+  "selectableGifts": [],
+  "products": [],
+  "totalizers": [
+    { "id": "Items", "name": "Total dos Itens", "value": 270000 },
+    { "id": "Shipping", "name": "Total do Frete", "value": 330 }
+  ],
+  "shippingData": {
+    "attachmentId": "shippingData",
+    "address": {
+      "addressType": "residential",
+      "receiverName": "1231203",
+      "addressId": "-1510076566499",
+      "postalCode": "22071-060",
+      "city": "Rio de Janeiro",
+      "state": "RJ",
+      "country": "BRA",
+      "street": "Rua Saint Roman",
+      "number": "10",
+      "neighborhood": "Copacabana",
+      "complement": null,
+      "reference": null,
+      "geoCoordinates": []
+    },
+    "logisticsInfo": [
+      {
+        "itemIndex": 0,
+        "selectedSla": "Normal",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1510076566499",
+        "slas": [
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "60",
+                "warehouseId": "2_1",
+                "dockId": "1_1_1",
+                "courierName": "eSedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "2bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 230,
+            "listPrice": 230,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Sedex",
+            "deliveryChannel": "delivery",
+            "name": "Sedex",
+            "deliveryIds": [
+              {
+                "courierId": "62",
+                "warehouseId": "2_1",
+                "dockId": "1_1_1",
+                "courierName": "Sedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1611,
+            "listPrice": 1611,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "performance",
+            "deliveryChannel": "delivery",
+            "name": "performance",
+            "deliveryIds": [
+              {
+                "courierId": "119a05a",
+                "warehouseId": "2_1",
+                "dockId": "1_1_1",
+                "courierName": "performance",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "5bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 6115,
+            "listPrice": 6115,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA", "MEX"],
+        "itemId": "44",
+        "deliveryChannels": [{ "id": "delivery" }]
+      },
+      {
+        "itemIndex": 1,
+        "selectedSla": "Entrega Agendada",
+        "selectedDeliveryChannel": "delivery",
+        "addressId": "-1510076566499",
+        "slas": [
+          {
+            "id": "Entrega Agendada",
+            "deliveryChannel": "delivery",
+            "name": "Entrega Agendada",
+            "deliveryIds": [
+              {
+                "courierId": "58",
+                "warehouseId": "1828351",
+                "dockId": "1_3_1",
+                "courierName": "DeliVery Fast",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "1bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [
+              {
+                "startDateUtc": "2017-11-08T18:00:00+00:00",
+                "endDateUtc": "2017-11-08T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-09T00:00:00+00:00",
+                "endDateUtc": "2017-11-09T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-09T08:00:00+00:00",
+                "endDateUtc": "2017-11-09T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-09T18:00:00+00:00",
+                "endDateUtc": "2017-11-09T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T00:00:00+00:00",
+                "endDateUtc": "2017-11-10T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T08:00:00+00:00",
+                "endDateUtc": "2017-11-10T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-10T18:00:00+00:00",
+                "endDateUtc": "2017-11-10T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T00:00:00+00:00",
+                "endDateUtc": "2017-11-11T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T08:00:00+00:00",
+                "endDateUtc": "2017-11-11T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-11T18:00:00+00:00",
+                "endDateUtc": "2017-11-11T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T00:00:00+00:00",
+                "endDateUtc": "2017-11-12T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T08:00:00+00:00",
+                "endDateUtc": "2017-11-12T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-12T18:00:00+00:00",
+                "endDateUtc": "2017-11-12T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-13T00:00:00+00:00",
+                "endDateUtc": "2017-11-13T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-13T08:00:00+00:00",
+                "endDateUtc": "2017-11-13T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-13T18:00:00+00:00",
+                "endDateUtc": "2017-11-13T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-14T00:00:00+00:00",
+                "endDateUtc": "2017-11-14T08:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-14T08:00:00+00:00",
+                "endDateUtc": "2017-11-14T13:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-14T18:00:00+00:00",
+                "endDateUtc": "2017-11-14T22:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-22T00:00:00+00:00",
+                "endDateUtc": "2017-11-08T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-23T00:00:00+00:00",
+                "endDateUtc": "2017-11-09T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-24T00:00:00+00:00",
+                "endDateUtc": "2017-11-10T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-25T00:00:00+00:00",
+                "endDateUtc": "2017-11-11T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-26T00:00:00+00:00",
+                "endDateUtc": "2017-11-12T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-27T00:00:00+00:00",
+                "endDateUtc": "2017-11-13T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              },
+              {
+                "startDateUtc": "2017-11-28T00:00:00+00:00",
+                "endDateUtc": "2017-11-14T17:00:00+00:00",
+                "price": 100,
+                "lisPrice": 100,
+                "tax": 0
+              }
+            ],
+            "deliveryWindow": {
+              "startDateUtc": "2017-11-08T18:00:00+00:00",
+              "endDateUtc": "2017-11-08T22:00:00+00:00",
+              "price": 100,
+              "lisPrice": 100,
+              "tax": 0
+            },
+            "price": 0,
+            "listPrice": 0,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Normal",
+            "deliveryChannel": "delivery",
+            "name": "Normal",
+            "deliveryIds": [
+              {
+                "courierId": "60",
+                "warehouseId": "1828351",
+                "dockId": "1_3_1",
+                "courierName": "eSedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "2bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 230,
+            "listPrice": 230,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          },
+          {
+            "id": "Sedex",
+            "deliveryChannel": "delivery",
+            "name": "Sedex",
+            "deliveryIds": [
+              {
+                "courierId": "62",
+                "warehouseId": "1828351",
+                "dockId": "1_3_1",
+                "courierName": "Sedex",
+                "quantity": 1
+              }
+            ],
+            "shippingEstimate": "3bd",
+            "shippingEstimateDate": null,
+            "lockTTL": null,
+            "availableDeliveryWindows": [],
+            "deliveryWindow": null,
+            "price": 1611,
+            "listPrice": 1611,
+            "tax": 0,
+            "pickupStoreInfo": {
+              "isPickupStore": false,
+              "friendlyName": null,
+              "address": null,
+              "additionalInfo": null,
+              "dockId": null
+            }
+          }
+        ],
+        "shipsTo": ["BRA"],
+        "itemId": "20",
+        "deliveryChannels": [{ "id": "delivery" }]
+      }
+    ],
+    "selectedAddresses": [
+      {
+        "addressType": "residential",
+        "receiverName": "1231203",
+        "addressId": "-1510076566499",
+        "postalCode": "22071-060",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "country": "BRA",
+        "street": "Rua Saint Roman",
+        "number": "10",
+        "neighborhood": "Copacabana",
+        "complement": null,
+        "reference": null,
+        "geoCoordinates": []
+      }
+    ],
+    "availableAddresses": [
+      {
+        "addressType": "residential",
+        "receiverName": "1231203",
+        "addressId": "-1510076566499",
+        "postalCode": "22071-060",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "country": "BRA",
+        "street": "Rua Saint Roman",
+        "number": "10",
+        "neighborhood": "Copacabana",
+        "complement": null,
+        "reference": null,
+        "geoCoordinates": []
+      }
+    ]
+  },
+  "clientProfileData": {
+    "attachmentId": "clientProfileData",
+    "email": "shipping24.252626719352467@mailinator.com",
+    "firstName": "auto",
+    "lastName": "auto",
+    "document": "12345678909",
+    "documentType": "cpf",
+    "phone": "+552222222222",
+    "corporateName": null,
+    "tradeName": null,
+    "corporateDocument": null,
+    "stateInscription": null,
+    "corporatePhone": null,
+    "isCorporate": false,
+    "profileCompleteOnLoading": false,
+    "profileErrorOnLoading": false,
+    "customerClass": null
+  },
+  "paymentData": {
+    "installmentOptions": [
+      {
+        "paymentSystem": "2",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 270330,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 270330,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 70230,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 200100,
+                "total": 200100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "4",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 270330,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 270330,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 70230,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 200100,
+                "total": 200100
+              }
+            ]
+          },
+          {
+            "count": 2,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 135165,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 35115,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 2,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 100050,
+                "total": 200100
+              }
+            ]
+          },
+          {
+            "count": 3,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 90110,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 23410,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 3,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 66700,
+                "total": 200100
+              }
+            ]
+          },
+          {
+            "count": 4,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 67582,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 17557,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 4,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 50025,
+                "total": 200100
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 54066,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 14046,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 5,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 40020,
+                "total": 200100
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 45055,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 11705,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 6,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 33350,
+                "total": 200100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "47",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 270330,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 270330,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 70230,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 200100,
+                "total": 200100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "paymentSystem": "601",
+        "bin": null,
+        "paymentName": null,
+        "paymentGroupName": null,
+        "value": 270330,
+        "installments": [
+          {
+            "count": 1,
+            "hasInterestRate": false,
+            "interestRate": 0,
+            "value": 270330,
+            "total": 270330,
+            "sellerMerchantInstallments": [
+              {
+                "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 70230,
+                "total": 70230
+              },
+              {
+                "id": "QAMARKETPLACE-caesegatos",
+                "count": 1,
+                "hasInterestRate": false,
+                "interestRate": 0,
+                "value": 200100,
+                "total": 200100
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "paymentSystems": [
+      {
+        "id": 4,
+        "name": "Mastercard",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex":
+            "^((5(1(0(0(0([0-9])|[1-9][0-9])|[1-9][0-9]{0})|[1-9][0-9]{0})|3(0(4(0([0-9]))|[0-3][0-9]{0}))|2[0-9]{0})|^5(3(0(4(2([0-9])|[3-9][0-9])|[5-9][0-9]{0})|[1-9][0-9]{0})|5(9(9(9([0-9])|[0-8][0-9])|[0-8][0-9]{0})|[0-8][0-9]{0})|4[0-9]{0}))|((508116)\\d{0,10})|((502121)\\d{0,10})|((589916)\\d{0,10})|(2[0-9]{15})|(506387)\\d{0,10})",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "4",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-10T17:42:02.1330445Z",
+        "availablePayments": null
+      },
+      {
+        "id": 2,
+        "name": "Visa",
+        "groupName": "creditCardPaymentGroup",
+        "validator": {
+          "regex": "^4[0-9]{15}$",
+          "mask": "9999 9999 9999 9999",
+          "cardCodeRegex": "^[0-9]{3}$",
+          "cardCodeMask": "999",
+          "weights": [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2],
+          "useCvv": true,
+          "useExpirationDate": true,
+          "useCardHolderName": true,
+          "useBillingAddress": true
+        },
+        "stringId": "2",
+        "template": "creditCardPaymentGroup-template",
+        "requiresDocument": true,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-10T17:42:02.4130604Z",
+        "availablePayments": null
+      },
+      {
+        "id": 47,
+        "name": "Cash",
+        "groupName": "cashPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "47",
+        "template": "cashPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-14T17:42:01.8890083Z",
+        "availablePayments": null
+      },
+      {
+        "id": 601,
+        "name": "CardPromissory",
+        "groupName": "cardPromissoryPaymentGroup",
+        "validator": {
+          "regex": null,
+          "mask": null,
+          "cardCodeRegex": null,
+          "cardCodeMask": null,
+          "weights": null,
+          "useCvv": false,
+          "useExpirationDate": false,
+          "useCardHolderName": false,
+          "useBillingAddress": false
+        },
+        "stringId": "601",
+        "template": "cardPromissoryPaymentGroup-template",
+        "requiresDocument": false,
+        "isCustom": false,
+        "description": null,
+        "requiresAuthentication": false,
+        "dueDate": "2017-11-14T17:42:01.5349518Z",
+        "availablePayments": [
+          { "Id": 1, "Name": "American Express" },
+          { "Id": 2, "Name": "Visa" },
+          { "Id": 3, "Name": "Diners" },
+          { "Id": 4, "Name": "Mastercard" }
+        ]
+      }
+    ],
+    "payments": [
+      {
+        "paymentSystem": "4",
+        "bin": null,
+        "accountId": null,
+        "tokenId": null,
+        "installments": null,
+        "referenceValue": 270330,
+        "value": 270330,
+        "merchantSellerPayments": [
+          {
+            "id": "MEUAMIGOPETMKP-caesegatoscsplit",
+            "installments": null,
+            "referenceValue": 70230,
+            "value": 70230,
+            "interestRate": null,
+            "installmentValue": 0
+          },
+          {
+            "id": "QAMARKETPLACE-caesegatos",
+            "installments": null,
+            "referenceValue": 200100,
+            "value": 200100,
+            "interestRate": null,
+            "installmentValue": 0
+          }
+        ]
+      }
+    ],
+    "giftCards": [],
+    "giftCardMessages": [],
+    "availableAccounts": [],
+    "availableTokens": []
+  },
+  "marketingData": null,
+  "sellers": [
+    {
+      "id": "caesegatoscsplit",
+      "name": "Meu Amigo Pet MKP - QA com split",
+      "logo": ""
+    },
+    { "id": "caesegatos", "name": "Meu Amigo Pet MKP - QA", "logo": "" }
+  ],
+  "clientPreferencesData": {
+    "attachmentId": "clientPreferencesData",
+    "locale": "pt-BR",
+    "optinNewsLetter": true
+  },
+  "commercialConditionData": null,
+  "storePreferencesData": {
+    "countryCode": "BRA",
+    "checkToSavePersonDataByDefault": true,
+    "templateOptions": { "toggleCorporate": false },
+    "timeZone": "E. South America Standard Time",
+    "currencyCode": "BRL",
+    "currencyLocale": 1046,
+    "currencySymbol": "R$",
+    "currencyFormatInfo": {
+      "currencyDecimalDigits": 2,
+      "currencyDecimalSeparator": ",",
+      "currencyGroupSeparator": ".",
+      "currencyGroupSize": 3,
+      "startsWithCurrencySymbol": true
+    }
+  },
+  "giftRegistryData": null,
+  "openTextField": null,
+  "customData": null,
+  "hooksData": null,
+  "ratesAndBenefitsData": {
+    "attachmentId": "ratesAndBenefitsData",
+    "rateAndBenefitsIdentifiers": [],
+    "teaser": []
+  },
+  "itemsOrdination": null
+}

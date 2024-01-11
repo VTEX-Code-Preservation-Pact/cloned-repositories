@@ -1,0 +1,46 @@
+.container {
+  margin-bottom: 20px;
+  display: none;
+}
+
+.title {
+  color: #999;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.label {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.textBox {
+  border: 1px solid #f4f4f4;
+  border-radius: 4px;
+  display: flex;
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.pickupReceiverIcon {
+  flex: none;
+  margin-right: 12px;
+}
+
+.name {
+  flex: auto;
+}
+
+.btn {
+  color: #08c;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 13px;
+}
+
+.hide {
+  display: none;
+}

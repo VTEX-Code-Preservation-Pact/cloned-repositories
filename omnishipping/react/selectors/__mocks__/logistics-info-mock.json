@@ -1,0 +1,794 @@
+{
+  "orderForm": {
+    "shippingData": {
+      "logisticsInfo": [
+        {
+          "itemIndex": 0,
+          "selectedSla": "Entrega Sustentável",
+          "selectedDeliveryChannel": "delivery",
+          "addressId": "-4559518519599",
+          "slas": [
+            {
+              "id": "PAC",
+              "deliveryChannel": "delivery",
+              "name": "PAC",
+              "deliveryIds": [
+                {
+                  "courierId": "41068",
+                  "warehouseId": "1_1",
+                  "dockId": "1c426f9",
+                  "courierName": "PAC",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "10bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 257,
+              "listPrice": 257,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Sedex",
+              "deliveryChannel": "delivery",
+              "name": "Sedex",
+              "deliveryIds": [
+                {
+                  "courierId": "40436",
+                  "warehouseId": "1_1",
+                  "dockId": "18d8cdb",
+                  "courierName": "Sedex",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 290,
+              "listPrice": 290,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Entrega Sustentável",
+              "deliveryChannel": "delivery",
+              "name": "Entrega Sustentável",
+              "deliveryIds": [
+                {
+                  "courierId": "1c5036f",
+                  "warehouseId": "1_1",
+                  "dockId": "1d7601e",
+                  "courierName": "Courrieros",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 473,
+              "listPrice": 473,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Transportadora",
+              "deliveryChannel": "delivery",
+              "name": "Transportadora",
+              "deliveryIds": [
+                {
+                  "courierId": "totalexpress",
+                  "warehouseId": "1_1",
+                  "dockId": "1",
+                  "courierName": "Transportadora",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "11bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 568,
+              "listPrice": 568,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            }
+          ],
+          "shipsTo": ["BRA"],
+          "itemId": "49522",
+          "deliveryChannels": [
+            {
+              "id": "delivery"
+            }
+          ]
+        },
+        {
+          "itemIndex": 1,
+          "selectedSla": "Expressa",
+          "selectedDeliveryChannel": "delivery",
+          "addressId": "-4559518519599",
+          "slas": [
+            {
+              "id": "Retirada em loja (11a5282)",
+              "deliveryChannel": "pickup-in-point",
+              "name": "Retirada em loja (11a5282)",
+              "deliveryIds": [
+                {
+                  "courierId": "125748c",
+                  "warehouseId": "1127ce0",
+                  "dockId": "1203c9e",
+                  "courierName": "Retirada Loja Rio Design Barra",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1d",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": true,
+                "friendlyName": "Rio Design Barra",
+                "address": {
+                  "addressType": "pickup",
+                  "receiverName": null,
+                  "addressId": "11a5282",
+                  "postalCode": "22793-081",
+                  "city": "Rio de Janeiro",
+                  "state": "RJ",
+                  "country": "BRA",
+                  "street": "Av. das Américas",
+                  "number": "7777",
+                  "neighborhood": "Barra da Tijuca",
+                  "complement": "Shopping Rio Design Barra - Loja 167A",
+                  "reference": null,
+                  "geoCoordinates": [-43.38595, -23.00136]
+                },
+                "additionalInfo":
+                  "Apresente sua identidade no balcão e retire sua compra.",
+                "dockId": "1203c9e",
+                "distance": null
+              }
+            },
+            {
+              "id": "Expressa",
+              "deliveryChannel": "delivery",
+              "name": "Expressa",
+              "deliveryIds": [
+                {
+                  "courierId": "1e84e46",
+                  "warehouseId": "1127ce0",
+                  "dockId": "1203c9e",
+                  "courierName": "Loggi",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Entrega Sustentável",
+              "deliveryChannel": "delivery",
+              "name": "Entrega Sustentável",
+              "deliveryIds": [
+                {
+                  "courierId": "1c5036f",
+                  "warehouseId": "1_1",
+                  "dockId": "1d7601e",
+                  "courierName": "Courrieros",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 204,
+              "listPrice": 204,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "PAC",
+              "deliveryChannel": "delivery",
+              "name": "PAC",
+              "deliveryIds": [
+                {
+                  "courierId": "41068",
+                  "warehouseId": "1_1",
+                  "dockId": "1c426f9",
+                  "courierName": "PAC",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "10bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 299,
+              "listPrice": 299,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Sedex",
+              "deliveryChannel": "delivery",
+              "name": "Sedex",
+              "deliveryIds": [
+                {
+                  "courierId": "40436",
+                  "warehouseId": "1_1",
+                  "dockId": "18d8cdb",
+                  "courierName": "Sedex",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 338,
+              "listPrice": 338,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Transportadora",
+              "deliveryChannel": "delivery",
+              "name": "Transportadora",
+              "deliveryIds": [
+                {
+                  "courierId": "totalexpress",
+                  "warehouseId": "1_1",
+                  "dockId": "1",
+                  "courierName": "Transportadora",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "11bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 659,
+              "listPrice": 659,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            }
+          ],
+          "shipsTo": ["BRA"],
+          "itemId": "50954",
+          "deliveryChannels": [
+            {
+              "id": "delivery"
+            },
+            {
+              "id": "pickup-in-point"
+            }
+          ]
+        },
+        {
+          "itemIndex": 2,
+          "selectedSla": "Entrega Sustentável",
+          "selectedDeliveryChannel": "delivery",
+          "addressId": "-4559518519599",
+          "slas": [
+            {
+              "id": "PAC",
+              "deliveryChannel": "delivery",
+              "name": "PAC",
+              "deliveryIds": [
+                {
+                  "courierId": "41068",
+                  "warehouseId": "1_1",
+                  "dockId": "1c426f9",
+                  "courierName": "PAC",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "10bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 265,
+              "listPrice": 265,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Sedex",
+              "deliveryChannel": "delivery",
+              "name": "Sedex",
+              "deliveryIds": [
+                {
+                  "courierId": "40436",
+                  "warehouseId": "1_1",
+                  "dockId": "18d8cdb",
+                  "courierName": "Sedex",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 300,
+              "listPrice": 300,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Entrega Sustentável",
+              "deliveryChannel": "delivery",
+              "name": "Entrega Sustentável",
+              "deliveryIds": [
+                {
+                  "courierId": "1c5036f",
+                  "warehouseId": "1_1",
+                  "dockId": "1d7601e",
+                  "courierName": "Courrieros",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 487,
+              "listPrice": 487,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Transportadora",
+              "deliveryChannel": "delivery",
+              "name": "Transportadora",
+              "deliveryIds": [
+                {
+                  "courierId": "totalexpress",
+                  "warehouseId": "1_1",
+                  "dockId": "1",
+                  "courierName": "Transportadora",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "11bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 586,
+              "listPrice": 586,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            }
+          ],
+          "shipsTo": ["BRA"],
+          "itemId": "51724",
+          "deliveryChannels": [
+            {
+              "id": "delivery"
+            }
+          ]
+        },
+        {
+          "itemIndex": 3,
+          "selectedSla": "Expressa",
+          "selectedDeliveryChannel": "delivery",
+          "addressId": "-4559518519599",
+          "slas": [
+            {
+              "id": "Retirada em loja (17c6a89)",
+              "deliveryChannel": "pickup-in-point",
+              "name": "Retirada em loja (17c6a89)",
+              "deliveryIds": [
+                {
+                  "courierId": "1edab10",
+                  "warehouseId": "1402105",
+                  "dockId": "1548867",
+                  "courierName": "Retirada Loja - RJ",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1d",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": true,
+                "friendlyName": "Shopping da Gávea",
+                "address": {
+                  "addressType": "pickup",
+                  "receiverName": null,
+                  "addressId": "17c6a89",
+                  "postalCode": "22451-060",
+                  "city": "Rio de Janeiro",
+                  "state": "RJ",
+                  "country": "BRA",
+                  "street": "Rua Marquês de São Vicente",
+                  "number": "52",
+                  "neighborhood": "Gávea",
+                  "complement": "Loja 331",
+                  "reference": null,
+                  "geoCoordinates": [-43.228181, -22.975677]
+                },
+                "additionalInfo":
+                  "Apresente sua identidade no balcão e retire sua compra",
+                "dockId": "1548867",
+                "distance": null
+              }
+            },
+            {
+              "id": "Retirada em loja (11a5282)",
+              "deliveryChannel": "pickup-in-point",
+              "name": "Retirada em loja (11a5282)",
+              "deliveryIds": [
+                {
+                  "courierId": "125748c",
+                  "warehouseId": "1127ce0",
+                  "dockId": "1203c9e",
+                  "courierName": "Retirada Loja Rio Design Barra",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1d",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": true,
+                "friendlyName": "Rio Design Barra",
+                "address": {
+                  "addressType": "pickup",
+                  "receiverName": null,
+                  "addressId": "11a5282",
+                  "postalCode": "22793-081",
+                  "city": "Rio de Janeiro",
+                  "state": "RJ",
+                  "country": "BRA",
+                  "street": "Av. das Américas",
+                  "number": "7777",
+                  "neighborhood": "Barra da Tijuca",
+                  "complement": "Shopping Rio Design Barra - Loja 167A",
+                  "reference": null,
+                  "geoCoordinates": [-43.38595, -23.00136]
+                },
+                "additionalInfo":
+                  "Apresente sua identidade no balcão e retire sua compra.",
+                "dockId": "1203c9e",
+                "distance": null
+              }
+            },
+            {
+              "id": "Retirada em loja (1ef6696)",
+              "deliveryChannel": "pickup-in-point",
+              "name": "Retirada em loja (1ef6696)",
+              "deliveryIds": [
+                {
+                  "courierId": "1b5b267",
+                  "warehouseId": "15dafd8",
+                  "dockId": "166b6db",
+                  "courierName": "Retirada Loja RioSul",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1d",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": true,
+                "friendlyName": "Shopping Rio Sul",
+                "address": {
+                  "addressType": "pickup",
+                  "receiverName": null,
+                  "addressId": "1ef6696",
+                  "postalCode": "22290160",
+                  "city": "Rio de Janeiro",
+                  "state": "RJ",
+                  "country": "BRA",
+                  "street": "Rua Lauro Muller",
+                  "number": "116",
+                  "neighborhood": "Botafogo",
+                  "complement": "Loja C 05",
+                  "reference": null,
+                  "geoCoordinates": [-43.176141, -22.957335]
+                },
+                "additionalInfo":
+                  "Apresente sua identidade no balcão e retire sua compra.",
+                "dockId": "166b6db",
+                "distance": null
+              }
+            },
+            {
+              "id": "Expressa",
+              "deliveryChannel": "delivery",
+              "name": "Expressa",
+              "deliveryIds": [
+                {
+                  "courierId": "14257d5",
+                  "warehouseId": "1402105",
+                  "dockId": "1548867",
+                  "courierName": "Loggi",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "1bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 0,
+              "listPrice": 0,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Entrega Sustentável",
+              "deliveryChannel": "delivery",
+              "name": "Entrega Sustentável",
+              "deliveryIds": [
+                {
+                  "courierId": "1c5036f",
+                  "warehouseId": "1_1",
+                  "dockId": "1d7601e",
+                  "courierName": "Courrieros",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 397,
+              "listPrice": 397,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "PAC",
+              "deliveryChannel": "delivery",
+              "name": "PAC",
+              "deliveryIds": [
+                {
+                  "courierId": "41068",
+                  "warehouseId": "1_1",
+                  "dockId": "1c426f9",
+                  "courierName": "PAC",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "10bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 581,
+              "listPrice": 581,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Sedex",
+              "deliveryChannel": "delivery",
+              "name": "Sedex",
+              "deliveryIds": [
+                {
+                  "courierId": "40436",
+                  "warehouseId": "1_1",
+                  "dockId": "18d8cdb",
+                  "courierName": "Sedex",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "5bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 658,
+              "listPrice": 658,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            },
+            {
+              "id": "Transportadora",
+              "deliveryChannel": "delivery",
+              "name": "Transportadora",
+              "deliveryIds": [
+                {
+                  "courierId": "totalexpress",
+                  "warehouseId": "1_1",
+                  "dockId": "1",
+                  "courierName": "Transportadora",
+                  "quantity": 1
+                }
+              ],
+              "shippingEstimate": "11bd",
+              "shippingEstimateDate": null,
+              "lockTTL": null,
+              "availableDeliveryWindows": [],
+              "deliveryWindow": null,
+              "price": 1279,
+              "listPrice": 1279,
+              "tax": 0,
+              "pickupStoreInfo": {
+                "isPickupStore": false,
+                "friendlyName": null,
+                "address": null,
+                "additionalInfo": null,
+                "dockId": null,
+                "distance": null
+              }
+            }
+          ],
+          "shipsTo": ["BRA"],
+          "itemId": "50526",
+          "deliveryChannels": [
+            {
+              "id": "delivery"
+            },
+            {
+              "id": "pickup-in-point"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

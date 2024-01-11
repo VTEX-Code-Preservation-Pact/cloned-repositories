@@ -1,0 +1,510 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summary should render only with DELIVERY and PICKUP and two sellers 1`] = `
+Array [
+  <div
+    className="shp-summary-group group"
+>
+    <p
+        className="shp-summary-group-title title"
+    >
+        Receber
+    </p>
+    <div
+        className="shp-summary-group-content content"
+    >
+        <div
+            className="shp-summary-group-info info"
+        >
+            <div
+                className="shp-summary-group-address address"
+            >
+                <div
+                    className="address-summary address-summary-BRA"
+                >
+                    <span>
+                        <span
+                            className="street"
+                        >
+                            Av das Américas
+                        </span>
+                    </span>
+                    <span>
+                        
+                        <span
+                            className="complement"
+                        >
+                            Loja Barra da Tijuca
+                        </span>
+                    </span>
+                    <br
+                        className="line1-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="neighborhood"
+                        >
+                            Barra da Tijuca
+                        </span>
+                        <span
+                            className="neighborhood-delimiter-after"
+                        >
+                             - 
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="city"
+                        >
+                            Rio de janeiro
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="state-delimiter"
+                        >
+                             - 
+                        </span>
+                        <span
+                            className="state"
+                        >
+                            RJ
+                        </span>
+                    </span>
+                    <br
+                        className="line2-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="postalCode"
+                        >
+                            22222222
+                        </span>
+                    </span>
+                    <br
+                        className="line3-delimiter"
+                    />
+                    <span
+                        className="country"
+                    >
+                        Brazil
+                    </span>
+                </div>
+            </div>
+            <div
+                className="summaryPackage shp-summary-package"
+            >
+                <div
+                    className="packageTitle shp-summary-package-title"
+                >
+                    Pacote
+                     
+                    1
+                </div>
+                <span
+                    className="shp-summary-package-items"
+                >
+                    1 item
+                     
+                </span>
+                <span
+                    className="estimateMultiple shp-summary-package-time"
+                >
+                    Em até 1 dia útil
+                </span>
+            </div>
+            <div
+                className="summaryPackage shp-summary-package"
+            >
+                <div
+                    className="packageTitle shp-summary-package-title"
+                >
+                    Pacote
+                     
+                    2
+                </div>
+                <span
+                    className="shp-summary-package-items"
+                >
+                    1 item
+                     
+                </span>
+                <span
+                    className="estimateMultiple shp-summary-package-time"
+                >
+                    Em até 1 dia útil
+                </span>
+            </div>
+        </div>
+        <div
+            className="shp-summary-group-price price"
+        >
+            R$ 2,00
+        </div>
+    </div>
+</div>,
+  <div
+    className="shp-summary-group group"
+>
+    <p
+        className="shp-summary-group-title title"
+    >
+        Retirar
+    </p>
+    <div
+        className="shp-summary-group-content content"
+    >
+        <div
+            className="shp-summary-group-info info"
+        >
+            <div
+                className="shp-summary-group-title address"
+            >
+                test
+            </div>
+            <div
+                className="shp-summary-group-address address pickupAddress"
+            >
+                <div
+                    className="address-summary address-summary-BRA"
+                >
+                    <span>
+                        <span
+                            className="street"
+                        >
+                            Av das Américas
+                        </span>
+                    </span>
+                    <span>
+                        
+                        <span
+                            className="complement"
+                        >
+                            Loja Barra da Tijuca
+                        </span>
+                    </span>
+                    <br
+                        className="line1-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="neighborhood"
+                        >
+                            Barra da Tijuca
+                        </span>
+                        <span
+                            className="neighborhood-delimiter-after"
+                        >
+                             - 
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="city"
+                        >
+                            Rio de janeiro
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="state-delimiter"
+                        >
+                             - 
+                        </span>
+                        <span
+                            className="state"
+                        >
+                            RJ
+                        </span>
+                    </span>
+                    <br
+                        className="line2-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="postalCode"
+                        >
+                            22222222
+                        </span>
+                    </span>
+                    <br
+                        className="line3-delimiter"
+                    />
+                    <span
+                        className="country"
+                    >
+                        Brazil
+                    </span>
+                </div>
+            </div>
+            <div
+                className="summaryPackage shp-summary-package"
+            >
+                <span
+                    className="shp-summary-package-items"
+                >
+                    1 item
+                     
+                </span>
+                <span
+                    className="estimateMultiple shp-summary-package-time"
+                >
+                    A partir de 1 dia útil
+                </span>
+            </div>
+        </div>
+        <div
+            className="shp-summary-group-price price"
+        >
+            R$ 1,00
+        </div>
+    </div>
+</div>,
+  <a
+    className="link-change-shipping summaryChange"
+    href="#/shipping"
+    id="open-shipping"
+    onClick={[Function]}
+>
+    Alterar opções de entrega
+</a>,
+]
+`;
+
+exports[`Summary should render only with DELIVERY and one seller 1`] = `
+Array [
+  <div
+    className="shp-summary-group group"
+>
+    <div
+        className="shp-summary-group-content content"
+    >
+        <div
+            className="shp-summary-group-info info"
+        >
+            <div
+                className="shp-summary-group-address address"
+            >
+                <div
+                    className="address-summary address-summary-BRA"
+                >
+                    <span>
+                        <span
+                            className="street"
+                        >
+                            Av das Américas
+                        </span>
+                    </span>
+                    <span>
+                        
+                        <span
+                            className="complement"
+                        >
+                            Loja Barra da Tijuca
+                        </span>
+                    </span>
+                    <br
+                        className="line1-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="neighborhood"
+                        >
+                            Barra da Tijuca
+                        </span>
+                        <span
+                            className="neighborhood-delimiter-after"
+                        >
+                             - 
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="city"
+                        >
+                            Rio de janeiro
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="state-delimiter"
+                        >
+                             - 
+                        </span>
+                        <span
+                            className="state"
+                        >
+                            RJ
+                        </span>
+                    </span>
+                    <br
+                        className="line2-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="postalCode"
+                        >
+                            22222222
+                        </span>
+                    </span>
+                    <br
+                        className="line3-delimiter"
+                    />
+                    <span
+                        className="country"
+                    >
+                        Brazil
+                    </span>
+                </div>
+            </div>
+            <div
+                className="summaryPackage shp-summary-package"
+            >
+                <span
+                    className="false shp-summary-package-time"
+                >
+                    Em até 1 dia útil
+                </span>
+            </div>
+        </div>
+        <div
+            className="shp-summary-group-price price"
+        >
+            R$ 3,00
+        </div>
+    </div>
+</div>,
+  <a
+    className="link-change-shipping summaryChange"
+    href="#/shipping"
+    id="open-shipping"
+    onClick={[Function]}
+>
+    Alterar opções de entrega
+</a>,
+]
+`;
+
+exports[`Summary should render only with PICKUP_IN_STORE and one seller 1`] = `
+Array [
+  <div
+    className="shp-summary-group group"
+>
+    <p
+        className="shp-summary-group-title title"
+    >
+        Retirar
+    </p>
+    <div
+        className="shp-summary-group-content content"
+    >
+        <div
+            className="shp-summary-group-info info"
+        >
+            <div
+                className="shp-summary-group-title address"
+            >
+                test
+            </div>
+            <div
+                className="shp-summary-group-address address pickupAddress"
+            >
+                <div
+                    className="address-summary address-summary-BRA"
+                >
+                    <span>
+                        <span
+                            className="street"
+                        >
+                            Av das Américas
+                        </span>
+                    </span>
+                    <span>
+                        
+                        <span
+                            className="complement"
+                        >
+                            Loja Barra da Tijuca
+                        </span>
+                    </span>
+                    <br
+                        className="line1-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="neighborhood"
+                        >
+                            Barra da Tijuca
+                        </span>
+                        <span
+                            className="neighborhood-delimiter-after"
+                        >
+                             - 
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="city"
+                        >
+                            Rio de janeiro
+                        </span>
+                    </span>
+                    <span>
+                        <span
+                            className="state-delimiter"
+                        >
+                             - 
+                        </span>
+                        <span
+                            className="state"
+                        >
+                            RJ
+                        </span>
+                    </span>
+                    <br
+                        className="line2-delimiter"
+                    />
+                    <span>
+                        <span
+                            className="postalCode"
+                        >
+                            22222222
+                        </span>
+                    </span>
+                    <br
+                        className="line3-delimiter"
+                    />
+                    <span
+                        className="country"
+                    >
+                        Brazil
+                    </span>
+                </div>
+            </div>
+            <div
+                className="summaryPackage shp-summary-package"
+            >
+                <span
+                    className="false shp-summary-package-time"
+                >
+                    A partir de 1 dia útil
+                </span>
+            </div>
+        </div>
+        <div
+            className="shp-summary-group-price price"
+        >
+            R$ 3,00
+        </div>
+    </div>
+</div>,
+  <a
+    className="link-change-shipping summaryChange"
+    href="#/shipping"
+    id="open-shipping"
+    onClick={[Function]}
+>
+    Alterar opções de entrega
+</a>,
+]
+`;

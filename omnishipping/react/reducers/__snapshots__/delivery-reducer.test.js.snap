@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Delivery reducer should handle CHANGE_ACTIVE_SLA_OPTION 1`] = `
+Object {
+  "CHEAPEST": Array [
+    Object {
+      "addressId": undefined,
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+        Object {
+          "id": "delivery",
+        },
+      ],
+      "itemIndex": 0,
+      "selectedDeliveryChannel": "delivery",
+      "selectedSla": "delivery",
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "delivery",
+          "id": "delivery",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+        },
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "id": "pickup-in-point",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+        },
+      ],
+    },
+  ],
+  "COMBINED": undefined,
+  "FASTEST": undefined,
+  "activeDeliveryOption": "CHEAPEST",
+  "activeScheduledDelivery": null,
+  "logisticsInfo": Array [
+    Object {
+      "addressId": undefined,
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+        Object {
+          "id": "delivery",
+        },
+      ],
+      "itemIndex": 0,
+      "selectedDeliveryChannel": "delivery",
+      "selectedSla": "delivery",
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "delivery",
+          "id": "delivery",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+        },
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "id": "pickup-in-point",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+        },
+      ],
+    },
+  ],
+  "optionsDetails": Array [
+    Object {
+      "averageEstimatePerItem": 0,
+      "id": "CHEAPEST",
+      "packagesLength": 1,
+      "price": NaN,
+      "shippingEstimate": undefined,
+    },
+  ],
+}
+`;
+
+exports[`Delivery reducer should handle CHANGE_ACTIVE_TAB 1`] = `
+Object {
+  "CHEAPEST": Array [
+    Object {
+      "addressId": "11",
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+        Object {
+          "id": "delivery",
+        },
+      ],
+      "itemIndex": 0,
+      "selectedDeliveryChannel": null,
+      "selectedSla": null,
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "deliveryWindow": null,
+          "id": "pickup",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+          "price": 0,
+          "shippingEstimate": "50m",
+        },
+      ],
+    },
+    Object {
+      "addressId": "11",
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+      ],
+      "itemIndex": 1,
+      "selectedDeliveryChannel": null,
+      "selectedSla": null,
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "deliveryWindow": null,
+          "id": "pickup",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+          "price": 0,
+          "shippingEstimate": "50m",
+        },
+      ],
+    },
+  ],
+  "COMBINED": undefined,
+  "FASTEST": undefined,
+  "activeDeliveryOption": "CHEAPEST",
+  "isScheduledDeliveryActive": false,
+  "logisticsInfo": Array [
+    Object {
+      "addressId": "11",
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+        Object {
+          "id": "delivery",
+        },
+      ],
+      "itemIndex": 0,
+      "selectedDeliveryChannel": null,
+      "selectedSla": null,
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "deliveryWindow": null,
+          "id": "pickup",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+          "price": 0,
+          "shippingEstimate": "50m",
+        },
+      ],
+    },
+    Object {
+      "addressId": "11",
+      "deliveryChannels": Array [
+        Object {
+          "id": "pickup-in-point",
+        },
+      ],
+      "itemIndex": 1,
+      "selectedDeliveryChannel": null,
+      "selectedSla": null,
+      "slas": Array [
+        Object {
+          "availableDeliveryWindows": Array [],
+          "deliveryChannel": "pickup-in-point",
+          "deliveryWindow": null,
+          "id": "pickup",
+          "pickupStoreInfo": Object {
+            "isPickupStore": false,
+          },
+          "price": 0,
+          "shippingEstimate": "50m",
+        },
+      ],
+    },
+  ],
+  "optionsDetails": Array [
+    Object {
+      "averageEstimatePerItem": 0,
+      "id": "CHEAPEST",
+      "packagesLength": 0,
+      "price": 0,
+      "shippingEstimate": null,
+    },
+  ],
+  "selectedDeliveryPackageSlider": 0,
+  "shouldUpdateLeanOptionsState": false,
+}
+`;
+
+exports[`Delivery reducer should handle SELECT_ADDRESS_ITEM 1`] = `
+Object {
+  "CHEAPEST": Array [
+    Object {
+      "addressId": "10",
+      "selectedDeliveryChannel": "delivery",
+    },
+  ],
+  "COMBINED": Array [
+    Object {
+      "addressId": "10",
+      "selectedDeliveryChannel": "delivery",
+    },
+  ],
+  "FASTEST": Array [
+    Object {
+      "addressId": "10",
+      "selectedDeliveryChannel": "delivery",
+    },
+  ],
+}
+`;
+
+exports[`Delivery reducer should handle UPDATE_ADDRESS_FORM if it's the different addressId 1`] = `
+Object {
+  "canEditData": true,
+  "shippingData": Object {
+    "availableAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "residential",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+    "logisticsInfo": Array [
+      Object {
+        "selectedDeliveryChannel": "delivery",
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "residential",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "countryCode": "BRA",
+  },
+}
+`;
+
+exports[`Delivery reducer should handle UPDATE_ADDRESS_FORM if it's the same addressId 1`] = `
+Object {
+  "shippingData": Object {
+    "logisticsInfo": Array [
+      Object {
+        "selectedDeliveryChannel": "delivery",
+      },
+    ],
+    "selectedAddresses": Array [
+      Object {
+        "addressId": "master",
+        "addressType": "search",
+        "city": "Rio de Janeiro",
+        "complement": "100",
+        "country": "BRA",
+        "geoCoordinates": Array [],
+        "neighborhood": "Tijuca",
+        "number": "",
+        "postalCode": "333333333",
+        "receiverName": "bananinha",
+        "reference": null,
+        "state": "RJ",
+        "street": "Rua Andrade Neves",
+      },
+    ],
+  },
+  "storePreferencesData": Object {
+    "countryCode": "BRA",
+  },
+}
+`;

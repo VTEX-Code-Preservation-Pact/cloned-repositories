@@ -1,0 +1,682 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressForm reducer should handle ADD_DELIVERY_ADDRESS 1`] = `
+Object {
+  "11": Object {
+    "addressId": Object {
+      "value": "11",
+    },
+    "addressQuery": Object {
+      "value": "",
+    },
+    "addressType": Object {
+      "value": "residential",
+    },
+    "city": Object {
+      "value": "Rio de Janeiro",
+    },
+    "complement": Object {
+      "value": null,
+    },
+    "country": Object {
+      "value": "BRA",
+    },
+    "geoCoordinates": Object {
+      "value": Array [],
+    },
+    "neighborhood": Object {
+      "value": "Botafogo",
+    },
+    "number": Object {
+      "value": "12",
+    },
+    "postalCode": Object {
+      "value": "22071-060",
+    },
+    "receiverName": Object {
+      "value": "Xablauzera da Bahia",
+    },
+    "reference": Object {
+      "value": null,
+    },
+    "state": Object {
+      "value": "Rio de Janeiro",
+    },
+    "street": Object {
+      "value": "Rua Saint Roman",
+    },
+  },
+}
+`;
+
+exports[`AddressForm reducer should handle UPDATE_ADDRESS_FORM 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": "Apto 106",
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "10",
+      },
+      "postalCode": Object {
+        "loading": undefined,
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+    "12": Object {
+      "addressId": Object {
+        "value": "12",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "search",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "alreadyCompletedReceiverName": false,
+  "residentialId": "11",
+  "searchId": "12",
+}
+`;
+
+exports[`AddressForm reducer should handle UPDATE_ADDRESS_FORM sending only searchAddress 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "loading": undefined,
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+    "12": Object {
+      "addressId": Object {
+        "value": "12",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "search",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": "Apto 106",
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "10",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "alreadyCompletedReceiverName": false,
+  "residentialId": "11",
+  "searchId": "12",
+}
+`;
+
+exports[`AddressForm reducer should handle UPDATE_ORDERFORM 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "loading": false,
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "residentialId": "11",
+}
+`;
+
+exports[`AddressForm reducer should handle UPDATE_ORDERFORM with different addressId 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+    "1234": Object {
+      "addressId": Object {
+        "value": "1234",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "Flamengo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "postalCodeAutoCompleted": true,
+        "value": "Rua Saint Roman",
+      },
+    },
+    "1500055200000": Object {
+      "addressId": Object {
+        "value": "1500055200000",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "search",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Flamengo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "receiverName": undefined,
+  "residentialId": "1234",
+  "searchId": "1500055200000",
+  "valid": false,
+}
+`;
+
+exports[`AddressForm reducer should handle VALIDATE_ADDRESS_FORM 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Gávea",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Teste",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "queuedValidations": Array [],
+  "residentialId": "11",
+  "valid": false,
+}
+`;
+
+exports[`AddressForm reducer should handle VALIDATE_ADDRESS_FORM_FIELDS 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Gávea",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Teste",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "focus": true,
+        "reason": "ERROR_VALUE_IS_NOT_AN_OPTION",
+        "valid": false,
+        "value": "Rio de Janeiro",
+        "valueOptions": undefined,
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "queuedValidations": Array [],
+  "residentialId": "11",
+  "valid": false,
+}
+`;
+
+exports[`AddressForm reducer should handle VALIDATE_POSTAL_CODE 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Botafogo",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "reason": undefined,
+        "valid": true,
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Xablauzera da Bahia",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "queuedValidations": Array [],
+  "residentialId": "11",
+}
+`;
+
+exports[`AddressForm reducer should not break with rules=null 1`] = `
+Object {
+  "addresses": Object {
+    "11": Object {
+      "addressId": Object {
+        "value": "11",
+      },
+      "addressQuery": Object {
+        "value": "",
+      },
+      "addressType": Object {
+        "value": "residential",
+      },
+      "city": Object {
+        "value": "Rio de Janeiro",
+      },
+      "complement": Object {
+        "value": null,
+      },
+      "country": Object {
+        "value": "BRA",
+      },
+      "geoCoordinates": Object {
+        "value": Array [],
+      },
+      "neighborhood": Object {
+        "value": "Gávea",
+      },
+      "number": Object {
+        "value": "12",
+      },
+      "postalCode": Object {
+        "value": "22071-060",
+      },
+      "receiverName": Object {
+        "value": "Teste",
+      },
+      "reference": Object {
+        "value": null,
+      },
+      "state": Object {
+        "value": "Rio de Janeiro",
+      },
+      "street": Object {
+        "value": "Rua Saint Roman",
+      },
+    },
+  },
+  "queuedValidations": Array [
+    "VALIDATE_ADDRESS_FORM",
+  ],
+  "residentialId": "11",
+}
+`;
+
+exports[`AddressForm reducer should return the initial state 1`] = `
+Object {
+  "addresses": Object {},
+  "alreadyCompletedReceiverName": false,
+  "queuedValidations": Array [],
+  "receiverName": null,
+  "valid": null,
+}
+`;

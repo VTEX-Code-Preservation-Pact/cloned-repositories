@@ -1,0 +1,11 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing Package...
+      - npm install
+  pre_build:
+    commands:
+      - sudo CI=true yarn test
+      - sudo NODE_ENV=production npm run build
+      - aws s3 cp --recursive build/ s3://vtex-io-us/omnishipping

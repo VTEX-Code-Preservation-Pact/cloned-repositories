@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Combined Reducers should load combined reducers 1`] = `
+Object {
+  "accountInfo": Object {
+    "acceptSearchKeys": Array [
+      "postalCode",
+    ],
+    "accountName": undefined,
+    "geolocation": true,
+    "googleMapsKey": undefined,
+    "loadingAccountInfo": false,
+  },
+  "addressForm": Object {
+    "addresses": Object {},
+    "alreadyCompletedReceiverName": false,
+    "queuedValidations": Array [],
+    "receiverName": null,
+    "valid": null,
+  },
+  "componentActivity": Object {
+    "activeDeliveryChannel": "delivery",
+    "editAddressActive": false,
+    "hasPickup": false,
+    "isAddressActive": false,
+    "isAddressListActive": false,
+    "isEditingOmnishipping": false,
+    "isOmniShippingCompleted": false,
+    "isOmniShippingOpen": false,
+    "isSplitActive": false,
+    "newAddressActive": false,
+    "triedCompleteOmnishipping": false,
+  },
+  "delivery": Object {
+    "CHEAPEST": Array [],
+    "COMBINED": Array [],
+    "FASTEST": Array [],
+    "activeDeliveryOption": "CHEAPEST",
+    "activeScheduledDelivery": null,
+    "isScheduledDeliveryActive": false,
+    "logisticsInfo": Array [],
+    "optionsDetails": null,
+    "selectedDeliveryPackageSlider": 0,
+    "shouldDisableToggle": false,
+    "shouldUpdateLeanOptionsState": false,
+    "shouldUpdateUi": false,
+    "simulateRequested": false,
+  },
+  "orderForm": Object {},
+  "pickup": Object {
+    "activePickupPoint": null,
+    "activeSellerId": "",
+    "askForGeolocation": null,
+    "hasGeolocation": false,
+    "isModalActive": false,
+    "isPickupDetailsActive": false,
+    "isSearching": false,
+    "pickupOptions": Array [],
+    "pickupPoint": null,
+  },
+}
+`;

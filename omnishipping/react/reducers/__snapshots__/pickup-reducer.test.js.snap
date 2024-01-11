@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pickup reducer should handle CHANGE_ACTIVE_PICKUP_DETAILS 1`] = `
+Object {
+  "activePickupPoint": null,
+  "askForGeolocation": null,
+  "isPickupDetailsActive": false,
+  "pickupPoint": null,
+  "pickupPointId": "",
+}
+`;
+
+exports[`Pickup reducer should handle CHANGE_ACTIVE_PICKUP_OPTIONS 1`] = `
+Object {
+  "askForGeolocation": false,
+  "isModalActive": true,
+  "isSearching": false,
+  "pickupOptions": Array [
+    Object {},
+  ],
+}
+`;
+
+exports[`Pickup reducer should handle CLOSE_PICKUP_DETAILS 1`] = `
+Object {
+  "isPickupDetailsActive": false,
+}
+`;
+
+exports[`Pickup reducer should handle CLOSE_PICKUP_MODAL 1`] = `
+Object {
+  "isModalActive": false,
+  "pickupOptions": Array [],
+}
+`;
+
+exports[`Pickup reducer should return the initial state 1`] = `
+Object {
+  "activePickupPoint": null,
+  "activeSellerId": "",
+  "askForGeolocation": null,
+  "hasGeolocation": false,
+  "isModalActive": false,
+  "isPickupDetailsActive": false,
+  "isSearching": false,
+  "pickupOptions": Array [],
+  "pickupPoint": null,
+}
+`;

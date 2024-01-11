@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render alert mode 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-gold white pv3 lh-solid ph4 f5 fw5 db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render danger mode 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-light-red white pv3 lh-solid ph4 f5 fw5 db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render info mode 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-blue white pv3 lh-solid ph4 f5 fw5 db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render light-danger mode with size xl not checked with fixed value 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-white light-red pa4 pa5-ns f3 f2-ns db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+  <i
+    className="fa fa-caret-down absolute right-1"
+  />
+  <i
+    className="fa fa-check absolute right-1"
+  />
+</button>
+`;
+
+exports[`Button should render light-primary mode with size lg and loading 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-white blue btn-large pv3 ph4 pa4-ns f4 f3-ns db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  <i
+    className="fa fa-circle-o-notch fa-spin fa-fw mr1 absolute left-1"
+  />
+  title
+</button>
+`;
+
+exports[`Button should render link mode with size sm and disabled and is not lonely 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-white blue pa2 pa3-ns f6 f5-ns lh-copy db w-100 br3 o-50 "
+  disabled={true}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render muted mode with size xs and is not inline 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-white gray pa1 f7 f6-ns mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render primary mode 1`] = `
+<button
+  className="btn relative tc bn fw3  bg-blue white pv3 lh-solid ph4 f5 fw5 db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;
+
+exports[`Button should render success mode 1`] = `
+<button
+  className="btn relative tc bn fw3  btn-success bg-green white pv3 lh-solid ph4 f5 fw5 db w-100 br3 mh1 "
+  disabled={undefined}
+  type="button"
+>
+  title
+</button>
+`;

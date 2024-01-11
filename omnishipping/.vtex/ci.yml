@@ -1,0 +1,16 @@
+version: 0.2
+phases:
+  install:
+    commands:
+      - echo Installing Package...
+      - node -v
+      - npm install
+      - cd react/
+      - npm install
+      - cd ..
+  pre_build:
+    commands:
+      - echo Building application...
+      - echo Initializing testing
+      - npm run test:ci
+      - echo testing Finished

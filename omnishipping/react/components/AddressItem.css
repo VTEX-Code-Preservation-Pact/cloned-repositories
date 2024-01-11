@@ -1,0 +1,48 @@
+.addressItemOption {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  box-shadow: 0 1px 1px 0 rgba(204, 204, 204, 0.5);
+}
+
+.addressItemOption:last-child {
+  border-bottom: none;
+}
+
+.addressItemOption:hover,
+.active {
+  background: #f2f6fb;
+}
+
+.addressItemIcon {
+  flex: none;
+  display: flex;
+  margin-right: 10px;
+}
+
+.addressItemText {
+  flex: auto;
+}
+
+.addressItemTextLabel {
+  font-weight: 500;
+}
+
+.sep {
+  margin: 0 8px;
+}
+
+.addressItemRadio {
+  display: none;
+}
+
+.text :global .state-dash,
+.text :global .country-dash,
+.text :global .country,
+.text :global .postalCode,
+.text :global .address-summary br:last-of-type,
+.text :global .postal-code {
+  display: none;
+}

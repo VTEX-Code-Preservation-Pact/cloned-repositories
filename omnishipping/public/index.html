@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <link rel="stylesheet" href="//io.vtex.com.br/front-libs/bootstrap/2.3.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//io.vtex.com.br/front-libs/bootstrap/2.3.2/css/bootstrap-responsive.min.css">
+  <link rel="stylesheet" href="//io.vtex.com.br/front-libs/font-awesome/3.2.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//io.vtex.com.br/checkout-ui/5.14.31/lib/front-messages-ui/vtex-message.min.css">
+  <link rel="stylesheet" href="//io.vtex.com.br/checkout-ui/5.14.31/style/style.css">
+  <link rel="stylesheet" type="text/css" href="https://io.vtex.com.br/front.cart/1.3.1/style/style.css">
+  <title>React App</title>
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="shipping-data"></div>
+
+  <script>
+    window.vtex = {
+      googleMapsApiKey: '%REACT_APP_GOOGLE_MAPS%',
+      vtexid: {
+        accountName: '%REACT_APP_ACCOUNT_NAME%',
+      }
+    };
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+  <script src="//io.vtex.com.br/vtex.js/2.8.0/vtex.min.js"></script>
+  <script src="//io.vtex.com.br/vtex.js/2.8.0/checkout.min.js"></script>
+  <script src="//vtexid.vtex.com.br/api/vtexid/pub/authentication/vtexid.min.js"></script>
+  <script>
+    vtexid.setScopeName(vtex.vtexid.accountName);
+    vtexid.setScope(vtex.vtexid.accountId);
+  </script>
+</body>
+
+</html>

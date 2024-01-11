@@ -1,0 +1,73 @@
+:global .glide-container {
+  margin-right: -15px;
+  margin-left: -15px;
+  width: calc(100% + 30px);
+}
+
+@media (max-width: 767px) {
+  :global .glide-container {
+    width: calc(100% + 27px);
+  }
+}
+
+:global .glide.glide--slider {
+  margin-bottom: 30px;
+}
+
+:global .glide__arrows {
+  top: 0;
+  right: 15px;
+  display: none;
+  justify-content: flex-end;
+  margin-top: -35px;
+  position: absolute;
+}
+
+:global .glide__arrows .glide__arrow {
+  top: 0;
+  position: relative;
+  text-shadow: none;
+  transform: translateY(0%);
+  padding: 2px 8px;
+  width: 28px;
+  font-size: 0;
+}
+
+:global .glide__arrows .glide__arrow--left {
+  border-right: 1px solid #eeeeee;
+  left: 0;
+}
+
+:global .glide__arrows .glide__arrow--right {
+  border-left: 1px solid #fff;
+  right: 0;
+}
+
+:global .glide__bullets .glide__bullet {
+  background-color: #d8d8d8;
+  height: 6px;
+  width: 6px;
+  box-shadow: none;
+  border: 0;
+}
+
+:global .glide__bullets .glide__bullet:hover {
+  border: none;
+}
+
+:global .glide__bullets {
+  bottom: 0;
+}
+
+:global .glide__bullets .glide__bullet.glide__bullet--active {
+  background-color: #368df7;
+}
+
+:global .glide__slides {
+  justify-content: center;
+  width: 260px;
+}
+
+:global .glide__slides > * {
+  width: 100%;
+}

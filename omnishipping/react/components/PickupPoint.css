@@ -1,0 +1,75 @@
+.PickupPointInfo {
+  border: 1px solid #eee;
+  padding: 12px 10px;
+  border-radius: 4px;
+}
+
+.PickupPoint :global .pickup-marker-blue {
+  margin-top: -1px;
+  position: absolute;
+  width: 24px;
+}
+
+.pointWrapper {
+  padding-left: 32px;
+}
+
+.PickupPointMarker {
+  vertical-align: top;
+  text-align: center;
+  width: 50px;
+}
+
+.PickupPointName {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.PickupPointAddress :global .city-dash,
+.PickupPointAddress :global .postalCode,
+.PickupPointAddress :global .postal-code,
+.PickupPointAddress :global .postal-code-dash,
+.PickupPointAddress :global .state-dash,
+.PickupPointAddress :global .address-summary br:last-of-type,
+.PickupPointAddress :global .country,
+.PickupPointAddress :global .country-dash {
+  display: none;
+}
+
+.PickupPointPrice,
+.PickupPointSLA {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.PickupPointPrice {
+  margin-right: 20px;
+}
+
+.details {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+.details:focus {
+  outline: none;
+}
+
+.pickupPointChange {
+  border: 1px solid #368df7;
+  padding: 5px 8px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin: 12px 0;
+}
+
+.pickupPointChange:hover,
+.pickupPointChange:focus {
+  text-decoration: none;
+}
+
+.sla {
+  margin-top: 4px;
+}

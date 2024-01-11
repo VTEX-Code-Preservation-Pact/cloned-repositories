@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddressList should render AddressList and components  1`] = `
+<div
+  className="address-list addressList"
+>
+  <label
+    className="address-item addressItemOption active"
+    onClick={[Function]}
+    selected={true}
+  >
+    <div
+      className="addressItemIcon shp-option-icon"
+    >
+      <svg
+        className="svg"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 4C5.792 4 4 5.792 4 8s1.792 4 4 4 4-1.792 4-4-1.792-4-4-4zm0-4C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.398 6.398 0 0 1 1.6 8c0-3.536 2.864-6.4 6.4-6.4 3.536 0 6.4 2.864 6.4 6.4 0 3.536-2.864 6.4-6.4 6.4z"
+          fill="#3386E8"
+        />
+      </svg>
+    </div>
+    <div
+      className="shp-option-text addressItemText"
+    >
+      <div
+        className="address-summary address-summary-BRA"
+      >
+        <span>
+          <span
+            className="street"
+          >
+            Rua Andrade Neves
+          </span>
+        </span>
+        <span>
+          
+          <span
+            className="complement"
+          >
+            100
+          </span>
+        </span>
+        <br
+          className="line1-delimiter"
+        />
+        <span>
+          <span
+            className="neighborhood"
+          >
+            Tijuca
+          </span>
+          <span
+            className="neighborhood-delimiter-after"
+          >
+             - 
+          </span>
+        </span>
+        <span>
+          <span
+            className="city"
+          >
+            Rio de Janeiro
+          </span>
+        </span>
+        <span>
+          <span
+            className="state-delimiter"
+          >
+             - 
+          </span>
+          <span
+            className="state"
+          >
+            RJ
+          </span>
+        </span>
+        <br
+          className="line2-delimiter"
+        />
+        <span>
+          <span
+            className="postalCode"
+          >
+            333333333
+          </span>
+        </span>
+        <br
+          className="line3-delimiter"
+        />
+        <span
+          className="country"
+        >
+          Brazil
+        </span>
+      </div>
+    </div>
+  </label>
+  <label
+    className="address-item addressItemOption"
+    onClick={[Function]}
+    selected={false}
+  >
+    <div
+      className="addressItemIcon shp-option-icon"
+    >
+      <svg
+        className="svg"
+        height="16"
+        viewBox="0 0 16 16"
+        width="16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8 8-3.584 8-8-3.584-8-8-8zm0 14.4A6.398 6.398 0 0 1 1.6 8c0-3.536 2.864-6.4 6.4-6.4 3.536 0 6.4 2.864 6.4 6.4 0 3.536-2.864 6.4-6.4 6.4z"
+          fill="#666"
+        />
+      </svg>
+    </div>
+    <div
+      className="shp-option-text addressItemText"
+    >
+      <div
+        className="address-summary address-summary-BRA"
+      >
+        <span>
+          <span
+            className="street"
+          >
+            Rua Grajaú
+          </span>
+        </span>
+        <span>
+          <span
+            className="number-delimiter"
+          >
+             
+          </span>
+          <span
+            className="number"
+          >
+            100
+          </span>
+        </span>
+        <span>
+          <span
+            className="complement-delimiter"
+          >
+            , 
+          </span>
+          <span
+            className="complement"
+          >
+            200
+          </span>
+        </span>
+        <br
+          className="line1-delimiter"
+        />
+        <span>
+          <span
+            className="neighborhood"
+          >
+            Grajaú
+          </span>
+          <span
+            className="neighborhood-delimiter-after"
+          >
+             - 
+          </span>
+        </span>
+        <span>
+          <span
+            className="city"
+          >
+            São Paulo
+          </span>
+        </span>
+        <span>
+          <span
+            className="state-delimiter"
+          >
+             - 
+          </span>
+          <span
+            className="state"
+          >
+            SP
+          </span>
+        </span>
+        <br
+          className="line2-delimiter"
+        />
+        <span>
+          <span
+            className="postalCode"
+          >
+            999999999
+          </span>
+        </span>
+        <br
+          className="line3-delimiter"
+        />
+        <span
+          className="country"
+        >
+          Brazil
+        </span>
+      </div>
+    </div>
+  </label>
+  <p
+    className="link edit address-edit"
+  >
+    <button
+      className="btn btn-link buttonEditAddress"
+      id="edit-address-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="icon-edit"
+      />
+       
+      Modificar endereço selecionado
+    </button>
+  </p>
+  <p
+    className="link create address-create"
+  >
+    <button
+      className="btn btn-link buttonCreateAddress"
+      id="new-address-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <i
+        className="icon-plus"
+      />
+       
+      Entregar em outro endereço
+    </button>
+  </p>
+</div>
+`;

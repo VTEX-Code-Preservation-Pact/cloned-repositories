@@ -1,0 +1,12 @@
+{
+  "baseUrl": "http://vtexgame1.vtexlocal.com.br:3000",
+  "env": {
+    "requestTimeout": 30000,
+    "responseTimeout": 30000,
+    "isLogged": false
+  },
+  "defaultCommandTimeout": 10000,
+  "ignoreTestFiles": "*.old.js",
+  "projectId": "vuuqnj",
+  "chromeWebSecurity": false
+}

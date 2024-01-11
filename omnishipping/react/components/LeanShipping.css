@@ -1,0 +1,44 @@
+.deliveryGroup {
+  margin-top: 16px;
+}
+
+.deliveryGroupContent {
+  margin-bottom: 12px;
+}
+
+.singlePackageTitle {
+  margin: 0;
+}
+
+.deliveryGroupContentDeliveryChannel {
+  padding: 12px 14px;
+}
+
+.linkLocatePickupPoint {
+  display: inline-block;
+  font-size: 15px;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.unavailable {
+  background: #f9f5f5;
+  color: #777;
+}
+
+.shippingProductItemWrapper {
+  margin-top: 10px;
+}
+
+.pickupEstimate {
+  margin-top: 24px;
+}
+
+.btnLink {
+  cursor: pointer;
+}
+
+/* Packages nav  */
+.packagesNav {
+  text-align: center;
+}

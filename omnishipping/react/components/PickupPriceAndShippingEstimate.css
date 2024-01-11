@@ -1,0 +1,29 @@
+.packages {
+  margin-top: 16px;
+}
+
+.packagesTitle {
+  color: #999;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.package {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.items {
+  max-height: 84px;
+  overflow: auto;
+  padding: 8px;
+}
+
+.top {
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  padding: 12px;
+  text-align: center;
+}

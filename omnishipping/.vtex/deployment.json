@@ -1,0 +1,37 @@
+[
+  {
+    "name": "omnishipping",
+    "description": "",
+    "source": "https://github.com/vtex/omnishipping.git",
+    "script": {
+      "deploy": ".vtex/buildspec.yml",
+      "ci": ".vtex/ci.yml"
+    },
+    "build": {
+      "type": "codebuild",
+      "image": "aws/codebuild/nodejs:10.1.0",
+      "vpc": {
+        "id": "vpc-d4f109b1",
+        "subnets": ["subnet-955f63d3", "subnet-245f030c", "subnet-0e35267a"],
+        "securityGroups": ["sg-c84127b3"]
+      }
+    },
+    "service": {
+      "type": "front"
+    },
+    "tags": [
+      {
+        "key": "Product",
+        "value": "omnishipping"
+      },
+      {
+        "key": "Owner",
+        "value": "Shopping XP"
+      },
+      {
+        "key": "Team",
+        "value": "Shopping XP"
+      }
+    ]
+  }
+]

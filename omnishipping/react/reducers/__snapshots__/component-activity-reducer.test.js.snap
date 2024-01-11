@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ComponentActivity reducer should handle SHOW_OMNISHIPPING 1`] = `
+Object {
+  "isOmniShippingOpen": true,
+}
+`;
+
+exports[`ComponentActivity reducer should handle SHOW_OMNISHIPPING_COMPLETED 1`] = `
+Object {
+  "editAddressActive": false,
+  "isOmniShippingCompleted": true,
+  "isSplitActive": true,
+  "newAddressActive": false,
+  "triedCompleteOmnishipping": false,
+}
+`;
+
+exports[`ComponentActivity reducer should return the initial state 1`] = `
+Object {
+  "activeDeliveryChannel": "delivery",
+  "editAddressActive": false,
+  "hasPickup": false,
+  "isAddressActive": false,
+  "isAddressListActive": false,
+  "isEditingOmnishipping": false,
+  "isOmniShippingCompleted": false,
+  "isOmniShippingOpen": false,
+  "isSplitActive": false,
+  "newAddressActive": false,
+  "triedCompleteOmnishipping": false,
+}
+`;

@@ -4,26 +4,6 @@ All notable changes to this project will be documented in this file.
 
 ## [Unreleased]
 
-## [1.8.0] - 2023-03-30
-
-### Added
-
-- FetchPolicy in useQuery
-
-### Changed
-
-- Update README
-
-## [1.7.0] - 2022-09-26
-
-### Added
-
-- Arabic, Catalan, Czech, Danish, Dutch, German, Greek, Finnish, French, Italian, Korean, Norwegian, Polish, Romanian, Russian, Slovak, Swedish and Thai translations.
-
-### Fixed
-
-- English, Portuguese and Spanish translations.
-
 ## [1.6.0] - 2022-09-23
 
 ### Fixed

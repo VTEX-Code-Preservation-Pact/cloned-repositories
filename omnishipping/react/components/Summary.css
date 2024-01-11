@@ -1,0 +1,12 @@
+.summaryChange {
+  border: 1px dashed #357edd;
+  border-radius: 4px;
+  color: #357edd;
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 5px 8px;
+  text-align: center;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}

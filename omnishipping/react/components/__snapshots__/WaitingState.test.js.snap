@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WaitingState should render self and subcomponents 1`] = `
+<div
+  className="step accordion-group shipping-data"
+>
+  <div
+    className="accordion-heading"
+  >
+    <span
+      className="accordion-toggle collapsed"
+    >
+      <i
+        className="icon-home"
+      />
+       
+      Shipping
+    </span>
+  </div>
+  <div
+    className="accordion-inner"
+  >
+    <div
+      className="box-step box-info shipping-summary-placeholder"
+    >
+      <div
+        className="shipping-summary-info"
+      >
+        Waiting for more information
+      </div>
+    </div>
+  </div>
+</div>
+`;

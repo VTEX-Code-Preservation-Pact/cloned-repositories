@@ -1,0 +1,66 @@
+.leanShippingOption {
+  align-items: center;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  color: #999;
+  display: flex;
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 12px;
+}
+
+.option:last-child {
+  border-bottom: none;
+}
+
+.option:hover,
+.leanShippingOptionActive {
+  background: #f2f6fb;
+}
+
+.leanShippingIcon {
+  flex: none;
+  display: flex;
+  margin-right: 12px;
+}
+
+.leanShippingText {
+  border-right: 1px solid #eee;
+  flex: auto;
+}
+
+.leanShippingOptionActive .text {
+  border-color: #ddd;
+}
+
+.leanShippingTextLabel {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.leanShippingOptionActive .leanShippingTextLabel {
+  color: #333;
+}
+
+.leanShippingTextLabelSingle {
+  color: #333;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.leanShippingTextLabelSingle::first-letter {
+  text-transform: uppercase;
+}
+
+.price {
+  position: relative;
+  margin-left: auto;
+  padding-left: 10px;
+  min-width: 50px;
+  text-align: center;
+}
+
+.leanShippingOptionRadio {
+  display: none;
+}

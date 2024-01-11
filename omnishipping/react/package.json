@@ -1,0 +1,64 @@
+{
+  "name": "omnishipping",
+  "version": "0.12.4",
+  "dependencies": {
+    "@glidejs/glide": "^3.2.4",
+    "@sentry/browser": "^4.3.0",
+    "@vtex/address-form": "^3.0.2",
+    "@vtex/delivery-packages": "2.13.2",
+    "@vtex/estimate-calculator": "1.0.7",
+    "@vtex/evidence-client-js": "^2.0.0",
+    "@vtex/lean-shipping-calculator": "0.1.2",
+    "@vtex/pickup-points-modal": "1.1.15",
+    "axios": "^0.18.0",
+    "classnames": "^2.2.5",
+    "i18n-iso-countries": "^3.7.8",
+    "load-google-maps-api": "^1.0.0",
+    "lodash": "^4.17.4",
+    "moment": "2.18.1",
+    "prop-types": "^15.5.10",
+    "query-string": "^5.0.1",
+    "react": "^16.3.2",
+    "react-datepicker": "^0.60.2",
+    "react-dom": "^16.3.2",
+    "react-intl": "^2.3.0",
+    "react-loading-skeleton": "0.4.0",
+    "react-redux": "^5.0.5",
+    "react-tooltip": "^3.4.0",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "splunk-events": "^1.2.3"
+  },
+  "externalReact": true,
+  "component": [
+    "vtex",
+    "OmniShipping"
+  ],
+  "main": "index.html",
+  "backend": "https://io.vtex.com.br/",
+  "scripts": {
+    "start": "react-scripts start",
+    "start:e2e": "concurrently \"REACT_APP_CYPRESS=true react-scripts start\" \"yarn cypress\"",
+    "cypress": "cypress open",
+    "build": "react-scripts build",
+    "build:link": "react-scripts link",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "eslint src --fix --max-warnings 0",
+    "eject": "react-scripts eject",
+    "deploy": "react-scripts deploy",
+    "prettier-conflict-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
+  },
+  "proxy": {
+    "/api/*": {
+      "target": "http://vtexgame1.vtexcommercestable.com.br:80",
+      "cookieDomainRewrite": {
+        "vtexgame1.vtexcommercestable.com.br": "vtexgame1.vtexlocal.com.br"
+      },
+      "changeOrigin": true,
+      "ws": true,
+      "xfwd": true
+    }
+  }
+}
